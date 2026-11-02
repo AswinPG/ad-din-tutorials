@@ -29,7 +29,7 @@ pronunciations:
 - The respelling goes to the voice only. Scripts, subtitles and on-screen text keep the proper spelling.
 - Plurals are separate entries (Masjid / Masaajid, Madrasah / Madaris).
 - Preview any sentence with `npm run say -- "Every masjid and madrasah uses Ad-Din"`; add `--lang ur` for another language. Clips land in `samples/say/` (not committed).
-- Reference clips of every chosen voice saying Masjid, Madrasah, Masaajid, Madaris and Ad-Din are in `samples/pronunciation/` (2026-11-02).
+- Reference clips of every chosen voice are in `samples/pronunciation/` (2026-11-02): the five words (Masjid, Madrasah, Masaajid, Madaris, Ad-Din) in English letters, then in Arabic/Urdu script where relevant, a sentence in the voice's language, and the English sentence. Rebuild with `python tools/make-voice-samples.py samples/pronunciation`.
 - **Urdu voice and English letters:** ur-PK-AsadNeural produced no audio at all for "Masaajid" and "Ad-Din" written in Latin letters. For Urdu (and to be safe Arabic), the pronunciation list must map these terms to their own script, for example `Ad-Din: الدین`, so the voice can say them. Always listen to a new language's first video for words it skipped.
 
 ## Translation rules
