@@ -1,0 +1,376 @@
+# Series configuration: parts, tracks, languages, playlists and open decisions.
+# Per-video details live in videos/<track>/<video>/script.md, not here.
+# Track defaults apply to every video in the track unless its script.md overrides them.
+
+title: Ad-Din Tutorial Series
+rules:
+  max_length: 5:00
+  english_target: 4:15
+  note: English is timed to leave room for longer translations; every language must fit the same picture.
+languages:
+  - code: en
+    name: English
+    priority: 1
+    voice: en-GB-RyanNeural
+    markets:
+      - UK
+      - USA
+      - Canada
+      - Australia
+      - UAE
+    source: true
+  - code: ar
+    name: Arabic
+    priority: 2
+    voice: ar-SA-HamedNeural
+    markets:
+      - UAE
+      - Saudi Arabia
+      - Qatar
+      - Kuwait
+      - Bahrain
+    rtl: true
+    note: Modern Standard Arabic, one Gulf voice for all five markets
+  - code: ur
+    name: Urdu
+    priority: 3
+    voice: ur-PK-AsadNeural
+    markets:
+      - Pakistan
+      - UK
+      - USA
+      - Canada
+      - UAE
+    rtl: true
+  - code: bn
+    name: Bangla (Bengali)
+    priority: 4
+    voice: bn-BD-PradeepNeural
+    markets:
+      - Bangladesh
+      - UK
+      - Canada
+      - UAE
+  - code: ms
+    name: Malay
+    priority: 5
+    voice: ms-MY-OsmanNeural
+    markets:
+      - Malaysia
+      - Brunei
+      - Singapore
+  - code: id
+    name: Indonesian
+    priority: 6
+    voice: id-ID-ArdiNeural
+    markets:
+      - Indonesia
+pronunciations:
+  # How the voice should say a word, per language. Keys are matched as whole words, case-insensitive.
+  # Values are respellings sent to the voice only; subtitles and scripts keep the proper spelling.
+  # Fill these in from the agreed pronunciations, then preview with: npm run say -- "<sentence>"
+  en:
+    Masjid: Masjid
+    Madrasah: Madrasah
+    Masaajid: Masaajid
+    Madaris: Madaris
+    Ad-Din: Ad-Din
+statuses:
+  - planned
+  - scripted
+  - script-approved
+  - recorded
+  - video-approved
+  - client-approved
+  - published
+  - on-hold
+parts:
+  - id: A
+    name: Start here
+    sub: Account and first steps
+  - id: B
+    name: Register & subscribe
+    sub: Organisation and plans
+  - id: C
+    name: Set up your organisation
+    sub: One-time configuration
+  - id: D
+    name: Use it every day
+    sub: Routine work
+  - id: E
+    name: End of term & year
+    sub: Periodic jobs
+tracks:
+  - id: "00"
+    part: A
+    name: Welcome to Ad-Din
+    folder: 00-welcome-to-ad-din
+    defaults:
+      aud:
+        - Everyone
+      stage: Start
+      plan: Free
+      plat: Both
+  - id: "01"
+    part: B
+    name: Register your organisation
+    folder: 01-register-your-organisation
+    defaults:
+      aud:
+        - Org Admin
+      stage: Start
+      plan: Free
+      plat: Web
+  - id: "02"
+    part: B
+    name: Subscriptions & billing
+    folder: 02-subscriptions-and-billing
+    defaults:
+      aud:
+        - Org Admin
+      stage: Start
+      plan: Free
+      plat: Web
+  - id: "03"
+    part: C
+    name: Organisation settings & people
+    folder: 03-organisation-settings-and-people
+    defaults:
+      aud:
+        - Org Admin
+      stage: Setup
+      plan: Premium
+      plat: Web
+  - id: "04"
+    part: C
+    name: Masjid setup
+    folder: 04-masjid-setup
+    defaults:
+      aud:
+        - Masjid Admin
+      stage: Setup
+      plan: Free
+      plat: Web
+  - id: "05"
+    part: C
+    name: Madrasah academic setup
+    folder: 05-madrasah-academic-setup
+    defaults:
+      aud:
+        - Madrasah Admin
+      stage: Setup
+      plan: Premium
+      plat: Web
+    note: "Order matters here: terms, then classes, sections, subjects, routine."
+  - id: "06"
+    part: C
+    name: Enrolment & students
+    folder: 06-enrolment-and-students
+    defaults:
+      aud:
+        - Madrasah Admin
+      stage: Setup
+      plan: Premium
+      plat: Web
+  - id: "07"
+    part: D
+    name: Messages & announcements
+    folder: 07-messages-and-announcements
+    defaults:
+      aud:
+        - Org Admin
+      stage: Daily
+      plan: Free
+      plat: Both
+  - id: "08"
+    part: D
+    name: Events & donations
+    folder: 08-events-and-donations
+    defaults:
+      aud:
+        - Masjid Admin
+      stage: Daily
+      plan: Premium
+      plat: Web
+  - id: "09"
+    part: D
+    name: Your public website
+    folder: 09-your-public-website
+    defaults:
+      aud:
+        - Org Admin
+      stage: Setup
+      plan: "Add-on: Website"
+      plat: Web
+  - id: "10"
+    part: D
+    name: Teaching day to day
+    folder: 10-teaching-day-to-day
+    defaults:
+      aud:
+        - Teacher
+        - Madrasah Admin
+      stage: Daily
+      plan: Premium
+      plat: Both
+  - id: "11"
+    part: D
+    name: Fees & payments
+    folder: 11-fees-and-payments
+    defaults:
+      aud:
+        - Madrasah Admin
+      stage: Daily
+      plan: Premium
+      sw: Payment Module
+      plat: Web
+    status: on-hold
+    note: Out of current scope (Payment Module excluded, 2026-11-02).
+  - id: "12"
+    part: D
+    name: Report cards & reports
+    folder: 12-report-cards-and-reports
+    defaults:
+      aud:
+        - Madrasah Admin
+        - Teacher
+      stage: Periodic
+      plan: Premium
+      plat: Web
+  - id: "13"
+    part: D
+    name: Staff Attendance
+    folder: 13-staff-attendance
+    defaults:
+      aud:
+        - Org Admin
+      stage: Setup
+      plan: Premium
+      sw: Staff Attendance
+      plat: Web
+    note: Re-cut of the two existing 5:30 walkthroughs into shorter pieces.
+  - id: "14"
+    part: D
+    name: For parents and students
+    folder: 14-for-parents-and-students
+    defaults:
+      aud:
+        - Parent
+      stage: Daily
+      plan: Premium
+      plat: App
+  - id: "15"
+    part: D
+    name: For the community
+    folder: 15-for-the-community
+    defaults:
+      aud:
+        - Member
+      stage: Daily
+      plan: Free
+      plat: App
+  - id: "16"
+    part: E
+    name: Year end
+    folder: 16-year-end
+    defaults:
+      aud:
+        - Madrasah Admin
+      stage: Periodic
+      plan: Premium
+      plat: Web
+playlists:
+  Masjid admin:
+    - 00.1-00.6
+    - 01.1-01.3
+    - "02.1"
+    - "02.3"
+    - "02.5"
+    - "02.6"
+    - 03.1-03.3
+    - 04.1-04.10
+    - 07.1-07.2
+    - 08.1-08.5
+    - 09.1-09.6
+    - 12.5-12.6
+    - 13.1-13.6
+  Madrasah admin:
+    - 00.1-00.6
+    - 01.1-01.2
+    - 02.1-02.6
+    - 03.1-03.2
+    - 03.4-03.5
+    - 05.1-05.8
+    - "06.1"
+    - 06.3-06.5
+    - 07.2-07.4
+    - "10.3"
+    - "10.5"
+    - "10.7"
+    - 11.1-11.4
+    - 12.1-12.4
+    - "12.6"
+    - 13.1-13.6
+    - 16.1-16.2
+  Teacher:
+    - 00.2-00.6
+    - "07.1"
+    - 07.3-07.4
+    - 10.1-10.11
+    - "12.2"
+    - 13.7-13.8
+  Staff (non-teaching):
+    - "00.2"
+    - "00.5"
+    - "07.1"
+    - 13.7-13.8
+  Parent:
+    - 00.2-00.5
+    - "02.2"
+    - "06.2"
+    - "07.1"
+    - 14.1-14.4
+    - 15.1-15.4
+  Student:
+    - 00.2-00.4
+    - "14.5"
+    - "07.1"
+    - "15.1"
+    - "15.5"
+  Community member:
+    - 00.2-00.5
+    - 15.1-15.7
+    - "07.1"
+decisions:
+  - title: Is Staff Attendance live?
+    detail: The Oct 3 handover note says the pilot hadn’t run in UAT or production. Confirm before Track 13 goes public.
+    videos: 13.1–13.8
+    status: open
+  - title: Who needs a seat?
+    detail: The madrasah admin page guard checks the user’s own Premium, not the organisation’s seats. Decide what’s intended before scripting.
+    videos: "02.4"
+    status: open
+  - title: First billing setup for a new organisation
+    detail: How a brand-new organisation gets its billing account isn’t clear from the code. Walk it on dev first.
+    videos: "02.3"
+    status: open
+  - title: People are added by GUID
+    detail: There are no email invites, so videos teach how to find and share your GUID.
+    videos: 00.5, 03.3, 03.4
+    status: open
+  - title: Sign-up page links
+    detail: The Terms of Service and Privacy Policy links go nowhere. Fix them or avoid zooming in.
+    videos: "00.2"
+    status: open
+  - title: Exam Marks
+    detail: The older feature, off by default; the Services tab recommends Academic Activity instead. Keep or drop?
+    videos: "10.11"
+    status: open
+  - title: No online fee payment for parents
+    detail: PayPal keys exist but parents have no pay button, so 14.4 shows invoice history only.
+    videos: "14.4"
+    status: open
+  - title: Left out on purpose
+    detail: Carpool (switched off), social login (no buttons), Ideas (app feedback), the unused clock-in placeholder, the old teacher-attendance register.
+    videos: —
+    status: open

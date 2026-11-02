@@ -1,0 +1,109 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Ad-Din Tutorial Series — Effort Estimate</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Roboto+Mono:wght@500&family=Roboto+Slab:wght@500;700&display=swap">
+<style>
+@page{size:A4;margin:14mm 13mm 16mm}
+:root{--ink:#241a2e;--ink-2:#5e5468;--ink-3:#8a8096;--line:#e6dcef;--brand:#7718aa;--brand-soft:#f4eafb;--brand-ink:#5b1184;--warn:#a35a00;--warn-soft:#fff3e2;--ok:#227a37;--ok-soft:#e7f5ea}
+*{box-sizing:border-box}
+body{margin:0;font-family:Roboto,Arial,sans-serif;color:var(--ink);font-size:9.5pt;line-height:1.45;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.eyebrow{font-size:8pt;letter-spacing:.08em;text-transform:uppercase;color:var(--brand);font-weight:700}
+h1{font-family:"Roboto Slab",Georgia,serif;font-size:24pt;margin:4px 0 6px}
+.lede{color:var(--ink-2);font-size:10.5pt;margin:0;max-width:160mm}
+.stats{display:flex;gap:28px;margin:14px 0 6px}
+.stats div{display:flex;flex-direction:column}.stats b{font-family:"Roboto Slab",serif;font-size:17pt}.stats span{font-size:8pt;color:var(--ink-3)}
+.stats .big b{color:var(--brand)}
+h2{font-family:"Roboto Slab",serif;font-weight:500;font-size:11pt;letter-spacing:.06em;text-transform:uppercase;color:var(--brand);margin:18px 0 6px;break-after:avoid}
+table{width:100%;border-collapse:collapse}
+th{font-size:7.5pt;text-align:left;font-weight:500;color:var(--ink-3);padding:4px 7px;border-bottom:1px solid var(--line)}
+td{padding:5px 7px;border-bottom:1px solid var(--line);vertical-align:top}
+tr{break-inside:avoid}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+td.tid{font-family:"Roboto Mono",monospace;font-size:8pt;color:var(--brand-ink);width:9mm}
+tr.excl td{color:var(--ink-3);text-decoration:line-through}
+tr.excl td.note{text-decoration:none}
+tr.sub td{font-weight:700;background:var(--brand-soft);border-bottom:0}
+tr.total td{font-weight:700;font-size:11pt;background:var(--brand);color:#fff;border-bottom:0}
+.tag{display:inline-block;font-size:7.5pt;padding:1px 6px;border-radius:999px;white-space:nowrap}
+.low{background:var(--ok-soft);color:var(--ok)}.med{background:var(--brand-soft);color:var(--brand-ink)}.high{background:var(--warn-soft);color:var(--warn)}.mix{background:#eef0f3;color:var(--ink-2)}
+td.why{font-size:8.5pt;color:var(--ink-2)}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:10px 18px}
+.box{border:1px solid var(--line);border-radius:8px;padding:9px 11px;break-inside:avoid}
+.box b{display:block;margin-bottom:2px}
+.box p{margin:0;color:var(--ink-2)}
+.page2{break-before:page}
+.foot{margin-top:14px;font-size:8pt;color:var(--ink-3)}
+</style></head><body>
+
+<div class="eyebrow">Customer tutorials · Effort estimate · 2 November 2026</div>
+<h1>Ad-Din Tutorial Series</h1>
+<p class="lede">Hours needed to script, record, voice and finish the tutorial series, excluding the madrasah Payment Module (Track 11: fees, invoices and payments). Based on the same production method as the Staff Attendance walkthroughs.</p>
+<div class="stats">
+  <div class="big"><b>≈ 855 h</b><span>total effort</span></div>
+  <div><b>97</b><span>videos</span></div>
+  <div><b>6 h 28 min</b><span>finished runtime</span></div>
+  <div><b>~21 weeks</b><span>one person, full time</span></div>
+  <div><b>~11 weeks</b><span>two people in parallel</span></div>
+</div>
+
+<h2>Effort by track</h2>
+<table>
+<thead><tr><th>Track</th><th>Topic</th><th class="n">Videos</th><th class="n">Runtime</th><th>Complexity</th><th class="n">Hours</th></tr></thead>
+<tbody>
+<tr><td class="tid">00</td><td>Welcome to Ad-Din</td><td class="n">6</td><td class="n">22 min</td><td><span class="tag low">Low</span></td><td class="n">33</td></tr>
+<tr><td class="tid">01</td><td>Register your organisation</td><td class="n">3</td><td class="n">10.5 min</td><td><span class="tag med">Medium</span></td><td class="n">21</td></tr>
+<tr><td class="tid">02</td><td>Subscriptions &amp; billing</td><td class="n">6</td><td class="n">24.5 min</td><td><span class="tag high">High</span> Stripe test mode, app-store states</td><td class="n">54</td></tr>
+<tr><td class="tid">03</td><td>Organisation settings &amp; people</td><td class="n">5</td><td class="n">21 min</td><td><span class="tag med">Medium</span></td><td class="n">35</td></tr>
+<tr><td class="tid">04</td><td>Masjid setup</td><td class="n">10</td><td class="n">40 min</td><td><span class="tag mix">Medium</span> premium displays High</td><td class="n">74</td></tr>
+<tr><td class="tid">05</td><td>Madrasah academic setup</td><td class="n">8</td><td class="n">32.5 min</td><td><span class="tag med">Medium</span></td><td class="n">56</td></tr>
+<tr><td class="tid">06</td><td>Enrolment &amp; students</td><td class="n">5</td><td class="n">22.5 min</td><td><span class="tag high">High</span> parent and admin both shown</td><td class="n">45</td></tr>
+<tr><td class="tid">07</td><td>Messages &amp; announcements</td><td class="n">4</td><td class="n">15.5 min</td><td><span class="tag med">Medium</span></td><td class="n">28</td></tr>
+<tr><td class="tid">08</td><td>Events &amp; donations</td><td class="n">5</td><td class="n">20.5 min</td><td><span class="tag med">Medium</span></td><td class="n">35</td></tr>
+<tr><td class="tid">09</td><td>Public website</td><td class="n">6</td><td class="n">23 min</td><td><span class="tag med">Medium</span></td><td class="n">42</td></tr>
+<tr><td class="tid">10</td><td>Teaching day to day</td><td class="n">11</td><td class="n">46 min</td><td><span class="tag mix">Medium</span> Excel import High</td><td class="n">79</td></tr>
+<tr class="excl"><td class="tid">11</td><td>Fees &amp; payments</td><td class="n">4</td><td class="n">17 min</td><td class="note"><span class="tag mix">Excluded</span></td><td class="n">—</td></tr>
+<tr><td class="tid">12</td><td>Report cards &amp; reports</td><td class="n">6</td><td class="n">23.5 min</td><td><span class="tag mix">High</span> builder; rest Medium</td><td class="n">48</td></tr>
+<tr><td class="tid">13</td><td>Staff Attendance</td><td class="n">8</td><td class="n">34 min</td><td><span class="tag low">Low</span> recording setup and footage exist</td><td class="n">44</td></tr>
+<tr><td class="tid">14</td><td>Parents &amp; students</td><td class="n">5</td><td class="n">19.5 min</td><td><span class="tag high">High</span> phone-size app capture</td><td class="n">45</td></tr>
+<tr><td class="tid">15</td><td>For the community</td><td class="n">7</td><td class="n">24.5 min</td><td><span class="tag low">Low–Medium</span></td><td class="n">42</td></tr>
+<tr><td class="tid">16</td><td>Year end</td><td class="n">2</td><td class="n">8 min</td><td><span class="tag med">Medium</span></td><td class="n">14</td></tr>
+<tr class="sub"><td></td><td>Video production subtotal</td><td class="n">97</td><td class="n">6 h 28 min</td><td></td><td class="n">695</td></tr>
+</tbody></table>
+
+<div class="page2">
+<h2 style="margin-top:0">One-time and overhead work</h2>
+<table>
+<thead><tr><th>Item</th><th>What it covers</th><th class="n">Hours</th></tr></thead>
+<tbody>
+<tr><td>Demo data</td><td class="why">One seeded masjid and madrasah: terms, classes, about 20 families, Hifz, activities, events, campaigns, report cards, a Staff Attendance pay period</td><td class="n">24</td></tr>
+<tr><td>Recording setup</td><td class="why">Extend the Staff Attendance setup: sign-ins for each role, phone-size app capture, reusable steps</td><td class="n">20</td></tr>
+<tr><td>Templates</td><td class="why">Intro and outro, “You’ll need” card, chapter titles, end cards</td><td class="n">10</td></tr>
+<tr><td>Open decisions</td><td class="why">Settle the open questions and walk first-time billing on dev</td><td class="n">6</td></tr>
+<tr><td>Reviews and publishing</td><td class="why">Review rounds with you; titles, descriptions and playlists for upload</td><td class="n">30</td></tr>
+<tr><td>Contingency (≈10%)</td><td class="why">Re-recording after UI changes and feedback rounds</td><td class="n">70</td></tr>
+<tr class="sub"><td>Overhead subtotal</td><td></td><td class="n">160</td></tr>
+<tr class="total"><td>Total</td><td>97 videos, ready to publish</td><td class="n">≈ 855</td></tr>
+</tbody></table>
+
+<h2>Hours per video</h2>
+<table>
+<thead><tr><th>Step</th><th class="n">Low</th><th class="n">Medium</th><th class="n">High</th></tr></thead>
+<tbody>
+<tr><td>Check the flow on dev and copy the real labels</td><td class="n">0.75</td><td class="n">1.0</td><td class="n">1.5</td></tr>
+<tr><td>Write the script: narration and on-screen actions</td><td class="n">1.25</td><td class="n">1.5</td><td class="n">2.0</td></tr>
+<tr><td>Review and one round of revisions</td><td class="n">0.5</td><td class="n">0.5</td><td class="n">0.75</td></tr>
+<tr><td>Set up the automated screen recording</td><td class="n">1.5</td><td class="n">2.0</td><td class="n">2.5</td></tr>
+<tr><td>AI voice-over, timing and captions</td><td class="n">0.5</td><td class="n">0.75</td><td class="n">1.0</td></tr>
+<tr><td>Editing, title cards and end card</td><td class="n">0.5</td><td class="n">0.75</td><td class="n">0.75</td></tr>
+<tr><td>Final check and fixes</td><td class="n">0.5</td><td class="n">0.5</td><td class="n">0.5</td></tr>
+<tr class="sub"><td>Per video</td><td class="n">5.5</td><td class="n">7.0</td><td class="n">9.0</td></tr>
+</tbody></table>
+
+<h2>Assumptions</h2>
+<div class="cols">
+  <div class="box"><b>What “Payment Module” covers</b><p>Track 11 (madrasah fees, invoices and payments) is removed. Donations (Track 08) and subscriptions (Track 02) stay in. Video 14.4 keeps report cards and interview bookings but drops fee history, and 12.4 skips the payment report category.</p></div>
+  <div class="box"><b>How the videos are made</b><p>As with the Staff Attendance videos: screen recording runs off a script against the real app with a seeded demo organisation, with AI voice-over and captions. A human presenter or professional voice-over adds about 1.5–2 hours per video.</p></div>
+  <div class="box"><b>Calendar time</b><p>One person full time: about 21 weeks. Two people working in parallel by track: about 11 weeks, plus about a week first to build the shared demo data and recording setup.</p></div>
+  <div class="box"><b>Not included</b><p>Translations or extra languages, fixing app bugs found while recording, and redesigning screens before filming. Open questions in the series plan (for example whether Staff Attendance is live) may move videos between tracks but don’t change the total much.</p></div>
+</div>
+<p class="foot">Companion to “Ad-Din Tutorial Series” (series plan, 2 November 2026). Video counts and runtimes come from that plan, with Track 11 removed.</p>
+</div>
+</body></html>
