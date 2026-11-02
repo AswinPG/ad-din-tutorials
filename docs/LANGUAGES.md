@@ -15,6 +15,8 @@ Voices are Microsoft neural voices through `edge-tts`. Female alternatives exist
 
 All voices are male (decided 2026-11-02); Ryan is the voice used for the Staff Attendance videos.
 
+**One voice for every language (option under consideration, 2026-11-03).** Ryan speaks English only: given Arabic, Urdu or Bangla text he says just the Latin words ("Ad-Din") and skips the rest, and he reads Malay and Indonesian with English pronunciation. Microsoft's multilingual male voices (en-US-AndrewMultilingualNeural, en-US-BrianMultilingualNeural, en-AU-WilliamMultilingualNeural) produced full audio in all six languages. Samples: `samples/pronunciation/all-languages-<andrew|brian|william>.mp3`. Choosing one would mean setting the same voice on every language in `series.yaml`.
+
 ## Pronunciation
 
 Key words must sound right in every video. `series.yaml` → `pronunciations` holds, per language, how the voice should say each word:
