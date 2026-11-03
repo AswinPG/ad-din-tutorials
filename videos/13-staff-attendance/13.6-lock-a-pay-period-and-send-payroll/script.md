@@ -20,6 +20,7 @@ Check and correct a pay period's hours, lock it so payroll gets the file, and un
 
 ## Covers
 - Hours grid, edit hours, Lock, CSV and PDF to payroll, versions, unlocking within 15 days
+- Audit Trail
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
@@ -40,7 +41,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. Before you start
 #### [1.1] Opening
-**Say:** At the end of each pay period, you lock it. That makes the hours final and sends them to payroll. This video shows an admin how.
+**Say:** At the end of each pay period, you lock it. That makes the hours final and sends them to payroll. In this video for organisation admins, you'll lock a period, and unlock it for a correction.
 **Show:** Title card: "Lock a pay period and send payroll".
 
 #### [1.2]
@@ -49,7 +50,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 2. The hours grid
 #### [2.1] Periods
-**Say:** Open **Staff Attendance**, then **Periods**. It opens on the current pay period: one row for each staff member, one column for each day, and a **Period total**.
+**Say:** In the **Admin Portal**, open **Staff Attendance**, then **Periods**. It opens on the current pay period: one row for each staff member, one column for each day, and a **Period total**.
 **Show:** Sidebar → Admin Portal → Staff Attendance → Periods. Use "Previous period" to open the period that just ended. Spotlight the grid.
 
 #### [2.2]
@@ -62,7 +63,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Click Bilal Ahmed's Thursday cell (7h 10m). Set Hours 7, Minutes 30, Reason "Locked up after the evening class". Click "Save"; the toast "Hours saved" and the cell is marked Adjusted.
 
 #### [3.2]
-**Say:** Changed your mind? **Use recorded time** puts the system's figure back.
+**Say:** If you change your mind, open the cell again: **Use recorded time** puts the system's figure back.
 **Show:** Reopen the cell and spotlight "Use recorded time". Click "Cancel".
 
 ### 4. Lock the period
@@ -84,12 +85,12 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Click "Download v1"; the menu shows CSV spreadsheet and PDF document. Click "CSV spreadsheet".
 
 #### [5.3] Send again
-**Say:** Need to send it again? Tap the send button and confirm with **Send**. You can do this at any time while the period stays locked.
+**Say:** To send it again, tap the send button and confirm with **Send**. You can do this at any time while the period stays locked.
 **Show:** Click "Send v1 to payroll"; the dialog "Send this payroll file?" opens. Click "Send"; the toast "Payroll file sent."
 
 ### 6. Unlock for a correction
 #### [6.1] Unlock period
-**Say:** Spotted a mistake? Tap **Unlock period** within fifteen days of the period's end. The files already produced are kept.
+**Say:** If you find a mistake, tap **Unlock period** within fifteen days of the period's end. The files already produced are kept.
 **Show:** Spotlight the hint under the button. Click "Unlock period", then confirm "Unlock period" in the dialog. The toast "Period unlocked."
 
 #### [6.2] Versions
@@ -102,9 +103,10 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 7. Next
 #### [7.1] Close
-**Say:** Your pay period is locked and payroll has the file. To see the staff side, watch how staff check in, and where they find their timesheet and pay periods.
+**Say:** Your pay period is locked and payroll has the file. For the staff side, watch 13.7, Check in, breaks and check out, and 13.8, Timesheet, time off and pay periods.
 **Show:** End card with two tiles: "13.7 Check in, breaks and check out" and "13.8 Timesheet, time off and pay periods".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 6 changes: [1.1] second-person opening; [2.1] full sidebar path; [3.2]/[5.3]/[6.1] elliptical questions ("Changed your mind?", "Need to send it again?", "Spotted a mistake?") made plain, [3.2] says the cell is reopened; [7.1] end-card tiles named by number; fold: Audit Trail added to Covers ([6.3] already shows it)
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes

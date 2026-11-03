@@ -38,7 +38,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. What zones are for
 #### [1.1] Opening
-**Say:** A zone is the place your staff normally work, such as your building. This video shows an admin how to draw one.
+**Say:** A zone is the place your staff normally work, such as your building. In this video for organisation admins, you'll draw one.
 **Show:** Title card: "Draw work zones".
 
 #### [1.2]
@@ -47,7 +47,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 2. Open Zones
 #### [2.1] Your zones
-**Say:** Open **Staff Attendance** and choose **Zones**. The map shows your zones. The list beside it shows each zone's shape, and how many staff use it.
+**Say:** In the **Admin Portal**, open **Staff Attendance** and choose **Zones**. The map shows your zones. The list beside it shows each zone's shape, and how many staff use it.
 **Show:** Sidebar → Admin Portal → Staff Attendance → Zones. Spotlight the list row "Main building · Circle · radius 150 m · Used by 3 staff".
 
 #### [2.2]
@@ -78,12 +78,8 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 5. Zones never block
 #### [5.1] Annotate, never gate
-**Say:** Zones annotate; they never block. A tap inside a zone checks itself. A tap outside is still recorded, and the staff member is simply asked for a reason.
+**Say:** Zones never block a check-in. A tap outside a zone is still recorded; the staff member is just asked for a reason. So a teacher at an off-site school event can still check in, and you see their reason later, in **Review**.
 **Show:** Zoom on the information note under the list.
-
-#### [5.2]
-**Say:** So a teacher at an off-site school event can still check in. You'll see their reason later, in Review.
-**Show:** Hold on the map with both zones.
 
 #### [5.3] Edit or delete
 **Say:** To change a zone, tap **Edit**. To remove one, tap **Delete**. If staff still use it, Ad-Din asks you to move them to another zone first.
@@ -91,9 +87,10 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 6. Next
 #### [6.1] Close
-**Say:** Your zones are drawn. Next, set up your staff and shifts, and give each person their zone.
+**Say:** Your zones are drawn. Next, watch 13.3, Set up staff and shifts, to give each person their zone, and 13.4, Attendance settings and leave.
 **Show:** End card with two tiles: "13.3 Set up staff and shifts" and "13.4 Attendance settings and leave".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 4 changes: [1.1] second-person opening; [2.1] full sidebar path; [5.1] "annotate" and "checks itself" replaced with plain words, thin [5.2] (Show only held the map) merged into it; [6.1] both end-card tiles named by number
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes

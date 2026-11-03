@@ -19,6 +19,7 @@ Open your class's report cards, write each student's comment yourself or with AI
 
 ## Covers
 - Comments, Custom Comments Library, Marked as Ready
+- Ad-Din's AI Comment Generator (Write with AI), and the Use Legacy Comment Bank (Deprecated) switch in the app
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
@@ -27,6 +28,7 @@ Open your class's report cards, write each student's comment yourself or with AI
 - Three students in the section: "Yusuf Rahman", "Ibrahim Khan", "Zayd Hussain", with marks already filled from Academic Activities
 - AI comment generator returning a canned demo comment (mocked; no live AI call)
 - A second mapped report "Islamic Studies Progress" on the older "Academic: Islamic Studies Progress Report Card" template, for the drag-a-comment shot
+- The same teacher signed in on the app (phone frame) for the Use Legacy Comment Bank (Deprecated) switch in [5.4]
 - No custom comment library yet; the one built in the video is "Hifz Comments" → folder "Quran" → level "Excellent"
 
 ## Script
@@ -39,7 +41,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. Before you start
 #### [1.1] Opening
-**Say:** Before report cards go home, each student needs a comment, and each card needs to be marked ready. This video shows teachers and admins how.
+**Say:** Before report cards go home, each student needs a comment, and each card needs to be marked ready. In this video for teachers and admins, you'll do both.
 **Show:** Title card: "Write comments and mark reports ready".
 
 #### [1.2]
@@ -65,7 +67,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Scroll to the comment box. Click "Edit"; the "Edit Comment" window opens. Type two sentences; the counter shows "112/350". Click "Save". Toast "Successfully saved the academic report".
 
 #### [3.2] Write with AI
-**Say:** Or tap **Write with AI**. Ad-Din drafts a comment from the student's results.
+**Say:** Or tap **Write with AI**. **Ad-Din's AI Comment Generator** opens and drafts a comment from the student's results.
 **Show:** Open the next student, Ibrahim Khan. Click "Write with AI"; "Ad-Din's AI Comment Generator" opens with Student, Grade and Annual Average. The generated comment appears.
 
 #### [3.3]
@@ -82,7 +84,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** In the toolbar under THIS REPORT, click "Mark As Ready". It turns to "Ready". Zoom on the tick beside "Ibrahim Khan" in the Students list.
 
 #### [4.2]
-**Say:** A ready card is locked against refreshing, so nothing changes by accident. To make more changes, tap **Ready** again to unmark it.
+**Say:** A ready card is locked, so a refresh can't change it by accident. To make more changes, tap **Ready** again to unmark it.
 **Show:** Hover "Ready" to show it toggles; don't click.
 
 #### [4.3]
@@ -104,8 +106,8 @@ See docs/SCRIPT-FORMAT.md.
 **Caption:** On the folder's menu, tap Add Level. Select the level, tap Add Variation, and type the comment. Type {{name}} and Ad-Din puts in the student's name. Then tap the level's Save to keep it.
 
 #### [5.4] Use it
-**Say:** On an older-template card, the **Comments Library** sits beside it. Choose your library, open a level, and drag a variation into a comment box.
-**Show:** Cutaway: "Islamic Studies Progress" report card. In the side panel pick "Hifz Comments", open Quran → Excellent, drag "Variation 01" onto the comment box; it fills with "Zayd Hussain recites…".
+**Say:** On an older-template card, the **Comments Library** sits beside it. Choose your library, open a level, and drag a variation into a comment box. In the Ad-Din app, first turn on **Use Legacy Comment Bank (Deprecated)** under **Comments**.
+**Show:** Cutaway: "Islamic Studies Progress" report card. In the side panel pick "Hifz Comments", open Quran → Excellent, drag "Variation 01" onto the comment box; it fills with "Zayd Hussain recites…". Quick cut to the phone frame: on the Report Card Builder's setup, open "Comments" and spotlight the "Use Legacy Comment Bank (Deprecated)" switch (off by default).
 
 ### 6. Next
 #### [6.1] Done
@@ -113,9 +115,10 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Students list with ticks beside each name. Quick cut to the dashboard's "Report Readiness" box.
 
 #### [6.2] Close
-**Say:** Next, see how your admin releases the ready cards to parents.
+**Say:** Next, watch 12.3, Release report cards to parents. To set up a new report card, see 12.1, Map a report card template.
 **Show:** End card with two tiles: "12.3 Release report cards to parents" and "12.1 Map a report card template".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 5 changes: [1.1] second-person opening; [4.2] "locked against refreshing" made plain; [6.2] both end-card tiles named by number; fold: [3.2] names Ad-Din's AI Comment Generator, [5.4] adds the app's Use Legacy Comment Bank (Deprecated) switch (Covers + demo data)
 - 2026-11-03 · validator · checked against master d36d69ed8 · 4 fixes: [3.1] toast is "Successfully saved the academic report"; [3.4] Insert, not Replace (Replace is greyed when there's no comment yet); [5.2] pick the new library in Select Library before the Folders & Levels menu appears; [5.3] the level's Save is needed to store a variation

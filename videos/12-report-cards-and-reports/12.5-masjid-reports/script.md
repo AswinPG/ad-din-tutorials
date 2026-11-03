@@ -37,7 +37,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. Before you start
 #### [1.1] Opening
-**Say:** Ad-Din has two ready-made reports for your masjid: a staff list and a prayer times chart. This video shows a masjid admin how to run and download them.
+**Say:** Ad-Din has two ready-made reports for your masjid: a staff list and a prayer times chart. In this video for masjid admins, you'll run, download and pin them.
 **Show:** Title card: "Masjid reports".
 
 #### [1.2]
@@ -59,12 +59,8 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Click "Run". Open the staff type list: All, Staff, Admin, Volunteer. Keep "All". Click "View Report"; "Generating Report Please Wait." then the list.
 
 #### [3.2]
-**Say:** Each person's contact details, address and emergency contact are listed. It's private information, so keep the report within your admin team.
-**Show:** Scroll the table: Contact Details, Address Details, Contact Informations, Important Other Details, Emergency Contact. Demo data only.
-
-#### [3.3]
-**Say:** Tap **Download** to save it as a PDF.
-**Show:** Click "Download"; the PDF downloads.
+**Say:** Each person's contact details, address and emergency contact are listed. Tap **Download** to save it as a PDF. It's private information, so keep the report within your admin team.
+**Show:** Scroll the table: Contact Details, Address Details, Contact Informations, Important Other Details, Emergency Contact. Demo data only. Click "Download"; the PDF downloads.
 
 ### 4. Prayer times chart
 #### [4.1] Run it
@@ -85,9 +81,10 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Sidebar → Reports → Masjid Report. Click the pin beside "Masjid Prayer Times Chart"; it appears under "My Favorite Reports".
 
 #### [5.2] Close
-**Say:** That's your masjid's reports. Next, see what the dashboard shows you, or fine-tune your Iqamah and Jumu'ah times.
+**Say:** Your masjid's reports are ready to print and share. Next, watch 12.6, Dashboards for admins and teachers, or 04.2, Set Iqamah and Jumu'ah times.
 **Show:** End card with two tiles: "12.6 Dashboards for admins and teachers" and "04.2 Set iqamah and jumu’ah times".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 3 changes: [1.1] second-person opening; thin [3.3] ("Tap Download") merged into [3.2]; [5.2] result confirmed, "fine-tune" dropped, end-card videos named by number
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes

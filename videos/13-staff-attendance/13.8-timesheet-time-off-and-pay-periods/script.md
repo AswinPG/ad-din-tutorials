@@ -26,12 +26,14 @@ Check your recorded day in the Ad-Din app, ask for time off, and see when each p
 
 ## Covers
 - Day view, Request time off, pay periods
+- The correction sheet on the day view (Doesn't look right → What happened?)
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
 - Staff member Aisha Rahman, already past the first-time notice, with today's taps: Checked in 8:33, Break started 12:01, Break ended 12:28, Checked out 3:03, all in zone
 - Yesterday with one history entry (an administrator set the hours by hand, with a reason)
 - An earlier provisional day recorded by the system, so "Doesn't look right" shows
+- The organisation's correction reason list (defaults), so the What happened? sheet has choices
 - Leave categories Annual leave (Paid), Sick leave (Paid), Unpaid leave, Other; request typed in the video: 16 to 18 of next month, Annual leave, note "Family wedding out of town."
 - Monthly pay periods: the current one in progress, last month signed off, upcoming ones projected
 
@@ -45,11 +47,11 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. Before you start
 #### [1.1] Opening
-**Say:** Staff Attendance also shows your recorded hours, lets you ask for time off, and tells you when you'll be paid. This video shows staff where to find each one.
+**Say:** Staff Attendance also shows your recorded hours, lets you ask for time off, and tells you when you'll be paid. In this video for staff and teachers, you'll find each one.
 **Show:** Title card: "Timesheet, time off and pay periods".
 
 #### [1.2]
-**Say:** You're already set up and recording your time. Open **My Attendance**. The tabs along the bottom are **Today**, **Timesheet**, **Time off** and **Pay periods**.
+**Say:** You're already set up and recording your time. Open the menu, then **My Attendance**. The tabs along the bottom are **Today**, **Timesheet**, **Time off** and **Pay periods**.
 **Show:** Phone frame. Menu → My Attendance. Spotlight the four tabs at the bottom.
 
 ### 2. Your day in detail
@@ -66,8 +68,12 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Tap the previous-day arrow to open yesterday. Spotlight the box "These hours were set by …" with its reason, above the tabs. Then tap "History" and spotlight "Your hours for this day were set by hand."
 
 #### [2.4]
-**Say:** Use the arrows to move between days. If the system recorded a day for you and it looks wrong, tap **Doesn't look right** and tell your administrator what happened.
-**Show:** Step back to the provisional day. Spotlight "Doesn't look right"; don't send.
+**Say:** Use the arrows to move between days. If the system recorded a day for you and it looks wrong, tap **Doesn't look right**.
+**Show:** Step back to the provisional day. Spotlight the sentence above the button, then tap "Doesn't look right".
+
+#### [2.4a] What happened?
+**Say:** In **What happened?**, pick the closest answer, add a note if you like, and tap **Send**. Your administrator reviews the day, and you'll see their answer here.
+**Show:** The "What happened?" sheet rises over the dimmed day. Tap the first answer, type a short note under "Add a note (optional)", tap "Send". The sheet closes; the day now says the administrator will review it.
 
 ### 3. Ask for time off
 #### [3.1] Request time off
@@ -93,9 +99,10 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 5. Next
 #### [5.1] Close
-**Say:** Now you know where your hours, time off and pay dates live. If anything looks wrong, tell your administrator right from the app.
+**Say:** Now you know where to find your hours, time off and pay dates. If anything looks wrong, tell your administrator from the app. To record your day, watch 13.7, Check in, breaks and check out.
 **Show:** End card: "13.7 Check in, breaks and check out".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 4 changes: [1.1] second-person opening; [1.2] menu path; [5.1] "live" idiom dropped, end card named by number; fold: new [2.4a] correction sheet (Doesn't look right → What happened? → Send) on the day view (Covers + demo data)
 - 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: [2.3] "These hours were set by …" and its reason sit on the day itself, above the tabs; the History tab lists "Your hours for this day were set by hand."

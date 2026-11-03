@@ -39,7 +39,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. Before you start
 #### [1.1] Opening
-**Say:** Before staff can record their time, each one needs a shift, a zone and a tracking mode. This video shows an admin how to set them up.
+**Say:** Before staff can record their time, each one needs a shift, a zone and a tracking mode. In this video for organisation admins, you'll give them all three.
 **Show:** Title card: "Set up staff and shifts".
 
 #### [1.2]
@@ -48,7 +48,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 2. Where shifts come from
 #### [2.1] Two sources
-**Say:** Open **Staff Attendance**, then **Shifts**. Each staff member gets their shift from one of two places: a **Shift template**, or the **Class routine**.
+**Say:** In the **Admin Portal**, open **Staff Attendance**, then **Shifts**. Each staff member gets their shift from one of two places: a **Shift template**, or the **Class routine**.
 **Show:** Sidebar → Admin Portal → Staff Attendance → Shifts. Spotlight the box "Choose how staff shifts are scheduled".
 
 #### [2.2]
@@ -61,7 +61,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Click "New template". Type "Office hours" in Name.
 
 #### [3.2] Weekly pattern
-**Say:** In the **Weekly pattern**, set Monday's hours, then tap **Copy Monday to working days**. Switch a day off to make it a rest day.
+**Say:** In the **Weekly pattern**, set Monday's hours, then tap **Copy Monday to working days**. Days you leave off are rest days.
 **Show:** On Monday click "Add"; Work is selected. Set Starts 8:30 and Ends 4:30, click "Add hours". Click "Copy Monday to working days"; Tuesday to Friday fill in. Saturday and Sunday stay Off.
 
 #### [3.3] Breaks
@@ -74,7 +74,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 4. Link staff
 #### [4.1] Link staff
-**Say:** On the template's card, tap **Link staff**. Tick everyone who should follow this pattern, and confirm.
+**Say:** On the template's card, tap **Link staff**. Tick everyone who should follow this pattern, then tap the link button, which shows how many you picked.
 **Show:** Click "Link staff". The dialog "Link "Office hours" to staff" opens. Tick Maryam Ali and Bilal Ahmed (each marked "Not set up yet — linking also sets them up"); click "Link 2 staff".
 
 #### [4.2]
@@ -117,9 +117,10 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 7. Next
 #### [7.1] Close
-**Say:** Your staff now have shifts, a zone and a tracking mode. Next, choose your attendance rules, or see how staff check in from their phones.
+**Say:** Your staff now have shifts, a zone and a tracking mode. Next, watch 13.4, Attendance settings and leave, or 13.7, Check in, breaks and check out.
 **Show:** End card with two tiles: "13.4 Attendance settings and leave" and "13.7 Check in, breaks and check out".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 5 changes: [1.1] second-person opening; [2.1] full sidebar path; [3.2] rest-day line matches the Show (days left off, no switch tapped); [4.1] count button described as the style guide asks; [7.1] end-card tiles named by number
 - 2026-11-03 · validator · checked against master d36d69ed8 · 6 fixes: template hours/breaks use Add → Work/Break → Add hours/Add break, break Paid/Unpaid toggle, linking sets Maryam and Bilal to Shift template + Auto (so [6.5] opens her on Set up and only adds the zone), Yusuf must already be on Class routine for the greyed picker row, linked card text, demo data for the readiness warning

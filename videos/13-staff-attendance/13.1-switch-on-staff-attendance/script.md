@@ -21,6 +21,7 @@ Switch on Staff Attendance for your organisation, clear the checks it runs first
 
 ## Covers
 - The switch, the “Before switching on” checks, quick links, Overview cards
+- Documents for your staff (Collection notice, Monitoring-policy starter), from the quick link
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
@@ -39,7 +40,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. Before you start
 #### [1.1] Opening
-**Say:** Staff Attendance lets your staff check in and out from their phones, and gives you their hours, ready for payroll. This video shows an admin how to switch it on.
+**Say:** Staff Attendance lets your staff check in and out from their phones, and gives you their hours, ready for payroll. In this video for organisation admins, you'll switch it on.
 **Show:** Title card: "Switch on Staff Attendance".
 
 #### [1.2]
@@ -48,7 +49,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 2. Find the switch
 #### [2.1] Organization Management
-**Say:** Open **Organization Management**, find your organisation, and tap **Manage**.
+**Say:** In the **Admin Portal**, open **Organization Management**, find your organisation, and tap **Manage**.
 **Show:** Sidebar → Admin Portal → Organization Management. Click "Manage" on the demo madrasah's card.
 
 #### [2.2] Services tab
@@ -73,12 +74,8 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Click "Set to Manual only" beside Bilal Ahmed. His line leaves the list and the checks reload to "Everyone set to record automatically has a schedule today." Close the popup.
 
 #### [3.4] Switched on
-**Say:** Tap the switch again. This time it stays on.
-**Show:** Click the switch. It stays on.
-
-#### [3.5]
-**Say:** If you're the only administrator, Ad-Din suggests adding a second one, so pay periods can still be signed off while you're away.
-**Show:** The toast "Staff Attendance is on. With only one administrator…" Hold on it.
+**Say:** Tap the switch again. This time it stays on. If you're the only administrator, Ad-Din suggests adding a second one, so pay periods can still be signed off while you're away.
+**Show:** Click the switch. It stays on. The toast "Staff Attendance is on. With only one administrator…" appears; hold on it.
 
 #### [3.6] No address yet
 **Say:** If there's no address on file, Ad-Din first asks **Where is the organisation?** Search for the address, check the time zone, and tap **Save and switch on**.
@@ -99,7 +96,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 5. The Overview page
 #### [5.1] Overview
-**Say:** Everything else lives under **Staff Attendance** in the menu: in the **Admin Portal** for a madrasah, or under **Masjid** for a masjid. It opens on **Overview**.
+**Say:** You'll find everything else under **Staff Attendance** in the menu: in the **Admin Portal** for a madrasah, or under **Masjid** for a masjid. It opens on **Overview**.
 **Show:** Sidebar → Admin Portal → Staff Attendance. The Overview page opens; spotlight the section list on the left.
 
 #### [5.2]
@@ -116,9 +113,10 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 6. Next
 #### [6.1] Close
-**Say:** Staff Attendance is now on, and the Overview shows what's left to set up. Next, draw your work zones, then set up your staff and shifts, and choose your rules.
+**Say:** Staff Attendance is now on, and the Overview shows what's left to set up. Next, watch 13.2, Draw work zones, 13.3, Set up staff and shifts, and 13.4, Attendance settings and leave.
 **Show:** End card with three tiles: "13.2 Draw work zones", "13.3 Set up staff and shifts" and "13.4 Attendance settings and leave".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 5 changes: [1.1] second-person opening; [2.1] full sidebar path; thin [3.5] merged into [3.4]; [5.1] "lives under" idiom removed; [6.1] all three end-card tiles named by number; fold: Documents for your staff added to Covers (already shown in [4.2], labels checked)
 - 2026-11-03 · validator · checked against master d36d69ed8 · 2 fixes: [3.2] refusal toast shown, [3.3] "is now Manual only" is screen-reader only, so show the line leaving the list instead

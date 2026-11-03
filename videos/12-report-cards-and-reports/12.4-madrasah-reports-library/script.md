@@ -21,6 +21,7 @@ Find, run and download the madrasah reports you need, from Hifz progress and att
 ## Covers
 - Hifz, attendance, progress, payment and class reports
 - pinning reports
+- library, interview, exam and people-details reports (one line)
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
@@ -30,6 +31,7 @@ Find, run and download the madrasah reports you need, from Hifz progress and att
 - The Hifz Tracker's Subject Mapping Configuration (gear button) already saved for "Hifz Boys A": Sabaq / Lesson Subject "Quran Hifz", Juz/Para Completion Approval Subject "Juz Completion" (without it the subjects stay empty and a toast asks to set them)
 - Term "Term 1 2026–27" with attendance taken on most days, including a few absences and lates
 - Academic Activities with marks for Yusuf Rahman in Term 1
+- The madrasah's Exam Marks setting on, so the Exam Reports card shows in [5.5]
 - No pinned reports at the start
 
 ## Script
@@ -42,7 +44,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. Before you start
 #### [1.1] Opening
-**Say:** Ad-Din keeps a library of ready-made reports for your madrasah: Hifz, attendance, progress, class lists and more. This video shows admins and teachers how to run them.
+**Say:** Ad-Din keeps a library of ready-made reports for your madrasah: Hifz, attendance, progress, class lists and more. In this video for admins and teachers, you'll run them and pin your favourites.
 **Show:** Title card: "Madrasah reports library".
 
 #### [1.2]
@@ -105,6 +107,10 @@ See docs/SCRIPT-FORMAT.md.
 **Say:** If your madrasah collects fees in Ad-Din, **Payment Reports** such as the **Accounts Receivable Report** show what's owed.
 **Show:** Sidebar → Reports → Madrasah Report. Spotlight the "Payment Reports" card; don't run it.
 
+#### [5.5] More reports
+**Say:** The library also has **Library Reports**, **Interview Reports** for parent-teacher meetings, **Exam Reports**, and **Role Based Access Reports**, which list your teachers, parents and administrators.
+**Show:** Scroll down the library; spotlight the Library Reports, Interview Reports, Exam Reports and Role Based Access Reports cards in turn. Don't run them.
+
 ### 6. Pin your favourites
 #### [6.1] Pin
 **Say:** Tap the pin beside a report you use often. It also appears under **My Favorite Reports**, so you can run it from the top.
@@ -120,9 +126,10 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** The library with "Attendance by Class-Section" pinned at the top.
 
 #### [7.2] Close
-**Say:** Next, see the dashboards for admins and teachers, or how to release report cards to parents.
+**Say:** Next, watch 12.6, Dashboards for admins and teachers, or 12.3, Release report cards to parents.
 **Show:** End card with two tiles: "12.6 Dashboards for admins and teachers" and "12.3 Release report cards to parents".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 3 changes: [1.1] second-person opening; [7.2] end-card videos named by number; fold: new [5.5] names Library, Interview, Exam and Role Based Access Reports (Covers + demo data: Exam Marks setting on)
 - 2026-11-03 · validator · checked against master d36d69ed8 · 4 fixes: [3.2] Hifz Tracker subjects fill in from the class's gear-button Subject Mapping Configuration (not pickable) and a student must be picked; [2.2] Admin doesn't show every report; [6.1] a pinned report also appears under My Favorite Reports (it doesn't move); demo data adds the Hifz class flag and subject mapping

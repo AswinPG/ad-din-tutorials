@@ -21,6 +21,7 @@ Read the widgets on your dashboard as an admin or a teacher, pin Quick Actions, 
 
 ## Covers
 - Widgets, Quick Actions, Manage Dashboard Tiles
+- The admin section of the app home: Waiting on you, with Review and Nudge
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
@@ -30,6 +31,7 @@ Read the widgets on your dashboard as an admin or a teacher, pin Quick Actions, 
 - Two upcoming events and one holiday this month; two recent messages; today's prayer times
 - Masjid side with demo donations
 - Staff Attendance switched off, so the Attendance box shows student attendance only
+- The same account on the app (phone frame), Admin selected on the app home, with two enrolment applications waiting and one class without attendance today, so Waiting on you shows both rows
 - No Quick Actions pinned at the start; Payment and Web Analytics tiles switched off before recording (Payment Module on hold, website is an add-on)
 
 ## Script
@@ -42,11 +44,11 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. Before you start
 #### [1.1] Opening
-**Say:** Your dashboard is the first page you see on the web. This video shows admins and teachers what each box tells you, and how to make the page your own.
+**Say:** Your dashboard is the first page you see on the web. In this video for admins and teachers, you'll learn what each box tells you, and how to make the page your own.
 **Show:** Title card: "Dashboards for admins and teachers".
 
 #### [1.2]
-**Say:** You're signed in, and you know your way around the sidebar. Tap **Dashboard** at any time to come back here.
+**Say:** You're signed in to Ad-Din on the web. Tap **Dashboard** in the sidebar at any time to return here.
 **Show:** Sidebar → Dashboard. The dashboard loads.
 
 ### 2. The top of the page
@@ -94,10 +96,10 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Type "Report" in "Search modules..."; click "Pin" beside Report Builder (it turns to "Pinned"). Type "Attendance"; pin it. Click "Done".
 
 #### [5.3]
-**Say:** Each shortcut is now a card on your dashboard. To remove one, open the list again and tap **Pinned**.
+**Say:** Each shortcut is now a card on your dashboard; tap one to open that page. To remove one, open the list again and tap **Pinned**.
 **Show:** The two cards appear under Quick Actions; click "Report Builder" to show it opens, then go back.
 
-### 6. Manage Dashboard Tiles
+### 6. Manage Dashboard Tiles, and the app home
 #### [6.1]
 **Say:** To choose which boxes you see, tap **Manage Dashboard Tiles**. Each tile has a switch.
 **Show:** Click "Manage Dashboard Tiles" on the right; the list of switches opens.
@@ -106,15 +108,24 @@ See docs/SCRIPT-FORMAT.md.
 **Say:** Turn off what you don't need, and the box disappears straight away. Your choice is saved to your account, so it follows you on any computer.
 **Show:** Switch off "Event Heatmap"; the heatmap disappears. Switch it back on. Close the panel.
 
+#### [6.3] On the app
+**Say:** In the Ad-Din app, admins get a home screen of their own. Tap **Admin** at the top, and **Waiting on you** lists what needs you today.
+**Show:** Phone frame: the app home. Tap "Admin" in the role tabs. Scroll to the "Waiting on you" card.
+
+#### [6.4]
+**Say:** Beside **Enrollment applications**, tap **Review** to answer new applications. **Classes without attendance** names the classes not marked today; **Nudge** opens their attendance.
+**Show:** Spotlight the "Enrollment applications" row and its "Review", then the "Classes without attendance" row and its "Nudge". Tap "Nudge"; the attendance page opens. Go back.
+
 ### 7. Next
 #### [7.1] Done
 **Say:** Your dashboard now shows what matters to you, with your favourite pages one tap away.
 **Show:** The tidy dashboard with two Quick Actions.
 
 #### [7.2] Close
-**Say:** To dig into the numbers behind these boxes, see the madrasah reports library. To finish report cards, see how to release them to parents.
+**Say:** For the numbers behind these boxes, watch 12.4, Madrasah reports library. To finish report cards, see 12.3, Release report cards to parents.
 **Show:** End card with two tiles: "12.4 Madrasah reports library" and "12.3 Release report cards to parents".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 5 changes: [1.1] second-person opening; [1.2] "know your way around" idiom removed; [5.3] Say now matches the Show (tap a card to open it); [7.2] "dig into" dropped, videos named by number; fold: new [6.3]/[6.4] admin app home "Waiting on you" with Review and Nudge (Covers + demo data)
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes

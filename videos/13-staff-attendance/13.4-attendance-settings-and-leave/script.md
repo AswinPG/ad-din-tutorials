@@ -39,7 +39,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. Before you start
 #### [1.1] Opening
-**Say:** Staff Attendance follows your rules: pay periods, grace time, breaks, and the lists your staff pick from. This video shows an admin where to set them.
+**Say:** Staff Attendance follows your rules: pay periods, grace time, breaks, and the lists your staff pick from. In this video for organisation admins, you'll set them.
 **Show:** Title card: "Attendance settings and leave".
 
 #### [1.2]
@@ -48,7 +48,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 2. Pay period
 #### [2.1] Settings
-**Say:** Open **Staff Attendance**, then **Settings**. The groups are listed across the top, starting with **Pay period**.
+**Say:** In the **Admin Portal**, open **Staff Attendance**, then **Settings**. The groups are listed across the top, starting with **Pay period**.
 **Show:** Sidebar → Admin Portal → Staff Attendance → Settings. Spotlight the row of setting groups.
 
 #### [2.2] Payroll period
@@ -113,9 +113,10 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 7. Next
 #### [7.1] Close
-**Say:** Your rules are set. Next, see how to review the days that need a decision, and how to lock a pay period for payroll.
+**Say:** Your rules are set. Next, watch 13.5, Review the days that need a decision, and 13.6, Lock a pay period and send payroll.
 **Show:** End card with two tiles: "13.5 Review the days that need a decision" and "13.6 Lock a pay period and send payroll".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 3 changes: [1.1] second-person opening; [2.1] full sidebar path; [7.1] end-card tiles named by number
 - 2026-11-03 · validator · checked against master d36d69ed8 · 3 fixes: the three lists start collapsed (open each one), list order on screen is reasons → leave categories → correction reasons, a new category starts as "New category", Unpaid

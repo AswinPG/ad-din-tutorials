@@ -41,7 +41,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. Before you start
 #### [1.1] Opening
-**Say:** Every report card in Ad-Din starts with a mapping. It links a report card template to your classes, subjects, teachers and terms. This video shows a madrasah admin how to map one.
+**Say:** Every report card in Ad-Din starts with a mapping, which links a report card template to your classes, subjects, teachers and terms. In this video for madrasah admins, you'll map one.
 **Show:** Title card: "Map a report card template".
 
 #### [1.2]
@@ -67,7 +67,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Type "Term Report" in Report Name. Spotlight the "Take Class Name as Report Name" choice. Type "Progress Report" in Title.
 
 #### [3.3] Grades Mapping
-**Say:** Each template asks for slightly different things. The grades nine to twelve template, for example, adds **Grades Mapping**, where you match each grade to one of your classes.
+**Say:** Each template asks for slightly different things. The grades nine to twelve template, for example, adds **Grades Mapping**, where you match each grade to one of your classes. Then switch back to your template.
 **Show:** Short aside: switch the template to "Grades 9-12 Provincial Report"; the "Grades Mapping" box appears with Grade 9 to Grade 12. Spotlight it, then switch back to the Activities-Based Evaluation template and re-pick the grade set.
 
 #### [3.4] Release date
@@ -75,7 +75,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Spotlight "Release & Translation". Click "Pick a date" and choose the end-of-term date.
 
 #### [3.5]
-**Say:** To print a second language beside English, open **No Translation** and pick one. Ad-Din translates the card with AI.
+**Say:** To print a second language beside English, open the list that shows **No Translation** and pick a language. Ad-Din translates the card with AI.
 **Show:** Open the secondary language list (shows "No Translation"); hover "Arabic", then close it without changing.
 
 ### 4. Classes and subjects
@@ -88,7 +88,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Scroll to "Element Mapping". In the "Hifz Boys A" card, pick "Ustadh Bilal Ahmed" for Teacher and "Quran Hifz" for Subject 1. Repeat for "Hifz Girls A".
 
 #### [4.3]
-**Say:** Need more subjects on the card? Tap **Add Subject**, and a new row appears in every class.
+**Say:** For more subjects on the card, tap **Add Subject**. A new row appears in every class; pick its subject there too.
 **Show:** Click "Add Subject" twice; pick "Tajweed" and "Islamic Studies" in the new rows for both classes.
 
 ### 5. Terms
@@ -97,7 +97,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Scroll to "Terms Mapping". Open "Select Academic Term"; pick "Term 1 2026–27".
 
 #### [5.2]
-**Say:** When the next term begins, come back to this mapping and tap **Add Term 2**. The card then shows both terms side by side.
+**Say:** When the next term begins, return to this mapping and tap **Add Term 2**. The card then shows both terms side by side.
 **Show:** Spotlight the "Add Term 2" button; don't click.
 
 ### 6. Frame and colours
@@ -132,9 +132,10 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Report Builder list with "Term Report"; spotlight its "Select" button.
 
 #### [8.2] Close
-**Say:** Next, see how teachers write comments and mark cards ready, and how you release them to parents.
+**Say:** Next, watch 12.2, Write comments and mark reports ready, and then 12.3, Release report cards to parents.
 **Show:** End card with two tiles: "12.2 Write comments and mark reports ready" and "12.3 Release report cards to parents".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 6 changes: [1.1] second-person opening for madrasah admins; [3.3] Say now mentions switching back (matches Show); [3.5] clearer "list that shows No Translation"; [4.3] elliptical question removed, new rows' subject picks said; [5.2] "come back to" → "return to"; [8.2] end card tiles named by number
 - 2026-11-03 · validator · checked against master d36d69ed8 · 4 fixes: [3.1]/[3.2] template chosen before name and title (Title box only appears for that template); [7.3] Save in the signature pad already stores it, no Update; demo frames are Ad-Din's built-in ones

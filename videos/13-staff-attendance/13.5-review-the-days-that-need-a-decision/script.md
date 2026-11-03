@@ -8,7 +8,6 @@ status: scripted
 stage: Daily
 flags:
   - "Is Staff Attendance live? (series.yaml decision) Confirm before publishing"
-  - "Covers names Approve, Adjust, Reject and Dismiss buttons. On master the Review page makes one decision per day instead: you pick an answer per issue (keep as recorded, or enter a time) and tap Save decision, or tick days and tap Accept. Approve and Reject remain only for time off requests; there is no Dismiss button. The script shows the real flow."
 ---
 
 # 13.5 Review the days that need a decision
@@ -21,7 +20,7 @@ Work through the Review list: open a day, make one decision for it, accept simpl
 
 ## Covers
 - Review list types
-- Approve, Adjust, Reject, Dismiss
+- One decision per day: pick an answer for each issue and Save decision, or tick simple days and Accept; Approve or Reject only for time off requests
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
@@ -40,7 +39,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. Before you start
 #### [1.1] Opening
-**Say:** Most days settle themselves. When the system can't settle one, such as a forgotten check-out, it waits for you. This video shows an admin how to decide those days.
+**Say:** Most days settle themselves. When the system can't settle one, such as a forgotten check-out, it waits for you. In this video for organisation admins, you'll decide those days.
 **Show:** Title card: "Review the days that need a decision".
 
 #### [1.2]
@@ -49,7 +48,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 2. The Review list
 #### [2.1] One row per day
-**Say:** Open **Staff Attendance**, then **Review**. Each row is one person's day, grouped by staff member. Tap **Day** to group them by date instead.
+**Say:** In the **Admin Portal**, open **Staff Attendance**, then **Review**. Each row is one person's day, grouped by staff member. Tap **Day** to group them by date instead.
 **Show:** Sidebar → Admin Portal → Staff Attendance → Review. Spotlight the list grouped by staff. Click "Day", then "Staff" again.
 
 #### [2.2] To decide and Decided
@@ -107,9 +106,10 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 7. Next
 #### [7.1] Close
-**Say:** Your review list is clear. When nothing is left to decide in a pay period, you can lock it and send the hours to payroll.
+**Say:** Your review list is clear. When nothing is left to decide in a pay period, you can lock it and send the hours to payroll. See how in 13.6, Lock a pay period and send payroll.
 **Show:** Off camera, decide the days left open (keep Bilal Ahmed's absence with "Keep as absent"; accept Yusuf Patel's two-issue day as recorded). Click "To decide": "Nothing left to decide". End card: "13.6 Lock a pay period and send payroll".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 4 changes: plan fix: Covers rewritten to the per-day decision flow (Save decision, bulk Accept, Approve/Reject only for time off) and the mismatch flag dropped; [1.1] second-person opening; [2.1] full sidebar path; [7.1] end card named by number
 - 2026-11-03 · validator · checked against master d36d69ed8 · 2 fixes: "will be emailed" comes from changing a time, not the payroll recipient (demo data), [7.1] Bilal's absence and Yusuf's two-issue day were never decided, so they are decided off camera before "Nothing left to decide"
