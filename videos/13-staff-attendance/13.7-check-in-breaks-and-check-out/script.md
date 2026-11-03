@@ -62,7 +62,7 @@ See docs/SCRIPT-FORMAT.md.
 ### 3. The first time
 #### [3.1] What's recorded
 **Say:** The first time, Ad-Din shows **What's recorded when you tap**.
-**Show:** Tap the clock card. The notice opens; zoom on its title.
+**Show:** On the clock card, spotlight "Before your first tap, read what Staff Attendance records about you." Tap "Read it now". The notice opens; zoom on its title.
 
 #### [3.2]
 **Say:** Your location is read only when you tap **Check in** or **Check out**. It's never tracked in the background. When you've read it, tap **Got it**.
@@ -124,3 +124,4 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: [3.1] the notice opens from "Read it now" on the clock card (or from My Attendance), not from tapping the card

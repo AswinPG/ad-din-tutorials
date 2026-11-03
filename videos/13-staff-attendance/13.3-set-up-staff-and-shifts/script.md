@@ -25,7 +25,8 @@ Give every staff member a shift, from a shift template or the class routine, plu
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
 - Demo madrasah with Staff Attendance on, zone "Main building", and a current academic term "Autumn Term" plus the next term "Spring Term"
 - Class routine for the current term with teacher Yusuf Patel
-- Staff: Yusuf Patel (Teacher, class routine), Maryam Ali (Staff, office), Bilal Ahmed (Staff, caretaker), all on the Not set up tab at the start
+- Staff: Yusuf Patel (Teacher; Shift source already "Class routine", so the Link staff picker greys him out), Maryam Ali (Staff, office) and Bilal Ahmed (Staff, caretaker) with no Shift source; all three have no tracking mode, so all start on the Not set up tab
+- Autumn Term ends within the next 14 days and Spring Term has no class routine for Yusuf yet, so the Staff page shows the readiness summary ("will fail") in [6.6]
 - No shift templates at the start; "Office hours" (Mon–Fri 8:30–4:30, unpaid Lunch break 12:00–12:30, term Autumn Term) is built in the video
 
 ## Script
@@ -61,11 +62,11 @@ See docs/SCRIPT-FORMAT.md.
 
 #### [3.2] Weekly pattern
 **Say:** In the **Weekly pattern**, set Monday's hours, then tap **Copy Monday to working days**. Switch a day off to make it a rest day.
-**Show:** Set Monday 8:30 to 4:30. Click "Copy Monday to working days"; Tuesday to Friday fill in. Saturday and Sunday stay Off.
+**Show:** On Monday click "Add"; Work is selected. Set Starts 8:30 and Ends 4:30, click "Add hours". Click "Copy Monday to working days"; Tuesday to Friday fill in. Saturday and Sunday stay Off.
 
 #### [3.3] Breaks
-**Say:** Tap **Add break** for lunch. A **Fixed window** has set times, and a **Floating allowance** is just a length. Mark each break **Paid** or **Unpaid**.
-**Show:** On Monday click "Add break". Name it "Lunch", Fixed window, 12:00 to 12:30, Unpaid. Copy Monday to working days again.
+**Say:** For lunch, tap **Add** again and choose **Break**. A **Fixed window** has set times, and a **Floating allowance** is just a length. Breaks start **Paid**; tap it to make one **Unpaid**, then tap **Add break**.
+**Show:** On Monday click "Add", then "Break". Break name "Lunch", Fixed window, Starts 12:00, Ends 12:30; click "Paid" so it reads "Unpaid". Click "Add break". Click "Copy Monday to working days" again.
 
 #### [3.4] Terms
 **Say:** For a madrasah, choose up to five **Terms**. Staff on this template only get shifts on dates inside those terms. Then tap **Save**.
@@ -74,11 +75,11 @@ See docs/SCRIPT-FORMAT.md.
 ### 4. Link staff
 #### [4.1] Link staff
 **Say:** On the template's card, tap **Link staff**. Tick everyone who should follow this pattern, and confirm.
-**Show:** Click "Link staff". The dialog "Link "Office hours" to staff" opens. Tick Maryam Ali and Bilal Ahmed; click "Link 2 staff".
+**Show:** Click "Link staff". The dialog "Link "Office hours" to staff" opens. Tick Maryam Ali and Bilal Ahmed (each marked "Not set up yet — linking also sets them up"); click "Link 2 staff".
 
 #### [4.2]
 **Say:** Teachers on the class routine aren't offered here. If you edit a template later, the change applies to everyone linked to it.
-**Show:** Before confirming, spotlight Yusuf Patel's greyed row: "Teacher — shift comes from the class routine, can't use a template". After linking, the card reads "Linked to 2 staff".
+**Show:** Before confirming, spotlight Yusuf Patel's greyed row: "Teacher — shift comes from the class routine, can't use a template". After linking, the card reads "Linked to 2 staff: Maryam Ali, Bilal Ahmed".
 
 ### 5. Timetable-based shifts
 #### [5.1] Class routine term
@@ -100,7 +101,7 @@ See docs/SCRIPT-FORMAT.md.
 
 #### [6.3] Shift source and zone
 **Say:** Choose their **Shift source**. Yusuf teaches, so he's on the **Class routine**. Then choose his **Zone**.
-**Show:** Click "Class routine". Click "Main building" under Zone.
+**Show:** "Class routine" is already ticked for Yusuf; spotlight it. Click "Main building" under Zone.
 
 #### [6.4] Tracking mode
 **Say:** Last, the **Tracking mode**. **Auto** gives them the clock button on their phone. With **Manual only**, an administrator enters their time. **Not tracked** leaves them out.
@@ -108,7 +109,7 @@ See docs/SCRIPT-FORMAT.md.
 
 #### [6.5]
 **Say:** Tap **Done**. Repeat for each person. Staff on a template show it under **Which pattern**. In a masjid, every shift comes from a template.
-**Show:** Click "Done". Open Maryam Ali: Shift template, Which pattern "Office hours", Main building, Auto. Click "Done".
+**Show:** Click "Done". Click the "Set up" tab and open Maryam Ali: linking already set Shift template, Which pattern "Office hours" and Auto. Click "Main building" under Zone. Click "Done".
 
 #### [6.6] Ready
 **Say:** Back on the **Set up** tab, each row shows **Ready**. If someone's schedule is about to run out, for example when a term ends, the top of the page warns you.
@@ -121,3 +122,4 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · validator · checked against master d36d69ed8 · 6 fixes: template hours/breaks use Add → Work/Break → Add hours/Add break, break Paid/Unpaid toggle, linking sets Maryam and Bilal to Shift template + Auto (so [6.5] opens her on Set up and only adds the zone), Yusuf must already be on Class routine for the greyed picker row, linked card text, demo data for the readiness warning

@@ -28,7 +28,7 @@ Work through the Review list: open a day, make one decision for it, accept simpl
 - Demo madrasah with Staff Attendance on and staff set up (Yusuf Patel, Maryam Ali, Bilal Ahmed)
 - Open review items this month: Yusuf Patel "Checked in, never checked out" (with his explanation "I was there, forgot to check out" and a note), the next day for Yusuf Patel with two issues ("Tapped outside the zone" and "Tapped outside the grace band"), Bilal Ahmed "Nothing recorded" (Absence), two Maryam Ali "Checked in late" days
 - Maryam Ali "Time off request, 3 days" (Annual leave, Paid, note "Family wedding out of town.")
-- Payroll recipient set, so the preview says the staff member will be emailed
+- Yusuf Patel has an email on his account; the preview says he will be emailed because the decision changes his time (the payroll recipient plays no part here)
 
 ## Script
 <!--
@@ -108,7 +108,8 @@ See docs/SCRIPT-FORMAT.md.
 ### 7. Next
 #### [7.1] Close
 **Say:** Your review list is clear. When nothing is left to decide in a pay period, you can lock it and send the hours to payroll.
-**Show:** Click "To decide": "Nothing left to decide". End card: "13.6 Lock a pay period and send payroll".
+**Show:** Off camera, decide the days left open (keep Bilal Ahmed's absence with "Keep as absent"; accept Yusuf Patel's two-issue day as recorded). Click "To decide": "Nothing left to decide". End card: "13.6 Lock a pay period and send payroll".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · validator · checked against master d36d69ed8 · 2 fixes: "will be emailed" comes from changing a time, not the payroll recipient (demo data), [7.1] Bilal's absence and Yusuf's two-issue day were never decided, so they are decided off camera before "Nothing left to decide"

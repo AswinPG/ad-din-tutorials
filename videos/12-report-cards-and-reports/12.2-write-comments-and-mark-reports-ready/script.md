@@ -62,7 +62,7 @@ See docs/SCRIPT-FORMAT.md.
 ### 3. Write the comment
 #### [3.1] Edit
 **Say:** Scroll down to **Comment**. To write it yourself, tap **Edit**, type your comment, and tap **Save**. A comment can be up to three hundred and fifty characters.
-**Show:** Scroll to the comment box. Click "Edit"; the "Edit Comment" window opens. Type two sentences; the counter shows "112/350". Click "Save". Toast "Comment saved successfully".
+**Show:** Scroll to the comment box. Click "Edit"; the "Edit Comment" window opens. Type two sentences; the counter shows "112/350". Click "Save". Toast "Successfully saved the academic report".
 
 #### [3.2] Write with AI
 **Say:** Or tap **Write with AI**. Ad-Din drafts a comment from the student's results.
@@ -74,7 +74,7 @@ See docs/SCRIPT-FORMAT.md.
 
 #### [3.4]
 **Say:** Tap **Insert** to add it after any existing comment, or **Replace** to swap it in.
-**Show:** Click "Replace". The comment appears on the card.
+**Show:** Ibrahim has no comment yet, so Replace is greyed out. Click "Insert". The comment appears on the card.
 
 ### 4. Mark it ready
 #### [4.1] Mark As Ready
@@ -95,13 +95,13 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Sidebar → Reports → Custom Comments Library. The "Comments Library" page opens.
 
 #### [5.2] Library and folder
-**Say:** Tap the plus button, name your library, and tap **Save**. Then open the menu beside **Folders & Levels** and tap **Add Root Folder**.
-**Show:** Click the "New library" plus; type "Hifz Comments" in Comment Library Name; click "Save". Click the dots by "Folders & Levels" → "Add Root Folder"; type "Quran"; "Save".
+**Say:** Tap the plus button, name your library, and tap **Save**. Choose it under **Select Library**, then open the menu beside **Folders & Levels** and tap **Add Root Folder**.
+**Show:** Click the "New library" plus; type "Hifz Comments" in Comment Library Name; click "Save". Pick "Hifz Comments" in the Select Library list (the menu only appears once it's chosen). Click the dots by "Folders & Levels" → "Add Root Folder"; type "Quran"; "Save".
 
 #### [5.3] Levels and variations
-**Say:** On the folder's menu, tap **Add Level**. Select the level, tap **Add Variation**, and type the comment. Write name in double curly brackets, and Ad-Din puts in the student's name.
-**Show:** Dots on "Quran" → "Add Level"; type "Excellent"; "Save". Click "Excellent"; click "Add Variation"; type "{{name}} recites with confidence and care."; "Save".
-**Caption:** On the folder's menu, tap Add Level. Select the level, tap Add Variation, and type the comment. Type {{name}} and Ad-Din puts in the student's name.
+**Say:** On the folder's menu, tap **Add Level**. Select the level, tap **Add Variation**, and type the comment. Write name in double curly brackets, and Ad-Din puts in the student's name. Then tap the level's **Save** to keep it.
+**Show:** Dots on "Quran" → "Add Level"; type "Excellent"; "Save". Click "Excellent"; click "Add Variation"; type "{{name}} recites with confidence and care."; "Save" in the pop-up (this only adds the row). Then click the level's own "Save" button beside Add Variation, which stores it.
+**Caption:** On the folder's menu, tap Add Level. Select the level, tap Add Variation, and type the comment. Type {{name}} and Ad-Din puts in the student's name. Then tap the level's Save to keep it.
 
 #### [5.4] Use it
 **Say:** On an older-template card, the **Comments Library** sits beside it. Choose your library, open a level, and drag a variation into a comment box.
@@ -118,3 +118,4 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · validator · checked against master d36d69ed8 · 4 fixes: [3.1] toast is "Successfully saved the academic report"; [3.4] Insert, not Replace (Replace is greyed when there's no comment yet); [5.2] pick the new library in Select Library before the Folders & Levels menu appears; [5.3] the level's Save is needed to store a variation

@@ -28,7 +28,7 @@ Map a report card template to your classes, subjects, teachers and terms, choose
 - Grade set "Madrasah Grades"; academic term "Term 1 2026–27" (and a later "Term 2" not yet mapped)
 - Classes "Hifz Boys A" and "Hifz Girls A", each with subjects "Quran Hifz", "Tajweed", "Islamic Studies" and a homeroom teacher ("Ustadh Bilal Ahmed", "Ustadha Maryam Ali")
 - Report templates as the dropdown lists them, including "Madrasah Islamic Studies Progress Report (Activities-Based Evaluation)" and "Grades 9-12 Provincial Report"
-- At least three report frames uploaded (so "Frame 1–3" show in the carousel)
+- At least three report frames in the carousel (so "Frame 1–3" show): Ad-Din's built-in frames, which every madrasah gets; the Upload Custom Frame button is hidden on master
 - The demo admin is also the principal set in the madrasah settings; no signature saved yet, drawn on camera with the mouse
 
 ## Script
@@ -58,13 +58,13 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Spotlight the columns "Report Name" and "Linked Template". Click "Map New Report"; the Report Mapping page opens.
 
 ### 3. Report details
-#### [3.1] Name and title
-**Say:** Type a **Report Name**, or tick **Take Class Name as Report Name**. The title box sets the heading printed at the top of the card.
-**Show:** Under Report Details, type "Term Report" in Report Name. Spotlight the "Take Class Name as Report Name" choice. Type "Progress Report" in Title.
+#### [3.1] Template and grade set
+**Say:** First choose the template. For a madrasah, the Activities-Based Evaluation progress report is the usual choice. Then pick your **Grade Set**.
+**Show:** Under Report Details, open "Select Template"; pick "Madrasah Islamic Studies Progress Report (Activities-Based Evaluation)". The Title box, the Grade Set box and the class-name choice appear. Open "Select Grade Set"; pick "Madrasah Grades".
 
-#### [3.2] Template and grade set
-**Say:** Now choose the template. For a madrasah, the Activities-Based Evaluation progress report is the usual choice. Then pick your **Grade Set**.
-**Show:** Open "Select Template"; pick "Madrasah Islamic Studies Progress Report (Activities-Based Evaluation)". Open "Select Grade Set"; pick "Madrasah Grades".
+#### [3.2] Name and title
+**Say:** Type a **Report Name**, or tick **Take Class Name as Report Name**. The title box sets the heading printed at the top of the card.
+**Show:** Type "Term Report" in Report Name. Spotlight the "Take Class Name as Report Name" choice. Type "Progress Report" in Title.
 
 #### [3.3] Grades Mapping
 **Say:** Each template asks for slightly different things. The grades nine to twelve template, for example, adds **Grades Mapping**, where you match each grade to one of your classes.
@@ -123,8 +123,8 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Top right "Profile" → "User Profile". On Personal info, open "Signature". Click the pen; "Sign here" opens. Draw a signature; click "Save".
 
 #### [7.3]
-**Say:** Then tap **Update**. Teachers keep **Add digital signature** ticked when they build the cards, and the signature prints on each one.
-**Show:** Click "Update". Cut to the Report Card Builder panel; spotlight the ticked "Add digital signature".
+**Say:** Tapping **Save** stores it straight away. Teachers keep **Add digital signature** ticked when they build the cards, and the signature prints on each one.
+**Show:** The pad closes, the signature shows in the box and a toast confirms it's saved (no need to click Update). Cut to the Report Card Builder panel; spotlight the ticked "Add digital signature".
 
 ### 8. Next
 #### [8.1] Done
@@ -137,3 +137,4 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · validator · checked against master d36d69ed8 · 4 fixes: [3.1]/[3.2] template chosen before name and title (Title box only appears for that template); [7.3] Save in the signature pad already stores it, no Update; demo frames are Ad-Din's built-in ones

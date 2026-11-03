@@ -66,11 +66,11 @@ See docs/SCRIPT-FORMAT.md.
 
 #### [3.2] Before switching on
 **Say:** If a check fails, the switch stays off and **Before switching on** opens. It shows what's ready, and who has no schedule today.
-**Show:** The switch flips back to off. The "Before switching on" popup opens. Spotlight the passed checks, then the line naming Bilal Ahmed.
+**Show:** The switch flips back to off, a toast says why, and the "Before switching on" popup opens. Spotlight the passed time-zone check, then the line naming Bilal Ahmed.
 
 #### [3.3]
 **Say:** Fix their schedule later, and for now tap **Set to Manual only**, so an administrator enters their time instead. You can set them back once they have a schedule.
-**Show:** Click "Set to Manual only" beside Bilal Ahmed. The note "Bilal Ahmed is now Manual only." shows and the checks reload. Close the popup.
+**Show:** Click "Set to Manual only" beside Bilal Ahmed. His line leaves the list and the checks reload to "Everyone set to record automatically has a schedule today." Close the popup.
 
 #### [3.4] Switched on
 **Say:** Tap the switch again. This time it stays on.
@@ -121,3 +121,4 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · validator · checked against master d36d69ed8 · 2 fixes: [3.2] refusal toast shown, [3.3] "is now Manual only" is screen-reader only, so show the line leaving the list instead

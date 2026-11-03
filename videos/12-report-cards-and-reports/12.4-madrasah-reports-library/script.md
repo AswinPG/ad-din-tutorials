@@ -26,7 +26,8 @@ Find, run and download the madrasah reports you need, from Hifz progress and att
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
 - Signed-in demo account that is Madrasah Admin and also a Teacher at the demo madrasah (so the Admin and Teacher buttons both show)
 - Class "Hifz Boys A", section "Section 1", teacher "Ustadh Bilal Ahmed", students "Yusuf Rahman", "Ibrahim Khan", "Zayd Hussain"
-- Hifz subjects set up: "Quran Hifz" (Sabaq / lesson) and "Juz Completion" (approval), with a few weeks of Hifz assignments for each student
+- "Hifz Boys A" marked as a Hifz class (the Hifz Tracker lists only Hifz classes), with subjects "Quran Hifz" and "Juz Completion" and a few weeks of Hifz assignments for each student
+- The Hifz Tracker's Subject Mapping Configuration (gear button) already saved for "Hifz Boys A": Sabaq / Lesson Subject "Quran Hifz", Juz/Para Completion Approval Subject "Juz Completion" (without it the subjects stay empty and a toast asks to set them)
 - Term "Term 1 2026–27" with attendance taken on most days, including a few absences and lates
 - Academic Activities with marks for Yusuf Rahman in Term 1
 - No pinned reports at the start
@@ -54,7 +55,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Sidebar → Reports → Madrasah Report. Spotlight the madrasah picker.
 
 #### [2.2] Your role
-**Say:** If you have more than one role, the buttons at the top switch the list. **Admin** shows every report; **Teacher** shows the ones a teacher can run.
+**Say:** If you have more than one role, the buttons at the top switch the list. **Admin** shows the admin reports; **Teacher** shows the ones a teacher can run.
 **Show:** Click "Teacher": the list gets shorter. Click "Admin" again.
 
 #### [2.3]
@@ -67,8 +68,8 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Click "Run" beside "Hifz Progress Report". The "Hifz Tracker" page opens.
 
 #### [3.2]
-**Say:** Choose the **CLASS** and **SECTION**, the Sabaq or lesson subject, and the subject where Juz completion is approved. The report loads for the first student.
-**Show:** Pick "Hifz Boys A", "Section 1", then "Quran Hifz" under SABAQ / LESSON SUBJECT and "Juz Completion" under JUZ/PARA COMPLETION APPROVAL SUBJECT. Yusuf Rahman's progress loads.
+**Say:** Choose the **CLASS** and **SECTION**. The Sabaq or lesson subject and the Juz completion subject fill in from the class's Hifz setup, which an admin saves once with the gear button. Then pick a student under **STUDENT**.
+**Show:** Pick "Hifz Boys A", "Section 1". "Quran Hifz" fills SABAQ / LESSON SUBJECT and "Juz Completion" fills JUZ/PARA COMPLETION APPROVAL SUBJECT by themselves (these boxes can't be changed here). Spotlight the gear at the top right. Open "Select Student" under STUDENT; pick "Yusuf Rahman". His progress loads.
 
 #### [3.3]
 **Say:** Use the arrows to move between students. Under **THIS REPORT**, download the student's report as a PDF or email it to the parents.
@@ -106,7 +107,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 6. Pin your favourites
 #### [6.1] Pin
-**Say:** Tap the pin beside a report you use often. It moves up to **My Favorite Reports**, so you can run it from the top.
+**Say:** Tap the pin beside a report you use often. It also appears under **My Favorite Reports**, so you can run it from the top.
 **Show:** Click the pin beside "Attendance by Class-Section", then beside "Hifz Progress Report". Both appear under "My Favorite Reports".
 
 #### [6.2]
@@ -124,3 +125,4 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · validator · checked against master d36d69ed8 · 4 fixes: [3.2] Hifz Tracker subjects fill in from the class's gear-button Subject Mapping Configuration (not pickable) and a student must be picked; [2.2] Admin doesn't show every report; [6.1] a pinned report also appears under My Favorite Reports (it doesn't move); demo data adds the Hifz class flag and subject mapping

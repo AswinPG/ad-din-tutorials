@@ -63,7 +63,7 @@ See docs/SCRIPT-FORMAT.md.
 
 #### [2.3] History
 **Say:** **History** shows anything the system or your administrator changed on this day, and why.
-**Show:** Tap the previous-day arrow to open yesterday, then tap "History". Spotlight "These hours were set by …" and the reason.
+**Show:** Tap the previous-day arrow to open yesterday. Spotlight the box "These hours were set by …" with its reason, above the tabs. Then tap "History" and spotlight "Your hours for this day were set by hand."
 
 #### [2.4]
 **Say:** Use the arrows to move between days. If the system recorded a day for you and it looks wrong, tap **Doesn't look right** and tell your administrator what happened.
@@ -98,3 +98,4 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: [2.3] "These hours were set by …" and its reason sit on the day itself, above the tabs; the History tab lists "Your hours for this day were set by hand."

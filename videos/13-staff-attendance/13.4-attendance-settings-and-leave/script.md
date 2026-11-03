@@ -27,7 +27,7 @@ Set your pay period, grace band, break and holiday rules, payroll email, and the
 - Grace band 10 minutes, unpaid; Track breaks on; Unended break closes after 30 minutes; Shift-end reminder on
 - Holiday suppression for shift templates off
 - Payroll recipient empty at the start; `payroll@demo-madrasah.example` typed in the video (never a real address)
-- Default lists: out-of-zone reasons, correction reasons, leave categories Annual leave, Sick leave, Unpaid leave, Other
+- Default lists: out-of-zone reasons, correction reasons, leave categories Annual leave (Paid), Sick leave (Paid), Unpaid leave (Unpaid), Other (Unpaid)
 
 ## Script
 <!--
@@ -97,15 +97,15 @@ See docs/SCRIPT-FORMAT.md.
 ### 6. Lists your staff see
 #### [6.1] Out-of-zone reasons
 **Say:** **Lists staff see** holds the choices your staff pick from. The **Out-of-zone reason list** appears when someone taps outside their zone. Tap **Add reason** to add your own.
-**Show:** Click "Lists staff see". Spotlight the out-of-zone reasons. Click "Add reason" and type "Home visit".
+**Show:** Click "Lists staff see". Click "Out-of-zone reason list" to open it (each list starts closed). Spotlight the reasons. Click "Add reason"; replace "New reason" with "Home visit".
 
 #### [6.2] Correction reasons
 **Say:** The **Correction reason list** appears when staff say a day isn't right, or record a late check-in. Reasons marked **Mandatory** always stay.
-**Show:** Scroll to "Correction reason list". Spotlight a locked reason.
+**Show:** Scroll past "Leave categories" to "Correction reason list" and click it to open it. Spotlight a locked reason with its "Mandatory" chip.
 
 #### [6.3] Leave categories
 **Say:** **Leave categories** is what staff choose from when they ask for time off. Mark each one **Paid** or **Unpaid**, and tap **Add a category** for a new one.
-**Show:** Scroll to "Leave categories": Annual leave, Sick leave, Unpaid leave, Other. Click "Add a category", type "Hajj leave", choose Unpaid.
+**Show:** Scroll back up and click "Leave categories" to open it: Annual leave, Sick leave, Unpaid leave, Other. Click "Add a category"; replace "New category" with "Hajj leave". It starts as Unpaid; spotlight the switch.
 
 #### [6.4] What your staff see
 **Say:** The **What your staff see** panel previews each rule as your staff will read it. Changes reach their phones the next time they open the app.
@@ -118,3 +118,4 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · validator · checked against master d36d69ed8 · 3 fixes: the three lists start collapsed (open each one), list order on screen is reasons → leave categories → correction reasons, a new category starts as "New category", Unpaid
