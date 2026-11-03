@@ -4,13 +4,17 @@ title: Your profile, notifications and GUID
 target: 4:00
 prereq:
   - "00.2"
-status: planned
+status: scripted
+flags:
+  - "Open decision 'People are added by GUID': scripted as the code works today (admins fetch a person by GUID; no email invites)"
+  - "The GUID has no copy button; viewers must select the text after tapping the eye icon"
+  - "The admin Add New User screens tell people to look under 'Settings > My Account > GUID', which no longer exists; the GUID is on Profile > Account information"
 ---
 
 # 00.5 Your profile, notifications and GUID
 
 ## Goal
-_What the viewer can do after watching, in one sentence. Written with the script._
+Update your profile, choose your notifications, change your email or password, find and share your GUID, and know where Delete Account is.
 
 ## You'll need
 <!-- Shown on the opening card. Generated from prereq/plan/switch if left empty. -->
@@ -20,6 +24,12 @@ _What the viewer can do after watching, in one sentence. Written with the script
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
+- Demo account "Yusuf Rahman" (`yusuf_rahman`) with a demo email (Verified), demo mobile and address, a profile picture, home masjid and madrasah set, and one followed organisation
+- A demo GUID for the account (never a real one)
+- Notification preferences: E-mail on, Push on
+- Demo passwords typed masked; the Change password submit can be skipped or mocked
+- The app (phone frame) for the gear icon and the This device section
+- Delete Account is shown only up to the confirm dialog, then Keep Account
 
 ## Script
 <!--
@@ -29,7 +39,86 @@ Optional **Caption:** overrides the subtitle text. Translations in i18n/<lang>.m
 See docs/SCRIPT-FORMAT.md.
 -->
 
-_Not scripted yet._
+### 1. Your profile
+#### [1.1] Opening
+**Say:** Your profile holds your details, your notification choices, your password, and your GUID: the code admins use to add you. Let's walk through it.
+**Show:** Title card: "Your profile, notifications and GUID".
+
+#### [1.2] Open it
+**Say:** On the web, tap **Profile** at the top right, then **User Profile**. In the app, tap the gear icon on the home screen.
+**Show:** Web top bar: click "Profile", then "User Profile". Phone frame: tap the gear icon on the app home screen. Both open the Profile page.
+
+### 2. Personal info
+#### [2.1] Your details
+**Say:** The **Personal info** tab starts with **Personal details**: your title, first, middle and last name, and a short biography. This is how your name appears across Ad-Din.
+**Show:** Personal info tab. Spotlight Salutation, First name, Middle name, Last name, Biography.
+
+#### [2.2]
+**Say:** Below it, **Address & contact** holds your address, mobile number and email. Make your changes and tap **Update**.
+**Show:** Open "Address & contact". Edit the demo city; click "Update".
+
+#### [2.3]
+**Say:** To change your photo, tap the pen on your picture. Teachers and admins can also add a **Signature** here, used on report cards.
+**Show:** Spotlight the pen icon on the profile card. Then spotlight the Signature section; don't open the pad.
+
+### 3. Home and followed organisations
+#### [3.1]
+**Say:** The **Home & Followed Orgs** tab shows your home masjid and madrasah, with **Change** buttons, and the organisations you follow, with **Edit**.
+**Show:** Click "Home & Followed Orgs". Spotlight both Change buttons, then Edit and the followed chip.
+
+### 4. Notifications
+#### [4.1] Email and push
+**Say:** Open **Preferences**. Under **Notification preferences**, turn **E-mail notification** and **Push notification** on or off. Each switch saves straight away.
+**Show:** Click the Preferences tab. Toggle "E-mail notification" off and back on.
+
+#### [4.2] On your phone
+**Say:** In the app, **This device** also shows whether this phone allows **Push notifications** and **Precise location**. Tap a row to allow it.
+**Show:** Phone frame: Preferences tab, spotlight the "This device" section and its two rows.
+
+### 5. Email and password
+#### [5.1] Email
+**Say:** To change your email, type it under **Update e-mail** and tap **Update**. Tap **Verify** to get a verification email.
+**Show:** Spotlight the Update e-mail box, the Verify and Update buttons. Don't submit a real address.
+
+#### [5.2]
+**Say:** The **Account information** card shows whether your email is **Verified**.
+**Show:** Open the Account information card on the left; zoom on the email row and its "Verified" badge.
+
+#### [5.3] Password
+**Say:** To change your password, fill in **Old password**, **New password** and **Confirm password**, then tap **Change**. The rules are under the heading.
+**Show:** Type masked demo passwords in the three boxes. Zoom on the rule text under "Change password". Hover "Change".
+**Caption:** Fill in Old password, New password and Confirm password, then tap Change.
+
+### 6. Your GUID
+#### [6.1] What it is
+**Say:** Your **GUID** is a long code that belongs only to your account. When a masjid or madrasah adds you as a teacher, parent, student, staff member or admin, they ask for it.
+**Show:** Card: "GUID = your account's unique code". Then the Account information card.
+
+#### [6.2] Where to find it
+**Say:** Open **Account information** on the left of your profile. Next to **GUID**, tap the eye icon to show the code.
+**Show:** Spotlight the GUID row: dots, then click the eye icon; the demo GUID appears. Zoom.
+
+#### [6.3] Share it
+**Say:** Select the whole code, copy it, and send it to your organisation's admin. Ad-Din doesn't send email invitations, so this is how they find you.
+**Show:** Select the GUID text and copy it. Show it pasted into a demo message to the admin.
+
+#### [6.4]
+**Say:** Only share your GUID with the people who run your masjid or madrasah. Tap the eye icon again to hide it.
+**Show:** Click the eye icon: the code hides.
+
+### 7. Delete your account
+#### [7.1]
+**Say:** At the bottom of **Preferences** is **Delete Account**. The next page explains what happens: you lose access, and any subscriptions are cancelled.
+**Show:** Scroll to the "Delete account" box; click "Delete Account". The "Delete My Account" page opens; spotlight the three points.
+
+#### [7.2]
+**Say:** Tap **Proceed**, then confirm with **Delete**. This can't be undone. If you change your mind, tap **Keep Account**.
+**Show:** Click "Proceed": the confirm dialog opens. Spotlight "Delete", then click "Keep Account".
+
+### 8. Next
+#### [8.1] Close
+**Say:** Your profile is up to date and you know where your GUID is. Next, take a quick tour of Ad-Din, or see how to get Ad-Din Premium for yourself.
+**Show:** End card with two tiles: "00.6 Finding your way around" and "02.2 Get Ad-Din Premium for yourself".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
