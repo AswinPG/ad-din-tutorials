@@ -12,6 +12,7 @@ flags:
   - Added by GUID, no email invite
   - "Open decision 'People are added by GUID': an existing account can only be added by its GUID, but Add New creates a new account and emails the person their username and a password (MasjidController AddAdmin → template 785010-MasjidNewAdminAdded). The decision text 'There are no email invites' should say this."
   - "The hint on Add New User says the GUID is under 'Settings > My Account > GUID'; no such menu exists (the GUID is on the profile page). Don't zoom on that hint."
+  - "The skills list on Manage Volunteer ([6.1]) is loaded from the signed-in admin's home masjid, not the masjid being managed (masjidNewVolunteer.ts loadSkills uses user.homeMasjidID). An admin of several masjids sees the wrong skills, or 'No home masjid found'. The demo admin's home masjid must be the demo masjid."
 ---
 
 # 03.3 Add admins, staff and volunteers to a masjid
@@ -28,7 +29,7 @@ Add other admins, staff and volunteers to your masjid, using their GUID if they 
 - fetch by GUID or Add New
 
 ## Demo data
-- Demo masjid admin account with Premium, admin of the demo masjid
+- Demo masjid admin account with Premium, admin of the demo masjid, with the demo masjid as its home masjid (the volunteer skills list loads from it)
 - Demo masjid with one admin (the demo admin), one staff member and one volunteer already listed
 - An existing demo account not yet linked to the masjid (for example "Bilal Ahmed") whose GUID is copied to the clipboard; its email and username show locked on the form
 - A new person to add as a volunteer (for example "Mr. Ibrahim Khan", username `ibrahim_khan`, a demo email address); the welcome email is not sent in the demo world
@@ -112,3 +113,4 @@ Add other admins, staff and volunteers to your masjid, using their GUID if they 
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: demo data, the admin’s home masjid must be the demo masjid (the volunteer skills list loads from it); flag added

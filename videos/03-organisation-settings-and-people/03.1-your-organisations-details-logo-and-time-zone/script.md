@@ -6,6 +6,8 @@ prereq:
   - "01.1"
 status: scripted
 plan: Free
+flags:
+  - "Masjid Details Save does nothing and shows no message when a required field other than the name is empty (Phone 01, Street, City, Postal/Zip Code, State, Country, or no map point from the address search): editMasjid submitForm only marks fields touched, and only Masjid Name has an error text. Phone 01 has no star. The demo masjid must have all of them filled, and [5.1] says Phone 01 is required."
 ---
 
 # 03.1 Your organisation’s details, logo and time zone
@@ -73,12 +75,12 @@ Keep your masjid’s or madrasah’s name, address, contact details, logos and t
 
 ### 5. Contact details and Save
 #### [5.1] Contact
-**Say:** Under **Organization Contact**, add your phone numbers and a **Mobile Number**. The **Email** is required.
-**Show:** Scroll to Organization Contact. Spotlight Phone 01, Phone 02, Fax, Mobile Number, then Email with its star.
+**Say:** Under **Organization Contact**, add your phone numbers and a **Mobile Number**. **Phone 01** and the **Email** are required.
+**Show:** Scroll to Organization Contact. Spotlight Phone 01 (required, though it has no star), Phone 02, Fax, Mobile Number, then Email with its star.
 
 #### [5.2] Save
 **Say:** Tap **Save**. Ad-Din confirms the change and takes you back to your list of organisations.
-**Show:** Click "Save". Confirmation message; the Organisation Management list returns.
+**Show:** Click "Save". An "Alert" window confirms the update; the Organisation Management list returns behind it. Click "Close".
 
 ### 6. Extra details for a madrasah
 #### [6.1] Madrasah tabs
@@ -109,3 +111,4 @@ Keep your masjid’s or madrasah’s name, address, contact details, logos and t
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · validator · checked against master d36d69ed8 · 2 fixes: Phone 01 is required on the masjid form ([5.1]); masjid Save confirms in an Alert you close ([5.2]); flag for the silent masjid Save

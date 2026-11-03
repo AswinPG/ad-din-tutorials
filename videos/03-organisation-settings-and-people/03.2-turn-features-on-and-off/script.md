@@ -79,7 +79,7 @@ Switch your organisation’s optional features on or off on the Services tab, ch
 
 #### [4.2] Staff Attendance
 **Say:** **Staff Attendance** tracks staff time and attendance. Each staff member needs a subscription. Before it switches on, Ad-Din checks your **Time zone**; the link under it shows the current one.
-**Show:** Spotlight the Staff Attendance switch and its quick links: "Time zone: …", "Documents for your staff". Don’t switch it on.
+**Show:** Spotlight the Staff Attendance switch and its quick links: "Time zone: …", "Documents for your staff", "Legacy teacher-attendance register" (madrasah only). Don’t switch it on.
 **Caption:** Staff Attendance tracks staff time. Each staff member needs a subscription. Ad-Din checks the time zone first.
 
 ### 5. Choose your donation page
@@ -112,3 +112,4 @@ Switch your organisation’s optional features on or off on the Services tab, ch
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: [4.2] Show lists the third quick link (Legacy teacher-attendance register) a madrasah sees

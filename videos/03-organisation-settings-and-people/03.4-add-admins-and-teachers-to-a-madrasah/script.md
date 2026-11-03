@@ -63,11 +63,11 @@ Add admins and teachers to your madrasah by GUID or as new accounts, check their
 **Show:** Click "Add". The "Add New User" page opens with Admin, Teacher, Parent and Student. Expand "Teacher", paste Maryam’s GUID, click "Fetch". Keep the hint text out of close-up.
 
 #### [3.2] The profile page
-**Say:** Their profile page opens with their details. The links on the left jump to each part: **Personal details**, **Address** and **Documents**.
-**Show:** The teacher profile page for Maryam. Click the side links in turn; the page scrolls to each card.
+**Say:** Their profile page opens with their details. The links on the left jump to each part, such as **Personal details** and **Address**.
+**Show:** The teacher profile page for Maryam. Click Personal details and Address on the left; the page scrolls to each card.
 
 #### [3.3]
-**Say:** To change a part, tap its **Edit** button. Fields with a star are required. When you’re done, tap **Update**.
+**Say:** To change a part, tap its **Edit** button. Fields with a star are required. When you’re done, tap **Update**; that adds them to your madrasah.
 **Show:** Click "Edit" on Personal detail; fields become editable. Click "Update". The "Saving Data" window ticks off its steps; click "Done".
 
 ### 4. Create a new admin
@@ -76,7 +76,7 @@ Add admins and teachers to your madrasah by GUID or as new accounts, check their
 **Show:** Admin tab → "Add" → expand "Admin" → click "Add New". An empty admin profile opens.
 
 #### [4.2]
-**Say:** Under **Personal detail**, choose a **Salutation**, then fill in **First Name**, **Last Name**, **Email**, **Mobile Number** and a **Username**.
+**Say:** Under **Personal detail**, choose a **Salutation**, then fill in **First Name**, **Last Name**, a **Username**, **Mobile Number** and **Email**.
 **Show:** Fill the Personal detail card for Mr. Yusuf Rahman with the demo values.
 
 #### [4.3] Access Rights
@@ -104,7 +104,7 @@ Add admins and teachers to your madrasah by GUID or as new accounts, check their
 
 #### [6.3] Re-activate
 **Say:** If they come back, open **Inactive**, select them, tap **Re-Activate**, and confirm. They return to their tab, and may get a seat from your pool.
-**Show:** Inactive tab: tick Hamza’s row, click "Re-Activate", then "Re-Activate" again on "Are you sure?". Hamza leaves the Inactive tab.
+**Show:** Inactive tab: tick Hamza’s row, click "Re-Activate". The "Re-Activate Users" window shows his name and an Activation Note box; click "Re-Activate", then "Re-Activate" again on "Are you sure?". Hamza leaves the Inactive tab.
 
 ### 7. Next
 #### [7.1] Done
@@ -113,3 +113,4 @@ Add admins and teachers to your madrasah by GUID or as new accounts, check their
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · validator · checked against master d36d69ed8 · 4 fixes: [3.2] a teacher profile’s side links are Personal details and Address (Documents is student-only); [3.3] Update is what adds a fetched person; [4.2] fields in the form’s order; [6.3] the Re-Activate Users window before Are you sure?
