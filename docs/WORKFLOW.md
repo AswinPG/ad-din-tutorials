@@ -5,7 +5,7 @@
 | Status | Means | Moves on when | Who |
 |---|---|---|---|
 | `planned` | In the plan; `Covers` filled in | the script is written | Claude |
-| `scripted` | Scenes written, labels checked against the app | the manager approves the script | Manager reviews (≈1.5 h) |
+| `scripted` | Scenes written; passed `validate`, `labels`, the validator agent and the critic agent ([QUALITY.md](QUALITY.md)) | the manager approves the script | Manager reviews (≈1.5 h) |
 | `script-approved` | Narration and scenes locked for recording | the video is recorded | Claude |
 | `recorded` | English video, voice and subtitles produced | the manager approves (first pass ≈1 h, second pass ≈0.5 h) | Manager reviews |
 | `video-approved` | Ready for the client | the client approves in a batch review | Client, via manager |

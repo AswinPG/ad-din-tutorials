@@ -7,7 +7,7 @@ Everything needed to make, edit and re-make the Ad-Din customer tutorial videos:
 ## What's here
 
 ```
-series.yaml              Parts, tracks, languages + voices, role playlists, open decisions
+series.yaml              Parts, tracks, app source, languages + voices, pronunciations, playlists, open decisions
 videos/
   05-madrasah-academic-setup/          one folder per track
     05.3-create-classes/               one folder per video
@@ -17,7 +17,7 @@ videos/
       record.mjs                       (from the pilot on) the screen-recording steps for each scene
 STATUS.md                generated: where every video stands, per language
 plan/                    generated plan page + PDF, the estimate, archived drafts
-docs/                    how-tos: script format, workflow, prompts, languages, recording
+docs/                    how-tos: script format and style, quality checks, feature map, workflow, prompts, languages, recording
 tools/                   the scripts behind the npm commands below
 engine/                  (from the pilot on) the recorder shared by all videos
 ```
@@ -33,6 +33,7 @@ Run `npm install` once, then:
 | `npm run plan` / `npm run plan:pdf` | Regenerates the plan page (and the PDF) in `plan/` |
 | `npm run new -- 05.9 "Archive a class"` | Adds a new video folder in the right track |
 | `node tools/i18n.mjs 05.3 ar` | Starts or tops up the Arabic translation of 05.3 |
+| `npm run labels [-- 05.3]` | Checks every **bold** label in the scripts exists in the Ad-Din app (`series.yaml` → `app`) |
 | `npm run say -- "Every masjid uses Ad-Din"` | Previews the voice, with the pronunciation list applied (`--lang ur` for others) |
 | `npm run pdf -- in.html out.pdf` | Prints any HTML file to PDF with Edge |
 
@@ -59,7 +60,13 @@ Each change is a commit, so the history of every video is in `git log -- videos/
 
 ## Rules every video follows
 
+The full list is in [docs/SCRIPT-STYLE.md](docs/SCRIPT-STYLE.md); 00.1 and 00.2 are the reference scripts.
+
 - Self-contained, five minutes or less (English scripted to about 4:15 so translations fit the same picture).
+- For every audience: admins, teachers, parents, students and community members, in plain words.
 - One video per topic: screens and on-screen text in English, with an audio track and subtitles for each language.
 - Real labels only: every on-screen word in a script is copied from the Ad-Din app's own text.
-- One demo masjid and madrasah throughout, so every video looks consistent and can be re-recorded.
+- Recorded from the **real Ad-Din app** (built from master) with **mocked demo data**, never a live server. One demo masjid and madrasah throughout, so every video looks consistent and can be re-recorded.
+- Web and mobile app: each track says which (`platform`: Web, App or Both); app videos are shown in a phone frame.
+- One narrator voice, William (multilingual), for every language; changeable per language in `series.yaml`.
+- Nothing missed, nothing wrong: every feature is mapped to a video ([docs/FEATURE-MAP.md](docs/FEATURE-MAP.md)), and every script goes through the label check, a validator agent and a critic agent before the manager sees it ([docs/QUALITY.md](docs/QUALITY.md)).

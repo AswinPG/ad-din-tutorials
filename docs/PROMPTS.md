@@ -23,6 +23,12 @@ Start every session in `C:\Fantacode\ad-din-tutorials` so Claude picks up `CLAUD
 **Script a whole track**
 > Script every planned video in track `<track>`, one commit per video. Stop and ask if a flow doesn't match the plan.
 
+**Script everything that's planned**
+> Write all the planned scripts. Follow SCRIPT-STYLE.md, check labels against master, then run the validator and critic agents and apply their fixes (QUALITY.md).
+
+**Check scripts (validator + critic)**
+> Run the validator and critic on `<ids | track | all scripted>`. Fix clear errors, apply clear improvements, log them, and list what needs my decision.
+
 **Apply review notes to a script**
 > Apply these notes to `<id>`:
 > 1. [`<scene>`] `<note>`
@@ -64,6 +70,11 @@ Start every session in `C:\Fantacode\ad-din-tutorials` so Claude picks up `CLAUD
 
 **Produce the language tracks**
 > Produce the audio tracks and subtitles for `<id>` in all reviewed languages. Check each fits the picture.
+
+## Coverage
+
+**Rebuild the feature map**
+> Rebuild the feature map from the current Ad-Din master with graphify and list new gaps.
 
 ## Housekeeping
 

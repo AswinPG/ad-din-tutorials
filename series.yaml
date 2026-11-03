@@ -7,6 +7,11 @@ rules:
   max_length: 5:00
   english_target: 4:15
   note: English is timed to leave room for longer translations; every language must fit the same picture.
+app:
+  # Where scripts' labels are checked (npm run labels). Read-only; exported into out/app-src/<sha>.
+  repo: C:/Fantacode/Ad-Din Web-master
+  ref: origin/master
+  src: AdDin.Angular/src
 languages:
   # One multilingual voice (William) narrates every language (decided 2026-11-03). To switch a language
   # back to its native voice, replace its voice with the one in its comment.

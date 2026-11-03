@@ -10,7 +10,8 @@
     "plan:pdf": "node tools/build-plan.mjs --pdf",
     "new": "node tools/new-video.mjs",
     "pdf": "node tools/pdf.mjs",
-    "say": "node tools/say.mjs"
+    "say": "node tools/say.mjs",
+    "labels": "node tools/check-labels.mjs"
   },
   "dependencies": {
     "yaml": "2.6.1"
