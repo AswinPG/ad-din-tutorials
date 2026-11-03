@@ -11,7 +11,7 @@ flags:
   - "'View' is not on the in-app banner: the banner itself is tapped. 'View' only appears on Android's fallback message bar, shown when a native page (such as the Qiblah compass) is on top or the web part is older. Not scripted."
   - "A real push can't be received in the mocked demo world. The recorder triggers the in-app banner by dispatching a window 'addin:push' CustomEvent ({ title, body, action: 'message' }) while signed in; the banner sets window.__adDinPushBanner itself when it mounts."
   - "The reminder sheet, the precise sheet and Preferences › This device only render inside the app shell. The demo world must stub window.AdDinBridge with getPermissions / requestPermission returning the states each scene needs (and seed localStorage 'adDinPermissionReminder' with an old firstSeen, because the reminder never shows on the first launch)."
-  - "The phone's own permission dialogs and the lock-screen notification in [6.3] are operating-system screens, not Ad-Din. Use a stylised graphic or a real-device capture with no personal data."
+  - "The phone's own permission dialogs ([3.1], [3.2], [4.3]) and the lock-screen notification in [6.3] are operating-system screens, not Ad-Din. Decided 2026-11-03: capture them on a real device or an emulator, with no personal data on screen (no other notifications, contacts or account names)."
   - "The precise location sheet needs app version 2.0.52 or newer; older apps report an approximate grant as not allowed."
   - "App gap: a message push carries only action 'message' (no route), and the shell routes a tapped background notification by route only, so tapping it opens the app where it was (home on a cold start), not the inbox. The in-app banner and Android's 'View' bar do open the inbox. [6.3] scripts what the code does; revisit if the shell or server adds the route."
 ---
@@ -37,6 +37,7 @@ Allow notifications and precise location for Ad-Din on your phone, check them an
 - Demo member account signed in on the app (phone frame), home masjid "Al-Noor Masjid"; not a staff member, so the precise sheet shows two reasons
 - Stubbed app shell (window.AdDinBridge) whose permission state the recorder sets per scene: chapters 2–3 start with notifications and location "prompt"; chapter 4 with location "granted" + "approximate"; chapter 5 with notifications "granted" and location "blocked"
 - localStorage "adDinPermissionReminder" with firstSeen a week ago and no lastShown, so the reminder appears four seconds after the home screen loads
+- A real Android or iOS device, or an emulator, for the phone's own permission dialogs ([3.1], [3.2], [4.3]) and the lock-screen notification ([6.3]); Ad-Din installed and signed in with the demo member, nothing personal on screen
 - One push for the banner: title "Al-Noor Masjid", body "Jumu'ah khutbah starts at 1:15 pm this Friday.", action "message"; a matching message in the inbox so the tap lands on it
 - A second and third push sent while the first is up, for the "+2 more" shot
 
@@ -74,11 +75,11 @@ See docs/SCRIPT-FORMAT.md.
 ### 3. Allow notifications and location
 #### [3.1] Notifications
 **Say:** Tap **Allow** next to **Push notifications**. Your phone asks if Ad-Din may send notifications. Choose allow, and the row turns green.
-**Show:** Tap "Allow" on the Push notifications row. Stylised phone permission dialog; tap its allow button. The row shows a green tick.
+**Show:** Tap "Allow" on the Push notifications row. The phone's own permission dialog (real-device or emulator capture); tap its allow button. The row shows a green tick.
 
 #### [3.2] Precise location
 **Say:** Now tap **Allow precise**. On your phone's screen, keep **Precise** switched on. The hint under the row tells you which button to look for.
-**Show:** Spotlight the hint "On the next screen, keep Precise selected." Tap "Allow precise". Stylised phone location dialog with Precise selected; tap allow.
+**Show:** Spotlight the hint "On the next screen, keep Precise selected." Tap "Allow precise". The phone's own location dialog with Precise selected (real-device or emulator capture); tap allow.
 
 #### [3.3] All set
 **Say:** When both are on, the sheet says **You're all set** and closes by itself.
@@ -96,7 +97,7 @@ See docs/SCRIPT-FORMAT.md.
 
 #### [4.3] Switch or keep
 **Say:** **Keep approximate** closes it for now, and Ad-Din asks again next time. To fix it, tap **Switch to Precise** and follow the hint on the next screen. The sheet confirms **Precise location is on**.
-**Show:** Spotlight "Keep approximate" without tapping. Tap "Switch to Precise"; stylised phone dialog; accept. The sheet shows "Precise location is on" and closes.
+**Show:** Spotlight "Keep approximate" without tapping. Tap "Switch to Precise"; the phone's own dialog (real-device or emulator capture); accept. The sheet shows "Precise location is on" and closes.
 
 ### 5. Check it any time
 #### [5.1] This device
@@ -126,7 +127,7 @@ See docs/SCRIPT-FORMAT.md.
 
 #### [6.3] While the app is closed
 **Say:** When the app is closed, your phone shows the notification as usual. Tap it to open Ad-Din; new messages wait for you in your **Message** inbox.
-**Show:** Stylised lock-screen notification from Ad-Din with the same text. Tap it: cut to the app opening on its home screen, then open the Message inbox with the Jumu'ah message at the top.
+**Show:** Real-device or emulator capture of the lock screen with the Ad-Din notification showing the same text, and no other notifications. Tap it: cut to the app opening on its home screen, then open the Message inbox with the Jumu'ah message at the top.
 
 ### 7. Done
 #### [7.1] Result
@@ -139,5 +140,6 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · manager · decisions via chat · Phone screens decided: permission dialogs ([3.1], [3.2], [4.3]) and the lock-screen notification ([6.3]) are captured on a real device or emulator; Show lines, flag and demo data updated (Show only, so translations are unaffected)
 - 2026-11-03 · critic · 5 changes: [1.1] second-person opening, no phrasal verb, [2.3] no elliptical question or idiom, [4.2] "show up" replaced (Say and Caption), [6.2] clear count line, [7.2] end tiles by number
 - 2026-11-03 · validator · checked against master d36d69ed8 (+ Ad-DinMobileApp fix/ios-workload-version 6f756834b) · 2 fixes: [6.3] tapping a closed-app message notification opens the app, not the inbox (flag added); [6.2] banner tap opens the inbox list (not the message itself)

@@ -438,7 +438,8 @@ decisions:
   - title: "Native and server pages outside the label check"
     detail: "Some screens aren’t in the Angular app: the native Premium page and Qiblah compass (MAUI app), password reset (Razor), public website (AdDin.PublicWebpages). Their labels are checked by hand. The phone’s own permission dialogs and lock-screen notification (00.7) need stylised graphics or a real-device capture: which?"
     videos: "00.3, 00.7, 02.2, 09.6, 15.1, 15.4"
-    status: open
+    status: decided
+    answer: "As scripted (labels checked by hand); 00.7 phone screens captured on a real device or emulator"
   - title: "Left out on purpose"
     detail: "Carpool (switched off), social login (no buttons), Ideas (app feedback), the unused clock-in placeholder, the old teacher-attendance register."
     videos: "—"
