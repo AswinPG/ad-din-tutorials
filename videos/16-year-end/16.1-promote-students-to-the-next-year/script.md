@@ -5,14 +5,12 @@ target: 3:30
 prereq:
   - "06.4"
 status: scripted
-flags:
-  - "Exam Based migration needs an exam with marks from the older Exams feature (Exam Marks switch, off by default; open decision 'Exam Marks' in series.yaml). Scripted as the code works today: Transfer is demonstrated, Exam Based is explained in one scene"
 ---
 
 # 16.1 Promote students to the next year
 
 ## Goal
-Move a whole class section up to its next class at the end of the year, either everyone at once or only the students who passed an exam.
+Move a whole class section up to its next class at the end of the year.
 
 ## You'll need
 <!-- Shown on the opening card. Generated from prereq/plan/switch if left empty. -->
@@ -28,7 +26,6 @@ Move a whole class section up to its next class at the end of the year, either e
 - Class "Maktab Level 2" with an empty section "A" (the destination)
 - One earlier migration in the list from last year, so the list and the Select Year filter have data
 - Teacher account Yusuf Patel for scene [6.2a] (Teacher Portal → Migration shows the same list, read-only)
-- Optional for scene [4.2]: Exam Marks on with exam "Annual Exam" for Maktab Level 1, to show the Exam Based fields
 
 ## Script
 <!--
@@ -67,17 +64,8 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 4. Step 2: Eligibility
 #### [4.1] Transfer
-**Say:** Now choose the **Migration Type**. **Transfer** moves every active student in the section. Add a **Reason for migration**, such as end of year.
-**Show:** Select "Transfer". Type "End of year promotion" in Reason for migration.
-
-#### [4.2] Exam Based
-**Say:** **Exam Based** moves only students who reached the **Passing Marks** in an exam. It uses the older Exams feature, so it only works if your madrasah records exams there.
-**Show:** Switch to "Exam Based": Select Exam and Passing Marks (%) appear. Spotlight them, then switch back to "Transfer".
-**Caption:** Exam Based moves only students who passed an exam. It needs the older Exams feature.
-
-#### [4.3] Preview
-**Say:** Tap **Preview Migration**.
-**Show:** Click "Preview Migration".
+**Say:** Under **Migration Type**, choose **Transfer**. It moves every active student in the section. Add a **Reason for migration**, such as end of year, and tap **Preview Migration**.
+**Show:** Select "Transfer". Type "End of year promotion" in Reason for migration. Click "Preview Migration".
 
 ### 5. Step 3: Preview and migrate
 #### [5.1] Check the list
@@ -108,5 +96,6 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · manager · decisions via chat · Exam Marks dropped from the series: cut [4.2] Exam Based and its flag; [4.3] Preview Migration merged into [4.1] (thin scene); Goal and demo data updated
 - 2026-11-03 · critic · 3 changes + fold: [6.2] "oldest" made unambiguous (highest class first, so students are not moved twice); [7.1] Say names both end-card tiles; fold: Teacher's Migration list as new [6.2a], Covers and demo data updated
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes (Add Migrations steps, Transfer/Exam Based, Preview, Perform Migration prompt, list columns confirmed)

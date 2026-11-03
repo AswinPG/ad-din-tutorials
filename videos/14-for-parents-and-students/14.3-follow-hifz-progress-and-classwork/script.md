@@ -5,8 +5,6 @@ target: 4:00
 prereq:
   - "14.1"
 status: scripted
-flags:
-  - "Exams and Exam Marks (open decision, off by default) are only named in [4.5] over a card, not shown live. If the decision drops Exam Marks, cut [4.5]."
 ---
 
 # 14.3 Follow Hifz progress and classwork
@@ -22,7 +20,6 @@ Follow your child's daily Hifz recitation and their classwork, with scores, from
 ## Covers
 - Hifz progress card, My Classwork, scores
 - Parent Library and Recognition
-- Parent Exams and Exam Marks (named only; they show when the madrasah turns Exam Marks on)
 
 ## Demo data
 - Parent "Yusuf Rahman" in the app; child "Hamza Rahman" in "Hifz Boys A" (marked as a Quran Hifz class, which the Hifz progress card needs) and "Maktab Level 1"; Al-Noor Madrasah has Academic Activity switched on
@@ -106,10 +103,6 @@ See docs/SCRIPT-FORMAT.md.
 **Say:** There's more in the menu, under **Parent Portal**. **Library** lists the books your child has borrowed, and **Recognition** shows the awards their teachers have given.
 **Show:** ☰ → Parent Portal → Library: the "Circulations" tab with "Stories of the Prophets" and its Issue Date. Go back. Parent Portal → Recognition: the "Student" tab with "Student of the Month" for Hamza. Go back to the home.
 
-#### [4.5] Exams
-**Say:** If your madrasah uses exams, **Exams** and **Exam Marks** also appear in that menu, for your child's exams and marks.
-**Show:** Simple card: "Exams" and "Exam Marks", with the line "Only when your madrasah turns them on". No live demo.
-
 ### 5. Next
 #### [5.1] Recap
 **Say:** Now you can follow your child's Hifz and classwork day by day, see each score as soon as it's marked, and find their library books and awards.
@@ -121,5 +114,6 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · manager · decisions via chat · Exam Marks dropped from the series: cut [4.5] (Exams named over a card), its Covers line and flag, as the flag planned
 - 2026-11-03 · critic · 2 changes: target 4:00, chapter 4 retitled, [5.1] recap includes the new pages · fold: [4.4] parent Library and Recognition, [4.5] Exams / Exam Marks named over a card (flagged, open decision)
 - 2026-11-03 · validator · checked against master d36d69ed8 · 3 fixes: [2.4] Not marked means not submitted or marked yet (Say and Caption), demo data: Hifz Boys A must be a Quran Hifz class, classwork in the current term

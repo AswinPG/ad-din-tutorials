@@ -114,7 +114,7 @@ Admin setup plus the masjid pages members see. Events and donations are listed h
 | Parent Teacher Interview: slots, Manage Booking, Reminders, interview list | Admin Portal → Parent Teacher Interview | Madrasah Admin | 10.8 | |
 | Attendance (admin view of class attendance) | Admin Portal → Attendance (`adminportalv2/attendancev2/add`) | Madrasah Admin | 10.2 | |
 | Class Announcements (admin) | Admin Portal → Class Announcements | Madrasah Admin | 07.4 | |
-| Exams, Manage Marks | Admin Portal → Exams / Manage Marks (Exam Marks switch) | Madrasah Admin | 10.11 | Older feature, open decision in series.yaml |
+| Exams, Manage Marks | Admin Portal → Exams / Manage Marks (Exam Marks switch) | Madrasah Admin | — | (c) Left out on purpose: older feature, off by default; 10.11 dropped (decided 2026-11-03) |
 | Migration (promote students) | Admin Portal → Migration | Madrasah Admin | 16.1 | |
 | Quran Hifz Assignments (mapping Sabaq, Sabaq Para, Dour, Test Para; by Ayah or Juz) | Admin Portal → Quran Hifz Assignments | Madrasah Admin | 10.3 | |
 | Academic Activity: categories, terms, activities | Admin Portal → Academic Activity | Madrasah Admin | 10.5 | |
@@ -143,7 +143,7 @@ Admin setup plus the masjid pages members see. Events and donations are listed h
 | Class Announcements: post photo or note, tags, likes, views | Teacher Portal → Class Announcements | Teacher | 07.4 | |
 | Record daily Hifz progress | Teacher Portal → Quran Hifz Assignments | Teacher | 10.4 | |
 | Academic Activity scores, view or message a student | Teacher Portal → Academic Activity | Teacher | 10.6 | |
-| Exams, Manage Marks | Teacher Portal (Exam Marks switch) | Teacher | 10.11 | |
+| Exams, Manage Marks | Teacher Portal (Exam Marks switch) | Teacher | — | (c) Left out on purpose (Exam Marks, decided 2026-11-03) |
 | Parent Teacher Interview (Manage Booking, Reminders) | Teacher Portal → Parent Teacher Interview | Teacher | 10.8 | |
 | Library (teacher) | Teacher Portal → Library | Teacher | 10.9 | 10.9 is marked Web |
 | Recognition | Teacher Portal → Recognition | Teacher | 10.10 | |
@@ -162,7 +162,7 @@ Admin setup plus the masjid pages members see. Events and donations are listed h
 | Attendance (Today, Subject Wise, Term dashboard), Report an absence | Parent Portal → Attendance; app home attendance card | Parent | 14.2 | |
 | Hifz progress card, Quran Hifz Assignments | App home; Parent Portal → Quran Hifz Assignments | Parent | 14.3 | |
 | My Classwork, Academic Activity scores | App home; Parent Portal → Academic Activity | Parent | 14.3 | |
-| Exams, Exam Marks (parent view) | Parent Portal (Exam Marks switch) | Parent | — | (b) Fold into 14.3 (one line, only when Exam Marks is on) |
+| Exams, Exam Marks (parent view) | Parent Portal (Exam Marks switch) | Parent | — | (c) Left out on purpose (Exam Marks, decided 2026-11-03) |
 | Class, Subject, Class Routine, Holiday, Grade, Delegations (parent view) | Parent Portal | Parent | 14.1 | My Routine covers the timetable; the other read-only lists are not named. (b) one line in 14.1 |
 | Payment (Invoice History) | Parent Portal → Payment | Parent | 14.4 | No online payment yet (series.yaml decision) |
 | Report Archive (released report cards) | Reports → Report Archive | Parent | 14.4 | |
@@ -305,10 +305,10 @@ The app is one WebView around the same Angular pages, so almost every feature ab
 ### Counts
 
 - **Feature rows:** 217: 200 for the user-facing audience, plus 17 Global Admin.
-- **Covered by a planned video:** 162 of the 200 audience rows. 1 of them is in Track 11 (on hold). 3 more are only partly named, so their video should add one line: parent read-only lists (14.1), the admin's app home (12.6), and quick-action pinning for non-teachers (00.6).
+- **Covered by a planned video:** 160 of the 200 audience rows. 1 of them is in Track 11 (on hold). 3 more are only partly named, so their video should add one line: parent read-only lists (14.1), the admin's app home (12.6), and quick-action pinning for non-teachers (00.6).
 - **(a) New video needed:** 8 rows, which make 3 new videos.
-- **(b) Fold into an existing video:** 20 rows.
-- **(c) Leave out:** 10 audience rows (disabled, hidden, legacy, unreachable or left out on purpose), plus all 17 Global Admin rows. The leave-out list below also names 7 unused modules and routes that have no table row.
+- **(b) Fold into an existing video:** 19 rows.
+- **(c) Leave out:** 13 audience rows (disabled, hidden, legacy, unreachable or left out on purpose, including the 3 Exam Marks rows dropped 2026-11-03), plus all 17 Global Admin rows. The leave-out list below also names 7 unused modules and routes that have no table row.
 - The "Prayer-time alerts" row is a check that came back empty, not a feature, so it is in none of these counts.
 
 ### (a) Should get a new video
@@ -339,7 +339,6 @@ Each id is the next free number in its track. Playlists to update if these are a
 | Correction sheet on the day view | 13.8 |
 | Parent web dashboard and Parent/Guardian Portal tiles | 14.1 |
 | Parent read-only lists (Class, Subject, Holiday, Grade, Delegations) | 14.1 |
-| Parent Exams / Exam Marks | 14.3 |
 | Parent Library and Recognition | 14.3 |
 | Parent's Madrasah Report | 14.4 |
 | Student Library, Recognition, Holiday, Grade, Delegations, Class Announcements, Madrasah Report | 14.5 |
@@ -349,7 +348,7 @@ Each id is the next free number in its track. Playlists to update if these are a
 | Manage Tasbeeh | 15.6 |
 | Teacher's Migration list | 16.1 (and add 16.1 to the Teacher playlist, or drop the teacher view) |
 
-This table lists the 20 (b) rows plus the 3 partly covered rows: pin quick actions, the admin's app home, and the parent read-only lists. Two covered rows would also be clearer with one more word in Covers: the website home page (09.1) and the share sheet beyond events (15.3).
+This table lists the 19 (b) rows plus the 3 partly covered rows: pin quick actions, the admin's app home, and the parent read-only lists. Two covered rows would also be clearer with one more word in Covers: the website home page (09.1) and the share sheet beyond events (15.3).
 
 ### (c) Leave out
 
@@ -360,6 +359,7 @@ This table lists the 20 (b) rows plus the 3 partly covered rows: pin quick actio
 | Ideas | `/ideas` is mounted but has no menu entry; app feedback (series.yaml) |
 | Clock-in card on the app home | Unused placeholder (series.yaml) |
 | Legacy teacher-attendance register | Old feature, replaced by Staff Attendance (series.yaml) |
+| Exams, Exam Marks (admin, teacher, parent) and Exam Based promotion | Older feature, off by default; Academic Activity replaces it. 10.11 dropped (series.yaml, decided 2026-11-03) |
 | Alumni page, Alumni Verdict | Hidden in the menu until the module is redone |
 | Program rules | No link reaches the route |
 | Menu Control tab | Commented out of the tab list |

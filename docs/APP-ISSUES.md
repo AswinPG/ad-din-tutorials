@@ -49,7 +49,7 @@ Found in Ad-Din `origin/master` (d36d69ed8) by the script writers and validators
 | Comments Library | New library not selected after save; a variation's Save is lost without the level's Save | 12.2 |
 | Report frames | Help says upload, but the upload button is commented out | 12.1 |
 | Staff Attendance | Correction-reasons hint says two locked reasons; server has four | 13.4 |
-| Exams → Manage Marks | Grid doesn't refresh after import; multiple-marks pages unreachable; teacher page has no import/export | 10.11 |
+| Exams → Manage Marks | Grid doesn't refresh after import; multiple-marks pages unreachable; teacher page has no import/export | — (Exam Marks left out of the series; 10.11 dropped) |
 | Manage tasbeehs | Export does nothing | 15.6 |
 | Admin Add Activity | Doesn't pre-fill class/section/subject from filters (Add Category does) | 10.5 |
 | Interviews | **Add Booking** opens "Manage Interview" | 10.8 |

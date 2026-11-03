@@ -9,7 +9,7 @@ audience:
   - Student
 platform: Both
 flags:
-  - "Covers says marks: shown as Academic Activity scores. Exam Marks (the older feature, off by default, open decision) is not shown."
+  - "Covers says marks: shown as Academic Activity scores. Exam Marks (the older feature, off by default) is left out of the series on purpose (decided 2026-11-03) and is not shown."
 ---
 
 # 14.5 The student portal
@@ -123,5 +123,6 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · manager · decisions via chat · Exam Marks decided (left out of the series): flag wording updated; script unchanged
 - 2026-11-03 · critic · 3 changes: target 4:00, [1.1] opening mentions the rest of the portal, [6.1] "so nothing slips" (idiom) replaced, [8.1] recap updated · fold: [7.2] Library, Recognition, Class Announcements, Holiday, Grade, Delegations; [7.3] Madrasah Report with Run
 - 2026-11-03 · validator · checked against master d36d69ed8 · 3 fixes: demo data (Hifz class flag, both classes in the week routine for the name line), [3.2] record Sun–Thu so the right arrow works twice
