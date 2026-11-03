@@ -27,20 +27,21 @@ Add other admins, staff and volunteers to your masjid, using their GUID if they 
 ## Covers
 - User Management → Manage Administrators / Staff / Volunteer
 - fetch by GUID or Add New
+- Manage Skills: the masjid’s volunteer skills list (pointer to 15.7)
 
 ## Demo data
 - Demo masjid admin account with Premium, admin of the demo masjid, with the demo masjid as its home masjid (the volunteer skills list loads from it)
 - Demo masjid with one admin (the demo admin), one staff member and one volunteer already listed
 - An existing demo account not yet linked to the masjid (for example "Bilal Ahmed") whose GUID is copied to the clipboard; its email and username show locked on the form
 - A new person to add as a volunteer (for example "Mr. Ibrahim Khan", username `ibrahim_khan`, a demo email address); the welcome email is not sent in the demo world
-- Two volunteer skills on the masjid (for example "Event setup", "Parking")
+- One volunteer skill already on the masjid (for example "Event setup"); "Parking" is added on camera in Manage Skills ([6.1]), and "Skill added successfully!" shows in the demo world
 - No real names, emails or phone numbers on screen
 
 ## Script
 
 ### 1. The people who run your masjid
 #### [1.1] Opening
-**Say:** A masjid runs on its people. In this video you’ll add other admins, your staff and your volunteers, so each of them gets the right access and your messages.
+**Say:** A masjid depends on its people. In this video you’ll add other admins, your staff and your volunteers, so each of them gets the right access and your messages.
 **Show:** Title card: "Add admins, staff and volunteers to a masjid".
 
 #### [1.2]
@@ -94,17 +95,22 @@ Add other admins, staff and volunteers to your masjid, using their GUID if they 
 **Show:** Tick the agreement, click "Save". Confirmation; the Volunteer tab lists Ibrahim.
 
 ### 6. Volunteer skills
-#### [6.1]
-**Say:** Volunteers can list their skills. Select a volunteer and tap **Edit**. Turn on **Volunteer Status**, then tick the skills they offer in the list.
-**Show:** Select Ibrahim, click "Edit". Turn on the Volunteer Status switch; tick "Event setup" in the Status column.
+#### [6.1] Manage Skills
+**Say:** First, list the skills your masjid needs. On the **Volunteer** tab, tap **Manage Skills**. Type a skill, such as Parking, and tap **Add Skill**.
+**Show:** Volunteer tab → click "Manage Skills"; the skills window opens with the demo masjid selected at the top and "Event setup" in the list. Type "Parking" in "Enter skill name", click "Add Skill"; toast "Skill added successfully!" and Parking joins the list.
 
-#### [6.2]
-**Say:** To add the skills your masjid needs, tap **Manage Skills** on the **Volunteer** tab.
-**Show:** Back on the Volunteer tab, click "Manage Skills"; the skills window opens. Close it.
+#### [6.1a]
+**Say:** Untick **Status** to hide a skill you no longer need. Volunteers choose from this list when they sign up in the Ad-Din app, as video 15.7 shows.
+**Show:** Spotlight the Status column (Skill Name, Status). Don’t untick anything. Close the window.
+**Caption:** Untick Status to hide a skill. Volunteers choose from this list in the app (video 15.7).
+
+#### [6.2] A volunteer’s skills
+**Say:** You can also tick skills for a volunteer. Select them and tap **Edit**. Turn on **Volunteer Status**, then tick the skills they offer in the list.
+**Show:** Select Ibrahim, click "Edit". Turn on the Volunteer Status switch; tick "Event setup" in the Status column.
 
 ### 7. Next
 #### [7.1] Done
-**Say:** Your admins, staff and volunteers are in place. To change someone later, select them and tap **Edit**. To give them a seat, use **Manage Subscription**.
+**Say:** Your admins, staff and volunteers are in place. To change someone later, select them and tap **Edit**. To give them one of your organisation’s Premium seats, use **Manage Subscription**.
 **Show:** Staff tab with the new staff member. Spotlight "Edit" and "Manage Subscription".
 
 #### [7.2]
@@ -113,4 +119,5 @@ Add other admins, staff and volunteers to your masjid, using their GUID if they 
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 4 changes + fold: [1.1] 'runs on' idiom; chapter 6 reordered so the skills list comes before ticking a volunteer's skills; [7.1] 'seat' explained as an organisation Premium seat; demo data; fold: Manage Skills ([6.1] Add Skill, [6.1a] Status hides a skill, pointer to 15.7)
 - 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: demo data, the admin’s home masjid must be the demo masjid (the volunteer skills list loads from it); flag added

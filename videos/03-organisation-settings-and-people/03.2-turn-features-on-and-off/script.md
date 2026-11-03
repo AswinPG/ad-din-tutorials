@@ -44,7 +44,7 @@ Switch your organisation’s optional features on or off on the Services tab, ch
 
 ### 2. Open the Services tab
 #### [2.1] Find it
-**Say:** In the sidebar, open **Admin Portal**, then **Organization Management**. Tap **Manage** on your madrasah, then open the **Services** tab.
+**Say:** In the sidebar, open **Admin Portal**, then **Organization Management**. Tap **Manage** on your organisation, then open the **Services** tab. We use a madrasah here, because it has the most switches.
 **Show:** Sidebar → Admin Portal → Organization Management. Click "Manage" on the demo madrasah, then the "Services" tab.
 
 #### [2.2]
@@ -53,7 +53,7 @@ Switch your organisation’s optional features on or off on the Services tab, ch
 
 ### 3. Madrasah features
 #### [3.1] Academic Activity
-**Say:** **Academic Activity** lets admins and teachers create, track and grade students’ work. It adds **Academic Activity** to the admin, teacher, parent and student portals.
+**Say:** **Academic Activity** lets admins and teachers create, track and grade students’ work. It adds an **Academic Activity** page to each portal.
 **Show:** Spotlight the Academic Activity switch (on).
 
 #### [3.2] AutoSave
@@ -74,7 +74,7 @@ Switch your organisation’s optional features on or off on the Services tab, ch
 
 ### 4. Features for masjids and madrasahs
 #### [4.1] Family sharing
-**Say:** **Family Subscription sharing** is on masjids too. When it’s on, a subscription given to a parent also covers their spouse and children.
+**Say:** Masjids have the next two switches too. When **Family Subscription sharing** is on, a subscription given to a parent also covers their spouse and children.
 **Show:** Spotlight Family Subscription sharing.
 
 #### [4.2] Staff Attendance
@@ -88,7 +88,7 @@ Switch your organisation’s optional features on or off on the Services tab, ch
 **Show:** Click the Donation Page switch; the options appear.
 
 #### [5.2]
-**Say:** Pick **Donation Pages** to use one of your own pages, or **Page URL** to send people to a web address. Then tap **Save**.
+**Say:** Pick **Donation Pages** to use one of your own pages, or **Page URL** to send people to a web address. Then tap **Save**. Video 08.3 shows this step by step.
 **Show:** Select "Donation Pages", choose "Support our Madrasah" in the list, click "Save".
 
 #### [5.3]
@@ -107,9 +107,10 @@ Switch your organisation’s optional features on or off on the Services tab, ch
 
 ### 7. Next
 #### [7.1] Done
-**Say:** Your features are set. You can come back and change any switch whenever you need to. Next, add the people who help run your organisation.
+**Say:** Your features are set, and you can change any switch at any time. Next, add the people who help run your organisation.
 **Show:** End card with two tiles: "03.3 Add admins, staff and volunteers to a masjid" and "03.4 Add admins and teachers to a madrasah".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 5 changes: [2.1] Manage on any organisation, says why a madrasah is shown; [3.1] less repetition; [4.1] 'is on masjids too' (read as switched on) → 'Masjids have the next two switches too'; [5.2] points to 08.3 instead of duplicating it; [7.1] shorter close
 - 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: [4.2] Show lists the third quick link (Legacy teacher-attendance register) a madrasah sees

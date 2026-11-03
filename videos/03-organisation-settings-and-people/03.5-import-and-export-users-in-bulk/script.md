@@ -37,7 +37,7 @@ Export your madrasah’s students, parents, teachers or admins to a spreadsheet,
 **Show:** Title card: "Import and export users in bulk".
 
 #### [1.2]
-**Say:** You can export students, parents, teachers and admins. You can import students, parents and teachers.
+**Say:** This is for madrasah admins. You can export students, parents, teachers and admins. You can import students, parents and teachers.
 **Show:** Opening card from You'll need.
 
 ### 2. Open your users
@@ -78,7 +78,7 @@ Export your madrasah’s students, parents, teachers or admins to a spreadsheet,
 **Caption:** New person: new row, UserID empty. Fill Salutation, FirstName, LastName, Email, Mobile and UserName.
 
 #### [4.3]
-**Say:** Use a salutation from Ad-Din’s list, such as Mr., Ms. or Hafiz. Save the file as a CSV.
+**Say:** Use one of the salutations Ad-Din offers, such as Mr., Ms. or Hafiz. Save the file as a CSV.
 **Show:** Save as `teachers-import.csv` (CSV).
 
 ### 5. Import
@@ -96,9 +96,10 @@ Export your madrasah’s students, parents, teachers or admins to a spreadsheet,
 
 ### 6. Next
 #### [6.1] Done
-**Say:** You’ve exported your users and imported changes in one go. Next, put your students into the right class sections.
+**Say:** You’ve exported your users and imported your changes in one go. Next, add one student and parent by hand, or move students into the right class sections.
 **Show:** End card with two tiles: "06.4 Add students and parents yourself" and "06.5 Move students between sections".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 3 changes: [1.2] says who it's for; [4.3] 'Ad-Din's list' (not on screen) reworded; [6.1] Say names both end tiles
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes

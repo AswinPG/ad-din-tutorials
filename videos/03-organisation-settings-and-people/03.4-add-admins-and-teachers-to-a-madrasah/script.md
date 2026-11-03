@@ -67,7 +67,7 @@ Add admins and teachers to your madrasah by GUID or as new accounts, check their
 **Show:** The teacher profile page for Maryam. Click Personal details and Address on the left; the page scrolls to each card.
 
 #### [3.3]
-**Say:** To change a part, tap its **Edit** button. Fields with a star are required. When you’re done, tap **Update**; that adds them to your madrasah.
+**Say:** To change a part, tap its **Edit** button. Fields with a star are required. Then tap **Update**. This is the step that adds them to your madrasah, so don’t skip it.
 **Show:** Click "Edit" on Personal detail; fields become editable. Click "Update". The "Saving Data" window ticks off its steps; click "Done".
 
 ### 4. Create a new admin
@@ -94,16 +94,16 @@ Add admins and teachers to your madrasah by GUID or as new accounts, check their
 
 ### 6. Deactivate and re-activate
 #### [6.1] Deactivate
-**Say:** When a teacher leaves, open the **Teacher** tab, select them, and tap **Deactivate**. Add a note if you like, then tap **Deactivate**.
+**Say:** When a teacher leaves, open the **Teacher** tab, select them, and tap **Deactivate**. Add a note if you like, then tap **Deactivate**. You can’t deactivate your own account.
 **Show:** Teacher tab: tick Omar’s row, click "Deactivate". The "Deactivate Teacher" window shows his name and a Deactivation Note box; type "Left at end of term"; click "Deactivate".
 
 #### [6.2]
-**Say:** Ad-Din asks **Are you sure?** Inactive people are left out of reports and don’t get Ad-Din’s notifications, but their history stays. Tap **Deactivate** to confirm. You can’t deactivate your own account.
+**Say:** Ad-Din asks **Are you sure?** Inactive people are left out of reports and don’t get Ad-Din’s notifications, but their history stays. Tap **Deactivate** to confirm.
 **Show:** The "Are you sure?" step; click "Deactivate". Confirmation; Omar leaves the Teacher tab.
 **Caption:** Inactive people are left out of reports and notifications; their history stays. Tap Deactivate to confirm.
 
 #### [6.3] Re-activate
-**Say:** If they come back, open **Inactive**, select them, tap **Re-Activate**, and confirm. They return to their tab, and may get a seat from your pool.
+**Say:** If they come back, open **Inactive**, select them, tap **Re-Activate**, and confirm. They return to their tab, and may get one of your organisation’s seats again.
 **Show:** Inactive tab: tick Hamza’s row, click "Re-Activate". The "Re-Activate Users" window shows his name and an Activation Note box; click "Re-Activate", then "Re-Activate" again on "Are you sure?". Hamza leaves the Inactive tab.
 
 ### 7. Next
@@ -113,4 +113,5 @@ Add admins and teachers to your madrasah by GUID or as new accounts, check their
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 3 changes: [3.3] stresses Update is the step that adds them; [6.1]/[6.2] 'can't deactivate your own account' moved to shorten [6.2]; [6.3] 'pool' idiom removed
 - 2026-11-03 · validator · checked against master d36d69ed8 · 4 fixes: [3.2] a teacher profile’s side links are Personal details and Address (Documents is student-only); [3.3] Update is what adds a fetched person; [4.2] fields in the form’s order; [6.3] the Re-Activate Users window before Are you sure?

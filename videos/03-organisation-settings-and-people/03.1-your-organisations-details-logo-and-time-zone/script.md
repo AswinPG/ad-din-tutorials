@@ -38,7 +38,7 @@ Keep your masjid’s or madrasah’s name, address, contact details, logos and t
 **Show:** Title card: "Your organisation’s details, logo and time zone".
 
 #### [1.2]
-**Say:** This is for masjid and madrasah admins. Your organisation is already registered; here you change what you entered then, and add what’s missing.
+**Say:** This is for masjid and madrasah admins. Your organisation is already registered. Here you correct what you entered when you registered, and add anything missing.
 **Show:** Opening card from You'll need.
 
 ### 2. Open Organization Management
@@ -71,11 +71,11 @@ Keep your masjid’s or madrasah’s name, address, contact details, logos and t
 
 #### [4.2]
 **Say:** If it’s wrong, tap **Change**, pick the right zone from the list, and tap **Save**. It saves straight away. If there’s no address on file yet, the button says **Enter address** instead.
-**Show:** Click "Change"; the "Change the time zone" dialog opens. Open the list, hover the right zone, then click "Cancel" to keep the demo as it is.
+**Show:** Click "Change"; the "Change the time zone" dialog opens. Open the list, hover the right zone, spotlight "Save", then click "Cancel" to keep the demo as it is.
 
 ### 5. Contact details and Save
 #### [5.1] Contact
-**Say:** Under **Organization Contact**, add your phone numbers and a **Mobile Number**. **Phone 01** and the **Email** are required.
+**Say:** Under **Organization Contact**, check your phone numbers, **Mobile Number** and **Email**. **Phone 01** and **Email** are required.
 **Show:** Scroll to Organization Contact. Spotlight Phone 01 (required, though it has no star), Phone 02, Fax, Mobile Number, then Email with its star.
 
 #### [5.2] Save
@@ -106,9 +106,10 @@ Keep your masjid’s or madrasah’s name, address, contact details, logos and t
 
 ### 7. Next
 #### [7.1] Done
-**Say:** Your organisation’s details, logos and time zone are up to date. Next, choose which features your organisation uses, on the **Services** tab.
+**Say:** Your organisation’s details, logos and time zone are up to date. Next, choose which features your organisation uses, on the **Services** tab. For a madrasah, video 05.1 adds report signatures and learning skills.
 **Show:** End card with two tiles: "03.2 Turn features on and off" and "05.1 Report signatures, learning skills and report subjects".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 4 changes: [1.2] clearer 'what you entered when you registered'; [4.2] Show spotlights Save before Cancel; [5.1] tighter contact line; [7.1] Say names the 05.1 end tile
 - 2026-11-03 · validator · checked against master d36d69ed8 · 2 fixes: Phone 01 is required on the masjid form ([5.1]); masjid Save confirms in an Alert you close ([5.2]); flag for the silent masjid Save
