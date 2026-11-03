@@ -19,7 +19,7 @@ Add a class with its type, grade set, enrolment setting and program page, so it'
 <!-- Shown on the opening card. Generated from prereq/plan/switch if left empty. -->
 
 ## Covers
-- Add Class: homeroom teacher, compulsory, “Open for enrollment”, program page
+- Add Class: Type, Numeric Class Name, Hifz, Evaluation Grade Set, Bi-Directional Communication Allowed, “Open for enrollment”, program page
 
 ## Demo data
 - Demo madrasah "Al-Noor Madrasah"; the demo admin has Premium

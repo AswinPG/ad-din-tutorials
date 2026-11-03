@@ -21,7 +21,8 @@ Add the subjects each class studies, choose the teachers who can teach them, and
 <!-- Shown on the opening card. Generated from prereq/plan/switch if left empty. -->
 
 ## Covers
-- Teacher, Evaluation Grade Set, Discipline, Group, Strands, Course Code and Credit
+- Teacher, Discipline, Group, Strands, Course Code and Credit
+- Mark as Homeroom, Mark as Compulsory (grades 9–12)
 
 ## Demo data
 - Demo madrasah "Al-Noor Madrasah"; the demo admin has Premium
