@@ -4,14 +4,16 @@ title: Lock a pay period and send payroll
 target: 4:00
 prereq:
   - "13.5"
-status: planned
+status: scripted
 stage: Periodic
+flags:
+  - "Is Staff Attendance live? (series.yaml decision) Confirm before publishing"
 ---
 
 # 13.6 Lock a pay period and send payroll
 
 ## Goal
-_What the viewer can do after watching, in one sentence. Written with the script._
+Check and correct a pay period's hours, lock it so payroll gets the file, and unlock it for a correction within fifteen days.
 
 ## You'll need
 <!-- Shown on the opening card. Generated from prereq/plan/switch if left empty. -->
@@ -21,6 +23,12 @@ _What the viewer can do after watching, in one sentence. Written with the script
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
+- Demo madrasah with Staff Attendance on, a monthly pay period that has just ended, and nothing left to review
+- Payroll recipient `payroll@demo-madrasah.example` set in Settings (never a real address)
+- Grid rows for Yusuf Patel, Maryam Ali and Bilal Ahmed, with one approved leave day, one absence, one adjusted day
+- Bilal Ahmed's Thursday recorded as 7 h 10 min, corrected to 7 h 30 min in the video
+- Payroll file v1 produced on lock (CSV and PDF ready); a v2 after the re-lock in chapter 6
+- Audit Trail entries for the lock, the edit and the unlock
 
 ## Script
 <!--
@@ -30,7 +38,72 @@ Optional **Caption:** overrides the subtitle text. Translations in i18n/<lang>.m
 See docs/SCRIPT-FORMAT.md.
 -->
 
-_Not scripted yet._
+### 1. Before you start
+#### [1.1] Opening
+**Say:** At the end of each pay period, you lock it. That makes the hours final and sends them to payroll. This video shows an admin how.
+**Show:** Title card: "Lock a pay period and send payroll".
+
+#### [1.2]
+**Say:** Your payroll email address is already set in the Staff Attendance settings, and nothing in this period is left to review.
+**Show:** Opening card.
+
+### 2. The hours grid
+#### [2.1] Periods
+**Say:** Open **Staff Attendance**, then **Periods**. It opens on the current pay period: one row for each staff member, one column for each day, and a **Period total**.
+**Show:** Sidebar → Admin Portal → Staff Attendance → Periods. Use "Previous period" to open the period that just ended. Spotlight the grid.
+
+#### [2.2]
+**Say:** Leave, absences and adjusted days are marked in the grid. Tap **Needs review** to see only the rows still waiting.
+**Show:** Spotlight a Leave pill, an Absent cell and an Adjusted cell. Click "Needs review": "Nothing left to review in this period." Click "Everyone".
+
+### 3. Edit hours
+#### [3.1] Change a day
+**Say:** To correct a day, tap its cell. Enter the **Hours** and **Minutes**, add a **Reason** if you like, and tap **Save**. The staff member is told either way.
+**Show:** Click Bilal Ahmed's Thursday cell (7h 10m). Set Hours 7, Minutes 30, Reason "Locked up after the evening class". Click "Save"; the toast "Hours saved" and the cell is marked Adjusted.
+
+#### [3.2]
+**Say:** Changed your mind? **Use recorded time** puts the system's figure back.
+**Show:** Reopen the cell and spotlight "Use recorded time". Click "Cancel".
+
+### 4. Lock the period
+#### [4.1] Lock period
+**Say:** When everything is settled, tap **Lock period**. Ad-Din asks you to confirm that the hours will be signed off and the payroll file produced.
+**Show:** Spotlight "Everything is settled. You can lock this period." Click "Lock period"; the dialog "Lock this period?" opens.
+
+#### [4.2]
+**Say:** Tap **Lock period** again. The period now shows **Locked**, and the hours are final.
+**Show:** Click "Lock period" in the dialog. The toast "Period locked." The header shows Locked and "v1".
+
+### 5. The payroll file
+#### [5.1] Sent automatically
+**Say:** The first time you lock a period, the payroll file is emailed to your payroll address automatically.
+**Show:** Zoom on "Version 1 was sent to payroll@demo-madrasah.example."
+
+#### [5.2] Download
+**Say:** For your own copy, tap **Download**, then choose **CSV spreadsheet** or **PDF document**. They're the same files payroll receives.
+**Show:** Click "Download v1"; the menu shows CSV spreadsheet and PDF document. Click "CSV spreadsheet".
+
+#### [5.3] Send again
+**Say:** Need to send it again? Tap the send button and confirm with **Send**. You can do this at any time while the period stays locked.
+**Show:** Click "Send v1 to payroll"; the dialog "Send this payroll file?" opens. Click "Send"; the toast "Payroll file sent."
+
+### 6. Unlock for a correction
+#### [6.1] Unlock period
+**Say:** Spotted a mistake? Tap **Unlock period** within fifteen days of the period's end. The files already produced are kept.
+**Show:** Spotlight the hint under the button. Click "Unlock period", then confirm "Unlock period" in the dialog. The toast "Period unlocked."
+
+#### [6.2] Versions
+**Say:** Fix the hours, then lock again. Each lock produces the next version of the payroll file: v2, v3, and so on. After fifteen days, the period is final.
+**Show:** Edit one cell, lock again. The header shows "v2" and "Send v2 to payroll".
+
+#### [6.3] Audit Trail
+**Say:** Every change is kept in the **Audit Trail**: who made it, when, and what changed. Nothing there can be edited or deleted.
+**Show:** Click "Audit Trail" in the section list. Spotlight the newest records: the lock, the unlock, the hours edit.
+
+### 7. Next
+#### [7.1] Close
+**Say:** Your pay period is locked and payroll has the file. To see the staff side, watch how staff check in, and where they find their timesheet and pay periods.
+**Show:** End card with two tiles: "13.7 Check in, breaks and check out" and "13.8 Timesheet, time off and pay periods".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
