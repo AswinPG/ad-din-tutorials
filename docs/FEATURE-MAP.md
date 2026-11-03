@@ -164,7 +164,7 @@ Admin setup plus the masjid pages members see. Events and donations are listed h
 | My Classwork, Academic Activity scores | App home; Parent Portal → Academic Activity | Parent | 14.3 | |
 | Exams, Exam Marks (parent view) | Parent Portal (Exam Marks switch) | Parent | — | (c) Left out on purpose (Exam Marks, decided 2026-11-03) |
 | Class, Subject, Class Routine, Holiday, Grade, Delegations (parent view) | Parent Portal | Parent | 14.1 | My Routine covers the timetable; the other read-only lists are not named. (b) one line in 14.1 |
-| Payment (Invoice History) | Parent Portal → Payment | Parent | 14.4 | No online payment yet (series.yaml decision) |
+| Payment (Invoice History) | Parent Portal → Payment (Payment Module switch) | Parent | — | Track 11, on hold: cut from 14.4 until Track 11 adds it back (decided 2026-11-03); no online payment yet |
 | Report Archive (released report cards) | Reports → Report Archive | Parent | 14.4 | |
 | Book a parent-teacher interview | Parent Portal → Parent Teacher Interview | Parent | 14.4 | |
 | Madrasah Report (parent's own reports) | Reports → Madrasah Report (ParentEnrolled) | Parent | — | (b) Fold into 14.4 next to Report Archive |
@@ -233,7 +233,7 @@ Added as its own table because it serves both kinds of organisation.
 | Feature | Where | Who | Covered by | Note |
 |---|---|---|---|---|
 | Masjid Report: Masjid Staff List, Masjid Prayer Times chart | Reports → Masjid Report | Masjid Admin | 12.5 | |
-| Madrasah Report library: Hifz / Quranic assignments, attendance, progress, payment, class and section reports | Reports → Madrasah Report | Madrasah Admin, Teacher | 12.4 | |
+| Madrasah Report library: Hifz / Quranic assignments, attendance, progress, class and section reports | Reports → Madrasah Report | Madrasah Admin, Teacher | 12.4 | Payment reports: Track 11, on hold (cut from 12.4, decided 2026-11-03) |
 | Madrasah Report library: library reports (circulation, due, all books), parent-teacher interview schedules, exam reports, people details (admin, teacher, parent, student by section, student home masjid) | Reports → Madrasah Report | Madrasah Admin, Teacher | — | (b) Fold into 12.4: one line that the library also holds these |
 | Pinning reports | Madrasah Report | Madrasah Admin, Teacher | 12.4 | |
 | Report Builder: Map New Report, Grades Mapping, Element Mapping, colours, signature | Reports → Report Builder | Madrasah Admin | 12.1 | |
@@ -305,7 +305,7 @@ The app is one WebView around the same Angular pages, so almost every feature ab
 ### Counts
 
 - **Feature rows:** 217: 200 for the user-facing audience, plus 17 Global Admin.
-- **Covered by a planned video:** 160 of the 200 audience rows. 1 of them is in Track 11 (on hold). 3 more are only partly named, so their video should add one line: parent read-only lists (14.1), the admin's app home (12.6), and quick-action pinning for non-teachers (00.6).
+- **Covered by a planned video:** 159 of the 200 audience rows. 1 of them is in Track 11 (on hold), and 1 more (the parent Payment page) waits for Track 11 after it was cut from 14.4 on 2026-11-03. 3 more are only partly named, so their video should add one line: parent read-only lists (14.1), the admin's app home (12.6), and quick-action pinning for non-teachers (00.6).
 - **(a) New video needed:** 8 rows, which make 3 new videos.
 - **(b) Fold into an existing video:** 18 rows.
 - **(c) Leave out:** 14 audience rows (disabled, hidden, legacy, unreachable or left out on purpose, including the 3 Exam Marks rows and the Custom Comments Library dropped 2026-11-03), plus all 17 Global Admin rows. The leave-out list below also names 7 unused modules and routes that have no table row.

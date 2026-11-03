@@ -1,14 +1,13 @@
 ---
 id: "03.2"
 title: Turn features on and off
-target: 4:00
+target: 3:45
 prereq:
   - "03.1"
 status: scripted
 plan: Free
 flags:
   - "Integrations tab is broken on a masjid: editMasjid.component.html passes [orgId]=\"madressahId\", which the masjid page doesn't have, so PayPal keys neither load nor save there. The script shows Integrations on the madrasah only."
-  - "Payment Module switch is shown in passing ([3.5]); Track 11 is on hold. Cut [3.5] if it shouldn't appear."
   - "Exam Marks switch is shown as the app describes it (older feature, off by default). The series has no Exam Marks video (dropped 2026-11-03), so [3.4] only names the switch and points to Academic Activity."
 ---
 
@@ -21,7 +20,7 @@ Switch your organisation’s optional features on or off on the Services tab, ch
 <!-- Shown on the opening card. Generated from prereq/plan/switch if left empty. -->
 
 ## Covers
-- Every switch on the Services tab and what it unlocks
+- Every switch on the Services tab and what it unlocks, except Payment Module (left for Track 11)
 - PayPal keys on the Integrations tab
 
 ## Demo data
@@ -68,10 +67,6 @@ Switch your organisation’s optional features on or off on the Services tab, ch
 **Say:** **Exam Marks** shows the older Exams and Exam Marks feature. It’s off by default; Academic Activity is the recommended way to grade work.
 **Show:** Spotlight Exam Marks (off).
 
-#### [3.5] Payment Module
-**Say:** **Payment Module** sets up fee invoices, payments and fee reports for your programs.
-**Show:** Spotlight Payment Module (off). Don’t switch it on.
-
 ### 4. Features for masjids and madrasahs
 #### [4.1] Family sharing
 **Say:** Masjids have the next two switches too. When **Family Subscription sharing** is on, a subscription given to a parent also covers their spouse and children.
@@ -112,6 +107,7 @@ Switch your organisation’s optional features on or off on the Services tab, ch
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · manager · decisions via chat · Payment Module cut until Track 11: [3.5] removed, Payment Module flag dropped, Covers notes the exception; target 4:00 to 3:45
 - 2026-11-03 · manager · decisions via chat · Exam Marks decided (10.11 dropped): [3.4] flag reworded; [3.4] stays as it names a real switch
 - 2026-11-03 · critic · 5 changes: [2.1] Manage on any organisation, says why a madrasah is shown; [3.1] less repetition; [4.1] 'is on masjids too' (read as switched on) → 'Masjids have the next two switches too'; [5.2] points to 08.3 instead of duplicating it; [7.1] shorter close
 - 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: [4.2] Show lists the third quick link (Legacy teacher-attendance register) a madrasah sees

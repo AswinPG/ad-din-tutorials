@@ -1,12 +1,11 @@
 ---
 id: "12.4"
 title: Madrasah reports library
-target: 4:30
+target: 4:15
 prereq:
   - "06.4"
 status: scripted
 flags:
-  - "Payment Reports need fee data from the Payment Module, which is on hold (Track 11); the script only points to the category and doesn't run a payment report. Confirm, or cut the line."
   - "Pinned reports are saved in the browser (localStorage), not on the account, so they don't follow the user to another computer; the script says so."
 ---
 
@@ -19,7 +18,7 @@ Find, run and download the madrasah reports you need, from Hifz progress and att
 <!-- Shown on the opening card. Generated from prereq/plan/switch if left empty. -->
 
 ## Covers
-- Hifz, attendance, progress, payment and class reports
+- Hifz, attendance, progress and class reports
 - pinning reports
 - library, interview, exam and people-details reports (one line)
 
@@ -103,10 +102,6 @@ See docs/SCRIPT-FORMAT.md.
 **Say:** Older reports like this one have a **Print** or **Download** button above the results, which saves them as a PDF.
 **Show:** Spotlight the "Print" button above the list.
 
-#### [5.4] Payment
-**Say:** If your madrasah collects fees in Ad-Din, **Payment Reports** such as the **Accounts Receivable Report** show what's owed.
-**Show:** Sidebar → Reports → Madrasah Report. Spotlight the "Payment Reports" card; don't run it.
-
 #### [5.5] More reports
 **Say:** The library also has **Library Reports**, **Interview Reports** for parent-teacher meetings, **Exam Reports**, and **Role Based Access Reports**, which list your teachers, parents and administrators.
 **Show:** Scroll down the library; spotlight the Library Reports, Interview Reports, Exam Reports and Role Based Access Reports cards in turn. Don't run them.
@@ -131,5 +126,6 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · manager · decisions via chat · Payment Module cut until Track 11: [5.4] Payment Reports removed, payment dropped from Covers, flag dropped; target 4:30 to 4:15
 - 2026-11-03 · critic · 3 changes: [1.1] second-person opening; [7.2] end-card videos named by number; fold: new [5.5] names Library, Interview, Exam and Role Based Access Reports (Covers + demo data: Exam Marks setting on)
 - 2026-11-03 · validator · checked against master d36d69ed8 · 4 fixes: [3.2] Hifz Tracker subjects fill in from the class's gear-button Subject Mapping Configuration (not pickable) and a student must be picked; [2.2] Admin doesn't show every report; [6.1] a pinned report also appears under My Favorite Reports (it doesn't move); demo data adds the Hifz class flag and subject mapping

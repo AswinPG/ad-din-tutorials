@@ -108,10 +108,11 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Past excuses with the new Late excuse at the top.
 
 #### [8.2] Close
-**Say:** Next, follow your child's Hifz progress and classwork, or see fees, report cards and interview bookings.
-**Show:** End card with two tiles: "14.3 Follow Hifz progress and classwork" and "14.4 Fees, report cards and interview bookings".
+**Say:** Next, follow your child's Hifz progress and classwork, or see report cards and interview bookings.
+**Show:** End card with two tiles: "14.3 Follow Hifz progress and classwork" and "14.4 Report cards and interview bookings".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · manager · decisions via chat · 14.4 renamed 'Report cards and interview bookings' (fees cut): end card and [8.2] closing Say updated
 - 2026-11-03 · critic · 4 changes: [5.1] plain "If" sentence instead of a clipped question (translation), chapter 7 titled "Edit or delete an excuse" instead of an idiom, [7.1] tighter, [1.2] and [3.1] small tidy-ups
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes

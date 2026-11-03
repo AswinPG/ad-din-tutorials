@@ -385,7 +385,8 @@ decisions:
   - title: "Payment Module out of scope"
     detail: "Track 11 is on hold. Parents have no online pay button (PayPal keys exist), Payment and Invoice History need the Payment Module switch, and Payment Reports need fee data. Each script keeps these to one cuttable chapter or line."
     videos: "03.2, 12.4, 12.6, 14.4"
-    status: open
+    status: decided
+    answer: "Cut them now; Track 11 adds them back later"
   - title: "Masjid PayPal keys can’t be saved"
     detail: "Bug: the masjid Integrations tab passes the madrasah id (editMasjid.component.html, [orgId]=\"madressahId\"), so keys never load and saving fails. Works on a madrasah. Fix before recording to put the PayPal step back in 08.3 and PayPal gifts in 08.5."
     videos: "03.2, 08.3, 08.5"

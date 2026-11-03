@@ -109,11 +109,12 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** The home with the Hifz progress and My Classwork cards in view.
 
 #### [5.2] Close
-**Say:** Next, see fees, report cards and interview bookings, or check attendance and report an absence.
-**Show:** End card with two tiles: "14.4 Fees, report cards and interview bookings" and "14.2 Check attendance and report an absence".
+**Say:** Next, see report cards and interview bookings, or check attendance and report an absence.
+**Show:** End card with two tiles: "14.4 Report cards and interview bookings" and "14.2 Check attendance and report an absence".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · manager · decisions via chat · 14.4 renamed 'Report cards and interview bookings' (fees cut): [5.2] Say and end card updated
 - 2026-11-03 · manager · decisions via chat · Exam Marks dropped from the series: cut [4.5] (Exams named over a card), its Covers line and flag, as the flag planned
 - 2026-11-03 · critic · 2 changes: target 4:00, chapter 4 retitled, [5.1] recap includes the new pages · fold: [4.4] parent Library and Recognition, [4.5] Exams / Exam Marks named over a card (flagged, open decision)
 - 2026-11-03 · validator · checked against master d36d69ed8 · 3 fixes: [2.4] Not marked means not submitted or marked yet (Say and Caption), demo data: Hifz Boys A must be a Quran Hifz class, classwork in the current term

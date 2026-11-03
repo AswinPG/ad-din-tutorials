@@ -32,7 +32,7 @@ Read the widgets on your dashboard as an admin or a teacher, pin Quick Actions, 
 - Masjid side with demo donations
 - Staff Attendance switched off, so the Attendance box shows student attendance only
 - The same account on the app (phone frame), Admin selected on the app home, with two enrolment applications waiting and one class without attendance today, so Waiting on you shows both rows
-- No Quick Actions pinned at the start; Payment and Web Analytics tiles switched off before recording (Payment Module on hold, website is an add-on)
+- No Quick Actions pinned at the start; Payment and Web Analytics tiles switched off before recording (Payment Module is left for Track 11, website is an add-on); no payment widget or line on camera
 
 ## Script
 <!--
@@ -127,5 +127,6 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · manager · decisions via chat · Payment Module cut until Track 11: the script had no payment line; demo data now says no payment widget or line on camera
 - 2026-11-03 · critic · 5 changes: [1.1] second-person opening; [1.2] "know your way around" idiom removed; [5.3] Say now matches the Show (tap a card to open it); [7.2] "dig into" dropped, videos named by number; fold: new [6.3]/[6.4] admin app home "Waiting on you" with Review and Nudge (Covers + demo data)
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes
