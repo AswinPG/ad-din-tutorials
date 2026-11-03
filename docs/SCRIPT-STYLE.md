@@ -51,3 +51,27 @@ Only when the subtitle should differ from what's said: usually to shorten a long
 - Fill `## Goal` (one sentence), `## You'll need` (only if the generated card would miss something), `## Demo data`, `## Script`.
 - Every item in `## Covers` must appear in the script. If an item can't be shown (feature missing or broken), keep it in Covers, leave it out of the script, and add a `flags:` entry saying why.
 - Add a prompt-log entry at the top of `prompts.md` (replace `_No prompts yet._`): `- 2026-11-03 · manager · "Write all the scripts now and double check nothing is missed." · Scripted from origin/master (d36d69ed8); <notes>.`
+
+## Lessons from the critic pass (2026-11-03)
+
+Patterns the critics found again and again across the first 100 scripts. Check every new script against them.
+
+1. **No "you already know…" or "set up earlier".** Say what's already in place in plain words ("Your classes are already in place") so the video stands alone.
+2. **Opening, one form:** `[1.1]` says what you'll do and who it's for ("This video is for madrasah admins. You'll…"). No time promises ("takes about a minute").
+3. **No thin scenes.** A Say of two words ("Tap **Save**.") or a Show with nothing new ("Hold on the page") merges into the scene next to it, or gives the reason for the action.
+4. **Say and Show match step for step.** If the Show taps Save, reselects a filter or re-marks a student, the Say mentions it.
+5. **End card:** the closing Say names every tile on the end card, by number and title. Avoid two videos that only send viewers to each other.
+6. **Add-on wording:** anything that needs the website add-on says "If your masjid has an Ad-Din website…".
+7. **One term per thing** across the series: "website home page", "home masjid", the exact image label (**Image for Mobile/Web**) rather than "mobile picture".
+8. **Buttons that show a count:** "The button shows how many…", not "Tap **Import** with the number of activities".
+9. **Words that don't translate.** Avoid idioms and phrasal verbs. Replace them:
+
+| Avoid | Say instead |
+|---|---|
+| where your tools live | where to find your tools |
+| take the tour, take a look | look at, see |
+| sets it up, sets that place up | sets it, creates it |
+| takes off, hear about, give it a minute | starts, learn about, wait a moment |
+| a home on the web, dot org | your website, your web address |
+| key (for a legend) | guide |
+| halaqa (unless the app shows it) | the demo's own name, e.g. Tafsir circle |
