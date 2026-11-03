@@ -1,16 +1,18 @@
 ---
 id: "13.2"
 title: Draw work zones
-target: 3:30
+target: 3:00
 prereq:
   - "13.1"
-status: planned
+status: scripted
+flags:
+  - "Is Staff Attendance live? (series.yaml decision) Confirm before publishing"
 ---
 
 # 13.2 Draw work zones
 
 ## Goal
-_What the viewer can do after watching, in one sentence. Written with the script._
+Draw a circle or polygon zone around the place your staff work, and know that a tap outside it is still recorded.
 
 ## You'll need
 <!-- Shown on the opening card. Generated from prereq/plan/switch if left empty. -->
@@ -21,6 +23,10 @@ _What the viewer can do after watching, in one sentence. Written with the script
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
+- Demo madrasah with Staff Attendance on and a stored location, so the map opens on the site
+- One existing zone "Main building" (circle, radius 150 m, used by 3 staff)
+- A new polygon zone "Playing field" drawn during the video (5 points)
+- Google map tiles available to the recorder (Map and Satellite); without the map the app hides New zone
 
 ## Script
 <!--
@@ -30,7 +36,63 @@ Optional **Caption:** overrides the subtitle text. Translations in i18n/<lang>.m
 See docs/SCRIPT-FORMAT.md.
 -->
 
-_Not scripted yet._
+### 1. What zones are for
+#### [1.1] Opening
+**Say:** A zone is the place your staff normally work, such as your building. This video shows an admin how to draw one.
+**Show:** Title card: "Draw work zones".
+
+#### [1.2]
+**Say:** Staff Attendance is already switched on. When someone checks in, Ad-Din compares their location with their zone.
+**Show:** Opening card.
+
+### 2. Open Zones
+#### [2.1] Your zones
+**Say:** Open **Staff Attendance** and choose **Zones**. The map shows your zones. The list beside it shows each zone's shape, and how many staff use it.
+**Show:** Sidebar → Admin Portal → Staff Attendance → Zones. Spotlight the list row "Main building · Circle · radius 150 m · Used by 3 staff".
+
+#### [2.2]
+**Say:** Tap a zone to show only that one on the map. Switch to **Satellite** to see your buildings clearly.
+**Show:** Click the "Main building" row; the map shows only it. Click "Satellite", then "Map".
+
+### 3. Draw a circle
+#### [3.1] New zone
+**Say:** To add a zone, tap **New zone** and type a **Zone name**.
+**Show:** Click "New zone". Type "Annex" in Zone name.
+
+#### [3.2]
+**Say:** A new zone starts as a **Circle** of one hundred and fifty metres. Search for the address, then tap the map to place the centre.
+**Show:** Type the demo address in "Centre on an address" and pick it. Click the map; the circle appears.
+
+#### [3.3]
+**Say:** Change the **Radius** if you need to. It can't go below one hundred metres, because tighter circles miss honest taps indoors.
+**Show:** Change Radius to 200; the circle grows. Spotlight the note about the radius floor.
+
+### 4. Or draw a polygon
+#### [4.1] Polygon
+**Say:** For an odd-shaped site, choose **Polygon** instead. Tap the map at each corner. If you misplace one, tap **Undo point**.
+**Show:** Rename to "Playing field". Click "Polygon". Click five corners round the field; click "Undo point" once and re-add the last corner. Spotlight "5 of 100 points".
+
+#### [4.2]
+**Say:** A boundary needs at least three points, and it can't cross itself. When it looks right, tap **Save**.
+**Show:** Click "Save". "Playing field · Polygon · 5 points" appears in the list.
+
+### 5. Zones never block
+#### [5.1] Annotate, never gate
+**Say:** Zones annotate; they never block. A tap inside a zone checks itself. A tap outside is still recorded, and the staff member is simply asked for a reason.
+**Show:** Zoom on the information note under the list.
+
+#### [5.2]
+**Say:** So a teacher at an off-site school event can still check in. You'll see their reason later, in Review.
+**Show:** Hold on the map with both zones.
+
+#### [5.3] Edit or delete
+**Say:** To change a zone, tap **Edit**. To remove one, tap **Delete**. If staff still use it, Ad-Din asks you to move them to another zone first.
+**Show:** Hover "Edit". Click "Delete" on "Main building": the panel "Reassign before deleting "Main building"" lists its staff. Click "Cancel".
+
+### 6. Next
+#### [6.1] Close
+**Say:** Your zones are drawn. Next, set up your staff and shifts, and give each person their zone.
+**Show:** End card with two tiles: "13.3 Set up staff and shifts" and "13.4 Attendance settings and leave".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
