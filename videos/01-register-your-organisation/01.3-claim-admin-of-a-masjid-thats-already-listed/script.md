@@ -7,7 +7,7 @@ prereq:
 status: scripted
 flags:
   - The claim page needs a home masjid; without one, the claim link silently returns to the home page, even when claiming a madrasah
-  - The file check is reversed: files under 10 KB are refused with a "more than 10 MB" message and large files pass; the demo document must be over 10 KB, and the script states no size limit
+  - "The file check is reversed: files under 10 KB are refused with a \"more than 10 MB\" message and large files pass; the demo document must be over 10 KB, and the script states no size limit"
   - Tapping Save with no organisation selected shows an unknown-error message instead of asking you to choose one
 ---
 
