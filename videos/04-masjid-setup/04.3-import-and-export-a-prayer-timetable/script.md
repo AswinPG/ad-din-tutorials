@@ -9,6 +9,7 @@ flags:
   - "Export always covers January to December of the current year, while month buttons for months already past open next year's month; late in the year the file won't include the upcoming months the grid shows"
   - "The Import window's \"this guide\" link opens the internal ad-din.atlassian.net wiki; don't click it on camera"
   - "Export downloads a zip with the CSV inside, and the import needs a .csv; Explorer and Excel shots come from the recording PC, not the app"
+  - "Excel can rewrite the PrayerDate column (yyyy-MM-dd) in the local date format when it saves a CSV; the import then fails with \"not a valid date (format yyyy-MM-dd ...)\". The demo CSV must keep yyyy-MM-dd; consider a one-line tip in [4.3]"
 ---
 
 # 04.3 Import and export a prayer timetable
@@ -27,9 +28,9 @@ Change single days in Manual Update, export the year's timetable to a spreadshee
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
 - Demo masjid "Masjid Al-Noor", signed in as its masjid admin, with automatic begin times and Iqamah times for the coming year
-- A month to load on camera (for example March) with a Friday row to edit (Isha Iqamah moved to 9:00 PM)
+- A month to load on camera (for example March) with a Friday row to edit (Isha Iqamah moved to 9:00 PM). The demo clock must sit before the end of that month, so its button opens this year's month: the same year the export and import cover
 - An export file for the demo (zip with one CSV), and an edited CSV ready to import (all rows with Fajr, Dhuhr, Asr and Isha Iqamah filled)
-- A second CSV with one empty Isha cell on row 12, for the error message "Row 12: Iqamah times can't be null"
+- A second CSV with one empty Isha cell in the 12th data row (spreadsheet row 13, under the header), for the error message "Import failed. Row 12: Iqamah times can't be null"
 
 ## Script
 <!--
@@ -107,7 +108,7 @@ See docs/SCRIPT-FORMAT.md.
 
 #### [5.6] If something's wrong
 **Say:** If a row has a problem, the message gives its row number. Fix that line in the file and import again.
-**Show:** Repeat with the second demo file: the toast "Row 12: Iqamah times can't be null".
+**Show:** Repeat with the second demo file: the toast "Import failed. Row 12: Iqamah times can't be null"; the window stays open.
 
 ### 6. Check and finish
 #### [6.1] Check
@@ -116,3 +117,4 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · validator · checked against master d36d69ed8 · 3 fixes: [5.6] error toast is "Import failed. Row 12: ..." and the window stays open; demo data row 12 = 12th data row; demo clock must keep the March button on the export year. Flag added: Excel date format

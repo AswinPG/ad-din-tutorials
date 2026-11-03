@@ -95,3 +95,4 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · validator · checked against master d36d69ed8 · no changes

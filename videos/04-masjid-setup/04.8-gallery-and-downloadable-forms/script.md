@@ -7,6 +7,8 @@ prereq:
 status: scripted
 flags:
   - "Albums don't exist: the masjid Gallery is one list of images and YouTube videos with a title and caption each, with no albums. Kept in Covers, not scripted"
+  - "Forms: the picker and the hint offer PNG images, but Upload & Save rejects .png with \"This file Type is not supported.\" (only jpg/jpeg pass); the script says JPG"
+  - "Forms: after Upload & Save the panel closes but the list doesn't reload, so the new form only shows after a page refresh or re-picking the masjid; the recorder refreshes off camera"
 ---
 
 # 04.8 Gallery and downloadable forms
@@ -26,7 +28,7 @@ Add photos and YouTube videos to your masjid's Gallery, and upload forms people 
 - Demo masjid "Masjid Al-Noor", signed in as its masjid admin; Gallery with six existing photos (Eid prayer, open day, food drive)
 - A new photo to upload titled "Iftar Night", caption "Community iftar in the main hall"
 - A YouTube embed code for a demo masjid video titled "Masjid Tour"
-- Forms list with two existing forms; a new PDF under 2 MB, "Membership Application.pdf", and a 3 MB file for the size message
+- Forms list with two existing forms; a new PDF under 2 MB, "Membership Application.pdf", and a 3 MB PDF or JPG for the size message
 
 ## Script
 <!--
@@ -74,7 +76,7 @@ See docs/SCRIPT-FORMAT.md.
 
 #### [4.2] Rename or delete
 **Say:** Tap the pencil to change the title or caption, then tap **Submit**. The bin deletes the item, after you confirm.
-**Show:** Click the pencil: "Rename Gallery" opens; click Cancel. Hover the bin; don't delete.
+**Show:** In the open viewer, click the pencil: "Rename Gallery" opens with Title and Caption; hover Submit, then click Cancel (the viewer closes with it). Open the item again and hover the bin; don't delete.
 
 ### 5. Upload a form
 #### [5.1] Where it lives
@@ -86,12 +88,12 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Type "Membership application for new families".
 
 #### [5.3] Pick the file
-**Say:** Drag a file onto the box, or tap **Browse files**. Use a PDF, Word, Excel or image file, up to 2 MB.
+**Say:** Drag a file onto the box, or tap **Browse files**. Use a PDF, Word, Excel or JPG file, up to 2 MB.
 **Show:** Click Browse files; pick "Membership Application.pdf"; its name and size show under the box.
 
 #### [5.4] Upload
 **Say:** Tap **Upload & Save**. The form appears in the list with its date and size. A bigger file is turned away, with a message asking for one under 2 MB.
-**Show:** Click Upload & Save; the new card appears. Then show the toast for the 3 MB file: "File too large to process. Upload a file of < 2MB in size."
+**Show:** Click Upload & Save; the panel closes. Cut past a page refresh: the new card is in the list. Then click Add New Form, type any description, pick the 3 MB demo file and click Upload & Save: toast "File too large to process. Upload a file of < 2MB in size." (the size is only checked on Upload & Save, not when the file is picked).
 
 #### [5.5] Manage forms
 **Say:** Anyone can tap download to save a form. As an admin, you can also rename it or delete it.
@@ -104,3 +106,4 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · validator · checked against master d36d69ed8 · 4 fixes: forms file types say JPG not "image" (PNG is rejected), 3 MB rejection happens on Upload & Save and the list needs a refresh after upload (Show [5.4] + flags), Rename Cancel closes the viewer so the bin is shown after reopening ([4.2]), 3 MB demo file type

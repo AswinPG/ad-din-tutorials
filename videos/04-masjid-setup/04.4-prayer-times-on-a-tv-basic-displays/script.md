@@ -29,10 +29,11 @@ Choose what the small, medium and large prayer-time displays show, open one on a
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
 - Demo masjid "Masjid Al-Noor" with Iqamah times for today, signed in as its masjid admin who has Ad-Din Premium (so Basic Announcements opens)
-- Demo logo and a plain background image to upload; the demo madrasah "Al-Noor Madrasah" in Select Madrasah
+- Demo logo and a plain background image to upload; the masjid follows the demo madrasah "Al-Noor Madrasah", so it appears in Select Madrasah
+- At least as many upcoming masjid events as madrasah events (the large display page breaks its slides when the madrasah has more events than the masjid)
 - Display settings: all prayers ticked with Begins and Adhan, Hijri and Time ticked, URL unticked
 - Rendered previews (or stubs) for the three display pages, and a TV-shaped frame showing the large display full screen
-- One existing announcement "Ramadan Food Drive" (Active), and a 2 MB-or-smaller square JPEG for a new one titled "Jumu'ah Lunch"
+- One existing announcement "Ramadan Food Drive" (Active), and a JPEG under 2 MB for a new one titled "Jumu'ah Lunch" (the crop box is 960 × 1080, slightly taller than wide)
 
 ## Script
 <!--
@@ -54,11 +55,11 @@ See docs/SCRIPT-FORMAT.md.
 ### 2. Open Basic Display
 #### [2.1] Where it lives
 **Say:** In the sidebar, open **Masjid**, then **Prayer Times**, and choose **Basic Display**. Tap a section's title to open it.
-**Show:** Sidebar → Masjid → Prayer Times → "Basic Display". The list of collapsed sections.
+**Show:** Sidebar → Masjid → Prayer Times → "Basic Display". The list of sections; the first, "Upload Logo & Upload Background", is already open.
 
 #### [2.2] Logo and background
 **Say:** In the first section, under **Upload Logo** and **Upload Background**, tap **Upload** to add your masjid's logo and a background picture for the screens.
-**Show:** Open the first section. Click Upload under Upload Logo and pick the demo logo; it appears. Do the same under Upload Background.
+**Show:** The first section is already open. Click Upload under Upload Logo and pick the demo logo; it appears. Do the same under Upload Background. (The pictures are kept only after Save in [3.8].)
 
 ### 3. Choose what each display shows
 #### [3.1] Three displays
@@ -82,7 +83,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Open "Medium Display / Public Facing Website Prayer Time Control". Spotlight the line "This widget, designed for medium displays, also updates and controls prayer times visible on the public website."
 
 #### [3.6] Large Display
-**Say:** **Large Display** suits a wide TV. Set the **Scroll Speed (in seconds)**, and choose your madrasah under **Select Madrasah** to include its news.
+**Say:** **Large Display** suits a wide TV. Set the **Scroll Speed (in seconds)**, and choose your madrasah under **Select Madrasah** to include its events.
 **Show:** Open Large Display. Spotlight Scroll Speed (in seconds), Select Madrasah ("Al-Noor Madrasah") and the event checkboxes below.
 
 #### [3.7] Mobile app
@@ -108,8 +109,8 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Click Add New. The "Add announcement" sheet; type "Jumu'ah Lunch" in Announcement title.
 
 #### [5.3] Image
-**Say:** Under **Image**, tap **Choose** and pick a JPEG or PNG under 2 MB. Crop it, and it appears in the form.
-**Show:** Click Choose; pick the demo image; crop; the thumbnail shows with Change and Remove.
+**Say:** Under **Image**, tap **Choose** and pick a JPEG or PNG under 2 MB. Crop it, tap **Save & Upload**, and it appears in the form.
+**Show:** Click Choose: the "Crop and upload image" window opens. Click Choose Image; pick the demo image; adjust the crop; click Save & Upload. The thumbnail shows with Change and Remove.
 
 #### [5.4] Schedule
 **Say:** To show it for a set time, turn on **Schedule a display period** and pick a **Start date** and **End date**. Leave it off to show it until you remove it.
@@ -126,3 +127,4 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · validator · checked against master d36d69ed8 · 5 fixes: first Basic Display section is open by default, logo/background kept only on Save, large display shows madrasah events (not news), Save & Upload step in the image crop, demo data (followed madrasah, event counts, 960 × 1080 crop)

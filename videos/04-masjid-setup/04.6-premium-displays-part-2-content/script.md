@@ -29,7 +29,7 @@ Fill a premium display with posters, events and a scrolling ticker, and set its 
 - Two upcoming masjid events (so the Events switch has something to show)
 - A 1920 × 1080 poster and a 1080 × 1920 poster for new content "Weekend Quran Class", dated next week, all five prayer periods ticked
 - A ticker message "Masjid office open 10 AM to 4 PM" for the same dates
-- Alternative salat names typed on camera (for example Arabic "الفجر" for Fajr); a Taraweeh preset poster available
+- Language Settings with the default names: English titles, and Arabic in every Alternative Language Settings and Alternative Islamic Months Title box (Ad-Din's default); a Taraweeh preset poster available
 - Calculation settings with Minutes Before Zawal and the Al-Duha minutes above zero, so the Makrooh notices can show
 - Previews (or stubs) of Horizontal Display 1 with the poster, the ticker and the custom colours
 
@@ -65,7 +65,7 @@ See docs/SCRIPT-FORMAT.md.
 
 #### [2.4] Pictures
 **Say:** Under **HORIZONTAL DISPLAY** and **VERTICAL DISPLAY**, upload a picture for each shape. **Full Screen** fills the screen; the other choice leaves room for prayer times or headers.
-**Show:** Under HORIZONTAL DISPLAY, keep Full Screen and upload the wide poster; under VERTICAL DISPLAY, upload the tall one.
+**Show:** Under HORIZONTAL DISPLAY, keep Full Screen; click Upload Image, then Choose Image in the "Crop and upload image" window, pick the wide poster and click Save & Upload. Do the same under VERTICAL DISPLAY with the tall one.
 
 #### [2.5] Displays and save
 **Say:** Under **Active for following displays**, untick any display that shouldn't show it. Tap **Save**.
@@ -83,7 +83,7 @@ See docs/SCRIPT-FORMAT.md.
 ### 4. Ticker message
 #### [4.1] Write it
 **Say:** A ticker is a line of text that scrolls across the screen. On the **Ticker Message** tab, tap **Create**, and type your message in **Ticker Message Title**.
-**Show:** Click the "Ticker Message" tab; Create; type "Masjid office open 10 AM to 4 PM".
+**Show:** Click the "Ticker Message" tab; Create; clear the pre-filled "New Ticker Message" and type "Masjid office open 10 AM to 4 PM".
 
 #### [4.2]
 **Say:** Pick the dates, days and times, choose the displays as before, and tap **Save**.
@@ -104,11 +104,11 @@ See docs/SCRIPT-FORMAT.md.
 
 #### [5.2] Makrooh Times
 **Say:** **Makrooh Times** shows a notice when Salah is disliked: after sunrise and around Zawal. Switch on each notice, and choose an image or a message.
-**Show:** Click Makrooh Times. Turn on "Makrooh time notice for Sunrise" and "Makrooh time notice for Zawal"; select "Or setup a message" on each.
+**Show:** Click Makrooh Times. Turn on "Makrooh time notice for Sunrise" and "Makrooh time notice for Zawal"; "Or setup a message" is already selected on each, with its default text.
 
 #### [5.3]
-**Say:** The notice times come from your calculation settings. Turn on **Force over content** to keep the notice in front of everything else. Tap **Save**.
-**Show:** Spotlight the line about Calculation Settings, then the Force over content switch. Click Save.
+**Say:** The notice times come from your calculation settings. **Force over content** is on to start, and keeps the notice in front of everything else. Tap **Save**.
+**Show:** Spotlight the line about Calculation Settings, then the Force over content switch at the top (already on). Click Save.
 
 ### 6. Taraweeh poster
 #### [6.1]
@@ -121,8 +121,8 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 7. Language and colours
 #### [7.1] Second language
-**Say:** For a second language, open the **Language Settings** tab and type each prayer's name under **Alternative Language Settings**. Tap **Save**.
-**Show:** Click the "Language Settings" tab. Type the demo names under Alternative Language Settings. Click Save.
+**Say:** For a second language, open the **Language Settings** tab. Under **Alternative Language Settings**, Ad-Din fills in Arabic names to start; change any you like, but leave none empty. Tap **Save**.
+**Show:** Click the "Language Settings" tab. Spotlight the Arabic names under Alternative Language Settings. Click Save.
 
 #### [7.2]
 **Say:** Then, on your display, open **Alternate Language Settings**, switch on **Display Alternate Language**, and set the **Language Transition Duration** in seconds. Tap **Save**.
@@ -139,3 +139,4 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · validator · checked against master d36d69ed8 · 5 fixes: Save & Upload crop step for posters, clear the pre-filled ticker title, Makrooh message and Force over content are on by default, alternative names come pre-filled in Arabic and none may be empty, demo data

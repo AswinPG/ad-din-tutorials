@@ -107,7 +107,7 @@ See docs/SCRIPT-FORMAT.md.
 
 #### [6.3] Maghrib
 **Say:** Maghrib works from sunset. **Maghrib Adhan Offset** is the minutes after sunset, and **Maghrib Iqamah Offset** is the minutes from that Adhan to Iqamah.
-**Show:** Spotlight "Maghrib Adhan Offset" (5) and "Maghrib Iqamah Offset" (5) with the help text under each.
+**Show:** Spotlight "Maghrib Adhan Offset" (5) and the help paragraph under the boxes, then "Maghrib Iqamah Offset" (5) and its note "The minutes after Maghrib Adhan, Iqamah occurs."
 
 #### [6.4] Save
 **Say:** Tap **Save**. If you change your mind before saving, **Revert** brings back the saved values.
@@ -137,3 +137,4 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: [6.3] Show line names the real help texts (one paragraph under all the Adhan boxes, one note under Maghrib Iqamah Offset)
