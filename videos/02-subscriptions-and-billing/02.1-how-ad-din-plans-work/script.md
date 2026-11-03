@@ -1,17 +1,19 @@
 ---
 id: "02.1"
 title: How Ad-Din plans work
-target: 3:30
+target: 3:15
 prereq: []
-status: planned
+status: scripted
 audience:
   - Everyone
+flags:
+  - The 30-day grace period isn't shown anywhere in the app (no banner or countdown). The script states the API rule (UserClaimRepository and SubscriptionService allow access until 30 days after expiry).
 ---
 
 # 02.1 How Ad-Din plans work
 
 ## Goal
-_What the viewer can do after watching, in one sentence. Written with the script._
+Know what's free, what Premium adds, the two ways to get Premium (for yourself or as a seat from your organisation), what add-on services are, and what the 30-day grace period means.
 
 ## You'll need
 <!-- Shown on the opening card. Generated from prereq/plan/switch if left empty. -->
@@ -23,7 +25,11 @@ _What the viewer can do after watching, in one sentence. Written with the script
 - the 30-day grace period
 
 ## Demo data
-<!-- Records the demo organisation must have for this video (classes, students, events...). -->
+- Member account with no subscription (for example `yusuf_rahman`), so Profile → Subscription shows the Free, Premium Monthly and Premium Yearly cards
+- Demo madrasah "Al-Noor Madrasah" with seats bought: Yearly 40 of 50 used, Monthly 3 of 10 used; signed in as its admin (who has a seat)
+- Its Other Services: website active, Custom Sender Name and Email not subscribed; the linked demo masjid shows Prayer Times Premium
+- Parent account with an organisation seat, so its Subscription tab shows "Provided by your organization"
+- Family Subscription sharing visible on the madrasah's Services tab (not toggled on camera)
 
 ## Script
 <!--
@@ -33,7 +39,73 @@ Optional **Caption:** overrides the subtitle text. Translations in i18n/<lang>.m
 See docs/SCRIPT-FORMAT.md.
 -->
 
-_Not scripted yet._
+### 1. Free, Premium and extras
+#### [1.1] Opening
+**Say:** Ad-Din has a free plan, a Premium plan, and a few extra services for organisations. This video explains how they fit together, so you know what you need.
+**Show:** Title card: "How Ad-Din plans work".
+
+### 2. What's free
+#### [2.1] The Free card
+**Say:** To compare the plans, tap **Profile** at the top right, then **User Profile**, and open the **Subscription** tab.
+**Show:** Member account. Top bar → Profile → User Profile → Subscription tab. The three plan cards load.
+
+#### [2.2]
+**Say:** The **Free** card lists what everyone gets: **Masjid Details Management**, **Prayer Times Administration**, **Live Streaming**, **Quran**, the **Tasbeeh Counter**, and viewing messages and events.
+**Show:** Spotlight the Free card; slow zoom down its list to "Messages Centre (View)" and "View Events".
+**Caption:** Free includes masjid details, prayer times, live streaming, Quran, the Tasbeeh Counter, and viewing messages and events.
+
+### 3. What Premium adds
+#### [3.1] Premium features
+**Say:** **Premium** adds the full Ad-Din: **Madrasah Management**, **Event Management**, **Reports**, **Priority Support** and **Future Modules**.
+**Show:** Spotlight the Premium Monthly card's feature list. Keep the prices in shot; don't zoom on them.
+
+#### [3.2]
+**Say:** Premium is role based. A teacher sees the **Teacher Portal**, a parent the **Parent Portal**, and an admin the **Admin Portal**.
+**Show:** Admin account sidebar: spotlight Teacher Portal, Parent Portal, Admin Portal in turn.
+
+#### [3.3]
+**Say:** Premium belongs to one person. Everyone who uses these portals needs Premium on their own account.
+**Show:** Card: "Premium = one person, one account".
+
+### 4. Two ways to get Premium
+#### [4.1] For yourself
+**Say:** The first way: buy Premium for yourself, monthly or yearly, here on the **Subscription** tab, on the web or in the app.
+**Show:** Back on the member's Subscription tab. Spotlight the two "Subscribe" buttons. Don't click.
+
+#### [4.2] From your organisation
+**Say:** The second way: your masjid or madrasah buys **Ad-Din Premium** as seats, and gives one seat to each person who needs it.
+**Show:** Admin account: Sidebar → Admin Portal → Subscription Management → View plan on "Al-Noor Madrasah". Spotlight the Monthly and Yearly cards and their "of … used" lines.
+
+#### [4.3]
+**Say:** If you have a seat, your **Subscription** tab says **Provided by your organization**. You don't pay; your admin looks after it.
+**Show:** Parent account: Profile → Subscription tab. Zoom on "Provided by your organization".
+
+#### [4.4] One seat for a family
+**Say:** An organisation can also turn on **Family Subscription sharing**. Then one seat given to a parent covers the whole linked family, including a spouse and children.
+**Show:** Admin account: Admin Portal → Organization Management → Manage on "Al-Noor Madrasah" → Services tab. Spotlight the "Family Subscription sharing" switch and its description. Don't toggle it.
+
+### 5. Add-on services
+#### [5.1] Extras for organisations
+**Say:** Organisations can add extra services on the same page, under **Other Services**: a public website, a custom sender name and email, and for a masjid, **Ad-Din Prayer Times Premium** for its TV screens.
+**Show:** Subscription page → scroll to Other Services. Spotlight the three service cards: Ad-Din Public Facing Webpages, Ad-Din Custom Sender Name and Email, Ad-Din Prayer Times Premium (on the masjid's page).
+
+#### [5.2]
+**Say:** Add-ons are for the whole organisation, so they don't use seats.
+**Show:** Hold on the Other Services cards.
+
+### 6. The grace period
+#### [6.1] Thirty more days
+**Say:** If a Premium plan ends, Ad-Din doesn't lock you out straight away. Premium stays open for thirty more days, so there's time to renew.
+**Show:** Card: a timeline "Plan ends → 30 more days → Premium pages locked". Then the member's Subscription tab showing "Days remaining".
+
+#### [6.2]
+**Say:** After those thirty days, Premium pages send you to get Premium again. Free features keep working as always.
+**Show:** Click a Premium page in the sidebar as a lapsed member; the Subscription tab opens in its place.
+
+### 7. Next
+#### [7.1] Close
+**Say:** Ready to choose? See how to get Ad-Din Premium for yourself, or how to buy seats for your organisation, in the next videos.
+**Show:** End card with three tiles: "02.2 Get Ad-Din Premium for yourself", "02.3 Buy seats for your organisation", "02.5 Add-on services".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
