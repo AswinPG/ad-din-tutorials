@@ -57,14 +57,18 @@ Only when the subtitle should differ from what's said: usually to shorten a long
 Patterns the critics found again and again across the first 100 scripts. Check every new script against them.
 
 1. **No "you already know…" or "set up earlier".** Say what's already in place in plain words ("Your classes are already in place") so the video stands alone.
-2. **Opening, one form:** `[1.1]` says what you'll do and who it's for ("This video is for madrasah admins. You'll…"). No time promises ("takes about a minute").
+2. **Opening, one form, second person:** `[1.1]` says who it's for and what you'll do ("In this video for madrasah admins, you'll…"), never "a masjid admin does X". Vary the wording a little, keep the content. No time promises ("takes about a minute").
 3. **No thin scenes.** A Say of two words ("Tap **Save**.") or a Show with nothing new ("Hold on the page") merges into the scene next to it, or gives the reason for the action.
 4. **Say and Show match step for step.** If the Show taps Save, reselects a filter or re-marks a student, the Say mentions it.
 5. **End card:** the closing Say names every tile on the end card, by number and title. Avoid two videos that only send viewers to each other.
 6. **Add-on wording:** anything that needs the website add-on says "If your masjid has an Ad-Din website…".
 7. **One term per thing** across the series: "website home page", "home masjid", the exact image label (**Image for Mobile/Web**) rather than "mobile picture".
 8. **Buttons that show a count:** "The button shows how many…", not "Tap **Import** with the number of activities".
-9. **Words that don't translate.** Avoid idioms and phrasal verbs. Replace them:
+9. **Point to other videos by number** ("video 03.3"), never "the staff video". Give the full sidebar path in the first Say of every video, even a part two.
+10. **Same how-to, same words:** image uploads always end with **Save & Upload**; a YouTube embed code is always "Share, then Embed". An overview video points to the task video instead of walking through it.
+11. **When the demo cancels,** the Show still spotlights the button the Say names (Save), then clicks Cancel.
+12. **Words with one meaning:** a *seat* is "one of your organisation's Premium seats" the first time in each video; *display* is Ad-Din's display page, *TV* or *screen* is the hardware.
+13. **Words that don't translate.** Avoid idioms and phrasal verbs. Replace them:
 
 | Avoid | Say instead |
 |---|---|
@@ -75,3 +79,7 @@ Patterns the critics found again and again across the first 100 scripts. Check e
 | a home on the web, dot org | your website, your web address |
 | key (for a legend) | guide |
 | halaqa (unless the app shows it) | the demo's own name, e.g. Tafsir circle |
+| come back to, tidy up, grey out, sit along | return to, organise, is greyed (or: can't be tapped), sits beside |
+| runs on its people, heart of, behind each prayer | plain statements of what happens |
+| a seat from your pool | one of your organisation's Premium seats |
+| "Short on space?" (elliptical questions) | "If the screen is crowded," |
