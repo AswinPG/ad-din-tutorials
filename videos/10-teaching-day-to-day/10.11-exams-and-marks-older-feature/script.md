@@ -46,7 +46,7 @@ See docs/SCRIPT-FORMAT.md.
 
 #### [1.2] Switch it on
 **Say:** It's off by default. An admin turns on **Exam Marks** under Services. For a new setup, Academic Activity is the recommended choice.
-**Show:** Sidebar → Admin Portal → Organization Management → Manage on the demo madrasah → Services tab. Zoom on the "Exam Marks" switch and its description ending "Academic Activity is the recommended replacement". Turn it on.
+**Show:** Sidebar → Admin Portal → Organization Management → Manage on the demo madrasah → Services tab. Zoom on the "Exam Marks" switch and the line in its description "Academic Activity is the recommended replacement for tracking and grading student work." Turn it on.
 **Caption:** It's off by default. An admin turns on Exam Marks under Services. For new setups, Academic Activity is recommended.
 
 ### 2. Create an exam
@@ -91,7 +91,7 @@ See docs/SCRIPT-FORMAT.md.
 
 #### [5.2] Import
 **Say:** Fill in the marks, save the file, then tap **Import** and choose it. Ad-Din loads the marks for you.
-**Show:** Show the filled sheet briefly. Click "Import", choose the file. When the import finishes, the Fiqh marks appear in the grid.
+**Show:** Show the filled sheet briefly. Click "Import", choose the file. When the import finishes, pick "Fiqh" again in the filters (the grid doesn't reload by itself): the imported marks show.
 
 ### 6. Teachers and families
 #### [6.1]
@@ -105,3 +105,4 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · validator · checked against master d36d69ed8 · 2 fixes: [1.2] Show quotes the Services-tab description as written; [5.2] Show reselects the subject after import (the grid doesn't refresh on its own)

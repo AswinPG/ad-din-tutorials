@@ -105,7 +105,7 @@ See docs/SCRIPT-FORMAT.md.
 
 #### [6.2]
 **Say:** Use the arrows to look at other days, and tap the day name to come back to **Today**.
-**Show:** Tap the right arrow twice (the day name changes), then tap the day name: it returns to "Today".
+**Show:** Tap the right arrow twice (the day name changes), then tap the day name: it returns to "Today". Record on a Sunday to Thursday: the arrows stop at Saturday.
 
 #### [6.3]
 **Say:** Below it, **Class Announcements** shows your latest class posts, when your madrasah uses them.
@@ -122,3 +122,4 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: [6.2] recording-day note (routine arrows run Sunday to Saturday and grey out at the ends); portal list, hub, quick actions, attention rows and routine confirmed

@@ -23,7 +23,7 @@ Mark each student present, absent, late, sick or picked up early, save the regis
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
 - Demo madrasah "Al-Noor Madrasah" (Premium); teacher Yusuf Patel is class teacher of Class "Maktab Level 1", section "A", and also teaches the subject "Quran" there (so the subject wise switch shows)
 - Section "A" with eight enrolled demo students (made-up names, no real photos), no attendance taken yet for today
-- One student with an excuse already sent by a parent for today (shows the Excuse note)
+- One student with an Absent excuse already sent by a parent for today (starts as Absent; the text shows in the Excuse Note column, and as an Excuse chip in the app)
 - Web: signed in as Yusuf. App: the same account in a phone frame
 
 ## Script
@@ -53,17 +53,17 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Spotlight the date card on the left; open and close the calendar.
 
 #### [2.3]
-**Say:** Under **Class Details**, choose your **Class Name** and **Class Section**, then tap **Generate**.
-**Show:** Pick "Maktab Level 1" and section "A". Click "Generate": the student list appears.
+**Say:** Under **Class Details**, choose your **Class Name** and **Class Section**. The student list opens straight away; **Generate** loads it again.
+**Show:** Pick "Maktab Level 1" and section "A": the student list loads as soon as the section is chosen. Spotlight "Generate".
 
 ### 3. Present or absent
-#### [3.1] Not Marked to Present
-**Say:** Every student starts as **Not Marked**. Tap a student's round button to mark them **Present**. Tap it again for **Absent**.
-**Show:** Hover a grey round button (tooltip "Not Marked"). Click it: green tick. Click again: red cross.
+#### [3.1] Present to Absent
+**Say:** Every student starts as **Present**, unless a parent has already reported them absent or sick. Tap a student's round button to mark them **Absent**. Tap it again for Present.
+**Show:** All round buttons green, except the student with the parent's excuse (red, excuse text in the Excuse Note column). Click one green button: red cross. Click again: green tick.
 
 #### [3.2] Mark all present
-**Say:** On most days it's quicker to tap **Mark all present**, then change the few who are away.
-**Show:** Click "Mark all present": every button turns green. Click one student's button to mark them absent.
+**Say:** To start from a blank register, tap **Unmark all**: everyone shows **Not Marked**. **Mark all present** fills it in again, so you only change the few who are away.
+**Show:** Click "Unmark all": every button turns grey (tooltip "Not Marked"). Click "Mark all present": every button turns green. Click the excused student's button to mark them absent again.
 
 #### [3.3] In the app
 **Say:** In the app, tap a student's card to switch between present and absent.
@@ -116,3 +116,4 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · validator · checked against master d36d69ed8 · 3 fixes: students start as Present (not Not Marked; applyStartingStatus), Not Marked shown via Unmark all, register loads on picking the section (Generate reloads)

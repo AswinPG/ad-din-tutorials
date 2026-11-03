@@ -82,8 +82,8 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Click "Activity Score Management". Pick the three filters; the Activities list loads. Click "Add New": the Add Activity window opens.
 
 #### [5.2] Class & subject
-**Say:** In **Class & subject**, check the class details and pick the **Term**. The due date must fall inside this term.
-**Show:** Spotlight step 1. Select "Autumn Term" in Term. Zoom on the hint under it.
+**Say:** In **Class & subject**, choose the **Class**, **Class section** and **Subject** again, then the **Term**. The due date must fall inside this term.
+**Show:** Spotlight step 1 (its fields start empty). Pick "Maktab Level 1", "A" and "Fiqh", then "Autumn Term" in Term. Zoom on the hint under Term.
 
 #### [5.3] Activity
 **Say:** In **Activity**, type the **Activity Name**, then pick its **Category** and **Due Date**.
@@ -112,3 +112,4 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: [5.2] Add Activity doesn't carry over the list filters, so class, section and subject are picked again before the term

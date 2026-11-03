@@ -87,7 +87,7 @@ See docs/SCRIPT-FORMAT.md.
 
 #### [5.2] Choose the term
 **Say:** **Class routines come from** decides which term's timetable is used. Choose the new term once it starts, or leave it on **Automatic** to follow whichever term is running.
-**Show:** Open the selector; spotlight "Automatic" and the terms. Pick "Spring Term"; "Saved" shows, with the line explaining which dates it covers.
+**Show:** Open the selector; spotlight "Automatic" and the terms. Pick "Spring Term": "Saved" shows, and the line below gives its dates and says it is not in force today. Set it back to "Automatic" ("Saved" again).
 
 ### 6. Next
 #### [6.1] Done
@@ -100,3 +100,4 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: [5.2] Show matches the Say (Spring Term isn't in force yet, so the line says so and the selector goes back to Automatic)
