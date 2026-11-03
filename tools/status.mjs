@@ -32,7 +32,7 @@ for (const t of series.tracks) {
 }
 
 const open = (series.decisions || []).filter((d) => d.status === "open");
-md += `## Open decisions (${open.length})\n\nEdit these in \`series.yaml\` → \`decisions\`; set \`status: settled\` and add an \`outcome\` when decided.\n\n`;
+md += `## Open decisions (${open.length})\n\nEdit these in \`series.yaml\` → \`decisions\`; set \`status: decided\` and add an \`answer\` when decided.\n\n`;
 md += open.map((d) => `- **${d.title}** ${d.detail} _(videos: ${d.videos})_`).join("\n") + "\n";
 
 fs.writeFileSync(path.join(ROOT, "STATUS.md"), md);

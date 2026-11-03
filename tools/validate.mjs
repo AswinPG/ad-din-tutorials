@@ -56,7 +56,8 @@ for (const v of videos) {
 if (!only) {
     for (const t of series.tracks) if (!videos.some((v) => v.track === t.id)) warn(null, `track ${t.id} has no videos`);
     for (const [name, list] of Object.entries(series.playlists)) for (const id of expandIds(list)) if (!byId[id]) err(null, `playlist "${name}" lists ${id}, which doesn't exist`);
-    for (const d of series.decisions || []) if (!["open", "settled"].includes(d.status)) err(null, `decision "${d.title}" has status "${d.status}" (open or settled)`);
+    for (const d of series.decisions || []) if (!["open", "decided"].includes(d.status)) err(null, `decision "${d.title}" has status "${d.status}" (open or decided)`);
+    for (const d of series.decisions || []) if (d.status === "decided" && !d.answer) err(null, `decision "${d.title}" is decided but has no answer`);
 }
 
 for (const w of warnings) console.log("warn  " + w);

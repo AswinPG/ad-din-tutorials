@@ -49,7 +49,7 @@ Run `npm install` once, then:
 | Add or change a language or voice | `languages` in `series.yaml` | — |
 | Fix how a word is pronounced | `pronunciations` in `series.yaml` | `npm run say` to hear it; re-record |
 | Change a role playlist | `playlists` in `series.yaml` | `npm run plan` |
-| Record a decision | `decisions` in `series.yaml` → `status: settled` + `outcome` | `npm run status` |
+| Record a decision | `decisions` in `series.yaml` → `status: decided` + `answer` | `npm run status` |
 | Fix a translation | the scene in `i18n/<lang>.md` | `node tools/i18n.mjs <id> <lang> --restamp <scene>` if the English had changed |
 
 Each change is a commit, so the history of every video is in `git log -- videos/<track>/<video>/`.

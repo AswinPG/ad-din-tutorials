@@ -13,7 +13,7 @@ Start every session in `C:\Fantacode\ad-din-tutorials` so Claude picks up `CLAUD
 > Move `<id>` to after `<id>` / merge `<id>` and `<id>` / split `<id>` into two parts. Update playlists and prereqs, then rebuild the plan PDF.
 
 **Record a decision**
-> Decision: `<title>` is settled: `<outcome>`. Update series.yaml and any affected videos.
+> Decision: `<title>` is decided: `<answer>`. Update series.yaml and any affected videos.
 
 ## Scripting
 
