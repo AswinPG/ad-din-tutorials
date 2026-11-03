@@ -4,27 +4,38 @@ title: Check in, breaks and check out
 target: 4:00
 prereq:
   - "13.3"
-status: planned
+status: scripted
 audience:
   - Staff
   - Teacher
 stage: Daily
 platform: App
+flags:
+  - "Is Staff Attendance live? (series.yaml decision) Confirm before publishing"
 ---
 
 # 13.7 Check in, breaks and check out
 
 ## Goal
-_What the viewer can do after watching, in one sentence. Written with the script._
+Record your working day in the Ad-Din app: check in, take a break, check out, give a reason when asked, and answer a card about an earlier day.
 
 ## You'll need
 <!-- Shown on the opening card. Generated from prereq/plan/switch if left empty. -->
+- The Ad-Din app, signed in with your own account
+- Your organisation has set you up for Staff Attendance
 
 ## Covers
 - Welcome notice, location dot, reason sheet, “Needs your attention”
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
+- Staff member Aisha Rahman (Staff role, shift template Mon–Fri 8:30–3:00 with an unpaid Lunch break 12:00–12:30, zone "Main building", Auto); grace band 10 minutes
+- Phone frame of the app; device clock moved through the day: 8:20, 8:33, 12:01, 12:28, 3:03
+- First visit: the notice not yet acknowledged
+- A second morning where the check-in is out of zone (reason "Work activity at another location")
+- A morning with no check-in yet at 9:40, for Record a check-in
+- An earlier day (Tuesday) with a missed check-out card waiting on her
+- Location readings are mocked; never show a real home address on the map
 
 ## Script
 <!--
@@ -34,7 +45,82 @@ Optional **Caption:** overrides the subtitle text. Translations in i18n/<lang>.m
 See docs/SCRIPT-FORMAT.md.
 -->
 
-_Not scripted yet._
+### 1. Before you start
+#### [1.1] Opening
+**Say:** Staff Attendance lets you record your working day from your phone. This video shows staff how to check in, take a break, and check out.
+**Show:** Title card: "Check in, breaks and check out".
+
+#### [1.2]
+**Say:** Your organisation has already set you up. All you need is the Ad-Din app, signed in with your own account.
+**Show:** Opening card from You'll need.
+
+### 2. Find it
+#### [2.1] Your clock card
+**Say:** Open the Ad-Din app. If your organisation uses Staff Attendance, your clock card is right on your home screen. You can also open **My Attendance** from the menu.
+**Show:** Phone frame, 8:20. App home screen; zoom on the clock card. Then open the menu and spotlight "My Attendance".
+
+### 3. The first time
+#### [3.1] What's recorded
+**Say:** The first time, Ad-Din shows **What's recorded when you tap**.
+**Show:** Tap the clock card. The notice opens; zoom on its title.
+
+#### [3.2]
+**Say:** Your location is read only when you tap **Check in** or **Check out**. It's never tracked in the background. When you've read it, tap **Got it**.
+**Show:** Scroll slowly through the statements. Tap "Got it", then "Got it" again to continue.
+
+### 4. Check in
+#### [4.1] Your Today screen
+**Say:** This is your **Today** screen. Before your shift, the card counts down: **Shift starts in**. Below it are today's shift and break times.
+**Show:** Today screen at 8:24. Zoom on the card, then spotlight the shift and break lines below it.
+
+#### [4.2] Check in
+**Say:** When you arrive, tap **Check in**. It's eight thirty-three, but inside the ten-minute grace time, so your day counts from eight thirty.
+**Show:** Clock moves to 8:33. Tap "Check in". The card turns to Checked in.
+
+#### [4.3] The location dot
+**Say:** Tap the location dot to see the position saved with your tap, and whether it was **In the zone**.
+**Show:** Tap the dot on the card; the popup shows "In the zone", the time it was read, and the position. Tap away to close it.
+
+### 5. Breaks
+#### [5.1] Start a break
+**Say:** At lunch, tap **Break**. The card times your break and shows when you're due back. If you forget to end it, your record closes it for you.
+**Show:** Clock moves to 12:01. Tap "Break". Zoom on the card: On break, "Back by 12:30".
+
+#### [5.2] End break
+**Say:** When you're back, tap **End break**.
+**Show:** Clock moves to 12:28. Tap "End break".
+
+### 6. Check out
+#### [6.1] Done for today
+**Say:** At the end of your shift, tap **Check out**. The card says **Done for today**, with the hours you recorded.
+**Show:** Clock moves to 3:03. Tap "Check out". Zoom on "Done for today" and the recorded hours.
+
+### 7. When Ad-Din asks why
+#### [7.1] Outside the zone
+**Say:** Some days you might tap away from your usual place, say at an off-site event. Your tap is already saved. Ad-Din just asks: **You were outside the zone — why?**
+**Show:** Another morning, 8:31. Tap "Check in". The sheet opens; zoom on its title.
+
+#### [7.2]
+**Say:** Pick the reason that fits, such as **Work activity at another location**, add a note if you like, and tap **Send**.
+**Show:** Tap "Work activity at another location". Tap "Send". The sheet closes.
+
+#### [7.3] Forgot to check in
+**Say:** Forgot to check in this morning? Tap **Record a check-in**, choose why, and tap **Record it**. Your day starts at the shift start until your administrator reviews it.
+**Show:** Another morning, 9:40. Tap "Record a check-in at 8:30". Tap "I was there but forgot to check in", then "Record it".
+
+### 8. Needs your attention
+#### [8.1] A card about an earlier day
+**Say:** If an earlier day needs a look, it shows under **Needs your attention**. Here, you forgot to check out on Tuesday, so the system closed your day at the scheduled end.
+**Show:** Today screen. Scroll to "Needs your attention · 1"; zoom on the card "… your day was closed for you".
+
+#### [8.2]
+**Say:** Tap **Tell us what happened**, pick the closest answer, and tap **Send**. Your administrator reviews it, and you'll see their decision on the same card.
+**Show:** Tap "Tell us what happened". In "What happened?", tap "I was there, forgot to check out", then "Send". The card shows "Sent · awaiting admin".
+
+### 9. Next
+#### [9.1] Close
+**Say:** That's your day recorded. Next, see your timesheet, ask for time off, and check when you'll be paid.
+**Show:** End card: "13.8 Timesheet, time off and pay periods".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
