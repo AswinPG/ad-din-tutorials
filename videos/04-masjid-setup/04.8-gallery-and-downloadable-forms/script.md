@@ -40,7 +40,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. Before you start
 #### [1.1] Opening
-**Say:** Share your masjid's moments, and the forms people need. In this video, a masjid admin adds photos and videos to the Gallery, and uploads forms to download.
+**Say:** Share your masjid's moments, and the forms people need. In this video for masjid admins, you'll add photos and videos to the Gallery, and upload forms to download.
 **Show:** Title card: "Gallery and downloadable forms".
 
 #### [1.2]
@@ -66,7 +66,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Click Add; type "Masjid Tour"; click Video.
 
 #### [3.2]
-**Say:** On YouTube, copy the video's embed code, and paste it under **Add Videos**. Tap **Save**.
+**Say:** On YouTube, choose Share, then Embed, and copy the code. Paste it under **Add Videos** and tap **Save**.
 **Show:** Paste the demo embed code into the box. Click Save; the tile shows a Video badge.
 
 ### 4. Manage the gallery
@@ -96,7 +96,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Click Upload & Save; the panel closes. Cut past a page refresh: the new card is in the list. Then click Add New Form, type any description, pick the 3 MB demo file and click Upload & Save: toast "File too large to process. Upload a file of < 2MB in size." (the size is only checked on Upload & Save, not when the file is picked).
 
 #### [5.5] Manage forms
-**Say:** Anyone can tap download to save a form. As an admin, you can also rename it or delete it.
+**Say:** Members tap the download icon to save a form. As an admin, you can also rename it or delete it.
 **Show:** Spotlight the download, pencil and bin icons on the new card. Click the pencil: "Rename Form"; click Cancel.
 
 ### 6. Next
@@ -106,4 +106,5 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 3 changes: second-person opening, [3.2] says how to get a YouTube embed code (as 04.10 does), [5.5] 'Members' not 'Anyone'
 - 2026-11-03 · validator · checked against master d36d69ed8 · 4 fixes: forms file types say JPG not "image" (PNG is rejected), 3 MB rejection happens on Upload & Save and the list needs a refresh after upload (Show [5.4] + flags), Rename Cancel closes the viewer so the bin is shown after reopening ([4.2]), 3 MB demo file type

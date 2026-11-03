@@ -37,11 +37,11 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. Before you start
 #### [1.1] Opening
-**Say:** Iqamah is when the congregation stands for prayer. In this video, a masjid admin sets Iqamah and Jumu'ah times for many days at once, then checks them.
+**Say:** Iqamah is when the congregation stands for prayer. In this video for masjid admins, you'll set Iqamah and Jumu'ah times for many days at once, then check them.
 **Show:** Title card: "Set iqamah and jumu’ah times".
 
 #### [1.2]
-**Say:** Your begin times and Adhan times are already set up. Ad-Din calls each Adhan a set number of minutes before the Iqamah you choose here.
+**Say:** Your begin times and Adhan times are already set up. Ad-Din works out each Adhan time from the Iqamah time you set here.
 **Show:** Opening card from You'll need.
 
 ### 2. Open Batch Update
@@ -117,4 +117,5 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 2 changes: second-person opening, [1.2] no longer says Ad-Din 'calls' the Adhan
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes

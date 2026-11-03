@@ -41,7 +41,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. Before you start
 #### [1.1] Opening
-**Say:** Live streaming lets people follow your masjid's lessons and talks from home. In this video, a masjid admin adds video, audio and Facebook streams.
+**Say:** Live streaming lets people follow your masjid's lessons and talks from home. In this video for masjid admins, you'll add video, audio and Facebook streams.
 **Show:** Title card: "Live streaming".
 
 #### [1.2]
@@ -90,9 +90,10 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Phone frame: the member's app, Live Streaming with the video and audio players.
 
 #### [6.2] Close
-**Say:** Your live streams are ready. Members find them in Ad-Din, along with your gallery and forms.
+**Say:** Your live streams are ready. Next, send a message to tell your community when you go live, or see how members find your streams.
 **Show:** End card with two tiles: "15.6 Tasbeeh, live streams, gallery and forms" and "07.2 Send a message to your community".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 2 changes: second-person opening, [6.2] close explains both end tiles
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes

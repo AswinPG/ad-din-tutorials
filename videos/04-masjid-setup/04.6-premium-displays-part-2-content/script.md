@@ -43,7 +43,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. Before you start
 #### [1.1] Opening
-**Say:** This is part two of premium displays. A masjid admin adds posters, events and a scrolling message, then sets night mode, Ramadan posters, a second language and colours.
+**Say:** This is part two of premium displays, for masjid admins. You'll add posters, events and a scrolling message, then set night mode, Ramadan posters, a second language and colours.
 **Show:** Title card: "Premium displays, part 2: content".
 
 #### [1.2]
@@ -52,7 +52,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 2. Create content
 #### [2.1] Contents tab
-**Say:** In **Prayer Times**, open the **Contents** tab. You create each poster once here, then choose which displays show it. Tap **Create**.
+**Say:** Go to **Masjid**, then **Prayer Times**, and open the **Contents** tab. You create each poster once here, then choose which displays show it. Tap **Create**.
 **Show:** Sidebar → Masjid → Prayer Times → "Contents". The list of existing content; click Create.
 
 #### [2.2] When it shows
@@ -64,7 +64,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Leave Image selected; hover Video and its note. Spotlight the five Show Between boxes, all ticked.
 
 #### [2.4] Pictures
-**Say:** Under **HORIZONTAL DISPLAY** and **VERTICAL DISPLAY**, upload a picture for each shape. **Full Screen** fills the screen; the other choice leaves room for prayer times or headers.
+**Say:** Under **HORIZONTAL DISPLAY** and **VERTICAL DISPLAY**, upload a picture for each shape. **Full Screen** fills the screen. **Split with Prayer times** and **Full screen with headers** leave room for the times or a header.
 **Show:** Under HORIZONTAL DISPLAY, keep Full Screen; click Upload Image, then Choose Image in the "Crop and upload image" window, pick the wide poster and click Save & Upload. Do the same under VERTICAL DISPLAY with the tall one.
 
 #### [2.5] Displays and save
@@ -121,7 +121,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 7. Language and colours
 #### [7.1] Second language
-**Say:** For a second language, open the **Language Settings** tab. Under **Alternative Language Settings**, Ad-Din fills in Arabic names to start; change any you like, but leave none empty. Tap **Save**.
+**Say:** For a second language, open the **Language Settings** tab. Ad-Din fills in Arabic prayer and month names to start. Change any you like, but leave none empty, and tap **Save**.
 **Show:** Click the "Language Settings" tab. Spotlight the Arabic names under Alternative Language Settings. Click Save.
 
 #### [7.2]
@@ -139,4 +139,5 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 4 changes: second-person opening, [2.1] gives the full sidebar path, [2.4] names the real Split / headers choices, [7.1] says what the Arabic names are
 - 2026-11-03 · validator · checked against master d36d69ed8 · 5 fixes: Save & Upload crop step for posters, clear the pre-filled ticker title, Makrooh message and Force over content are on by default, alternative names come pre-filled in Arabic and none may be empty, demo data

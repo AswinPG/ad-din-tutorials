@@ -35,7 +35,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. Before you start
 #### [1.1] Opening
-**Say:** Your community wants to know about your masjid: its story, its people and what it offers. In this video, a masjid admin fills in these pages.
+**Say:** Your community wants to know about your masjid: its story, its people and what it offers. In this video for masjid admins, you'll fill in these pages.
 **Show:** Title card: "About, staff list and facilities".
 
 #### [1.2]
@@ -48,7 +48,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Sidebar → Masjid → About Masjid. Spotlight the masjid card at the top.
 
 #### [2.2] Add a description
-**Say:** There's **No description yet**. Tap **Add description**, or **Edit** at the top.
+**Say:** Until you add one, the page says **No description yet**. Tap **Add description**, or **Edit** at the top.
 **Show:** Spotlight the empty card; click Add description. The edit page opens.
 
 #### [2.3] Write it
@@ -69,7 +69,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Click "Sheikh Yusuf Rahman": the biography shows. Click "Amina Khan": "No Biography found".
 
 #### [3.3] Adding staff
-**Say:** You don't add people here. Staff and their titles are added in the masjid's user settings, as shown in the staff video.
+**Say:** You don't add people here. Staff and their titles are added in the masjid's user settings, as shown in video 03.3.
 **Show:** Small tile: "03.3 Add admins, staff and volunteers to a masjid".
 
 ### 4. Facility Details
@@ -96,4 +96,5 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 3 changes: second-person opening, [2.2] empty-state line reads naturally, [3.3] points to video 03.3 by number
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes

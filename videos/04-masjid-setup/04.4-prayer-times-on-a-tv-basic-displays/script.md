@@ -45,7 +45,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. Before you start
 #### [1.1] Opening
-**Say:** Many masjids show prayer times on a TV in the prayer hall. In this video, a masjid admin sets up Ad-Din's basic TV displays and adds announcement images.
+**Say:** Many masjids show prayer times on a TV in the prayer hall. In this video for masjid admins, you'll set up Ad-Din's basic TV displays and add announcement images.
 **Show:** Title card: "Prayer times on a TV: basic displays".
 
 #### [1.2]
@@ -58,16 +58,16 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Sidebar → Masjid → Prayer Times → "Basic Display". The list of sections; the first, "Upload Logo & Upload Background", is already open.
 
 #### [2.2] Logo and background
-**Say:** In the first section, under **Upload Logo** and **Upload Background**, tap **Upload** to add your masjid's logo and a background picture for the screens.
+**Say:** Under **Upload Logo** and **Upload Background**, tap **Upload** to add your masjid's logo and a background picture. They're only kept when you tap **Save** at the bottom of the page.
 **Show:** The first section is already open. Click Upload under Upload Logo and pick the demo logo; it appears. Do the same under Upload Background. (The pictures are kept only after Save in [3.8].)
 
 ### 3. Choose what each display shows
 #### [3.1] Three displays
-**Say:** There are three ready-made screens: small, medium and large. Each has a live preview and its own link to open on a TV.
+**Say:** There are three ready-made displays: small, medium and large. Each has a live preview and its own link to open on a TV.
 **Show:** Spotlight the three section titles: Small Display, Medium Display / Public Facing Website Prayer Time Control, Large Display.
 
 #### [3.2] Small Display
-**Say:** Open **Small Display**, for an upright screen. The preview shows the screen, and the link under the description is the address to open on your TV.
+**Say:** Open **Small Display**, for an upright screen. The preview shows the display, and the link under the description is the address to open on your TV.
 **Show:** Open Small Display. The preview on the left; spotlight the link below the description.
 
 #### [3.3] Display Control
@@ -127,4 +127,5 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 4 changes: second-person opening, [2.2] says logo/background are kept only on Save, 'displays' not 'screens' in [3.1] [3.2]
 - 2026-11-03 · validator · checked against master d36d69ed8 · 5 fixes: first Basic Display section is open by default, logo/background kept only on Save, large display shows madrasah events (not news), Save & Upload step in the image crop, demo data (followed madrasah, event counts, 960 × 1080 crop)

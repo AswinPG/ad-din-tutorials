@@ -9,7 +9,7 @@ flags:
   - "Export always covers January to December of the current year, while month buttons for months already past open next year's month; late in the year the file won't include the upcoming months the grid shows"
   - "The Import window's \"this guide\" link opens the internal ad-din.atlassian.net wiki; don't click it on camera"
   - "Export downloads a zip with the CSV inside, and the import needs a .csv; Explorer and Excel shots come from the recording PC, not the app"
-  - "Excel can rewrite the PrayerDate column (yyyy-MM-dd) in the local date format when it saves a CSV; the import then fails with \"not a valid date (format yyyy-MM-dd ...)\". The demo CSV must keep yyyy-MM-dd; consider a one-line tip in [4.3]"
+  - "Excel can rewrite the PrayerDate column (yyyy-MM-dd) in the local date format when it saves a CSV; the import then fails with \"not a valid date (format yyyy-MM-dd ...)\". The demo CSV must keep yyyy-MM-dd; the tip is in [4.3a]"
 ---
 
 # 04.3 Import and export a prayer timetable
@@ -42,7 +42,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. Before you start
 #### [1.1] Opening
-**Say:** Some masjids keep their timetable in a spreadsheet. In this video, a masjid admin changes single days, exports the year, and imports a full timetable from a file.
+**Say:** Some masjids keep their timetable in a spreadsheet. In this video for masjid admins, you'll change single days, export the year, and import a full timetable from a file.
 **Show:** Title card: "Import and export a prayer timetable".
 
 #### [1.2]
@@ -85,6 +85,10 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** In Excel, change a few Isha values in one week; File → Save As → CSV.
 **Caption:** Change the times you need, keep the columns, and save as CSV. Every row needs Fajr, Dhuhr, Asr and Isha Iqamah.
 
+#### [4.3a] Dates
+**Say:** Keep the dates in the same form: year, month, then day. Some spreadsheet programs change them when saving. If the import says a date isn't valid, check that column.
+**Show:** Spotlight the PrayerDate column in the saved CSV, still in yyyy-MM-dd form (open the CSV in a text editor if Excel reformats it on screen).
+
 ### 5. Import the file
 #### [5.1] Open Import
 **Say:** Back in Ad-Din, with any month open, tap **Import**. The **Import Prayer Times CSV** window opens.
@@ -112,9 +116,14 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 6. Check and finish
 #### [6.1] Check
-**Say:** Open the month again to see the new times. Your timetable is now in Ad-Din. Next, put it on a TV in your masjid.
-**Show:** Click "March" again; the edited Isha times show. End card with two tiles: "04.4 Prayer times on a TV: basic displays" and "04.2 Set iqamah and jumu’ah times".
+**Say:** Open the month again. The new times from your file are there.
+**Show:** Click "March" again; the edited Isha times show.
+
+#### [6.2] Close
+**Say:** Your timetable is now in Ad-Din. Next, put it on a TV in your masjid, or set Iqamah times for many days at once.
+**Show:** End card with two tiles: "04.4 Prayer times on a TV: basic displays" and "04.2 Set iqamah and jumu’ah times".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 3 changes: second-person opening, new [4.3a] date-format tip (from the validator flag), [6.1] split into check + [6.2] close that explains both end tiles
 - 2026-11-03 · validator · checked against master d36d69ed8 · 3 fixes: [5.6] error toast is "Import failed. Row 12: ..." and the window stays open; demo data row 12 = 12th data row; demo clock must keep the March button on the export year. Flag added: Excel date format

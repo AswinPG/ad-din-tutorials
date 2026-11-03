@@ -17,12 +17,14 @@ Create a service page for your masjid, save it as a draft, publish it, and know 
 
 ## Covers
 - Add New, Save as Draft, Publish, link to the website menu
+- Introduction & Services for madrasahs (same page, under Madrasah / School)
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
 - Demo masjid "Masjid Al-Noor", signed in as its masjid admin, with the website add-on active (so the button reads Manage Website Menu)
 - Two published service pages ("Funeral Services", "Quran Classes for Adults") and no drafts
 - New page typed on camera: title "Nikah Services", sub title "Book an Imam for your Nikah at Masjid Al-Noor", a cover photo, a ring or heart icon from the icon set, and three short paragraphs of content
+- The same admin is also admin of the home madrasah "Al-Noor Madrasah", so Madrasah / School → Introduction & Services shows (for scene [2.1a]); its Services list may be empty
 - For scene [6.2]: a second demo masjid without the website add-on, or a still of the "Get an Ad-Din-Powered Website" button
 
 ## Script
@@ -35,7 +37,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. Before you start
 #### [1.1] Opening
-**Say:** Service pages tell your community what your masjid offers, such as Nikah, funeral services or classes. In this video, a masjid admin creates one, saves a draft, and publishes it.
+**Say:** Service pages tell your community what your masjid offers, such as Nikah, funeral services or classes. In this video for masjid admins, you'll create one, save a draft, and publish it.
 **Show:** Title card: "Introduction & Services pages".
 
 #### [1.2]
@@ -46,6 +48,10 @@ See docs/SCRIPT-FORMAT.md.
 #### [2.1] Where it lives
 **Say:** In the sidebar, open **Masjid**, then **Introduction & Services**. The **Services** page lists your pages.
 **Show:** Sidebar → Masjid → Introduction & Services. The Services page with two published pages.
+
+#### [2.1a] Madrasahs too
+**Say:** Running a madrasah? Open **Madrasah / School**, then **Introduction & Services**. It's the same page, and every step in this video works the same way.
+**Show:** Expand Sidebar → Madrasah / School; click Introduction & Services: the Services page with the breadcrumb "Madrasah". Then back to Sidebar → Masjid → Introduction & Services.
 
 #### [2.2]
 **Say:** The note at the top explains how services reach your website; we'll come back to it. To start a page, tap **Add New**.
@@ -106,4 +112,5 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 1 change + fold: second-person opening; fold: Introduction & Services for madrasahs as new scene [2.1a] (Covers, demo data; verified in menu.data.ts and pages/list/:type)
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes

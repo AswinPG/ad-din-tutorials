@@ -41,7 +41,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. Before you start
 #### [1.1] Opening
-**Say:** Prayer times are the heart of your masjid in Ad-Din. In this video, a masjid admin sets how begin times are calculated, when each Adhan is called, and the Islamic date.
+**Say:** In this video for masjid admins, you'll choose how Ad-Din calculates your begin times, when each Adhan is called, and which Islamic date to show.
 **Show:** Title card: "Set up prayer time calculations".
 
 #### [1.2]
@@ -50,7 +50,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 2. Open Prayer Times
 #### [2.1] Where it lives
-**Say:** In the sidebar, open **Masjid**, then **Prayer Times**. Tap the **Calculation Method** tab. This is where Ad-Din decides how begin times are worked out.
+**Say:** In the sidebar, open **Masjid**, then **Prayer Times**. Tap the **Calculation Method** tab.
 **Show:** Sidebar → Masjid → Prayer Times. The page opens on Batch Update; pan along the tabs, then click "Calculation Method".
 
 ### 3. Format and location
@@ -59,7 +59,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Open the Format dropdown and pick "12h"; the Example column shows "8:40 AM".
 
 #### [3.2] Daylight saving and coordinates
-**Say:** Leave daylight saving on **Auto**, so Ad-Din follows your clocks. Below, **Coordinates** shows your masjid's latitude and longitude.
+**Say:** Leave daylight saving on **Auto**, so the times move when your clocks change. Below, **Coordinates** shows your masjid's latitude and longitude.
 **Show:** Spotlight the Auto radio button, then the Coordinates table with Latitude and Longitude.
 
 #### [3.3]
@@ -85,11 +85,11 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 5. Fine-tune and save
 #### [5.1] Adjusting parameters
-**Say:** **Adjusting Parameters** shows the angles and minutes behind each prayer. They're locked for the standard methods; choose **Custom** to enter your own.
+**Say:** **Adjusting Parameters** shows the angles and minutes used for each prayer. They're locked for the standard methods; choose **Custom** to enter your own.
 **Show:** Spotlight the greyed table. Switch the method to Custom: the Fajr, Dhuhr, Maghrib and Isha boxes turn editable. Switch back to ISNA.
 
 #### [5.2] High latitude
-**Say:** Masjids far north or south can use **High latitude Parameters** to keep Fajr and Isha workable in summer. Most masjids leave it on **None**.
+**Say:** Masjids far north or south can use **High latitude Parameters** to get usable Fajr and Isha times in summer. Most masjids leave it on **None**.
 **Show:** Spotlight the Method dropdown under High latitude Parameters: None, MidNight, OneSeventh, AngleBased. Leave None.
 
 #### [5.3] Save
@@ -137,4 +137,5 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 5 changes: second-person opening without the idiom, cut repeated line in [2.1], plainer wording in [3.2] [5.1] [5.2]
 - 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: [6.3] Show line names the real help texts (one paragraph under all the Adhan boxes, one note under Maghrib Iqamah Offset)

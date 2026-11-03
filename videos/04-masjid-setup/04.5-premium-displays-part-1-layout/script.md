@@ -40,7 +40,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. Before you start
 #### [1.1] Opening
-**Say:** Premium displays turn any TV into a full prayer-time screen. In this first part, a masjid admin picks a display and sets its layout and Salah timing.
+**Say:** Premium displays turn any TV into a full prayer-time screen. In part one of two, for masjid admins, you'll pick a display and set its layout and Salah timing.
 **Show:** Title card: "Premium displays, part 1: layout".
 
 #### [1.2]
@@ -87,7 +87,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Click Salah Control. Spotlight the table; untick Adhan for Fajr, then tick it again. Spotlight the Jumu'ah rows.
 
 #### [4.2] One column
-**Say:** Short on space? Turn on **Alternate Begins and Adhan in one column**, and the two times take turns in one column. Tap **Save**.
+**Say:** If the screen is crowded, turn on **Alternate Begins and Adhan in one column**, and the two times take turns in one column. Tap **Save**.
 **Show:** Turn the switch on. Click Save: toast "Salah Control Updated Successfully"; the preview shows three columns.
 
 ### 5. Date & Time
@@ -96,7 +96,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Click Date & Time. Tick Time, Hijri Date and Gregorian Date.
 
 #### [5.2]
-**Say:** You can also add **Zawal**, **Al-Duha** and the night times, or **Remove Seconds** from the clock. Tap **Save**.
+**Say:** You can also add **Zawal**, **Al-Duha**, **Islamic Midnight** and the thirds of the night, or **Remove Seconds** from the clock. Tap **Save**.
 **Show:** Tick Remove Seconds. Click Save: toast "Saved successfully".
 
 ### 6. Iqamah countdown
@@ -128,4 +128,5 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 3 changes: second-person opening, [4.2] no 'Short on space?' idiom, [5.2] names Islamic Midnight instead of vague 'night times'
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes
