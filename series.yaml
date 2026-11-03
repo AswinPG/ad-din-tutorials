@@ -8,10 +8,12 @@ rules:
   english_target: 4:15
   note: English is timed to leave room for longer translations; every language must fit the same picture.
 languages:
+  # One multilingual voice (William) narrates every language (decided 2026-11-03). To switch a language
+  # back to its native voice, replace its voice with the one in its comment.
   - code: en
     name: English
     priority: 1
-    voice: en-GB-RyanNeural
+    voice: en-AU-WilliamMultilingualNeural  # native option: en-GB-RyanNeural
     markets:
       - UK
       - USA
@@ -22,7 +24,7 @@ languages:
   - code: ar
     name: Arabic
     priority: 2
-    voice: ar-SA-HamedNeural
+    voice: en-AU-WilliamMultilingualNeural  # native option: ar-SA-HamedNeural
     markets:
       - UAE
       - Saudi Arabia
@@ -34,7 +36,7 @@ languages:
   - code: ur
     name: Urdu
     priority: 3
-    voice: ur-PK-AsadNeural
+    voice: en-AU-WilliamMultilingualNeural  # native option: ur-PK-AsadNeural
     markets:
       - Pakistan
       - UK
@@ -45,7 +47,7 @@ languages:
   - code: bn
     name: Bangla (Bengali)
     priority: 4
-    voice: bn-BD-PradeepNeural
+    voice: en-AU-WilliamMultilingualNeural  # native option: bn-BD-PradeepNeural
     markets:
       - Bangladesh
       - UK
@@ -54,7 +56,7 @@ languages:
   - code: ms
     name: Malay
     priority: 5
-    voice: ms-MY-OsmanNeural
+    voice: en-AU-WilliamMultilingualNeural  # native option: ms-MY-OsmanNeural
     markets:
       - Malaysia
       - Brunei
@@ -62,7 +64,7 @@ languages:
   - code: id
     name: Indonesian
     priority: 6
-    voice: id-ID-ArdiNeural
+    voice: en-AU-WilliamMultilingualNeural  # native option: id-ID-ArdiNeural
     markets:
       - Indonesia
 pronunciations:
