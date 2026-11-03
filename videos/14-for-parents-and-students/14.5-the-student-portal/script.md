@@ -1,7 +1,7 @@
 ---
 id: "14.5"
 title: The student portal
-target: 3:30
+target: 4:00
 prereq:
   - "06.4"
 status: scripted
@@ -24,6 +24,8 @@ As a student, find your timetable, attendance, Hifz progress, classwork and mark
 
 ## Covers
 - Timetable, attendance, Hifz, classwork, marks
+- Student Portal tour: Library, Recognition, Holiday, Grade, Delegations, Class Announcements
+- Madrasah Report (the student's own reports)
 
 ## Demo data
 - Student "Hamza Rahman" (username `hamza_rahman`), Student role only, in "Hifz Boys A" (marked as a Quran Hifz class) and "Maktab Level 1" at Al-Noor Madrasah (Academic Activity on)
@@ -31,7 +33,8 @@ As a student, find your timetable, attendance, Hifz progress, classwork and mark
 - Today's attendance: Present in both classes; subject-wise periods on; Term 1 summary with marked days
 - Today's Hifz record from teacher "Ibrahim Khan": marked (mark 9, 2 mistakes), with a teacher note; one record yesterday
 - Classwork: "Surah Al-Mulk test" graded 18/20, "Seerah worksheet" due later this week, "Arabic vocabulary quiz" missing
-- Phone frame for the app; a browser frame for the web shot in chapter 7
+- Al-Noor Madrasah has Class Announcements switched on; Hamza has one borrowed library book and one "Student of the Month" award; attendance marked this term so "Attendance by Student" has data
+- Phone frame for the app; a browser frame for the web shots in chapter 7
 
 ## Script
 <!--
@@ -43,7 +46,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. Your own Ad-Din
 #### [1.1] Opening
-**Say:** This video is for students. You'll see where to find your timetable, attendance, Hifz progress, classwork and marks in Ad-Din.
+**Say:** This video is for students. You'll see where to find your timetable, attendance, Hifz progress, classwork and marks in Ad-Din, and what else is in your portal.
 **Show:** Title card: "The student portal". Phone frame on the app home.
 
 #### [1.2]
@@ -88,7 +91,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 6. Classwork and marks
 #### [6.1] What's due
-**Say:** **My Classwork** lists the work your teachers set. Check **Missing** and **Due soon**, so nothing slips.
+**Say:** **My Classwork** lists the work your teachers set. Check **Missing** and **Due soon**, so you don't miss anything.
 **Show:** Scroll to My Classwork. Tap "Missing", then "Due soon".
 
 #### [6.2] Your marks
@@ -100,9 +103,18 @@ See docs/SCRIPT-FORMAT.md.
 **Say:** On a computer, sign in on the Ad-Din website. Open **Student Portal** in the menu for the same pages, such as **Class Routine**, **Attendance**, **Quran Hifz Assignments** and **Academic Activity**.
 **Show:** Browser frame: Hamza signed in on the web. Sidebar → Student Portal, expanded. Spotlight Class Routine, Attendance, Quran Hifz Assignments, Academic Activity.
 
+#### [7.2] More in your portal
+**Say:** Your portal has more: **Library** for books you've borrowed, **Recognition** for your awards, **Class Announcements** from your teachers, and **Holiday**, **Grade** and **Delegations**. The same menu is in the app.
+**Show:** Still in the expanded Student Portal, spotlight Library, Recognition, Class Announcements, Holiday, Grade, Delegations in turn. Click "Recognition": the "Student" tab with Hamza's "Student of the Month". Go back.
+**Caption:** Also in your portal: Library, Recognition, Class Announcements, Holiday, Grade and Delegations.
+
+#### [7.3] Your reports
+**Say:** Under **Reports**, **Madrasah Report** has reports about you, such as **Attendance by Student**. Tap **Run** to open one.
+**Show:** Sidebar → Reports → Madrasah Report: the Report page with the "Student" tab. Click "Run" beside "Attendance by Student": Hamza's attendance report opens.
+
 ### 8. Next
 #### [8.1] Recap
-**Say:** Now you know where to find your day, your attendance, your Hifz and your marks. Keep up the good work.
+**Say:** Now you know where to find your day, your attendance, your Hifz, your marks and the rest of your portal. Keep up the good work.
 **Show:** Back to the phone frame on Hamza's app home.
 
 #### [8.2] Close
@@ -111,4 +123,5 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 3 changes: target 4:00, [1.1] opening mentions the rest of the portal, [6.1] "so nothing slips" (idiom) replaced, [8.1] recap updated · fold: [7.2] Library, Recognition, Class Announcements, Holiday, Grade, Delegations; [7.3] Madrasah Report with Run
 - 2026-11-03 · validator · checked against master d36d69ed8 · 3 fixes: demo data (Hifz class flag, both classes in the week routine for the name line), [3.2] record Sun–Thu so the right arrow works twice

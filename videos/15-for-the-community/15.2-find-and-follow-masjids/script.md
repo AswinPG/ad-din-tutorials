@@ -1,7 +1,7 @@
 ---
 id: "15.2"
 title: Find and follow masjids
-target: 2:45
+target: 3:30
 prereq:
   - "00.2"
 status: scripted
@@ -10,25 +10,27 @@ status: scripted
 # 15.2 Find and follow masjids
 
 ## Goal
-Find masjids and madrasahs near you on the map, follow the ones you visit, and get directions to them in the Ad-Din app.
+Find masjids and madrasahs near you on the map, follow the ones you visit, learn about them, and get directions to them in the Ad-Din app.
 
 ## You'll need
 <!-- Shown on the opening card. Generated from prereq/plan/switch if left empty. -->
 
 ## Covers
 - Masjid Finder map, follow, directions
+- About Masjid, Staff List, Facility Details (member view)
 
 ## Demo data
 - Member account signed in on the app, home masjid "Masjid Al-Noor", not yet following "Masjid Ar-Rahman"
 - Four or five demo masjids and one demo madrasah ("Al-Huda Madrasah") within a few km of the mocked phone location, with addresses, phone numbers and today's prayer times
 - Phone location mocked to the demo city; Google Maps hand-off shown only as the system's app chooser (no real address on screen)
+- Masjid Ar-Rahman has an About text with a title, two staff members with photos, titles and a short biography ("Abdullah Hassan", title Imam; "Omar Siddiq", title Muazzin), and a few facilities switched on by its admin (whatever names the facility list has, for example parking)
 - Phone frame for every shot
 
 ## Script
 
 ### 1. Find a masjid near you
 #### [1.1] Opening
-**Say:** Visiting a new area, or looking for a masjid close to work? The Masjid Finder shows the masjids and madrasahs around you, and lets you follow the ones you use.
+**Say:** Visiting a new area, or looking for a masjid near work? In this video you'll find masjids and madrasahs around you, follow the ones you use, and get directions.
 **Show:** Title card: "Find and follow masjids". Phone frame on the app home.
 
 #### [1.2] Open the finder
@@ -61,7 +63,7 @@ Find masjids and madrasahs near you on the map, follow the ones you visit, and g
 **Say:** You'll see the address, phone and email, today's prayer times, and links to the masjid's **Facility Details** and **Gallery**.
 **Show:** Scroll the panel: address with copy button, phone, prayer times table, then the "Facility Details" and "Gallery" links.
 
-### 4. Follow the masjid
+### 4. Follow and get to know the masjid
 #### [4.1] Follow
 **Say:** To keep up with this masjid, tap **Follow**. The button changes to **Following**.
 **Show:** Tap "Follow": the heart fills and the button reads "Following". Zoom on it.
@@ -74,16 +76,25 @@ Find masjids and madrasahs near you on the map, follow the ones you visit, and g
 **Say:** Changed your mind? Tap **Following** again to stop following it.
 **Show:** Back in the details panel, tap "Following": it returns to "Follow". Tap "Follow" again so the demo ends following.
 
+#### [4.4] About, staff and facilities
+**Say:** To get to know a masjid you follow, tap the **Masjid** tile on the home screen. Open **About Masjid**, **Staff List** or **Facility Details**, then choose the masjid at the top.
+**Show:** Home → "Masjid" tile: spotlight About Masjid, Staff List, Facility Details. Tap "About Masjid"; open the masjid picker at the top and choose "Masjid Ar-Rahman".
+
+#### [4.5]
+**Say:** **About Masjid** has its story and contact details. **Staff List** introduces its imam and staff; tap a name to read their **Biography**. **Facility Details** shows what the masjid offers.
+**Show:** The About Us page for Masjid Ar-Rahman: logo, address, phone, then the about text. Go back; tap "Staff List", pick Masjid Ar-Rahman, tap "Abdullah Hassan": his Biography shows. Go back; tap "Facility Details", pick Masjid Ar-Rahman: the "Active Facilities" cards.
+
 ### 5. Get directions
 #### [5.1] Directions
-**Say:** Ready to go? Close the details and tap **Directions** on the card. Your maps app opens with the route.
-**Show:** Close the panel. Tap "Directions" on the Masjid Ar-Rahman card; the phone hands over to the maps app. Cut before any real address shows.
+**Say:** Ready to go? In the finder, tap **Directions** on the masjid's card. Your maps app opens with the route.
+**Show:** Back in the finder with the details panel closed. Tap "Directions" on the Masjid Ar-Rahman card; the phone hands over to the maps app. Cut before any real address shows.
 
 ### 6. Next
 #### [6.1] Close
-**Say:** Now you can find a masjid anywhere, follow it, and get there. Next, see the prayer times for the masjids you follow, or browse their events.
+**Say:** Now you can find a masjid anywhere, follow it, get to know it, and get there. Next, see the prayer times for the masjids you follow, or browse their events.
 **Show:** End card with two tiles: "15.1 Prayer times, monthly timetable and Qiblah" and "15.3 Events: going, interested, calendar".
 
 ## Review log
+- 2026-11-03 · critic · 3 changes: [1.1] opening says what the video covers instead of naming a page, [5.1] Show and Say start from the finder (after the new scenes), [6.1] recap updated; target 3:30 · fold: [4.4]–[4.5] About Masjid, Staff List (Biography), Facility Details (Active Facilities) from the Masjid tile
 <!-- Newest first: date, who, what was asked, what changed. -->
 - 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: [1.2] menu path is Masjid → Masjid Finder

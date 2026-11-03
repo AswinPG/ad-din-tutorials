@@ -1,12 +1,13 @@
 ---
 id: "15.1"
 title: Prayer times, monthly timetable and Qiblah
-target: 3:30
+target: 4:00
 prereq: []
 status: scripted
 flags:
   - The Qiblah compass is a native app page (MAUI), not Angular; its wording was read from the MAUI repo on branch fix/ios-workload-version, not master, so it is described without bold labels. Check it on the release build before recording.
   - Locate Qiblah only shows inside the app (it is hidden in a web browser), so record this video on the app build.
+  - "The location prompt is shown for Prayer Times only ([5.2a], the web dialog in the Prayer calculation sheet). The Qiblah compass asks for location on its own native page, which isn't in the Angular code, so [6.2] only shows it finding the location, without labels."
 ---
 
 # 15.1 Prayer times, monthly timetable and Qiblah
@@ -21,19 +22,22 @@ See today's prayer times for your masjid, check what changes tomorrow, open the 
 
 ## Covers
 - Today and tomorrow, Timing Changes, monthly view, Auto location, Qiblah
+- Prayer calculation settings: location, calculation method, Asr rule, daylight saving, high-latitude rule, manual corrections
+- Location access prompt (Allow location, Choose a place instead)
 
 ## Demo data
 - Member account (no admin role) with home masjid "Masjid Al-Noor" and one followed masjid "Masjid Ar-Rahman", both with prayer times for this month and next
 - Masjid Al-Noor has at least one Iqamah that changes tomorrow (for example Asr), so the Timing Changes chip shows
 - Hijri date shown on the page; a Friday in the month with a Jumu'ah time
 - Phone location set to the demo city (emulator mock location), so Auto mode and the Qiblah compass have a fix; Prayer calculation location saved as the demo city
+- A second take for [5.2a] with Ad-Din's location permission denied once on the phone, so the "Location access needed" dialog shows
 - Phone frame for every shot
 
 ## Script
 
 ### 1. Your masjid's times on your phone
 #### [1.1] Opening
-**Say:** Prayer times are the heart of the Ad-Din app. In this video you'll check today's times, see what changes tomorrow, open the monthly timetable, and find the Qiblah.
+**Say:** In this video you'll check today's prayer times in the Ad-Din app, see what changes tomorrow, open the monthly timetable, and find the Qiblah.
 **Show:** Title card: "Prayer times, monthly timetable and Qiblah". Phone frame on the app home.
 
 #### [1.2]
@@ -46,8 +50,8 @@ See today's prayer times for your masjid, check what changes tomorrow, open the 
 **Show:** Tap the prayer card. The Prayer Times page opens with Masjid Al-Noor, the date and the Hijri date.
 
 #### [2.2]
-**Say:** At the top you'll see your masjid, today's date and the Islamic date, and a countdown to the next prayer.
-**Show:** Zoom on the hero: masjid name and city, date line, Hijri line, next prayer and countdown.
+**Say:** At the top you'll see your masjid, today's date and the Islamic date.
+**Show:** Zoom on the hero: masjid name and city, date line, Hijri line.
 
 #### [2.3]
 **Say:** Below, the table lists every **Salah** with its **Iqamah** time. The prayer coming up next is highlighted.
@@ -63,7 +67,7 @@ See today's prayer times for your masjid, check what changes tomorrow, open the 
 **Show:** Spotlight the orange "Timing Changes" chip, then tap it. The sheet slides up.
 
 #### [3.2]
-**Say:** The sheet shows each changed prayer, with **Today** beside **Tomorrow**, so nothing catches you out.
+**Say:** The sheet shows each changed prayer, with **Today** beside **Tomorrow**, so you can plan ahead.
 **Show:** Zoom on the row: Asr, today's time, tomorrow's time. Close the sheet.
 
 ### 4. The monthly timetable
@@ -85,9 +89,17 @@ See today's prayer times for your masjid, check what changes tomorrow, open the 
 **Show:** Tap the "Auto" switch. The name changes to the demo place and the Iqamah column disappears.
 
 #### [5.2] Prayer calculation
-**Say:** Tap the settings button to choose how they're worked out. Tap **Use my location**, pick your **Calculation method** and **Asr juristic rule**, then tap **Save**.
-**Show:** Tap the tune icon: "Prayer calculation" sheet. Tap "Use my location", show the method and Asr lists, tap "Save". Toast "Prayer settings saved."
-**Caption:** Settings: Use my location, choose the Calculation method and Asr juristic rule, then Save.
+**Say:** Tap the settings button to choose how the times are worked out. Under **Location**, tap **Use my location**.
+**Show:** Tap the tune icon: "Prayer calculation" sheet. Tap "Use my location": the "Finding your location…" dialog, then the sheet shows the demo place and "Located just now".
+
+#### [5.2a] Location access
+**Say:** If Ad-Din can't use your location, it tells you why. Tap **Allow location** to ask again, or **Choose a place instead** and search for your town.
+**Show:** Second take, location permission denied: the "Location access needed" dialog. Spotlight "Allow location", then "Choose a place instead". Close it and return to the first take.
+
+#### [5.2b] Method and corrections
+**Say:** Pick your **Calculation method** and **Asr juristic rule**. **Manual corrections** move each time by a few minutes to match your local masjid. Then tap **Save**.
+**Show:** Open the Calculation method list, then the Asr juristic rule list. Pan past Daylight saving and High-latitude rule. Tap + twice beside Isha under Manual corrections. Tap "Save": toast "Prayer settings saved."
+**Caption:** Choose the Calculation method and Asr juristic rule, adjust Manual corrections if needed, then Save.
 
 #### [5.3]
 **Say:** Turn **Auto** off again to go back to your masjid's own times.
@@ -104,9 +116,10 @@ See today's prayer times for your masjid, check what changes tomorrow, open the 
 
 ### 7. Next
 #### [7.1] Close
-**Say:** That's prayer times sorted: today, tomorrow, the month and the Qiblah. Next, find and follow more masjids near you.
+**Say:** Now you know today's times, tomorrow's changes, the monthly timetable and the Qiblah. Next, find and follow more masjids near you.
 **Show:** End card with two tiles: "15.2 Find and follow masjids" and "00.4 Choose your home masjid and madrasah".
 
 ## Review log
+- 2026-11-03 · critic · 5 changes: target 4:00, [1.1] opening without the "heart of" idiom, [2.2] countdown said once (it is in [1.2]), [3.2] "catches you out" idiom replaced, [5.2] split so each step has its own scene, [7.1] "sorted" idiom replaced · fold: [5.2a] location access prompt (Allow location, Choose a place instead), [5.2b] Manual corrections with Daylight saving and High-latitude rule on screen
 <!-- Newest first: date, who, what was asked, what changed. -->
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes

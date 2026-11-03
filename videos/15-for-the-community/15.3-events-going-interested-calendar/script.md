@@ -19,7 +19,7 @@ Browse your community's events in the Ad-Din app, narrow them down, mark the one
 <!-- Shown on the opening card. Generated from prereq/plan/switch if left empty. -->
 
 ## Covers
-- Browse, filter, calendar, Going or Interested, bookmark, share
+- Browse, filter, calendar, Going or Interested, bookmark, share (the phone's share sheet)
 
 ## Demo data
 - Member account signed in on the app, home masjid "Masjid Al-Noor", following "Masjid Ar-Rahman"
@@ -42,7 +42,7 @@ Browse your community's events in the Ad-Din app, narrow them down, mark the one
 
 ### 2. Browse events
 #### [2.1]
-**Say:** Each card shows the poster, the date, the time and the place. The name of the masjid running it sits on the poster.
+**Say:** Each card shows the poster, the date, the time and the place. The name of the masjid running it is on the poster.
 **Show:** Events page. Spotlight the first card: date badge, organisation tag, time and venue lines. Scroll slowly through two more cards.
 
 #### [2.2] Quick filters
@@ -68,7 +68,7 @@ Browse your community's events in the Ad-Din app, narrow them down, mark the one
 **Show:** Expand "About this event"; scroll to "Venue Location" and spotlight "Directions" without tapping.
 
 #### [3.3] Going and Interested
-**Say:** Going for sure? Tap **Going**. Not sure yet? Tap **Interested**. Tap again to undo.
+**Say:** If you're going, tap **Going**. If you're not sure yet, tap **Interested**. Tap again to undo.
 **Show:** Tap "Going": it highlights and the going count goes up by one. Then tap "Interested" on the same event to show the star fill.
 
 #### [3.4]
@@ -90,5 +90,6 @@ Browse your community's events in the Ad-Din app, narrow them down, mark the one
 **Show:** End card with two tiles: "15.4 Donate to your masjid" and "15.6 Tasbeeh, live streams, gallery and forms".
 
 ## Review log
+- 2026-11-03 · critic · 2 changes: [2.1] "sits on" replaced with plain "is on", [3.3] clipped questions made full "If" sentences (translation) · fold: share sheet named in Covers ([4.2] already shows and names it)
 <!-- Newest first: date, who, what was asked, what changed. -->
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes

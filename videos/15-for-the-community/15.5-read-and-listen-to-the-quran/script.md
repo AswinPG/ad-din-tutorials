@@ -31,7 +31,7 @@ Open any surah in the Ad-Din app, read it verse by verse or as Mushaf pages, lis
 
 ### 1. The Quran in your pocket
 #### [1.1] Opening
-**Say:** The Ad-Din app has the whole Quran, to read and to listen to. In this video you'll open a surah, choose a reciter, switch on Tajweed colours, keep your place, and read the dua for completing the Quran.
+**Say:** The Ad-Din app has the whole Quran, to read and to listen to. You'll open a surah, choose a reciter, turn on Tajweed colours, keep your place, and read the dua for completing the Quran.
 **Show:** Title card: "Read and listen to the Quran". Phone frame on the app home.
 
 #### [1.2]
@@ -57,12 +57,12 @@ Open any surah in the Ad-Din app, read it verse by verse or as Mushaf pages, lis
 **Show:** Tap ayah 5: the ayah sheet opens. Tap "Play from here"; recitation starts at ayah 5. Pause.
 
 #### [3.3] Reciter
-**Say:** To change the voice, open the settings and tap **Reciter**. Pick the reciter you love.
+**Say:** To change the voice, open the settings and tap **Reciter**. Pick the reciter you like best.
 **Show:** Tap the settings icon: "Reading settings" opens. Tap the Reciter row; the list opens. Choose a second reciter (for example Husary).
 
 #### [3.4]
-**Say:** Here you can also choose your **Translation**, **Repeat each ayah** to help you memorise, and the **Playback speed**.
-**Show:** In Reading settings, spotlight Translation, then "Repeat each ayah" and "Playback speed". Close the sheet.
+**Say:** Here you also choose your **Translation**, and how the recitation repeats and how fast it goes. The Quran video on translation and memorising shows these.
+**Show:** In Reading settings, spotlight the Translation row, then pan past "Repeat each ayah" and "Playback speed" without opening them. Close the sheet.
 
 ### 4. Tajweed colours
 #### [4.1] Tajweed
@@ -93,14 +93,15 @@ Open any surah in the Ad-Din app, read it verse by verse or as Mushaf pages, lis
 
 ### 7. Dua Khatam-e-Quran
 #### [7.1]
-**Say:** Finished the whole Quran, alhamdulillah? Tap the menu and choose **Dua Khatam-e-Quran** to read the dua for completing it, with its meaning.
-**Show:** Tap the "More" icon at the top. Tap "Dua Khatam-e-Quran": the sheet shows the Arabic lines with the English underneath. Scroll slowly.
+**Say:** Finished the whole Quran, alhamdulillah? Tap the three dots at the top and choose **Dua Khatam-e-Quran** to read the dua for completing it, with its meaning.
+**Show:** Tap the three-dots ("More") icon at the top. Tap "Dua Khatam-e-Quran": the sheet shows the Arabic lines with the English underneath. Scroll slowly.
 
 ### 8. Next
 #### [8.1] Close
-**Say:** Now you can read and listen wherever you are. Next, try the Tasbeeh counter and your masjid's live streams.
-**Show:** End card with two tiles: "15.6 Tasbeeh, live streams, gallery and forms" and "15.1 Prayer times, monthly timetable and Qiblah".
+**Say:** Now you can read and listen wherever you are. Next, use translations, search, playlists and memorising, or try the Tasbeeh counter.
+**Show:** End card with two tiles: "15.8 Quran: translation, search, playlists and memorising" and "15.6 Tasbeeh, live streams, gallery and forms".
 
 ## Review log
+- 2026-11-03 · critic · 5 changes: [1.1] shorter opening, [3.3] "you love" softened, [3.4] no longer teaches Repeat each ayah and Playback speed (15.8 covers them) and points there, [7.1] "the menu" → "the three dots" to match the screen and 15.8, [8.1] end card points to 15.8
 <!-- Newest first: date, who, what was asked, what changed. -->
 - 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: demo data adds no last-read position and the default Mushaf, so the reader opens on the first surah

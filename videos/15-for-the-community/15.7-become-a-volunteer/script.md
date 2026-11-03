@@ -65,12 +65,12 @@ Sign up as a volunteer at your home masjid in the Ad-Din app and tick the skills
 **Show:** The skills table appears with Skill Name and Status. Tick "Event setup" and "First aid". Toast "Successfully updated skill" after each.
 
 #### [4.2]
-**Say:** Each tick is saved straight away. Untick a skill any time you can't help with it any more.
+**Say:** Each tick is saved straight away. Untick a skill when you can no longer help with it.
 **Show:** Untick "First aid": toast "Successfully updated skill". Tick it again.
 
 ### 5. Taking a break
 #### [5.1]
-**Say:** Need to step back? Turn the switch off and tap **Yes, remove me**. Your skills stay saved, so you can switch back on later.
+**Say:** To stop volunteering for a while, turn the switch off and tap **Yes, remove me**. Your skills stay saved, so you can turn it on again later.
 **Show:** Tap the switch: "Stop volunteering?" box. Spotlight "Yes, remove me", then tap "Cancel" so the demo stays a volunteer.
 
 ### 6. Next
@@ -79,5 +79,6 @@ Sign up as a volunteer at your home masjid in the Ad-Din app and tick the skills
 **Show:** End card with two tiles: "15.3 Events: going, interested, calendar" and "00.5 Your profile, notifications and GUID".
 
 ## Review log
+- 2026-11-03 · critic · 2 changes: [5.1] "step back" idiom replaced with a plain sentence, [4.2] simpler wording
 <!-- Newest first: date, who, what was asked, what changed. -->
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes

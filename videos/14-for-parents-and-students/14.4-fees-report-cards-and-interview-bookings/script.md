@@ -1,7 +1,7 @@
 ---
 id: "14.4"
 title: Fees, report cards and interview bookings
-target: 4:00
+target: 4:30
 prereq:
   - "14.1"
 status: scripted
@@ -22,11 +22,13 @@ See your fee invoices and what's been paid, download your child's report cards, 
 
 ## Covers
 - Invoice History, Report Archive, booking an interview
+- Madrasah Report: the parent's own reports (Run, My Favorite Reports)
 
 ## Demo data
 - Parent "Yusuf Rahman" in the app; children "Maryam Rahman" (Maktab Level 1, Section B) and "Hamza Rahman" (Hifz Boys A)
 - Al-Noor Madrasah has the Payment Module on; invoices in the last six months: one Paid, one Partial Paid (two receipts: cash and bank transfer, one with a note), one Unpaid; payment type "Monthly fee"
 - A released report card "Term 1 Report" for Maryam with its PDF generated
+- Attendance marked for Maryam this term, so "Attendance by Student" in Madrasah Report has data; no pinned reports at the start
 - Interview event "Term 1 Parent Evening" with teacher "Fatima Ali": one interview slot with 10-minute times, some Free, some booked by other parents
 - Phone frame for every shot; the downloaded PDF opens in the phone's viewer
 
@@ -81,6 +83,14 @@ See docs/SCRIPT-FORMAT.md.
 **Say:** Tap the button under **Download PDF** to save the report card to your phone.
 **Show:** Tap the download button on "Term 1 Report": the PDF downloads and opens. Close it.
 
+#### [3.4] More reports
+**Say:** Just above it, **Madrasah Report** has more reports about your child, such as **Attendance by Student**. Tap **Run** to open one.
+**Show:** ☰ → Reports → Madrasah Report. The Report page with the "Parent" tab and Al-Noor Madrasah selected; scroll past Hifz Reports, Attendance Reports and Library Reports. Tap "Run" beside "Attendance by Student": Maryam's attendance report opens. Go back.
+
+#### [3.5]
+**Say:** Use a report often? Tap the pin beside it, and it stays at the top under **My Favorite Reports**.
+**Show:** Tap the pin icon beside "Attendance by Student": it appears under "My Favorite Reports".
+
 ### 4. Book an interview
 #### [4.1] Open interviews
 **Say:** When your madrasah opens parent-teacher interviews, open **Parent Portal** and tap **Parent Teacher Interview**.
@@ -99,12 +109,12 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Pick "Maryam Rahman". Tap "Add": toast "Successfully Booked". The row's Status reads "Your Booking".
 
 #### [4.5] Change it later
-**Say:** Can't make it? Select your booking and tap **Release** to free the time. Tap **Edit** to leave **Parent Comments** for the teacher.
+**Say:** If you can't come, select your booking and tap **Release** to free the time. Tap **Edit** to leave **Parent Comments** for the teacher.
 **Show:** Select the booked row. Spotlight "Release", then tap "Edit": spotlight "Parent Comments". Close without saving.
 
 ### 5. Next
 #### [5.1] Recap
-**Say:** Now you can keep an eye on your fees, keep every report card, and book time with your child's teacher.
+**Say:** Now you can check your fees, keep every report card and report, and book time with your child's teacher.
 **Show:** The Parent Interview list with "Your Booking" on the booked time.
 
 #### [5.2] Close
@@ -113,4 +123,5 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 2 changes: target 4:30, [4.5] plain "If you can't come" instead of an idiom, [5.1] recap without "keep an eye on" · fold: [3.4] Madrasah Report with Run, [3.5] pin to My Favorite Reports
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes

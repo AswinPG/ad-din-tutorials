@@ -1,7 +1,7 @@
 ---
 id: "14.1"
 title: Your parent home in the app
-target: 4:00
+target: 4:30
 prereq:
   - "06.2"
 status: scripted
@@ -21,6 +21,8 @@ Find your way around the parent home in the Ad-Din app: a panel for each child w
 
 ## Covers
 - A panel per child, My Routine, announcements, Enroll Now, Pending Approval
+- Parent Portal pages from the Madrasah tile, including the read-only lists (Class, Subject, Holiday, Grade, Delegations)
+- The same on the web: parent Dashboard and the Parent Portal in the sidebar
 
 ## Demo data
 - Parent "Yusuf Rahman" (username `yusuf_rahman`), Parent role only; home masjid "Masjid Al-Noor", home madrasah "Al-Noor Madrasah" (Premium, Class Announcements switched on)
@@ -31,7 +33,8 @@ Find your way around the parent home in the Ad-Din app: a panel for each child w
 - Iqamah times for Masjid Al-Noor, two unread messages, one masjid event today
 - Second demo parent "Aisha Rahman" who is also a Teacher, for the role tabs shot
 - Third demo parent "Bilal Ahmed" with one linked child "Sara Ahmed", not in a class and no enrollment request, for the No Active Enrollments shot
-- Phone frame for every shot
+- Yusuf has his own Premium (or a seat), so the Madrasah tile opens his Parent Portal pages instead of Go Premium; Al-Noor Madrasah has a holiday, a grade set and one teacher delegation for Maryam's class on record
+- Phone frame for every shot, except a browser frame for the web shot in [6.4] (Yusuf signed in on the web, Parent role selected on the Dashboard)
 
 ## Script
 <!--
@@ -43,7 +46,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. Your home in the app
 #### [1.1] Opening
-**Say:** When you open the Ad-Din app as a parent, your home screen shows each child's day at a glance. Let's take a tour.
+**Say:** When you open the Ad-Din app as a parent, your home screen shows each child's day. Let's take a tour.
 **Show:** Title card: "Your parent home in the app". Phone frame on Yusuf's app home.
 
 #### [1.2]
@@ -52,7 +55,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 2. The top of the screen
 #### [2.1] Header
-**Say:** At the top is your organisation's name, with the menu button on the left for every page, and the settings button on the right for your profile.
+**Say:** At the top is your organisation's name. The menu button on the left opens every page, and the settings button on the right opens your profile.
 **Show:** Spotlight the header bar: the name, then the ☰ button, then the gear button. Don't tap them.
 
 #### [2.2] Prayer times
@@ -61,7 +64,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 3. One panel per child
 #### [3.1] Your card
-**Say:** Your card greets you with **Assalamu alaikum** and your name. Underneath, it says how many of your children are linked to your account.
+**Say:** Your card greets you with **Assalamu alaikum** and your name. Underneath, it says how many of your linked children are in a class.
 **Show:** Spotlight the identity card: "Assalamu alaikum", "Yusuf Rahman", and the line "2 of 3 linked children in a class here".
 
 #### [3.2] Pick a child
@@ -69,7 +72,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Tap "Hamza": the cards below change. Tap "Maryam" again.
 
 #### [3.3]
-**Say:** Tap the selected child again to see their class and username. Tap the username to copy it, which helps when the madrasah asks for it.
+**Say:** Tap the selected child again to see their class and username. Tap the username to copy it, in case the madrasah asks for it.
 **Show:** Tap the "Maryam" button: the details open with Class "Maktab Level 1 · Section B" and Username "@maryam_rahman". Tap the username: toast "Copied to clipboard".
 
 #### [3.4] More than one role
@@ -111,6 +114,11 @@ See docs/SCRIPT-FORMAT.md.
 **Say:** Below your children are shortcut tiles, such as **Prayer Times**, **Quran**, **Events** and **Messages**.
 **Show:** Scroll to the tile grid. Spotlight Prayer Times, Quran, Events, Messages in turn.
 
+#### [6.1a] All your pages
+**Say:** Tap **Madrasah** for every page of your **Parent Portal**. Besides attendance and Hifz, it lists your child's **Class**, **Subject**, **Holiday** dates, **Grade** scale, and **Delegations**, which show when another teacher covers a class.
+**Show:** Tap the "Madrasah" tile: the Parent Portal list opens straight away (Yusuf has only one portal). Scroll slowly; spotlight Class, Subject, Holiday, Grade, Delegations. Tap "Delegations": one row with From Teacher, To Teacher and the dates. Go back twice to the home.
+**Caption:** Tap Madrasah for every Parent Portal page: Class, Subject, Holiday, Grade, Delegations and more.
+
 #### [6.2]
 **Say:** The **Messages** card counts your unread messages, and **Today's events** lists what's on at your masjid.
 **Show:** Spotlight the Messages card with "2 unread", then the Today's events card.
@@ -119,9 +127,13 @@ See docs/SCRIPT-FORMAT.md.
 **Say:** Pull down from the top at any time to refresh your home.
 **Show:** Scroll to the top and pull down: the Ad-Din logo spins, then the cards reload.
 
+#### [6.4] On the web
+**Say:** On a computer, sign in on the Ad-Din website. Your **Dashboard** sums up the same things for the child you pick, and **Parent Portal** in the sidebar has the same pages.
+**Show:** Browser frame: Yusuf's Dashboard with the Parent role. Pick Maryam under "Select Child to view KPI :"; spotlight the Quran Hifz Assignments and attendance boxes. Then Sidebar → Parent Portal, expanded.
+
 ### 7. Next
 #### [7.1] Recap
-**Say:** That's your parent home: a panel for each child, their routine and announcements, and any enrollment still waiting for approval.
+**Say:** That's your parent home: a panel for each child, their routine and announcements, any enrollment waiting for approval, and every other page one tap away.
 **Show:** Yusuf's home, top of the screen, Maryam selected.
 
 #### [7.2] Close
@@ -130,4 +142,5 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 6 changes: [1.1] cut "at a glance", [2.1] split into two short sentences, [3.1] says what the count means, [3.3] simpler wording, [7.1] recap includes the new pages, target 4:30 · fold: [6.1a] Parent Portal pages from the Madrasah tile with Class, Subject, Holiday, Grade, Delegations; [6.4] web Dashboard and sidebar
 - 2026-11-03 · validator · checked against master d36d69ed8 · 2 fixes: demo data (Hifz class and Academic Activity needed for [4.4], only Zainab has an enrollment request), [4.2] record Sun–Thu so the right arrow works twice

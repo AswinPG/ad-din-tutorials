@@ -20,6 +20,7 @@ Count your dhikr with the Tasbeeh counter, watch or listen to your masjid's live
 
 ## Covers
 - Tasbeeh counter, watching streams, gallery, downloading forms
+- Manage Tasbeeh: add your own dhikr (name, type, target), edit or delete it
 
 ## Demo data
 - Member account (no admin role) on the app, home masjid "Masjid Al-Noor"
@@ -34,7 +35,7 @@ Count your dhikr with the Tasbeeh counter, watch or listen to your masjid's live
 
 ### 1. Four handy tools
 #### [1.1] Opening
-**Say:** The Ad-Din app has a few handy tools for everyday life at your masjid. Let's look at the Tasbeeh counter, live streams, the photo gallery, and forms you can download.
+**Say:** The Ad-Din app has a few useful tools for everyday life at your masjid. In this video you'll use the Tasbeeh counter, live streams, the photo gallery, and forms you can download.
 **Show:** Title card: "Tasbeeh, live streams, gallery and forms". Phone frame on the app home.
 
 ### 2. Tasbeeh counter
@@ -43,7 +44,7 @@ Count your dhikr with the Tasbeeh counter, watch or listen to your masjid's live
 **Show:** Tap the "Tasbeeh" tile. The counter opens; tap the "SubhanAllah" chip.
 
 #### [2.2] Count
-**Say:** Now tap anywhere on the big card to count. The bar fills as you reach the target, and the phone gives a little buzz with each tap.
+**Say:** Now tap anywhere on the big card to count. The bar fills as you reach the target, and the phone vibrates gently with each tap.
 **Show:** Tap the card several times: the number rises, "target 33" and the bar fill. Speed up to reach 33; the card changes to its done state.
 
 #### [2.3] Reset
@@ -56,8 +57,8 @@ Count your dhikr with the Tasbeeh counter, watch or listen to your masjid's live
 **Caption:** Add your own: Manage tasbeehs, Add, then a name, type and target, and Save.
 
 #### [2.5]
-**Say:** Your own dhikr keeps its count in your account, so it's still there next time.
-**Show:** Tap the "Astaghfirullah" chip, tap a few times; spotlight the count.
+**Say:** Your own dhikr keeps its count in your account, so it's still there next time. To change or remove one, select it under **Manage tasbeehs** and tap **Edit** or **Delete**.
+**Show:** Tap the "Astaghfirullah" chip, tap a few times; spotlight the count. Tap "Manage tasbeehs": tick the Astaghfirullah row; spotlight "Edit" and "Delete" without tapping. Go back.
 
 ### 3. Live streams
 #### [3.1] Streaming
@@ -82,7 +83,7 @@ Count your dhikr with the Tasbeeh counter, watch or listen to your masjid's live
 **Show:** Tap the Eid prayer photo: the full-screen viewer opens with "3 / 9". Swipe to the next photo, then tap the video tile's play badge.
 
 #### [4.3]
-**Say:** Want to keep a photo? Tap the download button.
+**Say:** To keep a photo, tap the download button.
 **Show:** On a photo, tap the download icon at the top. Close the viewer.
 
 ### 5. Forms
@@ -104,5 +105,6 @@ Count your dhikr with the Tasbeeh counter, watch or listen to your masjid's live
 **Show:** End card with two tiles: "15.7 Become a volunteer" and "15.5 Read and listen to the Quran".
 
 ## Review log
+- 2026-11-03 · critic · 3 changes: [1.1] standard "In this video" opening, [2.2] "a little buzz" → "vibrates gently" (translation), [4.3] plain sentence instead of a clipped question · fold: Manage Tasbeeh added to Covers; [2.5] adds Edit and Delete on the Manage tasbeehs list ([2.4] already shows Add)
 <!-- Newest first: date, who, what was asked, what changed. -->
 - 2026-11-03 · validator · checked against master d36d69ed8 · 2 fixes: demo data no longer pre-saves Astaghfirullah (it is added on camera in [2.4]), adds a second followed masjid for [3.3]

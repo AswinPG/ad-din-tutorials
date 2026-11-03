@@ -1,10 +1,12 @@
 ---
 id: "14.3"
 title: Follow Hifz progress and classwork
-target: 3:30
+target: 4:00
 prereq:
   - "14.1"
 status: scripted
+flags:
+  - "Exams and Exam Marks (open decision, off by default) are only named in [4.5] over a card, not shown live. If the decision drops Exam Marks, cut [4.5]."
 ---
 
 # 14.3 Follow Hifz progress and classwork
@@ -19,12 +21,16 @@ Follow your child's daily Hifz recitation and their classwork, with scores, from
 
 ## Covers
 - Hifz progress card, My Classwork, scores
+- Parent Library and Recognition
+- Parent Exams and Exam Marks (named only; they show when the madrasah turns Exam Marks on)
 
 ## Demo data
 - Parent "Yusuf Rahman" in the app; child "Hamza Rahman" in "Hifz Boys A" (marked as a Quran Hifz class, which the Hifz progress card needs) and "Maktab Level 1"; Al-Noor Madrasah has Academic Activity switched on
 - Today's Hifz records for Hamza from teacher "Ibrahim Khan": a new-lesson task marked (mark 8, 2 mistakes, one failed attempt then a pass, 30 lines, 2 pages, a teacher note), and a revision task the student has submitted but the teacher hasn't marked
 - Yesterday: one marked Hifz record, for the change-date shot
 - Classwork for Hamza across both classes, all in the current term (the card shows the current term only): "Surah Al-Mulk test" graded 18/20 (weight 2), "Wudu poster" graded, not scored, "Seerah worksheet" due later this week, "Arabic vocabulary quiz" missing (two days late)
+- Library: Hamza has one borrowed book on record ("Stories of the Prophets"); Recognition: one "Student of the Month" award for Hamza from Ibrahim Khan
+- Exam Marks stays off for Al-Noor Madrasah (the default), so Exams and Exam Marks are not in the menu
 - Phone frame for every shot
 
 ## Script
@@ -83,7 +89,7 @@ See docs/SCRIPT-FORMAT.md.
 **Say:** If your child is in more than one class, use the class box to show just one of them.
 **Show:** Open the class box: "All classes", "Hifz Boys A", "Maktab Level 1". Pick "Maktab Level 1", then "All classes" again.
 
-### 4. Scores
+### 4. Scores, library books and awards
 #### [4.1] Graded work
 **Say:** Tap **Graded** to see the scores. Each one shows the mark out of the total, and its weight, which is how much it counts.
 **Show:** Tap "Graded". Zoom on "Surah Al-Mulk test": "18/20", "weight 2".
@@ -96,9 +102,17 @@ See docs/SCRIPT-FORMAT.md.
 **Say:** Tap any activity to open its details. Tap **All activities** for the full list, which you can filter by class, subject and term.
 **Show:** Tap "Surah Al-Mulk test": the Activity Score Management page opens on it. Go back. Spotlight "All activities" at the bottom of the card.
 
+#### [4.4] Library and Recognition
+**Say:** There's more in the menu, under **Parent Portal**. **Library** lists the books your child has borrowed, and **Recognition** shows the awards their teachers have given.
+**Show:** ☰ → Parent Portal → Library: the "Circulations" tab with "Stories of the Prophets" and its Issue Date. Go back. Parent Portal → Recognition: the "Student" tab with "Student of the Month" for Hamza. Go back to the home.
+
+#### [4.5] Exams
+**Say:** If your madrasah uses exams, **Exams** and **Exam Marks** also appear in that menu, for your child's exams and marks.
+**Show:** Simple card: "Exams" and "Exam Marks", with the line "Only when your madrasah turns them on". No live demo.
+
 ### 5. Next
 #### [5.1] Recap
-**Say:** Now you can follow your child's Hifz and their classwork day by day, and see each score as soon as it's marked.
+**Say:** Now you can follow your child's Hifz and classwork day by day, see each score as soon as it's marked, and find their library books and awards.
 **Show:** The home with the Hifz progress and My Classwork cards in view.
 
 #### [5.2] Close
@@ -107,4 +121,5 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 2 changes: target 4:00, chapter 4 retitled, [5.1] recap includes the new pages · fold: [4.4] parent Library and Recognition, [4.5] Exams / Exam Marks named over a card (flagged, open decision)
 - 2026-11-03 · validator · checked against master d36d69ed8 · 3 fixes: [2.4] Not marked means not submitted or marked yet (Say and Caption), demo data: Hifz Boys A must be a Quran Hifz class, classwork in the current term

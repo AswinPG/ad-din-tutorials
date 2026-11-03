@@ -35,7 +35,7 @@ Find your masjid's donation page in the Ad-Din app, and give to a donation campa
 
 ### 1. Giving to your masjid
 #### [1.1] Opening
-**Say:** Your masjid runs on the generosity of its community. Here's how to find where to give, in the Ad-Din app and on your masjid's website.
+**Say:** Your masjid depends on the generosity of its community. In this video you'll find where to give, in the Ad-Din app and on your masjid's website.
 **Show:** Title card: "Donate to your masjid". Phone frame on the app home.
 
 #### [1.2]
@@ -61,7 +61,7 @@ Find your masjid's donation page in the Ad-Din app, and give to a donation campa
 
 ### 3. Campaigns on the website
 #### [3.1] Masjid Donations
-**Say:** Many masjids run appeals, such as a roof repair or an iftar fund. You'll find them on your masjid's Ad-Din website, under **Masjid Donations**.
+**Say:** Many masjids collect for a special cause, such as a roof repair or an iftar fund. You'll find these campaigns on your masjid's Ad-Din website, under **Masjid Donations**.
 **Show:** Phone browser on the Masjid Al-Noor demo website home page. Scroll to the "Masjid Donations" section.
 
 #### [3.2] View All
@@ -82,5 +82,6 @@ Find your masjid's donation page in the Ad-Din app, and give to a donation campa
 **Show:** End card with two tiles: "15.3 Events: going, interested, calendar" and "15.6 Tasbeeh, live streams, gallery and forms".
 
 ## Review log
+- 2026-11-03 · critic · 2 changes: [1.1] "runs on" metaphor replaced and standard "In this video" opening, [3.1] "appeals" explained as campaigns (one word for the thing, as in Covers)
 <!-- Newest first: date, who, what was asked, what changed. -->
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes (website labels Masjid Donations, View All, Donation Progress confirmed in AdDin.PublicWebpages on master)

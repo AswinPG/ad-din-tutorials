@@ -43,7 +43,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Title card: "Check attendance and report an absence". Phone frame on the app home.
 
 #### [1.2]
-**Say:** Your child is already enrolled, and teachers take attendance in class. You'll find it all on your app home.
+**Say:** Your child is already enrolled, and teachers take attendance in class. You'll find it on your app home.
 **Show:** Opening card from You'll need.
 
 ### 2. Today
@@ -57,7 +57,7 @@ See docs/SCRIPT-FORMAT.md.
 **Caption:** Today: each class with its status. Not taken means it isn't marked yet.
 
 ### 3. Subject by subject
-#### [3.1]
+#### [3.1] Subject Wise
 **Say:** If your madrasah takes attendance for each subject, you'll also see **Subject Wise**. It shows each of today's lessons on its own.
 **Show:** Tap "Subject Wise": rows "Quran" (Present) and "Arabic" (Late), each with the class and teacher.
 
@@ -72,7 +72,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 5. Report an absence
 #### [5.1] Open the form
-**Say:** Know your child will miss a day or arrive late? Go back to **Today** and tap **Report an absence**.
+**Say:** If your child will miss a day or arrive late, go back to **Today** and tap **Report an absence**.
 **Show:** Tap "Today", then "Report an absence". The Attendance page opens on the "Submit Excuse" tab, with Class Details open.
 
 #### [5.2] Choose your child
@@ -96,9 +96,9 @@ See docs/SCRIPT-FORMAT.md.
 **Say:** Add a short **Description** if you like, then tap **Save excuse**.
 **Show:** Type "Dentist appointment, back by 10:30." in Description. Tap "Save excuse": toast "Successfully added the reason". The new excuse appears at the top of Past excuses.
 
-### 7. Change your mind
+### 7. Edit or delete an excuse
 #### [7.1]
-**Say:** Until the teacher marks attendance for that day, you can edit or delete an excuse with the buttons on its card. After that it shows **Attendance marked**, and it can't be changed.
+**Say:** Until the teacher marks attendance for that day, you can edit or delete an excuse with the buttons on its card. After that, it shows **Attendance marked** and can't be changed.
 **Show:** Spotlight the edit and delete buttons on the new excuse, then "Attendance marked" on last week's excuse.
 **Caption:** Edit or delete an excuse until attendance is marked for that day.
 
@@ -113,4 +113,5 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 4 changes: [5.1] plain "If" sentence instead of a clipped question (translation), chapter 7 titled "Edit or delete an excuse" instead of an idiom, [7.1] tighter, [1.2] and [3.1] small tidy-ups
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes
