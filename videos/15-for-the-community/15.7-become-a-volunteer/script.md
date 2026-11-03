@@ -80,3 +80,4 @@ Sign up as a volunteer at your home masjid in the Ad-Din app and tick the skills
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · validator · checked against master d36d69ed8 · no changes

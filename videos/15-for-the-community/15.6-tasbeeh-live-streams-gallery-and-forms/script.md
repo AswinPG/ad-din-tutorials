@@ -23,8 +23,9 @@ Count your dhikr with the Tasbeeh counter, watch or listen to your masjid's live
 
 ## Demo data
 - Member account (no admin role) on the app, home masjid "Masjid Al-Noor"
-- One saved tasbeeh of the member's own: "Astaghfirullah", type General, target 100
+- No tasbeehs of the member's own at the start (only the three built-in chips, SubhanAllah, Alhamdulillah and Allahu Akbar, each target 33, counts at 0); "Astaghfirullah", General, 100 is added on camera in [2.4]
 - Masjid Al-Noor live streaming: an audio stream and a video stream link set (demo embeds that play a short clip); no Facebook stream
+- The member also follows "Masjid Ar-Rahman", so the Live Streaming picker in [3.3] lists more than one masjid
 - Masjid Al-Noor gallery: eight photos (masjid building, Eid prayer, iftar) and one video, all demo images with no faces of real people
 - Masjid Al-Noor forms: "Madrasah Enrolment Form" (PDF) and "Nikah Booking Form" (DOCX) with descriptions
 - Phone frame for every shot
@@ -104,3 +105,4 @@ Count your dhikr with the Tasbeeh counter, watch or listen to your masjid's live
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · validator · checked against master d36d69ed8 · 2 fixes: demo data no longer pre-saves Astaghfirullah (it is added on camera in [2.4]), adds a second followed masjid for [3.3]

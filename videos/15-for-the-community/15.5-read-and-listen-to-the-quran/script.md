@@ -23,7 +23,7 @@ Open any surah in the Ad-Din app, read it verse by verse or as Mushaf pages, lis
 ## Demo data
 - Any signed-in account on the app (no organisation needed)
 - Quran content served for Surah Al-Kahf (18) and Surah Al-Mulk (67): Arabic, the English translation, Tajweed markup, audio for two reciters (for example Alafasy and Husary), and the Madani Mushaf (1421H) pages for Al-Mulk
-- Reader settings reset to defaults (Verses view, light theme, no bookmarks, empty playlist)
+- Reader settings reset to defaults (Verses view, light theme, Madani Mushaf (1421H), no bookmarks, empty playlist) and no last-read position saved, so the reader opens on Al-Fatihah
 - Phone audio recorded for the listening scenes
 - Phone frame for every shot
 
@@ -103,3 +103,4 @@ Open any surah in the Ad-Din app, read it verse by verse or as Mushaf pages, lis
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: demo data adds no last-read position and the default Mushaf, so the reader opens on the first surah

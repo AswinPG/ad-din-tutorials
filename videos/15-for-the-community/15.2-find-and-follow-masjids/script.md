@@ -32,7 +32,7 @@ Find masjids and madrasahs near you on the map, follow the ones you visit, and g
 **Show:** Title card: "Find and follow masjids". Phone frame on the app home.
 
 #### [1.2] Open the finder
-**Say:** On the home screen, tap **Search**. You can also open the menu and tap **Masjid Finder**.
+**Say:** On the home screen, tap **Search**. You can also open the menu, then **Masjid**, then **Masjid Finder**.
 **Show:** Spotlight the "Search" tile and tap it. The finder opens: map with pins and a blue "You are here" dot.
 
 ### 2. The map and the list
@@ -86,3 +86,4 @@ Find masjids and madrasahs near you on the map, follow the ones you visit, and g
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: [1.2] menu path is Masjid → Masjid Finder

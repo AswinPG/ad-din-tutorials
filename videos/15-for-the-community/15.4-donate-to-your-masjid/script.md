@@ -83,3 +83,4 @@ Find your masjid's donation page in the Ad-Din app, and give to a donation campa
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · validator · checked against master d36d69ed8 · no changes (website labels Masjid Donations, View All, Donation Progress confirmed in AdDin.PublicWebpages on master)
