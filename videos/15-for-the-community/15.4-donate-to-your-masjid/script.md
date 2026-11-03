@@ -79,9 +79,10 @@ Find your masjid's donation page in the Ad-Din app, and give to a donation campa
 ### 4. Next
 #### [4.1] Close
 **Say:** May Allah accept your giving. Next, see the events at your masjid, or watch its live streams from home.
-**Show:** End card with two tiles: "15.3 Events: going, interested, calendar" and "15.6 Tasbeeh, live streams, gallery and forms".
+**Show:** End card with two tiles: "15.3 Events: going, interested and sharing" and "15.6 Tasbeeh, live streams, gallery and forms".
 
 ## Review log
+- 2026-11-03 · manager · decisions via chat · 15.3 renamed 'Events: going, interested and sharing': end-card tile updated
 - 2026-11-03 · critic · 2 changes: [1.1] "runs on" metaphor replaced and standard "In this video" opening, [3.1] "appeals" explained as campaigns (one word for the thing, as in Covers)
 <!-- Newest first: date, who, what was asked, what changed. -->
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes (website labels Masjid Donations, View All, Donation Progress confirmed in AdDin.PublicWebpages on master)

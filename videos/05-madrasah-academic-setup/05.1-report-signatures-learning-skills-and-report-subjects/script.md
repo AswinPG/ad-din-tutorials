@@ -1,13 +1,13 @@
 ---
 id: "05.1"
-title: Report signatures, learning skills and report subjects
+title: Report signatures and learning skills
 target: 3:30
 prereq:
   - "03.1"
 status: scripted
 ---
 
-# 05.1 Report signatures, learning skills and report subjects
+# 05.1 Report signatures and learning skills
 
 ## Goal
 Choose who signs your madrasah's report cards, make sure their signatures are in Ad-Din, and set the learning skills teachers rate on report cards.
@@ -34,7 +34,7 @@ Choose who signs your madrasah's report cards, make sure their signatures are in
 ### 1. Before you start
 #### [1.1] Opening
 **Say:** In this video for madrasah admins, you'll choose who signs your report cards, make sure their signatures are in Ad-Din, and set the learning skills students are rated on.
-**Show:** Title card: "Report signatures, learning skills and report subjects".
+**Show:** Title card: "Report signatures and learning skills".
 
 #### [1.2]
 **Say:** Your teachers and admins are already added to the madrasah. They're the people you'll choose from.
@@ -104,6 +104,7 @@ Choose who signs your madrasah's report cards, make sure their signatures are in
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · manager · decisions via chat · Critic's taste call: title now 'Report signatures and learning skills' (report subjects aren't in the app); heading and [1.1] title card updated; 03.1 end card updated
 - 2026-11-03 · manager · decisions via chat · Planned features not in the app dropped: Subject for report removed from Covers, flag removed
 - 2026-11-03 · critic · 6 changes: [1.1] second-person opening for admins; [2.2] merged into [2.1] (thin scene); [4.1] covers every person chosen, not only the principal, no "stay on"; [4.2] shorter; [6.1] no personification ("know"); [6.2] end card by number and title
 - 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: [4.2] Signature section is already open (no expand click); demo data notes Email needed for Save

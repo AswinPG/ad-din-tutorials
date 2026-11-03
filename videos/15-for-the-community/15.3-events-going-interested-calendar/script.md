@@ -1,6 +1,6 @@
 ---
 id: "15.3"
-title: "Events: going, interested, calendar"
+title: "Events: going, interested and sharing"
 target: 3:00
 prereq:
   - "00.4"
@@ -9,7 +9,7 @@ flags:
   - Every event card shows a three-dot menu with Edit and Delete even to members (the template doesn't check the role). Keep it off camera; worth a fix.
 ---
 
-# 15.3 Events: going, interested, calendar
+# 15.3 Events: going, interested and sharing
 
 ## Goal
 Browse your community's events in the Ad-Din app, narrow them down, mark the ones you're going to or interested in, and bookmark or share them.
@@ -33,7 +33,7 @@ Browse your community's events in the Ad-Din app, narrow them down, mark the one
 ### 1. What's on
 #### [1.1] Opening
 **Say:** Talks, classes, family days: your masjid's events are all in the Ad-Din app. Let's find one, mark that you're going, and share it with a friend.
-**Show:** Title card: "Events: going, interested, calendar". Phone frame on the app home.
+**Show:** Title card: "Events: going, interested and sharing". Phone frame on the app home.
 
 #### [1.2]
 **Say:** Today's events already show on your home screen. Tap **Events** to see everything coming up.
@@ -50,7 +50,7 @@ Browse your community's events in the Ad-Din app, narrow them down, mark the one
 **Caption:** Use the chips to show just Today, Tomorrow, this Week or the Weekend. All brings everything back.
 
 #### [2.3] Search and Filters
-**Say:** Looking for something specific? Type in the search box, or tap **Filters** to pick a category or one masjid.
+**Say:** To find something specific, type in the search box, or tap **Filters** to pick a category or one masjid.
 **Show:** Type "picnic" in "Search events", then clear it. Tap "Filters": the sheet shows Categories and Organizations.
 
 #### [2.4]
@@ -89,6 +89,7 @@ Browse your community's events in the Ad-Din app, narrow them down, mark the one
 **Show:** End card with two tiles: "15.4 Donate to your masjid" and "15.6 Tasbeeh, live streams, gallery and forms".
 
 ## Review log
+- 2026-11-03 · manager · decisions via chat · Critic's taste call: title now 'Events: going, interested and sharing' (no calendar at phone width); heading and [1.1] title card updated; [2.3] elliptical question rewritten; end cards in 08.1, 15.2, 15.4, 15.7 updated
 - 2026-11-03 · manager · decisions via chat · Planned features not in the app dropped: calendar removed from Covers, calendar flag removed
 - 2026-11-03 · critic · 2 changes: [2.1] "sits on" replaced with plain "is on", [3.3] clipped questions made full "If" sentences (translation) · fold: share sheet named in Covers ([4.2] already shows and names it)
 <!-- Newest first: date, who, what was asked, what changed. -->

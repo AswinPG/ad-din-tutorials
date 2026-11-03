@@ -92,9 +92,10 @@ Find masjids and madrasahs near you on the map, follow the ones you visit, learn
 ### 6. Next
 #### [6.1] Close
 **Say:** Now you can find a masjid anywhere, follow it, get to know it, and get there. Next, see the prayer times for the masjids you follow, or browse their events.
-**Show:** End card with two tiles: "15.1 Prayer times, monthly timetable and Qiblah" and "15.3 Events: going, interested, calendar".
+**Show:** End card with two tiles: "15.1 Prayer times, monthly timetable and Qiblah" and "15.3 Events: going, interested and sharing".
 
 ## Review log
+- 2026-11-03 · manager · decisions via chat · 15.3 renamed 'Events: going, interested and sharing': end-card tile updated
 - 2026-11-03 · critic · 3 changes: [1.1] opening says what the video covers instead of naming a page, [5.1] Show and Say start from the finder (after the new scenes), [6.1] recap updated; target 3:30 · fold: [4.4]–[4.5] About Masjid, Staff List (Biography), Facility Details (Active Facilities) from the Masjid tile
 <!-- Newest first: date, who, what was asked, what changed. -->
 - 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: [1.2] menu path is Masjid → Masjid Finder

@@ -3,6 +3,7 @@
 Every instruction given to Claude for this video, newest first, with the result.
 Format: date · who · prompt (verbatim or summarised) · outcome / commit.
 
+- 2026-11-03 · manager · "Decisions via chat" · Critic's taste call: title now 'Report signatures and learning skills' (report subjects aren't in the app); heading and [1.1] title card updated; 03.1 end card updated
 - 2026-11-03 · manager · "Decisions via chat" · Planned features not in the app dropped: Subject for report removed from Covers, flag removed
 - 2026-11-03 · manager · "use a critic subagent to criticise and find flaws in the script, make it better" · critic pass: 6 changes (opening, thin [2.2] merged, signatures for every chosen person, end card by number); title still promises report subjects, left for the manager
 - 2026-11-03 · manager · "use a sub agent to validate the script" · validator pass: 1 fix ([4.2] Show: Signature section already open); demo data: madrasah Email needed for Save.

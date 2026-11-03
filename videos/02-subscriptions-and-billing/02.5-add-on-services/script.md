@@ -15,7 +15,7 @@ flags:
 # 02.5 Add-on services
 
 ## Goal
-Start, cancel and reactivate your organisation's add-on services (website, custom sender name and email, Prayer Times Premium) and read their trial and renewal dates.
+Start, cancel and reactivate your organisation's add-on services (website, custom sender name and email, Prayer Times Premium) and read their renewal dates.
 
 ## You'll need
 <!-- Shown on the opening card. Generated from prereq/plan/switch if left empty. -->
@@ -28,7 +28,7 @@ Start, cancel and reactivate your organisation's add-on services (website, custo
 - Admin account of "Al-Noor Madrasah" and its linked masjid "Al-Noor Masjid", both with a test card on file
 - Madrasah page: website and custom sender not subscribed at the start; after the demo, website active with a renewal date, then cancelled with a "Cancels on" date
 - Custom sender active after subscribing, with demo From Name "Al-Noor Madrasah", From Email "office@alnoor.example", Reply-To Email the same; shown verified
-- Masjid page: Prayer Times Premium not subscribed, then on a 15-day trial ("Trial Ends on")
+- Masjid page: Prayer Times Premium not subscribed, then subscribed after the demo
 - Stripe test mode; no real coupon codes on screen
 
 ## Script
@@ -97,8 +97,8 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** The "Activate the ultimate Masjid display!" panel. Spotlight both buttons and their prices.
 
 #### [5.3]
-**Say:** Confirm with **I understand, create my subscription**. During the trial, the card shows the date the **Trial Ends on**; after that, the date it **Renews on**.
-**Show:** Click "15 Day Free Trial", then "I understand, create my subscription". Spotlight "Trial Ends on".
+**Say:** Then confirm with **I understand, create my subscription**. The card now shows your Prayer Times Premium plan.
+**Show:** Click "15 Day Free Trial", then "I understand, create my subscription". The card updates; keep the shot on the card as a whole, without zooming on its dates.
 
 ### 6. Cancel and reactivate
 #### [6.1] Cancel
@@ -120,5 +120,6 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · manager · decisions via chat · Critic's taste call: trial line cut: [5.3] no longer explains the Trial Ends on / Renews on dates (the trial is first-time only and ends on reactivation); Goal and demo data updated
 - 2026-11-03 · critic · 5 changes: [1.1] second-person opening, [3.3] clearer shared-website line (checked: confirm text and merged-website code), [5.1] display vs screen wording, [6.2] no elliptical question, [7.1] end tiles by number
 - 2026-11-03 · validator · checked against master d36d69ed8 · 3 fixes: Days Past Due flag only hidden on two of the three cards; new flag on masjid reactivation failing and the first-time-only trial. [6.1] Show now returns to the madrasah's page (reactivation fails on a masjid)

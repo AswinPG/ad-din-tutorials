@@ -123,9 +123,10 @@ See docs/SCRIPT-FORMAT.md.
 
 #### [8.3] Next
 **Say:** Next, make an event repeat every week and show it on the masjid TV. Or see how members find events and mark that they're going.
-**Show:** End card with two tiles: "08.2 Repeating events and events on the masjid TV" and "15.3 Events: going, interested, calendar".
+**Show:** End card with two tiles: "08.2 Repeating events and events on the masjid TV" and "15.3 Events: going, interested and sharing".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · manager · decisions via chat · 15.3 renamed 'Events: going, interested and sharing': end-card tile updated
 - 2026-11-03 · critic · 2 changes: [1.1] second person instead of "a masjid admin"; [8.3] Say now names both end-card videos
 - 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: [6.2] madrasah invitees are Staff, Followers, Parents, Students (no Volunteers)

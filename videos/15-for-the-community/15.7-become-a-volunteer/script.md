@@ -76,9 +76,10 @@ Sign up as a volunteer at your home masjid in the Ad-Din app and tick the skills
 ### 6. Next
 #### [6.1] Close
 **Say:** Jazakallahu khairan for offering your time. Your masjid's admins can now see you as a volunteer, with your skills. Next, keep up with your masjid's events.
-**Show:** End card with two tiles: "15.3 Events: going, interested, calendar" and "00.5 Your profile, notifications and GUID".
+**Show:** End card with two tiles: "15.3 Events: going, interested and sharing" and "00.5 Your profile, notifications and GUID".
 
 ## Review log
+- 2026-11-03 · manager · decisions via chat · 15.3 renamed 'Events: going, interested and sharing': end-card tile updated
 - 2026-11-03 · critic · 2 changes: [5.1] "step back" idiom replaced with a plain sentence, [4.2] simpler wording
 <!-- Newest first: date, who, what was asked, what changed. -->
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes
