@@ -30,6 +30,7 @@ Know what's free, what Premium adds, the two ways to get Premium (for yourself o
 - Its Other Services: website active, Custom Sender Name and Email not subscribed; the linked demo masjid shows Prayer Times Premium
 - Parent account with an organisation seat, so its Subscription tab shows "Provided by your organization"
 - Family Subscription sharing visible on the madrasah's Services tab (not toggled on camera)
+- For [6.1]: a member whose Premium ended under 30 days ago (Days remaining 0); for [6.2]: a parent with an enrolled child whose Premium ended over 30 days ago
 
 ## Script
 <!--
@@ -96,11 +97,11 @@ See docs/SCRIPT-FORMAT.md.
 ### 6. The grace period
 #### [6.1] Thirty more days
 **Say:** If a Premium plan ends, Ad-Din doesn't lock you out straight away. Premium stays open for thirty more days, so there's time to renew.
-**Show:** Card: a timeline "Plan ends → 30 more days → Premium pages locked". Then the member's Subscription tab showing "Days remaining".
+**Show:** Card: a timeline "Plan ends → 30 more days → Premium pages locked". Then a lapsed member's Subscription tab, still inside the 30 days: "Days remaining" reads 0 and the Subscribe buttons are back (the countdown is not the grace period).
 
 #### [6.2]
 **Say:** After those thirty days, Premium pages send you to get Premium again. Free features keep working as always.
-**Show:** Click a Premium page in the sidebar as a lapsed member; the Subscription tab opens in its place.
+**Show:** As a parent whose Premium ended more than 30 days ago (with an enrolled child), click Parent Portal in the sidebar; the profile's Subscription tab opens in its place.
 
 ### 7. Next
 #### [7.1] Close
@@ -109,3 +110,4 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · validator · checked against master d36d69ed8 · 2 fixes: [6.1] Show (Days remaining reads 0 during grace), [6.2] Show + demo data (a member has no Premium page in the sidebar; use a lapsed parent)

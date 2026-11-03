@@ -77,13 +77,13 @@ Create an Ad-Din account on the web or in the app and arrive signed in, ready to
 
 ### 4. Tell Ad-Din why you're here
 #### [4.1] What brings you here?
-**Say:** Under the form, **What brings you here?** offers shortcuts. Choose one if it fits, and Ad-Din takes you straight there after you sign up.
-**Show:** Scroll to "What brings you here?". Spotlight the four cards: Enroll a Child, Report an Absence, My Schoolwork, Track My Hifz.
+**Say:** Under the form, **What brings you here?** offers four shortcuts. Three of them are for people who already have an account, so tapping one switches to the login form.
+**Show:** Scroll to "What brings you here?". Spotlight the four cards: Enroll a Child, Report an Absence, My Schoolwork, Track My Hifz. Don't click the last three (they flip the card to the login form).
 
 #### [4.2]
-**Say:** New parents usually pick **Enroll a Child**. The button changes to **Sign Up & Continue**. If none fits, just leave them all unselected.
+**Say:** When you're new, the one that fits is **Enroll a Child**. The button changes to **Sign Up & Continue**, and after you sign up Ad-Din takes you to your madrasah's enrolment. If you're not enrolling a child, leave it unselected.
 **Show:** Click "Enroll a Child": it shows "Selected" and the button reads "Sign Up & Continue". Click it again to unselect for this demo; the button returns to "Sign Up".
-**Caption:** New parents usually pick Enroll a Child. If none fits, leave them unselected.
+**Caption:** New parents can pick Enroll a Child. Otherwise, leave it unselected.
 
 ### 5. Agree and sign up
 #### [5.1] Terms
@@ -105,3 +105,4 @@ Create an Ad-Din account on the web or in the app and arrive signed in, ready to
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: [4.1]/[4.2] only Enroll a Child works for a new account; the other three cards switch the page to the login form, and Enroll a Child leads to the finder's ID tab then enrolment

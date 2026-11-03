@@ -28,7 +28,7 @@ Set up billing for your masjid or madrasah and buy monthly or yearly Premium sea
 - Admin account of the demo madrasah "Al-Noor Madrasah" (and its linked masjid, so the picker shows two organisations)
 - "Al-Noor Madrasah" freshly set up: no card ("Card not added"), Monthly and Yearly at 0 of 0 used, balance C$ 0.00
 - Stripe test mode, test card 4242 4242 4242 4242 with a demo billing address in Ontario, Canada (card number out of focus)
-- After Submit: Yearly shows 0 of 20 used, 20 available (the mocked refresh fills this in)
+- After Submit: Yearly shows 1 of 20 used, 19 available (the mocked refresh fills this in; the one used seat is the admin's automatic seat from [5.3])
 - The admin's profile Subscription tab showing "Provided by your organization" for [5.3]
 
 ## Script
@@ -105,8 +105,8 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 5. Read your seats
 #### [5.1] Used and available
-**Say:** The yearly plan now reads 0 of 20 used, with 20 available. Used means seats you've already given to people.
-**Show:** Zoom on "0 of 20 used", "20 available" and "20 total seats · billed yearly".
+**Say:** The yearly plan now reads 1 of 20 used, with 19 available. Used means seats already given to people.
+**Show:** Zoom on "1 of 20 used", "19 available" and "20 total seats · billed yearly".
 
 #### [5.2] Change it later
 **Say:** To buy more, open **Manage Subscription Quantity** again. You can lower the number too, but never below the seats already in use.
@@ -123,3 +123,4 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: [5.1] and demo data now 1 of 20 used, 19 available (the automatic admin seat in [5.3] takes one as soon as the invoice is paid)

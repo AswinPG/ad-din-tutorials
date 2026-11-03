@@ -19,7 +19,9 @@ Know what Ad-Din does for a masjid, a madrasah and the people around them, and w
 
 ## Demo data
 - Demo masjid and madrasah (the shared demo organisation) with prayer times, two upcoming events, a recent announcement
-- One demo account that is a Madrasah Admin and also a parent, so every portal shows in the sidebar
+- One demo account with Premium that is Masjid Admin and Madrasah Admin, and also has the Teacher, Parent (with an enrolled child) and Student roles, so Prayer Times, Donation and all four portals show in the sidebar (each portal needs its own role)
+- Academic Activity switched on for the demo madrasah (Admin Portal → Academic Activity only shows then)
+- One published report card for the demo child, for the quick cut in [3.2]
 - The same account signed in on the app (phone frame) for the closing shot
 
 ## Script
@@ -89,3 +91,4 @@ Know what Ad-Din does for a masjid, a madrasah and the people around them, and w
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: demo account needs Masjid Admin (Prayer Times) and the Teacher and Student roles too, plus Academic Activity on and a report card

@@ -61,10 +61,10 @@ See docs/SCRIPT-FORMAT.md.
 **Say:** Choose what you're adding: a **Masjid**, a **Madrasah**, or **Masjid & Madrasah**, for a masjid with its own madrasah or school. We'll add both.
 **Show:** "Register your organization" page. Hover each option, then click "Masjid & Madrasah".
 
-#### [3.2] Terms and Conditions
-**Say:** Read the **Terms and Conditions**. You become the first administrator, Ad-Din may contact you before approving, and others see your organisation on the map only after approval.
+#### [3.2] Terms of Service
+**Say:** Read the **Terms of Service**. You become the first administrator, Ad-Din may contact you before approving, and others see your organisation on the map only after approval.
 **Show:** Scroll the six terms slowly. Spotlight terms 1 and 2.
-**Caption:** Read the Terms and Conditions: you become the first administrator, Ad-Din may contact you, and you appear on the map after approval.
+**Caption:** Read the Terms of Service: you become the first administrator, Ad-Din may contact you, and you appear on the map after approval.
 
 #### [3.3]
 **Say:** Tick the box to agree to the **Terms of Service**, then tap **Continue**.
@@ -138,3 +138,4 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: [3.2] the six terms sit under the heading **Terms of Service** (onboarding.terms), not "Terms and Conditions"

@@ -13,6 +13,7 @@ flags:
   - "The reminder sheet, the precise sheet and Preferences › This device only render inside the app shell. The demo world must stub window.AdDinBridge with getPermissions / requestPermission returning the states each scene needs (and seed localStorage 'adDinPermissionReminder' with an old firstSeen, because the reminder never shows on the first launch)."
   - "The phone's own permission dialogs and the lock-screen notification in [6.3] are operating-system screens, not Ad-Din. Use a stylised graphic or a real-device capture with no personal data."
   - "The precise location sheet needs app version 2.0.52 or newer; older apps report an approximate grant as not allowed."
+  - "App gap: a message push carries only action 'message' (no route), and the shell routes a tapped background notification by route only, so tapping it opens the app where it was (home on a cold start), not the inbox. The in-app banner and Android's 'View' bar do open the inbox. [6.3] scripts what the code does; revisit if the shell or server adds the route."
 ---
 
 # 00.7 Ad-Din on your phone: notifications and location
@@ -121,11 +122,11 @@ See docs/SCRIPT-FORMAT.md.
 
 #### [6.2] Open or dismiss
 **Say:** Tap it to open what it's about. Swipe it up or tap the cross to dismiss it. If several arrive at once, it counts the rest.
-**Show:** Trigger two more pushes: the banner shows "+2 more". Tap the banner: the Message inbox opens on the Jumu'ah message.
+**Show:** Trigger two more pushes while the first is still up: the banner shows "+2 more". Tap the banner: the Message inbox opens with the Jumu'ah message at the top.
 
 #### [6.3] While the app is closed
-**Say:** When the app is closed, your phone shows the notification as usual. Tap it and Ad-Din opens on the right page.
-**Show:** Stylised lock-screen notification from Ad-Din with the same text. Tap it: cut to the app opening on the Message inbox.
+**Say:** When the app is closed, your phone shows the notification as usual. Tap it to open Ad-Din; new messages wait for you in your **Message** inbox.
+**Show:** Stylised lock-screen notification from Ad-Din with the same text. Tap it: cut to the app opening on its home screen, then open the Message inbox with the Jumu'ah message at the top.
 
 ### 7. Done
 #### [7.1] Result
@@ -138,3 +139,4 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · validator · checked against master d36d69ed8 (+ Ad-DinMobileApp fix/ios-workload-version 6f756834b) · 2 fixes: [6.3] tapping a closed-app message notification opens the app, not the inbox (flag added); [6.2] banner tap opens the inbox list (not the message itself)

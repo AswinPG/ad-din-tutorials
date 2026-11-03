@@ -45,7 +45,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Title card: "Log in and reset a forgotten password".
 
 #### [1.2]
-**Say:** Have your username or email ready. To reset a password, you'll also need to open that email inbox.
+**Say:** Have your username ready; you log in with your username, not your email. To reset a password, you'll also need to open your email inbox.
 **Show:** Opening card from You'll need.
 
 ### 2. Log in
@@ -62,9 +62,9 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** First attempt with a wrong password: the "Invalid Credentials" message appears. Retype the correct password.
 
 #### [2.4] Shortcuts
-**Say:** Under the form, **What brings you here?** works here too. Pick a card, such as **Report an Absence**, and the button becomes **Login & Continue**, taking you straight there.
+**Say:** Under the form, **What brings you here?** works here too. Pick a card, such as **Report an Absence** if you're a parent, and the button becomes **Login & Continue**, taking you straight there.
 **Show:** Scroll to "What brings you here?". Click "Report an Absence": the button reads "Login & Continue". Click the card again to unselect.
-**Caption:** Pick a card under What brings you here? and Ad-Din takes you straight there after you log in.
+**Caption:** Pick a card under What brings you here? that fits your role, and Ad-Din takes you straight there after you log in.
 
 #### [2.5] You're in
 **Say:** Tap **Login**. On the web you arrive at your dashboard. In the app you arrive at your home screen.
@@ -117,3 +117,4 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · validator · checked against master d36d69ed8 · 2 fixes: [1.2] login takes the username only (the server never matches an email); [2.4] a card only jumps to its page when your role fits (Report an Absence is for parents), otherwise the normal landing page opens

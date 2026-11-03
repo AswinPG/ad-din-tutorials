@@ -24,7 +24,7 @@ Update your profile, choose your notifications, change your email or password, f
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
-- Demo account "Yusuf Rahman" (`yusuf_rahman`) with a demo email (Verified), demo mobile and address, a profile picture, home masjid and madrasah set, and one followed organisation
+- Demo account "Yusuf Rahman" (`yusuf_rahman`) with a demo email (Verified), demo mobile and address, a profile picture, home masjid and madrasah set, and one followed organisation; the account has a Teacher or Madrasah Admin role, because the Signature section in [2.3] only shows for teachers and admins
 - A demo GUID for the account (never a real one)
 - Notification preferences: E-mail on, Push on
 - Demo passwords typed masked; the Change password submit can be skipped or mocked
@@ -122,3 +122,4 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: demo account needs a Teacher or Admin role so the Signature section shows

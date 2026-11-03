@@ -21,8 +21,8 @@ Find your way around Ad-Din: the sidebar, the dashboard, the help menu on the we
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
 - The shared demo organisation (masjid and madrasah, both approved) with prayer times, two upcoming events, recent messages
-- One demo account (as in 00.1) that is Madrasah Admin, Masjid Admin and a parent of one enrolled child, so the sidebar shows Parent Portal and Admin Portal and the dashboard role menu offers Admin and Parent
-- Dashboard tiles with demo numbers; two pinned Quick Actions (for example Class and Attendance)
+- One demo account that is Madrasah Admin, Masjid Admin and a parent of one enrolled child, so the sidebar shows Parent Portal and Admin Portal and the dashboard role menu offers Admin and Parent
+- Dashboard tiles with demo numbers; two pinned Quick Actions (for example Class and Message; not Attendance, which [3.3] pins on camera)
 - The same account signed in on the app (phone frame): prayer card, identity card with Parent and Admin tabs, the tile grid, messages and events
 - Knowledge Base and Training Courses open external sites in a new tab: show the landing pages only, never sign in on camera
 
@@ -67,7 +67,7 @@ See docs/SCRIPT-FORMAT.md.
 
 #### [3.2] Roles
 **Say:** If you have more than one role, the role menu on the right changes the view, for example from **Admin** to **Parent**.
-**Show:** Open the role dropdown on the right; choose Parent, then back to Admin.
+**Show:** On the Madressah/School Dashboard (the masjid view has no Parent role), open the role dropdown on the right; choose Parent, then back to Admin.
 
 #### [3.3] Quick Actions
 **Say:** Under **Quick Actions**, pin the pages you use most. Tap the search bar, find a page under **Add Quick Actions**, and pin it.
@@ -118,3 +118,4 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · validator · checked against master d36d69ed8 · 2 fixes: demo Quick Actions no longer pre-pin Attendance (pinned on camera in [3.3]); [3.2] role switch shown on the madrasah dashboard, where Parent exists

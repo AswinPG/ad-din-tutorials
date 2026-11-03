@@ -8,7 +8,8 @@ status: scripted
 flags:
   - "Add-ons need valid organisation billing (StripeServiceSubscriptionProvider checks IsCustomerBillingAccurate), the same as seats."
   - "Ad-Din Prayer Times Premium only appears on a masjid's page (isMasjid), so chapter 5 switches to the demo masjid's View plan."
-  - "The \"Days Past Due\" counter on the service cards can never show (its ng-template has no condition), so a lapsed service only shows Inactive."
+  - "The \"Days Past Due\" counter on the website and custom sender cards can never show (its ng-template has no condition), so a lapsed service there only shows Inactive. The Prayer Times Premium card can show it."
+  - "Reactivate Subscription is shown on the madrasah's website card only. On a masjid, reactivating any add-on fails in the API (StripeServiceSubscriptionProvider reads madressah.MadressahID while it is null). The 15-day trial is given only the first time an organisation takes Prayer Times Premium, and reactivating during a trial ends the trial at once (EndTrialNow)."
 ---
 
 # 02.5 Add-on services
@@ -102,7 +103,7 @@ See docs/SCRIPT-FORMAT.md.
 ### 6. Cancel and reactivate
 #### [6.1] Cancel
 **Say:** To stop a service, tap **Cancel my Subscription** on its card, or **Cancel Yearly Subscription** for Prayer Times Premium, and confirm. It keeps working until the paid period ends.
-**Show:** Website card: click "Cancel my Subscription"; the "Confirm" box opens; click "I understand, cancel my subscription".
+**Show:** Back on "Al-Noor Madrasah"'s View plan, website card: click "Cancel my Subscription"; the "Confirm" box opens; click "I understand, cancel my subscription".
 
 #### [6.2] Reactivate
 **Say:** The card then shows the date it **Cancels on**. Changed your mind before then? Tap **Reactivate Subscription**.
@@ -119,3 +120,4 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · validator · checked against master d36d69ed8 · 3 fixes: Days Past Due flag only hidden on two of the three cards; new flag on masjid reactivation failing and the first-time-only trial. [6.1] Show now returns to the madrasah's page (reactivation fails on a masjid)
