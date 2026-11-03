@@ -105,9 +105,10 @@ See docs/SCRIPT-FORMAT.md.
 ### 6. Next
 #### [6.1] Close
 **Say:** Your weekly event is set, and it shows on the masjid TV. To set up the TV screens themselves, see the prayer-times display videos.
-**Show:** End card with two tiles: "04.4 Prayer times on a TV: basic displays" and "04.6 Premium displays, part 2: content".
+**Show:** End card with two tiles: "04.4 Prayer times on a TV: basic displays" and "04.6 Premium displays, part 2: posters, events and ticker".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · manager · decisions via chat · 04.6 renamed 'Premium displays, part 2: posters, events and ticker' (split with 04.11): end-card tile updated
 - 2026-11-03 · critic · 3 changes: [1.1] "halaqa" (unexplained, not an app term) -> Tafsir circle, matches the demo; [1.2] no longer assumes 08.1 was watched; [3.3] "mobile picture" named by its label as in 08.1
 - 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: [5.3] the notify box starts ticked (eventNotify = true), so no tick step

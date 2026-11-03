@@ -1,27 +1,26 @@
 ---
 id: "04.6"
-title: "Premium displays, part 2: content"
-target: 5:00
+title: "Premium displays, part 2: posters, events and ticker"
+target: 3:30
 prereq:
   - "04.5"
 status: scripted
 plan: "Add-on: Prayer Times Premium"
 flags:
-  - "Makrooh notices only show when Minutes Before/After Zawal and the Al-Duha minutes are above zero, and those boxes on Calculation Method can only be edited with the Custom method; for masjids on a preset method the notices may never appear. The script says the times come from the calculation settings and doesn't promise more"
   - "The display previews are pages served by the Ad-Din server, not the Angular app; the mocked demo world must stub them, or those shots come from the agreed dev environment"
   - "The \"Learn more\" links on Contents and Ticker Message open the internal ad-din.atlassian.net wiki; don't click them on camera"
 ---
 
-# 04.6 Premium displays, part 2: content
+# 04.6 Premium displays, part 2: posters, events and ticker
 
 ## Goal
-Fill a premium display with posters, events and a scrolling ticker, and set its night mode, Makrooh notices, Taraweeh poster, second language and colours.
+Fill a premium display with posters, events and a scrolling ticker.
 
 ## You'll need
 <!-- Shown on the opening card. Generated from prereq/plan/switch if left empty. -->
 
 ## Covers
-- Contents, Ticker Message, events on the TV, Night Mode, Makrooh Times, Taraweeh Poster, Alternate Language, colours
+- Contents, Ticker Message, events on the TV
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
@@ -29,9 +28,7 @@ Fill a premium display with posters, events and a scrolling ticker, and set its 
 - Two upcoming masjid events (so the Events switch has something to show)
 - A 1920 × 1080 poster and a 1080 × 1920 poster for new content "Weekend Quran Class", dated next week, all five prayer periods ticked
 - A ticker message "Masjid office open 10 AM to 4 PM" for the same dates
-- Language Settings with the default names: English titles, and Arabic in every Alternative Language Settings and Alternative Islamic Months Title box (Ad-Din's default); a Taraweeh preset poster available
-- Calculation settings with Minutes Before Zawal and the Al-Duha minutes above zero, so the Makrooh notices can show
-- Previews (or stubs) of Horizontal Display 1 with the poster, the ticker and the custom colours
+- Previews of Horizontal Display 1 with the poster and the ticker, recorded from the dev environment with the demo masjid's data (decided 2026-11-03)
 
 ## Script
 <!--
@@ -43,8 +40,8 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. Before you start
 #### [1.1] Opening
-**Say:** This is part two of premium displays, for masjid admins. You'll add posters, events and a scrolling message, then set night mode, Ramadan posters, a second language and colours.
-**Show:** Title card: "Premium displays, part 2: content".
+**Say:** This is part two of premium displays, for masjid admins. You'll add posters, your masjid's events and a scrolling message to a display.
+**Show:** Title card: "Premium displays, part 2: posters, events and ticker".
 
 #### [1.2]
 **Say:** You'll need the Prayer Times Premium add-on, and a display already chosen and laid out, as in part one.
@@ -97,47 +94,14 @@ See docs/SCRIPT-FORMAT.md.
 **Say:** Turn on **Show Prayer Time changes with ticker message**, and upcoming time changes scroll by as well.
 **Show:** Spotlight that switch.
 
-### 5. Night and Makrooh times
-#### [5.1] Night Mode
-**Say:** **Night Mode** rests the screen overnight. Switch it on, choose **Dim** or **Blackout**, and set the minutes **After Isha** and **Resume Before Fajr**. Tap **Save**.
-**Show:** Click Night Mode. Turn it on; select Blackout; type 60 and 30. Click Save.
-
-#### [5.2] Makrooh Times
-**Say:** **Makrooh Times** shows a notice when Salah is disliked: after sunrise and around Zawal. Switch on each notice, and choose an image or a message.
-**Show:** Click Makrooh Times. Turn on "Makrooh time notice for Sunrise" and "Makrooh time notice for Zawal"; "Or setup a message" is already selected on each, with its default text.
-
-#### [5.3]
-**Say:** The notice times come from your calculation settings. **Force over content** is on to start, and keeps the notice in front of everything else. Tap **Save**.
-**Show:** Spotlight the line about Calculation Settings, then the Force over content switch at the top (already on). Click Save.
-
-### 6. Taraweeh poster
-#### [6.1]
-**Say:** **Taraweeh Poster During Ramadan** shows a poster after Isha, and only in Ramadan. Switch it on, and set **Start after isha** and **Stop After** in minutes.
-**Show:** Click the menu item. Turn it on; type 15 and 90.
-
-#### [6.2]
-**Say:** Choose **Select from presets**, or **Upload Image** for your own. With your own image on a wide display, choose **Split** or **Full**. Tap **Save**.
-**Show:** Pick a preset from the list; its image shows. Click Save.
-
-### 7. Language and colours
-#### [7.1] Second language
-**Say:** For a second language, open the **Language Settings** tab. Ad-Din fills in Arabic prayer and month names to start. Change any you like, but leave none empty, and tap **Save**.
-**Show:** Click the "Language Settings" tab. Spotlight the Arabic names under Alternative Language Settings. Click Save.
-
-#### [7.2]
-**Say:** Then, on your display, open **Alternate Language Settings**, switch on **Display Alternate Language**, and set the **Language Transition Duration** in seconds. Tap **Save**.
-**Show:** Premium Displays → Alternate Language Settings. Turn it on; type 10. Click Save.
-
-#### [7.3] Colours
-**Say:** Finally, **Display Color Controls**. Pick a ready-made set under **Select Preset**, or choose **Custom** for your own colours and fonts. Tap **Save**.
-**Show:** Click Display Color Controls. Open Select Preset, pick a preset, click Save; the preview changes colour.
-
+<!-- Chapters 5–7 (night mode, Makrooh, Taraweeh, language, colours) moved to 04.11 on 2026-11-03; scene IDs here are unchanged. -->
 ### 8. Next
 #### [8.1] Close
-**Say:** Your display is complete. Open its link on the TV in your prayer hall. Next, set up repeating events, or tell people about your masjid.
-**Show:** Click Refresh: the full preview with poster and ticker. End card with two tiles: "08.2 Repeating events and events on the masjid TV" and "04.7 About, staff list and facilities".
+**Say:** Your display now shows your posters, events and ticker. Next, video 04.11: Premium displays, part 3: night mode, language and colours. Or video 08.2: Repeating events and events on the masjid TV.
+**Show:** Click Refresh: the full preview with poster and ticker. End card with two tiles: "04.11 Premium displays, part 3: night mode, language and colours" and "08.2 Repeating events and events on the masjid TV".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · manager · decisions via chat · Split into two videos (critic's taste call): chapters 5–7 (night mode, Makrooh, Taraweeh, language, colours) moved to new video 04.11; scene IDs kept, chapter 8 keeps [8.1]. Title now 'Premium displays, part 2: posters, events and ticker'; Goal, Covers, demo data, [1.1], [8.1] end card (04.11, 08.2) and Makrooh flag (moved) updated; target 5:00 to 3:30
 - 2026-11-03 · critic · 4 changes: second-person opening, [2.1] gives the full sidebar path, [2.4] names the real Split / headers choices, [7.1] says what the Arabic names are
 - 2026-11-03 · validator · checked against master d36d69ed8 · 5 fixes: Save & Upload crop step for posters, clear the pre-filled ticker title, Makrooh message and Force over content are on by default, alternative names come pre-filled in Arabic and none may be empty, demo data

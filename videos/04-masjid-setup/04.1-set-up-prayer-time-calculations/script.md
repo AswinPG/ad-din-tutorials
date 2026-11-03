@@ -6,7 +6,7 @@ prereq:
   - "01.1"
 status: scripted
 flags:
-  - "Minutes Before Zawal, Minutes After Zawal and the two Al-Duha boxes on Calculation Method can only be edited with the Custom method; every preset method locks them at their saved value (Makrooh Times in 04.6 depends on them). The script doesn't show them"
+  - "Minutes Before Zawal, Minutes After Zawal and the two Al-Duha boxes on Calculation Method can only be edited with the Custom method; every preset method locks them at their saved value (Makrooh Times in 04.11 depends on them). The script doesn't show them"
   - "The description column on the Calculation Method tab is headed \"Event Description\" (wrong text key); don't zoom on that header"
   - "Islamic Date \"Learn More\" opens the internal ad-din.atlassian.net wiki; don't click it on camera"
   - "Select Location uses Google Maps; the mocked demo world needs a map stub or a static map"
@@ -137,5 +137,6 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · manager · decisions via chat · 04.6 split: Makrooh Times now lives in 04.11; Zawal flag pointer updated
 - 2026-11-03 · critic · 5 changes: second-person opening without the idiom, cut repeated line in [2.1], plainer wording in [3.2] [5.1] [5.2]
 - 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: [6.3] Show line names the real help texts (one paragraph under all the Adhan boxes, one note under Maghrib Iqamah Offset)

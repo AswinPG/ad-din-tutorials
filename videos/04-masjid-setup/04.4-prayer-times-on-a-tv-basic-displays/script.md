@@ -123,9 +123,10 @@ See docs/SCRIPT-FORMAT.md.
 ### 6. Next
 #### [6.1] Close
 **Say:** Your masjid TV is ready. For full control of layouts, posters, night mode and colours, watch the premium display videos.
-**Show:** End card with two tiles: "04.5 Premium displays, part 1: layout" and "04.6 Premium displays, part 2: content".
+**Show:** End card with two tiles: "04.5 Premium displays, part 1: layout" and "04.6 Premium displays, part 2: posters, events and ticker".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · manager · decisions via chat · 04.6 renamed 'Premium displays, part 2: posters, events and ticker' (split with 04.11): end-card tile updated
 - 2026-11-03 · critic · 4 changes: second-person opening, [2.2] says logo/background are kept only on Save, 'displays' not 'screens' in [3.1] [3.2]
 - 2026-11-03 · validator · checked against master d36d69ed8 · 5 fixes: first Basic Display section is open by default, logo/background kept only on Save, large display shows madrasah events (not news), Save & Upload step in the image crop, demo data (followed madrasah, event counts, 960 × 1080 crop)

@@ -8,7 +8,7 @@ status: scripted
 plan: "Add-on: Prayer Times Premium"
 flags:
   - "The display previews and display URLs are pages served by the Ad-Din server (AdDin.Web public/NewVerticalDisplay1 and the rest), not the Angular app; the mocked demo world must stub them, or those shots come from the agreed dev environment"
-  - "Covers' \"Vertical and Horizontal presets\" is scripted as the six display choices (Vertical Display 1, 2, Content Only; Horizontal Display 1, 2, Content Only). The colour presets (Select Preset) are in 04.6"
+  - "Covers' \"Vertical and Horizontal presets\" is scripted as the six display choices (Vertical Display 1, 2, Content Only; Horizontal Display 1, 2, Content Only). The colour presets (Select Preset) are in 04.11"
   - "Copy Embed Code always writes a portrait 9:16 iframe, even for the horizontal displays; the script doesn't show the pasted code"
 ---
 
@@ -40,7 +40,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. Before you start
 #### [1.1] Opening
-**Say:** Premium displays turn any TV into a full prayer-time screen. In part one of two, for masjid admins, you'll pick a display and set its layout and Salah timing.
+**Say:** Premium displays turn any TV into a full prayer-time screen. In part one of three, for masjid admins, you'll pick a display and set its layout and Salah timing.
 **Show:** Title card: "Premium displays, part 1: layout".
 
 #### [1.2]
@@ -123,10 +123,11 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 8. Next
 #### [8.1] Close
-**Say:** Your display's layout and Salah timing are set. In part two, add posters, events, a scrolling message, night mode and colours.
-**Show:** Click Refresh: the finished preview. End card with one tile: "04.6 Premium displays, part 2: content".
+**Say:** Your display's layout and Salah timing are set. Next, video 04.6: Premium displays, part 2: posters, events and ticker.
+**Show:** Click Refresh: the finished preview. End card with one tile: "04.6 Premium displays, part 2: posters, events and ticker".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · manager · decisions via chat · 04.6 split (new 04.11): [1.1] 'part one of three', closing Say names video 04.6 by number and new title, end card title and colour-preset flag (now 04.11) updated
 - 2026-11-03 · critic · 3 changes: second-person opening, [4.2] no 'Short on space?' idiom, [5.2] names Islamic Midnight instead of vague 'night times'
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes

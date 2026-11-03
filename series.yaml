@@ -295,7 +295,7 @@ playlists:
     - "02.5"
     - "02.6"
     - 03.1-03.3
-    - 04.1-04.10
+    - 04.1-04.11
     - 07.1-07.2
     - 08.1-08.5
     - 09.1-09.6
@@ -393,7 +393,7 @@ decisions:
     status: open
   - title: "TV display pages are server-rendered"
     detail: "The prayer-time TV screens and their previews come from the Ad-Din server, not the Angular app. Stub them in the mocked demo world, or record those shots from dev."
-    videos: "04.4–04.6"
+    videos: "04.4–04.6, 04.11"
     status: open
   - title: "Internal wiki links in the app"
     detail: "Several “Learn more” / “this guide” links open ad-din.atlassian.net. Are those pages public? If not, hide or fix them before publishing; scripts don’t click them."
@@ -401,7 +401,7 @@ decisions:
     status: open
   - title: "Zawal and Al-Duha minutes locked"
     detail: "These minutes can only be edited with the Custom calculation method, so Makrooh notices may never show for masjids on a preset method. Fix in the app, or keep the flag?"
-    videos: "04.1, 04.6"
+    videos: "04.1, 04.11"
     status: open
   - title: "Donation campaigns are website-only"
     detail: "Members can’t see campaigns in the app; they show only on the public website (Website add-on). The Publish note says “in the app and on your website”, and the in-app donation page shows admin labels to members."

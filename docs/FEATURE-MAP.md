@@ -74,7 +74,8 @@ Admin setup plus the masjid pages members see. Events and donations are listed h
 | TV displays: small / medium / large links | `display`; public `/smalldisplay/:id`, `/mediumdisplay/:id`, `/largedisplay/:id` | Masjid Admin | 04.4 | |
 | Basic Announcements on the TV | `announcements` | Masjid Admin | 04.4 | |
 | Premium displays: Vertical / Horizontal presets, Layout, Salah Control, Iqamaah Countdown | `newDisplays/:displayName` | Masjid Admin | 04.5 | |
-| Premium displays: Contents, Ticker Message, Night Mode, Makrooh, Taraweeh, alternate language | `contents`, `tickerMessage`, `languageSettings` | Masjid Admin | 04.6 | |
+| Premium displays: Contents, Ticker Message, events | `contents`, `tickerMessage` | Masjid Admin | 04.6 | |
+| Premium displays: Night Mode, Makrooh, Taraweeh, alternate language, colours | `newDisplays/:displayName`, `languageSettings` | Masjid Admin | 04.11 | Split from 04.6 (2026-11-03) |
 | Manage Streaming (Video, Audio, Facebook slots) | Live Streaming → manage | Masjid Admin | 04.10 | |
 | Events: create, public/private, invitees, categories, Ticket URL | Events → `eventadd` | Masjid Admin | 08.1 | |
 | Events: repeat rules, delete one or series, show on the large TV | Events → `eventadd` | Masjid Admin | 08.2 | |

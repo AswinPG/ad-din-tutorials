@@ -27,7 +27,7 @@ Found in Ad-Din `origin/master` (d36d69ed8) by the script writers and validators
 | Sign-up / register | Terms and Privacy links go nowhere; register page Terms opens Privacy Policy | 00.2, 01.1, 06.2 **(video)** |
 | Pending organisation | Menu locked until approval, though registration term 3 says the admin can start configuring | 01.2 **(video)** |
 | "Learn more" links | Open internal ad-din.atlassian.net pages | 04.1, 04.3, 04.6 **(video)** |
-| Zawal / Al-Duha minutes | Editable only with the Custom method, so Makrooh notices may never show | 04.1, 04.6 **(video)** |
+| Zawal / Al-Duha minutes | Editable only with the Custom method, so Makrooh notices may never show | 04.1, 04.11 **(video)** |
 | Add-user screens | Point to a non-existent "Settings > My Account > GUID"; two screens disagree; no copy button | 00.5, 03.3, 03.4, 06.4 |
 | Campaign Publish note | Says "in the app and on your website"; campaigns show on the website only; in-app donation page shows admin labels to members | 08.4, 15.4 **(video)** |
 | Event cards | Edit/Delete menu shown to members | 08.1, 15.3 |
