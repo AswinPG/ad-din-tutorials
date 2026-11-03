@@ -3,6 +3,7 @@
 Every instruction given to Claude for this video, newest first, with the result.
 Format: date · who · prompt (verbatim or summarised) · outcome / commit.
 
+- 2026-11-03 · manager · "Decisions via chat" · TV display pages decided: previews and the TV shot are recorded from the dev environment with demo data; flag, demo data and the [4.1] TV-frame Show line updated
 - 2026-11-03 · manager · "Decisions via chat" · 04.6 renamed 'Premium displays, part 2: posters, events and ticker' (split with 04.11): end-card tile updated
 - 2026-11-03 · manager · "use a critic subagent to criticise and find flaws in the script, make it better" · critic pass: 4 fixes (opening; logo kept only on Save; 'displays' wording).
 - 2026-11-03 · manager · "use a sub agent to validate the script" · validator pass: 5 fixes (open first section, Save keeps logo/background, madrasah events not news, Save & Upload crop step, demo data); found a large-display bug when the madrasah has more events than the masjid.

@@ -395,7 +395,8 @@ decisions:
   - title: "TV display pages are server-rendered"
     detail: "The prayer-time TV screens and their previews come from the Ad-Din server, not the Angular app. Stub them in the mocked demo world, or record those shots from dev."
     videos: "04.4–04.6, 04.11"
-    status: open
+    status: decided
+    answer: "Record those shots from the dev environment with demo data"
   - title: "Internal wiki links in the app"
     detail: "Several “Learn more” / “this guide” links open ad-din.atlassian.net. Are those pages public? If not, hide or fix them before publishing; scripts don’t click them."
     videos: "04.1, 04.3, 04.6"

@@ -6,7 +6,7 @@ prereq:
   - "04.2"
 status: scripted
 flags:
-  - "The TV screens and the previews on Basic Display are pages served by the Ad-Din server (AdDin.Web public/largedisplayvertical, mediumdisplay, largedisplayhorizontal), not the Angular app; the mocked demo world must stub them, or those shots come from the agreed dev environment"
+  - "The TV screens and the previews on Basic Display are pages served by the Ad-Din server (AdDin.Web public/largedisplayvertical, mediumdisplay, largedisplayhorizontal), not the Angular app. Decided 2026-11-03: record those shots from the dev environment with the demo masjid's data"
   - "Basic Announcements opens only for an admin with their own Ad-Din Premium, or when the masjid has the Prayer Times Premium add-on; anyone else is sent to the subscription page with \"Please subscribe to Basic Announcements to access this page.\" The rest of the video is free"
   - "Small Display's text reads \"This is a smalll display widget\" (typo); don't zoom on it"
 ---
@@ -32,7 +32,7 @@ Choose what the small, medium and large prayer-time displays show, open one on a
 - Demo logo and a plain background image to upload; the masjid follows the demo madrasah "Al-Noor Madrasah", so it appears in Select Madrasah
 - At least as many upcoming masjid events as madrasah events (the large display page breaks its slides when the madrasah has more events than the masjid)
 - Display settings: all prayers ticked with Begins and Adhan, Hijri and Time ticked, URL unticked
-- Rendered previews (or stubs) for the three display pages, and a TV-shaped frame showing the large display full screen
+- Previews of the three display pages and the large display full screen, recorded from the dev environment with the demo masjid's data, shown in a TV-shaped frame
 - One existing announcement "Ramadan Food Drive" (Active), and a JPEG under 2 MB for a new one titled "Jumu'ah Lunch" (the crop box is 960 × 1080, slightly taller than wide)
 
 ## Script
@@ -97,7 +97,7 @@ See docs/SCRIPT-FORMAT.md.
 ### 4. Put it on the TV
 #### [4.1]
 **Say:** On the TV, open the web browser, go to the link for your display, and make it full screen. Leave it running in the prayer hall.
-**Show:** TV frame: a browser opens the large display link, then goes full screen with today's prayer times.
+**Show:** TV frame (dev-environment capture with the demo masjid's data): a browser opens the large display link, then goes full screen with today's prayer times.
 
 ### 5. Basic Announcements
 #### [5.1] Open announcements
@@ -127,6 +127,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · manager · decisions via chat · TV display pages decided: previews and the TV shot are recorded from the dev environment with demo data; flag, demo data and the [4.1] TV-frame Show line updated
 - 2026-11-03 · manager · decisions via chat · 04.6 renamed 'Premium displays, part 2: posters, events and ticker' (split with 04.11): end-card tile updated
 - 2026-11-03 · critic · 4 changes: second-person opening, [2.2] says logo/background are kept only on Save, 'displays' not 'screens' in [3.1] [3.2]
 - 2026-11-03 · validator · checked against master d36d69ed8 · 5 fixes: first Basic Display section is open by default, logo/background kept only on Save, large display shows madrasah events (not news), Save & Upload step in the image crop, demo data (followed madrasah, event counts, 960 × 1080 crop)

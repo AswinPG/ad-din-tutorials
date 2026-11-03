@@ -7,7 +7,7 @@ prereq:
 status: scripted
 plan: "Add-on: Prayer Times Premium"
 flags:
-  - "The display previews are pages served by the Ad-Din server, not the Angular app; the mocked demo world must stub them, or those shots come from the agreed dev environment"
+  - "The display previews are pages served by the Ad-Din server, not the Angular app. Decided 2026-11-03: record those shots from the dev environment with the demo masjid's data"
   - "The \"Learn more\" links on Contents and Ticker Message open the internal ad-din.atlassian.net wiki; don't click them on camera"
 ---
 
@@ -102,6 +102,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · manager · decisions via chat · TV display pages decided: previews recorded from the dev environment with demo data; flag updated (demo data already says so)
 - 2026-11-03 · manager · decisions via chat · Split into two videos (critic's taste call): chapters 5–7 (night mode, Makrooh, Taraweeh, language, colours) moved to new video 04.11; scene IDs kept, chapter 8 keeps [8.1]. Title now 'Premium displays, part 2: posters, events and ticker'; Goal, Covers, demo data, [1.1], [8.1] end card (04.11, 08.2) and Makrooh flag (moved) updated; target 5:00 to 3:30
 - 2026-11-03 · critic · 4 changes: second-person opening, [2.1] gives the full sidebar path, [2.4] names the real Split / headers choices, [7.1] says what the Arabic names are
 - 2026-11-03 · validator · checked against master d36d69ed8 · 5 fixes: Save & Upload crop step for posters, clear the pre-filled ticker title, Makrooh message and Force over content are on by default, alternative names come pre-filled in Arabic and none may be empty, demo data

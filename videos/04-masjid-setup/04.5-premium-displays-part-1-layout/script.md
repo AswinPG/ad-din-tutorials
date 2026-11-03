@@ -7,7 +7,7 @@ prereq:
 status: scripted
 plan: "Add-on: Prayer Times Premium"
 flags:
-  - "The display previews and display URLs are pages served by the Ad-Din server (AdDin.Web public/NewVerticalDisplay1 and the rest), not the Angular app; the mocked demo world must stub them, or those shots come from the agreed dev environment"
+  - "The display previews and display URLs are pages served by the Ad-Din server (AdDin.Web public/NewVerticalDisplay1 and the rest), not the Angular app. Decided 2026-11-03: record those shots from the dev environment with the demo masjid's data"
   - "Covers' \"Vertical and Horizontal presets\" is scripted as the six display choices (Vertical Display 1, 2, Content Only; Horizontal Display 1, 2, Content Only). The colour presets (Select Preset) are in 04.11"
   - "Copy Embed Code always writes a portrait 9:16 iframe, even for the horizontal displays; the script doesn't show the pasted code"
 ---
@@ -28,7 +28,7 @@ Choose one of the six premium displays and set its layout, which Salah times it 
 - Demo masjid "Masjid Al-Noor" with an active Prayer Times Premium add-on, signed in as its masjid admin
 - Iqamah times for today, logo and masjid name set (for Layout 2)
 - Horizontal Display 1 starting on Layout 1, all daily prayers and Jumu'ah ticked, Iqamaah countdown off, Display During Salah off
-- Rendered previews (or stubs) of Horizontal Display 1 that change after each save: Layout 2, alternating Begins/Adhan column, countdown screen with the default message, dimmed screen
+- Previews of Horizontal Display 1, recorded from the dev environment with the demo masjid's data, that change after each save: Layout 2, alternating Begins/Adhan column, countdown screen with the default message, dimmed screen
 
 ## Script
 <!--
@@ -128,6 +128,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · manager · decisions via chat · TV display pages decided: previews recorded from the dev environment with demo data; flag and demo data updated
 - 2026-11-03 · manager · decisions via chat · 04.6 split (new 04.11): [1.1] 'part one of three', closing Say names video 04.6 by number and new title, end card title and colour-preset flag (now 04.11) updated
 - 2026-11-03 · critic · 3 changes: second-person opening, [4.2] no 'Short on space?' idiom, [5.2] names Islamic Midnight instead of vague 'night times'
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes
