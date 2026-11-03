@@ -68,7 +68,7 @@ Add the subjects each class studies, choose the teachers who can teach them, and
 
 ### 4. Choose the teachers
 #### [4.1]
-**Say:** Under **Teacher**, tick everyone who can teach and grade this subject. Only these teachers can be picked for it in the timetable.
+**Say:** Under **Teacher**, tick everyone who can teach and grade this subject. In the timetable, only these teachers, plus the section's class teacher, can be picked for it.
 **Show:** Tick "Ibrahim Yusuf" and "Amina Saleh". The count shows "2 selected" and their chips appear.
 
 #### [4.2] Save
@@ -113,3 +113,4 @@ Add the subjects each class studies, choose the teachers who can teach them, and
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: [4.1] timetable also lists the section's class teacher

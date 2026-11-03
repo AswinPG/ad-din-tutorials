@@ -94,7 +94,7 @@ See docs/SCRIPT-FORMAT.md.
 ### 5. Repeat, speed and carrying on
 #### [5.1] In the player
 **Say:** The repeat button recites each ayah up to ten times before moving on, ideal for memorising. The speed button makes the recitation slower or faster.
-**Show:** Tap the repeat button: "2", then "3". Tap the speed button: "1.25×", then back to "1×". Zoom on the player bar.
+**Show:** Tap the repeat button: "2", then "3" (it cycles 1, 2, 3, 5, 10; leave it on 3 for [5.2]). Tap the speed button: "1.25×", then on through "1.5×" and "0.75×" back to "1×" (the button cycles 1×, 1.25×, 1.5×, 0.75×). Zoom on the player bar.
 **Caption:** Repeat recites each ayah up to ten times. Speed makes it slower or faster.
 
 #### [5.2] Keep going
@@ -134,3 +134,4 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: [5.1] speed button can't go from 1.25× straight back to 1× (cycles 1, 1.25, 1.5, 0.75); repeat cycle noted

@@ -101,7 +101,7 @@ Set up everything parents see when they enrol online: the enrolment link and QR 
 
 #### [7.2]
 **Say:** Give it a **Label** and pick a **Type**, such as short text, a dropdown, checkboxes or a date. For a dropdown, add each option.
-**Show:** Type "Language spoken at home". Type → "Dropdown-Single select". Fill three options, using "Add option" for the third.
+**Show:** Type "Language spoken at home". Type → "Dropdown-Single select"; the Options list starts empty. Click "Add option" three times and fill English, Arabic and Urdu.
 
 #### [7.3]
 **Say:** Turn on **Required** if parents must answer, then tap **Save field**. To stop asking later, switch the field off. It stays in the list for next time.
@@ -127,3 +127,4 @@ Set up everything parents see when they enrol online: the enrolment link and QR 
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: [7.2] custom-field options start empty (Add option for each)

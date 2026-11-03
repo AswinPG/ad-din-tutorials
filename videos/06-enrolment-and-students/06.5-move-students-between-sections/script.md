@@ -23,7 +23,7 @@ Add students to a section and move them from one section to another in the same 
 ## Demo data
 - Demo madrasah "Al-Noor Madrasah"; the demo admin has Premium
 - Class "Maktab Level 1" with "Section A" (capacity 20, 15 students) and "Section B" (capacity 20, 17 students, so it shows Nearly full)
-- Two active students not yet in Maktab Level 1 (for example "Yahya Ali" and "Sara Ali"), to add on camera
+- Two active students not yet in Maktab Level 1 (for example "Yahya Ali" and "Sara Ali"), to add on camera; their linked parent must have a seat, or adding fails with "Students cannot be enrolled without a subscription."
 - Two students in Section A to move to Section B (for example "Hamza Rahman" and "Ilyas Noor")
 
 ## Script
@@ -87,3 +87,4 @@ Add students to a section and move them from one section to another in the same 
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: demo data, added students need a linked parent with a seat

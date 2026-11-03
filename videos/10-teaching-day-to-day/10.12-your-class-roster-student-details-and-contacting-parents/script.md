@@ -28,7 +28,7 @@ Open a section's roster, read a student's details, and call or message their par
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
-- Demo madrasah "Al-Noor Madrasah" (Premium); teacher Yusuf Patel teaches Class "Maktab Level 1", sections "A" (8 students, capacity 10) and "B" (10 students, capacity 10, so it shows "Nearly full"); a third section "C" he doesn't teach
+- Demo madrasah "Al-Noor Madrasah" (Premium); teacher Yusuf Patel teaches Class "Maktab Level 1", sections "A" (7 students, capacity 10, so it shows "Open"; 8 or more would already read "Nearly full") and "B" (10 students, capacity 10, so it shows "Nearly full"); a third section "C" he doesn't teach
 - Class "Maktab Level 1" with Bi-Directional Communication Allowed switched on
 - In section A, student "Aisha Rahman" (Student ID shown, age 9, Girl, enrolled last September), Medical "Peanut allergy. Carries an EpiPen in her bag.", Special note "Sits near the front; wears glasses."; parent "Fatima Rahman" (Mother) with a phone on file (only the last four digits show); emergency contact "Omar Rahman" with a phone
 - One student with no medical or special note, for the "No medical concerns reported" shot
@@ -54,17 +54,17 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 2. Open your roster
 #### [2.1] Find Class Section
-**Say:** On the web, open **Teacher Portal**, then **Class Section**. In the app, tap **Madrasah** on the home screen, then **Teachers Portal**, then **Class Section**.
-**Show:** Web: Sidebar → Teacher Portal → Class Section. Phone frame: home → "Madrasah" tile → "Teachers Portal" → "Class Section". Continue in the phone frame.
-**Caption:** Web: Teacher Portal › Class Section. App: Madrasah › Teachers Portal › Class Section.
+**Say:** On the web, open **Teacher Portal**, then **Class Section**. In the app, tap **Madrasah** on the home screen, then **Class Section**.
+**Show:** Web: Sidebar → Teacher Portal → Class Section. Phone frame: home → "Madrasah" tile; Yusuf only teaches, so the app skips the portal picker and opens the Teacher Portal menu straight away (someone with a second role, such as a parent, first taps "Teachers Portal") → "Class Section". Continue in the phone frame.
+**Caption:** Web: Teacher Portal › Class Section. App: Madrasah › Class Section.
 
 #### [2.2] Pick a class
 **Say:** Tap **Select Class** and choose your class. Each section shows how many students it has against its capacity.
-**Show:** Tap "Select Class", choose "Maktab Level 1". Section cards A, B and C appear. Spotlight "8 / 10" and the "Open" pill on A, and "Nearly full" on B.
+**Show:** Tap "Select Class", choose "Maktab Level 1". Section cards A, B and C appear. Spotlight "7 / 10" and the "Open" pill on A, and "Nearly full" on B.
 
 #### [2.3] Open a section
 **Say:** Tap a section to see its students. You can only open the sections you teach.
-**Show:** Tap section A: the student list opens full screen with "Maktab Level 1 | A" and "8 students, capacity 10". Briefly cut to section C showing "Only this section's teachers can see its students", then back to A.
+**Show:** Tap section A: the student list opens full screen with "Maktab Level 1 | A" and "7 students, capacity 10". Briefly cut to section C showing "Only this section's teachers can see its students", then back to A.
 
 ### 3. Student details
 #### [3.1] The list
@@ -129,3 +129,4 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · validator · checked against master d36d69ed8 · 2 fixes: [2.1] app path (a teacher-only user's Madrasah tile opens the Teacher Portal menu directly, no Teachers Portal tile); section A demo 8/10 would show "Nearly full" (80% rule), now 7/10 so [2.2] shows "Open"

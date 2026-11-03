@@ -84,7 +84,7 @@ Review online enrolment applications, place each child in a section and approve 
 
 #### [3.7] Approve
 **Say:** Tap **Approve Application**, then **Proceed**. The child joins the section, and the parent is told by email and notification.
-**Show:** Click "Approve Application". The "Confirm Approval" box; click "Proceed". The window closes and Maryam leaves the pending list.
+**Show:** Click "Approve Application". The "Confirm Approval" box; click "Proceed". The "Successful" message "Successfully approved the Enrolment Request"; click "Close". The window closes and Maryam leaves the pending list.
 
 ### 4. Decline an application
 #### [4.1] Say no
@@ -111,7 +111,7 @@ Review online enrolment applications, place each child in a section and approve 
 ### 6. Next
 #### [6.1] Done
 **Say:** Approved children now appear in your student list, in the section you chose.
-**Show:** Click the "Student" tab; filter by "Maktab Level 1" and "Section A". Spotlight Maryam Rahman.
+**Show:** Click the "Student" tab; open "Filters" and pick "Maktab Level 1" and "Section A". Spotlight Maryam Rahman.
 
 #### [6.2]
 **Say:** Next, learn how to add students and parents yourself, and how to move students between sections.
@@ -119,3 +119,4 @@ Review online enrolment applications, place each child in a section and approve 
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · validator · checked against master d36d69ed8 · 2 fixes: [3.7] Successful alert + Close after Proceed; [6.1] Filters panel must be opened

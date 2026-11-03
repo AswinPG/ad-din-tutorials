@@ -6,7 +6,7 @@ prereq:
   - "05.4"
 status: scripted
 flags:
-  - "Who needs a seat? (open): a student can be put in a class only when a linked parent has a seat (Manage Class shows \"Need a subscription to assign or manage class\" otherwise), and User Management needs the admin's own Premium. The demo gives the new parent a seat off camera; 02.4 shows how."
+  - "Who needs a seat? (open): a student can be put in a class only when a linked parent has a seat (otherwise the Manage Class window shows \"A student cannot be placed in a class unless a valid subscription is assigned to a linked parent…\", and the student profile shows \"Need a subscription to assign or manage class\"), and User Management needs the admin's own Premium. The demo gives the new parent a seat off camera; 02.4 shows how."
   - "People are added by GUID (open): the Add New User page says the GUID is under \"Settings > My Account > GUID\"; the enrolment spouse step says \"Ad-Din > Settings > User profile\". Check which path is right before recording."
 ---
 
@@ -78,7 +78,7 @@ Add a parent and a student by hand, link them as a family, put the student in a 
 
 #### [4.4] Link the parent
 **Say:** Under **Parent/Guardian details**, tap **Link Existing Ad-din account**. Pick the parent, choose the relationship, and tap **Select this Parent**.
-**Show:** Click "Link Existing Ad-din account". In "Select Parent", tick "Yusuf Rahman", choose "Father", click "Select this Parent". Yusuf appears in the card.
+**Show:** Click "Link Existing Ad-din account". In the parent list that opens, tick "Yusuf Rahman", choose "Father" under "Select Relationship:", click "Select this Parent". Yusuf appears in the card.
 **Caption:** Under Parent/Guardian details, tap Link Existing Ad-din account, pick the parent and relationship, and tap Select this Parent.
 
 #### [4.5]
@@ -101,8 +101,8 @@ Add a parent and a student by hand, link them as a family, put the student in a 
 **Caption:** Select the student, tap Link Parent, then Add New Parent. Pick the parent and relationship, then Select this Parent.
 
 #### [6.2]
-**Say:** Tap **Save**, check the details, and tap **Confirm**.
-**Show:** Click "Save". The "Confirmation !" window; click "Confirm".
+**Say:** Yusuf now shows in the list. Tap **Save** to link them.
+**Show:** Yusuf appears in "Maryam Rahman > Parents". Click "Save". The "Successful" message; click "Close".
 
 #### [6.3] Link Childs
 **Say:** It works the other way too. On the **Parent** tab, select a parent and tap **Link Childs** to add their children.
@@ -132,3 +132,4 @@ Add a parent and a student by hand, link them as a family, put the student in a 
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · validator · checked against master d36d69ed8 · 3 fixes: [6.2] Link Parent Save saves directly (no Confirmation window), Successful alert; [4.4] parent picker has no Select Parent heading from the profile; seat flag quotes the Manage Class message

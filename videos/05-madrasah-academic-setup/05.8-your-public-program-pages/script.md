@@ -38,8 +38,8 @@ Know what parents and your community see about your programs, teachers and timet
 
 ### 2. Where families find them
 #### [2.1]
-**Say:** In the sidebar, open **Madrasah / School**. Four pages are for families: **Program Details and Subjects**, **Signup for a Program**, **Staff List** and **Program Timetables**.
-**Show:** Parent's browser. Sidebar → Madrasah / School, expanded. Spotlight the four pages.
+**Say:** In the sidebar, open **Madrasah / School**. Four of its pages show families your programs: **Program Details and Subjects**, **Signup for a Program**, **Staff List** and **Program Timetables**.
+**Show:** Parent's browser. Sidebar → Madrasah / School, expanded (it also lists Introduction & Services, covered elsewhere). Spotlight the four pages.
 
 #### [2.2]
 **Say:** Anyone whose home madrasah is yours sees these pages. They don't need Ad-Din Premium.
@@ -91,3 +91,4 @@ Know what parents and your community see about your programs, teachers and timet
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: [2.1] Madrasah / School has five pages (Introduction & Services too); four are named

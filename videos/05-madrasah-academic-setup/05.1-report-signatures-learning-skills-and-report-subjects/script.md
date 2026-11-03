@@ -26,7 +26,7 @@ Choose who signs your madrasah's report cards, make sure their signatures are in
 - Subject for report
 
 ## Demo data
-- Demo madrasah "Al-Noor Madrasah"; the demo account is its Madrasah Admin
+- Demo madrasah "Al-Noor Madrasah"; the demo account is its Madrasah Admin; the madrasah's details are complete, including Email (the Madrasah/School Details tab won't save without it)
 - Teachers and admins in the madrasah, for example "Ibrahim Yusuf" (to be Madrasah Principal) and "Amina Saleh" (to be Madrasah Vice Principal), plus two more teachers
 - All five principal and council boxes start on "Select Staff"
 - "Ibrahim Yusuf" signed in on a second browser for chapter 4, with no signature saved yet
@@ -77,7 +77,7 @@ Choose who signs your madrasah's report cards, make sure their signatures are in
 
 #### [4.2]
 **Say:** Under **Signature**, which is used to digitally sign student report cards, they tap the pen and sign in the box.
-**Show:** Expand "Signature"; spotlight "Used to digitally sign student report cards". Click the pen; the "Sign here" pad opens. Draw a signature.
+**Show:** The "Signature" section is already open (don't click its header, that collapses it); spotlight "Used to digitally sign student report cards". Click the pen; the "Sign here" pad opens. Draw a signature.
 
 #### [4.3]
 **Say:** Then tap **Save**. The signature now shows in their profile, ready for report cards.
@@ -111,3 +111,4 @@ Choose who signs your madrasah's report cards, make sure their signatures are in
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: [4.2] Signature section is already open (no expand click); demo data notes Email needed for Save

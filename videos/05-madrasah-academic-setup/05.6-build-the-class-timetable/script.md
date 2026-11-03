@@ -25,7 +25,7 @@ Use the Schedule Builder to create a weekly timetable for your classes, with bre
 ## Demo data
 - Demo madrasah "Al-Noor Madrasah"; the demo admin has Premium
 - Enabled term "Term 1" with no routine yet
-- Class "Hifz Boys" with sections "Hifz A" and "Hifz B" (no routine yet)
+- Class "Hifz Boys" with sections "Hifz A" (class teacher Ibrahim Yusuf) and "Hifz B" (class teacher Amina Saleh), no routine yet
 - Class "Maktab Level 1" whose "Section B" already has a routine in Term 1 (for the "already has a routine" mark)
 - Subjects in Hifz Boys: "Quran Hifz" (teachers Ibrahim Yusuf, Amina Saleh), "Tajweed" (Amina Saleh), "Islamic Studies" (Ibrahim Yusuf)
 - Working days Monday to Friday
@@ -52,7 +52,7 @@ Use the Schedule Builder to create a weekly timetable for your classes, with bre
 ### 3. Setup
 #### [3.1] Term and classes
 **Say:** Choose the **Term**. Only enabled terms are listed. Then, under **Classes & Sections**, tick each class and the sections to include.
-**Show:** Pick "Term 1". Tick "Hifz Boys"; its sections appear; click "All" to select Hifz A and Hifz B.
+**Show:** Pick "Term 1". Tick the box next to "Hifz Boys"; its sections appear, not yet selected ("0/2 sections"); click "All" to select Hifz A and Hifz B. (Clicking the class name instead selects all its sections at once; don't then click "All", which clears them.)
 
 #### [3.2]
 **Say:** If a section already has a routine in this term, it shows a calendar mark. Saving replaces that routine.
@@ -64,12 +64,12 @@ Use the Schedule Builder to create a weekly timetable for your classes, with bre
 
 ### 4. Period Structure
 #### [4.1] Periods
-**Say:** Now define the time slots for each day. They apply to every class you picked. Each row is a **Subject** period or a **Break**, with a **Start** and **End** time.
-**Show:** The Period Structure table. Set row 1: Subject, 4:00 pm to 4:45 pm. Spotlight "Period 1".
+**Say:** Now define the time slots for each day. They apply to every class you picked. Ad-Din starts you with a sample day. Each row is a **Subject** period or a **Break**, with a **Start** and **End** time.
+**Show:** The Period Structure table opens with six sample rows (Period 1 8:00–8:45 am, Period 2, Short Break, Period 3, Lunch Break, Period 4). Set row 1 to 4:00 pm–4:45 pm. Spotlight "Period 1".
 
 #### [4.2] Breaks
-**Say:** For a break, choose the **Break Type**: **Short Break**, **Lunch Break** or **Salat Break**. Tap **Add Period** for each new row.
-**Show:** Click "Add Period"; set Type to Break, Break Type "Salat Break", 4:45 to 5:00 pm. Add the remaining rows the same way.
+**Say:** For a break, choose the **Break Type**: **Short Break**, **Lunch Break** or **Salat Break**. Tap **Add Period** for each new row, or the bin to remove one.
+**Show:** Row 2: set Type to Break, Break Type "Salat Break", 4:45 to 5:00 pm. Set the next rows to the demo times (Period 2, Short Break, Period 3) and delete the last two sample rows with the bin. Click "Add Period" once to show a new row, then delete it. Pre-edit the rows off camera if the shot runs long.
 
 #### [4.3]
 **Say:** If two rows overlap, or a period ends before it starts, Ad-Din tells you which row to fix. Tap **Next**.
@@ -77,7 +77,7 @@ Use the Schedule Builder to create a weekly timetable for your classes, with bre
 
 ### 5. Assign subjects
 #### [5.1] Fill the grid
-**Say:** Pick a section at the top. For each period and day, choose the subject, then the teacher. Only that subject's teachers are listed.
+**Say:** Pick a section at the top. For each period and day, choose the subject, then the teacher. Only that subject's teachers and the section's class teacher are listed.
 **Show:** "Hifz Boys - Hifz A" selected. Monday Period 1: pick "Quran Hifz", then "Ibrahim Yusuf". Fill a few more cells.
 
 #### [5.2] Copy
@@ -86,7 +86,7 @@ Use the Schedule Builder to create a weekly timetable for your classes, with bre
 
 #### [5.3] Teacher clashes
 **Say:** Ad-Din won't let a teacher be in two places at once. A teacher who is already teaching is marked busy, and a clash turns the cell red with the reason.
-**Show:** Select "Hifz B". Monday Period 1: pick "Quran Hifz"; the teacher list shows "Ibrahim Yusuf · busy (…)". Pick him: the cell turns red, "Ibrahim Yusuf is teaching Hifz Boys - Hifz A …". The badge on the Hifz B tab shows 1.
+**Show:** Select "Hifz B". Monday Period 1: pick "Quran Hifz"; Ad-Din picks "Amina Saleh", the only free teacher. Open the teacher list: "Ibrahim Yusuf · busy (…)". Pick him: the cell turns red, "Ibrahim Yusuf is teaching Hifz Boys - Hifz A …". The badge on the Hifz B tab shows 1.
 
 #### [5.4]
 **Say:** Fix every clash to continue. The counter shows how many cells are filled, and how many have no teacher yet. Tap **Next**.
@@ -116,3 +116,4 @@ Use the Schedule Builder to create a weekly timetable for your classes, with bre
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · validator · checked against master d36d69ed8 · 5 fixes: [3.1] class checkbox vs name selects sections differently; [4.1]/[4.2] Period Structure starts with six sample rows to edit/delete; [5.1] teacher list = subject teachers + section class teacher; [5.3] the only free teacher is auto-picked; demo data: class teachers for Hifz A/B

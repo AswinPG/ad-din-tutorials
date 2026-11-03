@@ -22,7 +22,7 @@ Add a class with its type, grade set, enrolment setting and program page, so it'
 - Add Class: Type, Numeric Class Name, Hifz, Evaluation Grade Set, Bi-Directional Communication Allowed, “Open for enrollment”, program page
 
 ## Demo data
-- Demo madrasah "Al-Noor Madrasah"; the demo admin has Premium
+- Demo madrasah "Al-Noor Madrasah"; the demo admin has Premium; academic activities are on for the madrasah (otherwise Type is locked to Religious and the Academic quick cut in [3.2] can't be done)
 - Existing class "Maktab Level 1" in the list, with sections and students
 - Grade set "Hifz Grades" (from 05.2)
 - New class added on camera: "Hifz Boys", Religious, numeric name 2, Quran Hifz Yes, grade set "Hifz Grades"
@@ -64,7 +64,7 @@ Add a class with its type, grade set, enrolment setting and program page, so it'
 
 #### [3.4] Grade set
 **Say:** Choose the **Evaluation Grade Set** students in this class are marked with. It's required for academic classes.
-**Show:** Open Evaluation Grade Set; pick "Hifz Grades".
+**Show:** Open Evaluation Grade Set (the Academic quick cut in [3.2] cleared the default set); pick "Hifz Grades".
 
 #### [3.5]
 **Say:** Turn on **Bi-Directional Communication Allowed** if parents and teachers in this class may message each other.
@@ -89,8 +89,8 @@ Add a class with its type, grade set, enrolment setting and program page, so it'
 **Show:** Spotlight the switch "Shown on website"; click it: "Hidden from website". Click again to show it.
 
 #### [5.4] Save
-**Say:** Tap **Save**.
-**Show:** Click "Save". A confirmation message; the window closes.
+**Say:** Tap **Save**. A pop-up repeats a few tips about classes. Tap **Add Class** to create it.
+**Show:** Click "Save". A pop-up with tips about class names, Bi-Directional Communication and class types opens; click its "Add Class" button. The class window closes and an "Alert" box shows the server's confirmation; click "Close".
 
 ### 6. Next
 #### [6.1] Done
@@ -103,3 +103,4 @@ Add a class with its type, grade set, enrolment setting and program page, so it'
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · validator · checked against master d36d69ed8 · 3 fixes: [5.4] Save opens a tips pop-up, tap Add Class, then Alert/Close; [3.4] Academic quick cut clears the default grade set; demo data: academic activities on so Type can switch

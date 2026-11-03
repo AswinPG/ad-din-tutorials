@@ -33,7 +33,7 @@ Use your madrasah's enrolment link to sign up, choose a program, fill in your de
 - Two classes open for enrolment with program descriptions and pictures: "Maktab Level 1" and "Hifz Boys"
 - A fresh parent username (for example `aisha_rahman`), demo email, and demo password typed off screen or masked; reCAPTCHA off in the demo
 - No children linked to the new parent yet (so the "Add New Child" table doesn't appear), and no existing enrolments
-- Demo child "Maryam Rahman": username `maryam_rahman`, demo email, date of birth, one allergy note; a small sample PDF to upload as the birth certificate
+- Demo child "Maryam Rahman": username `maryam_rahman`, demo email, date of birth, one allergy note; a small sample PDF to upload as the birth certificate; one emergency contact (demo name and mobile), entered on the Child Details step
 - After submit, the Enrollments card shows Maryam with "Maktab Level 1" and status Pending
 
 ## Script
@@ -85,11 +85,11 @@ Use your madrasah's enrolment link to sign up, choose a program, fill in your de
 
 #### [4.2]
 **Say:** Add your **Address**. Under **Spouse Details**, answer **Applicant is a Single Parent**. If you answer No, you can link your spouse's Ad-Din account or add their details.
-**Show:** Fill the Address card. In Spouse Details choose "Yes" for this demo; hover over the "No" option to show the extra question.
+**Show:** Fill the Address card. In Spouse Details click "No" briefly to show the extra question ("Does your spouse already have an Ad-Din account?…"), then choose "Yes" for this demo.
 
 #### [4.3]
-**Say:** Add an emergency contact under **Emergency Contacts**, then tap **Save & Next**.
-**Show:** Fill one emergency contact (name and mobile). Click "Save & Next".
+**Say:** When your details are complete, tap **Save & Next**.
+**Show:** Scroll past the Documents card (no parent documents in this demo). Click "Save & Next".
 
 ### 5. Your child's details
 #### [5.1] Child Details
@@ -105,8 +105,12 @@ Use your madrasah's enrolment link to sign up, choose a program, fill in your de
 **Show:** Hover the info icon: "Student Media Release Consent" panel. Choose "Yes".
 
 #### [5.4] Documents and questions
-**Say:** Upload the files the madrasah asked for under **Documents**, and answer any questions under **Other details**. Then tap **Save & Next**.
-**Show:** In Documents, choose the sample PDF for "Birth Certificate". In Other details, pick "English" for "Language spoken at home". Click "Save & Next".
+**Say:** Upload the files the madrasah asked for under **Documents**, and answer any questions under **Other details**.
+**Show:** In Documents, click "Choose file" and pick the sample PDF for "Birth Certificate". In Other details, pick "English" for "Language spoken at home".
+
+#### [5.5] Emergency contact
+**Say:** Add someone to call in an emergency under **Emergency Contacts**, then tap **Save & Next**.
+**Show:** Fill one emergency contact (Salutation, Full Name, Mobile Number). Click "Save & Next".
 
 ### 6. Review and submit
 #### [6.1] Review and Submit
@@ -137,3 +141,4 @@ Use your madrasah's enrolment link to sign up, choose a program, fill in your de
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · validator · checked against master d36d69ed8 · 3 fixes: emergency contact moved from the parent step to the child step ([4.3] reworded, new [5.5]); [4.2] Show selects No instead of hover; demo data adds the child's emergency contact
