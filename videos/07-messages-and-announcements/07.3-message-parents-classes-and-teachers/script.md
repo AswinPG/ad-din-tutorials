@@ -45,7 +45,7 @@ Message all parents and students, one class or section, or one family as an admi
 
 ### 2. Admin: all parents and students
 #### [2.1] Start
-**Say:** As an admin, tap **Message** in the sidebar and start a new message. Under **Organization**, pick your madrasah.
+**Say:** As an admin, tap **Message** in the sidebar, then the round button to start a new message. Under **Organization**, pick your madrasah.
 **Show:** Sidebar → Message → compose button. "Send new message", Sending as Admin. Select Organization → filter "Madrasah" → the demo madrasah.
 
 #### [2.2] Parents
@@ -100,4 +100,5 @@ Message all parents and students, one class or section, or one family as an admi
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 1 change: [2.1] says how to start a new message (self-contained)
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes

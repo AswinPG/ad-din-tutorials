@@ -56,7 +56,7 @@ Send a message from your masjid to all its followers, or just to staff or volunt
 **Show:** Click "Select Organization"; filter "Masjid"; pick the demo masjid.
 
 #### [3.2] Send to
-**Say:** Now choose **Send to**. **Followers (All)** reaches everyone who follows your masjid, including staff and volunteers, so the other choices grey out.
+**Say:** Now choose **Send to**. **Followers (All)** reaches everyone who follows your masjid, including staff and volunteers, so you can’t pick the other choices with it.
 **Show:** Click "Followers (All)"; Staff and Volunteers grey out. Click it again to clear.
 
 #### [3.3]
@@ -107,4 +107,5 @@ Send a message from your masjid to all its followers, or just to staff or volunt
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 1 change: [3.2] 'grey out' idiom reworded
 - 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: [6.1] footer summary wording as the app builds it (Volunteers before Staff, no comma before via)

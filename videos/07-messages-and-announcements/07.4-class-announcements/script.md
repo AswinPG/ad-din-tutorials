@@ -55,7 +55,7 @@ Post photos and notes to your class as a teacher, and like, save and follow up o
 **Show:** Click "New announcement". In "Choose a section", pick "Hifz Boys A · Morning".
 
 #### [3.2] Photo
-**Say:** Under **Type**, choose **Photo**, then tap **Choose a photo**. Pick a JPG or PNG and crop it.
+**Say:** Under **Type**, choose **Photo**, then tap **Choose a photo**. Pick a JPG or PNG, crop it, and tap **Save & Upload**.
 **Show:** Type: Photo (selected). Click "Choose a photo" → "Choose Image" → `hifz-circle.jpg` → crop → "Save & Upload". The preview shows.
 
 #### [3.3] Caption
@@ -87,7 +87,7 @@ Post photos and notes to your class as a teacher, and like, save and follow up o
 
 ### 6. As a parent
 #### [6.1] Find it
-**Say:** Parents see announcements in the app, on their child’s part of the home screen, or under **Parent Portal**, **Class Announcements**. With more than one child, they can pick one or **All children**.
+**Say:** Parents see announcements in the app, on the **Class Announcements** card for their child on the home screen, or under **Parent Portal**, **Class Announcements**. With more than one child, they can pick one or **All children**.
 **Show:** Phone frame, parent account: app home, the child’s Class Announcements card → "View all". Spotlight the child tabs and "All children".
 
 #### [6.2] React
@@ -105,9 +105,10 @@ Post photos and notes to your class as a teacher, and like, save and follow up o
 
 ### 8. Next
 #### [8.1] Done
-**Say:** Your class can now see what you share, and parents can respond. To message parents directly, watch video 07.3.
+**Say:** Your class can now see what you share, and parents can respond. To message parents directly, watch video 07.3. For everything else a teacher does, see video 10.1.
 **Show:** End card with two tiles: "07.3 Message parents, classes and teachers" and "10.1 The teacher portal and the teacher app home".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 3 changes: [3.2] adds Save & Upload, as in 07.2; [6.1] 'child's part of the home screen' → the child's Class Announcements card; [8.1] Say names the 10.1 end tile
 - 2026-11-03 · validator · checked against master d36d69ed8 · 2 fixes: [7.1] likes and views open one Engagement window with Liked by / Seen by tabs; demo data, the teacher has one subject so Message teacher preselects it

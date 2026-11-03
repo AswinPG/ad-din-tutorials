@@ -20,11 +20,13 @@ Find, read, filter and organise the messages and news your masjid, madrasah and 
 ## Covers
 - All, Unread, Read, Sent, Flagged, Archive
 - the News tab
+- Messages card on the app home: unread count, latest messages, Open inbox, New message
 
 ## Demo data
 - Demo member account (a parent who follows the demo masjid and has a child in the demo madrasah), signed in on the web and in the app (phone frame)
 - About eight messages across both organisations: three unread, one flagged, one already archived, one Ad-Din notification (for example an attendance notice), and one from the masjid with an image, an attached link and a PDF attachment (for example "Eid prayer arrangements")
 - A second demo account that can send messages (a madrasah admin) for the short Sent shot
+- The member's app home shows the Messages card (it appears for anyone with a role at their home madrasah: parent, student, teacher or admin), with "3 unread" and the three latest messages (New message is hidden for an account that is only a student)
 - Four news items on the demo masjid, one of them pinned (for example "Ramadan timetable")
 - No real names or emails on screen
 
@@ -36,8 +38,13 @@ Find, read, filter and organise the messages and news your masjid, madrasah and 
 **Show:** Title card: "Your message inbox".
 
 #### [1.2] Open it
-**Say:** On the web, tap **Message** in the sidebar. In the app, tap **Messages** on the home screen, or **Open inbox** on the **Messages** card.
-**Show:** Web: Sidebar → Message. Then phone frame: app home, spotlight the Messages tile and the Messages card’s "Open inbox" button.
+**Say:** On the web, tap **Message** in the sidebar. In the app, tap **Messages** on the home screen. The number on it shows how many messages are unread.
+**Show:** Web: Sidebar → Message. Then phone frame: app home, spotlight the Messages tile and its unread badge.
+
+#### [1.2a] The Messages card
+**Say:** Parents, students, teachers and madrasah admins also have a **Messages** card on the app home. It shows how many are unread and your latest messages. Tap one to read it, or **Open inbox** to see them all. **New message** starts a new one.
+**Show:** Phone frame: scroll to the Messages card. Spotlight the "3 unread" pill and the three latest messages, then the "Open inbox" and "New message" buttons. Tap "Open inbox"; the inbox opens.
+**Caption:** Parents, students, teachers and madrasah admins also have a Messages card: tap a message, Open inbox or New message.
 
 ### 2. Find your way around
 #### [2.1] The layout
@@ -68,16 +75,16 @@ Find, read, filter and organise the messages and news your masjid, madrasah and 
 **Show:** Click "Eid prayer arrangements". Spotlight the sender line, the image, "Attached Link" and the attachment card.
 
 #### [4.2] Flag and archive
-**Say:** Tap **Flag** to mark a message you want to come back to. **Mark Unread** keeps it bold for later. **Archive** moves it out of your list and into **Archived**.
+**Say:** Tap **Flag** to mark a message you want to find again later. **Mark Unread** keeps it bold for later. **Archive** moves it out of your list and into **Archived**.
 **Show:** Click "Flag": the Flagged tag appears. Click "Mark Unread", then "Archive"; the message leaves the list.
 
 #### [4.3] Several at once
-**Say:** To tidy up several messages, tick their boxes and choose an action. Or tap **Mark all as read** to clear every unread message in the view.
+**Say:** To organise several messages at once, tick their boxes and choose an action. Or tap **Mark all as read** to mark every unread message in the list as read.
 **Show:** Tick three messages; the bar shows "3 selected" with Flag, Unflag, Mark read, Mark unread, Archive. Clear the selection, then click "Mark all as read".
 
 ### 5. The News tab
 #### [5.1] News
-**Say:** Next to **Messages** is **News**. It shows the news your organisation publishes, with **Pinned** news at the top.
+**Say:** Next to **Messages** is **News**. It shows the news your masjid or madrasah publishes, with **Pinned** news at the top.
 **Show:** Click the "News" tab. The demo masjid’s news list; spotlight the Pinned tag on "Ramadan timetable".
 
 #### [5.2]
@@ -86,14 +93,15 @@ Find, read, filter and organise the messages and news your masjid, madrasah and 
 
 ### 6. In the app
 #### [6.1] Same inbox, phone layout
-**Say:** The app shows the same inbox. Tap a message to open it; **Flag**, **Read** and **Archive** sit along the bottom. Tap the back arrow to return to the list.
+**Say:** The app shows the same inbox. Tap a message to open it. **Flag**, **Read** and **Archive** are at the bottom. Tap the back arrow to return to the list.
 **Show:** Phone frame: the inbox list, tap a message; spotlight the bottom bar (Flag, Unread/Read, Archive); tap the back arrow.
 
 ### 7. Next
 #### [7.1] Done
-**Say:** Now you know where your messages and news live, and how to keep your inbox tidy. If you send messages for your organisation, watch the next videos.
+**Say:** Now you know where to find your messages and news, and how to keep your inbox in order. To send messages yourself, as a parent, teacher or admin, watch the next videos.
 **Show:** End card with two tiles: "07.2 Send a message to your community" and "07.3 Message parents, classes and teachers".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 5 changes + fold: [1.2] split; [4.2] [4.3] [6.1] phrasal verbs/idioms removed ('come back to', 'tidy up', 'clear', 'sit along'); [5.1] 'your organisation' → 'your masjid or madrasah'; [7.1] close for senders; fold: Messages card on the app home ([1.2a]: unread count, latest messages, Open inbox, New message)
 - 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: [3.1] filter buttons in the app’s order (All, Read, Unread, Flagged, Archived)
