@@ -7,7 +7,7 @@ prereq:
 status: scripted
 flags:
   - "Removed switch: Donation Page: the transaction list doesn't depend on the Donation Page switch."
-  - "PayPal gifts reach this list through a daily import that uses the organisation's PayPal keys (Integrations tab). On a masjid those keys can't be saved today (see 08.3 flag), so a masjid's PayPal rows won't appear until that's fixed. The demo shows PayPal rows as mocked data."
+  - "PayPal gifts reach this list through a daily import that uses the organisation's PayPal keys (Integrations tab). On a masjid those keys can't be saved today (see 08.3 flag), so a masjid's PayPal rows won't appear until that's fixed. The demo shows PayPal rows as mocked data. Decided 2026-11-03: record without the PayPal step; the bug stays logged."
   - "Manual gifts have no currency (Currency Code stays empty) and can't be edited after saving, only deleted."
 ---
 
@@ -103,5 +103,6 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · manager · decisions via chat · 'Masjid PayPal keys' decided: record without the PayPal step; flag reworded, bug stays logged
 - 2026-11-03 · critic · 1 change: [6.1] vague "the donating video" -> says what 15.4 shows
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes

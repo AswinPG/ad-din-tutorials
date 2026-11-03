@@ -10,7 +10,7 @@ audience:
   - Masjid Admin
 flags:
   - Added by GUID, no email invite
-  - "Open decision 'People are added by GUID': an existing account can only be added by its GUID, but Add New creates a new account and emails the person their username and a password (MasjidController AddAdmin → template 785010-MasjidNewAdminAdded). The decision text 'There are no email invites' should say this."
+  - "Decision 'People are added by GUID' (decided 2026-11-03: as scripted): an existing account can only be added by its GUID, but Add New creates a new account and emails the person their username and a password (MasjidController AddAdmin → template 785010-MasjidNewAdminAdded). The decision text 'There are no email invites' should say this."
   - "The hint on Add New User says the GUID is under 'Settings > My Account > GUID'; no such menu exists (the GUID is on the profile page). Don't zoom on that hint."
   - "The skills list on Manage Volunteer ([6.1]) is loaded from the signed-in admin's home masjid, not the masjid being managed (masjidNewVolunteer.ts loadSkills uses user.homeMasjidID). An admin of several masjids sees the wrong skills, or 'No home masjid found'. The demo admin's home masjid must be the demo masjid."
 ---
@@ -119,5 +119,6 @@ Add other admins, staff and volunteers to your masjid, using their GUID if they 
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · manager · decisions via chat · 'How people are added' decided (as scripted): flag wording updated; script unchanged
 - 2026-11-03 · critic · 4 changes + fold: [1.1] 'runs on' idiom; chapter 6 reordered so the skills list comes before ticking a volunteer's skills; [7.1] 'seat' explained as an organisation Premium seat; demo data; fold: Manage Skills ([6.1] Add Skill, [6.1a] Status hides a skill, pointer to 15.7)
 - 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: demo data, the admin’s home masjid must be the demo masjid (the volunteer skills list loads from it); flag added

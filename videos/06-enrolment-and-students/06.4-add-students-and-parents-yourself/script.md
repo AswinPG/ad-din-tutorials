@@ -6,8 +6,8 @@ prereq:
   - "05.4"
 status: scripted
 flags:
-  - "Who needs a seat? (open): a student can be put in a class only when a linked parent has a seat (otherwise the Manage Class window shows \"A student cannot be placed in a class unless a valid subscription is assigned to a linked parent…\", and the student profile shows \"Need a subscription to assign or manage class\"), and User Management needs the admin's own Premium. The demo gives the new parent a seat off camera; 02.4 shows how."
-  - "People are added by GUID (open): the Add New User page says the GUID is under \"Settings > My Account > GUID\"; the enrolment spouse step says \"Ad-Din > Settings > User profile\". Check which path is right before recording."
+  - "Who needs a seat? (decided 2026-11-03: intended): a student can be put in a class only when a linked parent has a seat (otherwise the Manage Class window shows \"A student cannot be placed in a class unless a valid subscription is assigned to a linked parent…\", and the student profile shows \"Need a subscription to assign or manage class\"), and User Management needs the admin's own Premium. The demo gives the new parent a seat off camera; 02.4 shows how."
+  - "People are added by GUID (decided 2026-11-03: as scripted): the Add New User page says the GUID is under \"Settings > My Account > GUID\"; the enrolment spouse step says \"Ad-Din > Settings > User profile\". Check which path is right before recording."
 ---
 
 # 06.4 Add students and parents yourself
@@ -138,5 +138,6 @@ Add a parent and a student by hand, link them as a family, put the student in a 
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · manager · decisions via chat · 'Who needs a seat?' (intended) and 'How people are added' (as scripted) decided: both flags reworded; script unchanged
 - 2026-11-03 · critic · 6 changes + fold: [1.1] second-person opening; [4.5] merged into [4.4] (thin scene); [5.1] seat named as one of your organisation's Premium seats; [7.1] MRC explained; [8.2] end card by number and title; fold: Community Involvement Activity Records as new [7.3]–[7.4] (Covers, demo data, chapter 7 renamed), checked in organisationUserList and activity-record on master
 - 2026-11-03 · validator · checked against master d36d69ed8 · 3 fixes: [6.2] Link Parent Save saves directly (no Confirmation window), Successful alert; [4.4] parent picker has no Select Parent heading from the profile; seat flag quotes the Manage Class message

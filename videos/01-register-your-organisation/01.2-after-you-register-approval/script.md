@@ -6,7 +6,7 @@ prereq:
   - "01.1"
 status: scripted
 flags:
-  - Admin straight away is true in the data, but the menu stays locked behind the Pending Approval note until Ad-Din approves, so set-up can't start yet (Terms item 3 suggests it can); the script says the menu opens on approval
+  - "Admin straight away is true in the data, but the menu stays locked behind the Pending Approval note until Ad-Din approves, so set-up can't start yet (Terms item 3 suggests it can); the script says the menu opens on approval. Decided 2026-11-03: show the lock as it works today; the registration term will be reworded (docs/APP-ISSUES.md)"
   - The Pending Approval note shows only when every home organisation is unapproved; the demo account's home masjid and madrasah must both be the pending ones
 ---
 
@@ -100,5 +100,6 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · manager · decisions via chat · 'Admins of a pending organisation' decided: the term will change; 01.2 shows the lock as it works today; flag reworded (and quoted), APP-ISSUES notes registration term 3 needs rewording
 - 2026-11-03 · critic · 3 changes: [1.1] second-person opening, [3.3] idiom removed, [7.1] end tiles by number
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes

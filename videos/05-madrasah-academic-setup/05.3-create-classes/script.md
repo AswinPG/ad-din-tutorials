@@ -7,7 +7,7 @@ prereq:
 status: scripted
 flags:
   - "Homeroom teacher and compulsory are not on the Add Class form. They are subject options (Mark as Homeroom, Mark as Compulsory) on the subject form, so they are scripted in 05.5; a section's Class Teacher is set in 05.4."
-  - "Who needs a seat? (open): Admin Portal → Class opens only when the admin has Premium themselves (the page guard checks the user's own Premium, not the organisation's seats). The demo admin must have Premium."
+  - "Who needs a seat? (decided 2026-11-03: intended): Admin Portal → Class opens only when the admin has Premium themselves (the page guard checks the user's own Premium, not the organisation's seats). The demo admin must have Premium."
 ---
 
 # 05.3 Create classes
@@ -103,5 +103,6 @@ Add a class with its type, grade set, enrolment setting and program page, so it'
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · manager · decisions via chat · 'Who needs a seat?' decided (own-Premium check is intended): flag wording updated; script unchanged
 - 2026-11-03 · critic · 6 changes: [1.1] second-person opening; [2.2] "the basics" made concrete; [3.3] gives the reason for Yes (was a bare instruction); [5.3] add-on wording "If your madrasah has an Ad-Din website", Say now matches the two clicks; [5.4] Say covers the Close the Show does; [6.2] end card by number and title
 - 2026-11-03 · validator · checked against master d36d69ed8 · 3 fixes: [5.4] Save opens a tips pop-up, tap Add Class, then Alert/Close; [3.4] Academic quick cut clears the default grade set; demo data: academic activities on so Type can switch

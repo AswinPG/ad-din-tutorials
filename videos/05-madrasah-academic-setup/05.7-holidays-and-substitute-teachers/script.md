@@ -6,7 +6,7 @@ prereq:
   - "05.6"
 status: scripted
 flags:
-  - "Who needs a seat? (open): Admin Portal → Holiday and Delegations open only when the admin has Premium themselves (the page guard checks the user's own Premium, not the organisation's seats). The demo admin must have Premium."
+  - "Who needs a seat? (decided 2026-11-03: intended): Admin Portal → Holiday and Delegations open only when the admin has Premium themselves (the page guard checks the user's own Premium, not the organisation's seats). The demo admin must have Premium."
   - "If From Teacher and To Teacher are the same, the toast shows the untranslated key 'madressah.delegation.message.moreTeacher' instead of 'From and To Teacher cannot be the same.' Not shown on camera."
 ---
 
@@ -100,5 +100,6 @@ Add the days your madrasah is closed, and let another teacher cover a teacher's 
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · manager · decisions via chat · 'Who needs a seat?' decided (own-Premium check is intended): flag wording updated; script unchanged
 - 2026-11-03 · critic · 4 changes: [1.1] second-person opening, no "handing to"; [2.3] no "fill in all"; [3.1] ties the title's "substitute teacher" to Ad-Din's word "delegation"; [6.2] end card by number and title
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes

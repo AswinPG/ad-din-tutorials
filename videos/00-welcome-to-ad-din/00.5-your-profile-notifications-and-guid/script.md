@@ -6,7 +6,7 @@ prereq:
   - "00.2"
 status: scripted
 flags:
-  - "Open decision 'People are added by GUID': scripted as the code works today (admins fetch a person by GUID; no email invites)"
+  - "Decision 'People are added by GUID' (decided 2026-11-03: as scripted): scripted as the code works today (admins fetch a person by GUID; no email invites)"
   - "The GUID has no copy button; viewers must select the text after tapping the eye icon"
   - "The admin Add New User screens tell people to look under 'Settings > My Account > GUID', which no longer exists; the GUID is on Profile > Account information"
 ---
@@ -122,5 +122,6 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · manager · decisions via chat · 'How people are added' decided (as scripted): flag wording updated; script unchanged
 - 2026-11-03 · critic · 3 changes: [1.1] second-person opening without phrasal verb, [5.2] says where the card is, [8.1] no idiom, end tiles by number
 - 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: demo account needs a Teacher or Admin role so the Signature section shows

@@ -105,5 +105,6 @@ Create an Ad-Din account on the web or in the app and arrive signed in, ready to
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · manager · decisions via chat · 'Sign-up and register page links' decided (wide shots, bug stays logged): checked, [5.1] keeps the shot wide and no scene zooms or clicks the Terms or Privacy links; no change
 - 2026-11-03 · critic · 3 changes: [1.2] no time promise, [5.3] Say names the page that opens (no idle hold), [6.1] end tiles by number
 - 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: [4.1]/[4.2] only Enroll a Child works for a new account; the other three cards switch the page to the login form, and Enroll a Child leads to the finder's ID tab then enrolment

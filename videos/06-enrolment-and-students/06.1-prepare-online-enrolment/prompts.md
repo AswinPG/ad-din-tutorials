@@ -3,6 +3,7 @@
 Every instruction given to Claude for this video, newest first, with the result.
 Format: date · who · prompt (verbatim or summarised) · outcome / commit.
 
+- 2026-11-03 · manager · "Decisions via chat" · 'Who needs a seat?' decided (own-Premium check is intended): flag wording updated; script unchanged
 - 2026-11-03 · manager · "use a critic subagent to criticise and find flaws in the script, make it better" · critic pass: 3 changes (opening, [7.1] plain wording, end card by number)
 - 2026-11-03 · manager · "use a sub agent to validate the script" · validator pass: 1 fix ([7.2] Show: options list starts empty).
 - 2026-11-03 · manager · "Write all the scripts now and double check nothing is missed." · Scripted from origin/master (d36d69ed8); flag added: Who needs a seat? (admin's own Premium gates Admin Portal pages).

@@ -9,7 +9,7 @@ status: scripted
 audience:
   - Madrasah Admin
 flags:
-  - "Open decision 'People are added by GUID': an existing account can only be added by its GUID, but Add New creates a new account and the save ends with 'Sending welcome email' (sign-in details). The decision text 'There are no email invites' should say this."
+  - "Decision 'People are added by GUID' (decided 2026-11-03: as scripted): an existing account can only be added by its GUID, but Add New creates a new account and the save ends with 'Sending welcome email' (sign-in details). The decision text 'There are no email invites' should say this."
   - "The hint on Add New User says the GUID is under 'Settings > My Account > GUID'; no such menu exists (the GUID is on the profile page). Don't zoom on that hint."
 ---
 
@@ -113,5 +113,6 @@ Add admins and teachers to your madrasah by GUID or as new accounts, check their
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · manager · decisions via chat · 'How people are added' decided (as scripted): flag wording updated; script unchanged
 - 2026-11-03 · critic · 3 changes: [3.3] stresses Update is the step that adds them; [6.1]/[6.2] 'can't deactivate your own account' moved to shorten [6.2]; [6.3] 'pool' idiom removed
 - 2026-11-03 · validator · checked against master d36d69ed8 · 4 fixes: [3.2] a teacher profile’s side links are Personal details and Address (Documents is student-only); [3.3] Update is what adds a fetched person; [4.2] fields in the form’s order; [6.3] the Re-Activate Users window before Are you sure?

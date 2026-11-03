@@ -6,7 +6,7 @@ prereq:
   - "05.3"
 status: scripted
 flags:
-  - "Who needs a seat? (open): Admin Portal → Class Section opens only when the admin has Premium themselves (the page guard checks the user's own Premium, not the organisation's seats). The demo admin must have Premium."
+  - "Who needs a seat? (decided 2026-11-03: intended): Admin Portal → Class Section opens only when the admin has Premium themselves (the page guard checks the user's own Premium, not the organisation's seats). The demo admin must have Premium."
 ---
 
 # 05.4 Create class sections
@@ -95,6 +95,7 @@ Add sections to a class, each with its own class teacher and capacity, and read 
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · manager · decisions via chat · 'Who needs a seat?' decided (own-Premium check is intended): flag wording updated; script unchanged
 - 2026-11-03 · manager · decisions via chat · Planned features not in the app dropped: Alumni list removed from Covers ('Active and inactive students in a section', as [5.2] shows), flag removed
 - 2026-11-03 · critic · 3 changes: [1.1] second-person opening, task first; [5.3] points to video 06.5 by number; [6.2] every end-card tile named by number and title
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes

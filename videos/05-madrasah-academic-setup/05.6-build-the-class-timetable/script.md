@@ -7,7 +7,7 @@ prereq:
 status: scripted
 flags:
   - "Notify parents: the Send Communication switch on Review & Save says it notifies 'students and teachers' by email, but the code (SendClassRoutineChangedNotification) sends an email and a push notification to the students and parents of each saved section, not teachers. The script describes what the code does; the switch text should be fixed."
-  - "Who needs a seat? (open): Admin Portal → Class Routine opens only when the admin has Premium themselves (the page guard checks the user's own Premium, not the organisation's seats). The demo admin must have Premium."
+  - "Who needs a seat? (decided 2026-11-03: intended): Admin Portal → Class Routine opens only when the admin has Premium themselves (the page guard checks the user's own Premium, not the organisation's seats). The demo admin must have Premium."
 ---
 
 # 05.6 Build the class timetable
@@ -116,5 +116,6 @@ Use the Schedule Builder to create a weekly timetable for your classes, with bre
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · manager · decisions via chat · 'Who needs a seat?' decided (own-Premium check is intended): flag wording updated; script unchanged
 - 2026-11-03 · critic · 4 changes: [1.1] second-person opening; [5.2] Show also spotlights Copy to Sections, which the Say names; [5.2] plainer wording; [7.2] end card by number and title
 - 2026-11-03 · validator · checked against master d36d69ed8 · 5 fixes: [3.1] class checkbox vs name selects sections differently; [4.1]/[4.2] Period Structure starts with six sample rows to edit/delete; [5.1] teacher list = subject teachers + section class teacher; [5.3] the only free teacher is auto-picked; demo data: class teachers for Hifz A/B

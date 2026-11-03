@@ -6,7 +6,7 @@ prereq:
   - "01.1"
 status: scripted
 flags:
-  - "Open decision \"First billing setup for a new organisation\": scripted from the code, not yet walked on dev. Opening View plan creates the organisation's billing account automatically (BilledOrganizationSubscriptionService.GetOrganizationSubscription → CreateOrganizationSubscription). Buying seats then needs a card with a billing country and state, or Via Invoice with a country; otherwise the API refuses with \"A card is not configured.\""
+  - "Decision \"First billing setup for a new organisation\" (decided 2026-11-03: as scripted): scripted from the code. Opening View plan creates the organisation's billing account automatically (BilledOrganizationSubscriptionService.GetOrganizationSubscription → CreateOrganizationSubscription). Buying seats then needs a card with a billing country and state, or Via Invoice with a country; otherwise the API refuses with \"A card is not configured.\""
   - "[5.3] states that the first paid invoice gives a seat to an admin when no admin has one (AutoAssignOrganisationAdminSubscription on the invoice-paid webhook). It picks the first admin in the list, not necessarily the viewer, and the mocked demo can only show the result."
   - Seat changes are queued in the background (Hangfire); the page refreshes itself about 10 seconds after Submit.
 ---
@@ -123,5 +123,6 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · manager · decisions via chat · 'First billing setup' decided (as scripted): flag wording updated; script unchanged
 - 2026-11-03 · critic · 3 changes: [1.1] second-person opening, [3.4] no elliptical question, video by number, Show spotlights Save before closing, [6.1] Say names both end tiles
 - 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: [5.1] and demo data now 1 of 20 used, 19 available (the automatic admin seat in [5.3] takes one as soon as the invoice is paid)

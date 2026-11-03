@@ -6,7 +6,7 @@ prereq:
   - "05.3"
 status: scripted
 flags:
-  - "Who needs a seat? (open): Admin Portal pages, including Organization Management and Class, open only when the admin has Premium themselves; the page guard checks the user's own Premium, not the organisation's seats. The demo admin must have Premium."
+  - "Who needs a seat? (decided 2026-11-03: intended): Admin Portal pages, including Organization Management and Class, open only when the admin has Premium themselves; the page guard checks the user's own Premium, not the organisation's seats. The demo admin must have Premium."
 ---
 
 # 06.1 Prepare online enrolment
@@ -127,5 +127,6 @@ Set up everything parents see when they enrol online: the enrolment link and QR 
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · manager · decisions via chat · 'Who needs a seat?' decided (own-Premium check is intended): flag wording updated; script unchanged
 - 2026-11-03 · critic · 3 changes: [1.1] second-person opening, no "along the way"; [7.1] no elliptical question; [9.2] end card by number and title
 - 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: [7.2] custom-field options start empty (Add option for each)

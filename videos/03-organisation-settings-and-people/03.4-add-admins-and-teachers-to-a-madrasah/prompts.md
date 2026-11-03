@@ -3,6 +3,7 @@
 Every instruction given to Claude for this video, newest first, with the result.
 Format: date · who · prompt (verbatim or summarised) · outcome / commit.
 
+- 2026-11-03 · manager · "Decisions via chat" · 'How people are added' decided (as scripted): flag wording updated; script unchanged
 - 2026-11-03 · manager · "use a critic subagent to criticise and find flaws in the script, make it better" · critic pass: 3 wording fixes
 - 2026-11-03 · manager · "use a sub agent to validate the script" · validator pass: 4 fixes ([3.2] side links, [3.3] Update adds them, [4.2] field order, [6.3] missing window)
 - 2026-11-03 · manager · "Write all the scripts now and double check nothing is missed." · Scripted from origin/master (d36d69ed8); GUID fetch, Add New admin, profile page, Access Rights, deactivate/re-activate; flags: Add New sends welcome email, stale GUID hint.

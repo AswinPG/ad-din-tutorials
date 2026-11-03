@@ -365,19 +365,23 @@ decisions:
   - title: "Who needs a seat?"
     detail: "Every Admin Portal and portal page checks the person’s own Premium (bought, a seat, or a family share), not the organisation’s seats: admins, teachers, parents and Staff Attendance users each need one; students need their own or a family share to be placed in a class; Basic Announcements (TV) also checks the admin’s own Premium. Organization Management and the public program pages have no check. Scripts show this as it works today. Confirm it’s intended."
     videos: "02.4, 04.4, 05.2–05.7, 06.1, 06.3–06.5"
-    status: open
+    status: decided
+    answer: "Intended: own-Premium check; scripts stay as they are"
   - title: "First billing setup for a new organisation"
     detail: "The code answers it: opening View plan creates the billing account; seats then need a card with billing country and state, or Via Invoice with a country; once the first invoice is paid Ad-Din gives a seat to the first admin if none has one. 02.3 is scripted that way. Settle after one walk-through on dev."
     videos: "02.3"
-    status: open
+    status: decided
+    answer: "As scripted"
   - title: "How people are added"
     detail: "An existing account is added by its GUID (no email invites). Add New creates a new account and emails the person a username and password. Scripts show both. The add-user screens still point to an old “Settings > My Account > GUID” path, two screens disagree on where the GUID is, and there is no copy button next to it."
     videos: "00.5, 03.3–03.5, 06.4"
-    status: open
+    status: decided
+    answer: "As scripted"
   - title: "Sign-up and register page links"
     detail: "The Terms of Service and Privacy Policy links on the sign-up page go nowhere; on the register-organisation page Terms opens the Privacy Policy. Fix them or keep the shots wide."
     videos: "00.2, 01.1, 06.2"
-    status: open
+    status: decided
+    answer: "Use wide shots; keep the bug logged"
   - title: "Exam Marks"
     detail: "The older feature, off by default; the Services tab recommends Academic Activity instead. Exam Based promotion (16.1) depends on it. Keep or drop?"
     videos: "10.11 (dropped), 14.3, 16.1"
@@ -391,7 +395,8 @@ decisions:
   - title: "Masjid PayPal keys can’t be saved"
     detail: "Bug: the masjid Integrations tab passes the madrasah id (editMasjid.component.html, [orgId]=\"madressahId\"), so keys never load and saving fails. Works on a madrasah. Fix before recording to put the PayPal step back in 08.3 and PayPal gifts in 08.5."
     videos: "03.2, 08.3, 08.5"
-    status: open
+    status: decided
+    answer: "Record without PayPal; keep the bug logged"
   - title: "TV display pages are server-rendered"
     detail: "The prayer-time TV screens and their previews come from the Ad-Din server, not the Angular app. Stub them in the mocked demo world, or record those shots from dev."
     videos: "04.4–04.6, 04.11"
@@ -400,23 +405,28 @@ decisions:
   - title: "Internal wiki links in the app"
     detail: "Several “Learn more” / “this guide” links open ad-din.atlassian.net. Are those pages public? If not, hide or fix them before publishing; scripts don’t click them."
     videos: "04.1, 04.3, 04.6"
-    status: open
+    status: decided
+    answer: "Keep them off camera; keep the bug logged"
   - title: "Zawal and Al-Duha minutes locked"
     detail: "These minutes can only be edited with the Custom calculation method, so Makrooh notices may never show for masjids on a preset method. Fix in the app, or keep the flag?"
     videos: "04.1, 04.11"
-    status: open
+    status: decided
+    answer: "Keep the flag; keep the bug logged"
   - title: "Donation campaigns are website-only"
     detail: "Members can’t see campaigns in the app; they show only on the public website (Website add-on). The Publish note says “in the app and on your website”, and the in-app donation page shows admin labels to members."
     videos: "08.4, 15.4"
-    status: open
+    status: decided
+    answer: "As scripted"
   - title: "Website enquiries are email-only"
     detail: "There is no enquiries screen (the list component isn’t reachable); contact-form messages go to the organisation’s email. 09.4 teaches replying from email. Add a screen, or keep it?"
     videos: "09.4"
-    status: open
+    status: decided
+    answer: "Email only is fine"
   - title: "Which side sends the website link request"
     detail: "The organisation that accepts keeps its website and address; the sender moves onto it. 09.4 advises sending from the madrasah (“Link your Masjid”) so the masjid’s address stays. Confirm."
     videos: "09.4"
-    status: open
+    status: decided
+    answer: "Send from the madrasah, as 09.4 is written"
   - title: "Planned items that aren’t in the app"
     detail: "Masjid gallery albums (04.8), Alumni lists (05.4, 16.2; hidden until the alumni module is redone), Subject for report (05.1; commented out), a calendar at phone width (15.3). Each stays in Covers with a flag. Drop them, or are they coming back?"
     videos: "04.8, 05.1, 05.4, 15.3, 16.2"
@@ -435,7 +445,8 @@ decisions:
   - title: "Admins of a pending organisation"
     detail: "The menu stays locked behind Pending Approval until Ad-Din approves, which contradicts registration term 3 (the Administrator can begin to configure). Change the term or unlock setup before approval?"
     videos: "01.2"
-    status: open
+    status: decided
+    answer: "The term will change; 01.2 shows the lock as it works today"
   - title: "Native and server pages outside the label check"
     detail: "Some screens aren’t in the Angular app: the native Premium page and Qiblah compass (MAUI app), password reset (Razor), public website (AdDin.PublicWebpages). Their labels are checked by hand. The phone’s own permission dialogs and lock-screen notification (00.7) need stylised graphics or a real-device capture: which?"
     videos: "00.3, 00.7, 02.2, 09.6, 15.1, 15.4"
@@ -444,4 +455,5 @@ decisions:
   - title: "Left out on purpose"
     detail: "Carpool (switched off), social login (no buttons), Ideas (app feedback), the unused clock-in placeholder, the old teacher-attendance register."
     videos: "—"
-    status: open
+    status: decided
+    answer: "As scripted"

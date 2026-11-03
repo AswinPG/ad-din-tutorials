@@ -7,7 +7,7 @@ prereq:
 status: scripted
 switch: Family Subscription sharing
 flags:
-  - "Open decision \"Who needs a seat?\": scripted as the code works today. Premium pages check the person's own Premium (SubscriptionGuard and organizationSubscriptionGuard), not the organisation's seats, so admins, teachers, parents and students each need Premium of their own, a seat, or a family share. A student can't be placed in a class without one (API MDCM402). Staff Attendance users need one (its switch text). User Management itself needs the admin's own Premium."
+  - "Decision \"Who needs a seat?\" (decided 2026-11-03: the own-Premium check is intended): scripted as the code works today. Premium pages check the person's own Premium (SubscriptionGuard and organizationSubscriptionGuard), not the organisation's seats, so admins, teachers, parents and students each need Premium of their own, a seat, or a family share. A student can't be placed in a class without one (API MDCM402). Staff Attendance users need one (its switch text). User Management itself needs the admin's own Premium."
   - "Covers item \"Allocate Subscription on a person's profile\" is left out: that card treats the organisation's used-seat count as the available count. It shows \"N Available\" with the number of seats already given out, disables both buttons when none are given out, and shows \"No subscriptions left\" on a fresh pool. The script uses Manage Subscription on the User Management list instead (it shows the real available seats), and uses the profile only to check and remove a seat (on a teacher: the whole Subscription detail card is hidden when any linked family member has an active subscription, which includes a family share)."
   - The switch is optional for the task; the family-sharing chapter assumes the organisation wants it on.
 ---
@@ -119,5 +119,6 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · manager · decisions via chat · 'Who needs a seat?' decided (own-Premium check is intended): flag wording updated; script unchanged
 - 2026-11-03 · critic · 3 changes: [1.1] second-person opening, [2.4] thin scene merged into [2.3], [6.2] end tiles by number
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes

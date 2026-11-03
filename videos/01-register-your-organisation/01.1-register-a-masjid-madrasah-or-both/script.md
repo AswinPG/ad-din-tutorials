@@ -138,5 +138,6 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · manager · decisions via chat · 'Sign-up and register page links' decided (wide shots, bug stays logged): checked, [3.3] keeps the shot wide and no scene zooms or clicks the Terms of Service link ([3.2] spotlights the terms text only); no change
 - 2026-11-03 · critic · 2 changes: [1.1] second-person opening, [8.1] end tiles by number
 - 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: [3.2] the six terms sit under the heading **Terms of Service** (onboarding.terms), not "Terms and Conditions"

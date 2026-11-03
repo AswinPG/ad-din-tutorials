@@ -10,7 +10,7 @@ audience:
 plan: Free
 platform: Both
 flags:
-  - "Sign-up page links (open): the Terms of Service and Privacy Policy links on the sign-up form go nowhere; keep the shot wide and don't click them."
+  - "Sign-up page links (decided 2026-11-03: wide shots, bug stays logged): the Terms of Service and Privacy Policy links on the sign-up form go nowhere; keep the shot wide and don't click them."
   - "Recorded on the web; the same pages open inside the Ad-Din app (the app shows a compact Enrolling at banner instead of the side panel). Add a short phone-frame cut if the manager wants the app shown."
 ---
 
@@ -141,5 +141,6 @@ Use your madrasah's enrolment link to sign up, choose a program, fill in your de
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · manager · decisions via chat · 'Sign-up and register page links' decided (wide shots, bug stays logged): flag reworded; checked, [2.2] keeps the shot wide and never zooms or clicks the links
 - 2026-11-03 · critic · 6 changes: [1.1] second-person opening; [3.4] no elliptical question; [4.3] Say covers the Documents card the Show passes; [5.3] no "hover" (doesn't exist on a phone); [6.3] Say in the order the viewer acts; [7.3] end card by number and title
 - 2026-11-03 · validator · checked against master d36d69ed8 · 3 fixes: emergency contact moved from the parent step to the child step ([4.3] reworded, new [5.5]); [4.2] Show selects No instead of hover; demo data adds the child's emergency contact

@@ -6,7 +6,7 @@ prereq:
   - "06.4"
 status: scripted
 flags:
-  - "Who needs a seat? (open): Admin Portal → Class Section opens only when the admin has Premium themselves (the page guard checks the user's own Premium). The demo admin must have Premium."
+  - "Who needs a seat? (decided 2026-11-03: intended): Admin Portal → Class Section opens only when the admin has Premium themselves (the page guard checks the user's own Premium). The demo admin must have Premium."
 ---
 
 # 06.5 Move students between sections
@@ -83,5 +83,6 @@ Add students to a section and move them from one section to another in the same 
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · manager · decisions via chat · 'Who needs a seat?' decided (own-Premium check is intended): flag wording updated; script unchanged
 - 2026-11-03 · critic · 6 changes: [1.1] second-person opening, no "reshuffle"; [2.3] merged into [2.2] (thin scene); [3.2] count-button wording; [4.1] no "Don't worry"; [4.3] "open seats" said as room, so it isn't confused with Premium seats; [5.2] end card by number and title
 - 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: demo data, added students need a linked parent with a seat

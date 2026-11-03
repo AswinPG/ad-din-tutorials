@@ -7,7 +7,7 @@ prereq:
 status: scripted
 plan: Free
 flags:
-  - "PayPal payment gateway settings left out: on a masjid, the Integrations tab (PayPal Integration) passes an organisation id the page doesn't have (editMasjid.component.html binds [orgId]=\"madressahId\"), so saved keys don't load and saving fails with \"Wrong organisation id\". It works for a madrasah. Fix to [orgId]=\"masjidId\", then add a chapter here: tick PayPal, CREDENTIALS and SECRET (the PayPal app's client ID and secret), Save. The keys let Ad-Din bring PayPal gifts into each campaign's transactions once a day."
+  - "PayPal payment gateway settings left out: on a masjid, the Integrations tab (PayPal Integration) passes an organisation id the page doesn't have (editMasjid.component.html binds [orgId]=\"madressahId\"), so saved keys don't load and saving fails with \"Wrong organisation id\". It works for a madrasah. Decided 2026-11-03: record without PayPal; the bug stays in docs/APP-ISSUES.md. If it is fixed later ([orgId]=\"masjidId\"), a chapter could go here: tick PayPal, CREDENTIALS and SECRET (the PayPal app's client ID and secret), Save. The keys let Ad-Din bring PayPal gifts into each campaign's transactions once a day."
   - "Removed switch: Donation Page from the front matter: this video is where the switch is turned on, so the opening card shouldn't ask for it."
   - "Set plan: Free: the Donation Page switch sits on the free Services tab and needs no Premium (campaigns in 08.4 do)."
 ---
@@ -96,5 +96,6 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · manager · decisions via chat · 'Masjid PayPal keys' decided: record without PayPal; PayPal step stays left out, flag reworded, bug stays in docs/APP-ISSUES.md
 - 2026-11-03 · critic · 4 changes: [1.1] split phrasal verb removed; [1.2] points to 04.9 for the page it needs; [3.4] two-word scene given a reason; [4.1] "members" -> home masjid, as 15.4 says
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes

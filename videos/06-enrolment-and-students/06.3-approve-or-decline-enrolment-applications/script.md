@@ -8,7 +8,7 @@ prereq:
 status: scripted
 platform: Both
 flags:
-  - "Who needs a seat? (open): approving an application when neither parent has a subscription assigns one of the organisation's Yearly or Monthly seats to the parent (\"Subscription required to enroll\"). Separately, the admin needs their own Premium to open User Management (SubscriptionGuard). Script shows today's behaviour; revisit when the decision is made."
+  - "Who needs a seat? (decided 2026-11-03: intended): approving an application when neither parent has a subscription assigns one of the organisation's Yearly or Monthly seats to the parent (\"Subscription required to enroll\"). Separately, the admin needs their own Premium to open User Management (SubscriptionGuard). Script shows today's behaviour, which is intended (decided 2026-11-03)."
   - "The web dashboard's Pending Enrollments card is switched off in the code (commented out in dashboardv2), so the dashboard alert is shown on the app home's Waiting on you card instead."
 ---
 
@@ -111,5 +111,6 @@ Review online enrolment applications, place each child in a section and approve 
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · manager · decisions via chat · 'Who needs a seat?' decided (own-Premium check is intended): flag wording updated; script unchanged
 - 2026-11-03 · critic · 6 changes: [1.1] second-person opening; [1.2] seat named as one of your organisation's Premium seats; [3.2] merged into [3.1] and [3.4] into [3.3] (thin scenes); [5.1] no elliptical question; [6.2] end card by number and title
 - 2026-11-03 · validator · checked against master d36d69ed8 · 2 fixes: [3.7] Successful alert + Close after Proceed; [6.1] Filters panel must be opened

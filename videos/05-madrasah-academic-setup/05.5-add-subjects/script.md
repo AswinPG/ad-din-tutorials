@@ -9,7 +9,7 @@ status: scripted
 flags:
   - "Evaluation Grade Set is not on the subject form: it is chosen on the class (Add Class, 05.3), and a subject uses its class's grade set. It is mentioned in narration only."
   - "Mark as Homeroom and Mark as Compulsory (planned under 05.3's Covers) are scripted here, because they live on the subject form."
-  - "Who needs a seat? (open): Admin Portal → Subject opens only when the admin has Premium themselves (the page guard checks the user's own Premium, not the organisation's seats). The demo admin must have Premium."
+  - "Who needs a seat? (decided 2026-11-03: intended): Admin Portal → Subject opens only when the admin has Premium themselves (the page guard checks the user's own Premium, not the organisation's seats). The demo admin must have Premium."
 ---
 
 # 05.5 Add subjects
@@ -109,5 +109,6 @@ Add the subjects each class studies, choose the teachers who can teach them, and
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · manager · decisions via chat · 'Who needs a seat?' decided (own-Premium check is intended): flag wording updated; script unchanged
 - 2026-11-03 · critic · 5 changes: [1.1] second-person opening; [2.2] merged into [2.1] (thin scene); [5.2] Say names the Cancel the Show does; [5.4] Say covers Save, shorter; [7.2] end card by number and title
 - 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: [4.1] timetable also lists the section's class teacher
