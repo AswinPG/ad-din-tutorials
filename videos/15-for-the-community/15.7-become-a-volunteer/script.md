@@ -4,32 +4,79 @@ title: Become a volunteer
 target: 2:30
 prereq:
   - "00.5"
-status: planned
+status: scripted
 ---
 
 # 15.7 Become a volunteer
 
 ## Goal
-_What the viewer can do after watching, in one sentence. Written with the script._
+Sign up as a volunteer at your home masjid in the Ad-Din app and tick the skills you can offer.
 
 ## You'll need
 <!-- Shown on the opening card. Generated from prereq/plan/switch if left empty. -->
+- The Ad-Din app, signed in, with a home masjid
+- Your personal info filled in on your profile (name, mobile and email)
 
 ## Covers
 - Become a volunteer, add skills
 
 ## Demo data
-<!-- Records the demo organisation must have for this video (classes, students, events...). -->
+- Member account (no admin role), home masjid "Masjid Al-Noor", personal info complete (salutation, first and last name, mobile, email), not yet a volunteer
+- Masjid Al-Noor has volunteer skills set up by its admin: "Event setup", "Cleaning", "Teaching", "First aid", "Driving"
+- Phone frame for every shot
 
 ## Script
-<!--
-Chapters are "### 1. Title" headings, scenes are "#### [1.1]" headings with stable IDs.
-Each scene has **Say:** (English narration, one or two sentences) and **Show:** (what happens on screen).
-Optional **Caption:** overrides the subtitle text. Translations in i18n/<lang>.md reuse the same scene IDs.
-See docs/SCRIPT-FORMAT.md.
--->
 
-_Not scripted yet._
+### 1. Serve your community
+#### [1.1] Opening
+**Say:** Masjids rely on volunteers, for events, cleaning, teaching and more. In this video you'll sign up as a volunteer at your masjid and choose the skills you can offer.
+**Show:** Title card: "Become a volunteer". Phone frame on the app home.
+
+#### [1.2]
+**Say:** You'll volunteer at your home masjid. Make sure your name, mobile and email are filled in on your profile first.
+**Show:** Opening card from You'll need.
+
+### 2. Open Volunteering
+#### [2.1]
+**Say:** Tap the menu button at the top left. Open **Masjid**, then tap **Volunteering**.
+**Show:** Tap the ☰ menu: the side menu opens. Tap "Masjid" to expand it, then "Volunteering".
+
+#### [2.2]
+**Say:** Your profile opens on **Volunteer Skills**.
+**Show:** The profile page with the "Volunteer Skills" tab selected. Spotlight "Become a volunteer" and its switch.
+
+### 3. Become a volunteer
+#### [3.1] Turn it on
+**Say:** Turn on the **Become a volunteer** switch.
+**Show:** Tap the switch. The confirmation box opens: "Become a volunteer", naming Masjid Al-Noor.
+
+#### [3.2] Confirm
+**Say:** Ad-Din asks you to confirm. Tap **Yes, Bismillah!**
+**Show:** Zoom on the message, then tap "Yes, Bismillah!". Toast "Successfully registered as volunteer". The heading changes to "Your volunteer status".
+
+#### [3.3]
+**Say:** If your profile is missing something, Ad-Din takes you to your personal info to finish it. Then come back and turn the switch on again.
+**Show:** Card: "Please complete your personal profile section" with an arrow to the "Personal info" tab. No live demo.
+**Caption:** Profile incomplete? Finish your personal info, then turn the switch on again.
+
+### 4. Add your skills
+#### [4.1]
+**Say:** Now the list of skills your masjid needs appears. Tick the **Status** box beside each skill you can offer.
+**Show:** The skills table appears with Skill Name and Status. Tick "Event setup" and "First aid". Toast "Successfully updated skill" after each.
+
+#### [4.2]
+**Say:** Each tick is saved straight away. Untick a skill any time you can't help with it any more.
+**Show:** Untick "First aid": toast "Successfully updated skill". Tick it again.
+
+### 5. Taking a break
+#### [5.1]
+**Say:** Need to step back? Turn the switch off and tap **Yes, remove me**. Your skills stay saved, so you can switch back on later.
+**Show:** Tap the switch: "Stop volunteering?" box. Spotlight "Yes, remove me", then tap "Cancel" so the demo stays a volunteer.
+
+### 6. Next
+#### [6.1] Close
+**Say:** Jazakallahu khairan for offering your time. Your masjid's admins can now see you as a volunteer, with your skills. Next, keep up with your masjid's events.
+**Show:** End card with two tiles: "15.3 Events: going, interested, calendar" and "00.5 Your profile, notifications and GUID".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
