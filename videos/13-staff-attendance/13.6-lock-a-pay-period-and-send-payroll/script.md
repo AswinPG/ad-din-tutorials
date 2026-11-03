@@ -6,8 +6,6 @@ prereq:
   - "13.5"
 status: scripted
 stage: Periodic
-flags:
-  - "Is Staff Attendance live? (series.yaml decision) Confirm before publishing"
 ---
 
 # 13.6 Lock a pay period and send payroll
@@ -108,5 +106,6 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · manager · decisions via chat · Staff Attendance is live: 'Is Staff Attendance live?' hold flag removed; publish normally
 - 2026-11-03 · critic · 6 changes: [1.1] second-person opening; [2.1] full sidebar path; [3.2]/[5.3]/[6.1] elliptical questions ("Changed your mind?", "Need to send it again?", "Spotted a mistake?") made plain, [3.2] says the cell is reopened; [7.1] end-card tiles named by number; fold: Audit Trail added to Covers ([6.3] already shows it)
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes

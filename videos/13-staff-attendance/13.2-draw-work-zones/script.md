@@ -5,8 +5,6 @@ target: 3:00
 prereq:
   - "13.1"
 status: scripted
-flags:
-  - "Is Staff Attendance live? (series.yaml decision) Confirm before publishing"
 ---
 
 # 13.2 Draw work zones
@@ -92,5 +90,6 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · manager · decisions via chat · Staff Attendance is live: 'Is Staff Attendance live?' hold flag removed; publish normally
 - 2026-11-03 · critic · 4 changes: [1.1] second-person opening; [2.1] full sidebar path; [5.1] "annotate" and "checks itself" replaced with plain words, thin [5.2] (Show only held the map) merged into it; [6.1] both end-card tiles named by number
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes

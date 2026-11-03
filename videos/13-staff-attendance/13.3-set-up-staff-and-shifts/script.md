@@ -6,8 +6,6 @@ prereq:
   - "13.2"
   - "05.6"
 status: scripted
-flags:
-  - "Is Staff Attendance live? (series.yaml decision) Confirm before publishing"
 ---
 
 # 13.3 Set up staff and shifts
@@ -122,5 +120,6 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · manager · decisions via chat · Staff Attendance is live: 'Is Staff Attendance live?' hold flag removed; publish normally
 - 2026-11-03 · critic · 5 changes: [1.1] second-person opening; [2.1] full sidebar path; [3.2] rest-day line matches the Show (days left off, no switch tapped); [4.1] count button described as the style guide asks; [7.1] end-card tiles named by number
 - 2026-11-03 · validator · checked against master d36d69ed8 · 6 fixes: template hours/breaks use Add → Work/Break → Add hours/Add break, break Paid/Unpaid toggle, linking sets Maryam and Bilal to Shift template + Auto (so [6.5] opens her on Set up and only adds the zone), Yusuf must already be on Class routine for the greyed picker row, linked card text, demo data for the readiness warning

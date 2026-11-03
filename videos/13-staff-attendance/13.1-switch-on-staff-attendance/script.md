@@ -5,8 +5,6 @@ target: 4:00
 prereq:
   - "03.1"
 status: scripted
-flags:
-  - "Is Staff Attendance live? (series.yaml decision) Confirm before publishing"
 ---
 
 # 13.1 Switch on Staff Attendance
@@ -118,5 +116,6 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · manager · decisions via chat · Staff Attendance is live: 'Is Staff Attendance live?' hold flag removed; publish normally
 - 2026-11-03 · critic · 5 changes: [1.1] second-person opening; [2.1] full sidebar path; thin [3.5] merged into [3.4]; [5.1] "lives under" idiom removed; [6.1] all three end-card tiles named by number; fold: Documents for your staff added to Covers (already shown in [4.2], labels checked)
 - 2026-11-03 · validator · checked against master d36d69ed8 · 2 fixes: [3.2] refusal toast shown, [3.3] "is now Manual only" is screen-reader only, so show the line leaving the list instead

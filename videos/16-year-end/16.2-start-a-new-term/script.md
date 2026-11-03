@@ -5,8 +5,6 @@ target: 3:45
 prereq:
   - "05.6"
 status: scripted
-flags:
-  - "Chapter 5 (Staff Attendance class routine term) depends on the open decision 'Is Staff Attendance live?' (series.yaml); cut chapter 5 if Staff Attendance isn't live when this is published"
 ---
 
 # 16.2 Start a new term
@@ -99,6 +97,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · manager · decisions via chat · Staff Attendance is live: chapter 5 'cut if not live' flag removed; chapter 5 stays
 - 2026-11-03 · manager · decisions via chat · Planned features not in the app dropped: alumni removed from Covers, alumni flag removed
 - 2026-11-03 · critic · 1 change: [3.1] "This is Duplicate Class Routines" reworded so the heading is clearly the page name
 - 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: [5.2] Show matches the Say (Spring Term isn't in force yet, so the line says so and the selector goes back to Automatic)

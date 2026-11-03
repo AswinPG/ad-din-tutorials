@@ -3,6 +3,7 @@
 Every instruction given to Claude for this video, newest first, with the result.
 Format: date · who · prompt (verbatim or summarised) · outcome / commit.
 
+- 2026-11-03 · manager · "Decisions via chat" · Staff Attendance is live: chapter 5 'cut if not live' flag removed; chapter 5 stays
 - 2026-11-03 · manager · "Decisions via chat" · Planned features not in the app dropped: alumni removed from Covers, alumni flag removed
 - 2026-11-03 · manager · "use a critic subagent to criticise and find flaws in the script, make it better" · critic pass: 1 fix
 - 2026-11-03 · manager · "use a sub agent to validate the script" · validator pass: 1 Show fix (Staff Attendance term selector back to Automatic)

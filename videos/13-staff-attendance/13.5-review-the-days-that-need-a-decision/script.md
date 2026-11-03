@@ -6,8 +6,6 @@ prereq:
   - "13.3"
 status: scripted
 stage: Daily
-flags:
-  - "Is Staff Attendance live? (series.yaml decision) Confirm before publishing"
 ---
 
 # 13.5 Review the days that need a decision
@@ -111,5 +109,6 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · manager · decisions via chat · Staff Attendance is live: hold flag removed. Per-day review flow confirmed (Save decision, bulk Accept, Approve/Reject for time off); Covers checked against chapters 2–5 and match, no change
 - 2026-11-03 · critic · 4 changes: plan fix: Covers rewritten to the per-day decision flow (Save decision, bulk Accept, Approve/Reject only for time off) and the mismatch flag dropped; [1.1] second-person opening; [2.1] full sidebar path; [7.1] end card named by number
 - 2026-11-03 · validator · checked against master d36d69ed8 · 2 fixes: "will be emailed" comes from changing a time, not the payroll recipient (demo data), [7.1] Bilal's absence and Yusuf's two-issue day were never decided, so they are decided off camera before "Nothing left to decide"

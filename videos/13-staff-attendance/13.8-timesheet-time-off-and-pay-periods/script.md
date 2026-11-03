@@ -10,8 +10,6 @@ audience:
   - Teacher
 stage: Daily
 platform: App
-flags:
-  - "Is Staff Attendance live? (series.yaml decision) Confirm before publishing"
 ---
 
 # 13.8 Timesheet, time off and pay periods
@@ -104,5 +102,6 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · manager · decisions via chat · Staff Attendance is live: 'Is Staff Attendance live?' hold flag removed; publish normally
 - 2026-11-03 · critic · 4 changes: [1.1] second-person opening; [1.2] menu path; [5.1] "live" idiom dropped, end card named by number; fold: new [2.4a] correction sheet (Doesn't look right → What happened? → Send) on the day view (Covers + demo data)
 - 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: [2.3] "These hours were set by …" and its reason sit on the day itself, above the tabs; the History tab lists "Your hours for this day were set by hand."

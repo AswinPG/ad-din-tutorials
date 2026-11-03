@@ -10,8 +10,6 @@ audience:
   - Teacher
 stage: Daily
 platform: App
-flags:
-  - "Is Staff Attendance live? (series.yaml decision) Confirm before publishing"
 ---
 
 # 13.7 Check in, breaks and check out
@@ -120,5 +118,6 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · manager · decisions via chat · Staff Attendance is live: 'Is Staff Attendance live?' hold flag removed; publish normally
 - 2026-11-03 · critic · 7 changes: [1.1] second-person opening; [2.1] "right on" dropped; [3.1] Say names Read it now (matches Show); [3.2] second Got it said; thin [5.2] ("tap End break") merged into [5.1]; [7.1] "say" → "for example", [7.3] elliptical question made plain; [9.1] end card named by number
 - 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: [3.1] the notice opens from "Read it now" on the clock card (or from My Attendance), not from tapping the card

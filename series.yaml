@@ -360,7 +360,8 @@ decisions:
   - title: "Is Staff Attendance live?"
     detail: "The Oct 3 handover note says the pilot hadn’t run in UAT or production. Confirm before Track 13 goes public. 16.2 chapter 5 (staff on a new term) depends on it too."
     videos: "13.1–13.8, 16.2"
-    status: open
+    status: decided
+    answer: "Live: publish Track 13 normally"
   - title: "Who needs a seat?"
     detail: "Every Admin Portal and portal page checks the person’s own Premium (bought, a seat, or a family share), not the organisation’s seats: admins, teachers, parents and Staff Attendance users each need one; students need their own or a family share to be placed in a class; Basic Announcements (TV) also checks the admin’s own Premium. Organization Management and the public program pages have no check. Scripts show this as it works today. Confirm it’s intended."
     videos: "02.4, 04.4, 05.2–05.7, 06.1, 06.3–06.5"
@@ -423,7 +424,8 @@ decisions:
   - title: "Staff Attendance review flow changed"
     detail: "Approve, Adjust, Reject and Dismiss are gone on master: the Review page takes one decision per day (Save decision) or bulk Accept. 13.5 is scripted on the new flow. Confirm and update its Covers."
     videos: "13.5"
-    status: open
+    status: decided
+    answer: "Confirmed: per-day flow; 13.5 Covers match"
   - title: "Custom Comments Library is legacy"
     detail: "It feeds only older report-card templates (the app marks it Legacy Comment Bank, Deprecated); the current template uses Edit and Write with AI. Keep that part of 12.2, cut it, or move it to its own short video?"
     videos: "12.2"
