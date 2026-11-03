@@ -60,7 +60,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Open the "Select an Organisation" list; choose "Masjid Al-Noor-(masjid)". The list shows "Ramadan Iftar Fund".
 
 #### [2.3]
-**Say:** Tap **Add Campaign**.
+**Say:** Tap **Add Campaign**. A new campaign starts as a draft, so no one sees it yet.
 **Show:** Click "Add Campaign". The Donation page opens with a "Draft" chip next to its title.
 
 ### 3. Pictures and details
@@ -117,7 +117,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Click "Save". The Campaign List shows "Roof Repair Appeal"; spotlight the Goal Amount and Collected Amount columns.
 
 #### [6.4] Live
-**Say:** Published campaigns appear on your masjid's Ad-Din website, under **Masjid Donations**.
+**Say:** If your masjid has an Ad-Din website, published campaigns appear there, under **Masjid Donations**.
 **Show:** Browser on the Masjid Al-Noor demo website: the "Masjid Donations" section with "Roof Repair Appeal" first.
 
 ### 7. Next
@@ -127,4 +127,5 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 2 changes: [2.3] explains the Draft chip on screen (sets up [5.3]); [6.4] no longer implies every masjid has a website (add-on), same wording as 08.3 [4.2]
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes

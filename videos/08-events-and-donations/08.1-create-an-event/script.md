@@ -38,7 +38,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. Share what's happening
 #### [1.1] Opening
-**Say:** Lectures, iftars, picnics and classes: events tell your community what's coming up. In this video, a masjid admin creates an event and publishes it.
+**Say:** Lectures, iftars, picnics and classes: events tell your community what's coming up. In this video, you create an event and publish it.
 **Show:** Title card: "Create an event".
 
 #### [1.2]
@@ -122,9 +122,10 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Spotlight the new "Family Picnic" card with its poster and date badge.
 
 #### [8.3] Next
-**Say:** Next, set up an event that repeats every week and choose whether it shows on the masjid TV.
+**Say:** Next, make an event repeat every week and show it on the masjid TV. Or see how members find events and mark that they're going.
 **Show:** End card with two tiles: "08.2 Repeating events and events on the masjid TV" and "15.3 Events: going, interested, calendar".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 2 changes: [1.1] second person instead of "a masjid admin"; [8.3] Say now names both end-card videos
 - 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: [6.2] madrasah invitees are Staff, Followers, Parents, Students (no Volunteers)

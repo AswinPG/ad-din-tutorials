@@ -43,11 +43,11 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. Where people give
 #### [1.1] Opening
-**Say:** When someone wants to support your masjid, they need one clear place to go. This video sets that place up: your masjid's donation page.
+**Say:** When someone wants to support your masjid, they need one clear place to go. In this video, you set up that place: your masjid's donation page.
 **Show:** Title card: "Set up donations".
 
 #### [1.2]
-**Say:** You'll need a published page that explains how to give, made under Introduction & Services. Or the address of a giving page you already use.
+**Say:** You'll need a published page that explains how to give; video 04.9 shows how to make one. Or use the address of a giving page you already have.
 **Show:** Opening card from You'll need. Quick shot of the published "Support Masjid Al-Noor" page.
 
 ### 2. Open the Services tab
@@ -73,12 +73,12 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Click "Page URL"; type the demo link in the box. Then switch back to "Donation Pages" with "Support Masjid Al-Noor" selected.
 
 #### [3.4] Save
-**Say:** Tap **Save**.
+**Say:** Tap **Save** to keep your choice.
 **Show:** Click "Save" under the Donation Page box.
 
 ### 4. Where people see it
 #### [4.1] In the app
-**Say:** Now, when members of your masjid tap **Donation** in the Ad-Din app, your page opens.
+**Say:** Now, anyone who has your masjid as their home masjid can tap **Donation** in the Ad-Din app, and your page opens.
 **Show:** Phone frame: member account on the app home. Tap the Donation tile; "Support Masjid Al-Noor" opens.
 
 #### [4.2] On your website
@@ -96,4 +96,5 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 4 changes: [1.1] split phrasal verb removed; [1.2] points to 04.9 for the page it needs; [3.4] two-word scene given a reason; [4.1] "members" -> home masjid, as 15.4 says
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes

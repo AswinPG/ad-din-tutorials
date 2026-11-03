@@ -98,9 +98,10 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 6. Next
 #### [6.1] Close
-**Say:** Every gift is now in one place, and your total is accurate. To see where your community gives, watch the donating video.
+**Say:** Every gift is now in one place, and your total is right. Next, see how your community gives, in the app and on your website.
 **Show:** End card with two tiles: "15.4 Donate to your masjid" and "08.4 Run a fundraising campaign".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 1 change: [6.1] vague "the donating video" -> says what 15.4 shows
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes

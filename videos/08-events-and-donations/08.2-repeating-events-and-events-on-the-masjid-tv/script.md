@@ -37,11 +37,11 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. Events that come back
 #### [1.1] Opening
-**Say:** A weekly halaqa or a monthly family night shouldn't need a new event every time. Let's make an event repeat, and put it on your masjid's TV screen.
+**Say:** A weekly Tafsir circle or a monthly family night shouldn't need a new event every time. In this video, you make an event repeat and show it on your masjid's TV screen.
 **Show:** Title card: "Repeating events and events on the masjid TV".
 
 #### [1.2]
-**Say:** You already know how to fill in an event: title, type, category, date and venue. We'll start from a new event with those filled in.
+**Say:** Start a new event as usual, with its title, type, category, date and venue. Here, they're already filled in.
 **Show:** Sidebar → Events → Add New Event. The form with "Tafsir Circle", Public, Religion, next Friday 8:00 PM to 9:00 PM already filled in.
 
 ### 2. Set the repeat
@@ -68,7 +68,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Spotlight the Public / Private switch with Public selected.
 
 #### [3.3] The TV picture
-**Say:** The screen uses **Image for Prayer Dashboard**, a tall poster. If you skip it, it uses the mobile picture instead.
+**Say:** The screen uses **Image for Prayer Dashboard**, a tall poster. If you skip it, the TV uses the **Image for Mobile/Web** picture instead.
 **Show:** Upload the tall poster to the "Image for Prayer Dashboard" tile.
 
 #### [3.4] Save
@@ -109,4 +109,5 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 3 changes: [1.1] "halaqa" (unexplained, not an app term) -> Tafsir circle, matches the demo; [1.2] no longer assumes 08.1 was watched; [3.3] "mobile picture" named by its label as in 08.1
 - 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: [5.3] the notify box starts ticked (eventNotify = true), so no tick step
