@@ -356,35 +356,83 @@ playlists:
     - 15.1-15.8
     - "07.1"
 decisions:
-  - title: Is Staff Attendance live?
-    detail: The Oct 3 handover note says the pilot hadn’t run in UAT or production. Confirm before Track 13 goes public.
-    videos: 13.1–13.8
+  - title: "Is Staff Attendance live?"
+    detail: "The Oct 3 handover note says the pilot hadn’t run in UAT or production. Confirm before Track 13 goes public. 16.2 chapter 5 (staff on a new term) depends on it too."
+    videos: "13.1–13.8, 16.2"
     status: open
-  - title: Who needs a seat?
-    detail: The madrasah admin page guard checks the user’s own Premium, not the organisation’s seats. Decide what’s intended before scripting.
-    videos: "02.4"
+  - title: "Who needs a seat?"
+    detail: "Every Admin Portal and portal page checks the person’s own Premium (bought, a seat, or a family share), not the organisation’s seats: admins, teachers, parents and Staff Attendance users each need one; students need their own or a family share to be placed in a class; Basic Announcements (TV) also checks the admin’s own Premium. Organization Management and the public program pages have no check. Scripts show this as it works today. Confirm it’s intended."
+    videos: "02.4, 04.4, 05.2–05.7, 06.1, 06.3–06.5"
     status: open
-  - title: First billing setup for a new organisation
-    detail: How a brand-new organisation gets its billing account isn’t clear from the code. Walk it on dev first.
+  - title: "First billing setup for a new organisation"
+    detail: "The code answers it: opening View plan creates the billing account; seats then need a card with billing country and state, or Via Invoice with a country; once the first invoice is paid Ad-Din gives a seat to the first admin if none has one. 02.3 is scripted that way. Settle after one walk-through on dev."
     videos: "02.3"
     status: open
-  - title: People are added by GUID
-    detail: There are no email invites, so videos teach how to find and share your GUID.
-    videos: 00.5, 03.3, 03.4
+  - title: "How people are added"
+    detail: "An existing account is added by its GUID (no email invites). Add New creates a new account and emails the person a username and password. Scripts show both. The add-user screens still point to an old “Settings > My Account > GUID” path, two screens disagree on where the GUID is, and there is no copy button next to it."
+    videos: "00.5, 03.3–03.5, 06.4"
     status: open
-  - title: Sign-up page links
-    detail: The Terms of Service and Privacy Policy links go nowhere. Fix them or avoid zooming in.
-    videos: "00.2"
+  - title: "Sign-up and register page links"
+    detail: "The Terms of Service and Privacy Policy links on the sign-up page go nowhere; on the register-organisation page Terms opens the Privacy Policy. Fix them or keep the shots wide."
+    videos: "00.2, 01.1, 06.2"
     status: open
-  - title: Exam Marks
-    detail: The older feature, off by default; the Services tab recommends Academic Activity instead. Keep or drop?
-    videos: "10.11"
+  - title: "Exam Marks"
+    detail: "The older feature, off by default; the Services tab recommends Academic Activity instead. Exam Based promotion (16.1) depends on it. Keep or drop?"
+    videos: "10.11, 16.1"
     status: open
-  - title: No online fee payment for parents
-    detail: PayPal keys exist but parents have no pay button, so 14.4 shows invoice history only.
-    videos: "14.4"
+  - title: "Payment Module out of scope"
+    detail: "Track 11 is on hold. Parents have no online pay button (PayPal keys exist), Payment and Invoice History need the Payment Module switch, and Payment Reports need fee data. Each script keeps these to one cuttable chapter or line."
+    videos: "03.2, 12.4, 12.6, 14.4"
     status: open
-  - title: Left out on purpose
-    detail: Carpool (switched off), social login (no buttons), Ideas (app feedback), the unused clock-in placeholder, the old teacher-attendance register.
-    videos: —
+  - title: "Masjid PayPal keys can’t be saved"
+    detail: "Bug: the masjid Integrations tab passes the madrasah id (editMasjid.component.html, [orgId]=\"madressahId\"), so keys never load and saving fails. Works on a madrasah. Fix before recording to put the PayPal step back in 08.3 and PayPal gifts in 08.5."
+    videos: "03.2, 08.3, 08.5"
+    status: open
+  - title: "TV display pages are server-rendered"
+    detail: "The prayer-time TV screens and their previews come from the Ad-Din server, not the Angular app. Stub them in the mocked demo world, or record those shots from dev."
+    videos: "04.4–04.6"
+    status: open
+  - title: "Internal wiki links in the app"
+    detail: "Several “Learn more” / “this guide” links open ad-din.atlassian.net. Are those pages public? If not, hide or fix them before publishing; scripts don’t click them."
+    videos: "04.1, 04.3, 04.6"
+    status: open
+  - title: "Zawal and Al-Duha minutes locked"
+    detail: "These minutes can only be edited with the Custom calculation method, so Makrooh notices may never show for masjids on a preset method. Fix in the app, or keep the flag?"
+    videos: "04.1, 04.6"
+    status: open
+  - title: "Donation campaigns are website-only"
+    detail: "Members can’t see campaigns in the app; they show only on the public website (Website add-on). The Publish note says “in the app and on your website”, and the in-app donation page shows admin labels to members."
+    videos: "08.4, 15.4"
+    status: open
+  - title: "Website enquiries are email-only"
+    detail: "There is no enquiries screen (the list component isn’t reachable); contact-form messages go to the organisation’s email. 09.4 teaches replying from email. Add a screen, or keep it?"
+    videos: "09.4"
+    status: open
+  - title: "Which side sends the website link request"
+    detail: "The organisation that accepts keeps its website and address; the sender moves onto it. 09.4 advises sending from the madrasah (“Link your Masjid”) so the masjid’s address stays. Confirm."
+    videos: "09.4"
+    status: open
+  - title: "Planned items that aren’t in the app"
+    detail: "Masjid gallery albums (04.8), Alumni lists (05.4, 16.2; hidden until the alumni module is redone), Subject for report (05.1; commented out), a calendar at phone width (15.3). Each stays in Covers with a flag. Drop them, or are they coming back?"
+    videos: "04.8, 05.1, 05.4, 15.3, 16.2"
+    status: open
+  - title: "Staff Attendance review flow changed"
+    detail: "Approve, Adjust, Reject and Dismiss are gone on master: the Review page takes one decision per day (Save decision) or bulk Accept. 13.5 is scripted on the new flow. Confirm and update its Covers."
+    videos: "13.5"
+    status: open
+  - title: "Custom Comments Library is legacy"
+    detail: "It feeds only older report-card templates (the app marks it Legacy Comment Bank, Deprecated); the current template uses Edit and Write with AI. Keep that part of 12.2, cut it, or move it to its own short video?"
+    videos: "12.2"
+    status: open
+  - title: "Admins of a pending organisation"
+    detail: "The menu stays locked behind Pending Approval until Ad-Din approves, which contradicts registration term 3 (the Administrator can begin to configure). Change the term or unlock setup before approval?"
+    videos: "01.2"
+    status: open
+  - title: "Native and server pages outside the label check"
+    detail: "Some screens aren’t in the Angular app: the native Premium page and Qiblah compass (MAUI app), password reset (Razor), public website (AdDin.PublicWebpages). Their labels are checked by hand. The phone’s own permission dialogs and lock-screen notification (00.7) need stylised graphics or a real-device capture: which?"
+    videos: "00.3, 00.7, 02.2, 09.6, 15.1, 15.4"
+    status: open
+  - title: "Left out on purpose"
+    detail: "Carpool (switched off), social login (no buttons), Ideas (app feedback), the unused clock-in placeholder, the old teacher-attendance register."
+    videos: "—"
     status: open
