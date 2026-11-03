@@ -30,6 +30,7 @@ Post photos and notes to your class as a teacher, and like, save and follow up o
 - Demo parent account (for example "Mr. Yusuf Rahman") with two children, one in Hifz Boys A, shown in the app (phone frame)
 - A class photo on the recording machine (for example `hifz-circle.jpg`), with no recognisable children’s faces
 - Two earlier announcements in the feed, one with a few likes and views
+- The demo teacher teaches one subject in Hifz Boys A (for example "Hifz"), so Message teacher ([6.3]) opens with the teacher and subject already picked
 - Saving succeeds in the demo world
 
 ## Script
@@ -100,7 +101,7 @@ Post photos and notes to your class as a teacher, and like, save and follow up o
 ### 7. What the teacher sees
 #### [7.1]
 **Say:** Back on the teacher’s side, each post counts its likes and views. Tap them to see who liked or saw it.
-**Show:** Teacher account: on the photo post, click "1 like", then the views count; the lists "Liked by" and "Seen by" open.
+**Show:** Teacher account: on the photo post, click "1 like"; the "Engagement" window opens on "Liked by". Click "Seen by" to switch lists, then close it.
 
 ### 8. Next
 #### [8.1] Done
@@ -109,3 +110,4 @@ Post photos and notes to your class as a teacher, and like, save and follow up o
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · validator · checked against master d36d69ed8 · 2 fixes: [7.1] likes and views open one Engagement window with Liked by / Seen by tabs; demo data, the teacher has one subject so Message teacher preselects it

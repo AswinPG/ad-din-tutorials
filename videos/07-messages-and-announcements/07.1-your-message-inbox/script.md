@@ -55,8 +55,8 @@ Find, read, filter and organise the messages and news your masjid, madrasah and 
 
 ### 3. Filter your messages
 #### [3.1] Filters
-**Say:** The buttons under the search narrow the list: **All**, **Unread**, **Read**, **Flagged** and **Archived**.
-**Show:** Click Unread, Read, Flagged and Archived in turn, then All. The list changes each time.
+**Say:** The buttons under the search narrow the list: **All**, **Read**, **Unread**, **Flagged** and **Archived**.
+**Show:** Click Read, Unread, Flagged and Archived in turn, then All. The list changes each time.
 
 #### [3.2] Sent
 **Say:** If you can send messages, for example as an admin or teacher, you’ll also see **Sent**, with the messages you’ve sent.
@@ -96,3 +96,4 @@ Find, read, filter and organise the messages and news your masjid, madrasah and 
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: [3.1] filter buttons in the app’s order (All, Read, Unread, Flagged, Archived)

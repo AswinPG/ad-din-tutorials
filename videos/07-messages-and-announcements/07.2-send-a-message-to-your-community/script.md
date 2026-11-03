@@ -89,7 +89,7 @@ Send a message from your masjid to all its followers, or just to staff or volunt
 
 ### 6. Check and send
 #### [6.1] Summary
-**Say:** The line at the bottom sums it up, for example: Sending to Staff, Volunteers, via Email, Push notification. Check it, then tap **Send Message**.
+**Say:** The line at the bottom sums it up, for example: Sending to Volunteers, Staff via Email, Push notification. Check it, then tap **Send Message**.
 **Show:** Zoom on the footer summary, then click "Send Message". Confirmation message; the window closes.
 
 #### [6.2]
@@ -107,3 +107,4 @@ Send a message from your masjid to all its followers, or just to staff or volunt
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: [6.1] footer summary wording as the app builds it (Volunteers before Staff, no comma before via)
