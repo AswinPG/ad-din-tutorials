@@ -99,8 +99,8 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Spotlight the two options; click "Delete Only This Event".
 
 #### [5.3]
-**Say:** Tick the box to tell followers by email and push notification, then tap **Yes**.
-**Show:** Tick "Notify followers via Email & Push Notification". Click Yes. That one card disappears; the other Fridays stay.
+**Say:** The box to tell followers by email and push notification is already ticked. Untick it to delete quietly, then tap **Yes**.
+**Show:** Spotlight the ticked "Notify followers via Email & Push Notification" box; leave it ticked. Click Yes. That one card disappears; the other Fridays stay.
 
 ### 6. Next
 #### [6.1] Close
@@ -109,3 +109,4 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: [5.3] the notify box starts ticked (eventNotify = true), so no tick step

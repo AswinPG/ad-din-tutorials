@@ -95,9 +95,9 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Click Private. The preview shows a lock and "Private". Scroll to the new invitees card.
 
 #### [6.2] Who's invited
-**Say:** For a masjid, tick Volunteers, Staff or Followers. For a madrasah event, you can also invite Parents or Students of one class and section.
+**Say:** For a masjid, tick Volunteers, Staff or Followers. For a madrasah event, tick Staff or Followers, or the Parents or Students of one class and section.
 **Show:** Tick "Volunteers" and "Staff". Quick cut: the same card for Al-Noor Madrasah with Parents and Students and their class and section lists. Back on the masjid event, click Public again; the invitees card disappears.
-**Caption:** Masjid: Volunteers, Staff or Followers. Madrasah: also Parents or Students of a class and section.
+**Caption:** Masjid: Volunteers, Staff or Followers. Madrasah: Staff, Followers, or Parents or Students of a class and section.
 
 ### 7. Notifications and pictures
 #### [7.1] Notification Channel
@@ -127,3 +127,4 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: [6.2] madrasah invitees are Staff, Followers, Parents, Students (no Volunteers)
