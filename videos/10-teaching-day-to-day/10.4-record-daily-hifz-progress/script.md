@@ -1,10 +1,10 @@
 ---
 id: "10.4"
 title: Record daily Hifz progress
-target: 4:00
+target: 3:30
 prereq:
   - "10.3"
-status: planned
+status: scripted
 audience:
   - Teacher
 ---
@@ -12,7 +12,7 @@ audience:
 # 10.4 Record daily Hifz progress
 
 ## Goal
-_What the viewer can do after watching, in one sentence. Written with the script._
+Record what each Hifz student recited today, count the mistakes, add a note for the parents, and mark the task passed or failed.
 
 ## You'll need
 <!-- Shown on the opening card. Generated from prereq/plan/switch if left empty. -->
@@ -22,6 +22,11 @@ _What the viewer can do after watching, in one sentence. Written with the script
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
+- Demo madrasah "Al-Noor Madrasah" (Premium); teacher Yusuf Patel teaches Class "Hifz Boys", section "A"
+- A daily "Sabaq" mapping (Quran by Ayah) for that section, with a mark deduction per mistake set on the subject
+- Today's list: five students; one Not Submitted, two Pending Review (one with a note from the parent), one Marked, one Failed (1)
+- The student marked on camera has a previous attempt with a teacher's note
+- Web: signed in as Yusuf. App: the same account in a phone frame for the last chapter
 
 ## Script
 <!--
@@ -31,7 +36,80 @@ Optional **Caption:** overrides the subtitle text. Translations in i18n/<lang>.m
 See docs/SCRIPT-FORMAT.md.
 -->
 
-_Not scripted yet._
+### 1. Today's Hifz
+#### [1.1] Opening
+**Say:** Each day you record what your Hifz students recited. You'll mark the portion, count the mistakes, and give the result.
+**Show:** Title card: "Record daily Hifz progress".
+
+#### [1.2]
+**Say:** Your admin has already set up the Hifz tasks for your class, so today's list is waiting for you.
+**Show:** Opening card.
+
+### 2. Open today's list
+#### [2.1] Quran Hifz Assignments
+**Say:** Open **Teacher Portal**, then **Quran Hifz Assignments**. **All Assignments** lists today's tasks, one row per student.
+**Show:** Sidebar → Teacher Portal → Quran Hifz Assignments. Spotlight the All Assignments card.
+
+#### [2.2]
+**Say:** Use **Search** to find a student, or tap the date to mark another day.
+**Show:** Spotlight the Search box, then the date box.
+
+#### [2.3] Status
+**Say:** **Status** shows where each one stands: **Not Submitted**, **Pending Review** when the family has sent it in, **Marked**, or **Failed**.
+**Show:** Spotlight the Status column badges one by one.
+
+### 3. The portion recited
+#### [3.1] Pick a student
+**Say:** Tap a student. Their task opens with the **Previous attempt** at the top, so you can see where they stopped last time.
+**Show:** Click a "Pending Review" row. The panel opens on the right. Click "Previous attempt" to expand it: Start, End and the Teacher's Note.
+
+#### [3.2] Start and end
+**Say:** Under **Current Grading**, set the **Start Ayah** and **End Ayah** of today's portion. Ad-Din shows the total.
+**Show:** Change Start Ayah and End Ayah with the pickers. Zoom on the total at the top right of Current Grading.
+
+#### [3.3]
+**Say:** For tasks set up by Juz, you pick a **Start** and **End** in the Juz instead.
+**Show:** Quick cut to a by-Juz task showing the Start and End pickers, then back.
+
+### 4. Mistakes
+#### [4.1] Number of Mistakes
+**Say:** Tap the **Number of Mistakes**, from one to ten, or type a higher number in the last box.
+**Show:** Click "2". Spotlight the "10+" box.
+
+#### [4.2]
+**Say:** Ad-Din takes off the set marks for each mistake, and **Marks:** shows the result.
+**Show:** Zoom on the helper text "marks deducted per mistakes" and the "Marks:" box as it updates.
+
+### 5. Notes for the family
+#### [5.1] From parent
+**Say:** Open **Notes**. **From parent** shows anything the family sent with today's work.
+**Show:** Click "Notes" to expand. Spotlight the From parent box.
+
+#### [5.2] Note for parent
+**Say:** Write a **Note for parent**. Type a slash, or tap a chip, to add a ready-made note.
+**Show:** Click in "Note for parent", type "/", pick "Excellent effort" from the menu. The note fills in with the student's name.
+
+#### [5.3]
+**Say:** If you track it, set **Time Spend** too.
+**Show:** Click the Time Spend pill, pick 00:20, click "Done".
+
+### 6. The result
+#### [6.1] Pass or Failed
+**Say:** Finish with **Pass**. If the student needs to repeat the portion, tap **Failed** instead.
+**Show:** Spotlight both buttons. Click "Pass".
+
+#### [6.2]
+**Say:** A message confirms it, and the row now shows **Marked**. Move on to the next student.
+**Show:** Green confirmation message. The row's Status changes to "Marked". Click the next row.
+
+### 7. In the app
+#### [7.1]
+**Say:** In the app it works the same way. Tap **Back to Listing** to return to your list.
+**Show:** Phone frame. The same marking screen; tap "Back to Listing" at the bottom.
+
+#### [7.2] Close
+**Say:** Today's Hifz is recorded, and parents see the result and your note in their app. Next, see what families see, or take class attendance.
+**Show:** End card with two tiles: "14.3 Follow Hifz progress and classwork" and "10.2 Take class attendance".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
