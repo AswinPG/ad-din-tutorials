@@ -4,7 +4,7 @@ Guidance for Claude Code sessions in this repo: the Ad-Din customer tutorial vid
 
 ## What this is
 
-97 in-scope tutorial videos (101 planned; Track 11 Payment Module on hold) for the Ad-Din masjid and madrasah platform. Self-contained, five minutes or less, English screens with six narration languages (en, ar, ur, bn, ms, id) as audio and subtitle tracks on one video. Read `README.md` for the layout and commands, and `docs/` for the details.
+100 in-scope tutorial videos (104 planned; Track 11 Payment Module on hold), all scripted 2026-11-03 for the Ad-Din masjid and madrasah platform. Self-contained, five minutes or less, English screens with six narration languages (en, ar, ur, bn, ms, id) as audio and subtitle tracks on one video. Read `README.md` for the layout and commands, and `docs/` for the details.
 
 ## Rules
 
