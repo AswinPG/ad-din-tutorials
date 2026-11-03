@@ -54,7 +54,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 2. Decide which address stays
 #### [2.1] The two cards
-**Say:** On your masjid's website home, you'll see **Link your Madrasah**. On the madrasah's, it's **Link your Masjid**.
+**Say:** On your masjid's website home page, you'll see **Link your Madrasah**. On the madrasah's, it's **Link your Masjid**.
 **Show:** Sidebar → Website → Masjid Website. Spotlight the "Link your Madrasah" card. Switch to Madrasah with the top-right switcher; spotlight "Link your Masjid".
 
 #### [2.2]
@@ -64,7 +64,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 3. Send the request
 #### [3.1] Link your Masjid
-**Say:** On the madrasah's website home, tap **Link your Masjid**. You'll see the three steps, and the masjids you follow.
+**Say:** On the madrasah's website home page, tap **Link your Masjid**. You'll see the three steps, and the masjids you follow.
 **Show:** Click "Link your Masjid". The "Organization linking" window shows the steps and the list of followed masjids.
 
 #### [3.2]
@@ -73,7 +73,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 4. Approve it
 #### [4.1] Review request
-**Say:** Now the masjid's admin approves. On the masjid's website home, a note says there's a pending request. Tap **Review request**.
+**Say:** Now the masjid's admin approves. On the masjid's website home page, a note says there's a pending request. Tap **Review request**.
 **Show:** Switch to Masjid with the top-right switcher. Spotlight "You have 1 pending linking request for your website." Click "Review request".
 
 #### [4.2] Accept
@@ -113,4 +113,5 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 3 changes: [2.1] [3.1] [4.1] "website home" -> "website home page", the term 09.1 uses
 - 2026-11-03 · validator · checked against master d36d69ed8 · 2 fixes: contact form sent with the paper-plane button after reCAPTCHA (Send Message is a heading), real thank-you text; reCAPTCHA added to demo data

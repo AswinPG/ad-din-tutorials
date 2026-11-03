@@ -74,7 +74,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Toggle "Action button" on. Click "Internal page"; choose "All Masjid Events" (the banner's internal-page list has no prayer-times page). Switch the preview to Mobile, then back to Desktop.
 
 #### [3.4]
-**Say:** Tap **Save changes**. Add more banners the same way, and drag them into the order you want.
+**Say:** Tap **Save changes** in the banner editor. Add more banners the same way, and drag them into the order you want.
 **Show:** Click "Save changes". The banner strip shows slide 1. Click "Add banner", add the iftar photo, save. Drag slide 2 before slide 1.
 
 #### [3.5] Speed and text
@@ -110,4 +110,5 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 1 change: [3.4] says which Save changes (banner editor vs the page button in [5.1])
 - 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: banner action button linked to "All Masjid Events" (banner internal-page list has no Prayer Times page)

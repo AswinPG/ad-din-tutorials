@@ -92,9 +92,10 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 6. Next
 #### [6.1] Close
-**Say:** Check back every few weeks to see your website grow. Next, see your site the way visitors do.
+**Say:** A new website shows little until Google has found it, so check back every few weeks. Next, see your site the way visitors do.
 **Show:** End card with two tiles: "09.6 What visitors see" and "09.4 Link masjid and madrasah websites; enquiries".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 1 change: [6.1] sets expectations for a new site instead of promising growth
 - 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: all four metric tiles start ticked; scene [3.3] now unticks to hide lines

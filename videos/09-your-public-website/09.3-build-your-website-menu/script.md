@@ -108,4 +108,5 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 0 changes: clear and well paced; one taste call left for the manager ([4.1]/[4.2] builds a top-level item, then deletes it)
 - 2026-11-03 · validator · checked against master d36d69ed8 · 2 fixes: "starts with five" softened (a sixth Masjid submenu is added if service pages exist at activation); demo data notes seeding order

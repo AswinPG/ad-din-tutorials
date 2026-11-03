@@ -46,7 +46,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. A tour of your masjid's website
 #### [1.1] Opening
-**Say:** Every masjid with an Ad-Din website gets a home on the web that stays up to date by itself. Let's take the tour a visitor would.
+**Say:** Every masjid with an Ad-Din website gets a public site that updates itself from Ad-Din. Let's see it the way a visitor does.
 **Show:** Title card: "What visitors see".
 
 #### [1.2]
@@ -55,7 +55,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 2. The home page
 #### [2.1] Banner and menu
-**Say:** At the top: the masjid's logo, its social media links, and the menu. Below, the banner slides rotate with news and welcome messages.
+**Say:** At the top: the masjid's logo, its social media links, and the menu. Below, the banner slides change every few seconds.
 **Show:** Home page. Spotlight the logo, social icons and menu bar; let the banner change slide once.
 
 #### [2.2] Prayer Times
@@ -118,4 +118,5 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 2 changes: [1.1] idioms ("a home on the web", "take the tour") made literal; [2.1] banner no longer said to carry news (it shows the admin's slides)
 - 2026-11-03 · validator · checked against master d36d69ed8 · 5 fixes: home-page scroll order; Gallery is one grid, not albums; contact form send button + reCAPTCHA + real thank-you text (Say no longer says tap Send Message); campaign PayPal button in demo data

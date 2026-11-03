@@ -20,6 +20,7 @@ Activate your masjid's Ad-Din website, choose its web address, and, if you alrea
 
 ## Covers
 - Activate website, website address, custom domain
+- website home page for admins: site card, Quick actions, Browse website
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
@@ -42,7 +43,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Title card: "Turn on your website".
 
 #### [1.2]
-**Say:** The website is an add-on. You can switch it on and set it up first; visitors see it once the add-on is active.
+**Say:** The website is an add-on; video 02.5 shows how to add it. You can switch the website on and set it up first. Visitors see it once the add-on is active.
 **Show:** Opening card from You'll need.
 
 ### 2. Activate the website
@@ -51,22 +52,18 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Sidebar → Website, expanded. Spotlight "Masjid Website" and "Madrasah Website"; click "Masjid Website".
 
 #### [2.2]
-**Say:** The welcome page explains what you get. Tap **Alright, activate website for my organization**.
+**Say:** The welcome page explains what you get. Tap **Alright, activate website for my organization**. Only an admin of the masjid can do this.
 **Show:** The welcome page with the showcase picture. Click "Alright, activate website for my organization"; a short spinner.
-**Caption:** Tap "Alright, activate website for my organization".
-
-#### [2.3]
-**Say:** Only an admin of the masjid can do this. Anyone else sees a short message instead.
-**Show:** Hold on the button area.
+**Caption:** Tap "Alright, activate website for my organization". Only an admin can do this.
 
 ### 3. Your website at a glance
 #### [3.1] Organization details
 **Say:** Your website's home page opens. At the top is your new web address. Tap the copy button to share it.
-**Show:** The "Organization details" page. Spotlight the address in the site card; click the copy icon; toast "Address copied".
+**Show:** The "Organization details" page, with Home highlighted in the top bar. Spotlight the address in the site card; click the copy icon; toast "Address copied".
 
 #### [3.2] Live
-**Say:** A green **Live** tag means visitors can see the site. **Open website** shows it in a new tab.
-**Show:** Spotlight the "Live" chip and the "Open website" button.
+**Say:** A green **Live** tag means visitors can see the site. **Open website**, or **Browse website** at the top right, shows it in a new tab.
+**Show:** Spotlight the "Live" chip and the "Open website" button, then "Browse website" at the top right.
 
 #### [3.3] No add-on yet
 **Say:** Without the add-on, you'll see **Subscription needed**, and visitors get a "temporarily unavailable" page. Tap **Subscribe to preview** to add it.
@@ -76,6 +73,10 @@ See docs/SCRIPT-FORMAT.md.
 #### [3.4] The tabs
 **Say:** Along the top are **Home**, **Menu**, **Settings** and **Statistics**, with shortcuts to add pages, news, events and prayer times.
 **Show:** Spotlight the top bar tabs one by one.
+
+#### [3.4a] Quick actions
+**Say:** Further down, **Quick actions** take you straight to what you change most: the menu, the theme, prayer times and events.
+**Show:** Scroll to "Quick actions"; spotlight "Edit website menu", "Customize theme", "Update prayer times" and "Post an event" in turn.
 
 ### 4. Choose your web address
 #### [4.1] Website address
@@ -91,12 +92,12 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Click "Save new address"; spinner, success toast. Spotlight "Visit site" and "Copy link".
 
 #### [4.4]
-**Say:** Your site comes with a secure padlock built in, so there's nothing extra to set up.
+**Say:** Your Ad-Din address is secure from day one, with the padlock in the browser. There's nothing extra to set up.
 **Show:** Open "Why does Ad-Din give you a subdomain?"; spotlight "Secure from day one." Close it.
 
 ### 5. Use a domain you already own
 #### [5.1] Custom domain
-**Say:** Already own a domain, like your masjid's dot org? Open **Already own a domain? Use it instead**.
+**Say:** Already own a web address for your masjid, such as yourmasjid.org? Open **Already own a domain? Use it instead**.
 **Show:** Scroll down; click "Already own a domain? Use it instead". The three steps open.
 
 #### [5.2] Step one
@@ -119,4 +120,5 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 5 changes: [1.2] points to 02.5 for the add-on; [2.3] dead-air scene merged into [2.2]; [4.4] padlock line made literal; [5.1] "dot org" -> yourmasjid.org (translatable); fold: website home page named in Covers, Browse website in [3.2], new [3.4a] Quick actions (labels checked in pfw main/menu templates)
 - 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: demo address shown as the app builds it (Masjid-Al-Noor, capitals kept)
