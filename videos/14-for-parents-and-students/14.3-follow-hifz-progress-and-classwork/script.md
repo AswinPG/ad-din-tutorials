@@ -1,25 +1,31 @@
 ---
 id: "14.3"
 title: Follow Hifz progress and classwork
-target: 4:00
+target: 3:30
 prereq:
   - "14.1"
-status: planned
+status: scripted
 ---
 
 # 14.3 Follow Hifz progress and classwork
 
 ## Goal
-_What the viewer can do after watching, in one sentence. Written with the script._
+Follow your child's daily Hifz recitation and their classwork, with scores, from the parent home in the Ad-Din app.
 
 ## You'll need
 <!-- Shown on the opening card. Generated from prereq/plan/switch if left empty. -->
+- The Ad-Din app, signed in with your parent account
+- A child in a Hifz class, and in a class that uses Academic Activity for classwork
 
 ## Covers
 - Hifz progress card, My Classwork, scores
 
 ## Demo data
-<!-- Records the demo organisation must have for this video (classes, students, events...). -->
+- Parent "Yusuf Rahman" in the app; child "Hamza Rahman" in "Hifz Boys A" and "Maktab Level 1"; Al-Noor Madrasah has Academic Activity switched on
+- Today's Hifz records for Hamza from teacher "Ibrahim Khan": a new-lesson task marked (mark 8, 2 mistakes, one failed attempt then a pass, 30 lines, 2 pages, a teacher note), and a revision task the student has submitted but the teacher hasn't marked
+- Yesterday: one marked Hifz record, for the change-date shot
+- Classwork for Hamza across both classes: "Surah Al-Mulk test" graded 18/20 (weight 2), "Wudu poster" graded, not scored, "Seerah worksheet" due later this week, "Arabic vocabulary quiz" missing (two days late)
+- Phone frame for every shot
 
 ## Script
 <!--
@@ -29,7 +35,75 @@ Optional **Caption:** overrides the subtitle text. Translations in i18n/<lang>.m
 See docs/SCRIPT-FORMAT.md.
 -->
 
-_Not scripted yet._
+### 1. Hifz and classwork at home
+#### [1.1] Opening
+**Say:** In this video you'll follow your child's Quran Hifz progress and their classwork, with scores, right from your Ad-Din app home.
+**Show:** Title card: "Follow Hifz progress and classwork". Phone frame on the app home.
+
+#### [1.2]
+**Say:** Your child is already in their classes, and the teachers record progress in Ad-Din. Pick your child at the top of the home screen to begin.
+**Show:** Tap "Hamza" next to Viewing.
+
+### 2. Hifz progress
+#### [2.1] The card
+**Say:** Scroll down to **Hifz progress**. It shows what your child recited on one day, starting with today.
+**Show:** Scroll to the Hifz progress card. Spotlight the date chip showing today.
+
+#### [2.2] Tasks
+**Say:** Each tab is one Hifz task for that day, such as the new lesson or revision. Tap a tab to see it.
+**Show:** Tap the second tab (the revision task), then the first tab again.
+
+#### [2.3] What was recited
+**Say:** **Start** and **End** show where the recitation began and finished. **Total** shows how much that was, in lines and pages, or in Juz'.
+**Show:** Spotlight Start and End, then "Total 30 lines · 2 pages".
+
+#### [2.4] The result
+**Say:** The badge shows the result. A mark with the number of mistakes means the teacher has marked it. **Submitted** means it's waiting for the teacher, and **Not marked** means nothing's recorded yet.
+**Show:** Zoom on the badge "8 · 2 mistakes". Tap the second tab: badge "Submitted". Tap the first tab again.
+**Caption:** Mark and mistakes: marked. Submitted: waiting for the teacher. Not marked: nothing recorded yet.
+
+#### [2.5] Attempts and notes
+**Say:** **Attempts** counts the tries: a cross for each failed one and a tick for the pass. Tap the teacher's note to read it in full.
+**Show:** Spotlight "Attempts 2" with a cross and a tick. Tap the note: it expands. Spotlight "Teacher: Ibrahim Khan" at the bottom.
+
+#### [2.6] Another day
+**Say:** To look back, tap the date and pick another day.
+**Show:** Tap the date chip, pick yesterday. The card shows yesterday's record.
+
+### 3. My Classwork
+#### [3.1] The card
+**Say:** Next is **My Classwork**: the activities your child's teachers set, such as tests, worksheets and projects.
+**Show:** Scroll to the My Classwork card. Spotlight its heading and the list.
+
+#### [3.2] Filters
+**Say:** The filters count each kind: **All**, **Missing**, **Due soon** and **Graded**. Tap one to see only those.
+**Show:** Tap "Missing": "Arabic vocabulary quiz" with pill "Missing" and "2 days late". Tap "Due soon": "Seerah worksheet" with its due day.
+
+#### [3.3] One class
+**Say:** If your child is in more than one class, use the class box to show just one of them.
+**Show:** Open the class box: "All classes", "Hifz Boys A", "Maktab Level 1". Pick "Maktab Level 1", then "All classes" again.
+
+### 4. Scores
+#### [4.1] Graded work
+**Say:** Tap **Graded** to see the scores. Each one shows the mark out of the total, and its weight, which is how much it counts.
+**Show:** Tap "Graded". Zoom on "Surah Al-Mulk test": "18/20", "weight 2".
+
+#### [4.2]
+**Say:** Work that isn't scored shows **Completed** instead of a mark.
+**Show:** Spotlight "Wudu poster" with the "Completed" pill.
+
+#### [4.3] More detail
+**Say:** Tap any activity to open its details. Tap **All activities** for the full list, which you can filter by class, subject and term.
+**Show:** Tap "Surah Al-Mulk test": the Activity Score Management page opens on it. Go back. Spotlight "All activities" at the bottom of the card.
+
+### 5. Next
+#### [5.1] Recap
+**Say:** Now you can follow your child's Hifz and their classwork day by day, and see each score as soon as it's marked.
+**Show:** The home with the Hifz progress and My Classwork cards in view.
+
+#### [5.2] Close
+**Say:** Next, see fees, report cards and interview bookings, or check attendance and report an absence.
+**Show:** End card with two tiles: "14.4 Fees, report cards and interview bookings" and "14.2 Check attendance and report an absence".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
