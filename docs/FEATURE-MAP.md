@@ -262,7 +262,7 @@ The app is one WebView around the same Angular pages, so almost every feature ab
 |---|---|---|---|---|
 | App home by role: prayer hero, quick grid tiles (Masjid, Madrasah, Quran, Prayer Times, Messages, Events, Qiblah, Streaming, Donation, Tasbeeh, Search), Switch role, identity card (Tap to copy username) | `/mobile-home` (the app's landing page) | Everyone | 00.6 | Teacher, parent and student sections are in 10.1, 14.1–14.3 and 14.5 |
 | Admin section of the app home ("Waiting on you": attendance not taken, Hifz pending, enrolment applications, Review / Nudge) | `/mobile-home` (admin) | Org Admin | 06.3 | 06.3 mentions "app alerts" for enrolments only. (b) Fold the full admin card into 12.6 |
-| Pin quick actions (Edit quick actions, Pin, Search modules) | App home | Everyone | 10.1 | Shown for teachers in 10.1; parents and members also have it. (b) Mention in 00.6 |
+| Pin quick actions (Edit quick actions, Pin, Search modules) | App home | Everyone | 10.1 | Admin and Teacher tabs of the app home only (checked on master). Shown in 10.1 and 00.6 |
 | Native login treatment (Kaaba backdrop, 2×2 intents) | `/login` in the app | Everyone | 00.2 | |
 | Native header (back arrow, menu) | App | Everyone | 00.6 | |
 | Native Qiblah compass page | App home → Qiblah (`openNative("qiblah")` → MAUI `MasjidQiblaDirection`) | Member | 15.1 | |
@@ -326,7 +326,7 @@ Each id is the next free number in its track. Playlists to update if these are a
 | Feature | Fold into |
 |---|---|
 | Rest of the help menu (Contact Us, Release Notes, FAQ, Privacy Policy, Terms of Service, Key Terms) | 00.6 |
-| Pin quick actions for non-teachers | 00.6 |
+| Pin quick actions for admins | 00.6 |
 | Manage Skills on the masjid user list | 03.3 (pointer to 15.7) |
 | Introduction & Services for madrasahs | 04.9 |
 | Community Involvement Activity Records | 06.4 (or its own short video if 06.4 runs long) |

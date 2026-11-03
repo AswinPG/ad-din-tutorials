@@ -8,7 +8,7 @@ status: scripted
 flags:
   - "Direction matters: the organisation that accepts keeps its website and address; the one that sent the request moves onto it (ChangeRequestStatus maps the sender to the accepter's website). On the masjid's site the card reads Link your Madrasah, which would move the masjid onto the madrasah's site. The script sends from the madrasah (Link your Masjid) so the masjid's address is kept, and explains both cards. Confirm this is the advice we want."
   - "Enquiries have no screen in Ad-Din: the website's contact form emails the organisation's email on file and the website's contact emails; the enquiry list component (PFWEnquiryComponent) exists but isn't routed. Scripted as email-only."
-  - "The linking fine print says the other organisation \"needs its own active PFW subscription\"; narration says \"its own website add-on\" and doesn't read out PFW."
+  - "The linking fine print says the other organisation \"needs its own active PFW subscription\"; but the backend doesn't check it and the confirm dialog says only the requesting organisation needs a subscription (see 02.5). Narration says both websites are switched on; the app's fine print contradicts itself."
 ---
 
 # 09.4 Link masjid and madrasah websites; enquiries
@@ -19,7 +19,7 @@ Join your masjid's and madrasah's websites into one site, approve or unlink the 
 ## You'll need
 <!-- Shown on the opening card. Generated from prereq/plan/switch if left empty. -->
 - Admin access to the masjid and to the madrasah (or the other admin's help to approve)
-- A website switched on for each, each with the Website add-on
+- A website switched on for each (one Website add-on is enough for a linked site; see 02.5)
 - The organisation you send to must be one you follow
 
 ## Covers
@@ -49,7 +49,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Title card: "Link masjid and madrasah websites; enquiries".
 
 #### [1.2]
-**Say:** Both organisations already have a website switched on, each with its own add-on, and you follow the one you're linking to.
+**Say:** Both organisations already have a website switched on, and you follow the one you're linking to.
 **Show:** Opening card from You'll need.
 
 ### 2. Decide which address stays
