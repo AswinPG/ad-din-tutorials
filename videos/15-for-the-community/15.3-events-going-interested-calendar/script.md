@@ -6,7 +6,6 @@ prereq:
   - "00.4"
 status: scripted
 flags:
-  - "Calendar not scripted: the events calendar is only in the desktop side panel (shown from 768px wide). In the app (phone width) there is no calendar, and the old eventcalendar page has no link. Rename the video or add a phone calendar."
   - Every event card shows a three-dot menu with Edit and Delete even to members (the template doesn't check the role). Keep it off camera; worth a fix.
 ---
 
@@ -19,7 +18,7 @@ Browse your community's events in the Ad-Din app, narrow them down, mark the one
 <!-- Shown on the opening card. Generated from prereq/plan/switch if left empty. -->
 
 ## Covers
-- Browse, filter, calendar, Going or Interested, bookmark, share (the phone's share sheet)
+- Browse, filter, Going or Interested, bookmark, share (the phone's share sheet)
 
 ## Demo data
 - Member account signed in on the app, home masjid "Masjid Al-Noor", following "Masjid Ar-Rahman"
@@ -90,6 +89,7 @@ Browse your community's events in the Ad-Din app, narrow them down, mark the one
 **Show:** End card with two tiles: "15.4 Donate to your masjid" and "15.6 Tasbeeh, live streams, gallery and forms".
 
 ## Review log
+- 2026-11-03 · manager · decisions via chat · Planned features not in the app dropped: calendar removed from Covers, calendar flag removed
 - 2026-11-03 · critic · 2 changes: [2.1] "sits on" replaced with plain "is on", [3.3] clipped questions made full "If" sentences (translation) · fold: share sheet named in Covers ([4.2] already shows and names it)
 <!-- Newest first: date, who, what was asked, what changed. -->
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes

@@ -66,7 +66,7 @@ Admin setup plus the masjid pages members see. Events and donations are listed h
 | About Masjid (edit) | Masjid → About Masjid | Masjid Admin | 04.7 | |
 | Staff List | Masjid → Staff List | Masjid Admin | 04.7 | |
 | Facility Details (quantity, capacity) | Masjid → Facility Details | Masjid Admin | 04.7 | |
-| Gallery (albums, images, videos) | Masjid → Gallery | Masjid Admin | 04.8 | |
+| Gallery (images, videos) | Masjid → Gallery | Masjid Admin | 04.8 | No albums in the app; dropped from Covers (decided 2026-11-03) |
 | Forms (up to 2 MB) | Masjid → Forms | Masjid Admin | 04.8 | |
 | Prayer Times: Adhan Times, Islamic Date, calculation settings | Masjid → Prayer Times (`adhantimes`, `hijridate`, `settings`) | Masjid Admin | 04.1 | |
 | Prayer Times: Batch Update, View Prayer Times | `batchupdate`, `viewtimes` | Masjid Admin | 04.2 | |
@@ -93,7 +93,7 @@ Admin setup plus the masjid pages members see. Events and donations are listed h
 | Services switches (Academic Activity, AutoSave Academic Reports, Class Announcements, Exam Marks, Payment Module, Family Subscription sharing, Staff Attendance) | Organization Management → Services | Madrasah Admin | 03.2 | |
 | Integrations (PayPal) | Organization Management → Integrations | Madrasah Admin | 03.2 | |
 | Enrollment Settings (Share Enrolment Link, QR, Required Documents, Declaration & Agreement, FAQs, Custom Fields) | Organization Management → Enrollment Settings | Madrasah Admin | 06.1 | |
-| Manage Madrasah: signatures, Learning Skill, Subject for report | `/settings/organisation/management/managemadressah/:id` | Madrasah Admin | 05.1 | |
+| Manage Madrasah: signatures, Learning Skill (Subject for report is commented out; dropped from Covers 2026-11-03) | `/settings/organisation/management/managemadressah/:id` | Madrasah Admin | 05.1 | |
 | User Management: Add (Admin, Teacher), Edit, profile pages, Access Rights, Deactivate / Re-Activate | `/settings/organisationUserList/madressah/:id` | Madrasah Admin | 03.4 | |
 | Import / Export (Editable Export, Complete Report), Export User Data | same | Madrasah Admin | 03.5 | |
 | Add Student / Parent, Manage Class, Link Parent, Link Childs, Siblings, MRC (media consent) | same | Madrasah Admin | 06.4 | |
@@ -105,7 +105,7 @@ Admin setup plus the masjid pages members see. Events and donations are listed h
 | Terms Management | Admin Portal → Terms Management | Madrasah Admin | 05.2 | |
 | Grade (grade sets) | Admin Portal → Grade | Madrasah Admin | 05.2 | |
 | Class (homeroom teacher, compulsory, Open for enrollment) | Admin Portal → Class | Madrasah Admin | 05.3 | |
-| Class Section (Active, Inactive, Alumni lists) | Admin Portal → Class Section | Madrasah Admin | 05.4 | |
+| Class Section (active and inactive students) | Admin Portal → Class Section | Madrasah Admin | 05.4 | No Alumni list; dropped from Covers (decided 2026-11-03) |
 | Assign / move students between sections | Class Section → StudentAssign | Madrasah Admin | 06.5 | |
 | Subject (teacher, grade set, discipline, group, strands, course code, credit) | Admin Portal → Subject | Madrasah Admin | 05.5 | |
 | Class Routine overview (compare classes, clashes) and Schedule Builder | Admin Portal → Class Routine; `schedule-builder` | Madrasah Admin | 05.6 | |
@@ -186,7 +186,7 @@ Admin setup plus the masjid pages members see. Events and donations are listed h
 | Qiblah | App home tile (native compass page; web fallback `/quiblah`); Prayer Times → Locate Qiblah | Member | 15.1 | Native page on the app, see Mobile app only |
 | Masjid Finder, follow, directions | Masjid → Masjid Finder; app home Search tile | Member | 15.2, 00.4 | |
 | About Masjid, Staff List, Facility Details (member view) | Masjid menu | Member | — | (b) Fold into 15.2: after following, open the masjid's About / Staff / Facilities |
-| Events: browse, filter, calendar, Going / Interested, bookmark, share | Events (`/events`, `eventcalendar`, `eventdetails`) | Member | 15.3 | |
+| Events: browse, filter, Going / Interested, bookmark, share | Events (`/events`, `eventdetails`) | Member | 15.3 | The calendar is desktop-only (no phone calendar); dropped from 15.3 Covers (decided 2026-11-03) |
 | Donate to campaigns | Donation; website donate page | Member | 15.4 | |
 | Quran reader: Mushaf, Reciter, Tajweed colours, Bookmarks, Dua Khatam-e-Quran | App home tile → Quran (`/quran`) | Member | 15.5 | |
 | Quran: Arabic + translation view, Recite the translation (audio), Search, Playlist / Play all, Repeat each ayah, Playback speed, Keep reciting, Recite from memory (tap to reveal), theme, text size, Mushaf type, Share this ayah | `/quran` settings and ayah actions | Member | — | (a) New video 15.8, see Gaps |
@@ -381,7 +381,7 @@ Every Covers item in the 101 scripts was searched for in the code by its label o
 - **02.1 "the 30-day grace period":** not shown anywhere in the web UI. It exists only on the server (`OrganizationSubscription/.../SubscriptionKpiRepository.cs`: "30-day grace on subscriptions, PFW and custom sender"; 15 days for premium display). The video has to state it in narration; nothing on screen shows it.
 - **02.2 "Premium Monthly $0.99 or Yearly $9.99":** the app shows **0.99 CAD / 9.99 CAD** (and C$ on the organisation page). Fix the currency in the script.
 - **00.2 "email verification isn't needed to log in":** behaviour, not a label. Not verified in the code (it would need the login API traced).
-- **06.1 "QR code", 08.4 "hide progress, pin to top", 02.6 "billing address", 05.1 "Subject for report":** found under slightly different labels: "Hide donation progress", "Pin card to top", "Please provide your billing details.", key `subject_for_report`.
+- **06.1 "QR code", 08.4 "hide progress, pin to top", 02.6 "billing address":** found under slightly different labels: "Hide donation progress", "Pin card to top", "Please provide your billing details.". (05.1 "Subject for report", key `subject_for_report`, is commented out and was dropped from Covers on 2026-11-03.)
 - **09.6 "What visitors see":** the public site is rendered by `AdDin.PublicWebpages`, outside the Angular app. Its pages were not checked one by one.
 - **Track 11 (11.1–11.4):** labels exist (Discount Rule, Student Specific Exception, Mark as Unpaid, Aged Receivable), but the track is on hold on purpose.
 

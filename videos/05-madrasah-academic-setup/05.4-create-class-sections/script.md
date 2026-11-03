@@ -6,7 +6,6 @@ prereq:
   - "05.3"
 status: scripted
 flags:
-  - "Active, Inactive and Alumni lists: the old Class Section Assignment page with Active, InActive and Alumni tabs is no longer linked from the app (the InActive and Alumni tabs are commented out). The new Class Section page shows active and inactive students in one list, with an Inactive badge; there is no Alumni list (Alumni Verdict is hidden from the sidebar). The script shows the Inactive badge only."
   - "Who needs a seat? (open): Admin Portal → Class Section opens only when the admin has Premium themselves (the page guard checks the user's own Premium, not the organisation's seats). The demo admin must have Premium."
 ---
 
@@ -20,7 +19,7 @@ Add sections to a class, each with its own class teacher and capacity, and read 
 
 ## Covers
 - Sections
-- Active, Inactive and Alumni lists
+- Active and inactive students in a section
 
 ## Demo data
 - Demo madrasah "Al-Noor Madrasah"; the demo admin has Premium
@@ -96,5 +95,6 @@ Add sections to a class, each with its own class teacher and capacity, and read 
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · manager · decisions via chat · Planned features not in the app dropped: Alumni list removed from Covers ('Active and inactive students in a section', as [5.2] shows), flag removed
 - 2026-11-03 · critic · 3 changes: [1.1] second-person opening, task first; [5.3] points to video 06.5 by number; [6.2] every end-card tile named by number and title
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes

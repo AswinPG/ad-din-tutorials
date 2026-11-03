@@ -6,7 +6,6 @@ prereq:
   - "03.1"
 status: scripted
 flags:
-  - "Albums don't exist: the masjid Gallery is one list of images and YouTube videos with a title and caption each, with no albums. Kept in Covers, not scripted"
   - "Forms: the picker and the hint offer PNG images, but Upload & Save rejects .png with \"This file Type is not supported.\" (only jpg/jpeg pass); the script says JPG"
   - "Forms: after Upload & Save the panel closes but the list doesn't reload, so the new form only shows after a page refresh or re-picking the masjid; the recorder refreshes off camera"
 ---
@@ -20,7 +19,7 @@ Add photos and YouTube videos to your masjid's Gallery, and upload forms people 
 <!-- Shown on the opening card. Generated from prereq/plan/switch if left empty. -->
 
 ## Covers
-- Albums, images and videos
+- Images and videos
 - Forms up to 2 MB
 
 ## Demo data
@@ -106,5 +105,6 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · manager · decisions via chat · Planned features not in the app dropped: albums removed from Covers ('Images and videos'), albums flag removed
 - 2026-11-03 · critic · 3 changes: second-person opening, [3.2] says how to get a YouTube embed code (as 04.10 does), [5.5] 'Members' not 'Anyone'
 - 2026-11-03 · validator · checked against master d36d69ed8 · 4 fixes: forms file types say JPG not "image" (PNG is rejected), 3 MB rejection happens on Upload & Save and the list needs a refresh after upload (Show [5.4] + flags), Rename Cancel closes the viewer so the bin is shown after reopening ([4.2]), 3 MB demo file type

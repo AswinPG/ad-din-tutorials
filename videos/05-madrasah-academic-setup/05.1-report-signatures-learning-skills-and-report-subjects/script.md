@@ -5,8 +5,6 @@ target: 3:30
 prereq:
   - "03.1"
 status: scripted
-flags:
-  - "Subject for report: the 'Academic Islamic Subjects for Reports' section is commented out in the code (Manage Madrasah page), so it is not scripted."
 ---
 
 # 05.1 Report signatures, learning skills and report subjects
@@ -23,7 +21,6 @@ Choose who signs your madrasah's report cards, make sure their signatures are in
 ## Covers
 - Manage Madrasah: principal, vice-principal and council signatures
 - Learning Skill
-- Subject for report
 
 ## Demo data
 - Demo madrasah "Al-Noor Madrasah"; the demo account is its Madrasah Admin; the madrasah's details are complete, including Email (the Madrasah/School Details tab won't save without it)
@@ -107,5 +104,6 @@ Choose who signs your madrasah's report cards, make sure their signatures are in
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · manager · decisions via chat · Planned features not in the app dropped: Subject for report removed from Covers, flag removed
 - 2026-11-03 · critic · 6 changes: [1.1] second-person opening for admins; [2.2] merged into [2.1] (thin scene); [4.1] covers every person chosen, not only the principal, no "stay on"; [4.2] shorter; [6.1] no personification ("know"); [6.2] end card by number and title
 - 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: [4.2] Signature section is already open (no expand click); demo data notes Email needed for Save

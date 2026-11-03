@@ -6,7 +6,6 @@ prereq:
   - "05.6"
 status: scripted
 flags:
-  - "Alumni is not scripted: the Alumni Verdict pages are hidden in menu.data.ts ('hidden until the alumni module is redone') and the class section Alumni tab is commented out. The only visible trace is the Dashboard's 'Alumini' count card (app typo)"
   - "Chapter 5 (Staff Attendance class routine term) depends on the open decision 'Is Staff Attendance live?' (series.yaml); cut chapter 5 if Staff Attendance isn't live when this is published"
 ---
 
@@ -19,7 +18,7 @@ Add the next academic term, copy your class timetable into it, and, if you use S
 <!-- Shown on the opening card. Generated from prereq/plan/switch if left empty. -->
 
 ## Covers
-- New term, Duplicate Class Routines, timetable term for Staff Attendance, alumni
+- New term, Duplicate Class Routines, timetable term for Staff Attendance
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
@@ -100,5 +99,6 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · manager · decisions via chat · Planned features not in the app dropped: alumni removed from Covers, alumni flag removed
 - 2026-11-03 · critic · 1 change: [3.1] "This is Duplicate Class Routines" reworded so the heading is clearly the page name
 - 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: [5.2] Show matches the Say (Spring Term isn't in force yet, so the line says so and the selector goes back to Automatic)

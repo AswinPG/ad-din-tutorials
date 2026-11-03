@@ -418,7 +418,8 @@ decisions:
   - title: "Planned items that aren’t in the app"
     detail: "Masjid gallery albums (04.8), Alumni lists (05.4, 16.2; hidden until the alumni module is redone), Subject for report (05.1; commented out), a calendar at phone width (15.3). Each stays in Covers with a flag. Drop them, or are they coming back?"
     videos: "04.8, 05.1, 05.4, 15.3, 16.2"
-    status: open
+    status: decided
+    answer: "Drop them from Covers and remove their flags"
   - title: "Staff Attendance review flow changed"
     detail: "Approve, Adjust, Reject and Dismiss are gone on master: the Review page takes one decision per day (Save decision) or bulk Accept. 13.5 is scripted on the new flow. Confirm and update its Covers."
     videos: "13.5"
