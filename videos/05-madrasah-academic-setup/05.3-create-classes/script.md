@@ -32,7 +32,7 @@ Add a class with its type, grade set, enrolment setting and program page, so it'
 
 ### 1. Before you start
 #### [1.1] Opening
-**Say:** Classes are the programs your madrasah runs, like a Maktab level or a Hifz class. In this video you create one.
+**Say:** In this video for madrasah admins, you'll create a class: one of the programs your madrasah runs, such as a Maktab level or a Hifz class.
 **Show:** Title card: "Create classes".
 
 #### [1.2]
@@ -45,7 +45,7 @@ Add a class with its type, grade set, enrolment setting and program page, so it'
 **Show:** Sidebar → Admin Portal → Class. The class list with "Maktab Level 1".
 
 #### [2.2]
-**Say:** Tap **Add**. The basics are required. The program page is optional and is what parents see.
+**Say:** Tap **Add**. The form has two parts: the class details, which are required, and an optional program page that parents see.
 **Show:** Click "Add". The "Add Class" window opens; spotlight its subtitle.
 
 ### 3. Class basics
@@ -59,7 +59,7 @@ Add a class with its type, grade set, enrolment setting and program page, so it'
 **Caption:** Numeric Class Name is the class level as a number. Academic classes pick it from a list.
 
 #### [3.3]
-**Say:** Answer **Is this a Quran Hifz (Memorization) class?** with **Yes** or **No**.
+**Say:** Answer **Is this a Quran Hifz (Memorization) class?** This one is, so tap **Yes**.
 **Show:** Click "Yes".
 
 #### [3.4] Grade set
@@ -85,11 +85,11 @@ Add a class with its type, grade set, enrolment setting and program page, so it'
 **Show:** Upload the demo cover picture; it shows in the panel.
 
 #### [5.3]
-**Say:** The description and picture are public. If you have the Ad-Din website, **Shown on website** also lists the class under Madrasah Programs. Tap it to switch to **Hidden from website**.
+**Say:** The description and picture are public. If your madrasah has an Ad-Din website, **Shown on website** also lists the class under Madrasah Programs. Tap it to switch between **Shown on website** and **Hidden from website**.
 **Show:** Spotlight the switch "Shown on website"; click it: "Hidden from website". Click again to show it.
 
 #### [5.4] Save
-**Say:** Tap **Save**. A pop-up repeats a few tips about classes. Tap **Add Class** to create it.
+**Say:** Tap **Save**. A pop-up repeats a few tips about classes. Tap **Add Class** to create it, then **Close** the confirmation.
 **Show:** Click "Save". A pop-up with tips about class names, Bi-Directional Communication and class types opens; click its "Add Class" button. The class window closes and an "Alert" box shows the server's confirmation; click "Close".
 
 ### 6. Next
@@ -98,9 +98,10 @@ Add a class with its type, grade set, enrolment setting and program page, so it'
 **Show:** "Hifz Boys" in the class list. Select it, click "Edit": the Type box shows a lock. Close.
 
 #### [6.2]
-**Say:** Next, split your class into sections. When you're ready for families, prepare online enrolment.
+**Say:** Next, video 05.4: Create class sections. When you're ready for families, video 06.1: Prepare online enrolment.
 **Show:** End card with two tiles: "05.4 Create class sections" and "06.1 Prepare online enrolment".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 6 changes: [1.1] second-person opening; [2.2] "the basics" made concrete; [3.3] gives the reason for Yes (was a bare instruction); [5.3] add-on wording "If your madrasah has an Ad-Din website", Say now matches the two clicks; [5.4] Say covers the Close the Show does; [6.2] end card by number and title
 - 2026-11-03 · validator · checked against master d36d69ed8 · 3 fixes: [5.4] Save opens a tips pop-up, tap Add Class, then Alert/Close; [3.4] Academic quick cut clears the default grade set; demo data: academic activities on so Type can switch

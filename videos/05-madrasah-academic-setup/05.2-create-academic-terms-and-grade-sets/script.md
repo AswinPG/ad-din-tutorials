@@ -31,11 +31,11 @@ Add your academic terms, keep the right ones enabled, and build the grade sets y
 
 ### 1. Before you start
 #### [1.1] Opening
-**Say:** Before you create classes and timetables, Ad-Din needs your academic terms and the grade sets used to mark students. Let's set up both.
+**Say:** This video is for madrasah admins. You'll add your academic terms and build the grade sets used to mark students.
 **Show:** Title card: "Create academic terms and grade sets".
 
 #### [1.2]
-**Say:** You're a Madrasah Admin with Ad-Din Premium. Do terms first, because the timetable is built term by term.
+**Say:** You need to be a Madrasah Admin with Ad-Din Premium. Start with terms, because each timetable is built for one term.
 **Show:** Opening card from You'll need.
 
 ### 2. Open Terms Management
@@ -96,9 +96,10 @@ Add your academic terms, keep the right ones enabled, and build the grade sets y
 **Show:** Quick cut: the Terms list, then the Hifz Grades list.
 
 #### [6.2]
-**Say:** Next, create your classes.
+**Say:** Next, video 05.3: Create classes.
 **Show:** End card with one tile: "05.3 Create classes".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 3 changes: [1.1] second-person opening; [1.2] plain need line, no "You're a…"; [6.2] end card by number and title
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes

@@ -40,7 +40,7 @@ Use your madrasah's enrolment link to sign up, choose a program, fill in your de
 
 ### 1. Before you start
 #### [1.1] Opening
-**Say:** Enrolling your child at a madrasah can be done online, from home. Your madrasah gives you a link, by message or as a QR code.
+**Say:** In this video for parents, you'll enrol your child at a madrasah online, using the link or QR code your madrasah gives you.
 **Show:** Title card: "Enrol your child online".
 
 #### [1.2]
@@ -75,7 +75,7 @@ Use your madrasah's enrolment link to sign up, choose a program, fill in your de
 **Show:** The confirmation window with "YOU ARE LOGGED IN AS" and the parent's name. Pick the Yes option, click "Continue to Enrollment →".
 
 #### [3.4]
-**Say:** Signed in on your child's account by mistake? Choose No, and Ad-Din helps you sign out and use a parent account instead.
+**Say:** If you're signed in on your child's account by mistake, choose No. Ad-Din helps you sign out and use a parent account instead.
 **Show:** Quick cut, not recorded live: the No option selected, with the notice "Enrollment not available for your account type." Then back to Yes.
 
 ### 4. Your details
@@ -88,7 +88,7 @@ Use your madrasah's enrolment link to sign up, choose a program, fill in your de
 **Show:** Fill the Address card. In Spouse Details click "No" briefly to show the extra question ("Does your spouse already have an Ad-Din account?…"), then choose "Yes" for this demo.
 
 #### [4.3]
-**Say:** When your details are complete, tap **Save & Next**.
+**Say:** If the madrasah asks for parent documents, upload them under **Documents**. When your details are complete, tap **Save & Next**.
 **Show:** Scroll past the Documents card (no parent documents in this demo). Click "Save & Next".
 
 ### 5. Your child's details
@@ -101,7 +101,7 @@ Use your madrasah's enrolment link to sign up, choose a program, fill in your de
 **Show:** Pick a date of birth, type an allergy. Spotlight "Quran Type Preference (13 Line vs 15 Line)" and "Total Existing Quran Juz/Para Memorized".
 
 #### [5.3] Media consent
-**Say:** Under **Media Consent**, choose Yes or No. Yes lets the madrasah share your child's photos and work on school platforms. Hover over the info icon to read the details.
+**Say:** Under **Media Consent**, choose Yes or No. Yes lets the madrasah share your child's photos and work on school platforms. The info icon shows the details.
 **Show:** Hover the info icon: "Student Media Release Consent" panel. Choose "Yes".
 
 #### [5.4] Documents and questions
@@ -122,7 +122,7 @@ Use your madrasah's enrolment link to sign up, choose a program, fill in your de
 **Show:** Expand the agreement, scroll the text briefly, click "I agree and accept.": the box is ticked.
 
 #### [6.3]
-**Say:** Tap **Submit Enrollment**. If you'd like a copy for your records, tap **Download PDF** first.
+**Say:** For a copy for your records, tap **Download PDF**. Then tap **Submit Enrollment**.
 **Show:** Spotlight "Download PDF", then click "Submit Enrollment". Toast "Enrollment successful!"; the home page opens.
 
 ### 7. After you submit
@@ -136,9 +136,10 @@ Use your madrasah's enrolment link to sign up, choose a program, fill in your de
 **Caption:** To check on it: Madrasah / School → Signup for a Program → Enrollments. A declined application shows why, with Review & Resubmit.
 
 #### [7.3] Next
-**Say:** Once your child is enrolled, the parent home in the app shows their classes, attendance and more.
+**Say:** Once your child is enrolled, see video 14.1: Your parent home in the app, and video 14.2: Check attendance and report an absence.
 **Show:** End card with two tiles: "14.1 Your parent home in the app" and "14.2 Check attendance and report an absence".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 6 changes: [1.1] second-person opening; [3.4] no elliptical question; [4.3] Say covers the Documents card the Show passes; [5.3] no "hover" (doesn't exist on a phone); [6.3] Say in the order the viewer acts; [7.3] end card by number and title
 - 2026-11-03 · validator · checked against master d36d69ed8 · 3 fixes: emergency contact moved from the parent step to the child step ([4.3] reworded, new [5.5]); [4.2] Show selects No instead of hover; demo data adds the child's emergency contact

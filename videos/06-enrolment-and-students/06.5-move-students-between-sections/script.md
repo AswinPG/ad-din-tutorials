@@ -30,7 +30,7 @@ Add students to a section and move them from one section to another in the same 
 
 ### 1. Before you start
 #### [1.1] Opening
-**Say:** Classes often need a reshuffle. In this video you add students to a section, then move students from one section to another.
+**Say:** In this video for madrasah admins, you'll add students to a section, then move students from one section to another in the same class.
 **Show:** Title card: "Move students between sections".
 
 #### [1.2]
@@ -43,12 +43,8 @@ Add students to a section and move them from one section to another in the same 
 **Show:** Sidebar → Admin Portal → Class Section. Pick "Maktab Level 1" in Select Class. The section cards appear.
 
 #### [2.2]
-**Say:** Each card shows how many students a section has and how many it can hold. **Nearly full** warns you before a section runs out of room.
-**Show:** Spotlight "15 / 20" on Section A, then the "Nearly full" pill on Section B.
-
-#### [2.3]
-**Say:** Tap a section to see its students.
-**Show:** Click "Section A"; its student list opens on the right.
+**Say:** Each card shows how many students a section has and how many it can hold. **Nearly full** warns you before a section runs out of room. Tap a section to see its students.
+**Show:** Spotlight "15 / 20" on Section A, then the "Nearly full" pill on Section B. Click "Section A"; its student list opens on the right.
 
 ### 3. Add students
 #### [3.1] Add students
@@ -56,12 +52,12 @@ Add students to a section and move them from one section to another in the same 
 **Show:** Click "Add students". The "Add students" sheet: "Students not yet in Maktab Level 1 · adding to Section A".
 
 #### [3.2]
-**Say:** Tap each student you want, or search by name. Then tap the button at the bottom to add them.
+**Say:** Tap each student you want, or search by name. The button at the bottom shows how many you picked; tap it to add them.
 **Show:** Tap "Yahya Ali" and "Sara Ali"; ticks appear. Click "Add 2 students". The count on Section A goes up to 17.
 
 ### 4. Move students
 #### [4.1] Select students
-**Say:** To move students, tap **Remove students** first. This turns on selecting. Don't worry, nothing is removed yet.
+**Say:** To move students, tap **Remove students** first. This turns on selecting. Nothing is removed yet.
 **Show:** Click "Remove students". The hint appears: "Tap students to select them, then choose Remove or Move below".
 
 #### [4.2]
@@ -69,7 +65,7 @@ Add students to a section and move them from one section to another in the same 
 **Show:** Tap "Hamza Rahman" and "Ilyas Noor". The bar shows "2 selected"; click "Move to…".
 
 #### [4.3] Pick the new section
-**Say:** **Move students** lists the other sections, with their open seats. Ad-Din warns you if a move will exceed capacity. Tap the section you want.
+**Say:** **Move students** lists the other sections and how much room each has. Ad-Din warns you if a move will exceed capacity. Tap the section you want.
 **Show:** The "Move students" sheet: "Moving 2 students from Section A". Spotlight Section B's open seats. Click "Section B".
 
 #### [4.4]
@@ -82,9 +78,10 @@ Add students to a section and move them from one section to another in the same 
 **Show:** Click "Section B"; Hamza Rahman and Ilyas Noor are in the list.
 
 #### [5.2]
-**Say:** Next, see how teachers take attendance for their class, and how to move everyone up at the end of the year.
+**Say:** Next, video 10.2: Take class attendance, and video 16.1: Promote students to the next year, to move everyone up at the end of the year.
 **Show:** End card with two tiles: "10.2 Take class attendance" and "16.1 Promote students to the next year".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 6 changes: [1.1] second-person opening, no "reshuffle"; [2.3] merged into [2.2] (thin scene); [3.2] count-button wording; [4.1] no "Don't worry"; [4.3] "open seats" said as room, so it isn't confused with Premium seats; [5.2] end card by number and title
 - 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: demo data, added students need a linked parent with a seat

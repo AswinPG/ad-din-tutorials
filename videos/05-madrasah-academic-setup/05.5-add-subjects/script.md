@@ -37,7 +37,7 @@ Add the subjects each class studies, choose the teachers who can teach them, and
 
 ### 1. Before you start
 #### [1.1] Opening
-**Say:** Subjects are what each class studies, and who teaches them. In this video you add subjects for a religious class and for academic classes.
+**Say:** In this video for madrasah admins, you'll add the subjects each class studies and choose who teaches them, for a religious class and for academic classes.
 **Show:** Title card: "Add subjects".
 
 #### [1.2]
@@ -46,12 +46,8 @@ Add the subjects each class studies, choose the teachers who can teach them, and
 
 ### 2. Open Subject
 #### [2.1] The tabs
-**Say:** In the sidebar, open **Admin Portal**, then **Subject**. There are four tabs: **Subject**, **Strands**, **Discipline** and **Group**.
-**Show:** Sidebar → Admin Portal → Subject. Spotlight the four tabs.
-
-#### [2.2]
-**Say:** On the **Subject** tab, tap **Add**.
-**Show:** Click "Add"; the subject form opens with "Subject details" on the left and "Teacher" on the right.
+**Say:** In the sidebar, open **Admin Portal**, then **Subject**. There are four tabs: **Subject**, **Strands**, **Discipline** and **Group**. On the **Subject** tab, tap **Add**.
+**Show:** Sidebar → Admin Portal → Subject. Spotlight the four tabs. Click "Add"; the subject form opens with "Subject details" on the left and "Teacher" on the right.
 
 ### 3. Subject details
 #### [3.1] Name and class
@@ -81,7 +77,7 @@ Add the subjects each class studies, choose the teachers who can teach them, and
 **Show:** Click "Add"; pick "Grade 3" in Class. Spotlight "Mark as Homeroom".
 
 #### [5.2]
-**Say:** Open **Strands** to tick the curriculum strands this subject covers. It's optional.
+**Say:** Open **Strands** to tick the curriculum strands this subject covers. It's optional. This example isn't saved, so tap **Cancel**.
 **Show:** Click the "Strands" card; it expands. Tick two strands; "2 selected". Click "Cancel" to leave this form.
 
 #### [5.3] Grades 9 to 12
@@ -90,7 +86,7 @@ Add the subjects each class studies, choose the teachers who can teach them, and
 **Caption:** Grades 9–12: Mark as Compulsory, plus Discipline, Group, Course Code and Course Credit.
 
 #### [5.4]
-**Say:** Enter the **Total Classes** for each part of the year. Then, under **Students**, tick who takes the subject and choose **Semester 1** or **Semester 2**. Here you pick one teacher.
+**Say:** Enter the **Total Classes** for each part of the year. Under **Students**, tick who takes the subject and choose **Semester 1** or **Semester 2**. Pick one teacher, and tap **Save**.
 **Show:** Fill the four Total Classes boxes. Under Students, choose "Semester 1" in Assign All, then tick "Select All". Tick one teacher. Click "Save".
 
 ### 6. Your own lists
@@ -108,9 +104,10 @@ Add the subjects each class studies, choose the teachers who can teach them, and
 **Show:** Subject tab: the list with "Quran Hifz", the Grade 10 "Science" subject and their teachers.
 
 #### [7.2]
-**Say:** Next, build the class timetable with the Schedule Builder.
+**Say:** Next, video 05.6: Build the class timetable, with the Schedule Builder.
 **Show:** End card with one tile: "05.6 Build the class timetable".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 5 changes: [1.1] second-person opening; [2.2] merged into [2.1] (thin scene); [5.2] Say names the Cancel the Show does; [5.4] Say covers Save, shorter; [7.2] end card by number and title
 - 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: [4.1] timetable also lists the section's class teacher

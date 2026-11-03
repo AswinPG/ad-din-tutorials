@@ -34,7 +34,7 @@ Set up everything parents see when they enrol online: the enrolment link and QR 
 
 ### 1. Before you start
 #### [1.1] Opening
-**Say:** Parents can enrol their children online with a link you share. In this video you set up everything they see along the way.
+**Say:** In this video for madrasah admins, you'll set up online enrolment: everything parents see when they enrol a child with the link you share.
 **Show:** Title card: "Prepare online enrolment".
 
 #### [1.2]
@@ -96,7 +96,7 @@ Set up everything parents see when they enrol online: the enrolment link and QR 
 
 ### 7. Ask extra questions
 #### [7.1] Custom Fields
-**Say:** Want to ask something more, like the language spoken at home? Use **Custom Fields**. Choose **Child Fields**, then tap **Add Field**.
+**Say:** To ask parents something more, such as the language spoken at home, use **Custom Fields**. Choose **Child Fields**, then tap **Add Field**.
 **Show:** Scroll to "Custom Fields". Click "Child Fields", then "Add Field"; the "New field" form opens.
 
 #### [7.2]
@@ -122,9 +122,10 @@ Set up everything parents see when they enrol online: the enrolment link and QR 
 **Show:** Back on Enrollment Settings, hold on the link and QR code.
 
 #### [9.2] Next
-**Say:** Next, see the form from a parent's side, and learn how to approve or decline the applications they send.
+**Say:** Next, video 06.2: Enrol your child online, to see the form from a parent's side, and video 06.3: Approve or decline enrolment applications.
 **Show:** End card with two tiles: "06.2 Enrol your child online" and "06.3 Approve or decline enrolment applications".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 3 changes: [1.1] second-person opening, no "along the way"; [7.1] no elliptical question; [9.2] end card by number and title
 - 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: [7.2] custom-field options start empty (Add option for each)

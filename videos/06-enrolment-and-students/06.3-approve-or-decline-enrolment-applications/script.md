@@ -37,11 +37,11 @@ Review online enrolment applications, place each child in a section and approve 
 
 ### 1. Before you start
 #### [1.1] Opening
-**Say:** When parents enrol online, each application waits for you. In this video you approve one, decline one with a reason, and bring back a course you declined before.
+**Say:** In this video for madrasah admins, you'll approve an online enrolment application, decline one with a reason, and bring back a course you declined before.
 **Show:** Title card: "Approve or decline enrolment applications".
 
 #### [1.2]
-**Say:** Your enrolment form is already set up, and your madrasah has seats to give to families.
+**Say:** Your enrolment form is already set up, and some of your organisation's Premium seats are still free to give to families.
 **Show:** Opening card from You'll need.
 
 ### 2. Know when applications arrive
@@ -58,21 +58,13 @@ Review online enrolment applications, place each child in a section and approve 
 **Show:** Sidebar → Admin Portal → User Management. Click "Open users" on "Al-Noor Madrasah". Click the "Pending Enrollments" tab; the list shows First Name, Class Name, Parent Name and Status.
 
 ### 3. Approve an application
-#### [3.1] Open it
-**Say:** Select an application and tap **View Details**.
-**Show:** Click the row "Maryam Rahman". Click "View Details"; the "Enrollment Request" window opens.
-
-#### [3.2] Pick a section
-**Say:** Under **Selected Course**, choose a section for each course in **Select Section**.
-**Show:** Spotlight "Maktab Level 1". Open "Select Section" and pick "Section A".
+#### [3.1] Open it and pick a section
+**Say:** Select an application and tap **View Details**. Under **Selected Course**, choose a section for each course in **Select Section**.
+**Show:** Click the row "Maryam Rahman". Click "View Details"; the "Enrollment Request" window opens. Spotlight "Maktab Level 1". Open "Select Section" and pick "Section A".
 
 #### [3.3]
-**Say:** Below, check the parent's and child's details, documents and answers.
-**Show:** Scroll through the parent and child details, including the uploaded birth certificate.
-
-#### [3.4] Confirm the details
-**Say:** At the bottom, answer **Is all information found correct?** with **Yes**.
-**Show:** Click "Yes".
+**Say:** Below, check the parent's and child's details, documents and answers. If everything is right, answer **Is all information found correct?** with **Yes**.
+**Show:** Scroll through the parent and child details, including the uploaded birth certificate. At the bottom, click "Yes".
 
 #### [3.5] Subscription required to enroll
 **Say:** If neither parent has a subscription yet, you'll see **Subscription required to enroll**. Choose **Yearly** or **Monthly**. Each shows how many of your madrasah's seats are left.
@@ -101,7 +93,7 @@ Review online enrolment applications, place each child in a section and approve 
 
 ### 5. Change your mind
 #### [5.1] Reconsider
-**Say:** Declined a course too soon? Open that child's application. Courses you declined are under **Previously rejected**, with your reason.
+**Say:** If you declined a course too soon, open that child's application. Courses you declined are under **Previously rejected**, with your reason.
 **Show:** Select "Zaid Khan", click "View Details". Spotlight the "Previously rejected" card with "Reason: No available seats".
 
 #### [5.2]
@@ -114,9 +106,10 @@ Review online enrolment applications, place each child in a section and approve 
 **Show:** Click the "Student" tab; open "Filters" and pick "Maktab Level 1" and "Section A". Spotlight Maryam Rahman.
 
 #### [6.2]
-**Say:** Next, learn how to add students and parents yourself, and how to move students between sections.
+**Say:** Next, video 06.4: Add students and parents yourself, and video 06.5: Move students between sections.
 **Show:** End card with two tiles: "06.4 Add students and parents yourself" and "06.5 Move students between sections".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 6 changes: [1.1] second-person opening; [1.2] seat named as one of your organisation's Premium seats; [3.2] merged into [3.1] and [3.4] into [3.3] (thin scenes); [5.1] no elliptical question; [6.2] end card by number and title
 - 2026-11-03 · validator · checked against master d36d69ed8 · 2 fixes: [3.7] Successful alert + Close after Proceed; [6.1] Filters panel must be opened

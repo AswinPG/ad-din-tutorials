@@ -2,7 +2,8 @@
 id: "10.12"
 title: "Your class roster: student details and contacting parents"
 target: 4:00
-prereq: []
+prereq:
+  - "05.4"
 status: scripted
 flags:
   - "Covers calls it the class's 'messaging allowed' setting; on screen it is the 'Bi-Directional Communication Allowed' switch in the Add / Edit Class form, off by default. Same switch as 07.3 and 05.3."
@@ -45,7 +46,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. Know your students
 #### [1.1] Opening
-**Say:** Your class roster shows every student in your section, what you need to know about them, and a quick way to reach their parents. Let's open it.
+**Say:** In this video for teachers, you'll open your class roster, read what you need to know about each student, and call or message their parents.
 **Show:** Title card: "Your class roster: student details and contacting parents".
 
 #### [1.2]
@@ -102,7 +103,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Tap "Rewrite": it shows "Rewriting", then the text becomes: "Assalamu alaikum Sister Fatima, Aisha did really well in her reading today. Please keep practising with her at home. JazakAllah khair." Footer shows "Rewritten. Undo".
 
 #### [5.4] Undo
-**Say:** Prefer what you wrote? Tap **Undo** to get your words back. You can always edit the text yourself before sending.
+**Say:** To keep your own words, tap **Undo**. You can also edit the text yourself before you send. Here, tap **Rewrite** again to keep the new version.
 **Show:** Tap "Undo": the original text returns. Tap "Rewrite" again to keep the polished version.
 
 #### [5.5] Send
@@ -111,7 +112,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 6. When the message button is missing
 #### [6.1] The class setting
-**Say:** Don't see a message button? Teachers can message parents only in classes where **Bi-Directional Communication Allowed** is switched on. Your admin turns it on when editing the class.
+**Say:** If you don't see a message button, check the class. Teachers can message parents only in classes where **Bi-Directional Communication Allowed** is on. Your admin turns it on when editing the class.
 **Show:** Web, as the admin: Sidebar → Admin Portal → Class. Select "Maktab Level 1", click "Edit". Spotlight the "Bi-Directional Communication Allowed" switch (already on), then "Cancel".
 
 #### [6.2] For admins
@@ -120,13 +121,14 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 7. Done
 #### [7.1] Result
-**Say:** Now you know your students at a glance, and their parents are one tap away.
+**Say:** Now you know your students at a glance, and you can reach their parents from the same screen.
 **Show:** Phone frame: Aisha's open panel with contacts and details.
 
 #### [7.2] Next
-**Say:** Next, see how to message whole classes and all parents, or take attendance for your section.
+**Say:** Next, video 07.3: Message parents, classes and teachers, to message whole classes, and video 10.2: Take class attendance.
 **Show:** End card with two tiles: "07.3 Message parents, classes and teachers" and "10.2 Take class attendance".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 6 changes: prereq set to 05.4 (coordinator); [1.1] second-person opening; [5.4] no elliptical question, Say covers the second Rewrite tap; [6.1] no elliptical question; [7.1] no "one tap away" idiom; [7.2] end card by number and title
 - 2026-11-03 · validator · checked against master d36d69ed8 · 2 fixes: [2.1] app path (a teacher-only user's Madrasah tile opens the Teacher Portal menu directly, no Teachers Portal tile); section A demo 8/10 would show "Nearly full" (80% rule), now 7/10 so [2.2] shows "Open"

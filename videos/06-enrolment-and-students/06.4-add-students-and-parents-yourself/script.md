@@ -1,7 +1,7 @@
 ---
 id: "06.4"
 title: Add students and parents yourself
-target: 4:30
+target: 4:45
 prereq:
   - "05.4"
 status: scripted
@@ -20,6 +20,7 @@ Add a parent and a student by hand, link them as a family, put the student in a 
 
 ## Covers
 - Add New User → Student or Parent, Manage Class, Link Parent, Link Childs, Siblings, media consent
+- Community Involvement Activity Records (classes numbered 9–12)
 
 ## Demo data
 - Demo madrasah "Al-Noor Madrasah"; the demo admin has Premium
@@ -28,13 +29,14 @@ Add a parent and a student by hand, link them as a family, put the student in a 
 - New student added on camera: "Hamza Rahman" (username `hamza_rahman`, demo email)
 - Existing student "Maryam Rahman" in Maktab Level 1, Section B, with no parent linked yet (linked to Yusuf in chapter 6, so Hamza and Maryam become siblings)
 - Existing parent "Aisha Rahman" for the Link Childs demo
+- Academic class "Grade 10" (numeric class name 10) with student "Adam Hussain" and no community records yet; a small sample PDF (a volunteering certificate) to upload with 6 community hours
 - No real personal data; GUIDs blurred if shown
 
 ## Script
 
 ### 1. Before you start
 #### [1.1] Opening
-**Say:** Not every family enrols online. In this video you add a parent and a student yourself, link them as a family, and put the student in a class.
+**Say:** In this video for madrasah admins, you'll add a parent and a student yourself, for families who don't enrol online. Then you'll link them as a family and put the student in a class.
 **Show:** Title card: "Add students and parents yourself".
 
 #### [1.2]
@@ -77,17 +79,13 @@ Add a parent and a student by hand, link them as a family, put the student in a 
 **Show:** Hover the info icon to show "Student Media Release Consent", then choose "Yes".
 
 #### [4.4] Link the parent
-**Say:** Under **Parent/Guardian details**, tap **Link Existing Ad-din account**. Pick the parent, choose the relationship, and tap **Select this Parent**.
-**Show:** Click "Link Existing Ad-din account". In the parent list that opens, tick "Yusuf Rahman", choose "Father" under "Select Relationship:", click "Select this Parent". Yusuf appears in the card.
-**Caption:** Under Parent/Guardian details, tap Link Existing Ad-din account, pick the parent and relationship, and tap Select this Parent.
-
-#### [4.5]
-**Say:** Tap **Save Changes**.
-**Show:** Click "Save Changes"; "Saving Data", then "Done".
+**Say:** Under **Parent/Guardian details**, tap **Link Existing Ad-din account**. Pick the parent, choose the relationship, and tap **Select this Parent**. Then tap **Save Changes**.
+**Show:** Click "Link Existing Ad-din account". In the parent list that opens, tick "Yusuf Rahman", choose "Father" under "Select Relationship:", click "Select this Parent". Yusuf appears in the card. Click "Save Changes"; "Saving Data", then "Done".
+**Caption:** Tap Link Existing Ad-din account, pick the parent and relationship, tap Select this Parent, then Save Changes.
 
 ### 5. Put the student in a class
 #### [5.1] Manage Class
-**Say:** A student can join a class once a linked parent has a seat. Yusuf already has one; video 02.4 shows how to give seats.
+**Say:** A student can join a class only when a linked parent has one of your organisation's Premium seats. Yusuf already has one; video 02.4 shows how to give seats.
 **Show:** Student tab; Hamza's row. Small note on screen: "02.4 Give seats to parents, teachers and staff".
 
 #### [5.2]
@@ -112,14 +110,22 @@ Add a parent and a student by hand, link them as a family, put the student in a 
 **Say:** Children who share a parent are siblings. Select a student and tap **Siblings** to see their brothers and sisters.
 **Show:** Student tab, select "Hamza Rahman", click "Siblings": Maryam Rahman with her class and section.
 
-### 7. Record media consent for many
+### 7. Media consent and community hours
 #### [7.1] MRC
-**Say:** To record media consent for several students at once, select them and tap **MRC**.
+**Say:** To record media consent for several students at once, select them and tap **MRC**, short for Media Release Consent.
 **Show:** Student tab, tick two students, click "MRC". The "Student Media Release Consent" window opens.
 
 #### [7.2]
 **Say:** Read the consent, tick the box to confirm you've checked it, then tap **Consent** or **Dissent**.
 **Show:** Scroll the text, tick the box under "MADRASAH STAFF", click "Consent". Toast confirms.
+
+#### [7.3] Community hours
+**Say:** For students in classes numbered 9 to 12, you can also keep records of their community involvement. Filter the **Student** tab by the class, select one student, and tap **Community Involvement Activity Records**.
+**Show:** Student tab → Filters: pick "Grade 10" (the button shows only when a class numbered 9–12 is picked). Select "Adam Hussain", click "Community Involvement Activity Records". His page opens: "No Record uploaded related to this account".
+
+#### [7.4]
+**Say:** Tap **Upload**. Add a **Description**, the **Date** and the **Community Hours**, tap **Choose File** to pick the file, then tap **Upload**. The record joins the list, where you can open or delete it.
+**Show:** Click "Upload": the "Upload File" window. Type "Food bank volunteering", pick a date, type 6 in Community Hours, Choose File → the sample PDF, click "Upload". The row shows the description, file name, 6 hours and the date, with "Delete". Go back to User Management.
 
 ### 8. Next
 #### [8.1] Done
@@ -127,9 +133,10 @@ Add a parent and a student by hand, link them as a family, put the student in a 
 **Show:** Student tab filtered to "Maktab Level 1" and "Section A", with Hamza Rahman.
 
 #### [8.2]
-**Say:** Next, move students between sections, or add many people at once from a spreadsheet.
+**Say:** Next, video 06.5: Move students between sections, or video 03.5: Import and export users in bulk, to add many people at once.
 **Show:** End card with two tiles: "06.5 Move students between sections" and "03.5 Import and export users in bulk".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 6 changes + fold: [1.1] second-person opening; [4.5] merged into [4.4] (thin scene); [5.1] seat named as one of your organisation's Premium seats; [7.1] MRC explained; [8.2] end card by number and title; fold: Community Involvement Activity Records as new [7.3]–[7.4] (Covers, demo data, chapter 7 renamed), checked in organisationUserList and activity-record on master
 - 2026-11-03 · validator · checked against master d36d69ed8 · 3 fixes: [6.2] Link Parent Save saves directly (no Confirmation window), Successful alert; [4.4] parent picker has no Select Parent heading from the profile; seat flag quotes the Manage Class message

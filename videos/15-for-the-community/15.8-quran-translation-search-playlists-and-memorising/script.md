@@ -48,7 +48,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. More from the Quran reader
 #### [1.1] Opening
-**Say:** The Quran in the Ad-Din app does more than read and recite. In this video you'll use translations, search, playlists, and a mode that helps you memorise.
+**Say:** In this video for members of the community, you'll read the Quran with a translation, search it, play surahs one after another, and use a mode that helps you memorise.
 **Show:** Title card: "Quran: translation, search, playlists and memorising". Phone frame on the app home.
 
 #### [1.2]
@@ -61,7 +61,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Tap the sliders icon: "Reading settings" opens. Tap "Arabic", then "Translation", then back to "Arabic + translation"; the page behind changes each time.
 
 #### [2.2] Choose a translation
-**Say:** Tap **Translation** to pick from many languages. Translations in this colour can also be read aloud after each ayah.
+**Say:** Tap **Translation** to pick from many languages. Highlighted translations can also be read aloud after each ayah.
 **Show:** Tap the Translation row. Spotlight the note at the top and a highlighted row with "Audio translation available". Tap "English · Saheeh International".
 **Caption:** Tap Translation to pick a language. Highlighted translations can also be read aloud after each ayah.
 
@@ -75,7 +75,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 3. Search
 #### [3.1] Find a word
-**Say:** Looking for a verse? Tap the search icon and type a word, in Arabic or in your translation.
+**Say:** To find a verse, tap the search icon and type a word, in Arabic or in your translation.
 **Show:** Tap the magnifier: "Search" opens. Spotlight the placeholder "A word in Arabic or in the translation". Type "patience". Results list with surah names and ayah numbers.
 
 #### [3.2]
@@ -88,7 +88,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Tap the surah button: the list opens. Tap the plus next to Ya-Sin (36), Ar-Rahman (55) and Al-Mulk (67); each turns into a tick.
 
 #### [4.2] Play all
-**Say:** Open **Playlist** to change the order or remove a surah. Then tap **Play all** to hear them back to back.
+**Say:** Open **Playlist** to change the order or remove a surah. Then tap **Play all** to hear them one after another.
 **Show:** Close the list. Tap the "Playlist" chip (shows 3). Move Al-Mulk up with the arrow. Tap "Play all": the first surah opens and recitation starts; the player bar shows "Playlist". Stop.
 
 ### 5. Repeat, speed and carrying on
@@ -98,7 +98,7 @@ See docs/SCRIPT-FORMAT.md.
 **Caption:** Repeat recites each ayah up to ten times. Speed makes it slower or faster.
 
 #### [5.2] Keep going
-**Say:** In the settings, **Repeat each ayah** and **Playback speed** are here too. **Continue to the next surah** keeps reciting when a surah ends.
+**Say:** The same choices are in Reading settings, under **Repeat each ayah** and **Playback speed**. **Continue to the next surah** keeps reciting when a surah ends.
 **Show:** Open Reading settings. Spotlight "Repeat each ayah", "Playback speed", then "Continue to the next surah" with "Keep reciting when a surah ends" (on).
 
 ### 6. Recite from memory
@@ -125,13 +125,14 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 8. Done
 #### [8.1] Result
-**Say:** Now you can follow the meaning, find any verse, line up your favourite surahs, and test your memorisation.
+**Say:** Now you can follow the meaning, find any verse, play your favourite surahs in order, and test your memorisation.
 **Show:** Reader in Dark theme with Arabic + translation.
 
 #### [8.2] Next
-**Say:** For the reading and listening basics, watch the earlier Quran video. Or try the Tasbeeh counter next.
+**Say:** For the reading and listening basics, watch video 15.5: Read and listen to the Quran. Or try the Tasbeeh counter in video 15.6: Tasbeeh, live streams, gallery and forms.
 **Show:** End card with two tiles: "15.5 Read and listen to the Quran" and "15.6 Tasbeeh, live streams, gallery and forms".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 7 changes: [1.1] second-person opening, no "back to back"; [2.2] "in this colour" → "Highlighted", matches the caption; [3.1] no elliptical question; [4.2] no "back to back"; [5.2] clearer "same choices in Reading settings"; [8.1] no "line up"; [8.2] end card by number and title
 - 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: [5.1] speed button can't go from 1.25× straight back to 1× (cycles 1, 1.25, 1.5, 0.75); repeat cycle noted

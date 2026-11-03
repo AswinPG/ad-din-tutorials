@@ -3,5 +3,6 @@
 Every instruction given to Claude for this video, newest first, with the result.
 Format: date · who · prompt (verbatim or summarised) · outcome / commit.
 
+- 2026-11-03 · manager · "use a critic subagent to criticise and find flaws in the script, make it better" · critic pass: 7 changes (opening, idioms and elliptical question removed, [5.2] clearer, end card by number); teaches Repeat each ayah and Playback speed fully, as 15.5 now points here
 - 2026-11-03 · manager · "use a sub agent to validate the script" · validator pass: labels all found, flow matches modules.v2/quran; fixed the speed-button sequence in [5.1].
 - 2026-11-03 · manager · "Write all the scripts now and double check nothing is missed." · Scripted from origin/master (d36d69ed8); translation audio shown only for English · Saheeh International (one of eight recorded translations); flags: recorded translations list, live Quran data in the demo world, no web sidebar entry.

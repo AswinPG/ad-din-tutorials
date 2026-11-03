@@ -34,7 +34,7 @@ Add sections to a class, each with its own class teacher and capacity, and read 
 
 ### 1. Before you start
 #### [1.1] Opening
-**Say:** A section is a group of students inside a class, with its own teacher and its own limit. In this video you add sections and look inside one.
+**Say:** For madrasah admins: in this video you'll add sections to a class and look inside one. A section is a group of students in a class, with its own teacher and its own limit.
 **Show:** Title card: "Create class sections".
 
 #### [1.2]
@@ -82,7 +82,7 @@ Add sections to a class, each with its own class teacher and capacity, and read 
 **Show:** Scroll to "Ilyas Noor" with the "Inactive" badge. Click it: "Contacts and details show for active students only."
 
 #### [5.3]
-**Say:** To fill a section, use **Add students**. The video on moving students shows how.
+**Say:** To fill a section, use **Add students**. Video 06.5 shows how.
 **Show:** Spotlight "Add students" at the top of the list.
 
 ### 6. Next
@@ -91,9 +91,10 @@ Add sections to a class, each with its own class teacher and capacity, and read 
 **Show:** Back to "Hifz Boys": the "Hifz A" card.
 
 #### [6.2]
-**Say:** Next, add the subjects each class studies. To fill sections with students, see the enrolment videos.
+**Say:** Next, video 05.5: Add subjects. To fill sections with students, see video 06.4: Add students and parents yourself, and video 06.5: Move students between sections.
 **Show:** End card with three tiles: "05.5 Add subjects", "06.4 Add students and parents yourself" and "06.5 Move students between sections".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 3 changes: [1.1] second-person opening, task first; [5.3] points to video 06.5 by number; [6.2] every end-card tile named by number and title
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes

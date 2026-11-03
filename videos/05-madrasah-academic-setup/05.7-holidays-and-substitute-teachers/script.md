@@ -34,7 +34,7 @@ Add the days your madrasah is closed, and let another teacher cover a teacher's 
 
 ### 1. Before you start
 #### [1.1] Opening
-**Say:** This video covers two jobs: marking the days your madrasah is closed, and handing a teacher's work to another teacher while they're away.
+**Say:** This video is for madrasah admins. You'll mark the days your madrasah is closed, and give a teacher's work to another teacher while they're away.
 **Show:** Title card: "Holidays and substitute teachers".
 
 #### [1.2]
@@ -51,7 +51,7 @@ Add the days your madrasah is closed, and let another teacher cover a teacher's 
 **Show:** Click "Add"; the "Add Holiday" window opens. Type "Eid al-Adha break" and a description. Pick the two dates.
 
 #### [2.3]
-**Say:** All four boxes are needed. If one is empty, Ad-Din asks you to fill in all the details. Tap **Save**.
+**Say:** All four boxes are needed. If one is empty, Ad-Din asks you to complete them. Tap **Save**.
 **Show:** Click "Save". A confirmation message; the holiday appears in the list.
 
 #### [2.4]
@@ -60,7 +60,7 @@ Add the days your madrasah is closed, and let another teacher cover a teacher's 
 
 ### 3. Start a delegation
 #### [3.1] Delegations
-**Say:** When a teacher is away, give their work to someone else with a delegation. In the **Admin Portal**, open **Delegations**.
+**Say:** When a teacher is away, a substitute teacher can cover their work. In Ad-Din this is a delegation. In the **Admin Portal**, open **Delegations**.
 **Show:** Sidebar → Admin Portal → Delegations. The Delegation page with one older delegation.
 
 #### [3.2]
@@ -95,9 +95,10 @@ Add the days your madrasah is closed, and let another teacher cover a teacher's 
 **Show:** Quick cut: Amina Saleh's Teacher Portal → Delegations, showing the new delegation.
 
 #### [6.2]
-**Say:** Next, see how teachers take attendance. You can also check the program pages families see.
+**Say:** Next, video 10.2: Take class attendance, to see how teachers take attendance. To check what families see, watch video 05.8: Your public program pages.
 **Show:** End card with two tiles: "10.2 Take class attendance" and "05.8 Your public program pages".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 4 changes: [1.1] second-person opening, no "handing to"; [2.3] no "fill in all"; [3.1] ties the title's "substitute teacher" to Ad-Din's word "delegation"; [6.2] end card by number and title
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes

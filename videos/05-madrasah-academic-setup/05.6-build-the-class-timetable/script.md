@@ -36,7 +36,7 @@ Use the Schedule Builder to create a weekly timetable for your classes, with bre
 
 ### 1. Before you start
 #### [1.1] Opening
-**Say:** The Schedule Builder makes a weekly timetable for many classes at once: the periods, the breaks, and who teaches what. Let's build one.
+**Say:** In this video for madrasah admins, you'll build a weekly timetable with the Schedule Builder: the periods, the breaks, and who teaches what, for many classes at once.
 **Show:** Title card: "Build the class timetable".
 
 #### [1.2]
@@ -81,8 +81,8 @@ Use the Schedule Builder to create a weekly timetable for your classes, with bre
 **Show:** "Hifz Boys - Hifz A" selected. Monday Period 1: pick "Quran Hifz", then "Ibrahim Yusuf". Fill a few more cells.
 
 #### [5.2] Copy
-**Say:** Save time with **Copy Day**, which copies one day to others, and **Copy to Sections**, which copies this section's week to another section.
-**Show:** Click "Copy Day"; Source Day Monday, tick the other days; click "Copy". The grid fills.
+**Say:** To save time, **Copy Day** copies one day to other days, and **Copy to Sections** copies this section's week to another section.
+**Show:** Click "Copy Day"; Source Day Monday, tick the other days; click "Copy". The grid fills. Spotlight "Copy to Sections" without clicking it.
 
 #### [5.3] Teacher clashes
 **Say:** Ad-Din won't let a teacher be in two places at once. A teacher who is already teaching is marked busy, and a clash turns the cell red with the reason.
@@ -111,9 +111,10 @@ Use the Schedule Builder to create a weekly timetable for your classes, with bre
 **Show:** Routines tab with Term 1. Change one period's teacher; the save bar appears. Spotlight "Notify parents & students", then click "Discard".
 
 #### [7.2]
-**Say:** Next, add your holidays and set up substitute teachers. You can also see the timetable the way parents do.
+**Say:** Next, video 05.7: Holidays and substitute teachers. To see the timetable the way parents do, watch video 05.8: Your public program pages.
 **Show:** End card with two tiles: "05.7 Holidays and substitute teachers" and "05.8 Your public program pages".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 4 changes: [1.1] second-person opening; [5.2] Show also spotlights Copy to Sections, which the Say names; [5.2] plainer wording; [7.2] end card by number and title
 - 2026-11-03 · validator · checked against master d36d69ed8 · 5 fixes: [3.1] class checkbox vs name selects sections differently; [4.1]/[4.2] Period Structure starts with six sample rows to edit/delete; [5.1] teacher list = subject teachers + section class teacher; [5.3] the only free teacher is auto-picked; demo data: class teachers for Hifz A/B

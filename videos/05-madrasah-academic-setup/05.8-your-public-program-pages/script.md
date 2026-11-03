@@ -29,7 +29,7 @@ Know what parents and your community see about your programs, teachers and timet
 
 ### 1. Before you start
 #### [1.1] Opening
-**Say:** Parents and community members who choose your madrasah can browse your programs before they enrol. This video shows those pages, and where their content comes from.
+**Say:** In this video for madrasah admins, you'll see the program pages parents and your community browse before they enrol, and where each part comes from.
 **Show:** Title card: "Your public program pages".
 
 #### [1.2]
@@ -38,12 +38,8 @@ Know what parents and your community see about your programs, teachers and timet
 
 ### 2. Where families find them
 #### [2.1]
-**Say:** In the sidebar, open **Madrasah / School**. Four of its pages show families your programs: **Program Details and Subjects**, **Signup for a Program**, **Staff List** and **Program Timetables**.
+**Say:** Families find your programs under **Madrasah / School** in the sidebar: **Program Details and Subjects**, **Signup for a Program**, **Staff List** and **Program Timetables**. Anyone whose home madrasah is yours sees them, without Ad-Din Premium.
 **Show:** Parent's browser. Sidebar → Madrasah / School, expanded (it also lists Introduction & Services, covered elsewhere). Spotlight the four pages.
-
-#### [2.2]
-**Say:** Anyone whose home madrasah is yours sees these pages. They don't need Ad-Din Premium.
-**Show:** Hold on the expanded menu.
 
 ### 3. Program details and subjects
 #### [3.1] Pick a program
@@ -86,9 +82,10 @@ Know what parents and your community see about your programs, teachers and timet
 **Show:** Spotlight "Signup for a Program" in the sidebar.
 
 #### [6.2]
-**Say:** Next, prepare online enrolment, and see the enrolment steps a parent goes through.
+**Say:** Next, video 06.1: Prepare online enrolment, and video 06.2: Enrol your child online, which shows the steps a parent goes through.
 **Show:** End card with two tiles: "06.1 Prepare online enrolment" and "06.2 Enrol your child online".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 3 changes: [1.1] second-person opening; [2.2] merged into [2.1] (its Show only held on the menu); [6.2] end card by number and title
 - 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: [2.1] Madrasah / School has five pages (Introduction & Services too); four are named
