@@ -25,7 +25,7 @@ Add, rename, reorder and nest the items in your website's menu, and point each o
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
 - Masjid Admin account, admin of "Masjid Al-Noor", website active with the Website add-on, colour and logo already set
-- Menu at the start: the five default items (Home, Latest News, Contact Us, Monthly Prayer Times, "Volonteer Form" as the backend spells it)
+- Menu at the start: the five default items (Home, Latest News, Contact Us, Monthly Prayer Times, "Volonteer Form" as the backend spells it). Seed the website as activated before the service pages existed; if service pages exist at activation, Ad-Din also adds a sixth "Masjid" submenu holding up to five of them
 - Published Introduction & Services pages: "Nikah Services" and "Funeral Services"
 - Added on camera: "Events" → Internal page "All Masjid Events"; "Gallery" → "Masjid Gallery"; "Services" turned into a submenu holding "Nikah Services" and "Funeral Services" (Service page); "Quran Classes" → External link `https://alnoor-madrasah.example.org`
 - Demo website open in a second tab for the closing shot
@@ -53,7 +53,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Sidebar → Website → Masjid Website → Menu tab. The "Website menu" page.
 
 #### [2.2]
-**Say:** At the top is a live preview of your menu. Below, **Menu structure** lists each item. A new website starts with five.
+**Say:** At the top is a live preview of your menu. Below, **Menu structure** lists each item. A new website starts with a few ready-made ones.
 **Show:** Spotlight the live preview bar, then the five items in Menu structure.
 
 ### 3. A page on your site
@@ -108,3 +108,4 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · validator · checked against master d36d69ed8 · 2 fixes: "starts with five" softened (a sixth Masjid submenu is added if service pages exist at activation); demo data notes seeding order

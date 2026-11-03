@@ -27,7 +27,7 @@ Give your Ad-Din website your colour, logo, banner slides, welcome text, social 
 - Masjid Admin account, admin of "Masjid Al-Noor", website active at the demo address `alnoor` with the Website add-on
 - Settings start plain: default colour, no logo, no banner slides, Organization name on banner "Masjid Al-Noor", no social links or contact emails
 - Files ready: Masjid Al-Noor logo PNG; two banner photos 1920 × 600 ("prayer hall", "Ramadan iftar")
-- Typed on camera: slide 1 title "Welcome to Masjid Al-Noor", description "Prayer, learning and community for every family."; action button to Internal page "Prayer Times (Masjid)"; banner text "A home for prayer and learning in the heart of Riverside."; Facebook URL `https://facebook.com/masjidalnoor.example`, YouTube URL `https://youtube.com/@masjidalnoor.example`; contact emails `office@alnoor.example` and `imam@alnoor.example`
+- Typed on camera: slide 1 title "Welcome to Masjid Al-Noor", description "Prayer, learning and community for every family."; action button to Internal page "All Masjid Events"; banner text "A home for prayer and learning in the heart of Riverside."; Facebook URL `https://facebook.com/masjidalnoor.example`, YouTube URL `https://youtube.com/@masjidalnoor.example`; contact emails `office@alnoor.example` and `imam@alnoor.example`
 - Demo website open in a second tab for the closing shot
 
 ## Script
@@ -71,7 +71,7 @@ See docs/SCRIPT-FORMAT.md.
 
 #### [3.3] Action button
 **Say:** Want a button on the slide? Turn on **Action button** and choose where it links: a service page, an outside link, or a page on your site.
-**Show:** Toggle "Action button" on. Click "Internal page"; choose "Prayer Times (Masjid)". Switch the preview to Mobile, then back to Desktop.
+**Show:** Toggle "Action button" on. Click "Internal page"; choose "All Masjid Events" (the banner's internal-page list has no prayer-times page). Switch the preview to Mobile, then back to Desktop.
 
 #### [3.4]
 **Say:** Tap **Save changes**. Add more banners the same way, and drag them into the order you want.
@@ -110,3 +110,4 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: banner action button linked to "All Masjid Events" (banner internal-page list has no Prayer Times page)

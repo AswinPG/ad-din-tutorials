@@ -30,11 +30,11 @@ Know what your community finds on your masjid's Ad-Din website: home page, news,
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
 - Masjid Al-Noor demo website at `alnoor`, Website add-on active, branded (green theme, logo, two banner slides, Facebook and YouTube links)
 - Menu: Home, Latest News, Events (All Masjid Events), Gallery (Masjid Gallery), Facilities (Facility Details (Masjid)), Monthly Prayer Times, Contact Us
-- Donation page set to the published "Support Masjid Al-Noor" page, so the Donate button shows; campaign "Roof Repair Appeal" published
+- Donation page set to the published "Support Masjid Al-Noor" page, so the Donate button shows; campaign "Roof Repair Appeal" published with a goal, some donations and a fictional PayPal Hosted Button ID (its donate button is PayPal's)
 - Today's prayer times and the monthly timetable for the current month
 - Three news posts ("Eid Prayer Times Announced", "Roof Repair Update", "New Quran Class"), three upcoming events with posters ("Family Picnic", "Tafsir Circle", "Youth Football")
-- Gallery album "Ramadan Iftar" with six photos; facilities: Prayer Hall (capacity 400), Wudu Area, Parking (40 spaces), Wheelchair Access
-- Contact form filled with a demo visitor; no real personal data
+- Six gallery photos from the Ramadan iftar, each with a title and caption (the public Gallery page is one grid, no albums); facilities: Prayer Hall (capacity 400), Wudu Area, Parking (40 spaces), Wheelchair Access
+- Contact form filled with a demo visitor; no real personal data. The form needs its reCAPTCHA ticked; use a test key or a mocked widget
 
 ## Script
 <!--
@@ -64,7 +64,7 @@ See docs/SCRIPT-FORMAT.md.
 
 #### [2.3] More on the home page
 **Say:** The home page also counts down to the next event, and shows the latest news, events, donation campaigns, photos and a short About Us.
-**Show:** Scroll slowly: "Next Event In" countdown, news, events, "Masjid Donations", gallery photos, "About Us".
+**Show:** Scroll back up, then down slowly in page order: "Next Event In" countdown, "Masjid Donations", "Masjid News", "Masjid Events", then the photo strip beside "About Us".
 
 ### 3. News and events
 #### [3.1] News
@@ -81,8 +81,8 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 4. Gallery and facilities
 #### [4.1] Gallery
-**Say:** **Gallery** shows the masjid's photo albums.
-**Show:** Menu → Gallery. Click the "Ramadan Iftar" album; click through two photos.
+**Say:** **Gallery** shows the masjid's photos and videos.
+**Show:** Menu → Gallery. The photo grid; click a Ramadan iftar photo; it opens large with its title and caption; click the right arrow twice, then close. (The website shows one grid, not albums.)
 
 #### [4.2] Facilities
 **Say:** **Facilities** tells visitors what the masjid offers, such as the prayer hall, parking and wheelchair access.
@@ -104,8 +104,8 @@ See docs/SCRIPT-FORMAT.md.
 **Caption:** Donate opens the donation page. Campaigns are under Masjid Donations.
 
 #### [6.2] Contact Us
-**Say:** On **Contact Us**, visitors fill in their name, email, phone and message, and tap **Send Message**. The masjid gets it by email.
-**Show:** Menu → Contact Us. The form with Full Name, E-Mail, Mobile Number and Your Message filled in; click "Send Message"; the thank-you note appears.
+**Say:** On **Contact Us**, visitors fill in the **Send Message** form with their name, email, phone and message, and send it. The masjid gets it by email.
+**Show:** Menu → Contact Us. The "Send Message" form with Full Name, E-Mail, Mobile Number and Your Message filled in; tick the reCAPTCHA box, then click the paper-plane send button ("Send Message" is the form's heading). The note "Thank you for contacting us. Your message will be forwarded to the organization." appears.
 
 #### [6.3] Directions
 **Say:** At the bottom of every page is the masjid's address, with a **Get Direction** button that opens the map.
@@ -118,3 +118,4 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · validator · checked against master d36d69ed8 · 5 fixes: home-page scroll order; Gallery is one grid, not albums; contact form send button + reCAPTCHA + real thank-you text (Say no longer says tap Send Message); campaign PayPal button in demo data

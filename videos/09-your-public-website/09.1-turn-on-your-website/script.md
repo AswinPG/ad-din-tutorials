@@ -24,7 +24,7 @@ Activate your masjid's Ad-Din website, choose its web address, and, if you alrea
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
 - Masjid Admin account, admin of "Masjid Al-Noor"; Masjid Al-Noor has no website yet at the start, and the Website add-on is active
-- After activation: website address `masjid-al-noor` on the demo website domain, changed on camera to `alnoor`; the demo domain stays as served by the environment
+- After activation: website address `Masjid-Al-Noor` (Ad-Din builds it from the masjid name, keeping capitals and turning spaces into hyphens) on the demo website domain, changed on camera to `alnoor`; the demo domain stays as served by the environment
 - A second shot of the same page for an organisation without the add-on, showing the Subscription needed chip and Subscribe to preview button, plus the visitor's "Temporarily Unavailable" page
 - Custom domain example only: `www.yourmasjid.org` as printed by the app; no real registrar account is opened
 
@@ -119,3 +119,4 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: demo address shown as the app builds it (Masjid-Al-Noor, capitals kept)

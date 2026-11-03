@@ -69,8 +69,8 @@ See docs/SCRIPT-FORMAT.md.
 **Caption:** Average CTR: the share who clicked. Average position: how high you appear (lower is better).
 
 #### [3.3] The chart
-**Say:** Tick a number to show it on the chart, and see how it changes day by day.
-**Show:** Tick "Total impressions" alongside clicks; the chart adds a second line.
+**Say:** Each ticked number is drawn on the chart, day by day. Untick one to hide it.
+**Show:** All four tiles start ticked. Untick "Average CTR" and "Average position"; the chart keeps the clicks and impressions lines.
 
 ### 4. Choose the period
 #### [4.1] Periods
@@ -97,3 +97,4 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: all four metric tiles start ticked; scene [3.3] now unticks to hide lines

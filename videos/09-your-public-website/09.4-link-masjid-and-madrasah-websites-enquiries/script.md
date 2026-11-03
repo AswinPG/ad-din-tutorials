@@ -33,6 +33,7 @@ Join your masjid's and madrasah's websites into one site, approve or unlink the 
 - Masjid Al-Noor email on file `office@alnoor.example`; website contact emails `office@alnoor.example` and `imam@alnoor.example`
 - A demo visitor message on the website's Contact page: Full Name "Sara Ahmed", E-Mail `sara@example.com`, Mobile Number fictional, message "Do you offer Nikah services on Saturdays?"
 - The notification email "New enquiry from website" shown in a mock mail client (no real inbox)
+- The Contact page's reCAPTCHA must be ticked before the form sends; use the demo site's test reCAPTCHA key or a mocked widget
 
 ## Script
 <!--
@@ -95,7 +96,7 @@ See docs/SCRIPT-FORMAT.md.
 ### 6. Answer visitors' messages
 #### [6.1] Contact form
 **Say:** Visitors can write to you from your website's **Contact Us** page.
-**Show:** Demo website → Contact Us. The form with the demo message filled in; click "Send Message". The thank-you note appears.
+**Show:** Demo website → Contact Us. The "Send Message" form (Full Name, E-Mail, Mobile Number, Your Message) with the demo message filled in; tick the reCAPTCHA box, then click the paper-plane send button under it ("Send Message" is the form's heading, not a button). The note "Thank you for contacting us. Your message will be forwarded to the organization." appears.
 
 #### [6.2] Where they arrive
 **Say:** Each message is emailed to your organisation's email address and to your website's **Contact emails**. There's no separate inbox in Ad-Din.
@@ -112,3 +113,4 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · validator · checked against master d36d69ed8 · 2 fixes: contact form sent with the paper-plane button after reCAPTCHA (Send Message is a heading), real thank-you text; reCAPTCHA added to demo data
