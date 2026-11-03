@@ -24,7 +24,8 @@ Find your way around the parent home in the Ad-Din app: a panel for each child w
 
 ## Demo data
 - Parent "Yusuf Rahman" (username `yusuf_rahman`), Parent role only; home masjid "Masjid Al-Noor", home madrasah "Al-Noor Madrasah" (Premium, Class Announcements switched on)
-- Children linked to Yusuf: "Maryam Rahman" (Maktab Level 1, Section B, username `maryam_rahman`) and "Hamza Rahman" (Hifz Boys A), both in a class; "Zainab Rahman" linked, with an enrollment request for "Maktab Level 1" in status Pending
+- Children linked to Yusuf: "Maryam Rahman" (Maktab Level 1, Section B, username `maryam_rahman`) and "Hamza Rahman" (Hifz Boys A), both in a class; "Zainab Rahman" linked, with an enrollment request for "Maktab Level 1" in status Pending. Only Zainab has an enrollment request on record (the My enrollments card lists every request of each linked child, approved ones included)
+- For the cards in [4.4]: Maryam is also in a class marked as a Quran Hifz class, with a Hifz record today (the Hifz progress card only shows for a child in a Hifz class); Al-Noor Madrasah has Academic Activity switched on (My Classwork only shows then)
 - Today's routine for Maryam: three classes, one of them happening now
 - Two class announcements for Maryam's class (one note, one photo) from her teacher
 - Iqamah times for Masjid Al-Noor, two unread messages, one masjid event today
@@ -82,7 +83,7 @@ See docs/SCRIPT-FORMAT.md.
 
 #### [4.2]
 **Say:** Use the arrows to look at the other days of the week. Tap the day in the middle to jump back to **Today**.
-**Show:** Tap the right arrow twice: the day label changes. Tap the label: it reads "Today" again.
+**Show:** Tap the right arrow twice: the day label changes. Tap the label: it reads "Today" again. (The week runs Sunday to Saturday and the arrows stop at its ends, so record Sunday to Thursday.)
 
 #### [4.3] Announcements
 **Say:** **Class Announcements** shows the latest posts from your child's teachers, such as notes and photos. Tap **View all** to see every post.
@@ -129,3 +130,4 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · validator · checked against master d36d69ed8 · 2 fixes: demo data (Hifz class and Academic Activity needed for [4.4], only Zainab has an enrollment request), [4.2] record Sun–Thu so the right arrow works twice

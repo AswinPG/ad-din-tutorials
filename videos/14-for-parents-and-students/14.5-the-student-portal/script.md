@@ -26,8 +26,8 @@ As a student, find your timetable, attendance, Hifz progress, classwork and mark
 - Timetable, attendance, Hifz, classwork, marks
 
 ## Demo data
-- Student "Hamza Rahman" (username `hamza_rahman`), Student role only, in "Hifz Boys A" and "Maktab Level 1" at Al-Noor Madrasah (Academic Activity on)
-- Today's routine: three classes, one happening now; class routines for the week
+- Student "Hamza Rahman" (username `hamza_rahman`), Student role only, in "Hifz Boys A" (marked as a Quran Hifz class) and "Maktab Level 1" at Al-Noor Madrasah (Academic Activity on)
+- Today's routine: three classes, one happening now; class routines for the week with both classes in them (the line under Hamza's name lists the classes found in his week's routine)
 - Today's attendance: Present in both classes; subject-wise periods on; Term 1 summary with marked days
 - Today's Hifz record from teacher "Ibrahim Khan": marked (mark 9, 2 mistakes), with a teacher note; one record yesterday
 - Classwork: "Surah Al-Mulk test" graded 18/20, "Seerah worksheet" due later this week, "Arabic vocabulary quiz" missing
@@ -62,7 +62,7 @@ See docs/SCRIPT-FORMAT.md.
 
 #### [3.2]
 **Say:** Use the arrows to see the other days of the week, and tap the day in the middle to come back to **Today**.
-**Show:** Tap the right arrow twice, then tap the day label: "Today".
+**Show:** Tap the right arrow twice, then tap the day label: "Today". (The week runs Sunday to Saturday and the arrows stop at its ends, so record Sunday to Thursday.)
 
 #### [3.3] Full timetable
 **Say:** For the full timetable, open the menu, then **Student Portal**, then **Class Routine**. It has your routine, plus views by class and by teacher.
@@ -111,3 +111,4 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · validator · checked against master d36d69ed8 · 3 fixes: demo data (Hifz class flag, both classes in the week routine for the name line), [3.2] record Sun–Thu so the right arrow works twice

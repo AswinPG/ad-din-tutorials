@@ -21,10 +21,10 @@ Follow your child's daily Hifz recitation and their classwork, with scores, from
 - Hifz progress card, My Classwork, scores
 
 ## Demo data
-- Parent "Yusuf Rahman" in the app; child "Hamza Rahman" in "Hifz Boys A" and "Maktab Level 1"; Al-Noor Madrasah has Academic Activity switched on
+- Parent "Yusuf Rahman" in the app; child "Hamza Rahman" in "Hifz Boys A" (marked as a Quran Hifz class, which the Hifz progress card needs) and "Maktab Level 1"; Al-Noor Madrasah has Academic Activity switched on
 - Today's Hifz records for Hamza from teacher "Ibrahim Khan": a new-lesson task marked (mark 8, 2 mistakes, one failed attempt then a pass, 30 lines, 2 pages, a teacher note), and a revision task the student has submitted but the teacher hasn't marked
 - Yesterday: one marked Hifz record, for the change-date shot
-- Classwork for Hamza across both classes: "Surah Al-Mulk test" graded 18/20 (weight 2), "Wudu poster" graded, not scored, "Seerah worksheet" due later this week, "Arabic vocabulary quiz" missing (two days late)
+- Classwork for Hamza across both classes, all in the current term (the card shows the current term only): "Surah Al-Mulk test" graded 18/20 (weight 2), "Wudu poster" graded, not scored, "Seerah worksheet" due later this week, "Arabic vocabulary quiz" missing (two days late)
 - Phone frame for every shot
 
 ## Script
@@ -58,9 +58,9 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Spotlight Start and End, then "Total 30 lines · 2 pages".
 
 #### [2.4] The result
-**Say:** The badge shows the result. A mark with the number of mistakes means the teacher has marked it. **Submitted** means it's waiting for the teacher, and **Not marked** means nothing's recorded yet.
+**Say:** The badge shows the result. A mark with the number of mistakes means the teacher has marked it. **Submitted** means it's waiting for the teacher, and **Not marked** means it hasn't been submitted or marked yet.
 **Show:** Zoom on the badge "8 · 2 mistakes". Tap the second tab: badge "Submitted". Tap the first tab again.
-**Caption:** Mark and mistakes: marked. Submitted: waiting for the teacher. Not marked: nothing recorded yet.
+**Caption:** Mark and mistakes: marked. Submitted: waiting for the teacher. Not marked: not submitted or marked yet.
 
 #### [2.5] Attempts and notes
 **Say:** **Attempts** counts the tries: a cross for each failed one and a tick for the pass. Tap the teacher's note to read it in full.
@@ -107,3 +107,4 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · validator · checked against master d36d69ed8 · 3 fixes: [2.4] Not marked means not submitted or marked yet (Say and Caption), demo data: Hifz Boys A must be a Quran Hifz class, classwork in the current term
