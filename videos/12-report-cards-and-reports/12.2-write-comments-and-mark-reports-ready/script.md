@@ -1,25 +1,23 @@
 ---
 id: "12.2"
 title: Write comments and mark reports ready
-target: 4:45
+target: 3:45
 prereq:
   - "12.1"
 status: scripted
-flags:
-  - "Custom Comments Library only feeds report cards on the older templates (the app calls it the Legacy Comment Bank, marked Deprecated); the Activities-Based Evaluation template uses Edit and Write with AI instead. Confirm the library part should stay in this video."
 ---
 
 # 12.2 Write comments and mark reports ready
 
 ## Goal
-Open your class's report cards, write each student's comment yourself or with AI, mark each card ready, and keep reusable comments in a library.
+Open your class's report cards, write each student's comment yourself or with AI, and mark each card ready.
 
 ## You'll need
 <!-- Shown on the opening card. Generated from prereq/plan/switch if left empty. -->
 
 ## Covers
-- Comments, Custom Comments Library, Marked as Ready
-- Ad-Din's AI Comment Generator (Write with AI), and the Use Legacy Comment Bank (Deprecated) switch in the app
+- Comments, Marked as Ready
+- Ad-Din's AI Comment Generator (Write with AI)
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
@@ -27,9 +25,6 @@ Open your class's report cards, write each student's comment yourself or with AI
 - Mapped report "Term Report" on the Activities-Based Evaluation template (from 12.1), class "Hifz Boys A", section "Section 1", Term 1 mapped
 - Three students in the section: "Yusuf Rahman", "Ibrahim Khan", "Zayd Hussain", with marks already filled from Academic Activities
 - AI comment generator returning a canned demo comment (mocked; no live AI call)
-- A second mapped report "Islamic Studies Progress" on the older "Academic: Islamic Studies Progress Report Card" template, for the drag-a-comment shot
-- The same teacher signed in on the app (phone frame) for the Use Legacy Comment Bank (Deprecated) switch in [5.4]
-- No custom comment library yet; the one built in the video is "Hifz Comments" → folder "Quran" → level "Excellent"
 
 ## Script
 <!--
@@ -91,24 +86,6 @@ See docs/SCRIPT-FORMAT.md.
 **Say:** Tap **Save to PDF** to update this student's PDF. Then use the arrows to move to the next student.
 **Show:** Click "Save to PDF". Toast "Report saved and PDF updated successfully." Click the next-student arrow.
 
-### 5. Build a comments library
-#### [5.1] Custom Comments Library
-**Say:** On report cards made with the older templates, you insert comments from a library. To build one, go to **Reports**, then **Custom Comments Library**.
-**Show:** Sidebar → Reports → Custom Comments Library. The "Comments Library" page opens.
-
-#### [5.2] Library and folder
-**Say:** Tap the plus button, name your library, and tap **Save**. Choose it under **Select Library**, then open the menu beside **Folders & Levels** and tap **Add Root Folder**.
-**Show:** Click the "New library" plus; type "Hifz Comments" in Comment Library Name; click "Save". Pick "Hifz Comments" in the Select Library list (the menu only appears once it's chosen). Click the dots by "Folders & Levels" → "Add Root Folder"; type "Quran"; "Save".
-
-#### [5.3] Levels and variations
-**Say:** On the folder's menu, tap **Add Level**. Select the level, tap **Add Variation**, and type the comment. Write name in double curly brackets, and Ad-Din puts in the student's name. Then tap the level's **Save** to keep it.
-**Show:** Dots on "Quran" → "Add Level"; type "Excellent"; "Save". Click "Excellent"; click "Add Variation"; type "{{name}} recites with confidence and care."; "Save" in the pop-up (this only adds the row). Then click the level's own "Save" button beside Add Variation, which stores it.
-**Caption:** On the folder's menu, tap Add Level. Select the level, tap Add Variation, and type the comment. Type {{name}} and Ad-Din puts in the student's name. Then tap the level's Save to keep it.
-
-#### [5.4] Use it
-**Say:** On an older-template card, the **Comments Library** sits beside it. Choose your library, open a level, and drag a variation into a comment box. In the Ad-Din app, first turn on **Use Legacy Comment Bank (Deprecated)** under **Comments**.
-**Show:** Cutaway: "Islamic Studies Progress" report card. In the side panel pick "Hifz Comments", open Quran → Excellent, drag "Variation 01" onto the comment box; it fills with "Zayd Hussain recites…". Quick cut to the phone frame: on the Report Card Builder's setup, open "Comments" and spotlight the "Use Legacy Comment Bank (Deprecated)" switch (off by default).
-
 ### 6. Next
 #### [6.1] Done
 **Say:** Every card with a tick is ready to go home. Admins can see how many are done in the **Report Readiness** box on the dashboard.
@@ -120,5 +97,6 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · manager · decisions via chat · Custom Comments Library cut: chapter 5 ([5.1]-[5.4]) removed, so the video covers only the current flow (Edit, Write with AI, Mark As Ready); Covers, Goal, demo data and flag updated; target 4:45 to 3:45
 - 2026-11-03 · critic · 5 changes: [1.1] second-person opening; [4.2] "locked against refreshing" made plain; [6.2] both end-card tiles named by number; fold: [3.2] names Ad-Din's AI Comment Generator, [5.4] adds the app's Use Legacy Comment Bank (Deprecated) switch (Covers + demo data)
 - 2026-11-03 · validator · checked against master d36d69ed8 · 4 fixes: [3.1] toast is "Successfully saved the academic report"; [3.4] Insert, not Replace (Replace is greyed when there's no comment yet); [5.2] pick the new library in Select Library before the Folders & Levels menu appears; [5.3] the level's Save is needed to store a variation

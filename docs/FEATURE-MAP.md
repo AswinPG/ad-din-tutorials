@@ -148,8 +148,8 @@ Admin setup plus the masjid pages members see. Events and donations are listed h
 | Library (teacher) | Teacher Portal → Library | Teacher | 10.9 | 10.9 is marked Web |
 | Recognition | Teacher Portal → Recognition | Teacher | 10.10 | |
 | Migration (teacher's list) | Teacher Portal → Migration | Teacher | — | (b) Fold into 16.1: one line on what teachers see. The Teacher playlist does not include 16.1 today |
-| Report comments, Custom Comments Library, Marked as Ready | Reports → Report Builder / Custom Comments Library | Teacher | 12.2 | |
-| Ad-Din's AI Comment Generator (grade, strands, ESL/ELD, IEP, French, Regenerate) and "Use Legacy Comment Bank (Deprecated)" | Report card → Comments | Teacher | — | (b) Fold into 12.2: Covers says "Comments" but should name the AI Comment Generator, now the default |
+| Report comments, Marked as Ready | Reports → Report Builder | Teacher | 12.2 | Custom Comments Library: see Madrasah Admin rows (left out) |
+| Ad-Din's AI Comment Generator (grade, strands, ESL/ELD, IEP, French, Regenerate) | Report card → Comments | Teacher | 12.2 | "Use Legacy Comment Bank (Deprecated)" left out with the Comments Library (decided 2026-11-03) |
 | Message parents, classes and teachers | Message → Send new message | Teacher | 07.3 | |
 | My Attendance (staff check-in) | Sidebar → My Attendance (`/attendance`) | Teacher, Staff | 13.7, 13.8 | |
 
@@ -238,7 +238,7 @@ Added as its own table because it serves both kinds of organisation.
 | Pinning reports | Madrasah Report | Madrasah Admin, Teacher | 12.4 | |
 | Report Builder: Map New Report, Grades Mapping, Element Mapping, colours, signature | Reports → Report Builder | Madrasah Admin | 12.1 | |
 | Report card: comments, digital signature, Marked as Ready | Report Builder → report card | Teacher, Madrasah Admin | 12.2 | AI Comment Generator: see Teacher |
-| Custom Comments Library | Reports → Custom Comments Library | Teacher, Madrasah Admin | 12.2 | |
+| Custom Comments Library | Reports → Custom Comments Library | Teacher, Madrasah Admin | — | (c) Left out on purpose: legacy, feeds only older templates; cut from 12.2 (decided 2026-11-03) |
 | Release date, Download All, Email Report, Report Archive | Report Builder; Reports → Report Archive | Madrasah Admin | 12.3 | |
 | AutoSave Academic Reports switch | Org Management → Services | Madrasah Admin | 03.2 | |
 | Dashboards: widgets, Quick Actions, Manage Dashboard Tiles | `/dashboard` | Org Admin, Teacher | 12.6 | |
@@ -307,8 +307,8 @@ The app is one WebView around the same Angular pages, so almost every feature ab
 - **Feature rows:** 217: 200 for the user-facing audience, plus 17 Global Admin.
 - **Covered by a planned video:** 160 of the 200 audience rows. 1 of them is in Track 11 (on hold). 3 more are only partly named, so their video should add one line: parent read-only lists (14.1), the admin's app home (12.6), and quick-action pinning for non-teachers (00.6).
 - **(a) New video needed:** 8 rows, which make 3 new videos.
-- **(b) Fold into an existing video:** 19 rows.
-- **(c) Leave out:** 13 audience rows (disabled, hidden, legacy, unreachable or left out on purpose, including the 3 Exam Marks rows dropped 2026-11-03), plus all 17 Global Admin rows. The leave-out list below also names 7 unused modules and routes that have no table row.
+- **(b) Fold into an existing video:** 18 rows.
+- **(c) Leave out:** 14 audience rows (disabled, hidden, legacy, unreachable or left out on purpose, including the 3 Exam Marks rows and the Custom Comments Library dropped 2026-11-03), plus all 17 Global Admin rows. The leave-out list below also names 7 unused modules and routes that have no table row.
 - The "Prayer-time alerts" row is a check that came back empty, not a feature, so it is in none of these counts.
 
 ### (a) Should get a new video
@@ -331,7 +331,6 @@ Each id is the next free number in its track. Playlists to update if these are a
 | Introduction & Services for madrasahs | 04.9 |
 | Community Involvement Activity Records | 06.4 (or its own short video if 06.4 runs long) |
 | Messages card on the app home | 07.1 |
-| AI Comment Generator and the legacy comment bank toggle | 12.2 (name it in Covers) |
 | Extra report families (library, interview, exam, people details) | 12.4 |
 | Admin section of the app home ("Waiting on you") | 12.6 |
 | Documents for your staff | 13.4 (or 13.1) |
@@ -348,7 +347,7 @@ Each id is the next free number in its track. Playlists to update if these are a
 | Manage Tasbeeh | 15.6 |
 | Teacher's Migration list | 16.1 (and add 16.1 to the Teacher playlist, or drop the teacher view) |
 
-This table lists the 19 (b) rows plus the 3 partly covered rows: pin quick actions, the admin's app home, and the parent read-only lists. Two covered rows would also be clearer with one more word in Covers: the website home page (09.1) and the share sheet beyond events (15.3).
+This table lists the 18 (b) rows plus the 3 partly covered rows: pin quick actions, the admin's app home, and the parent read-only lists. Two covered rows would also be clearer with one more word in Covers: the website home page (09.1) and the share sheet beyond events (15.3).
 
 ### (c) Leave out
 
@@ -359,6 +358,7 @@ This table lists the 19 (b) rows plus the 3 partly covered rows: pin quick actio
 | Ideas | `/ideas` is mounted but has no menu entry; app feedback (series.yaml) |
 | Clock-in card on the app home | Unused placeholder (series.yaml) |
 | Legacy teacher-attendance register | Old feature, replaced by Staff Attendance (series.yaml) |
+| Custom Comments Library and the Use Legacy Comment Bank (Deprecated) switch | Legacy; feeds only the older report-card templates. Cut from 12.2 (series.yaml, decided 2026-11-03) |
 | Exams, Exam Marks (admin, teacher, parent) and Exam Based promotion | Older feature, off by default; Academic Activity replaces it. 10.11 dropped (series.yaml, decided 2026-11-03) |
 | Alumni page, Alumni Verdict | Hidden in the menu until the module is redone |
 | Program rules | No link reaches the route |

@@ -46,7 +46,7 @@ Found in Ad-Din `origin/master` (d36d69ed8) by the script writers and validators
 | Live streaming | Bin deletes without confirmation; switching organisation doesn't reload streams | 04.10 |
 | Prayer timetable | Past-month buttons open next year; export always Jan–Dec this year; "Change these" doesn't carry the date range | 04.2, 04.3 |
 | Copy Embed Code | Always a portrait 9:16 frame | 04.5 |
-| Comments Library | New library not selected after save; a variation's Save is lost without the level's Save | 12.2 |
+| Comments Library | New library not selected after save; a variation's Save is lost without the level's Save | — (library cut from 12.2) |
 | Report frames | Help says upload, but the upload button is commented out | 12.1 |
 | Staff Attendance | Correction-reasons hint says two locked reasons; server has four | 13.4 |
 | Exams → Manage Marks | Grid doesn't refresh after import; multiple-marks pages unreachable; teacher page has no import/export | — (Exam Marks left out of the series; 10.11 dropped) |

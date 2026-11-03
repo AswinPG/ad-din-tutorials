@@ -425,7 +425,8 @@ decisions:
   - title: "Custom Comments Library is legacy"
     detail: "It feeds only older report-card templates (the app marks it Legacy Comment Bank, Deprecated); the current template uses Edit and Write with AI. Keep that part of 12.2, cut it, or move it to its own short video?"
     videos: "12.2"
-    status: open
+    status: decided
+    answer: "Cut it: 12.2 covers only the current flow"
   - title: "Admins of a pending organisation"
     detail: "The menu stays locked behind Pending Approval until Ad-Din approves, which contradicts registration term 3 (the Administrator can begin to configure). Change the term or unlock setup before approval?"
     videos: "01.2"
