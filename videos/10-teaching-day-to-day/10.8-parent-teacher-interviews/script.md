@@ -79,7 +79,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Click the "Reminders" tab. Select the Yusuf Patel row. Click "Send Reminder": the "Reminder Send" message shows.
 
 #### [4.2]
-**Say:** Every parent in that class section gets a reminder with the interview dates, by email and app notification.
+**Say:** Every parent in that class section gets a reminder with the interview dates, by email, text message and app notification.
 **Show:** Hold on the list.
 
 ### 5. Manage bookings
@@ -102,9 +102,10 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 7. Next
 #### [7.1] Close
-**Say:** Your interview evening is set up and parents can book. Next, see how parents book a slot from their side.
+**Say:** Your interview evening is set up and parents can book. Next, see how parents book a slot, or take a tour of the Teacher Portal.
 **Show:** End card with two tiles: "14.4 Fees, report cards and interview bookings" and "10.1 The teacher portal and the teacher app home".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 2 changes: [4.2] reminders by email, text message and app notification (validator fact); [7.1] Say now names both end-card tiles
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes (tabs, Manage Interview Event, Manage Interview, Event Date, Send Reminder, Booking, Interview summary confirmed; reminder also goes by text message)

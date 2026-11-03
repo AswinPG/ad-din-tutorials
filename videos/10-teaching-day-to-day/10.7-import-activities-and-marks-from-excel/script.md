@@ -49,7 +49,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 2. Get the sheet
 #### [2.1] Import
-**Say:** Open **Academic Activity**, then **Activity Score Management**. Choose the class, section and subject, and tap **Import**.
+**Say:** In the **Admin Portal**, open **Academic Activity**, then **Activity Score Management**. Choose the class, section and subject, and tap **Import**.
 **Show:** Sidebar → Admin Portal → Academic Activity → Activity Score Management. Pick "Maktab Level 1", "A", "Fiqh". Click "Import": the Import activities window opens.
 
 #### [2.2] Get the sheet
@@ -57,7 +57,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Spotlight "Get the sheet". Term is "Autumn Term"; tick "Only Maktab Level 1 / A / Fiqh". Click "Download sheet".
 
 #### [2.3] Fill it in
-**Say:** The workbook lists this term's activities. Other sheets list the IDs of each class, section, subject, category and term, and the Instructions sheet explains each column.
+**Say:** The workbook lists this term's activities. Other sheets list the ID number of each class, section, subject, category and term to use in your rows. The Instructions sheet explains each column.
 **Show:** Excel: the Activities sheet, then the Categories and Instructions tabs.
 
 #### [2.4]
@@ -78,7 +78,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Excel: fill in the missing Score Out Of, save. Ad-Din: choose the file again; "Every row is ready."
 
 #### [3.4] Import
-**Say:** Tap **Import** with the number of activities. Students are added in the background, so give it a minute before marking.
+**Say:** Tap **Import**. The button shows how many activities you're adding. Students are added in the background, so wait a minute before you start marking.
 **Show:** Click "Import 3 activities". The note "3 activities were created." shows. Click "Close"; the three activities are in the list.
 
 ### 4. Grade from a marks sheet
@@ -95,7 +95,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Excel: type scores for the six students (one typed as 12). Save.
 
 #### [4.4] Check and save
-**Say:** Upload it. Ad-Din flags any score above the maximum. Fix it, upload again, and tap **Save** with the number of marks.
+**Say:** Upload it. Ad-Din flags any score above the maximum. Fix it, upload again, and tap **Save**. The button shows how many marks will be saved.
 **Show:** Upload: the problem "Score 12 must be between 0 and 10." shows. Fix it in Excel, upload again, click "Save 6 marks". "6 marks were saved." shows, and the grid fills in.
 
 ### 5. Next
@@ -109,4 +109,5 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 4 changes: [2.1] names the Admin Portal (matched Show); [2.3] explains the ID sheets plainly, split long sentence; [3.4] and [4.4] "with the number of" rewritten so the counted button labels make sense; "give it a minute" idiom removed
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes (import dialog steps, row checks and server messages, Import marks on Add Marks confirmed)

@@ -96,7 +96,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Select the loan due today. Click "Return". In "Confirm return." click "Return".
 
 #### [6.2] Renew
-**Say:** To lend it for longer, select the loan, tap **Renew**, and change the **Return Date**.
+**Say:** To lend it for longer, select the loan, tap **Renew**, change the **Return Date**, and tap **Save**.
 **Show:** Select the other loan, click "Renew", move the Return Date a week later, click "Save".
 
 #### [6.3]
@@ -109,9 +109,10 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Quick cut: Sidebar → Teacher Portal → Library, showing its two tabs.
 
 #### [7.2] Close
-**Say:** Your library is set up and every loan is tracked. Next, celebrate your students with recognition awards.
+**Say:** Your library is set up and every loan is tracked. Next, celebrate your students with recognition awards, or set up parent–teacher interviews.
 **Show:** End card with two tiles: "10.10 Recognition awards" and "10.8 Parent–teacher interviews".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 2 changes: [6.2] Say adds the Save tap the Show performs; [7.2] Say names both end-card tiles
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes (four tabs incl. 'Acqusition' typo, forms, Circulate, Confirm return., Renew, teacher's two tabs confirmed)

@@ -73,7 +73,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 4. Terms
 #### [4.1]
-**Say:** Every activity belongs to a term, so each term's grades stay separate. Terms come from **Terms Management**, set up earlier.
+**Say:** Every activity belongs to a term, so each term's grades stay separate. The terms come from **Terms Management**.
 **Show:** Quick cut: Sidebar → Admin Portal → Terms Management, showing Autumn Term and Spring Term. Back to Academic Activity.
 
 ### 5. Create an activity
@@ -112,4 +112,5 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 1 change: [4.1] dropped "set up earlier" (assumes another video)
 - 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: [5.2] Add Activity doesn't carry over the list filters, so class, section and subject are picked again before the term

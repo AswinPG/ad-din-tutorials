@@ -42,7 +42,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. Your teaching home
 #### [1.1] Opening
-**Say:** This video is for teachers. You'll see where your teaching tools live on the web and in the Ad-Din app, and what the app shows you each day.
+**Say:** This video is for teachers. You'll see where to find your teaching tools on the web and in the Ad-Din app, and what the app shows you each day.
 **Show:** Title card: "The teacher portal and the teacher app home".
 
 #### [1.2]
@@ -95,7 +95,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Tap "Attendance not taken": the Attendance page opens. Go back.
 
 #### [5.3]
-**Say:** Rows only appear when something needs doing, so a short list is good news.
+**Say:** A row only appears when work is waiting. Fewer rows means less to do.
 **Show:** Hold on the card.
 
 ### 6. My Routine
@@ -122,4 +122,5 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 2 changes: [1.1] plainer "where to find" (no idiom), [5.3] shorter, translatable line on empty rows
 - 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: [6.2] recording-day note (routine arrows run Sunday to Saturday and grey out at the ends); portal list, hub, quick actions, attention rows and routine confirmed

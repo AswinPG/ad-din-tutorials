@@ -38,7 +38,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. Today's Hifz
 #### [1.1] Opening
-**Say:** Each day you record what your Hifz students recited. You'll mark the portion, count the mistakes, and give the result.
+**Say:** This video shows teachers how to record each Hifz student's daily recitation: the portion recited, the number of mistakes, and the result.
 **Show:** Title card: "Record daily Hifz progress".
 
 #### [1.2]
@@ -73,11 +73,11 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 4. Mistakes
 #### [4.1] Number of Mistakes
-**Say:** Tap the **Number of Mistakes**, from one to ten, or type a higher number in the last box.
+**Say:** Under **Number of Mistakes**, tap a number from one to ten, or type a higher number in the last box.
 **Show:** Click "2". Spotlight the "10+" box.
 
 #### [4.2]
-**Say:** Ad-Din takes off the set marks for each mistake, and **Marks:** shows the result.
+**Say:** For each mistake, Ad-Din subtracts a fixed number of marks, and **Marks:** shows the result.
 **Show:** Zoom on the helper text "marks deducted per mistakes" and the "Marks:" box as it updates.
 
 ### 5. Notes for the family
@@ -90,7 +90,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Click in "Note for parent", type "/", pick "Excellent effort" from the menu. The note fills in with the student's name.
 
 #### [5.3]
-**Say:** If you track it, set **Time Spend** too.
+**Say:** If you track how long the student spent, set **Time Spend** too.
 **Show:** Click the Time Spend pill, pick 00:20, click "Done".
 
 ### 6. The result
@@ -108,9 +108,10 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Phone frame. The same marking screen; tap "Back to Listing" at the bottom.
 
 #### [7.2] Close
-**Say:** Today's Hifz is recorded, and parents see the result and your note in their app. Next, see what families see, or take class attendance.
+**Say:** Today's Hifz is recorded, and parents see the result and your note in their app. Next, see the parents' view, or take class attendance.
 **Show:** End card with two tiles: "14.3 Follow Hifz progress and classwork" and "10.2 Take class attendance".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 5 changes: [1.1] opening names the audience and the three steps (no ambiguous "mark the portion"); [4.1] clearer instruction; [4.2] "takes off" phrasal verb replaced; [5.3] says what Time Spend is; [7.2] removed "see what families see"
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes (statuses, previous attempt, Current Grading, mistakes, notes templates, Time Spend, Pass/Failed, Back to Listing confirmed)

@@ -41,7 +41,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Title card: "Recognition awards".
 
 #### [1.2]
-**Say:** Admins give the awards. Your students and teachers are already in Ad-Din.
+**Say:** This is for madrasah admins. Your students and teachers are already in Ad-Din.
 **Show:** Opening card.
 
 ### 2. Open Recognition
@@ -95,4 +95,5 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 1 change: [1.2] series-standard "This is for madrasah admins"
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes (Student/Staff tabs, From/To options, types, View/Send Certificate, recipients, teachers read-only confirmed)

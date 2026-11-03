@@ -36,7 +36,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. Attendance in a minute
 #### [1.1] Opening
-**Say:** Taking attendance in Ad-Din takes about a minute. You'll mark each student, add details like late or sick, and take attendance for a single subject.
+**Say:** This video shows teachers how to take class attendance. You'll mark each student, add details like late or sick, and take attendance for a single subject.
 **Show:** Title card: "Take class attendance".
 
 #### [1.2]
@@ -53,16 +53,16 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Spotlight the date card on the left; open and close the calendar.
 
 #### [2.3]
-**Say:** Under **Class Details**, choose your **Class Name** and **Class Section**. The student list opens straight away; **Generate** loads it again.
+**Say:** Under **Class Details**, choose your **Class Name** and **Class Section**. The student list opens straight away, and **Generate** reloads it.
 **Show:** Pick "Maktab Level 1" and section "A": the student list loads as soon as the section is chosen. Spotlight "Generate".
 
 ### 3. Present or absent
 #### [3.1] Present to Absent
-**Say:** Every student starts as **Present**, unless a parent has already reported them absent or sick. Tap a student's round button to mark them **Absent**. Tap it again for Present.
+**Say:** Every student starts as **Present**, unless a parent has already reported them absent or sick. Tap a student's round button to mark them **Absent**. Tap it again to make them present.
 **Show:** All round buttons green, except the student with the parent's excuse (red, excuse text in the Excuse Note column). Click one green button: red cross. Click again: green tick.
 
 #### [3.2] Mark all present
-**Say:** To start from a blank register, tap **Unmark all**: everyone shows **Not Marked**. **Mark all present** fills it in again, so you only change the few who are away.
+**Say:** **Unmark all** clears the register, and everyone shows **Not Marked**. **Mark all present** marks everyone present again. Then change only the few who are away, including anyone a parent reported.
 **Show:** Click "Unmark all": every button turns grey (tooltip "Not Marked"). Click "Mark all present": every button turns green. Click the excused student's button to mark them absent again.
 
 #### [3.3] In the app
@@ -84,7 +84,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Click Early Pickup on another row, set a time, "Set time". Click Sick on a third row: its button turns pink and the student shows as absent.
 
 #### [4.4]
-**Say:** The key under the table explains every status, from **Present** to **Not Marked**.
+**Say:** The guide under the table explains every status, from **Present** to **Not Marked**.
 **Show:** Spotlight the legend under the table: Present, Absent, Sick, Late, Early Pickup, Excuse, Not Marked.
 
 ### 5. Save
@@ -98,7 +98,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 6. Subject attendance
 #### [6.1] subject wise
-**Say:** If you take attendance for one subject, turn on **subject wise**, choose the **Subject**, and tap **Generate**.
+**Say:** To take attendance for one subject only, turn on **subject wise**, choose the **Subject**, and tap **Generate**.
 **Show:** Turn on the "subject wise" switch under Class Details. Pick "Quran". Click "Generate".
 
 #### [6.2]
@@ -116,4 +116,5 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 6 changes: [1.1] no "about a minute" promise, says who it is for; [2.3] split semicolon; [3.1] clearer toggle back; [3.2] explains Unmark all / Mark all present plainly and reminds to re-mark parent-reported absences (matches Show); [4.4] "key" to "guide" (translates badly); [6.1] clearer opener
 - 2026-11-03 · validator · checked against master d36d69ed8 · 3 fixes: students start as Present (not Not Marked; applyStartingStatus), Not Marked shown via Unmark all, register loads on picking the section (Generate reloads)

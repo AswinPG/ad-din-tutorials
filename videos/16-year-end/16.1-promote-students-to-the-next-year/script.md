@@ -19,6 +19,7 @@ Move a whole class section up to its next class at the end of the year, either e
 
 ## Covers
 - Migration
+- Teacher's read-only Migration list (Teacher Portal → Migration)
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
@@ -26,6 +27,7 @@ Move a whole class section up to its next class at the end of the year, either e
 - Class "Maktab Level 1", section "A" with eight active demo students (made-up names and usernames)
 - Class "Maktab Level 2" with an empty section "A" (the destination)
 - One earlier migration in the list from last year, so the list and the Select Year filter have data
+- Teacher account Yusuf Patel for scene [6.2a] (Teacher Portal → Migration shows the same list, read-only)
 - Optional for scene [4.2]: Exam Marks on with exam "Annual Exam" for Maktab Level 1, to show the Exam Based fields
 
 ## Script
@@ -92,14 +94,19 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Back on Migrations: the new row with Date, Migrated By, Previous Section, New Class Section and Migration Type.
 
 #### [6.2]
-**Say:** Expand a row to see exactly which students moved. Repeat for each class, starting with the oldest so no section is mixed up.
+**Say:** Expand a row to see exactly which students moved. Repeat for each class, starting with the highest class, so students who just moved up aren't moved again.
 **Show:** Expand the new row: Roll Number, Student and Username.
+
+#### [6.2a] Teachers
+**Say:** Teachers see the same list under **Migration** in their **Teacher Portal**. They can look, but only admins can migrate students.
+**Show:** Quick cut, signed in as Yusuf: Sidebar → Teacher Portal → Migration. The Migrations list with the Select Year filter; no Add Migration button. Expand a row.
 
 ### 7. Next
 #### [7.1] Close
-**Say:** Your students are promoted. Next, set up the new term and copy your timetable across.
+**Say:** Your students are promoted. Next, set up the new term and copy your timetable across, or move a single student to another section.
 **Show:** End card with two tiles: "16.2 Start a new term" and "06.5 Move students between sections".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 3 changes + fold: [6.2] "oldest" made unambiguous (highest class first, so students are not moved twice); [7.1] Say names both end-card tiles; fold: Teacher's Migration list as new [6.2a], Covers and demo data updated
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes (Add Migrations steps, Transfer/Exam Based, Preview, Perform Migration prompt, list columns confirmed)

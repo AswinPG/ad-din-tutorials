@@ -60,7 +60,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 3. Copy the timetable
 #### [3.1] Copy to Terms
-**Say:** Next, open **Class Routine** and go to the **Copy to Terms** tab. This is **Duplicate Class Routines**.
+**Say:** Next, open **Class Routine** and go to the **Copy to Terms** tab. The page is called **Duplicate Class Routines**.
 **Show:** Sidebar → Admin Portal → Class Routine. Click the "Copy to Terms" tab. Spotlight the heading "Duplicate Class Routines".
 
 #### [3.2] Source and scope
@@ -100,4 +100,5 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 1 change: [3.1] "This is Duplicate Class Routines" reworded so the heading is clearly the page name
 - 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: [5.2] Show matches the Say (Spring Term isn't in force yet, so the line says so and the selector goes back to Automatic)

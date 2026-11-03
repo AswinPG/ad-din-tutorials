@@ -37,7 +37,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. Marking made simple
 #### [1.1] Opening
-**Say:** Once an activity is set, you enter each student's score in Ad-Din. You can also look at their work and message them about it.
+**Say:** This video shows how to enter each student's score for an activity, look at their work, and message them about it.
 **Show:** Title card: "Enter activity scores".
 
 #### [1.2]
@@ -67,7 +67,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Click the first Add Grade cell, type 9, press Enter. The Status changes to "Graded". Fill in the rest of the class (sped up).
 
 #### [3.3] Notify families
-**Say:** Turn on **Notify to Parent/Guardian** if families should hear about each grade you save.
+**Say:** Turn on **Notify to Parent/Guardian** to tell families about each grade you save.
 **Show:** Spotlight the switch under the list; turn it on.
 
 ### 4. View a student
@@ -81,7 +81,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 5. Message a student
 #### [5.1] Message Student
-**Say:** Under **Message Student**, type in **Type your message** and tap send.
+**Say:** Under **Message Student**, type in **Type your message** and tap the send arrow.
 **Show:** Scroll the panel to Message Student. Type "Well done, check step 3 again." and click the send arrow. The message appears in the chat.
 
 #### [5.2]
@@ -95,7 +95,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 7. Next
 #### [7.1] Done
-**Say:** Your scores are saved, and the activity turns green in the list. Tap **Back To List** when you're finished.
+**Say:** Your scores are saved. When you're finished, tap **Back To List**. The activity now shows in green: it's marked.
 **Show:** Web. Click "Back To List": "Wudu steps worksheet" is now green.
 
 #### [7.2] Close
@@ -104,4 +104,5 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 4 changes: [1.1] opening states the three tasks; [3.3] "hear about" phrasal verb replaced; [5.1] "send arrow" matches Show; [7.1] Say order matches Show (Back To List, then green)
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes (Add Mark → Add Marks, auto-save, Notify to Parent/Guardian, submission panel, Return Submission, chat, phone tabs confirmed)
