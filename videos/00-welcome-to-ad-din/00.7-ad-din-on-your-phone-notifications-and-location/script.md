@@ -50,7 +50,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. Your phone, your choice
 #### [1.1] Opening
-**Say:** The Ad-Din app can tell you when your masjid or madrasah sends news, and use your location for prayer times and the nearest masjid. Let's set both up the way you want.
+**Say:** The Ad-Din app can tell you when your masjid or madrasah sends news, and use your location for prayer times and the nearest masjid. In this video you'll choose what to allow.
 **Show:** Title card: "Ad-Din on your phone: notifications and location". Phone frame on the app home screen.
 
 #### [1.2]
@@ -68,7 +68,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Spotlight the "Push notifications" row, then the "Precise location" row with its "Recommended" tag.
 
 #### [2.3] Not now
-**Say:** Busy right now? Tap **Remind me later** and it waits a week. Under **More options**, **Don't remind me again** stops it for good on this phone.
+**Say:** If you're busy, tap **Remind me later** and it waits a week. Under **More options**, **Don't remind me again** stops the reminder on this phone.
 **Show:** Spotlight "Remind me later". Tap "More options": it opens with its note and "Don't remind me again". Spotlight it; don't tap either button.
 
 ### 3. Allow notifications and location
@@ -90,9 +90,9 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Reset the stub to approximate and reopen the app. The "Turn on Precise location" sheet rises. Zoom on "about 3 km".
 
 #### [4.2]
-**Say:** The **Nearest masjid** might show up third or fourth, and the Qiblah and prayer times won't be set for your exact spot. Staff also see that **Staff attendance** check-in needs it.
+**Say:** The **Nearest masjid** might be listed third or fourth, and the Qiblah and prayer times won't be set for your exact spot. Staff also see that **Staff attendance** check-in needs it.
 **Show:** Spotlight the two reasons: "Nearest masjid" and "Qiblah & prayer times".
-**Caption:** The nearest masjid might show up third or fourth, and Qiblah and prayer times won't match your exact spot. Staff check-in needs it too.
+**Caption:** The nearest masjid might be listed third or fourth, and Qiblah and prayer times won't match your exact spot. Staff check-in needs it too.
 
 #### [4.3] Switch or keep
 **Say:** **Keep approximate** closes it for now, and Ad-Din asks again next time. To fix it, tap **Switch to Precise** and follow the hint on the next screen. The sheet confirms **Precise location is on**.
@@ -121,7 +121,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Back on the app home. Trigger the demo push: the banner slides down with "Al-Noor Masjid", "now" and the message.
 
 #### [6.2] Open or dismiss
-**Say:** Tap it to open what it's about. Swipe it up or tap the cross to dismiss it. If several arrive at once, it counts the rest.
+**Say:** Tap it to open what it's about. Swipe it up or tap the cross to dismiss it. If several arrive at once, the banner shows how many more there are.
 **Show:** Trigger two more pushes while the first is still up: the banner shows "+2 more". Tap the banner: the Message inbox opens with the Jumu'ah message at the top.
 
 #### [6.3] While the app is closed
@@ -134,9 +134,10 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Preferences › This device with both rows showing "Allowed".
 
 #### [7.2] Next
-**Say:** Next, see the rest of your profile and notification settings, or set up prayer times and the Qiblah for where you are.
+**Say:** Next, see the rest of your profile in video 00.5, or prayer times and the Qiblah for where you are in video 15.1.
 **Show:** End card with two tiles: "00.5 Your profile, notifications and GUID" and "15.1 Prayer times, monthly timetable and Qiblah".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 5 changes: [1.1] second-person opening, no phrasal verb, [2.3] no elliptical question or idiom, [4.2] "show up" replaced (Say and Caption), [6.2] clear count line, [7.2] end tiles by number
 - 2026-11-03 · validator · checked against master d36d69ed8 (+ Ad-DinMobileApp fix/ios-workload-version 6f756834b) · 2 fixes: [6.3] tapping a closed-app message notification opens the app, not the inbox (flag added); [6.2] banner tap opens the inbox list (not the message itself)

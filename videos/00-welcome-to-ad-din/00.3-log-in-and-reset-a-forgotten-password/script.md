@@ -41,7 +41,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. Getting back in
 #### [1.1] Opening
-**Say:** Already have an Ad-Din account? This video shows how to log in, and how to set a new password if you forget yours.
+**Say:** Already have an Ad-Din account? In this video you'll log in, and set a new password if you forget yours.
 **Show:** Title card: "Log in and reset a forgotten password".
 
 #### [1.2]
@@ -72,7 +72,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 3. Forgot your password
 #### [3.1] Ask for a link
-**Say:** Can't remember your password? On the login page, under the password box, tap **Forgot Password ?**
+**Say:** If you can't remember your password, go to the login page. Under the password box, tap **Forgot Password ?**
 **Show:** Back on the login page (logged out). Spotlight and click "Forgot Password ?"; the pop-up opens.
 
 #### [3.2]
@@ -112,9 +112,10 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** The Success page: "Your password has been updated." Click "Go to Portal"; the login page opens.
 
 #### [6.2] Next
-**Say:** Next, choose your home masjid and madrasah. To change your password while you're logged in, see the profile video.
+**Say:** Next, choose your home masjid and madrasah in video 00.4. To change your password while you're logged in, see video 00.5, Your profile, notifications and GUID.
 **Show:** End card with two tiles: "00.4 Choose your home masjid and madrasah" and "00.5 Your profile, notifications and GUID".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 3 changes: [1.1] second-person opening, [3.1] no elliptical question, [6.2] end tiles by number
 - 2026-11-03 · validator · checked against master d36d69ed8 · 2 fixes: [1.2] login takes the username only (the server never matches an email); [2.4] a card only jumps to its page when your role fits (Report an Absence is for parents), otherwise the normal landing page opens

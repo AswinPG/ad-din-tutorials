@@ -41,7 +41,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. Your profile
 #### [1.1] Opening
-**Say:** Your profile holds your details, your notification choices, your password, and your GUID: the code admins use to add you. Let's walk through it.
+**Say:** In this video you'll update your profile, choose your notifications, change your password, and find your GUID: the code admins use to add you.
 **Show:** Title card: "Your profile, notifications and GUID".
 
 #### [1.2] Open it
@@ -81,7 +81,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Spotlight the Update e-mail box, the Verify and Update buttons. Don't submit a real address.
 
 #### [5.2]
-**Say:** The **Account information** card shows whether your email is **Verified**.
+**Say:** On the left, the **Account information** card shows whether your email is **Verified**.
 **Show:** Open the Account information card on the left; zoom on the email row and its "Verified" badge.
 
 #### [5.3] Password
@@ -117,9 +117,10 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 8. Next
 #### [8.1] Close
-**Say:** Your profile is up to date and you know where your GUID is. Next, take a quick tour of Ad-Din, or see how to get Ad-Din Premium for yourself.
+**Say:** Your profile is up to date and you know where your GUID is. Next, find your way around Ad-Din in video 00.6, or get Ad-Din Premium for yourself in video 02.2.
 **Show:** End card with two tiles: "00.6 Finding your way around" and "02.2 Get Ad-Din Premium for yourself".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 3 changes: [1.1] second-person opening without phrasal verb, [5.2] says where the card is, [8.1] no idiom, end tiles by number
 - 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: demo account needs a Teacher or Admin role so the Signature section shows

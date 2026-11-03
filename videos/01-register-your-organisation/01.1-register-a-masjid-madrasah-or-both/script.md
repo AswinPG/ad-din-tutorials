@@ -39,7 +39,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. Before you start
 #### [1.1] Opening
-**Say:** Run a masjid or a madrasah? Register it on Ad-Din and you become its first administrator. This video shows how to add a masjid, a madrasah, or both.
+**Say:** In this video for people who run a masjid or madrasah, you'll register it on Ad-Din: a masjid, a madrasah, or both. You become its first administrator.
 **Show:** Title card: "Register a masjid, madrasah, or both".
 
 #### [1.2]
@@ -133,9 +133,10 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 8. Next
 #### [8.1] Close
-**Say:** You're now the administrator of your new masjid and madrasah. Next, see what happens while Ad-Din reviews it, and how Ad-Din plans work.
+**Say:** You're now the administrator of your new masjid and madrasah. Next, video 01.2 shows what happens while Ad-Din reviews it, and video 02.1 explains how Ad-Din plans work.
 **Show:** End card with two tiles: "01.2 After you register: approval" and "02.1 How Ad-Din plans work".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 2 changes: [1.1] second-person opening, [8.1] end tiles by number
 - 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: [3.2] the six terms sit under the heading **Terms of Service** (onboarding.terms), not "Terms and Conditions"

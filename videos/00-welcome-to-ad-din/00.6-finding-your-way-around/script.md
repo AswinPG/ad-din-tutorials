@@ -17,13 +17,15 @@ Find your way around Ad-Din: the sidebar, the dashboard, the help menu on the we
 
 ## Covers
 - Sidebar, portal tiles, dashboard, help menu (Knowledge Base, Training Courses), the app’s home screen
+- Rest of the help menu: Contact Us, Release Notes, Privacy Policy, Terms of Service, Key Terms, FAQ
+- Pinning quick actions in the app (Admin and Teacher tabs; the pins are shared with the web dashboard)
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
 - The shared demo organisation (masjid and madrasah, both approved) with prayer times, two upcoming events, recent messages
 - One demo account that is Madrasah Admin, Masjid Admin and a parent of one enrolled child, so the sidebar shows Parent Portal and Admin Portal and the dashboard role menu offers Admin and Parent
 - Dashboard tiles with demo numbers; two pinned Quick Actions (for example Class and Message; not Attendance, which [3.3] pins on camera)
-- The same account signed in on the app (phone frame): prayer card, identity card with Parent and Admin tabs, the tile grid, messages and events
+- The same account signed in on the app (phone frame): prayer card, identity card with Parent and Admin tabs, the tile grid, messages and events; the Admin tab's Quick actions card shows the web pins (Class, Message, and Attendance after [3.3])
 - Knowledge Base and Training Courses open external sites in a new tab: show the landing pages only, never sign in on camera
 
 ## Script
@@ -36,7 +38,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. A quick tour
 #### [1.1] Opening
-**Say:** This quick tour shows where everything lives in Ad-Din, on the web and in the app, so you can always find your way.
+**Say:** In this video you'll see where to find everything in Ad-Din, on the web and in the app.
 **Show:** Title card: "Finding your way around".
 
 #### [1.2]
@@ -87,8 +89,8 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Click "Profile": the menu drops down. Spotlight "User Profile", "Knowledge Base" and "Training Courses".
 
 #### [4.3]
-**Say:** You'll also find **Contact Us** for support, **FAQ** and **Release Notes**. These open in a new browser tab.
-**Show:** Click "Knowledge Base": its landing page opens in a new tab. Close the tab and return.
+**Say:** The same menu has **Contact Us** for support, **Release Notes**, **Privacy Policy**, **Terms of Service**, **Key Terms** and **FAQ**. Each one opens in a new browser tab.
+**Show:** Spotlight Contact Us, Release Notes, Privacy Policy, Terms of Service, Key Terms and FAQ in turn. Click "Knowledge Base": its landing page opens in a new tab. Close the tab and return.
 
 ### 5. The app's home screen
 #### [5.1] Home
@@ -101,7 +103,11 @@ See docs/SCRIPT-FORMAT.md.
 
 #### [5.3] Your card
 **Say:** Your card shows your name, and a tab for each role, such as **Parent** and **Admin**. Tap a tab to switch.
-**Show:** Spotlight the identity card; tap "Admin", then "Parent".
+**Show:** Spotlight the identity card; tap "Parent", then "Admin".
+
+#### [5.3a] Quick actions
+**Say:** On the **Admin** and **Teacher** tabs, **Quick actions** shows the pages you pinned on the dashboard. To change them, tap the pen, tap **Pin** next to a page, then tap **Done**.
+**Show:** On the Admin tab, spotlight the Quick actions chips, including Attendance from [3.3]. Tap the pen: the "Pin quick actions" sheet opens. Type "Subject" in "Search modules", tap "+ Pin" so it shows "Pinned", tap "Done". The new chip appears.
 
 #### [5.4] Tiles
 **Say:** The tiles take you anywhere in one tap: **Prayer Times**, **Quran**, **Messages**, **Events**, **Qiblah**, **Donation** and more.
@@ -113,9 +119,10 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 6. Next
 #### [6.1] Close
-**Say:** Now you know your way around. Setting up a masjid or madrasah? Register it next. Or open your message inbox.
+**Say:** Now you know your way around. Setting up a masjid or madrasah? Register it in video 01.1. To read your messages, see video 07.1, Your message inbox.
 **Show:** End card with two tiles: "01.1 Register a masjid, madrasah, or both" and "07.1 Your message inbox".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 4 changes: [1.1] no idiom ("where everything lives"), [5.3] ends on the Admin tab for the new scene, [6.1] end tiles by number; fold: [4.3] rest of the help menu, [5.3a] pinning quick actions in the app
 - 2026-11-03 · validator · checked against master d36d69ed8 · 2 fixes: demo Quick Actions no longer pre-pin Attendance (pinned on camera in [3.3]); [3.2] role switch shown on the madrasah dashboard, where Parent exists

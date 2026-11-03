@@ -41,7 +41,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. Seats for your people
 #### [1.1] Opening
-**Say:** Your masjid or madrasah can buy Ad-Din Premium for its people as seats. One seat gives one person Premium. This video shows an admin how to buy them.
+**Say:** Your masjid or madrasah can buy Ad-Din Premium for its people as seats. One seat gives one person Premium. In this video for admins, you'll buy them.
 **Show:** Title card: "Buy seats for your organisation".
 
 #### [1.2]
@@ -79,8 +79,8 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Toast "Card added successfully."; the sheet closes. Zoom on "Card ending in 4242".
 
 #### [3.4] Or pay by invoice
-**Say:** Prefer an invoice? Choose **Via Invoice** instead, pick your country, and tap **Save**. The billing video explains both ways in detail.
-**Show:** Reopen the sheet briefly; show the "Via Invoice" option and the country list. Close without saving.
+**Say:** To pay by invoice instead, choose **Via Invoice**, pick your country, and tap **Save**. Video 02.6 explains both ways in detail.
+**Show:** Reopen the sheet briefly; show the "Via Invoice" option and the country list. Spotlight "Save", then close without saving.
 
 ### 4. Buy seats
 #### [4.1] The two plans
@@ -118,9 +118,10 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 6. Next
 #### [6.1] Close
-**Say:** Your organisation now has seats ready. Next, give them to your teachers, parents and staff.
+**Say:** Your organisation now has seats ready. Next, give them to your teachers, parents and staff in video 02.4, or see billing, cards and invoices in video 02.6.
 **Show:** End card with two tiles: "02.4 Give seats to parents, teachers and staff" and "02.6 Billing, cards and invoices".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 3 changes: [1.1] second-person opening, [3.4] no elliptical question, video by number, Show spotlights Save before closing, [6.1] Say names both end tiles
 - 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: [5.1] and demo data now 1 of 20 used, 19 available (the automatic admin seat in [5.3] takes one as soon as the invoice is paid)

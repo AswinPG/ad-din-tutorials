@@ -41,7 +41,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. Seats ready to give
 #### [1.1] Opening
-**Say:** Your organisation has bought Premium seats. Now give them to the people who need them, and see how one seat can cover a whole family.
+**Say:** In this video for admins, you'll give your organisation's Premium seats to the people who need them, and see how one seat can cover a whole family.
 **Show:** Title card: "Give seats to parents, teachers and staff".
 
 #### [1.2]
@@ -58,12 +58,8 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Card: "Parent Portal → parent's seat", "Class place → student or family seat".
 
 #### [2.3] Staff
-**Say:** Staff who use **Staff Attendance** need a seat too. People who only follow your masjid for prayer times and news don't.
-**Show:** Card: "Staff Attendance → seat"; "Followers → no seat".
-
-#### [2.4]
-**Say:** Anyone who already bought Premium for themselves doesn't need one.
-**Show:** Hold on the card.
+**Say:** Staff who use **Staff Attendance** need a seat too. People who only follow your masjid for prayer times and news don't, and nor does anyone who bought Premium for themselves.
+**Show:** Card: "Staff Attendance → seat"; "Followers → no seat"; "Own Premium → no seat".
 
 ### 3. Share a seat with a family
 #### [3.1] Find the switch
@@ -118,9 +114,10 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Aisha Khan's account: Profile → Subscription tab. Zoom on "Provided by your organization".
 
 #### [6.2] Close
-**Say:** Next, learn about add-on services for your organisation, or how billing and invoices work.
+**Say:** Next, learn about add-on services in video 02.5, or how billing and invoices work in video 02.6.
 **Show:** End card with two tiles: "02.5 Add-on services" and "02.6 Billing, cards and invoices".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 3 changes: [1.1] second-person opening, [2.4] thin scene merged into [2.3], [6.2] end tiles by number
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes

@@ -41,7 +41,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. Extras for your organisation
 #### [1.1] Opening
-**Say:** Besides Premium seats, your organisation can add three extra services: a public website, a custom sender name and email, and Prayer Times Premium for a masjid's TV screens.
+**Say:** In this video for admins, you'll add extra services for your organisation: a public website, a custom sender name and email, and Prayer Times Premium for a masjid's screens.
 **Show:** Title card: "Add-on services".
 
 #### [1.2]
@@ -67,7 +67,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Click the coupon line: the box appears; click "Cancel applying coupon code". Click "Subscribe my organization to Ad-Din"; the "Confirm" box opens.
 
 #### [3.3] Confirm
-**Say:** A masjid and madrasah that share one website need only one subscription. Tap **I understand, create my subscription**.
+**Say:** If your masjid and madrasah will share one website, only one of them needs this subscription. Tap **I understand, create my subscription**.
 **Show:** Zoom on the confirm text about combined websites. Click "I understand, create my subscription".
 
 #### [3.4]
@@ -89,7 +89,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 5. Prayer Times Premium
 #### [5.1] For a masjid
-**Say:** For a masjid, **Ad-Din Prayer Times Premium** adds announcements, a scrolling ticker, images and more to your prayer-time TV display.
+**Say:** For a masjid, **Ad-Din Prayer Times Premium** adds announcements, a scrolling ticker, images and more to the prayer times display on your masjid's screens.
 **Show:** Subscription Management → View plan on "Al-Noor Masjid" → Other Services. Spotlight the Prayer Times Premium card.
 
 #### [5.2] Trial or lifetime
@@ -106,7 +106,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Back on "Al-Noor Madrasah"'s View plan, website card: click "Cancel my Subscription"; the "Confirm" box opens; click "I understand, cancel my subscription".
 
 #### [6.2] Reactivate
-**Say:** The card then shows the date it **Cancels on**. Changed your mind before then? Tap **Reactivate Subscription**.
+**Say:** The card then shows the date it **Cancels on**. If you change your mind before then, tap **Reactivate Subscription**.
 **Show:** Spotlight "Cancels on". Click "Reactivate Subscription"; the panel offers "Reactivate Organization Subscription". Close it.
 
 #### [6.3] Unpaid invoices
@@ -115,9 +115,10 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 7. Next
 #### [7.1] Close
-**Say:** Your add-ons are ready. Next, turn on your website, set up your premium prayer displays, or see how billing and invoices work.
+**Say:** Your add-ons are ready. Next, turn on your website in video 09.1, set up premium displays in video 04.5, or see billing and invoices in video 02.6.
 **Show:** End card with three tiles: "09.1 Turn on your website", "04.5 Premium displays, part 1: layout", "02.6 Billing, cards and invoices".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 5 changes: [1.1] second-person opening, [3.3] clearer shared-website line (checked: confirm text and merged-website code), [5.1] display vs screen wording, [6.2] no elliptical question, [7.1] end tiles by number
 - 2026-11-03 · validator · checked against master d36d69ed8 · 3 fixes: Days Past Due flag only hidden on two of the three cards; new flag on masjid reactivation failing and the first-time-only trial. [6.1] Show now returns to the madrasah's page (reactivation fails on a masjid)

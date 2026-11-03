@@ -44,7 +44,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. Premium for you
 #### [1.1] Opening
-**Say:** Ad-Din Premium opens every feature for your role. If your masjid or madrasah hasn't given you a seat, you can buy Premium for yourself. Here's how, on the web and in the app.
+**Say:** Ad-Din Premium opens every feature for your role. If your masjid or madrasah hasn't given you one of its Premium seats, you can buy Premium yourself. In this video you'll do it on the web and in the app.
 **Show:** Title card: "Get Ad-Din Premium for yourself".
 
 #### [1.2]
@@ -117,7 +117,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Tap the Yearly tile; the button shows the price. Tap it; the store sheet slides up (sandbox account, blurred). Cancel the sheet.
 
 #### [6.3] Restore
-**Say:** New phone? Tap **Restore purchase** to bring back a plan you already bought with the same store account.
+**Say:** On a new phone, tap **Restore purchase** to bring back a plan you already bought with the same store account.
 **Show:** Scroll down; spotlight "Restore purchase".
 
 ### 7. Store subscriptions
@@ -131,9 +131,10 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 8. Next
 #### [8.1] Close
-**Say:** That's Premium for yourself. If you run a masjid or madrasah, see how to buy seats for your team and families.
+**Say:** That's Premium for yourself. If you run a masjid or madrasah, video 02.3 shows how to buy seats for your team and families. Video 02.1 explains how all the plans fit together.
 **Show:** End card with two tiles: "02.3 Buy seats for your organisation" and "02.1 How Ad-Din plans work".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 3 changes: [1.1] seat defined, second-person opening, [6.3] no elliptical question, [8.1] Say names both end tiles
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes (native labels Choose your plan, Restore purchase, Manage subscription confirmed in Ad-DinMobileApp origin/Develop AdDinStrings.resx)

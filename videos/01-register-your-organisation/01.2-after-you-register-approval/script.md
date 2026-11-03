@@ -41,7 +41,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. Your organisation is registered
 #### [1.1] Opening
-**Say:** You've just registered a masjid or madrasah on Ad-Din. Here's what happens while Ad-Din reviews it, and what changes once it's approved.
+**Say:** You've just registered a masjid or madrasah on Ad-Din. In this video you'll see what happens while Ad-Din reviews it, and what changes once it's approved.
 **Show:** Title card: "After you register: approval".
 
 ### 2. You're the administrator
@@ -63,7 +63,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Phone frame: the Pending Approval card with "Al-Huda" names, "Awaiting approval from Ad-Din." and the hint. Pull down to refresh.
 
 #### [3.3]
-**Say:** Ad-Din may contact you for more details before approving, so keep an eye on your email and phone.
+**Say:** Ad-Din may contact you for more details before approving, so check your email and answer your phone.
 **Show:** Back on the web. Card quoting the second registration term: "Ad-Din Officials may contact you for more details prior to approving the Organization".
 
 ### 4. Not on the map yet
@@ -95,9 +95,10 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 7. Next
 #### [7.1] Close
-**Say:** Next, learn how Ad-Din plans work, then add your organisation's details, logo and time zone.
+**Say:** Next, learn how Ad-Din plans work in video 02.1, then add your organisation's details, logo and time zone in video 03.1.
 **Show:** End card with two tiles: "02.1 How Ad-Din plans work" and "03.1 Your organisation’s details, logo and time zone".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 3 changes: [1.1] second-person opening, [3.3] idiom removed, [7.1] end tiles by number
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes

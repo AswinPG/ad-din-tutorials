@@ -36,7 +36,7 @@ Create an Ad-Din account on the web or in the app and arrive signed in, ready to
 **Show:** Title card: "Create your Ad-Din account".
 
 #### [1.2]
-**Say:** You'll need an email address and a few minutes. You can sign up on the web or in the Ad-Din app; the steps are the same.
+**Say:** You'll need an email address. You can sign up on the web or in the Ad-Din app; the steps are the same.
 **Show:** Opening card from You'll need. Phone frame of the app's "Create your account" header beside the web page.
 
 ### 2. Open the sign-up page
@@ -95,14 +95,15 @@ Create an Ad-Din account on the web or in the app and arrive signed in, ready to
 **Show:** Click "Sign Up". Loading spinner.
 
 #### [5.3] You're in
-**Say:** That's it. You're signed in straight away, with no email to confirm first.
-**Show:** The finder page opens (choose your home masjid and madrasah). Hold on it.
+**Say:** That's it. You're signed in straight away, with no email to confirm first. Ad-Din opens the page where you choose your home masjid and madrasah.
+**Show:** The finder page opens. Spotlight its Select your Masjid list.
 
 ### 6. Next
 #### [6.1] Close
-**Say:** Next, choose your home masjid and madrasah so Ad-Din shows the right prayer times and news. If you ever forget your password, the login video shows how to reset it.
+**Say:** Next, video 00.4: choose your home masjid and madrasah, so Ad-Din shows the right prayer times and news. If you ever forget your password, video 00.3 shows how to reset it.
 **Show:** End card with two tiles: "00.4 Choose your home masjid and madrasah" and "00.3 Log in and reset a forgotten password".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 3 changes: [1.2] no time promise, [5.3] Say names the page that opens (no idle hold), [6.1] end tiles by number
 - 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: [4.1]/[4.2] only Enroll a Child works for a new account; the other three cards switch the page to the login form, and Enroll a Child leads to the finder's ID tab then enrolment

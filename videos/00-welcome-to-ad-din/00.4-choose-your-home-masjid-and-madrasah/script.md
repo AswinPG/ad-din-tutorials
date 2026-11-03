@@ -40,7 +40,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. Your home organisations
 #### [1.1] Opening
-**Say:** Your home masjid and home madrasah decide what Ad-Din shows you: prayer times, events, news and classes. Let's choose yours.
+**Say:** Your home masjid and home madrasah decide what Ad-Din shows you: prayer times, events, news and classes. In this video you'll choose yours, follow others, and see how to change them later.
 **Show:** Title card: "Choose your home masjid and madrasah".
 
 #### [1.2]
@@ -54,7 +54,7 @@ See docs/SCRIPT-FORMAT.md.
 
 #### [2.2]
 **Say:** If you'd rather not share it, that's fine. You can still find your masjid by searching.
-**Show:** Hold on the page as the nearby lists and map pins load.
+**Show:** Spotlight the search box while the nearby lists and map pins load.
 
 ### 3. Choose your masjid
 #### [3.1] Nearby masjids
@@ -62,7 +62,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Spotlight the list header "Select your Masjid", then one card: address, "ID:", distance in km. Pan the map to show the pins.
 
 #### [3.2] Search
-**Say:** Don't see yours? Type your city, area or the masjid's name in the search box, and pick a suggestion.
+**Say:** If yours isn't listed, type your city, area or the masjid's name in the search box, and pick a suggestion.
 **Show:** Type the demo city in "Search your city, area or organization name…", pick the suggestion; the list refreshes.
 
 #### [3.3] Select it
@@ -70,7 +70,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Click the "Masjid Al-Noor" card: tick appears. Then click its pin on the map to show the same selection.
 
 #### [3.4]
-**Say:** Tap **Continue to Madrasah**. No masjid for you? Tap **Skip for now** instead.
+**Say:** Tap **Continue to Madrasah**. If you don't have a home masjid, tap **Skip for now** instead.
 **Show:** Spotlight "Skip for now", then click "Continue to Madrasah".
 
 ### 4. Choose your madrasah
@@ -107,7 +107,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 7. Follow more organisations
 #### [7.1] Following
-**Say:** You have one home masjid and one home madrasah, but you can follow as many others as you like to see their news and events.
+**Say:** You have one home masjid and one home madrasah, but you can follow others to see their news and events. Tap **Profile**, then **User Profile**, and open **Home & Followed Orgs**.
 **Show:** Top bar → Profile → User Profile. Click the "Home & Followed Orgs" tab.
 
 #### [7.2]
@@ -124,9 +124,10 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 8. Next
 #### [8.1] Close
-**Say:** Your home masjid and madrasah are set. Next, take a quick tour of Ad-Din, or see what else is on your profile.
+**Say:** Your home masjid and madrasah are set. Next, find your way around Ad-Din in video 00.6, or see the rest of your profile in video 00.5.
 **Show:** End card with two tiles: "00.6 Finding your way around" and "00.5 Your profile, notifications and GUID".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 6 changes: [1.1] says what you'll do, [2.2] Show matches the search line, [3.2]/[3.4] no elliptical questions, [7.1] Say gives the path the Show takes, [8.1] no idiom, end tiles by number
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes

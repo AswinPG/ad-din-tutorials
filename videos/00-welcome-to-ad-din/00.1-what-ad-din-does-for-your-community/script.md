@@ -32,16 +32,16 @@ Know what Ad-Din does for a masjid, a madrasah and the people around them, and w
 **Show:** Login page with the slogan "Masjid, Madrasah & School Management Made Easy." Slow zoom on the Ad-Din logo.
 
 #### [1.2]
-**Say:** In the next few minutes you'll see what Ad-Din can do, who it's for, and where to go next in this series.
+**Say:** In this video you'll see what Ad-Din can do, who it's for, and which video to watch next.
 **Show:** Title card: "What Ad-Din does for your community".
 
 ### 2. For the masjid
 #### [2.1] Masjid tools
-**Say:** For a masjid, Ad-Din keeps **Prayer Times** accurate, so everyone who follows your masjid sees the right Adhan and Iqamah times.
+**Say:** For a masjid, Ad-Din shares your **Prayer Times**, so everyone who follows your masjid sees the right Adhan and Iqamah times.
 **Show:** Signed in. Sidebar → Masjid → Prayer Times. Spotlight today's row.
 
 #### [2.2]
-**Say:** You can share **Events**, collect a **Donation**, post updates through **Message**, and even stream live from the masjid.
+**Say:** You can share **Events**, collect a **Donation**, send news through **Message**, and stream live from the masjid with **Live Streaming**.
 **Show:** Hover the sidebar items in turn: Events, Donation, Message, Live Streaming.
 
 #### [2.3]
@@ -59,7 +59,7 @@ Know what Ad-Din does for a masjid, a madrasah and the people around them, and w
 
 ### 4. Four portals, one account
 #### [4.1] The portals
-**Say:** Everyone signs in with the same kind of account. What you see depends on your role, through four portals.
+**Say:** Everyone signs in with the same kind of account. Your role decides which of the four portals you see.
 **Show:** Collapse the sidebar to its top level. Spotlight the four portals together.
 
 #### [4.2]
@@ -82,8 +82,8 @@ Know what Ad-Din does for a masjid, a madrasah and the people around them, and w
 
 ### 6. Where to go next
 #### [6.1] Next steps
-**Say:** New to Ad-Din? Start by creating your account in the next video. Setting up a masjid or madrasah? Jump to registering your organisation.
-**Show:** End card with two tiles: "00.2 Create your Ad-Din account" and "01.1 Register a masjid, madrasah or both".
+**Say:** New to Ad-Din? Watch video 00.2, Create your Ad-Din account. Setting up a masjid or madrasah? Watch video 01.1, Register a masjid, madrasah, or both.
+**Show:** End card with two tiles: "00.2 Create your Ad-Din account" and "01.1 Register a masjid, madrasah, or both".
 
 #### [6.2] Close
 **Say:** Every video in this series is short and stands on its own, so pick the one you need. Welcome to Ad-Din.
@@ -91,4 +91,5 @@ Know what Ad-Din does for a masjid, a madrasah and the people around them, and w
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 5 changes: [1.2] no time promise, [2.1] plainer claim, [2.2] names Live Streaming as shown, [4.1] clearer portals line, [6.1] end card by number and title (01.1 title fixed)
 - 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: demo account needs Masjid Admin (Prayer Times) and the Teacher and Student roles too, plus Academic Activity on and a report card

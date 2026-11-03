@@ -42,7 +42,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. Free, Premium and extras
 #### [1.1] Opening
-**Say:** Ad-Din has a free plan, a Premium plan, and a few extra services for organisations. This video explains how they fit together, so you know what you need.
+**Say:** Ad-Din has a free plan, a Premium plan, and a few extra services for organisations. In this video you'll see how they fit together, so you know what you need.
 **Show:** Title card: "How Ad-Din plans work".
 
 ### 2. What's free
@@ -91,8 +91,8 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Subscription page → scroll to Other Services. Spotlight the three service cards: Ad-Din Public Facing Webpages, Ad-Din Custom Sender Name and Email, Ad-Din Prayer Times Premium (on the masjid's page).
 
 #### [5.2]
-**Say:** Add-ons are for the whole organisation, so they don't use seats.
-**Show:** Hold on the Other Services cards.
+**Say:** Add-ons are for the whole organisation, so they don't use any of your Premium seats.
+**Show:** Spotlight the Other Services heading above the cards.
 
 ### 6. The grace period
 #### [6.1] Thirty more days
@@ -105,9 +105,10 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 7. Next
 #### [7.1] Close
-**Say:** Ready to choose? See how to get Ad-Din Premium for yourself, or how to buy seats for your organisation, in the next videos.
+**Say:** Ready to choose? Video 02.2 shows how to get Ad-Din Premium for yourself, 02.3 how to buy seats for your organisation, and 02.5 how add-on services work.
 **Show:** End card with three tiles: "02.2 Get Ad-Din Premium for yourself", "02.3 Buy seats for your organisation", "02.5 Add-on services".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 3 changes: [1.1] second-person opening, [5.2] clearer seat wording and a Show with something to see, [7.1] Say names all three end tiles
 - 2026-11-03 · validator · checked against master d36d69ed8 · 2 fixes: [6.1] Show (Days remaining reads 0 during grace), [6.2] Show + demo data (a member has no Premium page in the sidebar; use a lapsed parent)

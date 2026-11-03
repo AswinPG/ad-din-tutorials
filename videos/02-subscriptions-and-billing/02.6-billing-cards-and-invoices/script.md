@@ -38,7 +38,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. Your organisation's billing
 #### [1.1] Opening
-**Say:** Ad-Din bills your organisation for its seats and add-ons. This video shows your balance, how to pay by card or by invoice, and where to find every invoice.
+**Say:** Ad-Din bills your organisation for its Premium seats and add-ons. In this video for admins, you'll see your balance, choose to pay by card or by invoice, and find every invoice.
 **Show:** Title card: "Billing, cards and invoices".
 
 #### [1.2]
@@ -104,9 +104,10 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 6. Next
 #### [6.1] Close
-**Say:** That's billing: your balance, how you pay, and every invoice in one place. Next, give your seats to the people who need them.
+**Say:** That's billing: your balance, how you pay, and every invoice in one place. Next, give your seats to the people who need them in video 02.4, or add extra services in video 02.5.
 **Show:** End card with two tiles: "02.4 Give seats to parents, teachers and staff" and "02.5 Add-on services".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 2 changes: [1.1] second-person opening, Premium seats, [6.1] Say names both end tiles
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes

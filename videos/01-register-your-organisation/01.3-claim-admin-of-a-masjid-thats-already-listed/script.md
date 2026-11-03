@@ -40,7 +40,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. Before you start
 #### [1.1] Opening
-**Say:** Is your masjid already on Ad-Din, but managed by someone else? You can claim the admin role. The same steps work for a madrasah.
+**Say:** Is your masjid already on Ad-Din, but run by someone else? In this video you'll ask Ad-Din to make you an admin. The same steps work for a madrasah.
 **Show:** Title card: "Claim admin of a masjid that’s already listed".
 
 #### [1.2]
@@ -67,11 +67,11 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Scroll the details panel past the prayer times. Click "Claim Admin Role of the organizations".
 
 #### [4.2] How claiming works
-**Say:** The **Claim the Admin Role** page opens. **How claiming an admin role works** explains the rules. It's worth reading once.
+**Say:** The **Claim the Admin Role** page opens. **How claiming an admin role works** explains the rules. Read it once before you start.
 **Show:** The claim page with the guide open on the left. Spotlight the guide heading.
 
 #### [4.3]
-**Say:** In short: Ad-Din doesn't settle disputes over who's in charge. It checks your documents, then puts you in touch with the current administrators, who can give you admin rights.
+**Say:** In short: Ad-Din doesn't decide disputes about who runs the organisation. It checks your documents, then connects you with the current administrators, who can give you admin rights.
 **Show:** Slow scroll through the guide text. Spotlight the second and third paragraphs.
 **Caption:** Ad-Din doesn't settle disputes. It checks your documents and connects you with the current administrators, who can give you admin rights.
 
@@ -98,7 +98,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 6. What happens next
 #### [6.1] Ad-Din checks your claim
-**Say:** Ad-Din's team receives your claim and documents, checks who you are, and connects you with the current administrators.
+**Say:** Ad-Din's team checks your claim and documents. When they approve or reject it, you get an email and a push notification. Then they connect you with the current administrators.
 **Show:** Masjid Finder with Masjid Al-Falah selected. Overlay a three-step card: your claim, Ad-Din checks it, an administrator adds you.
 
 #### [6.2]
@@ -107,9 +107,10 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 7. Next
 #### [7.1] Close
-**Say:** To see how administrators add each other, watch the video on adding admins to a masjid. Registering a new organisation instead? Start with video 01.1.
+**Say:** To see how administrators add each other, watch video 03.3, Add admins, staff and volunteers to a masjid. Registering a new organisation instead? Start with video 01.1.
 **Show:** End card with two tiles: "03.3 Add admins, staff and volunteers to a masjid" and "01.1 Register a masjid, madrasah, or both".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-03 · critic · 5 changes: [1.1] second-person opening, [4.2]/[4.3] idioms removed ("worth reading", "in charge", "puts you in touch"), [6.1] adds the approve/reject email and push (validator fact), [7.1] end tile by number
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes
