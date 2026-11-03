@@ -68,7 +68,10 @@ Patterns the critics found again and again across the first 100 scripts. Check e
 10. **Same how-to, same words:** image uploads always end with **Save & Upload**; a YouTube embed code is always "Share, then Embed". An overview video points to the task video instead of walking through it.
 11. **When the demo cancels,** the Show still spotlights the button the Say names (Save), then clicks Cancel.
 12. **Words with one meaning:** a *seat* is "one of your organisation's Premium seats" the first time in each video; *display* is Ad-Din's display page, *TV* or *screen* is the hardware.
-13. **Words that don't translate.** Avoid idioms and phrasal verbs. Replace them:
+13. **No elliptical questions** of any kind ("New phone?", "Spotted a mistake?", "Prefer an invoice?"); write "If you…" instead.
+14. **Closing default:** "Next, video NN.N: Title." for every tile. Rotate two or three approved openings within a track.
+15. **"Room", not "seat",** for space in a class section; *seat* is only a Premium seat. No "hover" in phone or parent videos.
+16. **Words that don't translate.** Avoid idioms and phrasal verbs. Replace them:
 
 | Avoid | Say instead |
 |---|---|
