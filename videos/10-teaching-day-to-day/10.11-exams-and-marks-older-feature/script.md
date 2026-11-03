@@ -1,19 +1,21 @@
 ---
 id: "10.11"
 title: Exams and marks (older feature)
-target: 4:30
+target: 3:30
 prereq:
   - "05.5"
-status: planned
+status: scripted
 switch: Exam Marks
 flags:
-  - Keep or drop? Off by default
+  - "Keep or drop? Off by default"
+  - "Open decision 'Exam Marks' (series.yaml): scripted as the code works today, with the Services-tab wording that Academic Activity is the recommended replacement. Drop this video if the feature is retired"
+  - "'Manage Marks one at a time or in bulk': one at a time = editing cells on Manage Marks; in bulk = Export/Import (admin only). The 'Manage Subject Marks' / 'Manage Multiple Marks' pages (marksManagement/adminPortalAddMark, teacherportal/marks/add) exist in the code but no button reaches them, so they are not scripted. The teacher Manage Marks page has no Import/Export"
 ---
 
 # 10.11 Exams and marks (older feature)
 
 ## Goal
-_What the viewer can do after watching, in one sentence. Written with the script._
+Switch on the older Exams feature if your madrasah still uses it, create an exam with its subjects, and enter marks one at a time or for a whole class from a file.
 
 ## You'll need
 <!-- Shown on the opening card. Generated from prereq/plan/switch if left empty. -->
@@ -24,6 +26,10 @@ _What the viewer can do after watching, in one sentence. Written with the script
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
+- Demo madrasah "Al-Noor Madrasah" (Premium) with Exam Marks switched on; the demo account is a Madrasah Admin
+- Class "Maktab Level 1", section "A" with six demo students; subjects "Quran", "Fiqh", "Arabic"
+- Exam "Autumn Exam" created on camera with Quran and Fiqh, dates inside the current term
+- Marks sheet for Fiqh filled in off camera, ready to import (export and import jobs mocked so the download and the upload finish quickly)
 
 ## Script
 <!--
@@ -33,7 +39,69 @@ Optional **Caption:** overrides the subtitle text. Translations in i18n/<lang>.m
 See docs/SCRIPT-FORMAT.md.
 -->
 
-_Not scripted yet._
+### 1. The older way to record results
+#### [1.1] Opening
+**Say:** Before Academic Activity, Ad-Din recorded results with Exams and Manage Marks. This video is for madrasahs that still use that older feature.
+**Show:** Title card: "Exams and marks (older feature)".
+
+#### [1.2] Switch it on
+**Say:** It's off by default. An admin turns on **Exam Marks** under Services. For a new setup, Academic Activity is the recommended choice.
+**Show:** Sidebar → Admin Portal → Organization Management → Manage on the demo madrasah → Services tab. Zoom on the "Exam Marks" switch and its description ending "Academic Activity is the recommended replacement". Turn it on.
+**Caption:** It's off by default. An admin turns on Exam Marks under Services. For new setups, Academic Activity is recommended.
+
+### 2. Create an exam
+#### [2.1] Exams
+**Say:** In the **Admin Portal**, open **Exams** and tap **Add**. The **Manage Exam** page opens.
+**Show:** Sidebar → Admin Portal → Exams. Click "Add".
+
+#### [2.2] Name and class
+**Say:** Pick the class under **Select Class**, type the **Exam Name**, and add a comment.
+**Show:** Pick "Maktab Level 1". Type "Autumn Exam" and a short comment.
+
+#### [2.3] Exam Lock
+**Say:** Leave **Exam Lock** off for now. Turn it on later, once marks are final, so they can't be changed.
+**Show:** Spotlight the Exam Lock switch.
+
+### 3. Add the subjects
+#### [3.1] One subject at a time
+**Say:** On the right, pick a **Subject**, then its **Date**, **Start Time** and **End Time**, and tap **Add Subject To Exam**.
+**Show:** Select "Quran", pick a date, 9:00 to 10:00. Click "Add Subject To Exam". It appears under "Subjects In the Exam".
+
+#### [3.2]
+**Say:** Repeat for each subject, then tap **Save**.
+**Show:** Add "Fiqh" the same way. Click "Save". The exam shows in the list; expand it to see its subjects.
+
+### 4. Marks one at a time
+#### [4.1] Manage Marks
+**Say:** To enter marks, open **Manage Marks**. Choose the exam, then the class section and the subject.
+**Show:** Sidebar → Admin Portal → Manage Marks. Pick "Autumn Exam", section "A", "Quran". The student list loads.
+
+#### [4.2] Type a mark
+**Say:** Double-click a **Mark** cell and type the score. Changes are saved automatically.
+**Show:** Double-click the first Mark cell, type 85, press Enter. Repeat for two more students.
+
+#### [4.3] Absent or not applicable
+**Say:** Tick **Absent** for a student who missed the exam, or untick **Applicable** if the subject doesn't apply to them.
+**Show:** Toggle Absent on one row, and Applicable off on another.
+
+### 5. Marks in bulk
+#### [5.1] Export
+**Say:** For a whole class at once, choose the subject and tap **Export** to download the marks sheet.
+**Show:** Select "Fiqh". Click "Export"; the file downloads.
+
+#### [5.2] Import
+**Say:** Fill in the marks, save the file, then tap **Import** and choose it. Ad-Din loads the marks for you.
+**Show:** Show the filled sheet briefly. Click "Import", choose the file. When the import finishes, the Fiqh marks appear in the grid.
+
+### 6. Teachers and families
+#### [6.1]
+**Say:** Teachers enter marks the same way from **Manage Marks** in their **Teacher Portal**. Parents and students see results under **Exam Marks**.
+**Show:** Quick cut: Teacher Portal → Manage Marks. Then Parent Portal → Exam Marks.
+
+### 7. Next
+#### [7.1] Close
+**Say:** Your exam and its marks are recorded. For new work, see how to set up academic activities, or find exam reports in the reports library.
+**Show:** End card with two tiles: "10.5 Set up academic activities" and "12.4 Madrasah reports library".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
