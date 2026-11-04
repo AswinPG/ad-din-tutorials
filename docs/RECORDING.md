@@ -1,6 +1,6 @@
 # Recording
 
-> Status: **not built yet.** The recorder is ported during the pilot (first 3–4 videos). This page records the design so the port follows it.
+> Status: **built in the pilot (2026-11-05)**: `engine/` records from `script.md` + `record.mjs`, narrated by cloned-voice clips made before recording (`npm run voice`, then `npm run record`). How to run it: [engine/README.md](../engine/README.md); the demo data: [engine/demo-world.md](../engine/demo-world.md). Multi-language tracks (step 3 and `--langs`) are not built yet. This page records the design.
 
 ## Starting point
 

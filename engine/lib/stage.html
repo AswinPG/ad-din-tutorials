@@ -1,0 +1,233 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Stage</title>
+<style>
+  /* The 1920x1080 stage every video is filmed on. Served at <app>/__stage/ so it shares the app's origin. */
+  :root { --brand: #7718aa; --brand-deep: #4a0d6e; --ink: #1d1426; --gold: #f2b84b; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; width: 1920px; height: 1080px; overflow: hidden; font-family: Roboto, "Segoe UI", Arial, sans-serif; }
+  body {
+    background: radial-gradient(1200px 800px at 15% 10%, #8b2bc4 0%, transparent 60%),
+                radial-gradient(1000px 900px at 95% 100%, #2a0a44 0%, transparent 60%),
+                linear-gradient(135deg, #5b1184 0%, #2b0a47 100%);
+    color: #fff;
+  }
+  .logo-img { display: inline-block; border-radius: 22%; background: #fff; box-shadow: 0 6px 18px rgba(0,0,0,.25); }
+  /* ---------- device frames ---------- */
+  .device { position: absolute; transition: opacity .5s, transform .7s cubic-bezier(.45,.05,.25,1); }
+  .screen { position: relative; overflow: hidden; background: #fff; }
+  .screen iframe { position: absolute; left: 0; border: 0; transform-origin: 0 0; }
+  .chrome { height: 44px; background: #efe9f4; display: flex; align-items: center; gap: 10px; padding: 0 16px; border-bottom: 1px solid #ded3e8; }
+  .chrome .dot { width: 12px; height: 12px; border-radius: 50%; background: #e0415a; } .chrome .dot:nth-child(2){background:#f2b84b} .chrome .dot:nth-child(3){background:#3db250}
+  .chrome .url { margin-left: 14px; flex: 1; height: 28px; border-radius: 14px; background: #fff; color: #5e5468; font-size: 14px; display: flex; align-items: center; padding: 0 14px; }
+  .notch { position: absolute; top: 14px; left: 50%; transform: translateX(-50%); width: 150px; height: 28px; background: #0e0a12; border-radius: 0 0 18px 18px; z-index: 5; }
+  .status { position: absolute; top: 0; left: 0; right: 0; height: 44px; z-index: 4; display: flex; justify-content: space-between; align-items: center; padding: 6px 30px 0; font-size: 15px; font-weight: 600; color: #1d1426; background: #fff; }
+  .phone-dev { border-radius: 64px; background: #0e0a12; box-shadow: 0 40px 90px rgba(0,0,0,.55), inset 0 0 0 3px #3a2f45; padding: 18px; }
+  .phone-dev .screen { border-radius: 48px; }
+  .browser-dev { border-radius: 14px; background: #fff; box-shadow: 0 40px 90px rgba(0,0,0,.55); overflow: hidden; }
+  #device, #device2 { display: none; }
+  /* browser: the app at 1440 wide, scaled into a 1310 x 896 screen */
+  .browser #device { display: block; left: 60px; top: 70px; width: 1310px; height: 940px; }
+  .browser #device .screen { width: 1310px; height: 896px; }
+  .browser #app { top: 0; width: 1440px; height: 985px; transform: scale(0.90972); }
+  /* phone: the app at 390 wide */
+  .phone #device { display: block; left: 150px; top: 38px; width: 492px; height: 1004px; }
+  .phone #device .screen { width: 456px; height: 968px; }
+  .phone #app { top: 44px; width: 390px; height: 790px; transform: scale(1.1692); }
+  /* split: browser on the left, phone on the right */
+  .split #device { display: block; left: 60px; top: 130px; width: 1200px; height: 812px; }
+  .split #device .screen { width: 1200px; height: 768px; }
+  .split #app { top: 0; width: 1440px; height: 922px; transform: scale(0.83333); }
+  .split #device2 { display: block; left: 1350px; top: 60px; width: 440px; height: 904px; padding: 16px; border-radius: 58px; }
+  .split #device2 .screen { width: 408px; height: 872px; border-radius: 44px; }
+  .split #app2 { top: 44px; width: 390px; height: 790px; transform: scale(1.04615); }
+  .split .tag { position: absolute; top: 74px; font-size: 22px; letter-spacing: .14em; text-transform: uppercase; color: var(--gold); font-weight: 700; }
+  .tag { display: none; } .split .tag { display: block; }
+  .phone-only, .browser-only { display: none !important; }
+  .browser #device .browser-only, .split #device .browser-only { display: flex !important; }
+  .phone #device .phone-only { display: flex !important; } .phone #device .notch.phone-only { display: block !important; }
+  /* ---------- side panel ---------- */
+  #panel { position: absolute; top: 90px; bottom: 90px; display: flex; flex-direction: column; }
+  .split #panel { display: none; }
+  .phone #panel { left: 740px; right: 110px; }
+  .browser #panel { left: 1420px; right: 50px; top: 80px; }
+  #brand { display: flex; align-items: center; gap: 14px; font-size: 22px; font-weight: 500; letter-spacing: .02em; opacity: .92; }
+  #brand img { width: 44px; height: 44px; }
+  #role { margin-top: 6px; font-size: 18px; opacity: .7; }
+  #chapter { margin-top: 48px; font-size: 20px; text-transform: uppercase; letter-spacing: .14em; color: var(--gold); font-weight: 700; }
+  #title { margin-top: 10px; font-size: 52px; line-height: 1.1; font-weight: 800; }
+  .browser #title { font-size: 40px; }
+  #steps { margin-top: 36px; display: flex; flex-direction: column; gap: 14px; }
+  .step { display: flex; gap: 14px; align-items: flex-start; font-size: 24px; line-height: 1.35; opacity: .45; transition: opacity .35s, transform .35s; }
+  .browser .step { font-size: 21px; }
+  .step i { flex: none; width: 34px; height: 34px; border-radius: 50%; border: 2px solid rgba(255,255,255,.6); display: grid; place-items: center; font-style: normal; font-size: 17px; font-weight: 700; }
+  .step.on { opacity: 1; transform: translateX(6px); }
+  .step.on i { background: var(--gold); border-color: var(--gold); color: #2b0a47; }
+  .step.done { opacity: .75; } .step.done i { background: rgba(255,255,255,.18); }
+  #progress { margin-top: auto; margin-bottom: 70px; display: flex; gap: 6px; }
+  #progress span { flex: 1; height: 6px; border-radius: 3px; background: rgba(255,255,255,.2); }
+  #progress span.on { background: var(--gold); } #progress span.done { background: rgba(255,255,255,.7); }
+  /* ---------- caption ---------- */
+  #caption { position: absolute; z-index: 120; left: 50%; bottom: 26px; transform: translateX(-50%); max-width: 1500px; padding: 14px 28px; border-radius: 16px; background: rgba(20, 10, 30, .82); color: #fff; font-size: 30px; line-height: 1.3; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,.35); opacity: 0; transition: opacity .25s; }
+  #caption.on { opacity: 1; }
+  .browser #caption { left: 1645px; bottom: 150px; width: 460px; max-width: 460px; text-align: left; font-size: 25px; background: rgba(20,10,30,.55); }
+  .phone #caption { left: 1250px; bottom: 190px; width: 1060px; max-width: 1060px; text-align: left; font-size: 32px; background: rgba(20,10,30,.55); }
+  .split #caption { left: 660px; bottom: 34px; width: 1200px; max-width: 1200px; font-size: 27px; padding: 10px 22px; }
+  .card-on #caption { left: 960px; bottom: 60px; width: 1500px; max-width: 1500px; text-align: center; font-size: 30px; background: rgba(20,10,30,.45); }
+  /* ---------- pointer, spotlight, callout ---------- */
+  #cursor { position: absolute; left: 0; top: 0; width: 34px; height: 34px; pointer-events: none; z-index: 50; transition: transform .7s cubic-bezier(.45,.05,.25,1), opacity .3s; opacity: 0; }
+  #cursor.on { opacity: 1; }
+  #cursor svg { filter: drop-shadow(0 3px 4px rgba(0,0,0,.4)); }
+  .phone #cursor { width: 56px; height: 56px; margin: -28px 0 0 -28px; border-radius: 50%; background: rgba(255,255,255,.35); border: 3px solid rgba(255,255,255,.95); box-shadow: 0 6px 20px rgba(0,0,0,.35); }
+  .phone #cursor svg { display: none; }
+  .ripple { position: absolute; width: 20px; height: 20px; margin: -10px 0 0 -10px; border-radius: 50%; border: 4px solid var(--gold); pointer-events: none; z-index: 49; animation: rip .7s ease-out forwards; }
+  @keyframes rip { from { transform: scale(.4); opacity: 1; } to { transform: scale(4.2); opacity: 0; } }
+  .spot { position: absolute; pointer-events: none; z-index: 40; border-radius: 14px; box-shadow: 0 0 0 4px var(--gold); opacity: 0; transition: all .45s ease; }
+  .spot.on { opacity: 1; }
+  #dim { position: absolute; inset: 0; z-index: 39; pointer-events: none; opacity: 0; transition: opacity .45s; }
+  #dim.on { opacity: 1; }
+  #callout { white-space: pre-line; position: absolute; z-index: 45; max-width: 420px; padding: 14px 18px; border-radius: 14px; background: var(--gold); color: #2b0a47; font-size: 22px; font-weight: 600; line-height: 1.3; box-shadow: 0 12px 28px rgba(0,0,0,.35); opacity: 0; transition: opacity .3s; pointer-events: none; }
+  #callout.on { opacity: 1; }
+  /* ---------- full-screen cards ---------- */
+  #card { position: absolute; inset: 0; z-index: 100; display: flex; flex-direction: column; justify-content: center; padding: 0 180px; background: radial-gradient(1200px 800px at 15% 10%, #8b2bc4 0%, transparent 60%), linear-gradient(135deg, #5b1184 0%, #2b0a47 100%); opacity: 0; transition: opacity .6s; pointer-events: none; }
+  #card.on { opacity: 1; }
+  #card .kicker { font-size: 26px; letter-spacing: .18em; text-transform: uppercase; color: var(--gold); font-weight: 700; }
+  #card h1 { margin: 18px 0 0; font-size: 92px; line-height: 1.04; font-weight: 800; max-width: 1500px; }
+  #card p { margin: 28px 0 0; font-size: 34px; line-height: 1.4; opacity: .85; max-width: 1300px; }
+  #card ul { margin: 34px 0 0; padding: 0; list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 16px 60px; max-width: 1400px; }
+  #card li { font-size: 30px; display: flex; gap: 14px; align-items: center; }
+  #card li::before { content: ""; width: 14px; height: 14px; border-radius: 50%; background: var(--gold); flex: none; }
+  #card .brandline { position: absolute; top: 70px; left: 180px; display: flex; align-items: center; gap: 16px; font-size: 28px; font-weight: 600; }
+  #card .brandline img { width: 56px; height: 56px; }
+  #card .big { display: none; width: 220px; height: 220px; margin-bottom: 40px; }
+  #card.center { align-items: center; text-align: center; }
+  #card.center .big { display: inline-block; }
+  #card.center .brandline { display: none; }
+  #card .tiles { display: flex; gap: 40px; margin-top: 56px; }
+  #card .tile { width: 640px; padding: 34px 38px; border-radius: 26px; background: rgba(255,255,255,.1); border: 2px solid rgba(255,255,255,.25); }
+  #card .tile b { display: block; font-size: 30px; color: var(--gold); letter-spacing: .06em; }
+  #card .tile span { display: block; margin-top: 12px; font-size: 40px; font-weight: 700; line-height: 1.2; }
+  #card .rows { display: flex; flex-direction: column; gap: 22px; margin-top: 50px; max-width: 1450px; }
+  #card .row { display: grid; grid-template-columns: 380px 1fr; align-items: center; padding: 26px 36px; border-radius: 22px; background: rgba(255,255,255,.1); border: 2px solid rgba(255,255,255,.22); }
+  #card .row b { font-size: 38px; color: var(--gold); }
+  #card .row span { font-size: 32px; line-height: 1.35; }
+</style>
+</head>
+<body class="browser">
+  <div class="tag" style="left:60px">On the web</div>
+  <div class="tag" style="left:1350px; top:20px">In the app</div>
+  <div id="device" class="device">
+    <div class="chrome browser-only"><span class="dot"></span><span class="dot"></span><span class="dot"></span><div class="url" id="url">portal.ad-din.ca</div></div>
+    <div class="screen">
+      <div class="notch phone-only"></div>
+      <div class="status phone-only"><span class="sbtime">9:41</span><span>●●● ▮</span></div>
+      <iframe id="app" src="about:blank"></iframe>
+    </div>
+  </div>
+  <div id="device2" class="device phone-dev">
+    <div class="screen">
+      <div class="notch"></div>
+      <div class="status"><span class="sbtime">9:41</span><span>●●● ▮</span></div>
+      <iframe id="app2" src="about:blank"></iframe>
+    </div>
+  </div>
+  <div id="panel">
+    <div id="brand"><img class="logo-img" src="/assets/assetv2/logo.png" alt=""> <span id="brandtext">Ad-Din</span></div>
+    <div id="role"></div>
+    <div id="chapter"></div>
+    <div id="title"></div>
+    <div id="steps"></div>
+    <div id="progress"></div>
+  </div>
+  <svg id="dim" width="1920" height="1080"><defs><mask id="holes"><rect width="1920" height="1080" fill="#fff"/><g id="holeg"></g></mask></defs><rect width="1920" height="1080" fill="rgba(15,5,25,.5)" mask="url(#holes)"/></svg>
+  <div id="spots"></div>
+  <div id="callout"></div>
+  <div id="cursor"><svg viewBox="0 0 24 24" width="34" height="34"><path d="M4 2l15 11-6.5 1.2 3.8 7.3-2.6 1.3-3.8-7.3L4 20z" fill="#fff" stroke="#1d1426" stroke-width="1.4" stroke-linejoin="round"/></svg></div>
+  <div id="card"><div class="brandline"><img class="logo-img" src="/assets/assetv2/logo.png" alt=""> Ad-Din</div><img class="logo-img big" src="/assets/assetv2/logo.png" alt=""><div class="kicker"></div><h1></h1><p></p><ul></ul><div class="tiles"></div><div class="rows"></div></div>
+  <div id="caption"></div>
+<script>
+  const $ = (s) => document.querySelector(s);
+  const esc = (t) => String(t).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  // scrollIntoView inside the app frame also scrolls ancestors; the stage itself must never move
+  window.addEventListener("scroll", () => { if (window.scrollX || window.scrollY) window.scrollTo(0, 0); });
+  document.addEventListener("scroll", (e) => {
+    document.documentElement.scrollTop = 0; document.body.scrollTop = 0;
+    const t = e.target; if (t && t.nodeType === 1) { t.scrollTop = 0; t.scrollLeft = 0; }
+  }, true);
+  let capTimers = [];
+  // the address bar follows the app as it navigates (same origin, so the frame's location is readable)
+  setInterval(() => {
+    try { const l = document.getElementById("app").contentWindow.location; if (l.protocol.startsWith("http")) $("#url").textContent = l.pathname.startsWith("/__demo/inbox") ? "mail.example.com/inbox" : "portal.ad-din.ca" + l.pathname; } catch (e) {}
+  }, 250);
+  const SCALE = { browser: 0.90972, phone: 1.1692, split: 0.83333 };
+  window.stage = {
+    mode(m, role) { document.body.className = m + (document.body.classList.contains("card-on") ? " card-on" : ""); $("#role").textContent = role || ""; },
+    brand(t) { $("#brandtext").textContent = t; },
+    url(u) { $("#url").textContent = u; },
+    time(t) { document.querySelectorAll(".sbtime").forEach((e) => (e.textContent = t)); },
+    chapter(n, total, kicker, title, steps) {
+      $("#chapter").textContent = kicker; $("#title").textContent = title;
+      $("#steps").innerHTML = (steps || []).map((s, i) => `<div class="step" data-i="${i}"><i>${i + 1}</i><span>${esc(s)}</span></div>`).join("");
+      $("#progress").innerHTML = Array.from({ length: total }, (_, i) => `<span class="${i < n ? "done" : i === n ? "on" : ""}"></span>`).join("");
+    },
+    step(i) { document.querySelectorAll(".step").forEach((el) => { const k = +el.dataset.i; el.className = "step" + (k === i ? " on" : k < i ? " done" : ""); }); },
+    caption(t) { capTimers.forEach(clearTimeout); capTimers = []; const c = $("#caption"); if (!t) { c.classList.remove("on"); return; } c.textContent = t; c.classList.add("on"); },
+    /** Timed captions: [{text, start}] in seconds from now. */
+    captions(list) {
+      this.caption(list.length ? list[0].text : null);
+      list.slice(1).forEach((q) => capTimers.push(setTimeout(() => { $("#caption").textContent = q.text; }, q.start * 1000)));
+    },
+    cursorTo(x, y, show = true) { const c = $("#cursor"); c.classList.toggle("on", show); c.style.transform = `translate(${x}px, ${y}px)`; },
+    tap(x, y) { const r = document.createElement("div"); r.className = "ripple"; r.style.left = x + "px"; r.style.top = y + "px"; document.body.appendChild(r); setTimeout(() => r.remove(), 800); },
+    /** Spotlight one or more boxes: everything else dims. */
+    spots(boxes, pad = 10) {
+      const wrap = $("#spots"), holes = $("#holeg");
+      if (!boxes || !boxes.length) { wrap.querySelectorAll(".spot").forEach((s) => s.classList.remove("on")); $("#dim").classList.remove("on"); setTimeout(() => { if (!$("#dim").classList.contains("on")) { wrap.innerHTML = ""; holes.innerHTML = ""; } }, 500); return; }
+      wrap.innerHTML = ""; holes.innerHTML = "";
+      boxes.forEach((b) => {
+        const s = document.createElement("div"); s.className = "spot";
+        Object.assign(s.style, { left: b.x - pad + "px", top: b.y - pad + "px", width: b.width + pad * 2 + "px", height: b.height + pad * 2 + "px" });
+        wrap.appendChild(s); requestAnimationFrame(() => s.classList.add("on"));
+        holes.insertAdjacentHTML("beforeend", `<rect x="${b.x - pad}" y="${b.y - pad}" width="${b.width + pad * 2}" height="${b.height + pad * 2}" rx="14" fill="#000"/>`);
+      });
+      $("#dim").classList.add("on");
+    },
+    callout(text, x, y) { const c = $("#callout"); if (!text) { c.classList.remove("on"); return; } c.textContent = text; c.style.left = x + "px"; c.style.top = y + "px"; c.classList.add("on"); },
+    /** Camera push: scale the app inside its screen (which clips), keeping (x, y) where it is. */
+    zoom(x, y, k) {
+      const mode = document.body.classList.contains("phone") ? "phone" : document.body.classList.contains("split") ? "split" : "browser";
+      if (mode === "phone") {
+        const d = $("#device");
+        if (!k || k === 1) { d.style.transform = ""; return; }
+        const r = d.getBoundingClientRect();
+        d.style.transformOrigin = Math.max(0, Math.min(r.width, x - r.left)) + "px " + Math.max(0, Math.min(r.height, y - r.top)) + "px";
+        d.style.transform = "scale(" + k + ")";
+        return;
+      }
+      const f = $("#app"), scr = $("#device .screen"), b = SCALE[mode];
+      f.style.transition = "transform .7s cubic-bezier(.45,.05,.25,1)";
+      if (!k || k === 1) { f.style.transform = `scale(${b})`; return; }
+      const sr = scr.getBoundingClientRect();
+      const fw = f.offsetWidth * b * k, fh = f.offsetHeight * b * k;
+      let tx = (x - sr.left) * (1 - k), ty = (y - sr.top) * (1 - k);
+      tx = Math.min(0, Math.max(sr.width - fw, tx)); ty = Math.min(0, Math.max(sr.height - fh, ty));
+      f.style.transform = `translate(${tx}px, ${ty}px) scale(${b * k})`;
+    },
+    /** Full-screen card: {kicker, title, sub, bullets, tiles:[{k, t}], rows:[{k, t}], center} or null to hide. */
+    card(o) {
+      const c = $("#card");
+      if (!o) { c.classList.remove("on"); document.body.classList.remove("card-on"); return; }
+      c.classList.toggle("center", !!o.center);
+      c.querySelector(".kicker").textContent = o.kicker || ""; c.querySelector("h1").textContent = o.title || ""; c.querySelector("p").textContent = o.sub || "";
+      c.querySelector("h1").style.display = o.title ? "" : "none";
+      c.querySelector("ul").innerHTML = (o.bullets || []).map((b) => `<li>${esc(b)}</li>`).join("");
+      c.querySelector(".tiles").innerHTML = (o.tiles || []).map((t) => `<div class="tile"><b>${esc(t.k)}</b><span>${esc(t.t)}</span></div>`).join("");
+      c.querySelector(".rows").innerHTML = (o.rows || []).map((t) => `<div class="row"><b>${esc(t.k)}</b><span>${esc(t.t)}</span></div>`).join("");
+      c.classList.add("on"); document.body.classList.add("card-on");
+    },
+  };
+</script>
+</body>
+</html>

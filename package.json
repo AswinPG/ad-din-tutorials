@@ -11,9 +11,12 @@
     "new": "node tools/new-video.mjs",
     "pdf": "node tools/pdf.mjs",
     "say": "node tools/say.mjs",
-    "labels": "node tools/check-labels.mjs"
+    "labels": "node tools/check-labels.mjs",
+    "record": "node engine/record.mjs",
+    "voice": "node engine/voice.mjs"
   },
   "dependencies": {
+    "playwright": "1.49.1",
     "yaml": "2.6.1"
   }
 }
