@@ -7,6 +7,7 @@ VOICE = sys.argv[1] if len(sys.argv) > 1 else "en-US-BrianMultilingualNeural"
 OPTIONS = [
     "Ad-Din", "Ad Din", "Ad-Deen", "Ad Deen", "Addeen", "Ad-Dean", "Ud-Deen", "Ahd-Deen",
     "Add Deen", "A-Deen", "Ad-Dheen", "الدين",
+    "Adh-Dhin", "Adh Dhin", "Ad-Dhin",
 ]
 SENTENCE = "Welcome to {w}. Open the {w} app on your phone."
 out = "samples/pronunciation/ad-din"
