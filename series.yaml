@@ -13,8 +13,12 @@ app:
   ref: origin/master
   src: AdDin.Angular/src
 languages:
-  # One multilingual voice (William) narrates every language (decided 2026-11-03). To switch a language
+  # One multilingual voice narrates every language: William (2026-11-03), then Brian (2026-11-04). To switch a language
   # back to its native voice, replace its voice with the one in its comment.
+  # 2026-11-05 Imran chose his own cloned voice "IP3-A" for the recorded videos (English): Chatterbox Multilingual,
+  # reference C:/Fantacode/voice-clone/voices/ip3.wav (Ad-Din promo, 15-29 s), settings exaggeration 0.7, cfg 0.3,
+  # temperature 0.9, every line checked by speech-to-text (voice-clone/batch_clone.py). Chatterbox covers en, ar, ms only;
+  # ur, bn and id stay on Brian until decided. Other cloned voices: IP2 = cleaned WhatsApp note (2026-10-31).
   - code: en
     name: English
     priority: 1
