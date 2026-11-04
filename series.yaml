@@ -81,7 +81,7 @@ pronunciations:
     Madrasah: Madrasah
     Masaajid: Masaajid
     Madaris: Madaris
-    Ad-Din: Ad Din  # chosen 2026-11-04 by Aswin; "Ad Din", not "Ad Deen"
+    Ad-Din: Udd Din  # chosen 2026-11-04 by Aswin (cloned-voice option 13); earlier pick "Ad Din"
 statuses:
   - planned
   - scripted
