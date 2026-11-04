@@ -67,7 +67,7 @@ Created by `node tools/i18n.mjs <id> <lang>`. Same chapters and scene IDs, Say (
 ---
 lang: ar
 language: Arabic
-voice: en-AU-WilliamMultilingualNeural
+voice: en-US-BrianMultilingualNeural
 status: draft          # draft → reviewed (after a native speaker checks it)
 translated_by: Claude
 reviewer: ""

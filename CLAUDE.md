@@ -19,7 +19,7 @@ Guidance for Claude Code sessions in this repo: the Ad-Din customer tutorial vid
 7. **Pronunciation** fixes go in `series.yaml` → `pronunciations`, never as misspellings in scripts.
 8. **Status moves only on the manager's say-so** past `scripted` and `recorded` (approvals come from the manager or the client, relayed in chat).
 9. **Recording** (once `engine/` exists): the real Ad-Din app UI with mocked demo data. Never run the local Ad-Din API for it; use the mocked demo world or the agreed dev environment. App-platform videos are shown in a phone frame. See `docs/RECORDING.md`.
-9a. **Voice:** William (`en-AU-WilliamMultilingualNeural`) narrates every language, set per language in `series.yaml` → `languages`; native alternatives are in the comments.
+9a. **Voice:** Brian (`en-US-BrianMultilingualNeural`) narrates every language, set per language in `series.yaml` → `languages`; native alternatives are in the comments.
 10. **Commits** follow `C:\Fantacode\gitrules.md`: commit each finished unit automatically, Conventional Commits, subject under 50 characters, scope = video ID or area (`feat(05.3): script create classes`, `docs(prompts): add batch prompt`, `chore(plan): rebuild plan pdf`). Stage specific files, never `git add .` blindly.
 
 ## Common requests

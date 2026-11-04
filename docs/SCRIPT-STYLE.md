@@ -11,7 +11,7 @@ The rules every script follows. `docs/SCRIPT-FORMAT.md` covers the file layout; 
 5. **English screens.** The app stays in English for every language; only the narration and subtitles change.
 6. **Real labels only.** Every word in **bold** is copied exactly from the Ad-Din app on `origin/master` (Angular templates, `menu.data.ts`, `assets/i18n/en.json`), including capitals and spacing. If the app has a typo, use it as shown.
 7. **Real UI, mocked data.** Videos are recorded from the real Ad-Din app with a mocked demo world (no live server). Write Show lines for that app, and list the demo records the video needs in `## Demo data`.
-8. **Voice.** William (multilingual) narrates every language. Write for the ear: short sentences, one idea each.
+8. **Voice.** Brian (multilingual) narrates every language. Write for the ear: short sentences, one idea each.
 9. **Nothing that misleads.** Don't promise a feature the code doesn't have. Where an open decision in `series.yaml` affects a video, script what the code does today and add a `flags:` entry.
 
 ## Shape of a script

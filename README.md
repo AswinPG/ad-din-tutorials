@@ -68,5 +68,5 @@ The full list is in [docs/SCRIPT-STYLE.md](docs/SCRIPT-STYLE.md); 00.1 and 00.2 
 - Real labels only: every on-screen word in a script is copied from the Ad-Din app's own text.
 - Recorded from the **real Ad-Din app** (built from master) with **mocked demo data**, never a live server. One demo masjid and madrasah throughout, so every video looks consistent and can be re-recorded.
 - Web and mobile app: each track says which (`platform`: Web, App or Both); app videos are shown in a phone frame.
-- One narrator voice, William (multilingual), for every language; changeable per language in `series.yaml`.
+- One narrator voice, Brian (multilingual), for every language; changeable per language in `series.yaml`.
 - Nothing missed, nothing wrong: every feature is mapped to a video ([docs/FEATURE-MAP.md](docs/FEATURE-MAP.md)), and every script goes through the label check, a validator agent and a critic agent before the manager sees it ([docs/QUALITY.md](docs/QUALITY.md)).

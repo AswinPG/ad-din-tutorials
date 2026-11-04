@@ -4,18 +4,18 @@ One video per topic. Screens and on-screen text stay in English; each language g
 
 | Priority | Language | Code | Voice | Native alternative | Markets |
 |---|---|---|---|---|---|
-| 1 | English (source) | `en` | en-AU-WilliamMultilingualNeural | en-GB-RyanNeural | UK, USA, Canada, Australia, UAE |
-| 2 | Arabic | `ar` | en-AU-WilliamMultilingualNeural | ar-SA-HamedNeural | UAE, Saudi Arabia, Qatar, Kuwait, Bahrain |
-| 3 | Urdu | `ur` | en-AU-WilliamMultilingualNeural | ur-PK-AsadNeural | Pakistan, UK, USA, Canada, UAE |
-| 4 | Bangla (Bengali) | `bn` | en-AU-WilliamMultilingualNeural | bn-BD-PradeepNeural | Bangladesh, UK, Canada, UAE |
-| 5 | Malay | `ms` | en-AU-WilliamMultilingualNeural | ms-MY-OsmanNeural | Malaysia, Brunei, Singapore |
-| 6 | Indonesian | `id` | en-AU-WilliamMultilingualNeural | id-ID-ArdiNeural | Indonesia |
+| 1 | English (source) | `en` | en-US-BrianMultilingualNeural | en-GB-RyanNeural | UK, USA, Canada, Australia, UAE |
+| 2 | Arabic | `ar` | en-US-BrianMultilingualNeural | ar-SA-HamedNeural | UAE, Saudi Arabia, Qatar, Kuwait, Bahrain |
+| 3 | Urdu | `ur` | en-US-BrianMultilingualNeural | ur-PK-AsadNeural | Pakistan, UK, USA, Canada, UAE |
+| 4 | Bangla (Bengali) | `bn` | en-US-BrianMultilingualNeural | bn-BD-PradeepNeural | Bangladesh, UK, Canada, UAE |
+| 5 | Malay | `ms` | en-US-BrianMultilingualNeural | ms-MY-OsmanNeural | Malaysia, Brunei, Singapore |
+| 6 | Indonesian | `id` | en-US-BrianMultilingualNeural | id-ID-ArdiNeural | Indonesia |
 
 Voices are Microsoft neural voices through `edge-tts`. Female alternatives exist for every language (for example ar-SA-ZariyahNeural, ur-PK-UzmaNeural, bn-BD-NabanitaNeural, ms-MY-YasminNeural, id-ID-GadisNeural). List them with `python -m edge_tts --list-voices`.
 
 All voices are male (decided 2026-11-02).
 
-**One voice for every language (decided 2026-11-03, can change).** William (en-AU-WilliamMultilingualNeural), one of Microsoft's multilingual voices, narrates all six languages, so the series sounds like one narrator. Ryan, used for the Staff Attendance videos, speaks English only: given Arabic, Urdu or Bangla text he says just the Latin words and skips the rest, and he reads Malay and Indonesian with English pronunciation. The other multilingual male voices, en-US-AndrewMultilingualNeural and en-US-BrianMultilingualNeural, also handled all six. Samples: `samples/pronunciation/all-languages-<andrew|brian|william>.mp3`.
+**One voice for every language (decided 2026-11-03, changed to Brian 2026-11-04, can change).** Brian (en-US-BrianMultilingualNeural), one of Microsoft's multilingual voices, narrates all six languages, so the series sounds like one narrator. Ryan, used for the Staff Attendance videos, speaks English only: given Arabic, Urdu or Bangla text he says just the Latin words and skips the rest, and he reads Malay and Indonesian with English pronunciation. The other multilingual male voices, en-AU-WilliamMultilingualNeural (the first choice) and en-US-AndrewMultilingualNeural, also handled all six. Samples: `samples/pronunciation/all-languages-<andrew|brian|william>.mp3` and `samples/pronunciation/ad-din-brian.mp3`.
 
 **Changing a voice** is one line per language in `series.yaml` → `languages` (each line's comment names the native alternative). Nothing recorded so far depends on it; after recording, a changed voice means regenerating that language's audio, which the recorder does from the same scripts.
 

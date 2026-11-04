@@ -18,7 +18,7 @@ languages:
   - code: en
     name: English
     priority: 1
-    voice: en-AU-WilliamMultilingualNeural  # native option: en-GB-RyanNeural
+    voice: en-US-BrianMultilingualNeural  # native option: en-GB-RyanNeural
     markets:
       - UK
       - USA
@@ -29,7 +29,7 @@ languages:
   - code: ar
     name: Arabic
     priority: 2
-    voice: en-AU-WilliamMultilingualNeural  # native option: ar-SA-HamedNeural
+    voice: en-US-BrianMultilingualNeural  # native option: ar-SA-HamedNeural
     markets:
       - UAE
       - Saudi Arabia
@@ -41,7 +41,7 @@ languages:
   - code: ur
     name: Urdu
     priority: 3
-    voice: en-AU-WilliamMultilingualNeural  # native option: ur-PK-AsadNeural
+    voice: en-US-BrianMultilingualNeural  # native option: ur-PK-AsadNeural
     markets:
       - Pakistan
       - UK
@@ -52,7 +52,7 @@ languages:
   - code: bn
     name: Bangla (Bengali)
     priority: 4
-    voice: en-AU-WilliamMultilingualNeural  # native option: bn-BD-PradeepNeural
+    voice: en-US-BrianMultilingualNeural  # native option: bn-BD-PradeepNeural
     markets:
       - Bangladesh
       - UK
@@ -61,7 +61,7 @@ languages:
   - code: ms
     name: Malay
     priority: 5
-    voice: en-AU-WilliamMultilingualNeural  # native option: ms-MY-OsmanNeural
+    voice: en-US-BrianMultilingualNeural  # native option: ms-MY-OsmanNeural
     markets:
       - Malaysia
       - Brunei
@@ -69,7 +69,7 @@ languages:
   - code: id
     name: Indonesian
     priority: 6
-    voice: en-AU-WilliamMultilingualNeural  # native option: id-ID-ArdiNeural
+    voice: en-US-BrianMultilingualNeural  # native option: id-ID-ArdiNeural
     markets:
       - Indonesia
 pronunciations:
