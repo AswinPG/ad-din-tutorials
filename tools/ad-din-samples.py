@@ -8,6 +8,7 @@ OPTIONS = [
     "Ad-Din", "Ad Din", "Ad-Deen", "Ad Deen", "Addeen", "Ad-Dean", "Ud-Deen", "Ahd-Deen",
     "Add Deen", "A-Deen", "Ad-Dheen", "الدين",
     "Adh-Dhin", "Adh Dhin", "Ad-Dhin",
+    "Ad Dhin", "Add-Dhin", "Ad-Dhinn", "Ahd-Dhin", "Ad-Dhyn", "Ud-Dhin", "Ad-Dhihn", "Addhin",
 ]
 SENTENCE = "Welcome to {w}. Open the {w} app on your phone."
 out = "samples/pronunciation/ad-din"
