@@ -119,8 +119,13 @@ mf = os.path.join(out, "manifest.json")
 manifest = json.load(open(mf, encoding="utf8")) if os.path.exists(mf) else {}
 af = os.path.join(out, "align.json")
 align = json.load(open(af, encoding="utf8")) if os.path.exists(af) else {}
+ONLY = set(filter(None, os.environ.get("VOICE_ONLY", "").split(",")))  # redo just these scene IDs
 for n, line in enumerate(lines, 1):
     k = str(n)
+    if ONLY and line["scene"] not in ONLY and k in manifest:
+        continue
+    if ONLY and line["scene"] in ONLY:
+        manifest.pop(k, None)
     if manifest.get(k, {}).get("say") == line["say"] and manifest[k].get("score", 0) >= GOOD and os.path.exists(manifest[k]["file"]):
         continue
     best = None

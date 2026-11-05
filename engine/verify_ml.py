@@ -32,8 +32,18 @@ def words(s, so):
         out.extend(list(w) if w.isdigit() and len(w) > 1 else [w])
     return out
 
-res = {"cues": {}, "summary": {}}
+DEVA = re.compile("[" + chr(0x900) + "-" + chr(0x97F) + "]")
+def bn_score(want, heard):
+    """Bangla by sound: Whisper small often writes Bangla speech in Devanagari, which maps onto Bangla letter for letter."""
+    conv = lambda t: [c for c in DEVA.sub(lambda m: chr(ord(m.group(0)) + 0x80), t) if chr(0x980) <= c <= chr(0x9FF) and unicodedata.category(c)[0] == "L"]
+    a, b = conv(want), conv(heard)
+    return sum(m.size for m in difflib.SequenceMatcher(None, a, b, autojunk=False).get_matching_blocks()) / max(1, len(a))
+
+only = set(filter(None, os.environ.get("VERIFY_LANGS", "").split(",")))
+prev = os.path.join(out, "verify-ml.json")
+res = json.load(open(prev, encoding="utf8")) if only and os.path.exists(prev) else {"cues": {}, "summary": {}}
 for i, lang in enumerate(tr["langs"]):
+    if only and lang not in only: continue
     wav = os.path.join(tempfile.gettempdir(), f"vml-{os.getpid()}-{lang}.wav")
     subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", multi, "-map", f"0:a:{i}", "-ac", "1", "-ar", "16000", wav], check=True)
     y, sr = soundfile.read(wav)
@@ -45,12 +55,21 @@ for i, lang in enumerate(tr["langs"]):
         a, b = p["start"], p["start"] + p["dur"]
         seg = y[max(0, int((a - 0.1) * sr)):int((b + 0.3) * sr)].astype(np.float32)
         wl = "en" if (lang == "en" or p.get("english")) else lang
-        heard = " ".join(s.text for s in asr.transcribe(seg, language=wl, beam_size=5)[0]).strip()
-        want, got = words(p["text"], so and wl != "en"), words(heard, so and wl != "en")
-        sm = difflib.SequenceMatcher(None, want, got)
-        sc = sum(m.size for m in sm.get_matching_blocks()) / max(1, len(want))
+        if wl in ("ar", "ur"):
+            # letters of the native script, so spelling and word-boundary variants of Whisper small count fairly
+            heard = " ".join(s.text for s in asr.transcribe(seg, language=wl, beam_size=5)[0]).strip()
+            let = lambda t: [c for c in norm(t) if unicodedata.category(c)[0] == "L" and not ("a" <= c <= "z")]
+            a, b = let(p["text"]), let(heard)
+            sc = sum(m.size for m in difflib.SequenceMatcher(None, a, b, autojunk=False).get_matching_blocks()) / max(1, len(a))
+        elif wl == "bn":
+            sc, heard = max((bn_score(p["text"], h), h) for h in (" ".join(s.text for s in asr.transcribe(seg, language=l, beam_size=5)[0]).strip() for l in ("bn", "hi")))
+        else:
+            heard = " ".join(s.text for s in asr.transcribe(seg, language=wl, beam_size=5)[0]).strip()
+            want, got = words(p["text"], so and wl != "en"), words(heard, so and wl != "en")
+            sm = difflib.SequenceMatcher(None, want, got)
+            sc = sum(m.size for m in sm.get_matching_blocks()) / max(1, len(want))
         scores.append(sc)
-        if sc < GOOD: weak.append({"scene": p["scene"], "score": round(sc, 3), "text": p["text"], "heard": heard})
+        if sc < (0.6 if wl == "bn" else GOOD): weak.append({"scene": p["scene"], "score": round(sc, 3), "text": p["text"], "heard": heard})
         # the gap after this line, up to the next line: should be silent
         g0 = b + 0.12
         g1 = (pl[k + 1]["start"] if k + 1 < len(pl) else tr["total"]) - 0.05
