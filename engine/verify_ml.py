@@ -59,8 +59,8 @@ for i, lang in enumerate(tr["langs"]):
             # letters of the native script, so spelling and word-boundary variants of Whisper small count fairly
             heard = " ".join(s.text for s in asr.transcribe(seg, language=wl, beam_size=5)[0]).strip()
             let = lambda t: [c for c in norm(t) if unicodedata.category(c)[0] == "L" and not ("a" <= c <= "z")]
-            a, b = let(p["text"]), let(heard)
-            sc = sum(m.size for m in difflib.SequenceMatcher(None, a, b, autojunk=False).get_matching_blocks()) / max(1, len(a))
+            la, lb = let(p["text"]), let(heard)
+            sc = sum(m.size for m in difflib.SequenceMatcher(None, la, lb, autojunk=False).get_matching_blocks()) / max(1, len(la))
         elif wl == "bn":
             sc, heard = max((bn_score(p["text"], h), h) for h in (" ".join(s.text for s in asr.transcribe(seg, language=l, beam_size=5)[0]).strip() for l in ("bn", "hi")))
         else:
