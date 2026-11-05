@@ -77,8 +77,8 @@ export function loadClips(video, lang = "en") {
 
 /** Splits a caption into sentence cues timed from the clip's word timestamps (proportionally when none). */
 function cues(text, dur, words) {
-    // a sentence ends at . ! or ? followed by a space (so "01.1" and "00.2," stay whole)
-    const sents = text.split(/(?<=[.!?]["')]?)\s+/).map((s) => s.trim()).filter(Boolean);
+    // a sentence ends at . ! or ? followed by a space and a capital (so "01.1", "00.2," and "What brings you here? offers" stay whole)
+    const sents = text.split(/(?<=[.!?]["')]?)\s+(?=[A-Z0-9"(])/).map((s) => s.trim()).filter(Boolean);
     // merge very short sentences into their neighbour ("That's it.")
     const merged = [];
     for (const s of sents) { const l = merged[merged.length - 1]; if (l && (l.split(" ").length < 4 || s.split(" ").length < 3)) merged[merged.length - 1] = l + " " + s; else merged.push(s); }
