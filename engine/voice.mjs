@@ -3,6 +3,8 @@
 //   node engine/voice.mjs <id> [<id> ...]   writes out/<id>/voice/en/lines.json, clones every line in the IP3-A voice
 //                                            (voice-clone/batch_clone.py, speech-to-text checked) and word-aligns the clips
 //   node engine/voice.mjs <id> --lines       only writes lines.json
+//   node engine/voice.mjs <id> --lang ar,ur  voices a translation (i18n/<lang>.md) with engine/voice_ml.py: IP3-A for ar and ms,
+//                                            Brian (edge-tts) for the rest; checked with multilingual speech-to-text
 //
 // The clips live in out/<id>/voice/<lang>/ (git-ignored). The recorder reads them through loadClips().
 import fs from "node:fs";
@@ -77,8 +79,8 @@ export function loadClips(video, lang = "en") {
 
 /** Splits a caption into sentence cues timed from the clip's word timestamps (proportionally when none). */
 function cues(text, dur, words) {
-    // a sentence ends at . ! or ? followed by a space and a capital (so "01.1", "00.2," and "What brings you here? offers" stay whole)
-    const sents = text.split(/(?<=[.!?]["')]?)\s+(?=[A-Z0-9"(])/).map((s) => s.trim()).filter(Boolean);
+    // a sentence ends at . ! ? (or Arabic ؟, Urdu ۔, Bangla ।) followed by a space and a capital or a non-Latin letter (so "01.1", "00.2," and "What brings you here? offers" stay whole)
+    const sents = text.split(/(?<=[.!?\u061F\u06D4\u0964]["')]?)\s+(?=[A-Z0-9"(*]|[^\x00-\x7F])/).map((s) => s.trim()).filter(Boolean);
     // merge very short sentences into their neighbour ("That's it.")
     const merged = [];
     for (const s of sents) { const l = merged[merged.length - 1]; if (l && (l.split(" ").length < 4 || s.split(" ").length < 3)) merged[merged.length - 1] = l + " " + s; else merged.push(s); }
@@ -103,14 +105,67 @@ function cues(text, dur, words) {
     return out;
 }
 
+// ---------- translations ----------
+// ar and ms are voiced by IP3-A through Chatterbox; ur, bn and id by the series voice (Brian) through edge-tts.
+export const ENGINES = { ar: "chatterbox", ms: "chatterbox" };
+
+/** Translated lines. A scene whose translation is the English text itself (left in English on purpose) reuses the English clip. */
+export function buildLinesLang(video, lang, series = loadSeries().series) {
+    const tr = video.translations[lang];
+    if (!tr) throw new Error(`${video.id}: no ${lang} translation; run node tools/i18n.mjs ${video.id} ${lang}`);
+    return video.scenes.filter((s) => s.say.trim()).map((s) => {
+        const t = tr.scenes.find((x) => x.id === s.id);
+        if (!t || !t.say.trim() || t.say.startsWith("TRANSLATE")) throw new Error(`${video.id} ${lang} [${s.id}]: not translated`);
+        if (plain(t.say) === plain(s.say)) return { scene: s.id, english: true };
+        return { scene: s.id, say: spoken(t.say, lang, series), check: plain(t.say) };
+    });
+}
+
+export function cloneLang(video, lang) {
+    const { series } = loadSeries();
+    const out = voiceDir(video.id, lang);
+    fs.mkdirSync(out, { recursive: true });
+    const lines = buildLinesLang(video, lang, series).filter((l) => !l.english);
+    const file = path.join(out, "lines.json");
+    fs.writeFileSync(file, JSON.stringify(lines, null, 1));
+    const engine = ENGINES[lang] || "edge";
+    const voice = series.languages.find((l) => l.code === lang).voice;
+    console.log(`voicing ${video.id} (${lang}, ${engine}) into ${path.relative(ROOT, out)}`);
+    execFileSync(CLONE.python, ["-I", path.join(HERE, "voice_ml.py"), file, out, lang, engine, voice], { cwd: CLONE.dir, stdio: "inherit" });
+}
+
+/** The clips for a translated video, keyed by scene ID, like loadClips(); English-kept scenes use the English clip. */
+export function loadClipsLang(video, lang) {
+    const dir = voiceDir(video.id, lang);
+    const man = JSON.parse(fs.readFileSync(path.join(dir, "manifest.json"), "utf8"));
+    const align = fs.existsSync(path.join(dir, "align.json")) ? JSON.parse(fs.readFileSync(path.join(dir, "align.json"), "utf8")) : {};
+    const lines = buildLinesLang(video, lang);
+    const en = loadClips(video, "en");
+    const tr = video.translations[lang];
+    const out = {};
+    let n = 0;
+    for (const l of lines) {
+        if (l.english) { out[l.scene] = { ...en[l.scene], english: true }; continue; }
+        const k = String(++n);
+        const m = man[k];
+        if (!m || m.say !== l.say) throw new Error(`${video.id} ${lang} [${l.scene}]: no current clip; run node engine/voice.mjs ${video.id} --lang ${lang}`);
+        const text = plain(tr.scenes.find((x) => x.id === l.scene).say);
+        out[l.scene] = { ...m, text, words: align[k] || null, cues: cues(text, m.dur, align[k]) };
+    }
+    return out;
+}
+
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
     const args = process.argv.slice(2);
     const onlyLines = args.includes("--lines");
+    const li = args.indexOf("--lang");
+    const langs = li >= 0 ? args.splice(li, 2)[1].split(",") : null;
     const { byId } = loadSeries();
     for (const id of args.filter((a) => !a.startsWith("--"))) {
         const v = byId[id];
         if (!v) throw new Error("no video " + id);
-        if (onlyLines) console.log(writeLines(v).file);
+        if (langs) for (const lang of langs) cloneLang(v, lang);
+        else if (onlyLines) console.log(writeLines(v).file);
         else clone(v);
     }
 }

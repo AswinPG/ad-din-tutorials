@@ -13,7 +13,8 @@
     "say": "node tools/say.mjs",
     "labels": "node tools/check-labels.mjs",
     "record": "node engine/record.mjs",
-    "voice": "node engine/voice.mjs"
+    "voice": "node engine/voice.mjs",
+    "tracks": "node engine/tracks.mjs"
   },
   "dependencies": {
     "playwright": "1.49.1",

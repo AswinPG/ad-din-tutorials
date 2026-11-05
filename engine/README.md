@@ -11,6 +11,14 @@ The recorder shared by all videos, ported from the Staff Attendance launch kit (
 
 `--voice edge` records a quick draft with the edge-tts series voice instead of the clips; `--only 2.1,2.2` films some scenes.
 
+## Language tracks
+
+Once a video's English is recorded and its translations exist (`node tools/i18n.mjs <id> <lang>`):
+
+1. `npm run voice -- <id> --lang ar,ur,bn,ms,id` voices each translation with `voice_ml.py`: IP3-A (Chatterbox) for ar and ms, Brian (edge-tts, with retries) for ur, bn and id, using `series.yaml` → `pronunciations` for that language. Each clip is checked with the multilingual faster-whisper `small` model (language set), redone if it scores under 0.80 (Chatterbox, up to 2 tries), and trimmed after the script's last word (Chatterbox sometimes repeats the end or adds sound). A scene whose translation is the English text reuses the English clip.
+2. `npm run tracks -- <id>` places every clip at its English scene's start (`timeline.json`); the picture is not touched. Clips longer than their scene are listed in `tracks.log` (fix: tighten the translation and voice it again; atempo up to 1.08 only as a last resort). It writes `audio/<lang>.m4a`, `subs/<lang>.srt` and `.vtt`, and `master-multi.mp4` (video stream copied, six AAC audio and six mov_text subtitle tracks tagged eng, ara, urd, ben, msa, ind, English default).
+3. `python engine/verify_ml.py out/<id>` (voice-clone venv) transcribes each line from the muxed tracks, scores it against the translation, and checks that the gaps between lines are silent.
+
 ## Before recording
 
 Serve the Ad-Din web app from `origin/master` on `http://127.0.0.1:4300`, from a separate read-only worktree (never switch branches in `Ad-Din Web-master`), with `node_modules` junctioned from an existing checkout:
