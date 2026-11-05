@@ -3,7 +3,7 @@ id: "00.2"
 title: Create your Ad-Din account
 target: 4:00
 prereq: []
-status: scripted
+status: client-approved
 flags:
   - Terms and Privacy links on the sign-up page go nowhere
 ---

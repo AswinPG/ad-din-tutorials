@@ -3,7 +3,7 @@ id: "00.1"
 title: What Ad-Din does for your community
 target: 3:00
 prereq: []
-status: scripted
+status: client-approved
 ---
 
 # 00.1 What Ad-Din does for your community

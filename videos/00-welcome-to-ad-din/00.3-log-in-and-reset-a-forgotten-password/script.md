@@ -4,7 +4,7 @@ title: Log in and reset a forgotten password
 target: 3:00
 prereq:
   - "00.2"
-status: scripted
+status: client-approved
 flags:
   - An expired or wrong reset link opens a blank error page (HTTP 401) with no message or way back
   - The Reset Password page is a server page (AdDin.Web Pages/Public/ResetPassword), not part of the Angular app; the mocked demo world needs a copy of it
