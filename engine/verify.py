@@ -12,6 +12,7 @@ NUM = {"zero": "0", "oh": "0", "one": "1", "two": "2", "three": "3", "four": "4"
 
 def words(s):
     s = s.lower().replace("-", " ").replace("@", " at ").replace("#", " hash ")
+    s = re.sub(r"is(ation|ed|es|ing|e)\b", r"iz\1", s)  # British and American spellings count the same
     s = re.sub(r"(\d)\.(\d)", r"\1 \2", s)
     ws = [w for w in re.findall(r"[a-z0-9']+", s) if w not in NAME]
     ws = [NUM.get(w, w) for w in ws]

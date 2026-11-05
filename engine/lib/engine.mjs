@@ -134,14 +134,15 @@ function api(s) {
             if (boxes.length) await st("spots", boxes, pad);
             return boxes;
         },
-        async pointTo(locator, { click = false, offset } = {}) {
+        /** Move the pointer to an element (and click it). `quick` halves the travel time, for busy scenes. */
+        async pointTo(locator, { click = false, offset, quick = false } = {}) {
             await locator.scrollIntoViewIfNeeded({ timeout: 5000 }).catch(() => {});
-            await sleep(200);
+            await sleep(quick ? 80 : 200);
             const b = await locator.boundingBox({ timeout: 6000 });
             if (!b) throw new Error("no box for " + locator);
             const x = b.x + (offset ? offset.x : b.width / 2), y = b.y + (offset ? offset.y : b.height / 2);
             await st("cursorTo", s.mode === "phone" ? x : x - 6, s.mode === "phone" ? y : y - 4, true);
-            await sleep(760);
+            await sleep(quick ? 420 : 760);
             if (click) {
                 await st("tap", x, y);
                 await locator.click({ force: true, timeout: 6000 });
