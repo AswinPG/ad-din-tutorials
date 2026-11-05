@@ -61,8 +61,10 @@ export async function installResetPages(context, app, { codes = [] } = {}) {
         if (!codes.includes(arg)) return route.fulfill({ status: 401, body: "" });
         if (req.method() === "POST") {
             // OnPostAsync: a valid code and a password that passes PasswordPolicy → redirect to the Success response.
-            // (A mocked 302 would be followed outside the mock, so the redirect is done in the page.)
-            return route.fulfill({ status: 200, contentType: "text/html", body: `<!doctype html><script>location.replace(${JSON.stringify(base + "public/response/success")})</script>` });
+            // A mocked 302 would be followed outside the mock, so the Success page is answered here and the address
+            // is set to where the redirect lands (/public/response/success).
+            const page = render("Response", R.success, base).replace("<head>", `<head><script>history.replaceState(null, "", ${JSON.stringify(base + "public/response/success")})</script>`);
+            return route.fulfill({ status: 200, contentType: "text/html", body: page });
         }
         return route.fulfill({ status: 200, contentType: "text/html", body: render("ResetPassword", { Title: "Reset your password", VerificationCode: arg, ErrorMessage: null }, base) });
     });
