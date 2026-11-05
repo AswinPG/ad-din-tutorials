@@ -94,6 +94,55 @@ pronunciations:
     "00.4": zero zero point four
     "00.5": zero zero point five
     "01.1": zero one point one
+  # 2026-11-05 pilot translations: Ad-Din sounds like "Udd Din" in every language, in the voice's own script for ar and
+  # ur (the Urdu voice was silent on Latin names); video numbers and symbols spelled out in the language.
+  ar:
+    الدين: أُدّ دين
+    Ad-Din: أُدّ دين
+    "@": آت
+    "#": هاش
+    "00.2": صفر صفر نقطة اثنين
+    "00.3": صفر صفر نقطة ثلاثة
+    "00.4": صفر صفر نقطة أربعة
+    "00.5": صفر صفر نقطة خمسة
+    "01.1": صفر واحد نقطة واحد
+  ur:
+    الدین: اد دین  # Brian read اُدّ as "alif"; اد دین comes out as "Ad-deen"
+    Ad-Din: اد دین
+    "@": ایٹ
+    "#": ہیش
+    "00.2": zero zero point two
+    "00.3": zero zero point three
+    "00.4": zero zero point four
+    "00.5": zero zero point five
+    "01.1": zero one point one  # Brian garbled the Urdu number words; he says these clearly in English
+  bn:
+    Ad-Din: অদ দীন  # Brian mangles the Latin spelling inside Bangla; this one comes out as "odd Din"
+    "@": অ্যাট
+    "#": হ্যাশ
+    "00.2": শূন্য শূন্য দশমিক দুই
+    "00.3": শূন্য শূন্য দশমিক তিন
+    "00.4": শূন্য শূন্য দশমিক চার
+    "00.5": শূন্য শূন্য দশমিক পাঁচ
+    "01.1": শূন্য এক দশমিক এক
+  ms:
+    Ad-Din: Udd Din
+    "@": at
+    "#": hash
+    "00.2": kosong kosong titik dua
+    "00.3": kosong kosong titik tiga
+    "00.4": kosong kosong titik empat
+    "00.5": kosong kosong titik lima
+    "01.1": kosong satu titik satu
+  id:
+    Ad-Din: Udd Din
+    "@": et
+    "#": pagar
+    "00.2": nol nol titik dua
+    "00.3": nol nol titik tiga
+    "00.4": nol nol titik empat
+    "00.5": nol nol titik lima
+    "01.1": nol satu titik satu
 statuses:
   - planned
   - scripted
