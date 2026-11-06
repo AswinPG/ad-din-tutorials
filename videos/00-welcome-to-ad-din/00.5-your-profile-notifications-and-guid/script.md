@@ -7,6 +7,7 @@ prereq:
 status: scripted
 flags:
   - "Decision 'People are added by GUID' (decided 2026-11-03: as scripted): scripted as the code works today (admins fetch a person by GUID; no email invites)"
+  - "Bug: Delete Account fails for App Store and Google Play subscribers (CancelSubscription throws NotImplementedException; the user sees Unknown error). Decided 2026-11-06: fix the API before publishing; [7.1] tells store subscribers to cancel in the store first"
   - "The GUID has no copy button; viewers must select the text after tapping the eye icon"
   - "The admin Add New User screens tell people to look under 'Settings > My Account > GUID', which no longer exists; the GUID is on Profile > Account information"
 ---
@@ -108,7 +109,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 7. Delete your account
 #### [7.1]
-**Say:** At the bottom of **Preferences** is **Delete Account**. The next page explains what happens: you lose access, and any subscriptions are cancelled.
+**Say:** At the bottom of **Preferences** is **Delete Account**. The next page explains what happens: you lose access, and Ad-Din cancels Premium you bought on the web. If you bought it in the App Store or Google Play, cancel it in the store first.
 **Show:** Scroll to the "Delete account" box; click "Delete Account". The "Delete My Account" page opens; spotlight the three points.
 
 #### [7.2]
@@ -123,6 +124,7 @@ See docs/SCRIPT-FORMAT.md.
 ## Review log
 - 2026-11-06 · panel (user, director, writer, PM, PO) · 10 changes: [2.1] "salutation" as on screen, [2.3] no passive fragment, [4.1] "at once", [4.2] points to 00.7 instead of half-teaching This device, [5.1] says it's on Preferences and the order Update then Verify (Show types a demo address), [5.3] says which heading, [6.1] clear subject, [6.2] same card (no second "open"), [6.3]/[6.4] select-all tip, no "no email invitations" claim (Add New does email new accounts), why to share only with admins, [7.2] no passive or idiom
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · manager · panel decisions approved ("approved": recommended options) · [7.1] store subscribers cancel in the store first (decision 2); GUID said as letters (decision 3)
 - 2026-11-03 · manager · decisions via chat · 'How people are added' decided (as scripted): flag wording updated; script unchanged
 - 2026-11-03 · critic · 3 changes: [1.1] second-person opening without phrasal verb, [5.2] says where the card is, [8.1] no idiom, end tiles by number
 - 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: demo account needs a Teacher or Admin role so the Signature section shows
