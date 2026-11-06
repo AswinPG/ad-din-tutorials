@@ -23,13 +23,13 @@ Add a parent and a student by hand, link them as a family, put the student in a 
 - Community Involvement Activity Records (classes numbered 9–12)
 
 ## Demo data
-- Demo madrasah "Al-Noor Madrasah"; the demo admin has Premium
-- Class "Maktab Level 1" with sections "Section A" (room left) and "Section B"
-- New parent added on camera: "Yusuf Rahman" (username `yusuf_rahman`, demo email and mobile); given a Yearly seat off camera before chapter 5
-- New student added on camera: "Hamza Rahman" (username `hamza_rahman`, demo email)
-- Existing student "Maryam Rahman" in Maktab Level 1, Section B, with no parent linked yet (linked to Yusuf in chapter 6, so Hamza and Maryam become siblings)
-- Existing parent "Aisha Rahman" for the Link Childs demo
-- Academic class "Grade 10" (numeric class name 10) with student "Adam Hussain" and no community records yet; a small sample PDF (a volunteering certificate) to upload with 6 community hours
+- Demo madrasah "Maple Grove Madrasah"; the demo admin (Yusuf Rahman) has Premium
+- Class "Weekend Quran" with sections "Level 1" (room left) and "Level 2"
+- New parent added on camera: "Ismail Patel" (username `ismail_patel`, demo email and mobile); given a Yearly seat off camera before chapter 5
+- New student added on camera: "Ayaan Patel" (username `ayaan_patel`, demo email)
+- Existing student "Zainab Patel" in Weekend Quran, Level 2, with no parent linked yet (linked to Ismail in chapter 6, so Ayaan and Zainab become siblings)
+- Existing parent "Noor Mirza" for the Link Childs demo
+- Academic class "Grade 10" (numeric class name 10) with student "Rayan Chowdhury" and no community records yet; a small sample PDF (a volunteering certificate) to upload with 6 community hours
 - No real personal data; GUIDs blurred if shown
 
 ## Script
@@ -46,7 +46,7 @@ Add a parent and a student by hand, link them as a family, put the student in a 
 ### 2. Open your users
 #### [2.1] User Management
 **Say:** In the sidebar, open **Admin Portal**, then **User Management**. Tap **Open users** on your madrasah.
-**Show:** Sidebar → Admin Portal → User Management. Click "Open users" on "Al-Noor Madrasah".
+**Show:** Sidebar → Admin Portal → User Management. Click "Open users" on "Maple Grove Madrasah".
 
 #### [2.2]
 **Say:** The tabs sort everyone by role: **Student**, **Parent**, **Teacher** and **Admin**.
@@ -58,12 +58,12 @@ Add a parent and a student by hand, link them as a family, put the student in a 
 **Show:** Click "Add". The "Add New User" page; open the "Parent" section.
 
 #### [3.2] Existing account or new
-**Say:** If the parent already uses Ad-Din, ask for their **GUID**, their personal ID in the app. Paste it and tap **Fetch**. Otherwise, tap **Add New**.
+**Say:** If the parent already uses Ad-Din, ask for their **GUID**, their personal ID in the app. Paste it and tap **Fetch**. Video 00.5 shows where they find it. Otherwise, tap **Add New**.
 **Show:** Spotlight the GUID box and "Fetch". Click "Add New"; the parent profile page opens.
 
 #### [3.3] Parent details
 **Say:** Fill in the **Salutation**, **First Name**, **Last Name**, **Username**, **Mobile Number** and **Email**. Then tap **Save Changes**.
-**Show:** Fill the fields for "Yusuf Rahman". Click "Save Changes". The "Saving Data" window shows its steps; click "Done".
+**Show:** Fill the fields for "Ismail Patel". Click "Save Changes". The "Saving Data" window shows its steps; click "Done".
 
 ### 4. Add a student
 #### [4.1] New student
@@ -72,7 +72,7 @@ Add a parent and a student by hand, link them as a family, put the student in a 
 
 #### [4.2]
 **Say:** Fill in the student's name, **Username** and **Email**, and details such as **Date of Birth** and **Allergies**.
-**Show:** Fill the fields for "Hamza Rahman". Pick a date of birth.
+**Show:** Fill the fields for "Ayaan Patel". Pick a date of birth.
 
 #### [4.3] Media consent
 **Say:** Set **Media Consent** to Yes or No, as the parent asked. It decides whether the madrasah may share the child's photos and work.
@@ -80,35 +80,35 @@ Add a parent and a student by hand, link them as a family, put the student in a 
 
 #### [4.4] Link the parent
 **Say:** Under **Parent/Guardian details**, tap **Link Existing Ad-din account**. Pick the parent, choose the relationship, and tap **Select this Parent**. Then tap **Save Changes**.
-**Show:** Click "Link Existing Ad-din account". In the parent list that opens, tick "Yusuf Rahman", choose "Father" under "Select Relationship:", click "Select this Parent". Yusuf appears in the card. Click "Save Changes"; "Saving Data", then "Done".
+**Show:** Click "Link Existing Ad-din account". In the parent list that opens, tick "Ismail Patel", choose "Father" under "Select Relationship:", click "Select this Parent". Ismail appears in the card. Click "Save Changes"; "Saving Data", then "Done".
 **Caption:** Tap Link Existing Ad-din account, pick the parent and relationship, tap Select this Parent, then Save Changes.
 
 ### 5. Put the student in a class
 #### [5.1] Manage Class
-**Say:** A student can join a class only when a linked parent has one of your organisation's Premium seats. Yusuf already has one; video 02.4 shows how to give seats.
-**Show:** Student tab; Hamza's row. Small note on screen: "02.4 Give seats to parents, teachers and staff".
+**Say:** A student can join a class only when a linked parent has one of your organisation's Premium seats. In this demo the parent already has one. Video 02.4 shows how to give seats.
+**Show:** Student tab; Ayaan's row. Small note on screen: "02.4 Give seats to parents, teachers and staff".
 
 #### [5.2]
 **Say:** Select the student and tap **Manage Class**. Tap **Add New Class**, choose the class and section, and tap **Save**.
-**Show:** Click Hamza's row, then "Manage Class". The "Hamza Rahman > Classes" window. Click "Add New Class", pick "Maktab Level 1" and "Section A", click "Save".
+**Show:** Click Ayaan's row, then "Manage Class". The "Ayaan Patel > Classes" window. Click "Add New Class", pick "Weekend Quran" and "Level 1", click "Save".
 
 ### 6. Link family members
 #### [6.1] Link Parent
 **Say:** To link a parent to a student who's already listed, select the student and tap **Link Parent**. Tap **Add New Parent**, pick the parent and relationship, then **Select this Parent**.
-**Show:** Select "Maryam Rahman", click "Link Parent". Click "Add New Parent", tick "Yusuf Rahman", choose "Father", click "Select this Parent".
+**Show:** Select "Zainab Patel", click "Link Parent". Click "Add New Parent", tick "Ismail Patel", choose "Father", click "Select this Parent".
 **Caption:** Select the student, tap Link Parent, then Add New Parent. Pick the parent and relationship, then Select this Parent.
 
 #### [6.2]
-**Say:** Yusuf now shows in the list. Tap **Save** to link them.
-**Show:** Yusuf appears in "Maryam Rahman > Parents". Click "Save". The "Successful" message; click "Close".
+**Say:** The parent now shows in the list. Tap **Save** to link them.
+**Show:** Ismail appears in "Zainab Patel > Parents". Click "Save". The "Successful" message; click "Close".
 
 #### [6.3] Link Childs
 **Say:** It works the other way too. On the **Parent** tab, select a parent and tap **Link Childs** to add their children.
-**Show:** Parent tab, select "Aisha Rahman", click "Link Childs". Show the list and the "Add New Child" button, then close.
+**Show:** Parent tab, select "Noor Mirza", click "Link Childs". Show the list and the "Add New Child" button, then close.
 
 #### [6.4] Siblings
 **Say:** Children who share a parent are siblings. Select a student and tap **Siblings** to see their brothers and sisters.
-**Show:** Student tab, select "Hamza Rahman", click "Siblings": Maryam Rahman with her class and section.
+**Show:** Student tab, select "Ayaan Patel", click "Siblings": Zainab Patel with her class and section.
 
 ### 7. Media consent and community hours
 #### [7.1] MRC
@@ -121,7 +121,7 @@ Add a parent and a student by hand, link them as a family, put the student in a 
 
 #### [7.3] Community hours
 **Say:** For students in classes numbered 9 to 12, you can also keep records of their community involvement. Filter the **Student** tab by the class, select one student, and tap **Community Involvement Activity Records**.
-**Show:** Student tab → Filters: pick "Grade 10" (the button shows only when a class numbered 9–12 is picked). Select "Adam Hussain", click "Community Involvement Activity Records". His page opens: "No Record uploaded related to this account".
+**Show:** Student tab → Filters: pick "Grade 10" (the button shows only when a class numbered 9–12 is picked). Select "Rayan Chowdhury", click "Community Involvement Activity Records". His page opens: "No Record uploaded related to this account".
 
 #### [7.4]
 **Say:** Tap **Upload**. Add a **Description**, the **Date** and the **Community Hours**, tap **Choose File** to pick the file, then tap **Upload**. The record joins the list, where you can open or delete it.
@@ -130,7 +130,7 @@ Add a parent and a student by hand, link them as a family, put the student in a 
 ### 8. Next
 #### [8.1] Done
 **Say:** Your new family is in Ad-Din: a parent, linked children, and a student in a class.
-**Show:** Student tab filtered to "Maktab Level 1" and "Section A", with Hamza Rahman.
+**Show:** Student tab filtered to "Weekend Quran" and "Level 1", with Ayaan Patel.
 
 #### [8.2]
 **Say:** Next, video 06.5: Move students between sections, or video 03.5: Import and export users in bulk, to add many people at once.
@@ -138,6 +138,7 @@ Add a parent and a student by hand, link them as a family, put the student in a 
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 3 changes: [3.2] points to 00.5 for where a parent finds their GUID (decision "How people are added"), [5.1] and [6.2] no longer name a demo person in the Say, demo data and Show names use the Maple Grove demo world with a new family (Ismail, Ayaan and Zainab Patel), because Yusuf Rahman is the demo admin account; Weekend Quran Level 1 and 2
 - 2026-11-03 · manager · decisions via chat · 'Who needs a seat?' (intended) and 'How people are added' (as scripted) decided: both flags reworded; script unchanged
 - 2026-11-03 · critic · 6 changes + fold: [1.1] second-person opening; [4.5] merged into [4.4] (thin scene); [5.1] seat named as one of your organisation's Premium seats; [7.1] MRC explained; [8.2] end card by number and title; fold: Community Involvement Activity Records as new [7.3]–[7.4] (Covers, demo data, chapter 7 renamed), checked in organisationUserList and activity-record on master
 - 2026-11-03 · validator · checked against master d36d69ed8 · 3 fixes: [6.2] Link Parent Save saves directly (no Confirmation window), Successful alert; [4.4] parent picker has no Select Parent heading from the profile; seat flag quotes the Manage Class message
