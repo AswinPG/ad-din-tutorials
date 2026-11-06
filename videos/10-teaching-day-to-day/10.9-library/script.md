@@ -23,7 +23,7 @@ Set up library categories and shelf locations, add books with their stock, and l
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
-- Demo madrasah "Al-Noor Madrasah" (Premium); the demo account is a Madrasah Admin
+- Demo madrasah "Maple Grove Madrasah" (Premium); the demo account Yusuf Rahman is a Madrasah Admin
 - Category "Seerah" and location "Rack A1" created on camera; one other category ("Fiqh") and location ("Rack B2") already there
 - Book "Stories of the Prophets" (made-up ISBN, Seerah, Rack A1, quantity 5) added on camera; a few other books already in Acqusition
 - Class "Maktab Level 1", section "A" with demo students; two books already lent out in Circulation, one of them due back today
@@ -39,7 +39,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. Your madrasah library
 #### [1.1] Opening
-**Say:** Ad-Din's library keeps track of your books: where they're shelved, how many copies you have, and who has borrowed them.
+**Say:** In this video for madrasah admins, you'll use Ad-Din's library to track your books: where they're shelved, how many copies you have, and who has borrowed them.
 **Show:** Title card: "Library".
 
 #### [1.2]
@@ -74,7 +74,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Pick "Rack A1", type a price and quantity 5, add a description. Click "Save". The book shows in the list with its Quantity.
 
 #### [4.4]
-**Say:** Have a long list already? Use **Import** and **Export** to work with it in a spreadsheet.
+**Say:** If you already have a long list of books, use **Import** and **Export** to work with it in a spreadsheet.
 **Show:** Spotlight the Import and Export buttons.
 
 ### 5. Lend a book
@@ -106,13 +106,14 @@ See docs/SCRIPT-FORMAT.md.
 ### 7. Next
 #### [7.1] Teachers
 **Say:** Teachers can lend books too, from **Library** in their **Teacher Portal**, with the **Circulation** and **Acqusition** tabs.
-**Show:** Quick cut: Sidebar → Teacher Portal → Library, showing its two tabs.
+**Show:** Quick cut to a teacher (side panel: "Signed in as: Bilal Hussain, a teacher"): Sidebar → Teacher Portal → Library, showing its two tabs.
 
 #### [7.2] Close
-**Say:** Your library is set up and every loan is tracked. Next, celebrate your students with recognition awards, or set up parent–teacher interviews.
+**Say:** Your library is set up and every loan is tracked. Next, video 10.10: Recognition awards, and video 10.8: Parent–teacher interviews.
 **Show:** End card with two tiles: "10.10 Recognition awards" and "10.8 Parent–teacher interviews".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 4 changes: [1.1] says who it's for, [4.4] no elliptical question, [7.1] "Signed in as" label, [7.2] end tiles by number and title; demo names from the Maple Grove demo world
 - 2026-11-03 · critic · 2 changes: [6.2] Say adds the Save tap the Show performs; [7.2] Say names both end-card tiles
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes (four tabs incl. 'Acqusition' typo, forms, Circulate, Confirm return., Renew, teacher's two tabs confirmed)
