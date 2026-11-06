@@ -23,12 +23,12 @@ Add the days your madrasah is closed, and let another teacher cover a teacher's 
 - Delegations (subject-wise or class attendance)
 
 ## Demo data
-- Demo madrasah "Al-Noor Madrasah"; the demo admin has Premium
+- Demo madrasah "Maple Grove Madrasah"; the demo admin has Premium
 - One holiday already in the list; new holiday added on camera: "Eid al-Adha break", with a short description and a start and end date a few days apart
-- Teachers "Ibrahim Yusuf" (away) and "Amina Saleh" (covering)
-- Ibrahim Yusuf teaches "Quran Hifz" in class "Hifz Boys", section "Hifz A"
+- Teachers "Bilal Hussain" (away) and "Fatima Siddiqui" (covering)
+- Bilal Hussain teaches "Quran Hifz" in class "Hifz Boys", section "Hifz A"
 - One older delegation already in the list
-- New delegation added on camera: subject-wise (Quran Hifz, Hifz A) for one week, with the note "Covering while Ustadh Ibrahim is away"
+- New delegation added on camera: subject-wise (Quran Hifz, Hifz A) for one week, with the note "Covering while Ustadh Bilal is away"
 
 ## Script
 
@@ -51,12 +51,12 @@ Add the days your madrasah is closed, and let another teacher cover a teacher's 
 **Show:** Click "Add"; the "Add Holiday" window opens. Type "Eid al-Adha break" and a description. Pick the two dates.
 
 #### [2.3]
-**Say:** All four boxes are needed. If one is empty, Ad-Din asks you to complete them. Tap **Save**.
+**Say:** All four boxes are needed. Check the dates first: when you tap **Save**, Ad-Din sends an email and an app notification about the holiday to all your teachers, parents and students.
 **Show:** Click "Save". A confirmation message; the holiday appears in the list.
 
 #### [2.4]
 **Say:** Teachers, parents and students see your holidays under **Holiday** in their own portals.
-**Show:** Quick cut: Parent Portal → Holiday, with "Eid al-Adha break" in the list.
+**Show:** Quick cut, signed in as a parent (side panel: "Signed in as: a parent"): Parent Portal → Holiday, with "Eid al-Adha break" in the list.
 
 ### 3. Start a delegation
 #### [3.1] Delegations
@@ -65,7 +65,7 @@ Add the days your madrasah is closed, and let another teacher cover a teacher's 
 
 #### [3.2]
 **Say:** Tap **Add**. Choose the teacher who is away under **From Teacher**, and the teacher covering for them under **To Teacher**. They must be two different people.
-**Show:** Click "Add"; the "Add Delegation" window opens. Pick "Ibrahim Yusuf" in From Teacher and "Amina Saleh" in To Teacher.
+**Show:** Click "Add"; the "Add Delegation" window opens. Pick "Bilal Hussain" in From Teacher and "Fatima Siddiqui" in To Teacher.
 
 ### 4. Choose what they cover
 #### [4.1] Scope
@@ -82,8 +82,8 @@ Add the days your madrasah is closed, and let another teacher cover a teacher's 
 
 ### 5. Set the dates and save
 #### [5.1]
-**Say:** Pick the **Start Date** and **End Date** of the cover, and add a note under **Event Description** if you like. Tap **Save**.
-**Show:** Pick a one-week range. Type "Covering while Ustadh Ibrahim is away". Click "Save"; a confirmation message.
+**Say:** Pick the **Start Date** and **End Date** of the cover, and add a note under **Event Description** if you like. Tap **Save**. Ad-Din emails and notifies the students and parents in that section.
+**Show:** Pick a one-week range. Type "Covering while Ustadh Bilal is away". Click "Save"; a confirmation message.
 
 #### [5.2]
 **Say:** The delegation joins the list. Use the filter to show **Active** or **InActive** delegations, and **Edit** or **Delete** to change one.
@@ -91,15 +91,16 @@ Add the days your madrasah is closed, and let another teacher cover a teacher's 
 
 ### 6. Next
 #### [6.1] Done
-**Say:** Your holidays are in place, and the covering teacher sees the delegation under **Delegations** in their **Teacher Portal**.
-**Show:** Quick cut: Amina Saleh's Teacher Portal → Delegations, showing the new delegation.
+**Say:** Your holidays are in place. Ad-Din doesn't send the covering teacher a message, so let them know. They see the delegation under **Delegations** in their **Teacher Portal**.
+**Show:** Quick cut, signed in as Fatima Siddiqui (side panel: "Signed in as: Fatima Siddiqui, a teacher"): Teacher Portal → Delegations, showing the new delegation.
 
 #### [6.2]
-**Say:** Next, video 10.2: Take class attendance, to see how teachers take attendance. To check what families see, watch video 05.8: Your public program pages.
-**Show:** End card with two tiles: "10.2 Take class attendance" and "05.8 Your public program pages".
+**Say:** Next, video 05.8: Your public program pages, to check what families see. To see how teachers take attendance, watch video 10.2: Take class attendance.
+**Show:** End card with two tiles: "05.8 Your public program pages" and "10.2 Take class attendance".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 7 changes: [2.3] says that Save emails and notifies all teachers, parents and students (HolidayController.cs 156), so check dates first; [5.1] says the section's students and parents are notified (DelegateController.cs 209); [6.1] the covering teacher isn't notified, so tell them; "Signed in as" labels in [2.4] and [6.1]; end card puts 05.8 first; demo names match the demo world
 - 2026-11-03 · manager · decisions via chat · 'Who needs a seat?' decided (own-Premium check is intended): flag wording updated; script unchanged
 - 2026-11-03 · critic · 4 changes: [1.1] second-person opening, no "handing to"; [2.3] no "fill in all"; [3.1] ties the title's "substitute teacher" to Ad-Din's word "delegation"; [6.2] end card by number and title
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes
