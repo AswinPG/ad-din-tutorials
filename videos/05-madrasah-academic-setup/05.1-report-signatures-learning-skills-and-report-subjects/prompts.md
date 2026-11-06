@@ -3,6 +3,7 @@
 Every instruction given to Claude for this video, newest first, with the result.
 Format: date · who · prompt (verbatim or summarised) · outcome / commit.
 
+- 2026-11-06 · Imran · "do it for all the planned ones now" (panel review, apply clear fixes) · review panel, 7 changes: prereq adds 03.4 (You'll need lists it); [1.1] "skills that teachers rate", no end preposition; [3.3] "if your madrasah doesn't have that role"; [4.1] says where User Profile is; [4.2] sign "with a mouse or a finger"; "Signed in as" labels on the account switches in [4.1] and [5.1]; demo names match the demo world (Maple Grove Madrasah, Bilal Hussain, Fatima Siddiqui) / docs(05.1): apply review panel fixes
 - 2026-11-03 · manager · "Decisions via chat" · Critic's taste call: title now 'Report signatures and learning skills' (report subjects aren't in the app); heading and [1.1] title card updated; 03.1 end card updated
 - 2026-11-03 · manager · "Decisions via chat" · Planned features not in the app dropped: Subject for report removed from Covers, flag removed
 - 2026-11-03 · manager · "use a critic subagent to criticise and find flaws in the script, make it better" · critic pass: 6 changes (opening, thin [2.2] merged, signatures for every chosen person, end card by number); title still promises report subjects, left for the manager

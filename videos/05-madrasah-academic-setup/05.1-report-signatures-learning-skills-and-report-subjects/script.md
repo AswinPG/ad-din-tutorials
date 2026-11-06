@@ -4,6 +4,7 @@ title: Report signatures and learning skills
 target: 3:30
 prereq:
   - "03.1"
+  - "03.4"
 status: scripted
 ---
 
@@ -23,17 +24,17 @@ Choose who signs your madrasah's report cards, make sure their signatures are in
 - Learning Skill
 
 ## Demo data
-- Demo madrasah "Al-Noor Madrasah"; the demo account is its Madrasah Admin; the madrasah's details are complete, including Email (the Madrasah/School Details tab won't save without it)
-- Teachers and admins in the madrasah, for example "Ibrahim Yusuf" (to be Madrasah Principal) and "Amina Saleh" (to be Madrasah Vice Principal), plus two more teachers
+- Demo madrasah "Maple Grove Madrasah"; the demo account is its Madrasah Admin; the madrasah's details are complete, including Email (the Madrasah/School Details tab won't save without it)
+- Teachers and admins in the madrasah, for example "Bilal Hussain" (to be Madrasah Principal) and "Fatima Siddiqui" (to be Madrasah Vice Principal), plus two more teachers
 - All five principal and council boxes start on "Select Staff"
-- "Ibrahim Yusuf" signed in on a second browser for chapter 4, with no signature saved yet
+- "Bilal Hussain" signed in on a second browser for chapter 4, with no signature saved yet
 - No learning skills saved yet, so Load Default fills the list on camera
 
 ## Script
 
 ### 1. Before you start
 #### [1.1] Opening
-**Say:** In this video for madrasah admins, you'll choose who signs your report cards, make sure their signatures are in Ad-Din, and set the learning skills students are rated on.
+**Say:** In this video for madrasah admins, you'll choose who signs your report cards, make sure their signatures are in Ad-Din, and set the learning skills that teachers rate on report cards.
 **Show:** Title card: "Report signatures and learning skills".
 
 #### [1.2]
@@ -43,7 +44,7 @@ Choose who signs your madrasah's report cards, make sure their signatures are in
 ### 2. Open your madrasah's settings
 #### [2.1] Organization Management
 **Say:** In the sidebar, open **Admin Portal**, then **Organization Management**. Find your madrasah and tap **Manage**. The **Manage Madrasah** page opens on the **Madrasah/School Details** tab.
-**Show:** Sidebar → Admin Portal → Organization Management. The "Organisation Management" page; click "Manage" on "Al-Noor Madrasah". The Manage Madrasah page opens; spotlight the "Madrasah/School Details" tab.
+**Show:** Sidebar → Admin Portal → Organization Management. The "Organisation Management" page; click "Manage" on "Maple Grove Madrasah". The Manage Madrasah page opens; spotlight the "Madrasah/School Details" tab.
 
 ### 3. Choose who signs
 #### [3.1] The five roles
@@ -56,8 +57,8 @@ Choose who signs your madrasah's report cards, make sure their signatures are in
 **Caption:** Five roles: Academic School Principal, Vice Principal and Council Chair; Madrasah Principal and Vice Principal.
 
 #### [3.3]
-**Say:** Each list shows your teachers and admins. Pick the right person for each role, or leave **Select Staff** if a role doesn't apply to you.
-**Show:** Open "Madrasah Principal" and pick "Ibrahim Yusuf". Pick "Amina Saleh" for "Madrasah Vice Principal". Leave the three Academic rows on "Select Staff".
+**Say:** Each list shows your teachers and admins. Pick the right person for each role, or leave **Select Staff** if your madrasah doesn't have that role.
+**Show:** Open "Madrasah Principal" and pick "Bilal Hussain". Pick "Fatima Siddiqui" for "Madrasah Vice Principal". Leave the three Academic rows on "Select Staff".
 
 #### [3.4] Save
 **Say:** Tap **Save** at the bottom of the page. Ad-Din saves the whole tab and takes you back to your list of organisations.
@@ -65,11 +66,11 @@ Choose who signs your madrasah's report cards, make sure their signatures are in
 
 ### 4. Add the signatures
 #### [4.1] Each person signs once
-**Say:** Each person you chose adds their own signature, once, in their profile. They open **User Profile**, on the **Personal info** tab.
-**Show:** Second browser, signed in as Ibrahim Yusuf. Profile menu → User Profile. The "Personal info" tab.
+**Say:** Each person you chose adds their own signature, once, in their profile. They open **User Profile** from the profile menu. It opens on the **Personal info** tab.
+**Show:** Second browser, signed in as Bilal Hussain (side panel: "Signed in as: Bilal Hussain, a teacher"). Profile menu → User Profile. The "Personal info" tab.
 
 #### [4.2]
-**Say:** Under **Signature**, they tap the pen and sign in the box.
+**Say:** Under **Signature**, they tap the pen and sign in the box with a mouse or a finger.
 **Show:** The "Signature" section is already open (don't click its header, that collapses it); spotlight "Used to digitally sign student report cards". Click the pen; the "Sign here" pad opens. Draw a signature.
 
 #### [4.3]
@@ -79,7 +80,7 @@ Choose who signs your madrasah's report cards, make sure their signatures are in
 ### 5. Set the learning skills
 #### [5.1] Services tab
 **Say:** Back in **Organization Management**, tap **Manage** again and open the **Services** tab.
-**Show:** Admin browser. Organization Management → Manage on "Al-Noor Madrasah" → click the "Services" tab.
+**Show:** Admin browser (side panel: "Signed in as: Admin"). Organization Management → Manage on "Maple Grove Madrasah" → click the "Services" tab.
 
 #### [5.2]
 **Say:** Scroll to **Madrasah Learning Skill and Work Habits for Reports**. These skills appear on the Islamic Studies Provincial report card, where teachers rate each student from Excellent to Needs Improvement.
@@ -104,6 +105,7 @@ Choose who signs your madrasah's report cards, make sure their signatures are in
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 7 changes: prereq adds 03.4 (You'll need lists it); [1.1] "skills that teachers rate", no end preposition; [3.3] "if your madrasah doesn't have that role"; [4.1] says where User Profile is; [4.2] sign "with a mouse or a finger"; "Signed in as" labels on the account switches in [4.1] and [5.1]; demo names match the demo world (Maple Grove Madrasah, Bilal Hussain, Fatima Siddiqui)
 - 2026-11-03 · manager · decisions via chat · Critic's taste call: title now 'Report signatures and learning skills' (report subjects aren't in the app); heading and [1.1] title card updated; 03.1 end card updated
 - 2026-11-03 · manager · decisions via chat · Planned features not in the app dropped: Subject for report removed from Covers, flag removed
 - 2026-11-03 · critic · 6 changes: [1.1] second-person opening for admins; [2.2] merged into [2.1] (thin scene); [4.1] covers every person chosen, not only the principal, no "stay on"; [4.2] shorter; [6.1] no personification ("know"); [6.2] end card by number and title
