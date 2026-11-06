@@ -23,7 +23,7 @@ Read your organisation's balance, choose card or invoice billing with the right 
 - Balance, card vs invoice, billing address, view invoices, “You have unpaid invoices / Pay now”
 
 ## Demo data
-- Admin account of "Al-Noor Madrasah" with yearly seats, card ending 4242 on file, Current Account Balance C$ 0.00
+- Demo world (engine/demo-world.md): the demo admin of "Maple Grove Madrasah" with yearly seats, card ending 4242 on file, Current Account Balance C$ 0.00
 - Stripe test mode, test card 4242 4242 4242 4242 (out of focus) and a demo billing address in Ontario, Canada
 - One upcoming invoice with a due date; three past invoices (two Closed, one Pending with a Stripe test hosted invoice link)
 - The Pending invoice makes the "You have unpaid invoices" banner show and "View invoices" turn red
@@ -48,7 +48,7 @@ See docs/SCRIPT-FORMAT.md.
 ### 2. Find billing
 #### [2.1] Open it
 **Say:** Open **Admin Portal**, then **Subscription Management**, and tap **View plan**. **Billing** is on the right, or under its own tab on a small screen.
-**Show:** Sidebar → Admin Portal → Subscription Management → View plan on "Al-Noor Madrasah". Spotlight the Billing column. Quick cut to a narrow window with the Billing tab.
+**Show:** Sidebar → Admin Portal → Subscription Management → View plan on "Maple Grove Madrasah". Spotlight the Billing column. Quick cut to a narrow window with the Billing tab.
 
 #### [2.2] Balance
 **Say:** The top card shows your organisation's name and address, and the **Current Account Balance**. Any credit on your account appears here and goes toward future charges.
@@ -64,13 +64,13 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Select "Via Credit Card". Spotlight the card box ("Default card", last four digits) and "Change Card".
 
 #### [3.3] Billing address
-**Say:** The secure Stripe window asks for the card and its billing address. Ad-Din keeps only the last four digits, and uses the address to work out tax.
-**Show:** Click "Change Card"; the Stripe window "Add Card to Ad-Din" opens. Fill the test card and demo address, out of focus; confirm. Toast "Card added successfully."
+**Say:** A secure window from Stripe, the card payment service Ad-Din uses, asks for the card and its billing address. Ad-Din keeps only the last four digits, and uses the address to work out tax.
+**Show:** Click "Change Card"; the Stripe window "Add Card to Ad-Din" opens. Crop or blur Stripe's test-mode badge. Fill the test card and demo address, out of focus; confirm. Toast "Card added successfully."
 
 #### [3.4] By invoice
-**Say:** **Via Invoice** means Ad-Din raises an invoice and you pay it yourself. Choose your country; for Canada, also choose your state and type your **Zip/Postal Code**. Then tap **Save**.
+**Say:** **Via Invoice** means Ad-Din raises an invoice, due the next day, and you pay it yourself. Choose your country. For Canada, also choose your province under **Select your State**, and type your **Zip/Postal Code**. Then tap **Save**.
 **Show:** Select "Via Invoice": "Please provide your billing details." Choose Canada, then Ontario, type a demo postal code. Click "Save".
-**Caption:** Via Invoice: Ad-Din raises an invoice and you pay it. Choose your country (in Canada, also state and postal code), then Save.
+**Caption:** Via Invoice: Ad-Din raises an invoice, due the next day, and you pay it. Choose your country (in Canada, also province and postal code), then Save.
 
 #### [3.5]
 **Say:** Switching to invoice removes the saved card. You can switch back and add a card at any time.
@@ -82,7 +82,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Click "View upcoming invoices". The "Upcoming Invoices" page: spotlight the row with its "Due" date and amount. Click "Back".
 
 #### [4.2] History
-**Say:** Tap **View invoices** for your history. Each invoice shows its number, date, amount, and whether it's **Closed** or **Pending**.
+**Say:** Tap **View invoices** for your history. Each invoice shows its number, date, amount, and whether it's **Closed** or **Pending**. **Pending** means it still needs to be paid.
 **Show:** Click "View invoices". The "Past Invoice" list: spotlight the badges.
 
 #### [4.3] Open one
@@ -96,7 +96,7 @@ See docs/SCRIPT-FORMAT.md.
 
 #### [5.2] Pay it
 **Say:** Open **View invoices**, tap the **Pending** invoice, and tap **Pay Now**. A secure Stripe page opens where you can pay it.
-**Show:** Click "View invoices" → the Pending invoice → "Pay Now". Stripe's test invoice page opens in a new tab.
+**Show:** Click "View invoices" → the Pending invoice → "Pay Now". Stripe's test invoice page opens in a new tab; crop or blur its test-mode badge.
 
 #### [5.3]
 **Say:** Pay promptly. While an invoice is unpaid, you can't change your seats, and your subscriptions can become inactive.
@@ -109,5 +109,6 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 6 changes: [3.3] says what Stripe is, [3.3] and [5.2] crop Stripe's test-mode badge, [3.4] says an invoice is due the next day (code: DaysUntilDue = 1, decision 15) and "province" under Select your State, Caption kept in step, [4.2] says what Pending means, demo names from the Maple Grove demo world
 - 2026-11-03 · critic · 2 changes: [1.1] second-person opening, Premium seats, [6.1] Say names both end tiles
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes
