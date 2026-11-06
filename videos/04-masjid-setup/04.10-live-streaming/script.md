@@ -26,7 +26,7 @@ Add your masjid's YouTube video, audio and Facebook live streams so members can 
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
-- Demo masjid "Masjid Al-Noor" as the home masjid, signed in as its masjid admin; all three slots empty at the start
+- Demo masjid "Maple Grove Masjid" as the home masjid, signed in as its masjid admin; all three slots empty at the start
 - A YouTube embed code for a demo live stream, a Mixlr embed code, and a Facebook video embed code (demo channels only)
 - Players that render in the slots after saving (or stills of them)
 - A member account that follows the masjid, for the closing shot in the app
@@ -51,7 +51,7 @@ See docs/SCRIPT-FORMAT.md.
 ### 2. Open Live Streaming
 #### [2.1] Where it lives
 **Say:** In the sidebar, tap **Live Streaming**. Your home masjid is already picked at the top.
-**Show:** Sidebar → Live Streaming. Spotlight the organisation picker showing "Masjid Al-Noor".
+**Show:** Sidebar → Live Streaming. Spotlight the organisation picker showing "Maple Grove Masjid".
 
 #### [2.2] Three slots
 **Say:** There are three slots: **Audio Live Streaming**, **Video Live Streaming** and **Facebook Live Streaming**. Each one says when it's empty.
@@ -81,19 +81,20 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 5. Change or remove
 #### [5.1]
-**Say:** To change a stream, tap the pencil and paste the new code. To remove one, tap the bin. It goes straight away, without asking, so tap with care.
+**Say:** To change a stream, tap the pencil and paste the new code. To remove one, tap the delete icon. It goes straight away, without asking, so tap with care.
 **Show:** Hover the pencil, then the bin on the Facebook card; don't click.
 
 ### 6. What members see
 #### [6.1]
-**Say:** Members open **Live Streaming** to watch or listen. They only see the slots you've filled.
-**Show:** Phone frame: the member's app, Live Streaming with the video and audio players.
+**Say:** Members open **Live Streaming** and tap a stream to watch or listen. They only see the streams you've added.
+**Show:** Phone frame: the member's app, Live Streaming. At phone width the cards start closed; tap Video Live Streaming to open its player, then Audio Live Streaming.
 
 #### [6.2] Close
-**Say:** Your live streams are ready. Next, send a message to tell your community when you go live, or see how members find your streams.
+**Say:** Your live streams are ready. Next, video 15.6: Tasbeeh, live streams, gallery and forms, to see the member's side. Or video 07.2: Send a message to your community, to tell people when you go live.
 **Show:** End card with two tiles: "15.6 Tasbeeh, live streams, gallery and forms" and "07.2 Send a message to your community".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 4 changes: [5.1] "delete icon" instead of "bin", [6.1] members tap a stream to open it, and the Show opens the cards, which start closed at phone width (liveStreaming.component.ts ngOnInit), [6.2] names both end tiles by number; demo names match the Maple Grove demo world
 - 2026-11-03 · critic · 2 changes: second-person opening, [6.2] close explains both end tiles
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes
