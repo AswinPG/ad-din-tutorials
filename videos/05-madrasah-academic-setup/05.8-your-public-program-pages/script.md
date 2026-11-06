@@ -19,11 +19,11 @@ Know what parents and your community see about your programs, teachers and timet
 - Program Details and Subjects, Staff List, Program Timetables: what parents see
 
 ## Demo data
-- Demo madrasah "Al-Noor Madrasah"; the demo admin has Premium
+- Demo madrasah "Maple Grove Madrasah"; the demo admin has Premium
 - Class "Hifz Boys" with a program description and cover picture (from 05.3), subjects "Quran Hifz" (with syllabus, two teachers), "Tajweed" (no syllabus) and "Islamic Studies"
-- Teachers "Ibrahim Yusuf" (with a short biography and profile picture) and "Amina Saleh" (no biography)
+- Teachers "Bilal Hussain" (with a short biography and profile picture) and "Fatima Siddiqui" (no biography)
 - The Term 1 timetable for "Hifz Boys - Hifz A" (from 05.6)
-- A second browser signed in as a parent whose home madrasah is Al-Noor Madrasah, for the parent's view
+- A second browser signed in as a parent whose home madrasah is Maple Grove Madrasah, for the parent's view
 
 ## Script
 
@@ -38,8 +38,8 @@ Know what parents and your community see about your programs, teachers and timet
 
 ### 2. Where families find them
 #### [2.1]
-**Say:** Families find your programs under **Madrasah / School** in the sidebar: **Program Details and Subjects**, **Signup for a Program**, **Staff List** and **Program Timetables**. Anyone whose home madrasah is yours sees them, without Ad-Din Premium.
-**Show:** Parent's browser. Sidebar → Madrasah / School, expanded (it also lists Introduction & Services, covered elsewhere). Spotlight the four pages.
+**Say:** Families find your programs under **Madrasah / School** in the sidebar: **Program Details and Subjects**, **Signup for a Program**, **Staff List** and **Program Timetables**. Anyone who chose your madrasah as their home madrasah sees them, without Ad-Din Premium.
+**Show:** Parent's browser (side panel: "Signed in as: a parent"). Sidebar → Madrasah / School, expanded (it also lists Introduction & Services, covered elsewhere). Spotlight the four pages.
 
 ### 3. Program details and subjects
 #### [3.1] Pick a program
@@ -56,16 +56,16 @@ Know what parents and your community see about your programs, teachers and timet
 
 #### [3.4] Keep it up to date
 **Say:** As an admin, you see **Edit** on the program, which opens the class so you can change it. **Needs syllabus** shows the subjects still missing one.
-**Show:** Admin's browser, same page. Spotlight "Edit". Click "Needs syllabus": "Tajweed" shows.
+**Show:** Admin's browser (side panel: "Signed in as: Admin"), same page. Spotlight "Edit". Click "Needs syllabus": "Tajweed" shows.
 
 ### 4. Staff list
 #### [4.1]
 **Say:** **Staff List** shows your teachers. Families tap a teacher to read their **Biography**.
-**Show:** Parent's browser. Madrasah / School → Staff List. Click "Ibrahim Yusuf"; the Biography panel shows.
+**Show:** Parent's browser (side panel: "Signed in as: a parent"). Madrasah / School → Staff List. Click "Bilal Hussain"; the Biography panel shows.
 
 #### [4.2]
 **Say:** Teachers write their own biography in **User Profile**, under **Personal info**. If it's empty, families see Not Available.
-**Show:** Click "Amina Saleh": "Not Available." Quick cut: User Profile → Personal info, spotlight "Biography".
+**Show:** Click "Fatima Siddiqui": "Not Available." Quick cut: User Profile → Personal info, spotlight "Biography".
 
 ### 5. Program timetables
 #### [5.1] By class
@@ -74,7 +74,7 @@ Know what parents and your community see about your programs, teachers and timet
 
 #### [5.2] By teacher
 **Say:** **View By Teacher** shows one teacher's whole teaching week.
-**Show:** Click "View By Teacher". Pick "Ibrahim Yusuf" and "Term 1"; the Teacher Schedule appears.
+**Show:** Click "View By Teacher". Pick "Bilal Hussain" and "Term 1"; the Teacher Schedule appears.
 
 ### 6. Next
 #### [6.1] Done
@@ -87,5 +87,6 @@ Know what parents and your community see about your programs, teachers and timet
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 4 changes: [2.1] "chose your madrasah as their home madrasah"; "Signed in as" labels on each browser switch ([2.1], [3.4], [4.1]); demo names match the demo world
 - 2026-11-03 · critic · 3 changes: [1.1] second-person opening; [2.2] merged into [2.1] (its Show only held on the menu); [6.2] end card by number and title
 - 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: [2.1] Madrasah / School has five pages (Introduction & Services too); four are named
