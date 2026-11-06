@@ -3,6 +3,7 @@
 Every instruction given to Claude for this video, newest first, with the result.
 Format: date · who · prompt (verbatim or summarised) · outcome / commit.
 
+- 2026-11-06 · Imran · "do it for all the planned ones now" (panel review, apply clear fixes) · review panel, 9 changes: [2.3] plain sentences, [3.1]/[4.1] masjid or madrasah, [3.3] pointer to 06.4, [4.4] nothing more is charged, [5.3] no second question, new [5.3a] De-Allocate, [6.1] Signed in as label, Maple Grove demo names; [2.1] (manager's decision today) kept, its "events" left for Imran / docs(02.4): apply review panel fixes
 - 2026-11-06 · Imran · "approved" (the recommended options in docs/reviews/2026-11-06-panel-00.4-02.3.md) · [2.1] masjid admins need seats too (decision 17)
 - 2026-11-03 · manager · "Decisions via chat" · 'Who needs a seat?' decided (own-Premium check is intended): flag wording updated; script unchanged
 - 2026-11-03 · manager · "use a critic subagent to criticise and find flaws in the script, make it better" · critic pass: 3 changes: [1.1] second-person opening, [2.4] thin scene merged into [2.3], [6.2] end tiles by number
