@@ -20,8 +20,8 @@ Add the next academic term, copy your class timetable into it, and, if you use S
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
-- Demo madrasah "Al-Noor Madrasah" (Premium); the demo account is a Madrasah Admin
-- Term "Autumn Term" (current, enabled) with a full class routine for Class "Maktab Level 1" sections "A" and "B" (teachers Yusuf Patel and Aisha Rahman)
+- Demo madrasah "Maple Grove Madrasah" (Premium); the demo account is a Madrasah Admin
+- Term "Autumn Term" (current, enabled) with a full class routine for Class "Maktab Level 1" sections "A" and "B" (teachers Omar Khalid and Fatima Siddiqui)
 - Term "Spring Term" added on camera, starting the day after Autumn Term ends; no routine yet
 - Staff Attendance switched on, with "Class routines come from" set to Autumn Term at the start
 
@@ -35,7 +35,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. Ready for the next term
 #### [1.1] Opening
-**Say:** When a term ends, you get the next one ready in Ad-Din: add the new term, then copy your class timetable into it, so nothing has to be rebuilt by hand.
+**Say:** When a term ends, you get the next one ready in Ad-Din: add the new term, then copy your class timetable into it, so you don't have to build it again.
 **Show:** Title card: "Start a new term".
 
 #### [1.2]
@@ -52,7 +52,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Type "Spring Term". Pick the start and end dates. Click "Add Term" in the sheet. Spring Term joins the list.
 
 #### [2.3] Old terms
-**Say:** Keep the old term as it is. Its attendance, marks and reports stay linked to it. If you ever want it out of the way, set its **Status** to **Disabled** rather than deleting it.
+**Say:** Keep the old term. Its attendance, marks and reports stay linked to it. Only enabled terms can be copied from, so copy its timetable first. Then, to hide it, set its **Status** to **Disabled** instead of deleting it.
 **Show:** Click the Autumn Term row: the Edit Term sheet opens. Spotlight Status (Enabled / Disabled). Click "Cancel".
 
 ### 3. Copy the timetable
@@ -74,8 +74,8 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 4. If teachers clash
 #### [4.1]
-**Say:** If a teacher would be in two classes at once in the new term, nothing is copied. Ad-Din lists the clashes so you can fix them on the **Routines** tab and try again.
-**Show:** Quick cut of the red notice "Nothing was copied. These teachers would be in two places at once in the target term", then back.
+**Say:** If a teacher would teach two classes at the same time in the new term, nothing is copied. Ad-Din lists the clashes so you can fix them on the **Routines** tab and try again.
+**Show:** Quick cut of the red notice; zoom on its first line, "Nothing was copied. These teachers would be in two places at once in the target term" (the notice's last line names an "Overview tab", which is the Routines tab; keep it out of the zoom), then back.
 
 ### 5. Staff Attendance
 #### [5.1] Shifts
@@ -92,11 +92,12 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Class Routine → Routines tab, Spring Term selected, showing the copied timetable.
 
 #### [6.2] Close
-**Say:** Next, promote your students to their new classes, or adjust the timetable for the new term.
+**Say:** Next, video 16.1: Promote students to the next year. To change the new term's timetable, watch video 05.6: Build the class timetable.
 **Show:** End card with two tiles: "16.1 Promote students to the next year" and "05.6 Build the class timetable".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 6 changes: [1.1] no "by hand"; [2.3] copy before disabling (Copy to Terms lists enabled terms only, copy-term-routine.component.ts 81); [4.1] no idiom, Show zooms on the notice's first line (its "Overview tab" text is wrong); [6.2] end tiles by number and title; demo names match the demo world
 - 2026-11-03 · manager · decisions via chat · Staff Attendance is live: chapter 5 'cut if not live' flag removed; chapter 5 stays
 - 2026-11-03 · manager · decisions via chat · Planned features not in the app dropped: alumni removed from Covers, alumni flag removed
 - 2026-11-03 · critic · 1 change: [3.1] "This is Duplicate Class Routines" reworded so the heading is clearly the page name
