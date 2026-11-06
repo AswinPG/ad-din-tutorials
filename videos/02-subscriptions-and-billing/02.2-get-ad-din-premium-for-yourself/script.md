@@ -10,6 +10,7 @@ audience:
 platform: Both
 flags:
   - "The app's Premium page is native (Ad-DinMobileApp, origin/Develop, AdDinStrings.resx: Choose your plan, Monthly, Yearly, Subscribe, Restore purchase, Manage subscription), not Angular, so npm run labels can't check those labels."
+  - "Decided 2026-11-06: chapters 6-7 (the app's native Premium page and the store sheet) are captured on a real device or emulator with a store sandbox account, inside the phone frame, as for 00.7; no drawn likeness"
   - "Prices aren't spoken. The web cards show \"$ 0.99 / month\" and \"$ 9.99 / year\" but Stripe charges CAD (0.99 CAD / 9.99 CAD); App Store and Google Play show local prices."
   - "Payment happens in Stripe's own window (web) or the store sheet (app). Record with Stripe test mode and a store sandbox account; never a real card."
 ---
@@ -44,8 +45,12 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. Premium for you
 #### [1.1] Opening
-**Say:** Ad-Din Premium gives you every feature for your role. If your masjid or madrasah hasn't given you one of its Premium seats, you can buy Premium yourself. In this video you'll do it on the web and in the app.
+**Say:** Ad-Din Premium gives you every feature for your role. You need it only if you use a Parent, Student, Teacher or Admin portal.
 **Show:** Title card: "Get Ad-Din Premium for yourself" for 3 seconds, then the Subscription tab's plan cards behind the rest of the line.
+
+#### [1.1a] Ask first
+**Say:** Ask your madrasah first, because many give families a seat. If yours hasn't, you can buy Premium yourself, on the web or in the app.
+**Show:** The plan cards stay; card: "Ask your madrasah: many give families a seat".
 
 #### [1.2]
 **Say:** You'll need your Ad-Din account and a payment card. In the app, you pay through the App Store or Google Play instead.
@@ -61,7 +66,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Spotlight the Free card and its "Active" button, then the Monthly and Yearly cards. Zoom on the "Best value" ribbon only; prices stay in shot but are never zoomed.
 
 #### [2.3]
-**Say:** Yearly costs less over a full year. Tap **Subscription terms** at the bottom to read how renewal and refunds work.
+**Say:** Yearly costs less over a full year. Payments aren't refunded. If you cancel, you keep Premium to the end of the period. Tap **Subscription terms** at the bottom to read the details.
 **Show:** Click "Subscription terms"; the list expands. Scroll it briefly, then collapse it.
 
 ### 3. Subscribe on the web
@@ -137,5 +142,6 @@ See docs/SCRIPT-FORMAT.md.
 ## Review log
 - 2026-11-06 · panel (user, director, writer, PM, PO) · 13 changes: Covers without prices, [1.1] "gives you" (not "opens"), Show leaves the title card sooner, [2.2] no zoom on prices (cards say $, Stripe charges CAD), [3.1] says what Stripe is, [3.1]/[3.2] crop Stripe's test-mode badge, [3.3] no idiom, [3.4] says what Auto Renew means, [4.2] plain proration wording (matches the Subscription terms), [4.3] downgrading gives credit, not "the same way" (Subscription terms), [5.2] "In the box" tells the two Cancel buttons apart, [7.1] no passive, [7.2] clear "its", "Signed in as" label, [8.1] no idiom
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · manager · panel decisions approved ("approved": recommended options) · [1.1]/[1.1a] who needs Premium, ask your madrasah first (decision 11), [2.3] no refunds (decision 13), real-device capture flag (decision 14)
 - 2026-11-03 · critic · 3 changes: [1.1] seat defined, second-person opening, [6.3] no elliptical question, [8.1] Say names both end tiles
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes (native labels Choose your plan, Restore purchase, Manage subscription confirmed in Ad-DinMobileApp origin/Develop AdDinStrings.resx)
