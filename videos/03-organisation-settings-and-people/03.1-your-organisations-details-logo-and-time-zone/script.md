@@ -3,7 +3,7 @@ id: "03.1"
 title: Your organisation’s details, logo and time zone
 target: 4:00
 prereq:
-  - "01.1"
+  - "01.2"
 status: scripted
 plan: Free
 flags:
@@ -34,11 +34,11 @@ Keep your masjid’s or madrasah’s name, address, contact details, logos and t
 
 ### 1. Your organisation’s profile
 #### [1.1] Opening
-**Say:** Your organisation’s details are what people see: its name, address, contact details and logo. In this video you’ll keep them up to date and check the time zone.
+**Say:** Your organisation’s details are what people see: its name, address, contact details and logo. In this video for masjid and madrasah admins, you’ll keep them up to date and check the time zone.
 **Show:** Title card: "Your organisation’s details, logo and time zone".
 
 #### [1.2]
-**Say:** This is for masjid and madrasah admins. Your organisation is already registered. Here you correct what you entered when you registered, and add anything missing.
+**Say:** Your organisation is already registered and approved by Ad-Din. Here you correct what you entered when you registered, and add anything missing.
 **Show:** Opening card from You'll need.
 
 ### 2. Open Organization Management
@@ -56,9 +56,9 @@ Keep your masjid’s or madrasah’s name, address, contact details, logos and t
 **Show:** "Manage Masjid" page. Spotlight the three tabs: Masjid Details, Services, Integrations.
 
 #### [3.2] Logo
-**Say:** On the left is the **Masjid Logo**. Tap **Add a Logo**, or **Change Logo** if there is one, and choose a JPG, PNG or WebP picture.
+**Say:** On the left is the **Masjid Logo**. Tap **Add a Logo**, or **Change Logo** if there is one, and choose a JPG, PNG or WebP picture. It's kept when you tap **Save** at the end.
 **Show:** Click "Change Logo"; pick `masjid-logo.png`. The new logo shows in the card.
-**Caption:** Tap Add a Logo or Change Logo, and choose a JPG, PNG or WebP picture.
+**Caption:** Tap Add a Logo or Change Logo, and choose a JPG, PNG or WebP picture. It's kept when you tap Save.
 
 #### [3.3] Name and address
 **Say:** Check the **Masjid Name**. To change the address, type it in **Address** and pick it from the suggestions. The street, city, postal code, state and country fill in for you.
@@ -88,7 +88,7 @@ Keep your masjid’s or madrasah’s name, address, contact details, logos and t
 **Show:** Click "Manage" on the demo madrasah. "Manage Madrasah" page; spotlight the tabs Madrasah/School Details, Enrollment Settings, Services, Integrations.
 
 #### [6.2] Three logos
-**Say:** A madrasah has three logos: the **Madrasah Logo**, a **School Logo** and a **School Board Logo**. Report cards use them. Add or change each one the same way.
+**Say:** A madrasah has three logos: the **Madrasah Logo**, a **School Logo** and a **School Board Logo**. Report cards use them. Add or change each one the same way, and tap **Save** at the end.
 **Show:** Spotlight the three logo cards. Click "Add a Logo" on School Board Logo; pick `school-board-logo.png`.
 
 #### [6.3] Currency and board
@@ -106,11 +106,12 @@ Keep your masjid’s or madrasah’s name, address, contact details, logos and t
 
 ### 7. Next
 #### [7.1] Done
-**Say:** Your organisation’s details, logos and time zone are up to date. Next, choose which features your organisation uses, on the **Services** tab. For a madrasah, video 05.1 adds report signatures and learning skills.
+**Say:** Your organisation’s details, logos and time zone are up to date. Next, video 03.2: Turn features on and off. For a madrasah, also video 05.1: Report signatures and learning skills.
 **Show:** End card with two tiles: "03.2 Turn features on and off" and "05.1 Report signatures and learning skills".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 5 changes: prereq 01.1 → 01.2 (the sidebar is locked until Ad-Din approves, as for 02.3), [1.1] says who it's for, [1.2] "registered and approved", [3.2] and [6.2] logos are kept only when you tap Save (code: editMasjid/editMadressah set the form value), [7.1] names both end tiles by number and title
 - 2026-11-03 · manager · decisions via chat · 05.1 renamed 'Report signatures and learning skills': end-card tile updated
 - 2026-11-03 · critic · 4 changes: [1.2] clearer 'what you entered when you registered'; [4.2] Show spotlights Save before Cancel; [5.1] tighter contact line; [7.1] Say names the 05.1 end tile
 - 2026-11-03 · validator · checked against master d36d69ed8 · 2 fixes: Phone 01 is required on the masjid form ([5.1]); masjid Save confirms in an Alert you close ([5.2]); flag for the silent masjid Save
