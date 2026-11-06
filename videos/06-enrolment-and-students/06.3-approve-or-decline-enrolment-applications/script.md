@@ -24,12 +24,13 @@ Review online enrolment applications, place each child in a section and approve 
 - Pick a section, decline with a reason, Reconsider, “Subscription required to enroll”, the dashboard and app alerts
 
 ## Demo data
-- Demo madrasah "Al-Noor Madrasah"; the demo admin has Premium and the madrasah has free Yearly seats (for example 5 available)
-- Class "Maktab Level 1" with sections "Section A" and "Section B"; class "Hifz Boys" with section "Hifz A"
+- Demo madrasah "Maple Grove Madrasah"; the demo admin (Yusuf Rahman) has Premium and the madrasah has free Yearly seats (for example 5 available)
+- Class "Weekend Quran" with sections "Level 1" and "Level 2"; class "Hifz Class A" with section "Morning"
 - Pending applications:
-  - Maryam Rahman → Maktab Level 1 (parent Aisha Rahman, no seat yet), to approve
-  - Bilal Ahmed → Maktab Level 1 (parent Omar Ahmed), to decline
-  - Zaid Khan → Hifz Boys, declined earlier for "No available seats" with a note, to reconsider (parent Fatima Khan already has a seat, so "Subscription Active" shows)
+  - Musa Malik → Weekend Quran (parent Khadija Malik, no seat yet; the family from 06.2), to approve
+  - Idris Farah → Weekend Quran (parent Amina Farah), to decline
+  - Safiya Ansari → Hifz Class A, declined earlier for "No available seats" with a note, to reconsider (parent Hamid Ansari already has a seat, so "Subscription Active" shows)
+- For the [3.5a] inset only: a second state with 0 Yearly and 0 Monthly seats available
 - The app home (phone frame) signed in as the same admin, with the Waiting on you card showing "Enrollment applications" and a push notification for a new application
 - No real names, emails or phone numbers on screen
 
@@ -47,7 +48,7 @@ Review online enrolment applications, place each child in a section and approve 
 ### 2. Know when applications arrive
 #### [2.1] Alerts
 **Say:** When a parent submits an application, every admin of the madrasah gets an email and a notification on their phone.
-**Show:** Phone frame: a push notification about a new enrolment application.
+**Show:** Phone frame, side panel "Signed in as: madrasah admin": the in-app push banner for a new enrolment application (triggered with the 'addin:push' event, as in 00.7).
 
 #### [2.2] The app home
 **Say:** In the Ad-Din app, your home shows **Waiting on you**. Tap **Review** next to **Enrollment applications** to open the list.
@@ -55,12 +56,12 @@ Review online enrolment applications, place each child in a section and approve 
 
 #### [2.3] On the web
 **Say:** On the web, open **Admin Portal**, then **User Management**. Tap **Open users** on your madrasah, then the **Pending Enrollments** tab.
-**Show:** Sidebar → Admin Portal → User Management. Click "Open users" on "Al-Noor Madrasah". Click the "Pending Enrollments" tab; the list shows First Name, Class Name, Parent Name and Status.
+**Show:** Sidebar → Admin Portal → User Management. Click "Open users" on "Maple Grove Madrasah". Click the "Pending Enrollments" tab; the list shows First Name, Class Name, Parent Name and Status.
 
 ### 3. Approve an application
 #### [3.1] Open it and pick a section
 **Say:** Select an application and tap **View Details**. Under **Selected Course**, choose a section for each course in **Select Section**.
-**Show:** Click the row "Maryam Rahman". Click "View Details"; the "Enrollment Request" window opens. Spotlight "Maktab Level 1". Open "Select Section" and pick "Section A".
+**Show:** Click the row "Musa Malik". Click "View Details"; the "Enrollment Request" window opens. Spotlight "Weekend Quran". Open "Select Section" and pick "Level 1".
 
 #### [3.3]
 **Say:** Below, check the parent's and child's details, documents and answers. If everything is right, answer **Is all information found correct?** with **Yes**.
@@ -70,18 +71,22 @@ Review online enrolment applications, place each child in a section and approve 
 **Say:** If neither parent has a subscription yet, you'll see **Subscription required to enroll**. Choose **Yearly** or **Monthly**. Each shows how many of your madrasah's seats are left.
 **Show:** Zoom on the "Subscription required to enroll" box. Spotlight "Yearly (5 available)" and "Monthly"; keep Yearly selected.
 
+#### [3.5a] No seats left
+**Say:** If both show none available, you can't tap **Approve Application**. Buy more seats first. Video 02.3 shows how.
+**Show:** Inset card (recorded separately): "Yearly (0 available)" and "Monthly (0 available)", with "Approve Application" greyed. Small note on screen: "02.3 Buy seats for your organisation".
+
 #### [3.6]
 **Say:** If a parent already has one, it says **Subscription Active**, and you can approve straight away.
-**Show:** Inset card: the green "Subscription Active" box (from Zaid's application, recorded separately).
+**Show:** Inset card: the green "Subscription Active" box (from Safiya's application, recorded separately).
 
 #### [3.7] Approve
 **Say:** Tap **Approve Application**, then **Proceed**. The child joins the section, and the parent is told by email and notification.
-**Show:** Click "Approve Application". The "Confirm Approval" box; click "Proceed". The "Successful" message "Successfully approved the Enrolment Request"; click "Close". The window closes and Maryam leaves the pending list.
+**Show:** Click "Approve Application". The "Confirm Approval" box; click "Proceed". The "Successful" message "Successfully approved the Enrolment Request"; click "Close". The window closes and Musa leaves the pending list.
 
 ### 4. Decline an application
 #### [4.1] Say no
 **Say:** To decline, open the application and answer **No** to **Is all information found correct?**
-**Show:** Select "Bilal Ahmed", click "View Details". Scroll down, click "No".
+**Show:** Select "Idris Farah", click "View Details". Scroll down, click "No".
 
 #### [4.2] Give a reason
 **Say:** Choose a **Reason for Declining**, such as no available seats. Add **Additional Notes** if the parent needs to know more.
@@ -89,21 +94,21 @@ Review online enrolment applications, place each child in a section and approve 
 
 #### [4.3]
 **Say:** Tap **Reject Application**, then **Proceed**. The parent sees your reason in the app and can fix their application and send it again.
-**Show:** Click "Reject Application". The "Are you sure?" box lists the course; click "Proceed". Bilal's row now shows Status "Rejected" and the reason.
+**Show:** Click "Reject Application". The "Are you sure?" box lists the course; click "Proceed". Idris's row now shows Status "Rejected" and the reason.
 
 ### 5. Change your mind
 #### [5.1] Reconsider
 **Say:** If you declined a course too soon, open that child's application. Courses you declined are under **Previously rejected**, with your reason.
-**Show:** Select "Zaid Khan", click "View Details". Spotlight the "Previously rejected" card with "Reason: No available seats".
+**Show:** Select "Safiya Ansari", click "View Details". Spotlight the "Previously rejected" card with "Reason: No available seats".
 
 #### [5.2]
 **Say:** Tap **Reconsider** to bring it back. Then pick a section, answer **Yes**, and approve it as before.
-**Show:** Click "Reconsider"; "Hifz Boys" moves up into Selected Course. Pick "Hifz A", click "Yes", "Approve Application", "Proceed".
+**Show:** Click "Reconsider"; "Hifz Class A" moves up into Selected Course. Pick "Morning", click "Yes", "Approve Application", "Proceed".
 
 ### 6. Next
 #### [6.1] Done
 **Say:** Approved children now appear in your student list, in the section you chose.
-**Show:** Click the "Student" tab; open "Filters" and pick "Maktab Level 1" and "Section A". Spotlight Maryam Rahman.
+**Show:** Click the "Student" tab; open "Filters" and pick "Weekend Quran" and "Level 1". Spotlight Musa Malik.
 
 #### [6.2]
 **Say:** Next, video 06.4: Add students and parents yourself, and video 06.5: Move students between sections.
@@ -111,6 +116,7 @@ Review online enrolment applications, place each child in a section and approve 
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 3 changes: new [3.5a] says Approve Application can't be tapped when no seats are left and points to 02.3 (approve-enrollment.component.html 216-217), [2.1] Show uses the in-app push banner (a real push can't reach the mocked world, as in 00.7) with a "Signed in as" label, demo data and Show names use the Maple Grove demo world (Weekend Quran, Hifz Class A; new families Malik, Farah, Ansari)
 - 2026-11-03 · manager · decisions via chat · 'Who needs a seat?' decided (own-Premium check is intended): flag wording updated; script unchanged
 - 2026-11-03 · critic · 6 changes: [1.1] second-person opening; [1.2] seat named as one of your organisation's Premium seats; [3.2] merged into [3.1] and [3.4] into [3.3] (thin scenes); [5.1] no elliptical question; [6.2] end card by number and title
 - 2026-11-03 · validator · checked against master d36d69ed8 · 2 fixes: [3.7] Successful alert + Close after Proceed; [6.1] Filters panel must be opened

@@ -3,6 +3,7 @@
 Every instruction given to Claude for this video, newest first, with the result.
 Format: date · who · prompt (verbatim or summarised) · outcome / commit.
 
+- 2026-11-06 · Imran · "do it for all the planned ones now" (panel review, apply clear fixes) · 3 changes: new [3.5a] (no seats left, points to 02.3), [2.1] in-app push banner, Maple Grove demo names
 - 2026-11-03 · manager · "Decisions via chat" · 'Who needs a seat?' decided (own-Premium check is intended): flag wording updated; script unchanged
 - 2026-11-03 · manager · "use a critic subagent to criticise and find flaws in the script, make it better" · critic pass: 6 changes (opening, Premium seats wording, two thin scenes merged, end card by number)
 - 2026-11-03 · manager · "use a sub agent to validate the script" · validator pass: 2 fixes ([3.7] Successful alert; [6.1] open Filters).
