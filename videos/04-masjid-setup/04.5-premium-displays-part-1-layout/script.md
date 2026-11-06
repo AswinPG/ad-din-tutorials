@@ -25,7 +25,7 @@ Choose one of the six premium displays and set its layout, which Salah times it 
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
-- Demo masjid "Masjid Al-Noor" with an active Prayer Times Premium add-on, signed in as its masjid admin
+- Demo masjid "Maple Grove Masjid" with an active Prayer Times Premium add-on, signed in as its masjid admin
 - Iqamah times for today, logo and masjid name set (for Layout 2)
 - Horizontal Display 1 starting on Layout 1, all daily prayers and Jumu'ah ticked, Iqamaah countdown off, Display During Salah off
 - Previews of Horizontal Display 1, recorded from the dev environment with the demo masjid's data, that change after each save: Layout 2, alternating Begins/Adhan column, countdown screen with the default message, dimmed screen
@@ -44,7 +44,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Title card: "Premium displays, part 1: layout".
 
 #### [1.2]
-**Say:** You'll need the Prayer Times Premium add-on, and your Iqamah times in place. Without the add-on, Ad-Din takes you to the subscription page instead.
+**Say:** You'll need the Prayer Times Premium add-on, and your Iqamah times in place. Without the add-on, Ad-Din takes you to the subscription page instead. Video 02.5 shows how to add it.
 **Show:** Opening card from You'll need.
 
 ### 2. Choose a display
@@ -53,7 +53,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Sidebar → Masjid → Prayer Times. Spotlight the crown icons, then click "Premium Displays".
 
 #### [2.2] Six displays
-**Say:** You get six displays, each set up on its own. Three are upright, for portrait screens, and three are wide, for landscape TVs.
+**Say:** You get six displays, each with its own settings. Three are upright, for portrait screens, and three are wide, for landscape TVs.
 **Show:** Open the display dropdown: Vertical Display 1, Vertical Display 2, Vertical Display Content Only, Horizontal Display 1, Horizontal Display 2, Horizontal Display Content Only.
 
 #### [2.3]
@@ -118,7 +118,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Click Display During Salah. Turn on the switch; select Dim.
 
 #### [7.2]
-**Say:** Turn on **Exclude Date & Time** to keep the clock showing. In **Resume after Iqamah**, enter the minutes until the screen comes back. Tap **Save**.
+**Say:** Turn on **Exclude Date & Time** to keep the time, date, masjid name and logo showing. In **Resume after Iqamah**, enter the minutes until the screen comes back. Tap **Save**.
 **Show:** Turn on Exclude Date & Time; type 10 under Resume after Iqamah. Click Save.
 
 ### 8. Next
@@ -128,6 +128,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 4 changes: [1.2] points to video 02.5 for the add-on, [2.2] no phrasal verb, [7.2] says what Exclude Date & Time keeps on screen (Display During Salah tooltip), demo names match the Maple Grove demo world
 - 2026-11-03 · manager · decisions via chat · TV display pages decided: previews recorded from the dev environment with demo data; flag and demo data updated
 - 2026-11-03 · manager · decisions via chat · 04.6 split (new 04.11): [1.1] 'part one of three', closing Say names video 04.6 by number and new title, end card title and colour-preset flag (now 04.11) updated
 - 2026-11-03 · critic · 3 changes: second-person opening, [4.2] no 'Short on space?' idiom, [5.2] names Islamic Midnight instead of vague 'night times'
