@@ -1,6 +1,6 @@
 # Review panel: decisions needed (all tracks)
 
-2026-11-06. Five reviewers (first-time users, video director, script writer, programme manager, product owner) read every planned script. The clear fixes are applied and committed: about 430 changes across 97 videos (Track 11 is on hold; the pilots are approved). These are the questions only Imran can answer. Each batch report has the evidence and the full options; the recommended option is given here.
+2026-11-06. Five reviewers (first-time users, video director, script writer, programme manager, product owner) read every planned script. The clear fixes are applied and committed: about 530 changes across 97 videos (Track 11 is on hold; the pilots are approved). These are the questions only Imran can answer. Each batch report has the evidence and the full options; the recommended option is given here.
 
 Reply with the numbers you accept as recommended ("all recommended" is fine) and anything you want differently.
 
