@@ -22,7 +22,7 @@ Set up weighted categories for a class subject, then create an academic activity
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
-- Demo madrasah "Al-Noor Madrasah" (Premium) with Academic Activity switched on; the demo account is a Madrasah Admin
+- Demo madrasah "Maple Grove Madrasah" (Premium) with Academic Activity switched on; the demo account Yusuf Rahman is a Madrasah Admin, and teacher Bilal Hussain teaches "Fiqh" in "Maktab Level 1" A (for the Teacher Portal cut in [2.2])
 - Terms "Autumn Term" (current) and "Spring Term" in Terms Management
 - Class "Maktab Level 1", section "A", subject "Fiqh", with enrolled demo students
 - Categories for that subject at the start: "Homework" (Scored, 30%) and "Tests" (Scored, 50%), so the total shows 80% and "Must equal 100%"; "Quizzes" (Scored, 20%) is added on camera
@@ -38,7 +38,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. Graded work for the term
 #### [1.1] Opening
-**Say:** Academic activities are the homework, quizzes and tests you grade during a term. Here you'll set up categories, then create your first activity.
+**Say:** In this video for madrasah admins and teachers, you'll set up categories for a subject, then create your first academic activity: the homework, quizzes and tests you grade during a term.
 **Show:** Title card: "Set up academic activities".
 
 #### [1.2]
@@ -52,7 +52,7 @@ See docs/SCRIPT-FORMAT.md.
 
 #### [2.2]
 **Say:** Teachers have the same page in their **Teacher Portal**, so they can do this for their own classes too.
-**Show:** Hold on the two rows.
+**Show:** Quick cut to a teacher (side panel: "Signed in as: Bilal Hussain, a teacher"): Sidebar → Teacher Portal → Academic Activity, the same two rows. Back to the admin (side panel: "Signed in as: Admin").
 
 ### 3. Categories
 #### [3.1] Pick the subject
@@ -73,7 +73,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 4. Terms
 #### [4.1]
-**Say:** Every activity belongs to a term, so each term's grades stay separate. The terms come from **Terms Management**.
+**Say:** Every activity belongs to a term, so each term's grades stay separate. The terms come from **Terms Management**, which video 05.2 explains.
 **Show:** Quick cut: Sidebar → Admin Portal → Terms Management, showing Autumn Term and Spring Term. Back to Academic Activity.
 
 ### 5. Create an activity
@@ -98,7 +98,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Scroll to step 4. Spotlight URL, Note, "Choose files" and the Notify Students and Parents switch; turn the switch on.
 
 #### [5.6] Save
-**Say:** Tap **Save**, then **OK**.
+**Say:** Tap **Save**, then **OK**. With the switch on, students and parents are told about the new activity.
 **Show:** Click "Save", then "OK" in the Confirmation dialog.
 
 ### 6. Next
@@ -107,10 +107,11 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** The new row "Wudu steps worksheet". Spotlight the Assigned, Graded and Missing columns.
 
 #### [6.2] Close
-**Say:** Next, enter scores for this activity, or create many activities at once from Excel.
+**Say:** Next, video 10.6: Enter activity scores, and video 10.7: Import activities and marks from Excel.
 **Show:** End card with two tiles: "10.6 Enter activity scores" and "10.7 Import activities and marks from Excel".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 6 changes: [1.1] says who it's for (second person), [2.2] Show cuts to the teacher's page with "Signed in as" labels (was a hold), [4.1] points to 05.2 for terms, [5.6] gives the reason for Save (no thin scene), [6.2] end tiles by number and title; demo names from the Maple Grove demo world
 - 2026-11-03 · critic · 1 change: [4.1] dropped "set up earlier" (assumes another video)
 - 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: [5.2] Add Activity doesn't carry over the list filters, so class, section and subject are picked again before the term
