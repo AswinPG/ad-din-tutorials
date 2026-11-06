@@ -29,18 +29,18 @@ Add admins and teachers to your madrasah by GUID or as new accounts, check their
 - deactivate and re-activate
 
 ## Demo data
-- Demo madrasah admin account with Premium, admin of the demo madrasah
+- Demo world (engine/demo-world.md): the demo admin Yusuf Rahman, with Premium, admin of Maple Grove Madrasah
 - Demo madrasah with three teachers and two admins listed, and one inactive teacher (for example "Ustadh Hamza Ali") on the Inactive tab
-- An existing demo account not yet in the madrasah (for example "Hafizah Maryam Siddiqui") whose GUID is copied to the clipboard
-- A new admin to create (for example "Mr. Yusuf Rahman", username `yusuf_admin`, a demo email and mobile number); the welcome email is not sent in the demo world
-- A teacher to deactivate (for example "Ustadh Omar Farooq")
+- An existing demo account not yet in the madrasah (for example "Hafizah Khadija Patel") whose GUID is copied to the clipboard
+- A new admin to create (for example "Mr. Idris Malik", username `idris_malik`, a demo email and mobile number); the welcome email is not sent in the demo world
+- A teacher to deactivate (for example "Ustadh Omar Khalid")
 - No real names, emails or phone numbers on screen
 
 ## Script
 
 ### 1. Your madrasah team
 #### [1.1] Opening
-**Say:** Your madrasah needs admins to run it and teachers to teach. In this video you’ll add both, check their profiles, and deactivate anyone who leaves.
+**Say:** Your madrasah needs admins to run it and teachers to teach. In this video for madrasah admins, you’ll add both, check their profiles, and deactivate anyone who leaves.
 **Show:** Title card: "Add admins and teachers to a madrasah".
 
 #### [1.2]
@@ -59,12 +59,12 @@ Add admins and teachers to your madrasah by GUID or as new accounts, check their
 
 ### 3. Add a teacher by GUID
 #### [3.1]
-**Say:** Tap **Add**. Ad-Din asks what type of account you want to add. Open **Teacher**, paste their code into **GUID**, and tap **Fetch**.
-**Show:** Click "Add". The "Add New User" page opens with Admin, Teacher, Parent and Student. Expand "Teacher", paste Maryam’s GUID, click "Fetch". Keep the hint text out of close-up.
+**Say:** Tap **Add**. Ad-Din asks what type of account you want to add. Open **Teacher**, paste their GUID into the **GUID** box, and tap **Fetch**.
+**Show:** Click "Add". The "Add New User" page opens with Admin, Teacher, Parent and Student. Expand "Teacher", paste Khadija’s GUID, click "Fetch". Keep the hint text out of close-up.
 
 #### [3.2] The profile page
 **Say:** Their profile page opens with their details. The links on the left jump to each part, such as **Personal details** and **Address**.
-**Show:** The teacher profile page for Maryam. Click Personal details and Address on the left; the page scrolls to each card.
+**Show:** The teacher profile page for Khadija. Click Personal details and Address on the left; the page scrolls to each card.
 
 #### [3.3]
 **Say:** To change a part, tap its **Edit** button. Fields with a star are required. Then tap **Update**. This is the step that adds them to your madrasah, so don’t skip it.
@@ -77,7 +77,7 @@ Add admins and teachers to your madrasah by GUID or as new accounts, check their
 
 #### [4.2]
 **Say:** Under **Personal detail**, choose a **Salutation**, then fill in **First Name**, **Last Name**, a **Username**, **Mobile Number** and **Email**.
-**Show:** Fill the Personal detail card for Mr. Yusuf Rahman with the demo values.
+**Show:** Fill the Personal detail card for Mr. Idris Malik with the demo values.
 
 #### [4.3] Access Rights
 **Say:** Further down, **Access Rights** already has **Admin** ticked. If this person also teaches, tick **Teacher** too.
@@ -85,12 +85,12 @@ Add admins and teachers to your madrasah by GUID or as new accounts, check their
 
 #### [4.4] Save
 **Say:** Tap **Save Changes**. Ad-Din creates the account and shows each step, ending with **Sending welcome email**. That email gives them their sign-in details.
-**Show:** Click "Save Changes". The "Saving Data" window: "Creating Yusuf Rahman's admin account", then "Sending welcome email". Click "Done".
+**Show:** Click "Save Changes". The "Saving Data" window: "Creating Idris Malik's admin account", then "Sending welcome email". Click "Done".
 
 ### 5. Change someone’s access
 #### [5.1]
 **Say:** To change an admin’s access later, select them on the **Admin** tab and tap **Edit**. In **Access Rights**, tap **Edit**, tick or untick roles, and tap **Update**.
-**Show:** Admin tab: tick Yusuf’s row, click "Edit". Scroll to Access Rights, click its "Edit", untick Teacher, click "Update".
+**Show:** Admin tab: tick Idris’s row, click "Edit". Scroll to Access Rights, click its "Edit", untick Teacher, click "Update".
 
 ### 6. Deactivate and re-activate
 #### [6.1] Deactivate
@@ -102,17 +102,22 @@ Add admins and teachers to your madrasah by GUID or as new accounts, check their
 **Show:** The "Are you sure?" step; click "Deactivate". Confirmation; Omar leaves the Teacher tab.
 **Caption:** Inactive people are left out of reports and notifications; their history stays. Tap Deactivate to confirm.
 
+#### [6.2a] Their seat
+**Say:** If this was their only role in your madrasah, their seat goes back to your organisation, ready for someone else.
+**Show:** Teacher tab without Omar; cut to Admin Portal → Subscription Management → View plan and spotlight the "available" count on the Yearly card.
+
 #### [6.3] Re-activate
 **Say:** If they come back, open **Inactive**, select them, tap **Re-Activate**, and confirm. They return to their tab, and may get one of your organisation’s seats again.
 **Show:** Inactive tab: tick Hamza’s row, click "Re-Activate". The "Re-Activate Users" window shows his name and an Activation Note box; click "Re-Activate", then "Re-Activate" again on "Are you sure?". Hamza leaves the Inactive tab.
 
 ### 7. Next
 #### [7.1] Done
-**Say:** Your admins and teachers are in place. Next, add many people at once from a spreadsheet, or give your team their seats.
+**Say:** Your admins and teachers are in place. Next, video 03.5: Import and export users in bulk, or video 02.4: Give seats to parents, teachers and staff.
 **Show:** End card with two tiles: "03.5 Import and export users in bulk" and "02.4 Give seats to parents, teachers and staff".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 5 changes: [1.1] says who it's for, [3.1] "their GUID" instead of "their code", new [6.2a] a deactivated person's seat goes back to the organisation (code: organisationUserList changeSubscriptionStatus, MadressahRepository SuspendUsers), [7.1] names both end tiles by number and title, demo names that don't clash with the demo world (the new admin was "Yusuf Rahman", the demo account itself)
 - 2026-11-03 · manager · decisions via chat · 'How people are added' decided (as scripted): flag wording updated; script unchanged
 - 2026-11-03 · critic · 3 changes: [3.3] stresses Update is the step that adds them; [6.1]/[6.2] 'can't deactivate your own account' moved to shorten [6.2]; [6.3] 'pool' idiom removed
 - 2026-11-03 · validator · checked against master d36d69ed8 · 4 fixes: [3.2] a teacher profile’s side links are Personal details and Address (Documents is student-only); [3.3] Update is what adds a fetched person; [4.2] fields in the form’s order; [6.3] the Re-Activate Users window before Are you sure?

@@ -3,6 +3,7 @@
 Every instruction given to Claude for this video, newest first, with the result.
 Format: date · who · prompt (verbatim or summarised) · outcome / commit.
 
+- 2026-11-06 · Imran · "do it for all the planned ones now" (panel review, apply clear fixes) · review panel, 5 changes: [1.1] audience, [3.1] GUID term, new [6.2a] seat returns on deactivate, [7.1] end tiles by number, demo names (new admin no longer the demo account) / docs(03.4): apply review panel fixes
 - 2026-11-03 · manager · "Decisions via chat" · 'How people are added' decided (as scripted): flag wording updated; script unchanged
 - 2026-11-03 · manager · "use a critic subagent to criticise and find flaws in the script, make it better" · critic pass: 3 wording fixes
 - 2026-11-03 · manager · "use a sub agent to validate the script" · validator pass: 4 fixes ([3.2] side links, [3.3] Update adds them, [4.2] field order, [6.3] missing window)
