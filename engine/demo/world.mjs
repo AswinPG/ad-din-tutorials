@@ -17,6 +17,8 @@ export const DEMO = {
     orgEmail: "office@maplegrove.example.com",
     lat: 43.7612, lng: -79.2873,
     first: "Yusuf", last: "Rahman", username: "yusuf_rahman", email: "yusuf.rahman@example.com",
+    guid: "7d3e2a91-5c4b-4f08-b6e2-1a9c0d4e8f35", // a made-up GUID for the demo account (never a real one)
+    mobile: "4165550142",
     child: { first: "Maryam", last: "Rahman" },
     spouse: { first: "Aisha", last: "Rahman" },
 };
@@ -85,9 +87,10 @@ export function prayerRow(t) {
 export function createWorld(opts = {}) {
     const state = { unread: 2, ...opts.state };
     const user = () => ({
-        ...person(IDS.user, DEMO.first, DEMO.last), userName: DEMO.username, email: DEMO.email, emailVerified: true, address,
+        ...person(IDS.user, DEMO.first, DEMO.last), identifier: DEMO.guid, userName: DEMO.username, email: DEMO.email, emailVerified: true, address,
         homeMasjidID: IDS.masjid, homeMadressahID: IDS.madrasah, homeMasjidName: DEMO.masjid, homeMadressahName: DEMO.madrasah,
-        salutation: "Mr.", middleName: null, mobile: DEMO.phone, quranType: 1, userSpouse: null, userParents: null,
+        street: DEMO.street, city: DEMO.city, state: DEMO.state, zipCode: DEMO.zip, country: DEMO.country, userBiography: "Volunteers at the Maple Grove weekend school.",
+        salutation: "Mr.", middleName: null, mobile: DEMO.mobile, quranType: 1, userSpouse: null, userParents: null,
         userChildrens: [{ relation: "Father", userData: person(IDS.child, DEMO.child.first, DEMO.child.last) }],
         organisationRoles: null, isDeleted: false, mediaConsent: false, isVolunteer: false,
     });
@@ -139,7 +142,7 @@ export function createWorld(opts = {}) {
     const routes = [
         // ---- account and shell ----
         [/^POST \/v1\/Account\/RefreshToken/i, () => ok(null)],
-        [/^GET \/v1\/Account\/GetUserEntityById\//i, () => ok(user(), "MAAA100")],
+        [/^GET \/v1\/Account\/GetUserEntityById\//i, () => ok({ ...user(), ...(state.user || {}) }, "MAW100")], // MAW100: the status the profile and top bar check
         [/^GET \/v1\/Account\/GetUserClaims/i, () => ok([{ claimID: 0, userID: 0, claimName: "AdDinUser", claimExpiry: null, tokenValidity: null }, { claimID: 0, userID: 0, claimName: "Subscriber", claimExpiry: "2027-11-01T00:00:00", tokenValidity: null }], "MAAB100")],
         [/^GET \/v1\/Account\/Subscriptions\/GetSubscriptions/i, () => ok([{ subscriptionID: 1, planID: "addinpremiummonthly", userID: IDS.user, subscriptionService: "Stripe", subscriptionIdentifier: "demo", subscriptionExpiry: "2027-11-01T00:00:00", active: true, organizationCustomerID: null, familyPlan: false, organizationType: null, organizationID: null, organizationName: null, ownerName: null }], "SA100")],
         [/^GET \/v1\/Settings\/GetSettings/i, () => ok({ Subscription: "Enabled" }, "SEA100")],
@@ -191,7 +194,7 @@ export function createWorld(opts = {}) {
         [/^GET \/v2\/Madressah\/list/i, () => ok(nearby("madressah"), "MMH100")],
         [/^GET \/v1\/Masjid\/GetHomeMasjid/i, () => ok(state.newUser ? null : masjid(), "MMH100")],
         [/^GET \/v1\/Madressah\/GetHomeMadressah/i, () => ok(state.newUser ? null : madrasah(), "MMH100")],
-        [/^GET \/v1\/Masjid\/GetFollowedOrganisations/i, () => ok([], "MMH100")],
+        [/^GET \/v1\/Masjid\/GetFollowedOrganisations/i, () => ok((state.follows || []).slice(), "MMAG100", "Successfully loaded the followed Organisations")],
         // ---- account: sign up, log in, forgot password (statuses and messages as AccountController sends them) ----
         [/^GET \/v1\/Account\/CheckUsernameExists\/([^/?]+)/i, (req, m) => ok((state.takenUsernames || ["admin"]).includes(decodeURIComponent(m[1]).toLowerCase()), "MAK100")],
         [/^POST \/v1\/Account\/Register/i, async () => { await new Promise((r) => setTimeout(r, 1400)); state.newUser = true; return ok(session({ homeMasjidID: null, homeMadressahID: null, isAdmin: false, isMasjidAdmin: false, isSubscriber: false }), "MAA100", "Successfully Registered."); }],
@@ -202,6 +205,16 @@ export function createWorld(opts = {}) {
             return { data: null, status: "MAB300", message: "Invalid Credentials.", localizedMessage: "Invalid Credentials. Please check and try again!", localizedErrorLink: null, localizedErrorLinkText: null };
         }],
         [/^POST \/v1\/Account\/ForgotPasswordRequest/i, async () => { await new Promise((r) => setTimeout(r, 800)); return ok(true, "MAJ100"); }],
+        // ---- the app's home screen cards (empty, so no card reports a load error) ----
+        [/^GET \/v1\/Madressah\/ClassRoutine\/GetTeacherTimeTable/i, () => ok({ timeTable: [] }, "MDRD100")],
+        [/^POST \/v1\/Madressah\/ClassRoutine\/listSeasons/i, () => ok([], "MDRA100")],
+        [/^POST \/v1\/Madressah\/Enrollment\/ListEnrollmentRequests/i, () => ok({ enrollmentRequestList: [], totalCount: 0 }, "MDIDD100")],
+        // ---- profile (statuses and messages from AccountController / LocalizationService on origin/master) ----
+        [/^GET \/v1\/Misc\/Salutations/i, () => ok(["Mr.", "Mrs.", "Miss.", "Ms.", "Dr.", "Prof.", "Hafiz", "Hafizah", "Aalim", "Aalimah", "Mufti"], "CUD100", "Successfully Loaded the Salutations")],
+        [/^GET \/v1\/Account\/signature/i, () => ok(null, "MAAS100")],
+        [/^GET \/v1\/Account\/GetUserPreference/i, () => ok({ userID: IDS.user, emailPreference: state.emailPreference ?? true, smsPreference: false, pushNotificationPreference: state.pushPreference ?? true }, "MAZ100", "Successfully loaded the User Preferences")],
+        [/^POST \/v1\/Account\/UpdateUserPreference/i, (req) => { const b = JSON.parse(req.postData() || "{}"); if ("emailPreference" in b) state.emailPreference = b.emailPreference; if ("pushNotificationPreference" in b) state.pushPreference = b.pushNotificationPreference; return ok(true, "MAY100", "Successfully updated the User Preferences"); }],
+        [/^POST \/v1\/Account\/UpdateUserDetails/i, async (req) => { await new Promise((r) => setTimeout(r, 700)); const b = JSON.parse(req.postData() || "{}"); state.user = { ...(state.user || {}), city: b.city, street: b.street }; return ok(true, "MAX100", "Successfully updated the User"); }],
         [/Currency\/list/i, () => ok({ currencyList: [{ currencyID: 1, id: 1, code: "CAD", currencyCode: "CAD", name: "Canadian Dollar", currencyName: "Canadian Dollar", symbol: "$" }] }, "CUB100")],
         [/^GET \/v1\/PFWControls\//i, () => ok(null, "PFW100")],
         [/ListLinkingRequest|LiveStreaming\/list|Holiday\/list|SearchConsole|ServicePages\/List/i, () => ok([], "MMP100")],

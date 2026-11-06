@@ -77,6 +77,7 @@ try {
     if (rec.setup) await rec.setup(s);
     for (const p of rec.warm || []) await s.go(p.path || p, { wait: p.wait || 5000, frame: p.frame || "#app" });
     if (rec.start) await rec.start(s);
+    if (only) await s.card(null); // a draft of some scenes: the opening card would cover them
 
     await s.startCapture();
     const total = video.chapters.length;

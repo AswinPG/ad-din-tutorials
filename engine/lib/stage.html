@@ -113,6 +113,26 @@
   #card .row { display: grid; grid-template-columns: 380px 1fr; align-items: center; padding: 26px 36px; border-radius: 22px; background: rgba(255,255,255,.1); border: 2px solid rgba(255,255,255,.22); }
   #card .row b { font-size: 38px; color: var(--gold); }
   #card .row span { font-size: 32px; line-height: 1.35; }
+  /* ---------- system prompts (not Ad-Din UI): a browser permission bubble, an Android permission dialog ---------- */
+  .sys { position: absolute; z-index: 30; font-family: "Segoe UI", Roboto, Arial, sans-serif; opacity: 0; transition: opacity .3s; }
+  .sys.on { opacity: 1; }
+  .sys-browser { left: 24px; top: 50px; width: 360px; padding: 18px 20px 16px; border-radius: 10px; background: #fff; color: #1f1f1f; box-shadow: 0 8px 28px rgba(0,0,0,.28); }
+  .sys-browser .t { font-size: 15px; margin-bottom: 12px; }
+  .sys-browser .l { display: flex; gap: 10px; align-items: center; font-size: 14px; color: #3c3c3c; margin-bottom: 18px; }
+  .sys-browser .b { display: flex; justify-content: flex-end; gap: 10px; }
+  .sys-browser button { font: 600 14px "Segoe UI", Arial, sans-serif; padding: 7px 20px; border-radius: 6px; border: 1px solid #c7c7c7; background: #fff; color: #1f1f1f; }
+  .sys-browser button.primary { background: #0f6cbd; border-color: #0f6cbd; color: #fff; }
+  .sys-scrim { position: absolute; inset: 0; z-index: 30; background: rgba(0,0,0,.42); opacity: 0; transition: opacity .3s; }
+  .sys-scrim.on { opacity: 1; }
+  .sys-android { left: 22px; right: 22px; top: 50%; transform: translateY(-50%); padding: 26px 22px 14px; border-radius: 28px; background: #f3edf7; color: #1d1b20; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,.3); z-index: 31; }
+  .sys-android .ic { width: 30px; height: 30px; margin: 0 auto 14px; color: #6750a4; }
+  .sys-android .t { font-size: 21px; line-height: 1.3; margin-bottom: 18px; }
+  .sys-android .opts { display: flex; justify-content: center; gap: 34px; margin-bottom: 18px; font-size: 14px; color: #49454f; }
+  .sys-android .opts div { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+  .sys-android .opts span.pic { width: 86px; height: 86px; border-radius: 50%; background: #e0d7ec; display: block; border: 3px solid transparent; }
+  .sys-android .opts div.sel span.pic { border-color: #6750a4; }
+  .sys-android .b { display: flex; flex-direction: column; gap: 8px; }
+  .sys-android button { font: 500 16px Roboto, Arial, sans-serif; padding: 13px; border-radius: 22px; border: 0; background: #e8def8; color: #1d1b20; }
 </style>
 </head>
 <body class="browser">
@@ -214,6 +234,27 @@
       let tx = (x - sr.left) * (1 - k), ty = (y - sr.top) * (1 - k);
       tx = Math.min(0, Math.max(sr.width - fw, tx)); ty = Math.min(0, Math.max(sr.height - fh, ty));
       f.style.transform = `translate(${tx}px, ${ty}px) scale(${b * k})`;
+    },
+    /**
+     * A system prompt over a device: {kind: "browser"|"android", target: "#device"|"#device2", title, line, options, buttons}
+     * or null to hide. Browser and OS permission prompts are not part of the Ad-Din app; this draws a plain likeness.
+     */
+    sys(o) {
+      document.querySelectorAll(".sys, .sys-scrim").forEach((e) => { e.classList.remove("on"); setTimeout(() => e.remove(), 320); });
+      if (!o) return;
+      const host = o.kind === "android" ? document.querySelector((o.target || "#device") + " .screen") : document.querySelector(o.target || "#device");
+      const el = document.createElement("div");
+      el.id = "sys"; el.className = "sys sys-" + o.kind;
+      const btns = (o.buttons || []).map((b, i) => `<button class="${i === 0 && o.kind === "browser" ? "primary" : ""}">${esc(b)}</button>`).join("");
+      if (o.kind === "android") {
+        const sc = document.createElement("div"); sc.className = "sys-scrim"; host.appendChild(sc); requestAnimationFrame(() => sc.classList.add("on"));
+        const icon = o.icon === "bell" ? '<path d="M12 22a2 2 0 0 0 2-2h-4a2 2 0 0 0 2 2zm6-6V11c0-3.07-1.64-5.64-4.5-6.32V4a1.5 1.5 0 0 0-3 0v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z" fill="currentColor"/>' : '<path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z" fill="currentColor"/>';
+        const opts = (o.options || []).map((t, i) => `<div class="${i === 0 ? "sel" : ""}"><span class="pic"></span>${esc(t)}</div>`).join("");
+        el.innerHTML = `<svg class="ic" viewBox="0 0 24 24">${icon}</svg><div class="t">${esc(o.title)}</div>${opts ? `<div class="opts">${opts}</div>` : ""}<div class="b">${btns}</div>`;
+      } else {
+        el.innerHTML = `<div class="t">${esc(o.title)}</div><div class="l"><svg width="18" height="18" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z" fill="#3c3c3c"/></svg>${esc(o.line || "")}</div><div class="b">${btns}</div>`;
+      }
+      host.appendChild(el); requestAnimationFrame(() => el.classList.add("on"));
     },
     /** Full-screen card: {kicker, title, sub, bullets, tiles:[{k, t}], rows:[{k, t}], center} or null to hide. */
     card(o) {

@@ -47,9 +47,21 @@ export async function createSession({ mode = "browser", role = "", brand = "Ad-D
     // in-app layout (native login header, drawer). Every call is a no-op; permissions read as granted.
     await context.addInitScript((ids) => {
         try {
-            if (!window.frameElement || !ids.includes(window.frameElement.id)) return;
-            const state = { notifications: "granted", location: "granted", locationAccuracy: "precise", locationServices: true };
-            window.AdDinBridge = new Proxy({}, { get: (t, k) => k === "then" ? undefined : k === "getPermissions" || k === "requestPermission" ? (...a) => { const cb = a[a.length - 1]; if (typeof cb === "function") setTimeout(() => cb(state)); } : k === "getNativeInfo" ? () => JSON.stringify({ platform: "android", version: "2.0.52" }) : () => undefined });
+            // fixed per video (record.mjs native), or switched on mid-video by setting window.__native on the stage
+            const live = (() => { try { return window.top.__native || []; } catch (e) { return []; } })();
+            if (!window.frameElement || !(ids.includes(window.frameElement.id) || live.includes(window.frameElement.id))) return;
+            const dflt = { notifications: "granted", location: "granted", locationAccuracy: "precise", locationServices: true };
+            // a video can drive the permission states (window.__perms on the stage) and answer requests itself
+            // (window.__onPermRequest(kind) -> Promise<state>, e.g. after showing a mocked system dialog)
+            const T = () => { try { return window.top; } catch (e) { return {}; } };
+            const state = () => ({ ...(T().__perms || dflt) });
+            const req = (kind, cb) => { const h = T().__onPermRequest; if (h) Promise.resolve(h(kind)).then((st) => cb({ ...(st || state()) })); else setTimeout(() => cb(state())); };
+            window.AdDinBridge = new Proxy({}, { get: (t, k) => k === "then" ? undefined
+                : k === "getPermissions" ? (...a) => { const cb = a[a.length - 1]; if (typeof cb === "function") setTimeout(() => cb(state())); }
+                : k === "requestPermission" ? (kind, cb) => { if (typeof cb === "function") req(kind, cb); }
+                : k === "openAppSettings" || k === "openLocationSettings" ? () => { const h = T().__onOpenSettings; if (h) h(k); }
+                : k === "getLocation" ? (cb) => { const st = state(), g = T().__geo || { latitude: 43.7612, longitude: -79.2873 }; if (typeof cb === "function") setTimeout(() => cb(st.location === "granted" ? { ok: true, ...g, accuracy: st.locationAccuracy === "approximate" ? 3000 : 10, timestamp: Date.now(), precise: st.locationAccuracy !== "approximate" } : { ok: false, error: "denied", permanent: st.location === "blocked" })); }
+                : k === "getNativeInfo" ? () => JSON.stringify({ platform: "android", version: "2.0.52" }) : () => undefined });
         } catch (e) {}
     }, nativeFrames.map((x) => x.replace(/^#/, "")));
     if (clock) await context.clock.install({ time: new Date(clock) });
@@ -130,7 +142,11 @@ function api(s) {
             if (!locators) return st("spots", null);
             const list = Array.isArray(locators) ? locators : [locators];
             const boxes = [];
-            for (const l of list) { const b = await l.boundingBox({ timeout: 5000 }).catch(() => null); if (b) boxes.push(b); }
+            for (const l of list) {
+                // a locator that matches several elements spotlights each of them
+                const n = await l.count().catch(() => 1);
+                for (let i = 0; i < Math.max(1, Math.min(n, 12)); i++) { const b = await (n > 1 ? l.nth(i) : l).boundingBox({ timeout: 5000 }).catch(() => null); if (b && b.width > 0) boxes.push(b); }
+            }
             if (boxes.length) await st("spots", boxes, pad);
             return boxes;
         },
@@ -164,6 +180,8 @@ function api(s) {
             return st("callout", text, Math.min(x, 1480), Math.min(y, 960));
         },
         card: (o) => st("card", o || null),
+        /** A browser or Android permission prompt drawn over a device (not Ad-Din UI): see stage.sys. */
+        sys: (o) => st("sys", o || null),
         caption: (t) => st("caption", t),
         statusTime: (t) => st("time", t),
         async scrollApp(y, frame = "#app") {
@@ -294,7 +312,7 @@ export function assemble(s, outFile, { title } = {}) {
     const srt = cues.map((c, i) => `${i + 1}\n${ts(c.from)} --> ${ts(c.to)}\n${wrap(c.text)}\n`).join("\n");
     fs.writeFileSync(outFile.replace(/\.mp4$/, ".srt"), srt);
 
-    const args = ["-y", "-v", "error", "-f", "concat", "-safe", "0", "-i", list, ...inputs, "-i", metaFile, "-filter_complex_script", path.join(dir, "audio.filter"), "-map", "0:v", "-map", "[aout]", "-map_metadata", String(audio.length + 1), "-map_chapters", String(audio.length + 1), "-r", "30", "-fps_mode", "cfr", "-c:v", "libx264", "-preset", "slow", "-crf", "18", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "160k", "-t", total.toFixed(2), "-movflags", "+faststart", outFile];
+    const args = ["-y", "-v", "error", "-f", "concat", "-safe", "0", "-i", list, ...inputs, "-i", metaFile, "-filter_complex_script", path.join(dir, "audio.filter"), "-map", "0:v", "-map", "[aout]", "-map_metadata", String(audio.length + 1), "-map_chapters", String(audio.length + 1), "-r", "30", "-fps_mode", "cfr", "-c:v", "libx264", "-preset", process.env.ADDIN_PRESET || "slow", "-crf", "18", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "160k", "-t", total.toFixed(2), "-movflags", "+faststart", outFile];
     execFileSync("ffmpeg", args, { stdio: ["ignore", "ignore", "inherit"] });
     fs.writeFileSync(path.join(dir, "timeline.json"), JSON.stringify({ total, cuts: merged, timeline: s.timeline }, null, 1));
     return { total, frames: frames.length, clips: audio.length, cues: cues.length };
