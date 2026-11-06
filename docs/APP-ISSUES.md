@@ -12,7 +12,7 @@ Found in Ad-Din `origin/master` (d36d69ed8) by the script writers and validators
 | Large horizontal display | `LargeDisplayHorizontal.cshtml` `generateEventSlides` uses `masjidEvents[i]` for madrasah slides: throws or shows wrong timings | 04.4 |
 | Push notification tap | Message pushes carry no route and the shell's `OnNotificationOpened` ignores `action: "message"`, so tapping doesn't open the inbox | 00.7 **(video)** |
 | Add students (backend) | `ClassController` EnrollStudents checks only the first selected student's family seat | 06.5 |
-| Website banner editor | `initialize()` calls `deleteCarousel(currentEditingCarousel…)` while editing; may delete a banner | 09.2 |
+| Website banner editor | The editor's Delete button deletes the banner at once, with no confirmation (`carousel.add.component.html` 462-468); `initialize()` does not delete anything (corrected 2026-11-06) | 09.2 |
 | Claim admin page | File-size check reversed (≤10 KB refused, big files pass); Save with no organisation → unknown error; needs a home masjid | 01.3 **(video)** |
 | Expired reset link | Opens a blank 401 page | 00.3 |
 | Finder | **Skip for now** on the madrasah step drops the masjid already picked. Decided 2026-11-06: fix before 00.4 is published | 00.4 **(video)** |
@@ -22,6 +22,9 @@ Found in Ad-Din `origin/master` (d36d69ed8) by the script writers and validators
 | Hifz Tracker report | Subject boxes always disabled (`subjectsDisabled`); report can't run without the gear configuration | 12.4 |
 | Volunteer skills | `loadSkills` uses the admin's home masjid, not the managed masjid | 03.3 |
 | Add New User (madrasah) | One Fetch method checks the Admin GUID box first, so a leftover Admin GUID is used for other boxes | 03.4 |
+| Masjid user list | No way to remove or deactivate a staff member or volunteer (masjidUserList buttons: Add, Edit, Manage Subscription, Manage Skills); to confirm with the team | 03.3 |
+| Approve enrolment | Request window loads details with the admin's home madrasah (getUserHomeMadressah, `approve-enrollment.component.ts` 383), not the managed one; from code only, check on dev | 06.3 |
+| Add New Event | Route guard commented out (`events.routes.ts` 11), but the API needs the admin's own Premium (EventsController AddEvent): an admin without Premium fills the whole form, then the save fails | 08.1 |
 
 ## Wrong or misleading on screen
 
@@ -57,7 +60,20 @@ Found in Ad-Din `origin/master` (d36d69ed8) by the script writers and validators
 | Admin Add Activity | Doesn't pre-fill class/section/subject from filters (Add Category does) | 10.5 |
 | Interviews | **Add Booking** opens "Manage Interview" | 10.8 |
 | Add Class | Evaluation Grade Set always shows a required star; switching Type clears it silently | 05.3 |
+| Profile → Subscription detail | Cancel Subscription removes the organisation seat at once with no confirmation, and does nothing when the person has no home madrasah | 02.4 |
+| Add Migration | Migration Type defaults to Exam Based (`migrationAdd.component.ts` 120) though Exam Marks is off by default | 16.1 |
+| Event "After specific salah" | Times come from the admin's home masjid's prayer times (`eventAdd.component.ts` 557-560), not the masjid picked in Select an Organisation | 08.1 |
+| Recognition | Saving an award already emails and pushes the student, parents and teacher; Send Certificate sends the same notification again (RecognitionController.cs) | 10.10 |
+| Attendance | Notify parents (on by default) plus Send Attendance Notifications can notify parents twice for one register | 10.2 |
+| Madrasah Report | Payment Reports card shows with the Payment Module off (`report.component.ts` 163-186) | 12.4, 14.4, 14.5 |
+| Report release date | One date per report and class; moving it forward hides already-released cards from parents (AcademicReportsRepository.cs 1726-1730) | 12.1, 12.3 |
+| Email Report | Email All sends at once, before the release date (no release-date check in AcademicReportsService.cs) | 12.3 |
+| Staff Attendance payroll | Settings says "When a period locks, the payroll file is sent to …" (en.json 3526); only version 1 is emailed automatically (IPayrollOutputSendService.cs 76-78) | 13.4, 13.6 |
+| Event Share | Shares only the event's own Event Page link (`eventList.component.ts` 415-417); with none set, the message has only the title | 15.3 |
 
 ## Text and typos
 
 `en.json` `dash.mobile.*` strings contain U+FFFD (e.g. "All caught up � nothing needs you"); "You are all set ! !"; "smalll display widget"; "Just this occurence"; "Volonteer Form"; "Manage Satff"; "Acqusition"; "Alumini"; "assigment"; "Imptoved Year"; "Add admin Profile" in lower case; "Parent Teacher Interview " (trailing space); description fields reuse "Event Description" / "Book Description".
+| Delegations | Same From and To Teacher shows the raw key 'madressah.delegation.message.moreTeacher' (`delegationAdd.component.ts` 95) | 05.7 |
+| Copy to Terms | Teacher-clash notice says "(Overview tab)"; the tab is "Routines" (`copy-term-routine.component.html` 105) | 16.2 |
+
