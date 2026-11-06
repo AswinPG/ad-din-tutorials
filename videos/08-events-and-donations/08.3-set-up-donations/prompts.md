@@ -3,6 +3,7 @@
 Every instruction given to Claude for this video, newest first, with the result.
 Format: date · who · prompt (verbatim or summarised) · outcome / commit.
 
+- 2026-11-06 · Imran · "do it for all the planned ones now" (panel review, apply clear fixes) · 4 changes: [1.2] names 04.9 by title, [3.2] says Ad-Din only links to the page and takes no money (code: Donation Page is a page or URL link), [3.3] no elliptical question, [5.1] names both end tiles by number; demo names match the Maple Grove demo world
 - 2026-11-03 · manager · "Decisions via chat" · 'Masjid PayPal keys' decided: record without PayPal; PayPal step stays left out, flag reworded, bug stays in docs/APP-ISSUES.md
 - 2026-11-03 · manager · "use a critic subagent to criticise and find flaws in the script, make it better" · critic pass: 4 changes: [1.1] split phrasal verb removed; [1.2] points to 04.9 for the page it needs; [3.4] two-word scene given a reason; [4.1] "members" -> home masjid, as 15.4 says.
 - 2026-11-03 · manager · "use a sub agent to validate the script" · validator pass: no changes; Services-tab flow, app tile and website Donate button confirmed; PayPal flag still stands.

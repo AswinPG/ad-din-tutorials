@@ -27,11 +27,11 @@ Turn on your masjid's Donation Page so the Donate button on your website and the
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
-- Masjid Admin account, admin of "Masjid Al-Noor" (Premium) and "Al-Noor Madrasah"
-- Masjid Al-Noor's Donation Page switched off at the start
-- Published service page "Support Masjid Al-Noor" (from Introduction & Services) with a picture and how to give; bank details fictional
-- A second demo link `https://give.example.org/al-noor` for the Page URL option
-- Member account with home masjid Masjid Al-Noor on the app (phone frame) for the Donation tile shot; Masjid Al-Noor's demo website with the Website add-on for the Donate button shot
+- Masjid Admin account, admin of "Maple Grove Masjid" (Premium) and "Maple Grove Madrasah"
+- Maple Grove Masjid's Donation Page switched off at the start
+- Published service page "Support Maple Grove Masjid" (from Introduction & Services) with a picture and how to give; bank details fictional
+- A second demo link `https://give.example.com/maple-grove` for the Page URL option
+- Member account with home masjid Maple Grove Masjid on the app (phone frame) for the Donation tile shot; Maple Grove Masjid's demo website with the Website add-on for the Donate button shot
 
 ## Script
 <!--
@@ -47,13 +47,13 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Title card: "Set up donations".
 
 #### [1.2]
-**Say:** You'll need a published page that explains how to give; video 04.9 shows how to make one. Or use the address of a giving page you already have.
-**Show:** Opening card from You'll need. Quick shot of the published "Support Masjid Al-Noor" page.
+**Say:** You'll need a published page that explains how to give. Video 04.9, Introduction & Services pages, shows how to make one. Or use the address of a giving page you already have.
+**Show:** Opening card from You'll need. Quick shot of the published "Support Maple Grove Masjid" page.
 
 ### 2. Open the Services tab
 #### [2.1] Organization Management
 **Say:** In the sidebar, open the **Admin Portal** and tap **Organization Management**. On your masjid's card, tap **Manage**.
-**Show:** Sidebar → Admin Portal → Organization Management. Click "Manage" on the Masjid Al-Noor card.
+**Show:** Sidebar → Admin Portal → Organization Management. Click "Manage" on the Maple Grove Masjid card.
 
 #### [2.2]
 **Say:** Tap the **Services** tab, and scroll down to **Donation Page**.
@@ -65,12 +65,12 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Toggle the Donation Page switch on. Spotlight the two options.
 
 #### [3.2] One of your pages
-**Say:** **Donation Pages** uses one of your own published pages. Open **Select Page** and pick the one that explains how to give.
-**Show:** "Donation Pages" selected. Open "Select Page"; choose "Support Masjid Al-Noor".
+**Say:** **Donation Pages** uses one of your own published pages. Open **Select Page** and pick the one that explains how to give. Ad-Din only links to it; people give the way that page explains.
+**Show:** "Donation Pages" selected. Open "Select Page"; choose "Support Maple Grove Masjid".
 
 #### [3.3] A web address
-**Say:** Already collect gifts on another website? Choose **Page URL** and paste its full address instead.
-**Show:** Click "Page URL"; type the demo link in the box. Then switch back to "Donation Pages" with "Support Masjid Al-Noor" selected.
+**Say:** If you already collect gifts on another website, choose **Page URL** and paste its full address instead.
+**Show:** Click "Page URL"; type the demo link in the box. Then switch back to "Donation Pages" with "Support Maple Grove Masjid" selected.
 
 #### [3.4] Save
 **Say:** Tap **Save** to keep your choice.
@@ -79,11 +79,11 @@ See docs/SCRIPT-FORMAT.md.
 ### 4. Where people see it
 #### [4.1] In the app
 **Say:** Now, anyone who has your masjid as their home masjid can tap **Donation** in the Ad-Din app, and your page opens.
-**Show:** Phone frame: member account on the app home. Tap the Donation tile; "Support Masjid Al-Noor" opens.
+**Show:** Phone frame: member account on the app home. Tap the Donation tile; "Support Maple Grove Masjid" opens.
 
 #### [4.2] On your website
 **Say:** If your masjid has an Ad-Din website, a **Donate** button appears at the top of every page and opens the same page.
-**Show:** Browser on the Masjid Al-Noor demo website. Spotlight the "Donate" button in the header; click it; the page opens.
+**Show:** Browser on the Maple Grove Masjid demo website. Spotlight the "Donate" button in the header; click it; the page opens.
 
 #### [4.3] Turning it off
 **Say:** To remove it, turn the switch off. It saves straight away, and the Donate button disappears.
@@ -91,11 +91,12 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 5. Next
 #### [5.1] Close
-**Say:** Your donation page is ready. Next, run a fundraising campaign with a goal, pictures and a PayPal donate button.
+**Say:** Your donation page is ready. Next, video 08.4: Run a fundraising campaign. Or video 15.4: Donate to your masjid, to see what members see.
 **Show:** End card with two tiles: "08.4 Run a fundraising campaign" and "15.4 Donate to your masjid".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 4 changes: [1.2] names 04.9 by title, [3.2] says Ad-Din only links to the page and takes no money (code: Donation Page is a page or URL link), [3.3] no elliptical question, [5.1] names both end tiles by number; demo names match the Maple Grove demo world
 - 2026-11-03 · manager · decisions via chat · 'Masjid PayPal keys' decided: record without PayPal; PayPal step stays left out, flag reworded, bug stays in docs/APP-ISSUES.md
 - 2026-11-03 · critic · 4 changes: [1.1] split phrasal verb removed; [1.2] points to 04.9 for the page it needs; [3.4] two-word scene given a reason; [4.1] "members" -> home masjid, as 15.4 says
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes
