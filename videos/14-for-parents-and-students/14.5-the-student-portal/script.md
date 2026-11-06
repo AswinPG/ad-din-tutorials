@@ -28,13 +28,14 @@ As a student, find your timetable, attendance, Hifz progress, classwork and mark
 - Madrasah Report (the student's own reports)
 
 ## Demo data
-- Student "Hamza Rahman" (username `hamza_rahman`), Student role only, in "Hifz Boys A" (marked as a Quran Hifz class) and "Maktab Level 1" at Al-Noor Madrasah (Academic Activity on)
-- Today's routine: three classes, one happening now; class routines for the week with both classes in them (the line under Hamza's name lists the classes found in his week's routine)
+- Student "Hana Mirza" from the demo world (username `hana_mirza`), Student role only, in "Hifz Class A" (marked as a Quran Hifz class) and "Maktab Level 1", section A, at Maple Grove Madrasah (Academic Activity on)
+- Today's routine: three classes, one happening now; class routines for the week with both classes in them (the line under Hana's name lists the classes found in her week's routine)
 - Today's attendance: Present in both classes; subject-wise periods on; Term 1 summary with marked days
-- Today's Hifz record from teacher "Ibrahim Khan": marked (mark 9, 2 mistakes), with a teacher note; one record yesterday
+- Today's Hifz record from teacher "Bilal Hussain": marked (mark 9, 2 mistakes), with a teacher note; one record yesterday
 - Classwork: "Surah Al-Mulk test" graded 18/20, "Seerah worksheet" due later this week, "Arabic vocabulary quiz" missing
-- Al-Noor Madrasah has Class Announcements switched on; Hamza has one borrowed library book and one "Student of the Month" award; attendance marked this term so "Attendance by Student" has data
+- Maple Grove Madrasah has Class Announcements switched on; Hana has one borrowed library book and one "Student of the Month" award; attendance marked this term so "Attendance by Student" has data
 - Phone frame for the app; a browser frame for the web shots in chapter 7
+- The Madrasah Report page shows a Payment Reports card ("Fees Due Student") to students even with the Payment Module off (`report.component.ts` 163-186): keep it out of the shot
 
 ## Script
 <!--
@@ -56,7 +57,7 @@ See docs/SCRIPT-FORMAT.md.
 ### 2. Your home
 #### [2.1]
 **Say:** After you sign in, the app opens on your home. Your card says **Assalamu alaikum**, with your name and your classes underneath.
-**Show:** Spotlight the identity card: "Assalamu alaikum", "Hamza Rahman", and the line "Hifz Boys A · Maktab Level 1".
+**Show:** Spotlight the identity card: "Assalamu alaikum", "Hana Mirza", and the line "Hifz Class A · Maktab Level 1".
 
 ### 3. Your timetable
 #### [3.1] My Routine
@@ -64,7 +65,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Spotlight the My Routine card; zoom on the "Now" and "Next" tags.
 
 #### [3.2]
-**Say:** Use the arrows to see the other days of the week, and tap the day in the middle to come back to **Today**.
+**Say:** Use the arrows to see the other days of the week, and tap the day in the middle to return to **Today**.
 **Show:** Tap the right arrow twice, then tap the day label: "Today". (The week runs Sunday to Saturday and the arrows stop at its ends, so record Sunday to Thursday.)
 
 #### [3.3] Full timetable
@@ -101,28 +102,29 @@ See docs/SCRIPT-FORMAT.md.
 ### 7. On the web
 #### [7.1]
 **Say:** On a computer, sign in on the Ad-Din website. Open **Student Portal** in the menu for the same pages, such as **Class Routine**, **Attendance**, **Quran Hifz Assignments** and **Academic Activity**.
-**Show:** Browser frame: Hamza signed in on the web. Sidebar → Student Portal, expanded. Spotlight Class Routine, Attendance, Quran Hifz Assignments, Academic Activity.
+**Show:** Browser frame: Hana signed in on the web. Sidebar → Student Portal, expanded. Spotlight Class Routine, Attendance, Quran Hifz Assignments, Academic Activity.
 
 #### [7.2] More in your portal
 **Say:** Your portal has more: **Library** for books you've borrowed, **Recognition** for your awards, **Class Announcements** from your teachers, and **Holiday**, **Grade** and **Delegations**. The same menu is in the app.
-**Show:** Still in the expanded Student Portal, spotlight Library, Recognition, Class Announcements, Holiday, Grade, Delegations in turn. Click "Recognition": the "Student" tab with Hamza's "Student of the Month". Go back.
+**Show:** Still in the expanded Student Portal, spotlight Library, Recognition, Class Announcements, Holiday, Grade, Delegations in turn. Click "Recognition": the "Student" tab with Hana's "Student of the Month". Go back.
 **Caption:** Also in your portal: Library, Recognition, Class Announcements, Holiday, Grade and Delegations.
 
 #### [7.3] Your reports
 **Say:** Under **Reports**, **Madrasah Report** has reports about you, such as **Attendance by Student**. Tap **Run** to open one.
-**Show:** Sidebar → Reports → Madrasah Report: the Report page with the "Student" tab. Click "Run" beside "Attendance by Student": Hamza's attendance report opens.
+**Show:** Sidebar → Reports → Madrasah Report: the Report page with the "Student" tab. Keep the Payment Reports card out of the shot. Click "Run" beside "Attendance by Student": Hana's attendance report opens.
 
 ### 8. Next
 #### [8.1] Recap
 **Say:** Now you know where to find your day, your attendance, your Hifz, your marks and the rest of your portal. Keep up the good work.
-**Show:** Back to the phone frame on Hamza's app home.
+**Show:** Back to the phone frame on Hana's app home.
 
 #### [8.2] Close
-**Say:** Next, read and listen to the Quran in the app, or check today's prayer times.
+**Say:** Next, video 15.5: Read and listen to the Quran. Or video 15.1: Prayer times, monthly timetable and Qiblah.
 **Show:** End card with two tiles: "15.5 Read and listen to the Quran" and "15.1 Prayer times, monthly timetable and Qiblah".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 4 changes: [3.2] "return to" (no phrasal verb), [7.3] keeps the Payment Reports card off camera (report.component.ts 163-186), [8.2] end tiles by number and title; demo names from the Maple Grove demo world (student Hana Mirza in Hifz Class A and Maktab Level 1, teacher Bilal Hussain)
 - 2026-11-03 · manager · decisions via chat · Exam Marks decided (left out of the series): flag wording updated; script unchanged
 - 2026-11-03 · critic · 3 changes: target 4:00, [1.1] opening mentions the rest of the portal, [6.1] "so nothing slips" (idiom) replaced, [8.1] recap updated · fold: [7.2] Library, Recognition, Class Announcements, Holiday, Grade, Delegations; [7.3] Madrasah Report with Run
 - 2026-11-03 · validator · checked against master d36d69ed8 · 3 fixes: demo data (Hifz class flag, both classes in the week routine for the name line), [3.2] record Sun–Thu so the right arrow works twice
