@@ -21,10 +21,10 @@ Create a service page for your masjid, save it as a draft, publish it, and know 
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
-- Demo masjid "Masjid Al-Noor", signed in as its masjid admin, with the website add-on active (so the button reads Manage Website Menu)
+- Demo masjid "Maple Grove Masjid", signed in as its masjid admin, with the website add-on active (so the button reads Manage Website Menu)
 - Two published service pages ("Funeral Services", "Quran Classes for Adults") and no drafts
-- New page typed on camera: title "Nikah Services", sub title "Book an Imam for your Nikah at Masjid Al-Noor", a cover photo, a ring or heart icon from the icon set, and three short paragraphs of content
-- The same admin is also admin of the home madrasah "Al-Noor Madrasah", so Madrasah / School → Introduction & Services shows (for scene [2.1a]); its Services list may be empty
+- New page typed on camera: title "Nikah Services", sub title "Book an Imam for your Nikah at Maple Grove Masjid", a cover photo, a ring or heart icon from the icon set, and three short paragraphs of content
+- The same admin is also admin of the home madrasah "Maple Grove Madrasah", so Madrasah / School → Introduction & Services shows (for scene [2.1a]); its Services list may be empty
 - For scene [6.2]: a second demo masjid without the website add-on, or a still of the "Get an Ad-Din-Powered Website" button
 
 ## Script
@@ -50,11 +50,11 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Sidebar → Masjid → Introduction & Services. The Services page with two published pages.
 
 #### [2.1a] Madrasahs too
-**Say:** Running a madrasah? Open **Madrasah / School**, then **Introduction & Services**. It's the same page, and every step in this video works the same way.
+**Say:** If you also run a madrasah, open **Madrasah / School**, then **Introduction & Services**. It's the same page, and every step in this video works the same way.
 **Show:** Expand Sidebar → Madrasah / School; click Introduction & Services: the Services page with the breadcrumb "Madrasah". Then back to Sidebar → Masjid → Introduction & Services.
 
 #### [2.2]
-**Say:** The note at the top explains how services reach your website; we'll come back to it. To start a page, tap **Add New**.
+**Say:** The note at the top explains how services reach your website; that comes at the end of this video. To start a page, tap **Add New**.
 **Show:** Spotlight the note "Showing services on your website", then click Add New. "Manage Service" opens.
 
 ### 3. Build the page
@@ -72,7 +72,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 4. Save a draft
 #### [4.1]
-**Say:** Not ready to share it yet? Tap **Save as Draft**. You're back on the list, and the page waits under **Drafts**.
+**Say:** If it isn't ready to share yet, tap **Save as Draft**. You're back on the list, and the page waits under **Drafts**.
 **Show:** Click Save as Draft. The Services page now has a Drafts section with "Nikah Services".
 
 #### [4.2]
@@ -94,7 +94,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 6. Link to your website
 #### [6.1]
-**Say:** Published services appear in Ad-Din automatically, but your public website is separate. To show a service there, tap **Manage Website Menu** and add it.
+**Say:** Published services appear in Ad-Din automatically, but your public website is separate. If your masjid has an Ad-Din website, tap **Manage Website Menu** and add the service there.
 **Show:** Back on Services. Spotlight the note, then click Manage Website Menu; the website menu page opens.
 
 #### [6.2]
@@ -107,10 +107,11 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Open the three-dot menu on a page; hover Delete; don't click.
 
 #### [7.2] Close
-**Say:** Your service page is live. Next, add it to your website menu, or set up live streaming.
+**Say:** Your service page is live. Next, video 09.3: Build your website menu, if your masjid has an Ad-Din website. Or video 04.10: Live streaming.
 **Show:** End card with two tiles: "09.3 Build your website menu" and "04.10 Live streaming".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 6 changes: [2.1a] and [4.1] no elliptical questions, [2.2] no phrasal verb, [6.1] website add-on wording ("If your masjid has an Ad-Din website"), [7.2] names both end tiles by number, demo names match the Maple Grove demo world
 - 2026-11-03 · critic · 1 change + fold: second-person opening; fold: Introduction & Services for madrasahs as new scene [2.1a] (Covers, demo data; verified in menu.data.ts and pages/list/:type)
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes
