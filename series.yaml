@@ -112,6 +112,9 @@ pronunciations:
     "&": and
     "/": or
     GUID: G-U-I-D  # default pending Imran's choice of how to say GUID (2026-11-06)
+    # 2026-11-06 review panel: the app's spelling "Madressah" and the label "No of students"
+    Madressah: Madrasah
+    "No of": number of
   # 2026-11-05 pilot translations: Ad-Din sounds like "Udd Din" in every language, in the voice's own script for ar and
   # ur (the Urdu voice was silent on Latin names); video numbers and symbols spelled out in the language.
   ar:
