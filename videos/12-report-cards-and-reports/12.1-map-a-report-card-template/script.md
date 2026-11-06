@@ -23,10 +23,10 @@ Map a report card template to your classes, subjects, teachers and terms, choose
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
-- Demo madrasah with the signed-in admin as Madrasah Admin (Report Builder shows "Administrator access")
-- One existing mapped report in the list (for example "Hifz Boys Report" on the Activities-Based Evaluation template) so the list isn't empty
+- Demo madrasah "Maple Grove Madrasah" with the demo account Yusuf Rahman signed in as Madrasah Admin (Report Builder shows "Administrator access")
+- One existing mapped report in the list (for example "Weekend Quran Report" on the Activities-Based Evaluation template) so the list isn't empty
 - Grade set "Madrasah Grades"; academic term "Term 1 2026–27" (and a later "Term 2" not yet mapped)
-- Classes "Hifz Boys A" and "Hifz Girls A", each with subjects "Quran Hifz", "Tajweed", "Islamic Studies" and a homeroom teacher ("Ustadh Bilal Ahmed", "Ustadha Maryam Ali")
+- Classes "Maktab Level 1" and "Hifz Class A", each with subjects "Quran", "Fiqh" and "Tajweed" and a homeroom teacher (Bilal Hussain for Maktab Level 1, Fatima Siddiqui for Hifz Class A)
 - Report templates as the dropdown lists them, including "Madrasah Islamic Studies Progress Report (Activities-Based Evaluation)" and "Grades 9-12 Provincial Report"
 - At least three report frames in the carousel (so "Frame 1–3" show): Ad-Din's built-in frames, which every madrasah gets; the Upload Custom Frame button is hidden on master
 - The demo admin is also the principal set in the madrasah settings; no signature saved yet, drawn on camera with the mouse
@@ -41,11 +41,11 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. Before you start
 #### [1.1] Opening
-**Say:** Every report card in Ad-Din starts with a mapping, which links a report card template to your classes, subjects, teachers and terms. In this video for madrasah admins, you'll map one.
+**Say:** Every report card in Ad-Din starts with a mapping. A mapping links a report card template to your classes, subjects, teachers and terms. In this video for madrasah admins, you'll map one.
 **Show:** Title card: "Map a report card template".
 
 #### [1.2]
-**Say:** Your terms, grade sets, classes and subjects are already in place. You map a template once; after that, teachers fill in the cards each term.
+**Say:** Your terms, grade sets, classes and subjects are already in place. You map a template once. After that, teachers fill in the cards each term.
 **Show:** Opening card from You'll need.
 
 ### 2. Open Report Builder
@@ -67,7 +67,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Type "Term Report" in Report Name. Spotlight the "Take Class Name as Report Name" choice. Type "Progress Report" in Title.
 
 #### [3.3] Grades Mapping
-**Say:** Each template asks for slightly different things. The grades nine to twelve template, for example, adds **Grades Mapping**, where you match each grade to one of your classes. Then switch back to your template.
+**Say:** Each template asks for slightly different things. The grades nine to twelve template, for example, adds **Grades Mapping**, where you match each grade to one of your classes. A madrasah card doesn't need it, so switch back to your template.
 **Show:** Short aside: switch the template to "Grades 9-12 Provincial Report"; the "Grades Mapping" box appears with Grade 9 to Grade 12. Spotlight it, then switch back to the Activities-Based Evaluation template and re-pick the grade set.
 
 #### [3.4] Release date
@@ -75,21 +75,21 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Spotlight "Release & Translation". Click "Pick a date" and choose the end-of-term date.
 
 #### [3.5]
-**Say:** To print a second language beside English, open the list that shows **No Translation** and pick a language. Ad-Din translates the card with AI.
+**Say:** To print a second language beside English, open the list that shows **No Translation** and pick a language. Ad-Din translates the card with AI. For English only, leave it on **No Translation**.
 **Show:** Open the secondary language list (shows "No Translation"); hover "Arabic", then close it without changing.
 
 ### 4. Classes and subjects
 #### [4.1] Classes / Programs
 **Say:** Under **Classes / Programs**, tap each class that uses this report card.
-**Show:** Click "Hifz Boys A" and "Hifz Girls A"; both highlight.
+**Show:** Click "Maktab Level 1" and "Hifz Class A"; both highlight.
 
 #### [4.2] Element Mapping
-**Say:** **Element Mapping** now shows a card for each class. Choose the class's **Teacher**, then the subject for each subject row.
-**Show:** Scroll to "Element Mapping". In the "Hifz Boys A" card, pick "Ustadh Bilal Ahmed" for Teacher and "Quran Hifz" for Subject 1. Repeat for "Hifz Girls A".
+**Say:** **Element Mapping** now shows a card for each class. Choose the class's **Teacher**, then pick a subject in each subject row.
+**Show:** Scroll to "Element Mapping". In the "Maktab Level 1" card, pick "Bilal Hussain" for Teacher and "Quran" for Subject 1. Repeat for "Hifz Class A" with "Fatima Siddiqui".
 
 #### [4.3]
 **Say:** For more subjects on the card, tap **Add Subject**. A new row appears in every class; pick its subject there too.
-**Show:** Click "Add Subject" twice; pick "Tajweed" and "Islamic Studies" in the new rows for both classes.
+**Show:** Click "Add Subject" twice; pick "Fiqh" and "Tajweed" in the new rows for both classes.
 
 ### 5. Terms
 #### [5.1] Terms Mapping
@@ -97,8 +97,8 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Scroll to "Terms Mapping". Open "Select Academic Term"; pick "Term 1 2026–27".
 
 #### [5.2]
-**Say:** When the next term begins, return to this mapping and tap **Add Term 2**. The card then shows both terms side by side.
-**Show:** Spotlight the "Add Term 2" button; don't click.
+**Say:** When the next term begins, return to this mapping and tap **Add Term 2**. Also change the release date, because it is for the current term. The card then shows both terms side by side.
+**Show:** Spotlight the "Add Term 2" button; don't click. Pan up to "REPORT RELEASE DATE (For Current Term)".
 
 ### 6. Frame and colours
 #### [6.1] Frame
@@ -132,10 +132,11 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Report Builder list with "Term Report"; spotlight its "Select" button.
 
 #### [8.2] Close
-**Say:** Next, watch 12.2, Write comments and mark reports ready, and then 12.3, Release report cards to parents.
+**Say:** Next, video 12.2: Write comments and mark reports ready. Then video 12.3: Release report cards to parents.
 **Show:** End card with two tiles: "12.2 Write comments and mark reports ready" and "12.3 Release report cards to parents".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 8 changes: [1.1] mapping explained in its own sentence, [1.2] no semicolon, [3.3] says a madrasah card doesn't need Grades Mapping, [3.5] English only stays on No Translation, [4.2] plainer subject-row wording, [5.2] says to change the release date for the new term ("(For Current Term)", reportmapping.manage.component.html 138), [8.2] end tiles by number and title; demo names from the Maple Grove demo world (Maktab Level 1 with Bilal Hussain, Hifz Class A with Fatima Siddiqui)
 - 2026-11-03 · critic · 6 changes: [1.1] second-person opening for madrasah admins; [3.3] Say now mentions switching back (matches Show); [3.5] clearer "list that shows No Translation"; [4.3] elliptical question removed, new rows' subject picks said; [5.2] "come back to" → "return to"; [8.2] end card tiles named by number
 - 2026-11-03 · validator · checked against master d36d69ed8 · 4 fixes: [3.1]/[3.2] template chosen before name and title (Title box only appears for that template); [7.3] Save in the signature pad already stores it, no Update; demo frames are Ad-Din's built-in ones
