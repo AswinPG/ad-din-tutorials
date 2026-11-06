@@ -22,12 +22,12 @@ Follow your child's daily Hifz recitation and their classwork, with scores, from
 - Parent Library and Recognition
 
 ## Demo data
-- Parent "Yusuf Rahman" in the app; child "Hamza Rahman" in "Hifz Boys A" (marked as a Quran Hifz class, which the Hifz progress card needs) and "Maktab Level 1"; Al-Noor Madrasah has Academic Activity switched on
-- Today's Hifz records for Hamza from teacher "Ibrahim Khan": a new-lesson task marked (mark 8, 2 mistakes, one failed attempt then a pass, 30 lines, 2 pages, a teacher note), and a revision task the student has submitted but the teacher hasn't marked
+- Parent "Yusuf Rahman" (the demo world's account) in the app; child "Hamza Rahman" (added to the world as in 07.4) in "Hifz Class A" (marked as a Quran Hifz class, which the Hifz progress card needs) and "Maktab Level 1"; Maple Grove Madrasah has Academic Activity switched on
+- Today's Hifz records for Hamza from teacher "Bilal Hussain": a new-lesson task marked (mark 8, 2 mistakes, one failed attempt then a pass, 30 lines, 2 pages, a teacher note), and a revision task the student has submitted but the teacher hasn't marked
 - Yesterday: one marked Hifz record, for the change-date shot
 - Classwork for Hamza across both classes, all in the current term (the card shows the current term only): "Surah Al-Mulk test" graded 18/20 (weight 2), "Wudu poster" graded, not scored, "Seerah worksheet" due later this week, "Arabic vocabulary quiz" missing (two days late)
-- Library: Hamza has one borrowed book on record ("Stories of the Prophets"); Recognition: one "Student of the Month" award for Hamza from Ibrahim Khan
-- Exam Marks stays off for Al-Noor Madrasah (the default), so Exams and Exam Marks are not in the menu
+- Library: Hamza has one borrowed book on record ("Stories of the Prophets"); Recognition: one "Student of the Month" award for Hamza from Bilal Hussain
+- Exam Marks stays off for Maple Grove Madrasah (the default), so Exams and Exam Marks are not in the menu
 - Phone frame for every shot
 
 ## Script
@@ -40,7 +40,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. Hifz and classwork at home
 #### [1.1] Opening
-**Say:** In this video you'll follow your child's Quran Hifz progress and their classwork, with scores, right from your Ad-Din app home.
+**Say:** In this video for parents, you'll follow your child's Quran Hifz progress and their classwork, with scores, right from your Ad-Din app home.
 **Show:** Title card: "Follow Hifz progress and classwork". Phone frame on the app home.
 
 #### [1.2]
@@ -67,7 +67,7 @@ See docs/SCRIPT-FORMAT.md.
 
 #### [2.5] Attempts and notes
 **Say:** **Attempts** counts the tries: a cross for each failed one and a tick for the pass. Tap the teacher's note to read it in full.
-**Show:** Spotlight "Attempts 2" with a cross and a tick. Tap the note: it expands. Spotlight "Teacher: Ibrahim Khan" at the bottom.
+**Show:** Spotlight "Attempts 2" with a cross and a tick. Tap the note: it expands. Spotlight "Teacher: Bilal Hussain" at the bottom.
 
 #### [2.6] Another day
 **Say:** To look back, tap the date and pick another day.
@@ -84,7 +84,7 @@ See docs/SCRIPT-FORMAT.md.
 
 #### [3.3] One class
 **Say:** If your child is in more than one class, use the class box to show just one of them.
-**Show:** Open the class box: "All classes", "Hifz Boys A", "Maktab Level 1". Pick "Maktab Level 1", then "All classes" again.
+**Show:** Open the class box: "All classes", "Hifz Class A", "Maktab Level 1". Pick "Maktab Level 1", then "All classes" again.
 
 ### 4. Scores, library books and awards
 #### [4.1] Graded work
@@ -109,11 +109,12 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** The home with the Hifz progress and My Classwork cards in view.
 
 #### [5.2] Close
-**Say:** Next, see report cards and interview bookings, or check attendance and report an absence.
+**Say:** Next, video 14.4: Report cards and interview bookings. Or video 14.2: Check attendance and report an absence.
 **Show:** End card with two tiles: "14.4 Report cards and interview bookings" and "14.2 Check attendance and report an absence".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 3 changes: [1.1] says who it's for, [5.2] end tiles by number and title; demo names from the Maple Grove demo world (Hamza in Hifz Class A, teacher Bilal Hussain)
 - 2026-11-03 · manager · decisions via chat · 14.4 renamed 'Report cards and interview bookings' (fees cut): [5.2] Say and end card updated
 - 2026-11-03 · manager · decisions via chat · Exam Marks dropped from the series: cut [4.5] (Exams named over a card), its Covers line and flag, as the flag planned
 - 2026-11-03 · critic · 2 changes: target 4:00, chapter 4 retitled, [5.1] recap includes the new pages · fold: [4.4] parent Library and Recognition, [4.5] Exams / Exam Marks named over a card (flagged, open decision)
