@@ -3,7 +3,7 @@ id: "02.3"
 title: Buy seats for your organisation
 target: 4:00
 prereq:
-  - "01.1"
+  - "01.2"
 status: scripted
 flags:
   - "Decision \"First billing setup for a new organisation\" (decided 2026-11-03: as scripted): scripted from the code. Opening View plan creates the organisation's billing account automatically (BilledOrganizationSubscriptionService.GetOrganizationSubscription → CreateOrganizationSubscription). Buying seats then needs a card with a billing country and state, or Via Invoice with a country; otherwise the API refuses with \"A card is not configured.\""
@@ -18,7 +18,7 @@ Set up billing for your masjid or madrasah and buy monthly or yearly Premium sea
 
 ## You'll need
 <!-- Shown on the opening card. Generated from prereq/plan/switch if left empty. -->
-- Admin of a registered masjid or madrasah
+- Admin of an approved masjid or madrasah
 - A payment card, or the choice to pay by invoice
 
 ## Covers
@@ -41,11 +41,11 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. Seats for your people
 #### [1.1] Opening
-**Say:** Your masjid or madrasah can buy Ad-Din Premium for its people as seats. One seat gives one person Premium. In this video for admins, you'll buy them.
+**Say:** Your masjid or madrasah can buy Ad-Din Premium for its people as seats. One seat gives one person Premium. This video is for admins: you'll buy seats.
 **Show:** Title card: "Buy seats for your organisation".
 
 #### [1.2]
-**Say:** You'll need to be an admin of the organisation, with a payment card ready, or the choice to pay by invoice.
+**Say:** You'll need to be an admin of an approved organisation, with a payment card ready, or the choice to pay by invoice instead of by card.
 **Show:** Opening card from You'll need.
 
 ### 2. Open your plan
@@ -58,8 +58,8 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Click "View plan" on "Al-Noor Madrasah". The page opens with the organisation's name at the top.
 
 #### [2.3]
-**Say:** The first time you open it, Ad-Din sets up a billing account for your organisation. There's nothing to fill in yet.
-**Show:** Hold on the page: both plans at 0 of 0 used, balance C$ 0.00.
+**Say:** The first time you open it, Ad-Din sets up a billing account for your organisation. There's nothing to fill in, and nothing is charged until you buy seats.
+**Show:** Spotlight "0 of 0 used" on each plan, then the balance "C$ 0.00".
 
 #### [2.4] Help
 **Say:** Tap the info icon at the top for a short explanation of organisation subscriptions and their terms.
@@ -72,7 +72,7 @@ See docs/SCRIPT-FORMAT.md.
 
 #### [3.2] Add a card
 **Say:** Under **Payment method**, choose **Via Credit Card**. Tap **Add card**, and enter the card and billing address in the secure Stripe window.
-**Show:** Select "Via Credit Card". Click "Add card"; the Stripe window "Add Card to Ad-Din" opens. Fill the test card and demo address, out of focus; confirm.
+**Show:** Select "Via Credit Card". Click "Add card"; the Stripe window "Add Card to Ad-Din" opens. Fill the test card and demo address, out of focus; crop or blur Stripe's test-mode badge; confirm.
 
 #### [3.3]
 **Say:** Ad-Din saves it. The Billing column now shows **Card ending in** and the last four digits.
@@ -85,14 +85,14 @@ See docs/SCRIPT-FORMAT.md.
 ### 4. Buy seats
 #### [4.1] The two plans
 **Say:** Under **Subscriptions** you'll find two plans, **Monthly** and **Yearly**. Each shows its price per seat, and how many seats are used out of the total.
-**Show:** Spotlight the Monthly card ("C$0.99 per seat / month") and the Yearly card with "Best Value". Zoom on "0 of 0 used".
+**Show:** Spotlight the Monthly card and the Yearly card with "Best Value"; prices stay in shot but are never zoomed. Zoom on "0 of 0 used".
 
 #### [4.2] Choose a quantity
 **Say:** Tap **Manage Subscription Quantity** on the plan you want. Yearly costs less over a full year.
 **Show:** Click "Manage Subscription Quantity" on the Yearly card. The sheet "Change yearly subscription quantity" opens.
 
 #### [4.3]
-**Say:** Set the number of seats with the plus and minus buttons, the quick buttons, or by typing a number.
+**Say:** Set the number of seats with the plus and minus buttons, the **+5** and **+10** buttons, or by typing a number.
 **Show:** Click "+10", then "+5": 15. Click into the number and type 20.
 
 #### [4.4] Submit
@@ -105,15 +105,15 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 5. Read your seats
 #### [5.1] Used and available
-**Say:** The yearly plan now reads 1 of 20 used, with 19 available. Used means seats already given to people.
+**Say:** The yearly plan now reads 1 of 20 used, with 19 available. Used means seats already given to people. One is used already because Ad-Din gave it to an admin, as you'll see in a moment.
 **Show:** Zoom on "1 of 20 used", "19 available" and "20 total seats · billed yearly".
 
 #### [5.2] Change it later
 **Say:** To buy more, open **Manage Subscription Quantity** again. You can lower the number too, but never below the seats already in use.
 **Show:** Open the sheet; spotlight the line "You cannot decrease the amount of subscriptions below the amount you have already assigned to users." Close it.
 
-#### [5.3] A seat for you
-**Say:** Once the first seats are paid, if none of your admins has a seat yet, Ad-Din gives one to an admin automatically.
+#### [5.3] A seat for an admin
+**Say:** If none of your admins has a seat, Ad-Din gives one seat to an admin automatically once the first seats are paid. In this example, that admin is you.
 **Show:** Admin's Profile → Subscription tab: zoom on "Provided by your organization".
 
 ### 6. Next
@@ -122,6 +122,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** End card with two tiles: "02.4 Give seats to parents, teachers and staff" and "02.6 Billing, cards and invoices".
 
 ## Review log
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 9 changes: You'll need, [1.2] and prereq 01.2: the organisation must be approved (the sidebar is locked while pending), [1.1] no nested opening, [2.3] says nothing is charged yet, Show spotlights 0 of 0 and the balance, [3.2] crop Stripe's test-mode badge, [4.1] no zoom on prices, [4.3] names the +5 and +10 buttons, [5.1] says why one seat is already used, [5.3] "A seat for an admin" (the API picks the first admin), condition first
 <!-- Newest first: date, who, what was asked, what changed. -->
 - 2026-11-03 · manager · decisions via chat · 'First billing setup' decided (as scripted): flag wording updated; script unchanged
 - 2026-11-03 · critic · 3 changes: [1.1] second-person opening, [3.4] no elliptical question, video by number, Show spotlights Save before closing, [6.1] Say names both end tiles
