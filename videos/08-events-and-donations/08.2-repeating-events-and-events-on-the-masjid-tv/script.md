@@ -22,10 +22,10 @@ Make an event repeat daily, weekly, monthly or yearly, choose whether it shows o
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
-- Masjid Admin account with home masjid "Masjid Al-Noor" (Premium)
+- Masjid Admin account with home masjid "Maple Grove Masjid" (Premium)
 - New event typed on camera: public "Tafsir Circle", category Religion, next Friday 8:00 PM to 9:00 PM, Repeat Weekly, Repeat Ends on the last day of next month, Display This Event On Prayer Times Large TV on, with a tall 960 × 1080 poster for Image for Prayer Dashboard
 - After saving, the Events list shows the weekly "Tafsir Circle" dates
-- Masjid Al-Noor's Large Display (TV) showing the "Tafsir Circle" poster in its events area, recorded from the demo display page
+- Maple Grove Masjid's Large Display (TV) showing the "Tafsir Circle" poster in its events area, recorded from the demo display page
 
 ## Script
 <!--
@@ -60,8 +60,8 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 3. Show it on the masjid TV
 #### [3.1] The TV switch
-**Say:** Next, **Display This Event On Prayer Times Large TV**. It's on for every new event. Leave it on to show this event on your masjid's prayer-times screen.
-**Show:** Scroll to the card. Spotlight the switch and its note "Display this event on the masjid dashboard screen".
+**Say:** Next, **Display This Event On Prayer Times Large TV**. It's on for every new event. Leave it on to show this event on your masjid's prayer-times screen. A premium display also needs its own **Events** switch on.
+**Show:** Scroll to the card. Spotlight the switch and its note "Display this event on the masjid dashboard screen". Small inset: a premium display's Contents & Events panel with the Events switch on (as in 04.6 [3.1]).
 
 #### [3.2] What shows
 **Say:** The TV shows public events coming up in the next month. Private events never appear there.
@@ -76,12 +76,12 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Click "Save & Publish". Toast "Event Added Successfully". The Events page lists the "Tafsir Circle" dates; spotlight two cards with consecutive Friday date badges.
 
 #### [3.5]
-**Say:** And here it is on the masjid's TV, between the prayer times.
-**Show:** Cut to the demo Large Display with the "Tafsir Circle" poster in its events area. Hold for two seconds.
+**Say:** And here it is on the masjid's TV screen, beside the prayer times.
+**Show:** Cut to the demo Large Display (recorded from the dev environment, as decided for TV pages) with the "Tafsir Circle" poster in its events area. Hold for two seconds.
 
 ### 4. Change one date or all of them
 #### [4.1] Edit
-**Say:** To change a repeating event, open the menu on its card and tap **Edit**.
+**Say:** To change a repeating event, tap the three-dot menu on its card, then tap **Edit**.
 **Show:** On a "Tafsir Circle" card, click the three-dot menu; spotlight Edit and Delete; click Edit. The Manage Event page opens.
 
 #### [4.2]
@@ -91,7 +91,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 5. Delete one date or the series
 #### [5.1] Delete
-**Say:** To remove it, open the card's menu and tap **Delete**.
+**Say:** To remove it, tap the card's three-dot menu, then tap **Delete**.
 **Show:** Three-dot menu on a "Tafsir Circle" card → Delete. The "Delete Event?" box opens.
 
 #### [5.2]
@@ -99,16 +99,17 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Spotlight the two options; click "Delete Only This Event".
 
 #### [5.3]
-**Say:** The box to tell followers by email and push notification is already ticked. Untick it to delete quietly, then tap **Yes**.
+**Say:** The box to tell followers by email and push notification is already ticked. Untick it if you don't want to tell anyone. Then tap **Yes**.
 **Show:** Spotlight the ticked "Notify followers via Email & Push Notification" box; leave it ticked. Click Yes. That one card disappears; the other Fridays stay.
 
 ### 6. Next
 #### [6.1] Close
-**Say:** Your weekly event is set, and it shows on the masjid TV. To set up the TV screens themselves, see the prayer-times display videos.
+**Say:** Your weekly event is set, and it shows on the masjid TV. Next, video 04.4: Prayer times on a TV: basic displays. Or video 04.6: Premium displays, part 2: posters, events and ticker.
 **Show:** End card with two tiles: "04.4 Prayer times on a TV: basic displays" and "04.6 Premium displays, part 2: posters, events and ticker".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 7 changes: [3.1] says a premium display also needs its Events switch (04.6), with an inset; [3.5] plainer wording, Show notes the dev recording; [4.1] and [5.1] name the three-dot menu; [5.3] no idiom ("delete quietly"); [6.1] names both end tiles by number; demo names match the Maple Grove demo world
 - 2026-11-03 · manager · decisions via chat · 04.6 renamed 'Premium displays, part 2: posters, events and ticker' (split with 04.11): end-card tile updated
 - 2026-11-03 · critic · 3 changes: [1.1] "halaqa" (unexplained, not an app term) -> Tafsir circle, matches the demo; [1.2] no longer assumes 08.1 was watched; [3.3] "mobile picture" named by its label as in 08.1
 - 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: [5.3] the notify box starts ticked (eventNotify = true), so no tick step
