@@ -19,15 +19,16 @@ Find your masjid's donation page in the Ad-Din app, and give to a donation campa
 ## You'll need
 <!-- Shown on the opening card. Generated from prereq/plan/switch if left empty. -->
 - The Ad-Din app, signed in, with a home masjid
-- For campaigns: your masjid's Ad-Din website address
+- For campaigns: your masjid's Ad-Din website address (ask your masjid if you don't know it)
 
 ## Covers
-- Campaigns in the app and on the website
+- The donation page in the app, and campaigns on the website (members see campaigns on the website only)
 
 ## Demo data
-- Member account (no admin role) with home masjid "Masjid Al-Noor"
-- Masjid Al-Noor's donation page set to a published service page "Support Masjid Al-Noor" with a picture and text on how to give (bank details blurred or fictional)
-- Masjid Al-Noor has the Website add-on; its demo website shows two active campaigns, "Roof Repair Appeal" (with goal and amount raised) and "Ramadan Iftar Fund", each with photos and a PayPal Donate button in sandbox
+- A community member account with no admin role, home masjid "Maple Grove Masjid". Not the admin demo account Yusuf Rahman: for an admin the Donation tile opens the campaign list instead (quick-grid.component.ts openDonation)
+- A second member account whose home masjid has no donation page, for the toast in [2.4]
+- Maple Grove Masjid's donation page set to a published service page "Support Maple Grove Masjid" with a picture and text on how to give (bank details blurred or fictional)
+- Maple Grove Masjid has the Website add-on; its demo website at `maplegrove` shows two active campaigns, "Roof Repair Appeal" (with goal and amount raised) and "Ramadan Iftar Fund", each with photos and a PayPal Donate button in sandbox
 - Phone browser for the website shots; nothing past the PayPal hand-off is shown
 - Phone frame for every shot
 
@@ -35,12 +36,12 @@ Find your masjid's donation page in the Ad-Din app, and give to a donation campa
 
 ### 1. Giving to your masjid
 #### [1.1] Opening
-**Say:** Your masjid depends on the generosity of its community. In this video you'll find where to give, in the Ad-Din app and on your masjid's website.
-**Show:** Title card: "Donate to your masjid". Phone frame on the app home.
+**Say:** Your masjid depends on the generosity of its community. In this video, you'll find where to give, in the Ad-Din app and on your masjid's website.
+**Show:** Title card: "Donate to your masjid". Phone frame on the app home. Side panel label: "Signed in as: a community member".
 
 #### [1.2]
 **Say:** The app takes you to your home masjid's donation page. Your home masjid is already set; if not, choose it first.
-**Show:** Home screen with "Masjid Al-Noor" in the top bar.
+**Show:** Home screen with "Maple Grove Masjid" in the top bar.
 
 ### 2. Donate in the app
 #### [2.1] Donation tile
@@ -49,7 +50,7 @@ Find your masjid's donation page in the Ad-Din app, and give to a donation campa
 
 #### [2.2]
 **Say:** Your masjid's donation page opens. Read how the masjid would like you to give, and follow its steps.
-**Show:** The "Support Masjid Al-Noor" page opens. Frame the picture, title and Page Content; keep the "Manage Service" header out of shot. Scroll slowly through the text.
+**Show:** The "Support Maple Grove Masjid" page opens. Frame the picture, title and Page Content; keep the "Manage Service" header out of shot. Scroll slowly through the text.
 
 #### [2.3]
 **Say:** Some masjids use their own giving website instead. Then the tile opens that site in your browser.
@@ -57,12 +58,12 @@ Find your masjid's donation page in the Ad-Din app, and give to a donation campa
 
 #### [2.4]
 **Say:** If you see a message that the donation page isn't set up yet, your masjid hasn't added one. Ask the masjid office.
-**Show:** Toast on a second demo account: "Your organisation has not set up a donation page yet. Please contact the administrator for more information."
+**Show:** Side panel label: "Signed in as: another community member". Toast on the second member account: "Your organisation has not set up a donation page yet. Please contact the administrator for more information."
 
 ### 3. Campaigns on the website
 #### [3.1] Masjid Donations
-**Say:** Many masjids collect for a special cause, such as a roof repair or an iftar fund. You'll find these campaigns on your masjid's Ad-Din website, under **Masjid Donations**.
-**Show:** Phone browser on the Masjid Al-Noor demo website home page. Scroll to the "Masjid Donations" section.
+**Say:** Many masjids collect for a special cause, such as a roof repair or an iftar fund. You'll find these campaigns on your masjid's Ad-Din website, under **Masjid Donations**. If you don't know the website address, ask your masjid.
+**Show:** Phone browser on the Maple Grove Masjid demo website home page. Address bar shows the `maplegrove` website. Scroll to the "Masjid Donations" section; keep its "Donation Progress" counter out of close-up (it miscounts, docs/APP-ISSUES.md).
 
 #### [3.2] View All
 **Say:** Tap **View All** to see every campaign. Each shows how much has been raised towards its goal.
@@ -73,15 +74,16 @@ Find your masjid's donation page in the Ad-Din app, and give to a donation campa
 **Show:** Tap "Roof Repair Appeal". Show the photos, title, "Donation Progress" bar and the description.
 
 #### [3.4] Donate
-**Say:** To give, tap the Donate button. PayPal opens, where you choose the amount and pay securely.
+**Say:** To give, tap the Donate button. PayPal opens, where you choose the amount and pay securely. Your gift goes to the masjid's own PayPal account.
 **Show:** Spotlight the Donate button, tap it; cut as the PayPal window begins to open. Never show the payment screen.
 
 ### 4. Next
 #### [4.1] Close
-**Say:** May Allah accept your giving. Next, see the events at your masjid, or watch its live streams from home.
+**Say:** May Allah accept your giving. Next, video 15.3: Events: going, interested and sharing. Or video 15.6: Tasbeeh, live streams, gallery and forms.
 **Show:** End card with two tiles: "15.3 Events: going, interested and sharing" and "15.6 Tasbeeh, live streams, gallery and forms".
 
 ## Review log
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 8 changes: Covers says campaigns are on the website only, as the flag and [3.1] say; You'll need and [3.1] say to ask the masjid for the website address; [3.1] keeps the home page's miscounting "Donation Progress" counter out of close-up (Home.cshtml 386), as 09.6; [3.4] says the gift goes to the masjid's own PayPal account (as 08.4); [1.1] comma and "Signed in as" labels in [1.1] and [2.4]; [4.1] names both end tiles by number and title; demo data: Maple Grove names, `maplegrove` website, a member account (an admin's Donation tile opens the campaign list)
 - 2026-11-03 · manager · decisions via chat · 15.3 renamed 'Events: going, interested and sharing': end-card tile updated
 - 2026-11-03 · critic · 2 changes: [1.1] "runs on" metaphor replaced and standard "In this video" opening, [3.1] "appeals" explained as campaigns (one word for the thing, as in Covers)
 <!-- Newest first: date, who, what was asked, what changed. -->
