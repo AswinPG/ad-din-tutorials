@@ -25,11 +25,11 @@ Add the subjects each class studies, choose the teachers who can teach them, and
 - Mark as Homeroom, Mark as Compulsory (grades 9–12)
 
 ## Demo data
-- Demo madrasah "Al-Noor Madrasah"; the demo admin has Premium
+- Demo madrasah "Maple Grove Madrasah"; the demo admin has Premium
 - Religious class "Hifz Boys" (grade set "Hifz Grades") with section "Hifz A"
 - Academic class "Grade 3" (numeric 3) and academic class "Grade 10" (numeric 10), each with one section and three or four students in Grade 10
-- Teachers "Ibrahim Yusuf", "Amina Saleh" and two more
-- New subject added on camera: "Quran Hifz" in Hifz Boys, edition "Madani Mushaf", deduction 1 per mistake, teachers Ibrahim Yusuf and Amina Saleh, a small sample PDF as the syllabus
+- Teachers "Bilal Hussain", "Fatima Siddiqui" and two more
+- New subject added on camera: "Quran Hifz" in Hifz Boys, edition "Madani Mushaf", deduction 1 per mistake, teachers Bilal Hussain and Fatima Siddiqui, a small sample PDF as the syllabus
 - The default strands in the Strands tab; Discipline "Science" and Group "Group A" already added
 - For the Grade 10 example: subject "Science", course code "SNC2D", credit 1, class counts per semester
 
@@ -65,7 +65,7 @@ Add the subjects each class studies, choose the teachers who can teach them, and
 ### 4. Choose the teachers
 #### [4.1]
 **Say:** Under **Teacher**, tick everyone who can teach and grade this subject. In the timetable, only these teachers, plus the section's class teacher, can be picked for it.
-**Show:** Tick "Ibrahim Yusuf" and "Amina Saleh". The count shows "2 selected" and their chips appear.
+**Show:** Tick "Bilal Hussain" and "Fatima Siddiqui". The count shows "2 selected" and their chips appear.
 
 #### [4.2] Save
 **Say:** Tap **Save**. Marks for the subject use the grade set you chose for its class.
@@ -86,7 +86,7 @@ Add the subjects each class studies, choose the teachers who can teach them, and
 **Caption:** Grades 9–12: Mark as Compulsory, plus Discipline, Group, Course Code and Course Credit.
 
 #### [5.4]
-**Say:** Enter the **Total Classes** for each part of the year. Under **Students**, tick who takes the subject and choose **Semester 1** or **Semester 2**. Pick one teacher, and tap **Save**.
+**Say:** Enter the **Total Classes** for each part of the year. Under **Students**, tick who takes the subject and choose **Semester 1** or **Semester 2**. For these grades, a subject has one teacher, so tick one. Then tap **Save**.
 **Show:** Fill the four Total Classes boxes. Under Students, choose "Semester 1" in Assign All, then tick "Select All". Tick one teacher. Click "Save".
 
 ### 6. Your own lists
@@ -109,6 +109,7 @@ Add the subjects each class studies, choose the teachers who can teach them, and
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 2 changes: [5.4] says why only one teacher (grades 9-12 take a single teacher); demo names match the demo world
 - 2026-11-03 · manager · decisions via chat · 'Who needs a seat?' decided (own-Premium check is intended): flag wording updated; script unchanged
 - 2026-11-03 · critic · 5 changes: [1.1] second-person opening; [2.2] merged into [2.1] (thin scene); [5.2] Say names the Cancel the Show does; [5.4] Say covers Save, shorter; [7.2] end card by number and title
 - 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: [4.1] timetable also lists the section's class teacher

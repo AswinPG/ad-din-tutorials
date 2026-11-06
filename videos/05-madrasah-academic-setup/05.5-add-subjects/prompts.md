@@ -3,6 +3,7 @@
 Every instruction given to Claude for this video, newest first, with the result.
 Format: date · who · prompt (verbatim or summarised) · outcome / commit.
 
+- 2026-11-06 · Imran · "do it for all the planned ones now" (panel review, apply clear fixes) · review panel, 2 changes: [5.4] says why only one teacher (grades 9-12 take a single teacher); demo names match the demo world / docs(05.5): apply review panel fixes
 - 2026-11-03 · manager · "Decisions via chat" · 'Who needs a seat?' decided (own-Premium check is intended): flag wording updated; script unchanged
 - 2026-11-03 · manager · "use a critic subagent to criticise and find flaws in the script, make it better" · critic pass: 5 changes (opening, thin [2.2] merged, Say/Show matches for Cancel and Save, end card by number)
 - 2026-11-03 · manager · "use a sub agent to validate the script" · validator pass: 1 fix ([4.1] timetable also lists the section's class teacher).
