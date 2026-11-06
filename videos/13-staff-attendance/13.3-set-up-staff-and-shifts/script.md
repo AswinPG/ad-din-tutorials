@@ -22,9 +22,10 @@ Give every staff member a shift, from a shift template or the class routine, plu
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
 - Demo madrasah with Staff Attendance on, zone "Main building", and a current academic term "Autumn Term" plus the next term "Spring Term"
-- Class routine for the current term with teacher Yusuf Patel
-- Staff: Yusuf Patel (Teacher; Shift source already "Class routine", so the Link staff picker greys him out), Maryam Ali (Staff, office) and Bilal Ahmed (Staff, caretaker) with no Shift source; all three have no tracking mode, so all start on the Not set up tab
-- Autumn Term ends within the next 14 days and Spring Term has no class routine for Yusuf yet, so the Staff page shows the readiness summary ("will fail") in [6.6]
+- Class routine for the current term with teacher Bilal Hussain
+- Staff: Bilal Hussain (Teacher; Shift source already "Class routine", so the Link staff picker greys him out), Khadija Usman (Staff, office) and Idris Malik (Staff, caretaker) with no Shift source; all three have no tracking mode, so all start on the Not set up tab
+- The demo admin Yusuf Rahman (Admin and Teacher roles) is also listed; keep him off the Not set up tab (for example Not tracked)
+- Autumn Term ends within the next 14 days and Spring Term has no class routine for Bilal yet, so the Staff page shows the readiness summary ("will fail") in [6.6]
 - No shift templates at the start; "Office hours" (Mon–Fri 8:30–4:30, unpaid Lunch break 12:00–12:30, term Autumn Term) is built in the video
 
 ## Script
@@ -67,17 +68,17 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** On Monday click "Add", then "Break". Break name "Lunch", Fixed window, Starts 12:00, Ends 12:30; click "Paid" so it reads "Unpaid". Click "Add break". Click "Copy Monday to working days" again.
 
 #### [3.4] Terms
-**Say:** For a madrasah, choose up to five **Terms**. Staff on this template only get shifts on dates inside those terms. Then tap **Save**.
+**Say:** For a madrasah, choose up to five **Terms**. Staff on this template only get shifts on dates inside those terms; with no term, they get none. Then tap **Save**.
 **Show:** In Terms, tick "Autumn Term" (marked Current). Click "Save". The card shows the days, "Terms: Autumn Term" and "Not linked to anyone yet".
 
 ### 4. Link staff
 #### [4.1] Link staff
 **Say:** On the template's card, tap **Link staff**. Tick everyone who should follow this pattern, then tap the link button, which shows how many you picked.
-**Show:** Click "Link staff". The dialog "Link "Office hours" to staff" opens. Tick Maryam Ali and Bilal Ahmed (each marked "Not set up yet — linking also sets them up"); click "Link 2 staff".
+**Show:** Click "Link staff". The dialog "Link "Office hours" to staff" opens. Tick Khadija Usman and Idris Malik (each marked "Not set up yet — linking also sets them up"); click "Link 2 staff".
 
 #### [4.2]
-**Say:** Teachers on the class routine aren't offered here. If you edit a template later, the change applies to everyone linked to it.
-**Show:** Before confirming, spotlight Yusuf Patel's greyed row: "Teacher — shift comes from the class routine, can't use a template". After linking, the card reads "Linked to 2 staff: Maryam Ali, Bilal Ahmed".
+**Say:** Teachers on the class routine aren't offered here. If you edit a template later, the change applies to everyone linked to it: from today if they haven't checked in yet, otherwise from tomorrow.
+**Show:** Before confirming, spotlight Bilal Hussain's greyed row: "Teacher — shift comes from the class routine, can't use a template". After linking, the card reads "Linked to 2 staff: Khadija Usman, Idris Malik".
 
 ### 5. Timetable-based shifts
 #### [5.1] Class routine term
@@ -90,24 +91,24 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 6. Set up each person
 #### [6.1] Staff page
-**Say:** Now open **Staff**. It lists everyone with a staff role, with their **Shift source**, **Zone**, **Tracking mode**, and whether they're **Ready**.
+**Say:** Now open **Staff**. It lists your staff, with their **Shift source**, **Zone**, **Tracking mode**, and whether they're **Ready**. If someone is missing, give them a staff or teacher role first, as in videos 03.3 and 03.4.
 **Show:** Click Staff in the section list. Spotlight the column headings.
 
 #### [6.2]
 **Say:** The **Not set up** tab shows who still needs attention. Tap a person to open their settings. Changes save as you choose them.
-**Show:** Click the "Not set up" tab. Click Yusuf Patel's row; the settings panel opens on the right.
+**Show:** Click the "Not set up" tab. Click Bilal Hussain's row; the settings panel opens on the right.
 
 #### [6.3] Shift source and zone
-**Say:** Choose their **Shift source**. Yusuf teaches, so he's on the **Class routine**. Then choose his **Zone**.
-**Show:** "Class routine" is already ticked for Yusuf; spotlight it. Click "Main building" under Zone.
+**Say:** Choose their **Shift source**. Bilal teaches, so he's on the **Class routine**. Then choose his **Zone**.
+**Show:** "Class routine" is already ticked for Bilal; spotlight it. Click "Main building" under Zone.
 
 #### [6.4] Tracking mode
-**Say:** Last, the **Tracking mode**. **Auto** gives them the clock button on their phone. With **Manual only**, an administrator enters their time. **Not tracked** leaves them out.
+**Say:** Last, the **Tracking mode**. **Auto** gives them the clock button on their phone. With **Manual only**, an admin enters their time on the **Periods** page. **Not tracked** leaves them out.
 **Show:** Spotlight the three options, then click "Auto". Spotlight the explanation under it.
 
 #### [6.5]
 **Say:** Tap **Done**. Repeat for each person. Staff on a template show it under **Which pattern**. In a masjid, every shift comes from a template.
-**Show:** Click "Done". Click the "Set up" tab and open Maryam Ali: linking already set Shift template, Which pattern "Office hours" and Auto. Click "Main building" under Zone. Click "Done".
+**Show:** Click "Done". Click the "Set up" tab and open Khadija Usman: linking already set Shift template, Which pattern "Office hours" and Auto. Click "Main building" under Zone. Click "Done".
 
 #### [6.6] Ready
 **Say:** Back on the **Set up** tab, each row shows **Ready**. If someone's schedule is about to run out, for example when a term ends, the top of the page warns you.
@@ -120,6 +121,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 5 changes: [3.4] with no term a template gives no shifts (en.json 3321), [4.2] template edits apply from today if not checked in yet, otherwise tomorrow (en.json 3278), [6.1] "your staff" and if someone is missing give them a role first (videos 03.3, 03.4; en.json 3151-3152), [6.4] Manual only time is entered on the Periods page, "admin"; demo names from the Maple Grove demo world (teacher Bilal Hussain, office Khadija Usman, caretaker Idris Malik), and the demo admin's own row in Demo data
 - 2026-11-03 · manager · decisions via chat · Staff Attendance is live: 'Is Staff Attendance live?' hold flag removed; publish normally
 - 2026-11-03 · critic · 5 changes: [1.1] second-person opening; [2.1] full sidebar path; [3.2] rest-day line matches the Show (days left off, no switch tapped); [4.1] count button described as the style guide asks; [7.1] end-card tiles named by number
 - 2026-11-03 · validator · checked against master d36d69ed8 · 6 fixes: template hours/breaks use Add → Work/Break → Add hours/Add break, break Paid/Unpaid toggle, linking sets Maryam and Bilal to Shift template + Auto (so [6.5] opens her on Set up and only adds the zone), Yusuf must already be on Class routine for the greyed picker row, linked card text, demo data for the readiness warning
