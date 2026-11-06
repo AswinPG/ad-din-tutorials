@@ -23,14 +23,14 @@ Use the Schedule Builder to create a weekly timetable for your classes, with bre
 - teacher clashes, breaks, notify parents
 
 ## Demo data
-- Demo madrasah "Al-Noor Madrasah"; the demo admin has Premium
+- Demo madrasah "Maple Grove Madrasah"; the demo admin has Premium
 - Enabled term "Term 1" with no routine yet
-- Class "Hifz Boys" with sections "Hifz A" (class teacher Ibrahim Yusuf) and "Hifz B" (class teacher Amina Saleh), no routine yet
+- Class "Hifz Boys" with sections "Hifz A" (class teacher Bilal Hussain) and "Hifz B" (class teacher Fatima Siddiqui), no routine yet
 - Class "Maktab Level 1" whose "Section B" already has a routine in Term 1 (for the "already has a routine" mark)
-- Subjects in Hifz Boys: "Quran Hifz" (teachers Ibrahim Yusuf, Amina Saleh), "Tajweed" (Amina Saleh), "Islamic Studies" (Ibrahim Yusuf)
+- Subjects in Hifz Boys: "Quran Hifz" (teachers Bilal Hussain, Fatima Siddiqui), "Tajweed" (Fatima Siddiqui), "Islamic Studies" (Bilal Hussain)
 - Working days Monday to Friday
 - Periods built on camera: Period 1 4:00–4:45 pm, Salat Break 4:45–5:00 pm, Period 2 5:00–5:45 pm, Short Break 5:45–5:55 pm, Period 3 5:55–6:40 pm
-- For the clash demo: Ibrahim Yusuf placed in Hifz A, Monday Period 1, then picked again in Hifz B at the same time
+- For the clash demo: Bilal Hussain placed in Hifz A, Monday Period 1, then picked again in Hifz B at the same time
 
 ## Script
 
@@ -64,11 +64,11 @@ Use the Schedule Builder to create a weekly timetable for your classes, with bre
 
 ### 4. Period Structure
 #### [4.1] Periods
-**Say:** Now define the time slots for each day. They apply to every class you picked. Ad-Din starts you with a sample day. Each row is a **Subject** period or a **Break**, with a **Start** and **End** time.
+**Say:** Now define the time slots for each day. They apply to every class you picked. To begin, Ad-Din fills in a sample day. Each row is a **Subject** period or a **Break**, with a **Start** and **End** time.
 **Show:** The Period Structure table opens with six sample rows (Period 1 8:00–8:45 am, Period 2, Short Break, Period 3, Lunch Break, Period 4). Set row 1 to 4:00 pm–4:45 pm. Spotlight "Period 1".
 
 #### [4.2] Breaks
-**Say:** For a break, choose the **Break Type**: **Short Break**, **Lunch Break** or **Salat Break**. Tap **Add Period** for each new row, or the bin to remove one.
+**Say:** For a break, choose the **Break Type**: **Short Break**, **Lunch Break** or **Salat Break**. Tap **Add Period** for each new row, or the delete icon to remove one.
 **Show:** Row 2: set Type to Break, Break Type "Salat Break", 4:45 to 5:00 pm. Set the next rows to the demo times (Period 2, Short Break, Period 3) and delete the last two sample rows with the bin. Click "Add Period" once to show a new row, then delete it. Pre-edit the rows off camera if the shot runs long.
 
 #### [4.3]
@@ -78,19 +78,19 @@ Use the Schedule Builder to create a weekly timetable for your classes, with bre
 ### 5. Assign subjects
 #### [5.1] Fill the grid
 **Say:** Pick a section at the top. For each period and day, choose the subject, then the teacher. Only that subject's teachers and the section's class teacher are listed.
-**Show:** "Hifz Boys - Hifz A" selected. Monday Period 1: pick "Quran Hifz", then "Ibrahim Yusuf". Fill a few more cells.
+**Show:** "Hifz Boys - Hifz A" selected. Monday Period 1: pick "Quran Hifz", then "Bilal Hussain". Fill a few more cells.
 
 #### [5.2] Copy
 **Say:** To save time, **Copy Day** copies one day to other days, and **Copy to Sections** copies this section's week to another section.
 **Show:** Click "Copy Day"; Source Day Monday, tick the other days; click "Copy". The grid fills. Spotlight "Copy to Sections" without clicking it.
 
 #### [5.3] Teacher clashes
-**Say:** Ad-Din won't let a teacher be in two places at once. A teacher who is already teaching is marked busy, and a clash turns the cell red with the reason.
-**Show:** Select "Hifz B". Monday Period 1: pick "Quran Hifz"; Ad-Din picks "Amina Saleh", the only free teacher. Open the teacher list: "Ibrahim Yusuf · busy (…)". Pick him: the cell turns red, "Ibrahim Yusuf is teaching Hifz Boys - Hifz A …". The badge on the Hifz B tab shows 1.
+**Say:** Ad-Din won't let a teacher teach two classes at the same time. A teacher who is already teaching is marked busy, and a clash turns the cell red with the reason.
+**Show:** Select "Hifz B". Monday Period 1: pick "Quran Hifz"; Ad-Din picks "Fatima Siddiqui", the only free teacher. Open the teacher list: "Bilal Hussain · busy (…)". Pick him: the cell turns red, "Bilal Hussain is teaching Hifz Boys - Hifz A …". The badge on the Hifz B tab shows 1.
 
 #### [5.4]
 **Say:** Fix every clash to continue. The counter shows how many cells are filled, and how many have no teacher yet. Tap **Next**.
-**Show:** Change the teacher to "Amina Saleh"; the red goes away. Spotlight "cells filled". Click "Next".
+**Show:** Change the teacher to "Fatima Siddiqui"; the red goes away. Spotlight "cells filled". Click "Next".
 
 ### 6. Review and save
 #### [6.1] Review
@@ -107,7 +107,7 @@ Use the Schedule Builder to create a weekly timetable for your classes, with bre
 
 ### 7. Next
 #### [7.1] Done
-**Say:** Your timetable is live. To change a few periods later, edit them on the **Routines** tab, and tick **Notify parents & students** before you save.
+**Say:** Your timetable is saved. To change a few periods later, edit them on the **Routines** tab, and tick **Notify parents & students** before you save.
 **Show:** Routines tab with Term 1. Change one period's teacher; the save bar appears. Spotlight "Notify parents & students", then click "Discard".
 
 #### [7.2]
@@ -116,6 +116,7 @@ Use the Schedule Builder to create a weekly timetable for your classes, with bre
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 5 changes: [4.1] no "starts you with"; [4.2] "delete icon" not "bin"; [5.3] "teach two classes at the same time" (no idiom); [7.1] "saved" not "live"; demo names match the demo world
 - 2026-11-03 · manager · decisions via chat · 'Who needs a seat?' decided (own-Premium check is intended): flag wording updated; script unchanged
 - 2026-11-03 · critic · 4 changes: [1.1] second-person opening; [5.2] Show also spotlights Copy to Sections, which the Say names; [5.2] plainer wording; [7.2] end card by number and title
 - 2026-11-03 · validator · checked against master d36d69ed8 · 5 fixes: [3.1] class checkbox vs name selects sections differently; [4.1]/[4.2] Period Structure starts with six sample rows to edit/delete; [5.1] teacher list = subject teachers + section class teacher; [5.3] the only free teacher is auto-picked; demo data: class teachers for Hifz A/B
