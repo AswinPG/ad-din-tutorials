@@ -23,7 +23,7 @@ Allow notifications and precise location for Ad-Din on your phone, check them an
 
 ## You'll need
 <!-- Shown on the opening card. Generated from prereq/plan/switch if left empty. -->
-- The Ad-Din app on your phone, signed in
+- The latest Ad-Din app on your phone, signed in
 
 ## Covers
 - Permission reminder sheet: Allow / Allow precise, Remind me later, Don't remind me again
@@ -34,11 +34,11 @@ Allow notifications and precise location for Ad-Din on your phone, check them an
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
-- Demo member account signed in on the app (phone frame), home masjid "Al-Noor Masjid"; not a staff member, so the precise sheet shows two reasons
+- Demo member account signed in on the app (phone frame), home masjid "Maple Grove Masjid"; not a staff member, so the precise sheet shows two reasons
 - Stubbed app shell (window.AdDinBridge) whose permission state the recorder sets per scene: chapters 2–3 start with notifications and location "prompt"; chapter 4 with location "granted" + "approximate"; chapter 5 with notifications "granted" and location "blocked"
 - localStorage "adDinPermissionReminder" with firstSeen a week ago and no lastShown, so the reminder appears four seconds after the home screen loads
 - A real Android or iOS device, or an emulator, for the phone's own permission dialogs ([3.1], [3.2], [4.3]) and the lock-screen notification ([6.3]); Ad-Din installed and signed in with the demo member, nothing personal on screen
-- One push for the banner: title "Al-Noor Masjid", body "Jumu'ah khutbah starts at 1:15 pm this Friday.", action "message"; a matching message in the inbox so the tap lands on it
+- One push for the banner: title "Maple Grove Masjid", body "Jumu'ah khutbah starts at 1:15 pm this Friday.", action "message"; a matching message in the inbox so the tap lands on it
 - A second and third push sent while the first is up, for the "+2 more" shot
 
 ## Script
@@ -55,21 +55,21 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Title card: "Ad-Din on your phone: notifications and location". Phone frame on the app home screen.
 
 #### [1.2]
-**Say:** You'll need the Ad-Din app, signed in. Everything here happens only in the app, never on the website.
+**Say:** You'll need the latest Ad-Din app, signed in. Most of this happens only in the app.
 **Show:** Opening card from You'll need.
 
 ### 2. The reminder
 #### [2.1] The sheet
-**Say:** If notifications or location are off, Ad-Din shows a gentle reminder a few seconds after you open the app. It never appears the very first time, and at most every few days.
+**Say:** If notifications or location are off, Ad-Din shows a reminder a few seconds after you open the app. It never appears the first time, and it comes back at most once every few days.
 **Show:** App home. After four seconds the sheet rises: "Stay in the loop with your masjid & madrasah". Hold on it.
-**Caption:** If notifications or location are off, a reminder appears a few seconds after you open the app. Never the first time, and at most every few days.
+**Caption:** If notifications or location are off, a reminder appears a few seconds after you open the app. Never the first time, and at most once every few days.
 
 #### [2.2] Two permissions
 **Say:** It asks for two things. **Push notifications** bring class updates, announcements and messages. **Precise location** finds the masjid nearest you and sets the Qiblah and prayer times for exactly where you are.
 **Show:** Spotlight the "Push notifications" row, then the "Precise location" row with its "Recommended" tag.
 
 #### [2.3] Not now
-**Say:** If you're busy, tap **Remind me later** and it waits a week. Under **More options**, **Don't remind me again** stops the reminder on this phone.
+**Say:** If you're busy, tap **Remind me later**, and Ad-Din asks again in a week. Under **More options**, **Don't remind me again** stops the reminder on this phone. You can still allow both later in **Preferences**.
 **Show:** Spotlight "Remind me later". Tap "More options": it opens with its note and "Don't remind me again". Spotlight it; don't tap either button.
 
 ### 3. Allow notifications and location
@@ -78,7 +78,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Tap "Allow" on the Push notifications row. The phone's own permission dialog (real-device or emulator capture); tap its allow button. The row shows a green tick.
 
 #### [3.2] Precise location
-**Say:** Now tap **Allow precise**. On your phone's screen, keep **Precise** switched on. The hint under the row tells you which button to look for.
+**Say:** The hint under the row says what to do on the next screen. Tap **Allow precise**. When your phone asks, allow location while you use the app, and keep **Precise** selected.
 **Show:** Spotlight the hint "On the next screen, keep Precise selected." Tap "Allow precise". The phone's own location dialog with Precise selected (real-device or emulator capture); tap allow.
 
 #### [3.3] All set
@@ -91,12 +91,12 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Reset the stub to approximate and reopen the app. The "Turn on Precise location" sheet rises. Zoom on "about 3 km".
 
 #### [4.2]
-**Say:** The **Nearest masjid** might be listed third or fourth, and the Qiblah and prayer times won't be set for your exact spot. Staff also see that **Staff attendance** check-in needs it.
+**Say:** The **Nearest masjid** might be listed third or fourth, and the Qiblah and prayer times won't be set for your exact spot.
 **Show:** Spotlight the two reasons: "Nearest masjid" and "Qiblah & prayer times".
-**Caption:** The nearest masjid might be listed third or fourth, and Qiblah and prayer times won't match your exact spot. Staff check-in needs it too.
+**Caption:** The nearest masjid might be listed third or fourth, and Qiblah and prayer times won't match your exact spot.
 
 #### [4.3] Switch or keep
-**Say:** **Keep approximate** closes it for now, and Ad-Din asks again next time. To fix it, tap **Switch to Precise** and follow the hint on the next screen. The sheet confirms **Precise location is on**.
+**Say:** **Keep approximate** closes it, but Ad-Din asks again whenever it needs your location. To fix it, tap **Switch to Precise** and follow the hint. The sheet then says **Precise location is on**.
 **Show:** Spotlight "Keep approximate" without tapping. Tap "Switch to Precise"; the phone's own dialog (real-device or emulator capture); accept. The sheet shows "Precise location is on" and closes.
 
 ### 5. Check it any time
@@ -113,25 +113,25 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Spotlight the hint under the location row, then tap "Open Settings". Cut before the phone's own settings page opens.
 
 #### [5.4]
-**Say:** The **Push notification** switch under **Notification preferences** is different: it's your account's choice, on every phone you use.
+**Say:** The **Push notification** switch under **Notification preferences** is different. It belongs to your account and applies on every phone you use. To get notifications, this switch and the phone's permission must both be on.
 **Show:** Scroll down; spotlight "Notification preferences" and its "Push notification" switch. Don't toggle it.
 
 ### 6. When a notification arrives
 #### [6.1] While the app is open
 **Say:** If a notification arrives while you're using the app, it slides in at the top with who sent it and the message.
-**Show:** Back on the app home. Trigger the demo push: the banner slides down with "Al-Noor Masjid", "now" and the message.
+**Show:** Back on the app home. Trigger the demo push: the banner slides down with "Maple Grove Masjid", "now" and the message.
 
 #### [6.2] Open or dismiss
 **Say:** Tap it to open what it's about. Swipe it up or tap the cross to dismiss it. If several arrive at once, the banner shows how many more there are.
 **Show:** Trigger two more pushes while the first is still up: the banner shows "+2 more". Tap the banner: the Message inbox opens with the Jumu'ah message at the top.
 
 #### [6.3] While the app is closed
-**Say:** When the app is closed, your phone shows the notification as usual. Tap it to open Ad-Din; new messages wait for you in your **Message** inbox.
+**Say:** When the app is closed, your phone shows the notification as usual. Tap it to open Ad-Din, then open your **Message** inbox to read it.
 **Show:** Real-device or emulator capture of the lock screen with the Ad-Din notification showing the same text, and no other notifications. Tap it: cut to the app opening on its home screen, then open the Message inbox with the Jumu'ah message at the top.
 
 ### 7. Done
 #### [7.1] Result
-**Say:** That's it. Ad-Din can now keep you up to date and find where you are, and you can change your mind any time in **Preferences**.
+**Say:** That's it. Once both rows say **Allowed**, Ad-Din can keep you up to date and find where you are. You can change these any time in **Preferences**.
 **Show:** Preferences › This device with both rows showing "Allowed".
 
 #### [7.2] Next
@@ -139,6 +139,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** End card with two tiles: "00.5 Your profile, notifications and GUID" and "15.1 Prayer times, monthly timetable and Qiblah".
 
 ## Review log
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 11 changes: You'll need and [1.2] say "the latest" app (precise sheet needs 2.0.52) and "most of this" (the Push switch is on the web too), [2.1] "once every few days", no "gentle" (Say and Caption), [2.3] clear subject and says Preferences can undo it, [3.2] hint first, then tap, as in the Show; which phone option to pick; "selected" as the app's hint says, [4.2] staff sentence dropped (not on screen; Say and Caption), [4.3] the sheet asks again whenever location is read (device-permissions.service.ts), [5.4] how the account switch and the phone permission work together, [6.3] says to open the inbox, [7.1] bridges to both rows Allowed, no idiom, demo names match the recording (Maple Grove Masjid)
 <!-- Newest first: date, who, what was asked, what changed. -->
 - 2026-11-03 · manager · decisions via chat · Phone screens decided: permission dialogs ([3.1], [3.2], [4.3]) and the lock-screen notification ([6.3]) are captured on a real device or emulator; Show lines, flag and demo data updated (Show only, so translations are unaffected)
 - 2026-11-03 · critic · 5 changes: [1.1] second-person opening, no phrasal verb, [2.3] no elliptical question or idiom, [4.2] "show up" replaced (Say and Caption), [6.2] clear count line, [7.2] end tiles by number
