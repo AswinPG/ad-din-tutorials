@@ -15,7 +15,10 @@ Found in Ad-Din `origin/master` (d36d69ed8) by the script writers and validators
 | Website banner editor | `initialize()` calls `deleteCarousel(currentEditingCarousel…)` while editing; may delete a banner | 09.2 |
 | Claim admin page | File-size check reversed (≤10 KB refused, big files pass); Save with no organisation → unknown error; needs a home masjid | 01.3 **(video)** |
 | Expired reset link | Opens a blank 401 page | 00.3 |
-| Finder | **Skip for now** on the madrasah step drops the masjid already picked | 00.4 |
+| Finder | **Skip for now** on the madrasah step drops the masjid already picked. Decided 2026-11-06: fix before 00.4 is published | 00.4 **(video)** |
+| Delete Account | `AccountController.cs` DeleteUserAccount calls CancelSubscription, which throws NotImplementedException for Apple and Play plans (`AppleSubscriptionRepository.cs`, `PlaySubscriptionRepository.cs`): store subscribers get Unknown error and the account stays. App Store / Play deletion compliance risk. Decided 2026-11-06: fix before 00.5 is published | 00.5 **(video)** |
+| Precise location sheet | While location is approximate, the precise sheet returns every time the app reads location, with no "don't ask again". Decided 2026-11-06: add an opt-out | 00.7 |
+| Subscription cards | Web plan cards show "$" but Stripe charges CAD plus tax. Decided 2026-11-06: label the cards CAD in the app; videos don't speak prices | 02.2, 02.3 |
 | Hifz Tracker report | Subject boxes always disabled (`subjectsDisabled`); report can't run without the gear configuration | 12.4 |
 | Volunteer skills | `loadSkills` uses the admin's home masjid, not the managed masjid | 03.3 |
 | Add New User (madrasah) | One Fetch method checks the Admin GUID box first, so a leftover Admin GUID is used for other boxes | 03.4 |
