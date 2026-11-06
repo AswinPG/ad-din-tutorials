@@ -22,9 +22,9 @@ Set Iqamah and Jumu'ah times for a whole range of days at once with Batch Update
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
-- Demo masjid "Masjid Al-Noor", signed in as its masjid admin, with automatic begin times calculated for the coming year and existing Iqamah times
+- Demo masjid "Maple Grove Masjid", signed in as its masjid admin, with automatic begin times calculated for the coming year and existing Iqamah times
 - Adhan Times saved (Maghrib Iqamah Offset 5), so Maghrib shows as locked in Batch Update
-- Date range used on camera: the whole of next month (for example 1 to 31 March), which includes four or five Fridays
+- Date range used on camera: the whole of next month for the demo clock (1 to 31 December 2026), which includes four Fridays
 - New times typed on camera: Fajr 6:00 AM, Dhuhr 1:30 PM, Isha 8:45 PM, Jumu'ah 1:15 PM, Jumu'ah 2 2:15 PM
 
 ## Script
@@ -41,7 +41,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Title card: "Set iqamah and jumu’ah times".
 
 #### [1.2]
-**Say:** Your begin times and Adhan times are already set up. Ad-Din works out each Adhan time from the Iqamah time you set here.
+**Say:** Your begin times and Adhan times are already set. Ad-Din works out each Adhan time from the Iqamah time you set here.
 **Show:** Opening card from You'll need.
 
 ### 2. Open Batch Update
@@ -76,7 +76,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Spotlight the locked Maghrib row and its note "Set Magrib Iqamah offset in adhan times".
 
 #### [4.4]
-**Say:** **Select all** ticks every prayer at once, and **Clear all** unticks them again.
+**Say:** **Select all** ticks every prayer at once. The same button then reads **Clear all**, to untick them again.
 **Show:** Hover "Select all" at the top right of the card; don't click.
 
 ### 5. Set Jumu'ah times
@@ -85,7 +85,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Spotlight the hint "Applies to Fridays only". Pick 1:15 PM for Jumu'ah and 2:15 PM for Jumu'ah 2.
 
 #### [5.2] Check the summary
-**Say:** The line at the bottom sums up your changes. If a ticked prayer still needs a time, it says so, and **Update times** stays greyed out.
+**Say:** The line at the bottom sums up your changes. If a ticked prayer still needs a time, it says so, and **Update times** can't be tapped.
 **Show:** Spotlight the summary: "Fajr, Dhuhr, Isha, Jumu'ah, Jumu'ah 2 · 31 days". Tick Asr: "1 time(s) still needed" appears and the button greys out. Untick Asr.
 
 ### 6. Save
@@ -107,15 +107,16 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** The grid loads. Spotlight a highlighted Friday row, then scroll right to "Jumu'ah Iqamah" and "Jumu'ah 2 Iqamah".
 
 #### [7.3]
-**Say:** Need another change? Tap **Change these** to go back to **Batch Update**.
-**Show:** Click "Change these"; the Batch Update tab opens.
+**Say:** If you need another change, tap **Change these** to go back to **Batch Update**. Pick the dates again there.
+**Show:** Click "Change these"; the Batch Update tab opens with empty dates.
 
 ### 8. Next
 #### [8.1] Close
-**Say:** Your Iqamah and Jumu'ah times are set. To change a single day or bring in a timetable from a spreadsheet, watch the next video. Then put your times on a TV.
+**Say:** Your Iqamah and Jumu'ah times are set. To change a single day or use a spreadsheet, watch video 04.3: Import and export a prayer timetable. Then video 04.4: Prayer times on a TV: basic displays.
 **Show:** End card with two tiles: "04.3 Import and export a prayer timetable" and "04.4 Prayer times on a TV: basic displays".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 6 changes: [1.2] "already set" (no phrasal verb), [4.4] Select all and Clear all are one button, [5.2] "can't be tapped" instead of "greyed out", [7.3] no elliptical question and says to pick the dates again (flag), [8.1] names both end tiles by number, demo names and date range match the Maple Grove demo world (December 2026)
 - 2026-11-03 · critic · 2 changes: second-person opening, [1.2] no longer says Ad-Din 'calls' the Adhan
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes
