@@ -22,12 +22,12 @@ Set up everything parents see when they enrol online: the enrolment link and QR 
 - open a class for enrolment
 
 ## Demo data
-- Demo madrasah "Al-Noor Madrasah" with a logo, where the demo account is a Madrasah Admin (with Premium)
-- A linked masjid on the Madrasah/School Details tab (so the "Parents using this link will also get … as their home masjid" line shows)
+- Demo madrasah "Maple Grove Madrasah" with a logo; the demo account (Yusuf Rahman) is its Madrasah Admin, with Premium
+- "Maple Grove Masjid" linked on the Madrasah/School Details tab (so the "Parents using this link will also get Maple Grove Masjid as their home masjid." line shows)
 - No required documents yet; one added on camera: "Birth Certificate", User Role Student, Mandatory
 - Empty agreement and FAQs, so Load Default Agreement and Load Default FAQs fill them on camera
 - No custom fields yet; one added on camera: Child Fields → "Language spoken at home", Dropdown-Single select, options English / Arabic / Urdu, Required
-- Class "Maktab Level 1" with Open for enrollment off, turned on during the video; one other class already open
+- Class "Weekend Quran" with Open for enrollment off, turned on during the video; "Hifz Class A" already open
 - Pop-ups allowed in the recording browser (Print opens a new window)
 
 ## Script
@@ -44,7 +44,7 @@ Set up everything parents see when they enrol online: the enrolment link and QR 
 ### 2. Open Enrollment Settings
 #### [2.1] Find your madrasah
 **Say:** In the sidebar, open **Admin Portal**, then **Organization Management**. Find your madrasah and tap **Manage**.
-**Show:** Sidebar → Admin Portal → Organization Management. The organisation picker; click "Manage" on "Al-Noor Madrasah". The "Manage Madrasah" page opens.
+**Show:** Sidebar → Admin Portal → Organization Management. The organisation picker; click "Manage" on "Maple Grove Madrasah". The "Manage Madrasah" page opens.
 
 #### [2.2]
 **Say:** Tap the **Enrollment Settings** tab. Everything for online enrolment is on this one page.
@@ -52,7 +52,7 @@ Set up everything parents see when they enrol online: the enrolment link and QR 
 
 ### 3. Share your enrolment link
 #### [3.1] The link
-**Say:** At the top is **Share Enrolment Link**. Parents who use this link sign up and land straight on your enrolment form. Tap **Copy** to paste it into a message or onto your website.
+**Say:** At the top is **Share Enrolment Link**. Parents who use this link sign up and land straight on your enrolment form. Tap **Copy**, then paste the link into a message or onto your website.
 **Show:** Spotlight the "Enrolment link" field, then click "Copy". Toast "Link copied".
 
 #### [3.2] The QR code
@@ -78,7 +78,7 @@ Set up everything parents see when they enrol online: the enrolment link and QR 
 
 ### 5. Your declaration and agreement
 #### [5.1] Agreement
-**Say:** **Parent/Guardian Declaration & Agreement** is the text parents must accept before they submit. Tap **Load Default Agreement** for a ready-made version.
+**Say:** **Parent/Guardian Declaration & Agreement** is the text parents must accept before they submit. Tap **Load Default Agreement** for a ready-made version. It replaces any text already there and saves straight away.
 **Show:** Scroll to the card. Click "Load Default Agreement"; the text fills the editor. Toast "Agreement and FAQs saved successfully".
 
 #### [5.2]
@@ -87,7 +87,7 @@ Set up everything parents see when they enrol online: the enrolment link and QR 
 
 ### 6. Answer common questions
 #### [6.1] FAQs
-**Say:** Under **Add FAQs**, tap **Load Default FAQs** for a set of common questions, or tap **Add FAQ** to write your own.
+**Say:** Under **Add FAQs**, tap **Load Default FAQs** for a set of common questions. It replaces any FAQs you already have. Or tap **Add FAQ** to write your own.
 **Show:** Click "Load Default FAQs"; the numbered list appears. Then click "+ Add FAQ".
 
 #### [6.2]
@@ -110,7 +110,7 @@ Set up everything parents see when they enrol online: the enrolment link and QR 
 ### 8. Open a class for enrolment
 #### [8.1] Choose the classes
 **Say:** Last, choose which classes parents can pick. In the sidebar, open **Admin Portal**, then **Class**. Select a class and tap **Edit**.
-**Show:** Sidebar → Admin Portal → Class. Click the row "Maktab Level 1", then "Edit". The "Edit Class" window opens.
+**Show:** Sidebar → Admin Portal → Class. Click the row "Weekend Quran", then "Edit". The "Edit Class" window opens.
 
 #### [8.2]
 **Say:** Turn on **Open for enrollment**, then tap **Save**. Parents can now choose this class when they enrol a child.
@@ -127,6 +127,7 @@ Set up everything parents see when they enrol online: the enrolment link and QR 
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 4 changes: [3.1] "Tap Copy, then paste" (Copy doesn't paste), [5.1] Load Default Agreement replaces the text and saves at once, [6.1] Load Default FAQs replaces your FAQs (both: editMadressah.component.ts 448-462 call saveAgreementAndFaq), demo data and Show names use the Maple Grove demo world (Maple Grove Madrasah and Masjid, Weekend Quran, Hifz Class A)
 - 2026-11-03 · manager · decisions via chat · 'Who needs a seat?' decided (own-Premium check is intended): flag wording updated; script unchanged
 - 2026-11-03 · critic · 3 changes: [1.1] second-person opening, no "along the way"; [7.1] no elliptical question; [9.2] end card by number and title
 - 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: [7.2] custom-field options start empty (Add option for each)

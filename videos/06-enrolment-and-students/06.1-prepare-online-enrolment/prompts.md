@@ -3,6 +3,7 @@
 Every instruction given to Claude for this video, newest first, with the result.
 Format: date · who · prompt (verbatim or summarised) · outcome / commit.
 
+- 2026-11-06 · Imran · "do it for all the planned ones now" (panel review, apply clear fixes) · 4 changes: [3.1] Copy wording, [5.1] and [6.1] say Load Default replaces and saves, Maple Grove demo names
 - 2026-11-03 · manager · "Decisions via chat" · 'Who needs a seat?' decided (own-Premium check is intended): flag wording updated; script unchanged
 - 2026-11-03 · manager · "use a critic subagent to criticise and find flaws in the script, make it better" · critic pass: 3 changes (opening, [7.1] plain wording, end card by number)
 - 2026-11-03 · manager · "use a sub agent to validate the script" · validator pass: 1 fix ([7.2] Show: options list starts empty).
