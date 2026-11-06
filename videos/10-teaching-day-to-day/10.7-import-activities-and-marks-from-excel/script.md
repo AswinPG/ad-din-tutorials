@@ -23,7 +23,7 @@ Create many academic activities at once from an Excel sheet, then grade a whole 
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
-- Demo madrasah "Al-Noor Madrasah" (Premium) with Academic Activity on; the demo account is a Madrasah Admin
+- Demo madrasah "Maple Grove Madrasah" (Premium) with Academic Activity on; the demo account Yusuf Rahman is a Madrasah Admin
 - Class "Maktab Level 1", section "A", subject "Fiqh", categories "Homework", "Quizzes", "Tests", term "Autumn Term"
 - A prepared activities workbook with three new rows, first saved with one mistake (a missing Score Out Of for a scored category), then corrected
 - Activity "Wudu steps worksheet" (score out of 10) with six students and no marks yet
@@ -40,7 +40,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. Save time with Excel
 #### [1.1] Opening
-**Say:** When you have many activities or a whole class to grade, Excel saves time. You'll create activities from a sheet, then grade a section from a marks sheet.
+**Say:** In this video for madrasah admins and teachers, you'll create many activities at once from an Excel sheet, then grade a whole class section from a marks sheet.
 **Show:** Title card: "Import activities and marks from Excel".
 
 #### [1.2]
@@ -49,7 +49,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 2. Get the sheet
 #### [2.1] Import
-**Say:** In the **Admin Portal**, open **Academic Activity**, then **Activity Score Management**. Choose the class, section and subject, and tap **Import**.
+**Say:** In the **Admin Portal**, open **Academic Activity**, then **Activity Score Management**. Choose the class, section and subject, and tap **Import**. Teachers find the same button in their **Teacher Portal**.
 **Show:** Sidebar → Admin Portal → Academic Activity → Activity Score Management. Pick "Maktab Level 1", "A", "Fiqh". Click "Import": the Import activities window opens.
 
 #### [2.2] Get the sheet
@@ -78,7 +78,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Excel: fill in the missing Score Out Of, save. Ad-Din: choose the file again; "Every row is ready."
 
 #### [3.4] Import
-**Say:** Tap **Import**. The button shows how many activities you're adding. Students are added in the background, so wait a minute before you start marking.
+**Say:** Tap **Import**. The button shows how many activities you're adding. Students are added in the background, so the student list can take a moment to appear.
 **Show:** Click "Import 3 activities". The note "3 activities were created." shows. Click "Close"; the three activities are in the list.
 
 ### 4. Grade from a marks sheet
@@ -104,10 +104,11 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** The Add Marks grid with all six grades.
 
 #### [5.2] Close
-**Say:** Next, see how to enter scores one by one, or how to write report card comments.
+**Say:** Next, video 10.6: Enter activity scores, and video 12.2: Write comments and mark reports ready.
 **Show:** End card with two tiles: "10.6 Enter activity scores" and "12.2 Write comments and mark reports ready".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 4 changes: [1.1] says who it's for, [2.1] says teachers have the same Import (teacherPortal/activity/activity.score/list/list.component.html), [3.4] no "wait a minute" idiom, matches the app's note (activity-import-dialog.component.html 105-106), [5.2] end tiles by number and title; demo names from the Maple Grove demo world
 - 2026-11-03 · critic · 4 changes: [2.1] names the Admin Portal (matched Show); [2.3] explains the ID sheets plainly, split long sentence; [3.4] and [4.4] "with the number of" rewritten so the counted button labels make sense; "give it a minute" idiom removed
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes (import dialog steps, row checks and server messages, Import marks on Add Marks confirmed)
