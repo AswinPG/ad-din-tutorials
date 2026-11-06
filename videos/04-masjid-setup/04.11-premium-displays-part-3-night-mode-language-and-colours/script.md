@@ -24,9 +24,9 @@ Set a premium display's night mode, Makrooh notices, Taraweeh poster, second lan
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
-- Demo masjid "Masjid Al-Noor" with an active Prayer Times Premium add-on, signed in as its masjid admin; Horizontal Display 1 laid out as in 04.5
+- Demo masjid "Maple Grove Masjid" with an active Prayer Times Premium add-on, signed in as its masjid admin; Horizontal Display 1 laid out as in 04.5
 - Language Settings with the default names: English titles, and Arabic in every Alternative Language Settings and Alternative Islamic Months Title box (Ad-Din's default); a Taraweeh preset poster available
-- Calculation settings with Minutes Before Zawal and the Al-Duha minutes above zero, so the Makrooh notices can show
+- Calculation settings with Minutes Before Zawal, Minutes After Zawal and Al-Duha Start After Minutes above zero, so both Makrooh notices can show (makrooh-times.component.ts)
 - Previews of Horizontal Display 1 with the custom colours, recorded from the dev environment with the demo masjid's data (decided 2026-11-03)
 
 ## Script
@@ -40,20 +40,20 @@ Split from 04.6 on 2026-11-03: these scenes were 04.6 [5.1]-[7.3].
 
 ### 1. Before you start
 #### [1.1] Opening
-**Say:** In this video for masjid admins, you'll finish a premium display: set night mode, Makrooh notices, a Ramadan poster, a second language and the colours.
+**Say:** This is part three of premium displays, for masjid admins. You'll finish a display: night mode, Makrooh notices, a Ramadan poster, a second language and the colours.
 **Show:** Title card: "Premium displays, part 3: night mode, language and colours".
 
 #### [1.2]
-**Say:** You'll need the Prayer Times Premium add-on. Your display is already chosen and laid out.
+**Say:** You'll need the Prayer Times Premium add-on, and a display already chosen and laid out, as in part one. Makrooh notices, the Taraweeh poster and the second language are only on the numbered displays, not on Content Only.
 **Show:** Opening card from You'll need.
 
 ### 2. Night mode
 #### [2.1] Night Mode
-**Say:** Go to **Masjid**, then **Prayer Times**, open **Premium Displays** and pick your display. **Night Mode** rests the screen overnight.
+**Say:** In the sidebar, open **Masjid**, then **Prayer Times**. Open **Premium Displays** and pick your display. **Night Mode** darkens the screen overnight.
 **Show:** Sidebar → Masjid → Prayer Times → Premium Displays → Horizontal Display 1. Click Night Mode.
 
 #### [2.2]
-**Say:** Switch it on, choose **Dim** or **Blackout**, and set the minutes **After Isha** and **Resume Before Fajr**. Tap **Save**.
+**Say:** Switch it on and choose **Dim** or **Blackout**. **After Isha** is the minutes after Isha Iqamah until it starts. **Resume Before Fajr** is the minutes before Fajr begins when the screen comes back. Tap **Save**.
 **Show:** Turn it on; select Blackout; type 60 and 30. Click Save.
 
 ### 3. Makrooh times
@@ -80,8 +80,8 @@ Split from 04.6 on 2026-11-03: these scenes were 04.6 [5.1]-[7.3].
 **Show:** Click the "Language Settings" tab. Spotlight the Arabic names under Alternative Language Settings. Click Save.
 
 #### [5.2]
-**Say:** Then, on your display, open **Alternate Language Settings**, switch on **Display Alternate Language**, and set the **Language Transition Duration** in seconds. Tap **Save**.
-**Show:** Premium Displays → Alternate Language Settings. Turn it on; type 10. Click Save.
+**Say:** Then, on your display, open **Alternate Language Settings**, switch on **Display Alternate Language**, and set the **Language Transition Duration** in seconds. Tap **Save**. **Force Alternate Language Only** shows the second language alone.
+**Show:** Premium Displays → Alternate Language Settings. Turn on Display Alternate Language; type 10. Click Save. Spotlight Force Alternate Language Only, left off.
 
 #### [5.3] Colours
 **Say:** Finally, **Display Color Controls**. Pick a ready-made set under **Select Preset**, or choose **Custom** for your own colours and fonts. Tap **Save**.
@@ -94,4 +94,5 @@ Split from 04.6 on 2026-11-03: these scenes were 04.6 [5.1]-[7.3].
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 7 changes, first validator check of the split-out opening (all labels and steps match master 7f0e6bf72): [1.1] says "part three" like parts one and two, [1.2] says the Makrooh, Taraweeh and language controls are only on the numbered displays (display-menu.config.ts), [2.1] full sidebar wording and no idiom ("darkens"), [2.2] says what After Isha and Resume Before Fajr count from (Night Mode tooltip), [5.2] adds Force Alternate Language Only, demo data names Minutes After Zawal, demo names match the Maple Grove demo world
 - 2026-11-03 · manager · decisions via chat · New video split from 04.6 (critic's taste call): night mode, Makrooh, Taraweeh, language and colours, from 04.6 chapters 5–7 (validated and critic-checked there); new opening, [1.2], sidebar path in [2.1] and closing
