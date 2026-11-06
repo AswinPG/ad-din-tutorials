@@ -23,20 +23,20 @@ Count your dhikr with the Tasbeeh counter, watch or listen to your masjid's live
 - Manage Tasbeeh: add your own dhikr (name, type, target), edit or delete it
 
 ## Demo data
-- Member account (no admin role) on the app, home masjid "Masjid Al-Noor"
+- A community member account with no admin role (not the admin demo account Yusuf Rahman: an admin sees Edit and Delete on every stream card), on the app, home masjid "Maple Grove Masjid"
 - No tasbeehs of the member's own at the start (only the three built-in chips, SubhanAllah, Alhamdulillah and Allahu Akbar, each target 33, counts at 0); "Astaghfirullah", General, 100 is added on camera in [2.4]
-- Masjid Al-Noor live streaming: an audio stream and a video stream link set (demo embeds that play a short clip); no Facebook stream
-- The member also follows "Masjid Ar-Rahman", so the Live Streaming picker in [3.3] lists more than one masjid
-- Masjid Al-Noor gallery: eight photos (masjid building, Eid prayer, iftar) and one video, all demo images with no faces of real people
-- Masjid Al-Noor forms: "Madrasah Enrolment Form" (PDF) and "Nikah Booking Form" (DOCX) with descriptions
+- Maple Grove Masjid live streaming: an audio stream and a video stream link set (demo embeds that play a short clip); no Facebook stream
+- The member also follows "Cedar Hill Masjid", so the Live Streaming picker in [3.3] lists more than one masjid
+- Maple Grove Masjid gallery: eight photos (masjid building, Eid prayer, iftar) and one video, all demo images with no faces of real people
+- Maple Grove Masjid forms: "Madrasah Enrolment Form" (PDF) and "Nikah Booking Form" (DOCX) with descriptions
 - Phone frame for every shot
 
 ## Script
 
 ### 1. Four handy tools
 #### [1.1] Opening
-**Say:** The Ad-Din app has a few useful tools for everyday life at your masjid. In this video you'll use the Tasbeeh counter, live streams, the photo gallery, and forms you can download.
-**Show:** Title card: "Tasbeeh, live streams, gallery and forms". Phone frame on the app home.
+**Say:** The Ad-Din app has a few useful tools for everyday life at your masjid. In this video, you'll use the Tasbeeh counter, live streams, the photo gallery, and forms you can download.
+**Show:** Title card: "Tasbeeh, live streams, gallery and forms". Phone frame on the app home. Side panel label: "Signed in as: a community member".
 
 ### 2. Tasbeeh counter
 #### [2.1] Open Tasbeeh
@@ -44,7 +44,7 @@ Count your dhikr with the Tasbeeh counter, watch or listen to your masjid's live
 **Show:** Tap the "Tasbeeh" tile. The counter opens; tap the "SubhanAllah" chip.
 
 #### [2.2] Count
-**Say:** Now tap anywhere on the big card to count. The bar fills as you reach the target, and the phone vibrates gently with each tap.
+**Say:** Now tap anywhere on the big card to count. The bar fills as you get closer to the target.
 **Show:** Tap the card several times: the number rises, "target 33" and the bar fill. Speed up to reach 33; the card changes to its done state.
 
 #### [2.3] Reset
@@ -57,26 +57,26 @@ Count your dhikr with the Tasbeeh counter, watch or listen to your masjid's live
 **Caption:** Add your own: Manage tasbeehs, Add, then a name, type and target, and Save.
 
 #### [2.5]
-**Say:** Your own dhikr keeps its count in your account, so it's still there next time. To change or remove one, select it under **Manage tasbeehs** and tap **Edit** or **Delete**.
+**Say:** Your own dhikr keeps its count in your account, so it's still there next time. The three built-in ones count on this phone only. To change or remove your own, select it under **Manage tasbeehs** and tap **Edit** or **Delete**.
 **Show:** Tap the "Astaghfirullah" chip, tap a few times; spotlight the count. Tap "Manage tasbeehs": tick the Astaghfirullah row; spotlight "Edit" and "Delete" without tapping. Go back.
 
 ### 3. Live streams
 #### [3.1] Streaming
 **Say:** When your masjid streams a talk or the Jumu'ah khutbah, tap **Streaming** on the home screen.
-**Show:** Back on home, tap the "Streaming" tile. The "Live Streaming" page opens with Masjid Al-Noor selected.
+**Show:** Back on home, tap the "Streaming" tile. The "Live Streaming" page opens with Maple Grove Masjid selected.
 
 #### [3.2]
 **Say:** Tap **Audio Live Streaming** to listen, or **Video Live Streaming** to watch.
 **Show:** Tap the "Audio Live Streaming" card: it opens with the audio player. Collapse it; tap "Video Live Streaming" and press play on the video.
 
 #### [3.3]
-**Say:** Follow more than one masjid? Choose another one from the list at the top.
-**Show:** Open the masjid picker at the top; show the followed masjids, then keep Masjid Al-Noor.
+**Say:** If you follow more than one masjid, choose another one from the list at the top.
+**Show:** Open the masjid picker at the top; show the followed masjids, then keep Maple Grove Masjid.
 
 ### 4. Photo gallery
 #### [4.1] Gallery
 **Say:** To see photos from your masjid, tap the **Masjid** tile, then **Gallery**.
-**Show:** Home → "Masjid" tile → "Gallery". The photo grid for Masjid Al-Noor appears.
+**Show:** Home → "Masjid" tile → "Gallery". The photo grid for Maple Grove Masjid appears.
 
 #### [4.2]
 **Say:** Tap a photo to see it full size. Swipe left and right to move through them.
@@ -89,7 +89,7 @@ Count your dhikr with the Tasbeeh counter, watch or listen to your masjid's live
 ### 5. Forms
 #### [5.1] Forms
 **Say:** Your masjid can share forms too, like an enrolment or a booking form. Tap the **Masjid** tile, then **Forms**.
-**Show:** Home → "Masjid" tile → "Forms". The "Masjid Forms" page opens with Masjid Al-Noor selected.
+**Show:** Home → "Masjid" tile → "Forms". The "Masjid Forms" page opens with Maple Grove Masjid selected.
 
 #### [5.2]
 **Say:** Each card shows the form's name, a short description, the date and the size.
@@ -101,10 +101,11 @@ Count your dhikr with the Tasbeeh counter, watch or listen to your masjid's live
 
 ### 6. Next
 #### [6.1] Close
-**Say:** That's your Tasbeeh, live streams, gallery and forms. Next, learn how to offer your skills as a volunteer at your masjid.
+**Say:** That's your Tasbeeh, live streams, gallery and forms. Next, video 15.7: Become a volunteer. Or video 15.5: Read and listen to the Quran.
 **Show:** End card with two tiles: "15.7 Become a volunteer" and "15.5 Read and listen to the Quran".
 
 ## Review log
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 6 changes: [2.2] no vibration promise (navigator.vibrate is best-effort and missing on iPhone, tasbeehCounter.component.ts); [2.5] says the three built-in dhikr count on this phone only (localStorage); [3.3] no elliptical question; [1.1] comma and a "Signed in as: a community member" label; [6.1] names both end tiles by number and title; demo names match the Maple Grove demo world, on a member account
 - 2026-11-03 · critic · 3 changes: [1.1] standard "In this video" opening, [2.2] "a little buzz" → "vibrates gently" (translation), [4.3] plain sentence instead of a clipped question · fold: Manage Tasbeeh added to Covers; [2.5] adds Edit and Delete on the Manage tasbeehs list ([2.4] already shows Add)
 <!-- Newest first: date, who, what was asked, what changed. -->
 - 2026-11-03 · validator · checked against master d36d69ed8 · 2 fixes: demo data no longer pre-saves Astaghfirullah (it is added on camera in [2.4]), adds a second followed masjid for [3.3]
