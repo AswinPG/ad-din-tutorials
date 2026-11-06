@@ -39,21 +39,25 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. Before you start
 #### [1.1] Opening
-**Say:** In this video for people who run a masjid or madrasah, you'll register it on Ad-Din: a masjid, a madrasah, or both. You become its first administrator.
+**Say:** This video is for people who run a masjid or madrasah. You'll register it on Ad-Din, as a masjid, a madrasah, or both, and become its first admin.
 **Show:** Title card: "Register a masjid, madrasah, or both".
 
 #### [1.2]
 **Say:** You'll need your Ad-Din account and the organisation's address, phone number and email. Only people allowed to act for the organisation should register it.
 **Show:** Opening card from You'll need.
 
-### 2. Start from the finder
+### 2. Add a new organisation
 #### [2.1] Add new organization
-**Say:** Open the finder, the page where you choose your home masjid and madrasah. You land here right after signing up. Tap **Don't see your organization?**, then **Add new organization**.
+**Say:** Open the page where you choose your home masjid and madrasah. You land there right after signing up. Later, open it from your profile: **Home & Followed Orgs**, then **Change**. Tap **Don't see your organization?**, then **Add new organization**.
 **Show:** Finder page on the "Search by Name / Address" tab. Click "Don't see your organization?"; the section opens. Click "Add new organization".
-**Caption:** Open the finder (you land there after signing up). Tap Don't see your organization?, then Add new organization.
+**Caption:** Open the page where you choose your home masjid and madrasah (after signing up, or Home & Followed Orgs › Change). Tap Don't see your organization?, then Add new organization.
+
+#### [2.1a] Already listed
+**Say:** If your masjid is already listed but someone else runs it, don't register it again. Video 01.3 shows how to ask Ad-Din to make you its admin.
+**Show:** Before opening "Don't see your organization?", spotlight one listed masjid card in the list.
 
 #### [2.2] Authorized Representatives Only
-**Say:** Ad-Din checks first: **Authorized Representatives Only**. That means board members, trustees, executives or designated administrators. If that's you, tap **Yes! Continue**.
+**Say:** First, Ad-Din shows a warning: **Authorized Representatives Only**. Only board or committee members, trustees, or people the committee has chosen should register. If that's you, tap **Yes! Continue**.
 **Show:** The warning card. Spotlight the description, then click "Yes! Continue →". Don't click "No, Go back".
 
 ### 3. Choose the type and agree
@@ -62,9 +66,9 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** "Register your organization" page. Hover each option, then click "Masjid & Madrasah".
 
 #### [3.2] Terms of Service
-**Say:** Read the **Terms of Service**. You become the first administrator, Ad-Din may contact you before approving, and others see your organisation on the map only after approval.
-**Show:** Scroll the six terms slowly. Spotlight terms 1 and 2.
-**Caption:** Read the Terms of Service: you become the first administrator, Ad-Din may contact you, and you appear on the map after approval.
+**Say:** Read the **Terms of Service**. You become the first admin, Ad-Din may contact you before approving, and others see your organisation on the map only after approval. You agree to keep prayer times accurate, and an unmanaged organisation can be suspended.
+**Show:** Scroll the six terms slowly. Spotlight terms 1, 2 and 4.
+**Caption:** Read the Terms of Service: you become the first admin, Ad-Din may contact you, and others see your organisation on the map only after approval. Keep prayer times accurate; an unmanaged organisation can be suspended.
 
 #### [3.3]
 **Say:** Tick the box to agree to the **Terms of Service**, then tap **Continue**.
@@ -76,7 +80,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Overlay "Ad-Din needs your location to continue." with "Please wait while we fetch your location."; it closes and the form shows.
 
 #### [4.2] Masjid Name
-**Say:** Start typing the **Masjid Name**. If Google suggests your masjid, pick it, and Ad-Din fills in the address for you. If nothing matches, just type the name.
+**Say:** Start typing the **Masjid Name**. A list of places from Google Maps drops down. If your masjid is there, pick it, and Ad-Din fills in the address for you. If nothing matches, just type the name.
 **Show:** Type "Masjid Al-Huda" in Masjid Name; the suggestion list drops down; click the demo suggestion. The address fields fill in.
 
 #### [4.3] Masjid Address
@@ -84,12 +88,12 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Spotlight the filled address fields one by one.
 
 #### [4.4] Madrasah details
-**Say:** When you add both, the madrasah uses the masjid's details unless you say otherwise. Tick **Madrasah's legal name is different** to give it its own **Madrasah Name**, then enter the **No of students**.
+**Say:** When you add both, the madrasah uses the masjid's details. If the madrasah has a different name, tick **Madrasah's legal name is different** and type it in **Madrasah Name**. Then enter the number of students in **No of students**.
 **Show:** Tick "Madrasah's legal name is different"; Madrasah Name appears. Type "Al-Huda Madrasah", then "120" in No of students. Spotlight "Madrasah's legal address is different" without ticking it.
-**Caption:** When you add both, the madrasah copies the masjid's details. Tick Madrasah's legal name is different to name it, then enter the number of students.
+**Caption:** When you add both, the madrasah uses the masjid's details. If its name is different, tick Madrasah's legal name is different and type it. Then enter the number of students.
 
 #### [4.5] A little about you
-**Say:** Under **We need some more information**, tick the lines that are true for you: whether you live nearby, sit on the board, or are the Imam or Principal.
+**Say:** Under **We need some more information**, tick the lines that are true for you: whether you live nearby, are a board member, or are the Imam or Principal.
 **Show:** Tick "I am one of trustee or board member of this Masjid." and "I am one of trustee or board member of this Madrasah."
 
 ### 5. Set the location
@@ -124,7 +128,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Spotlight the dialog text, then click "Proceed". Loading spinner.
 
 #### [7.3] Thank You
-**Say:** **Thank You**! Your masjid and madrasah are added and now under review. Ad-Din also emails you instructions for setting up.
+**Say:** **Thank You**! Ad-Din has added your masjid and madrasah and is now reviewing them. Ad-Din also emails you instructions for setting up.
 **Show:** The "Thank You !" popup with the Arabic line and both names. Zoom on "Your submission is under review."
 
 #### [7.4] Finish
@@ -133,10 +137,11 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 8. Next
 #### [8.1] Close
-**Say:** You're now the administrator of your new masjid and madrasah. Next, video 01.2 shows what happens while Ad-Din reviews it, and video 02.1 explains how Ad-Din plans work.
+**Say:** You're now the first admin of your new masjid and madrasah, and you can start setting them up once Ad-Din approves them. Next, video 01.2 shows what happens while Ad-Din reviews them, and video 02.1 explains how Ad-Din plans work.
 **Show:** End card with two tiles: "01.2 After you register: approval" and "02.1 How Ad-Din plans work".
 
 ## Review log
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 10 changes: [1.1] no nested opening, "admin" (one word across the series), [2.1] no "finder" (clashes with Masjid Finder) and the route back from the profile (Change opens the same page with Don't see your organization?), new [2.1a] points to 01.3 so a listed masjid isn't registered twice, [2.2] plain English, [3.2] adds the prayer-times and suspension terms (term_2, term_4), Caption matches, [4.2] says the list comes from Google Maps, [4.4] no idiom, Caption says "uses" like the Say, [4.5] no idiom, [7.3] no passive, [8.1] admin menus wait for approval
 <!-- Newest first: date, who, what was asked, what changed. -->
 - 2026-11-03 · manager · decisions via chat · 'Sign-up and register page links' decided (wide shots, bug stays logged): checked, [3.3] keeps the shot wide and no scene zooms or clicks the Terms of Service link ([3.2] spotlights the terms text only); no change
 - 2026-11-03 · critic · 2 changes: [1.1] second-person opening, [8.1] end tiles by number
