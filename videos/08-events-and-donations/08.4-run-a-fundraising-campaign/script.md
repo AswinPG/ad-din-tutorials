@@ -28,10 +28,10 @@ Create a donation campaign with pictures, a goal, a PayPal donate button and the
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
-- Masjid Admin account, admin of "Masjid Al-Noor" (Premium) and "Al-Noor Madrasah"; home madrasah set, so Campaign List first shows Al-Noor Madrasah
-- Masjid Al-Noor already has one campaign, "Ramadan Iftar Fund"
-- New campaign typed on camera: Title "Roof Repair Appeal", Sub Title "Help us fix the prayer hall roof before winter", Goal Amount 25000, Hosted Button ID `8JHK2M4QWERTY` (sandbox, fictional), two roof photos (900 × 600) ready to upload, a short story for Content
-- Masjid Al-Noor demo website (Website add-on) showing "Roof Repair Appeal" under Masjid Donations for the closing shot
+- Masjid Admin account, admin of "Maple Grove Masjid" (Premium) and "Maple Grove Madrasah"; home madrasah set, so Campaign List first shows Maple Grove Madrasah
+- Maple Grove Masjid already has one campaign, "Ramadan Iftar Fund"
+- New campaign typed on camera: Title "Roof Repair Appeal", Sub Title "Help us fix the prayer hall roof before winter", Goal Amount 25000, Hosted Button ID `MGDEMO2026X` (fictional; not the field's own placeholder "e.g. 8JHK2M4QWERTY", so the typing shows), two roof photos (900 × 600) ready to upload, a short story for Content
+- Maple Grove Masjid demo website (Website add-on) showing "Roof Repair Appeal" under Masjid Donations for the closing shot
 
 ## Script
 <!--
@@ -43,7 +43,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. Raise money for a cause
 #### [1.1] Opening
-**Say:** A new roof, an iftar fund, help for a family in need: a campaign tells your community what you're raising money for, and how close you are.
+**Say:** A new roof, an iftar fund, help for a family in need: a campaign tells your community what you're raising money for, and how close you are. In this video, you create one and publish it.
 **Show:** Title card: "Run a fundraising campaign".
 
 #### [1.2]
@@ -57,7 +57,7 @@ See docs/SCRIPT-FORMAT.md.
 
 #### [2.2]
 **Say:** Check the organisation at the top. If it shows your madrasah, choose your masjid.
-**Show:** Open the "Select an Organisation" list; choose "Masjid Al-Noor-(masjid)". The list shows "Ramadan Iftar Fund".
+**Show:** Open the "Select an Organisation" list; choose "Maple Grove Masjid-(masjid)". The list shows "Ramadan Iftar Fund".
 
 #### [2.3]
 **Say:** Tap **Add Campaign**. A new campaign starts as a draft, so no one sees it yet.
@@ -74,7 +74,7 @@ See docs/SCRIPT-FORMAT.md.
 
 #### [3.3] Details
 **Say:** Under **Donation Details**, pick your masjid as the **Organisation**. Type a **Title**, and a one-line **Sub Title** saying who it helps.
-**Show:** Choose "Masjid Al-Noor-(masjid)" in Organisation. Type the demo Title and Sub Title.
+**Show:** Choose "Maple Grove Masjid-(masjid)" in Organisation. Type the demo Title and Sub Title.
 
 ### 4. Goal and PayPal
 #### [4.1] Goal
@@ -87,8 +87,8 @@ See docs/SCRIPT-FORMAT.md.
 **Caption:** Paste your PayPal Hosted Button ID. In PayPal: Pay & Get Paid → Donations.
 
 #### [4.3]
-**Say:** This links the campaign to your own PayPal button, so gifts go straight to your masjid's account.
-**Show:** Hold on the filled Payment Methods card.
+**Say:** This links the campaign to your own PayPal button, so gifts go straight to your masjid's PayPal account, not through Ad-Din.
+**Show:** On the filled Payment Methods card, spotlight the PayPal row's "Enabled" chip and its line "Card and PayPal balance payments".
 
 ### 5. Visibility
 #### [5.1] Pin card to top
@@ -96,7 +96,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Toggle "Pin card to top" on.
 
 #### [5.2] Hide donation progress
-**Say:** Prefer not to show the total? Turn on **Hide donation progress**, and donors won't see the amount raised.
+**Say:** If you'd rather not show the total, turn on **Hide donation progress**, and donors won't see the amount raised.
 **Show:** Spotlight "Hide donation progress" and its note; leave it off for this campaign.
 
 #### [5.3] Publish
@@ -118,14 +118,15 @@ See docs/SCRIPT-FORMAT.md.
 
 #### [6.4] Live
 **Say:** If your masjid has an Ad-Din website, published campaigns appear there, under **Masjid Donations**.
-**Show:** Browser on the Masjid Al-Noor demo website: the "Masjid Donations" section with "Roof Repair Appeal" first.
+**Show:** Browser on the Maple Grove Masjid demo website: the "Masjid Donations" section with "Roof Repair Appeal" first.
 
 ### 7. Next
 #### [7.1] Close
-**Say:** To change a campaign later, tick it and tap **Edit Campaign**. Next, see who has given, and record cash or cheque gifts yourself.
+**Say:** To change a campaign later, tick it and tap **Edit Campaign**. Next, video 08.5: Track donations and record offline gifts. Or video 15.4: Donate to your masjid.
 **Show:** Tick the "Roof Repair Appeal" row; spotlight "Edit Campaign". End card with two tiles: "08.5 Track donations and record offline gifts" and "15.4 Donate to your masjid".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 6 changes: [1.1] says what you'll do (second person), [4.3] money goes to your own PayPal account, not through Ad-Din, and the Show spotlights something new, [5.2] no elliptical question, [7.1] names both end tiles by number; demo Hosted Button ID no longer the field's placeholder; demo names match the Maple Grove demo world
 - 2026-11-03 · critic · 2 changes: [2.3] explains the Draft chip on screen (sets up [5.3]); [6.4] no longer implies every masjid has a website (add-on), same wording as 08.3 [4.2]
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes
