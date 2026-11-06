@@ -27,8 +27,8 @@ Change single days in Manual Update, export the year's timetable to a spreadshee
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
-- Demo masjid "Masjid Al-Noor", signed in as its masjid admin, with automatic begin times and Iqamah times for the coming year
-- A month to load on camera (for example March) with a Friday row to edit (Isha Iqamah moved to 9:00 PM). The demo clock must sit before the end of that month, so its button opens this year's month: the same year the export and import cover
+- Demo masjid "Maple Grove Masjid", signed in as its masjid admin, with automatic begin times and Iqamah times for the coming year
+- A month to load on camera: December, since the demo clock is 10 November 2026 (Friday rows 4, 11, 18, 25 December), with a Friday row to edit (Isha Iqamah moved to 9:00 PM). The demo clock must sit before the end of that month, so its button opens this year's month: the same year the export and import cover
 - An export file for the demo (zip with one CSV), and an edited CSV ready to import (all rows with Fajr, Dhuhr, Asr and Isha Iqamah filled)
 - A second CSV with one empty Isha cell in the 12th data row (spreadsheet row 13, under the header), for the error message "Import failed. Row 12: Iqamah times can't be null"
 
@@ -56,7 +56,7 @@ See docs/SCRIPT-FORMAT.md.
 
 #### [2.2] Load a month
 **Say:** Tap a month to load its days. Each row is a date, with the begin and Iqamah times for every prayer.
-**Show:** Click "March". The grid fills: Date, Fajr Begins, Fajr Iqamah, Sunrise, Dhuhr Begins and so on; scroll right to the Jumah columns.
+**Show:** Click "December". The grid fills: Date, Fajr Begins, Fajr Iqamah, Sunrise, Dhuhr Begins and so on; scroll right to the Jumah columns.
 
 ### 3. Change a single day
 #### [3.1] Edit a time
@@ -77,7 +77,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Click Export in the same toolbar. Spinner, then the browser's download shows a .zip file.
 
 #### [4.2] Open the file
-**Say:** The download is a zip file. Inside is a CSV file with one row per day of the current year.
+**Say:** The download is a zip file, a folder packed into one file. Open it, and inside is a CSV file with one row per day of the current year.
 **Show:** In File Explorer, open the zip and the CSV inside; it opens in Excel with a date column and a column per time.
 
 #### [4.3] Edit it
@@ -117,13 +117,14 @@ See docs/SCRIPT-FORMAT.md.
 ### 6. Check and finish
 #### [6.1] Check
 **Say:** Open the month again. The new times from your file are there.
-**Show:** Click "March" again; the edited Isha times show.
+**Show:** Click "December" again; the edited Isha times show.
 
 #### [6.2] Close
-**Say:** Your timetable is now in Ad-Din. Next, put it on a TV in your masjid, or set Iqamah times for many days at once.
+**Say:** Your timetable is now in Ad-Din. Next, video 04.4: Prayer times on a TV: basic displays. Or video 04.2: Set Iqamah and Jumu'ah times, to change many days at once.
 **Show:** End card with two tiles: "04.4 Prayer times on a TV: basic displays" and "04.2 Set iqamah and jumu’ah times".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 3 changes: [4.2] says what a zip file is, [6.2] names both end tiles by number, demo names and month (December) match the Maple Grove demo world and its clock
 - 2026-11-03 · critic · 3 changes: second-person opening, new [4.3a] date-format tip (from the validator flag), [6.1] split into check + [6.2] close that explains both end tiles
 - 2026-11-03 · validator · checked against master d36d69ed8 · 3 fixes: [5.6] error toast is "Import failed. Row 12: ..." and the window stays open; demo data row 12 = 12th data row; demo clock must keep the March button on the export year. Flag added: Excel date format
