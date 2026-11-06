@@ -115,6 +115,102 @@ pronunciations:
     # 2026-11-06 review panel: the app's spelling "Madressah" and the label "No of students"
     Madressah: Madrasah
     "No of": number of
+    # 2026-11-06 review panel, all tracks: every video number, and labels the voice misreads
+    "00.1": zero zero point one
+    "03.2": zero three point two
+    "03.4": zero three point four
+    "03.5": zero three point five
+    "04.1": zero four point one
+    "04.10": zero four point ten
+    "04.11": zero four point eleven
+    "04.2": zero four point two
+    "04.3": zero four point three
+    "04.4": zero four point four
+    "04.5": zero four point five
+    "04.6": zero four point six
+    "04.7": zero four point seven
+    "04.8": zero four point eight
+    "04.9": zero four point nine
+    "05.1": zero five point one
+    "05.2": zero five point two
+    "05.3": zero five point three
+    "05.4": zero five point four
+    "05.5": zero five point five
+    "05.6": zero five point six
+    "05.7": zero five point seven
+    "05.8": zero five point eight
+    "06.1": zero six point one
+    "06.2": zero six point two
+    "06.3": zero six point three
+    "06.4": zero six point four
+    "06.5": zero six point five
+    "07.2": zero seven point two
+    "07.3": zero seven point three
+    "07.4": zero seven point four
+    "08.1": zero eight point one
+    "08.2": zero eight point two
+    "08.3": zero eight point three
+    "08.4": zero eight point four
+    "08.5": zero eight point five
+    "09.1": zero nine point one
+    "09.2": zero nine point two
+    "09.3": zero nine point three
+    "09.4": zero nine point four
+    "09.5": zero nine point five
+    "09.6": zero nine point six
+    "10.1": ten point one
+    "10.10": ten point ten
+    "10.12": ten point twelve
+    "10.2": ten point two
+    "10.3": ten point three
+    "10.4": ten point four
+    "10.5": ten point five
+    "10.6": ten point six
+    "10.7": ten point seven
+    "10.8": ten point eight
+    "10.9": ten point nine
+    "11.1": eleven point one
+    "11.2": eleven point two
+    "11.3": eleven point three
+    "11.4": eleven point four
+    "12.1": twelve point one
+    "12.2": twelve point two
+    "12.3": twelve point three
+    "12.4": twelve point four
+    "12.5": twelve point five
+    "12.6": twelve point six
+    "13.1": thirteen point one
+    "13.2": thirteen point two
+    "13.3": thirteen point three
+    "13.4": thirteen point four
+    "13.5": thirteen point five
+    "13.6": thirteen point six
+    "13.7": thirteen point seven
+    "13.8": thirteen point eight
+    "14.1": fourteen point one
+    "14.2": fourteen point two
+    "14.3": fourteen point three
+    "14.4": fourteen point four
+    "14.5": fourteen point five
+    "15.2": fifteen point two
+    "15.3": fifteen point three
+    "15.4": fifteen point four
+    "15.5": fifteen point five
+    "15.6": fifteen point six
+    "15.7": fifteen point seven
+    "15.8": fifteen point eight
+    "16.1": sixteen point one
+    "16.2": sixteen point two
+    "Phone 01": Phone zero one
+    WebP: web P
+    UserID: user I-D
+    Iqamaah: Iqamah
+    Mixlr: Mixler
+    Acqusition: acquisition
+    "Non - Scored": non-scored
+    CutOff: cut off
+    v2: version two
+    v3: version three
   # 2026-11-05 pilot translations: Ad-Din sounds like "Udd Din" in every language, in the voice's own script for ar and
   # ur (the Urdu voice was silent on Latin names); video numbers and symbols spelled out in the language.
   ar:
@@ -387,9 +483,12 @@ playlists:
     - 02.1-02.6
     - 03.1-03.2
     - 03.4-03.5
+    - "04.9"
     - 05.1-05.8
     - "06.1"
+    - "06.2"
     - 06.3-06.5
+    - "07.1"
     - 07.2-07.4
     - "10.3"
     - "10.5"
@@ -407,6 +506,8 @@ playlists:
     - 10.1-10.10
     - "10.12"
     - "12.2"
+    - "12.4"
+    - "12.6"
     - 13.7-13.8
     - "16.1"
   Staff (non-teaching):
@@ -421,6 +522,7 @@ playlists:
     - "02.2"
     - "06.2"
     - "07.1"
+    - "07.4"
     - 14.1-14.4
     - 15.1-15.4
   Student:
