@@ -111,7 +111,7 @@ pronunciations:
     "15.1": fifteen point one
     "&": and
     "/": or
-    GUID: G-U-I-D  # default pending Imran's choice of how to say GUID (2026-11-06)
+    GUID: G-U-I-D  # decided by Imran 2026-11-06: say the letters
     # 2026-11-06 review panel: the app's spelling "Madressah" and the label "No of students"
     Madressah: Madrasah
     "No of": number of
@@ -372,9 +372,7 @@ playlists:
   Masjid admin:
     - 00.1-00.7
     - 01.1-01.3
-    - "02.1"
-    - "02.3"
-    - "02.5"
+    - 02.1-02.5
     - "02.6"
     - 03.1-03.3
     - 04.1-04.11
@@ -385,7 +383,7 @@ playlists:
     - 13.1-13.6
   Madrasah admin:
     - 00.1-00.7
-    - 01.1-01.2
+    - 01.1-01.3
     - 02.1-02.6
     - 03.1-03.2
     - 03.4-03.5
