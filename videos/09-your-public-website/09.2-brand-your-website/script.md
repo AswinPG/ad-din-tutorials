@@ -24,10 +24,10 @@ Give your Ad-Din website your colour, logo, banner slides, welcome text, social 
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
-- Masjid Admin account, admin of "Masjid Al-Noor", website active at the demo address `alnoor` with the Website add-on
-- Settings start plain: default colour, no logo, no banner slides, Organization name on banner "Masjid Al-Noor", no social links or contact emails
-- Files ready: Masjid Al-Noor logo PNG; two banner photos 1920 × 600 ("prayer hall", "Ramadan iftar")
-- Typed on camera: slide 1 title "Welcome to Masjid Al-Noor", description "Prayer, learning and community for every family."; action button to Internal page "All Masjid Events"; banner text "A home for prayer and learning in the heart of Riverside."; Facebook URL `https://facebook.com/masjidalnoor.example`, YouTube URL `https://youtube.com/@masjidalnoor.example`; contact emails `office@alnoor.example` and `imam@alnoor.example`
+- Masjid Admin account, admin of "Maple Grove Masjid", website active at the demo address `maplegrove` with the Website add-on
+- Settings start plain: default colour, no logo, no banner slides, Organization name on banner "Maple Grove Masjid", no social links or contact emails
+- Files ready: Maple Grove Masjid logo PNG; two banner photos 1920 × 600 ("prayer hall", "Ramadan iftar")
+- Typed on camera: slide 1 title "Welcome to Maple Grove Masjid", description "Prayer, learning and community for every family."; action button to Internal page "All Masjid Events"; banner text "A home for prayer and learning in Maple Grove."; Facebook URL `https://facebook.com/maplegrovemasjid.example.com`, YouTube URL `https://youtube.com/@maplegrovemasjid.example.com`; contact emails `office@maplegrove.example.com` and `imam@maplegrove.example.com`
 - Demo website open in a second tab for the closing shot
 
 ## Script
@@ -40,7 +40,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. Make it look like your masjid
 #### [1.1] Opening
-**Say:** Your Ad-Din website is switched on. Now let's make it look like your masjid: colour, logo, banner and links.
+**Say:** Your Ad-Din website is switched on. In this video, you make it look like your masjid: colour, logo, banner and links.
 **Show:** Title card: "Brand your website".
 
 #### [1.2]
@@ -53,7 +53,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Click a green swatch; it shows a tick.
 
 #### [2.2]
-**Say:** Need your exact brand colour? Tap **Custom**, pick it, and tap the tick.
+**Say:** For your exact brand colour, tap **Custom**, pick it, and tap the tick.
 **Show:** Click "Custom"; the picker opens; choose a shade; click the tick.
 
 #### [2.3] Logo
@@ -70,7 +70,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Type the demo title and description. Click "Add image"; choose the prayer hall photo; crop and upload. The preview updates.
 
 #### [3.3] Action button
-**Say:** Want a button on the slide? Turn on **Action button** and choose where it links: a service page, an outside link, or a page on your site.
+**Say:** To put a button on the slide, turn on **Action button** and choose where it links: a service page, an outside link, or a page on your site.
 **Show:** Toggle "Action button" on. Click "Internal page"; choose "All Masjid Events" (the banner's internal-page list has no prayer-times page). Switch the preview to Mobile, then back to Desktop.
 
 #### [3.4]
@@ -92,7 +92,7 @@ See docs/SCRIPT-FORMAT.md.
 
 #### [4.3] Contact emails
 **Say:** Under **Contact emails**, add up to three addresses. They get every message sent through your website's contact form.
-**Show:** Type "office@alnoor.example", click "Add"; type "imam@alnoor.example", click "Add". Two email chips appear.
+**Show:** Type "office@maplegrove.example.com", click "Add"; type "imam@maplegrove.example.com", click "Add". Two email chips appear.
 
 ### 5. Save and check
 #### [5.1] Save changes
@@ -105,10 +105,11 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 6. Next
 #### [6.1] Close
-**Say:** Your website now looks like your masjid. Next, build the menu visitors use to find their way around.
+**Say:** Your website now looks like your masjid. Next, video 09.3: Build your website menu. Or video 09.6: What visitors see.
 **Show:** End card with two tiles: "09.3 Build your website menu" and "09.6 What visitors see".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 4 changes: [1.1] second person instead of "let's", [2.2] and [3.3] no elliptical questions, [6.1] names both end tiles by number; demo names, links and emails match the Maple Grove demo world
 - 2026-11-03 · critic · 1 change: [3.4] says which Save changes (banner editor vs the page button in [5.1])
 - 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: banner action button linked to "All Masjid Events" (banner internal-page list has no Prayer Times page)
