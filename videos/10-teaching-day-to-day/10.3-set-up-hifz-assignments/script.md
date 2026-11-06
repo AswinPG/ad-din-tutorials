@@ -26,7 +26,7 @@ Map daily Hifz tasks such as Sabaq, Sabaq Para, Dour and Test Para to a class an
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
-- Demo madrasah "Al-Noor Madrasah" (Premium); the demo account is a Madrasah Admin
+- Demo madrasah "Maple Grove Madrasah" (Premium); the demo account Yusuf Rahman is a Madrasah Admin
 - Class "Hifz Boys" with sections "A" and "B", each with five enrolled demo students
 - Subject "Hifz" on that class
 - Three mappings already in place for "Hifz Boys" (Sabaq Para, Dour, Test Para) so the list shows several rows; one older mapping with an end date in the past, shown as Ended
@@ -43,11 +43,11 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. Daily Hifz tasks
 #### [1.1] Opening
-**Say:** Hifz assignments tell Ad-Din which daily Quran tasks each class works on, such as Sabaq, Sabaq Para, Dour and Test Para. Teachers then see a task for every student, ready to mark.
+**Say:** In this video for madrasah admins, you'll set up Hifz assignments: the daily Quran tasks each class works on, such as Sabaq, Sabaq Para, Dour and Test Para.
 **Show:** Title card: "Set up Hifz assignments".
 
 #### [1.2]
-**Say:** This is for madrasah admins. Your classes, sections and Hifz subject are already set up.
+**Say:** Your classes, sections and Hifz subject are already set up. Once you add a task, teachers see it for every student, ready to mark.
 **Show:** Opening card.
 
 ### 2. Open the mappings
@@ -115,10 +115,11 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Click the "Assignment Records" tab. Click a row: the student's record opens on the right.
 
 #### [9.2] Close
-**Say:** Next, see how teachers record daily Hifz progress, and how parents follow it at home.
+**Say:** Next, video 10.4: Record daily Hifz progress, and video 14.3: Follow Hifz progress and classwork.
 **Show:** End card with two tiles: "10.4 Record daily Hifz progress" and "14.3 Follow Hifz progress and classwork".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 3 changes: [1.1] says who it's for first (second person), [1.2] says what teachers then see, [9.2] end tiles by number and title; demo names from the Maple Grove demo world
 - 2026-11-03 · critic · 0 changes: clear, well ordered, Say and Show match
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes (mapping dialog, exclusions, recurrence, picker lock, end date and records tab confirmed)
