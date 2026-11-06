@@ -22,7 +22,7 @@ Add a class with its type, grade set, enrolment setting and program page, so it'
 - Add Class: Type, Numeric Class Name, Hifz, Evaluation Grade Set, Bi-Directional Communication Allowed, “Open for enrollment”, program page
 
 ## Demo data
-- Demo madrasah "Al-Noor Madrasah"; the demo admin has Premium; academic activities are on for the madrasah (otherwise Type is locked to Religious and the Academic quick cut in [3.2] can't be done)
+- Demo madrasah "Maple Grove Madrasah"; the demo admin has Premium; academic activities are on for the madrasah (otherwise Type is locked to Religious and the Academic quick cut in [3.2] can't be done)
 - Existing class "Maktab Level 1" in the list, with sections and students
 - Grade set "Hifz Grades" (from 05.2)
 - New class added on camera: "Hifz Boys", Religious, numeric name 2, Quran Hifz Yes, grade set "Hifz Grades"
@@ -54,9 +54,9 @@ Add a class with its type, grade set, enrolment setting and program page, so it'
 **Show:** Type "Hifz Boys". Open Type; spotlight Religious and Academic; keep Religious.
 
 #### [3.2]
-**Say:** Add a **Numeric Class Name**: the class level as a number. For academic classes you pick it from a list, from JK up to grade 12.
-**Show:** Type "2" in Numeric Class Name. Quick cut: switching Type to Academic turns it into a list (JK, SK, 1, 2…); switch back to Religious.
-**Caption:** Numeric Class Name is the class level as a number. Academic classes pick it from a list.
+**Say:** Add a **Numeric Class Name**: the class level as a number. For academic classes, you pick the grade from a list.
+**Show:** Quick cut first: switching Type to Academic turns Numeric Class Name into a list (JK, SK, 1, 2…); switch back to Religious. Then type "2" in Numeric Class Name. (Switching Type clears the box, so type the number after the quick cut.)
+**Caption:** Numeric Class Name is the class level as a number. Academic classes pick the grade from a list.
 
 #### [3.3]
 **Say:** Answer **Is this a Quran Hifz (Memorization) class?** This one is, so tap **Yes**.
@@ -67,7 +67,7 @@ Add a class with its type, grade set, enrolment setting and program page, so it'
 **Show:** Open Evaluation Grade Set (the Academic quick cut in [3.2] cleared the default set); pick "Hifz Grades".
 
 #### [3.5]
-**Say:** Turn on **Bi-Directional Communication Allowed** if parents and teachers in this class may message each other.
+**Say:** Turn on **Bi-Directional Communication Allowed** if parents and teachers in this class can message each other.
 **Show:** Turn the switch on.
 
 ### 4. Open for enrollment
@@ -103,6 +103,7 @@ Add a class with its type, grade set, enrolment setting and program page, so it'
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 4 changes: [3.2] Show records the Academic quick cut before typing the number (switching Type clears Numeric Class Name, class-dialog.component.ts 105-107); [3.2] Say and Caption drop "JK up to grade 12" (list also has 101-120); [3.5] "can" not "may"; demo madrasah is Maple Grove
 - 2026-11-03 · manager · decisions via chat · 'Who needs a seat?' decided (own-Premium check is intended): flag wording updated; script unchanged
 - 2026-11-03 · critic · 6 changes: [1.1] second-person opening; [2.2] "the basics" made concrete; [3.3] gives the reason for Yes (was a bare instruction); [5.3] add-on wording "If your madrasah has an Ad-Din website", Say now matches the two clicks; [5.4] Say covers the Close the Show does; [6.2] end card by number and title
 - 2026-11-03 · validator · checked against master d36d69ed8 · 3 fixes: [5.4] Save opens a tips pop-up, tap Add Class, then Alert/Close; [3.4] Academic quick cut clears the default grade set; demo data: academic activities on so Type can switch
