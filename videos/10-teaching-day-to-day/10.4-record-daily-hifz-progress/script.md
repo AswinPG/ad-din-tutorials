@@ -22,11 +22,11 @@ Record what each Hifz student recited today, count the mistakes, add a note for 
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
-- Demo madrasah "Al-Noor Madrasah" (Premium); teacher Yusuf Patel teaches Class "Hifz Boys", section "A"
+- Demo madrasah "Maple Grove Madrasah" (Premium); teacher Bilal Hussain teaches Class "Hifz Boys", section "A"
 - A daily "Sabaq" mapping (Quran by Ayah) for that section, with a mark deduction per mistake set on the subject
 - Today's list: five students; one Not Submitted, two Pending Review (one with a note from the parent), one Marked, one Failed (1)
 - The student marked on camera has a previous attempt with a teacher's note
-- Web: signed in as Yusuf. App: the same account in a phone frame for the last chapter
+- Web: signed in as Bilal. App: the same account in a phone frame for the last chapter
 
 ## Script
 <!--
@@ -108,10 +108,11 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Phone frame. The same marking screen; tap "Back to Listing" at the bottom.
 
 #### [7.2] Close
-**Say:** Today's Hifz is recorded, and parents see the result and your note in their app. Next, see the parents' view, or take class attendance.
+**Say:** Today's Hifz is recorded, and parents see the result and your note in their app. Next, video 14.3: Follow Hifz progress and classwork, and video 10.2: Take class attendance.
 **Show:** End card with two tiles: "14.3 Follow Hifz progress and classwork" and "10.2 Take class attendance".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 2 changes: [7.2] end tiles by number and title; demo names from the Maple Grove demo world
 - 2026-11-03 · critic · 5 changes: [1.1] opening names the audience and the three steps (no ambiguous "mark the portion"); [4.1] clearer instruction; [4.2] "takes off" phrasal verb replaced; [5.3] says what Time Spend is; [7.2] removed "see what families see"
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes (statuses, previous attempt, Current Grading, mistakes, notes templates, Time Spend, Pass/Failed, Back to Listing confirmed)
