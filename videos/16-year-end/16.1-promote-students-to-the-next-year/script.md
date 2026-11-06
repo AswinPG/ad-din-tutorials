@@ -21,11 +21,11 @@ Move a whole class section up to its next class at the end of the year.
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
-- Demo madrasah "Al-Noor Madrasah" (Premium); the demo account is a Madrasah Admin
+- Demo madrasah "Maple Grove Madrasah" (Premium); the demo account is a Madrasah Admin
 - Class "Maktab Level 1", section "A" with eight active demo students (made-up names and usernames)
 - Class "Maktab Level 2" with an empty section "A" (the destination)
 - One earlier migration in the list from last year, so the list and the Select Year filter have data
-- Teacher account Yusuf Patel for scene [6.2a] (Teacher Portal → Migration shows the same list, read-only)
+- Teacher account Omar Khalid for scene [6.2a] (Teacher Portal → Migration shows the same list, read-only)
 
 ## Script
 <!--
@@ -37,7 +37,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. Moving up a year
 #### [1.1] Opening
-**Say:** At the end of the year, your students move up to the next class. In Ad-Din this is called a migration, and it moves a whole class section in one go.
+**Say:** At the end of the year, your students move up to the next class. In Ad-Din this is called a migration, and it moves a whole class section at once.
 **Show:** Title card: "Promote students to the next year".
 
 #### [1.2]
@@ -64,12 +64,12 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 4. Step 2: Eligibility
 #### [4.1] Transfer
-**Say:** Under **Migration Type**, choose **Transfer**. It moves every active student in the section. Add a **Reason for migration**, such as end of year, and tap **Preview Migration**.
+**Say:** **Migration Type** starts on **Exam Based**. Choose **Transfer**. It moves every active student in the section. Add a **Reason for migration**, such as end of year, and tap **Preview Migration**.
 **Show:** Select "Transfer". Type "End of year promotion" in Reason for migration. Click "Preview Migration".
 
 ### 5. Step 3: Preview and migrate
 #### [5.1] Check the list
-**Say:** Ad-Din lists the students who will move. Check the names before you go on.
+**Say:** Ad-Din lists the students who will move. A migration can't be undone, so check the names before you go on.
 **Show:** The student list with Roll Number, First Name and Last Name. Slow scroll.
 
 #### [5.2] Perform Migration
@@ -78,7 +78,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 6. The result
 #### [6.1] Done
-**Say:** The students now belong to their new class section, and the move is saved in the list with the date and who did it.
+**Say:** The students now belong to their new class section, and the move is saved in the list with the date and who made it.
 **Show:** Back on Migrations: the new row with Date, Migrated By, Previous Section, New Class Section and Migration Type.
 
 #### [6.2]
@@ -87,15 +87,16 @@ See docs/SCRIPT-FORMAT.md.
 
 #### [6.2a] Teachers
 **Say:** Teachers see the same list under **Migration** in their **Teacher Portal**. They can look, but only admins can migrate students.
-**Show:** Quick cut, signed in as Yusuf: Sidebar → Teacher Portal → Migration. The Migrations list with the Select Year filter; no Add Migration button. Expand a row.
+**Show:** Quick cut, signed in as Omar Khalid (side panel: "Signed in as: Omar Khalid, a teacher"): Sidebar → Teacher Portal → Migration. The Migrations list with the Select Year filter; no Add Migration button. Expand a row.
 
 ### 7. Next
 #### [7.1] Close
-**Say:** Your students are promoted. Next, set up the new term and copy your timetable across, or move a single student to another section.
+**Say:** Your students are promoted. Next, video 16.2: Start a new term. To move one student to another section, watch video 06.5: Move students between sections.
 **Show:** End card with two tiles: "16.2 Start a new term" and "06.5 Move students between sections".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 7 changes: [1.1] "at once" not "in one go"; [4.1] says Migration Type starts on Exam Based; [5.1] a migration can't be undone (no undo in MigrationController); [6.1] "who made it"; [6.2a] "Signed in as" label; [7.1] end tiles by number and title; teacher is Omar Khalid (demo world)
 - 2026-11-03 · manager · decisions via chat · Exam Marks dropped from the series: cut [4.2] Exam Based and its flag; [4.3] Preview Migration merged into [4.1] (thin scene); Goal and demo data updated
 - 2026-11-03 · critic · 3 changes + fold: [6.2] "oldest" made unambiguous (highest class first, so students are not moved twice); [7.1] Say names both end-card tiles; fold: Teacher's Migration list as new [6.2a], Covers and demo data updated
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes (Add Migrations steps, Transfer/Exam Based, Preview, Perform Migration prompt, list columns confirmed)
