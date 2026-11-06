@@ -34,7 +34,7 @@ Switch your organisation’s optional features on or off on the Services tab, ch
 
 ### 1. Optional features
 #### [1.1] Opening
-**Say:** Every masjid and madrasah can switch extra features on or off, so people only see what you use. Let’s go through each switch and what it does.
+**Say:** Every masjid and madrasah can switch extra features on or off, so people only see what you use. In this video for admins, you’ll see each switch and what it does.
 **Show:** Title card: "Turn features on and off".
 
 #### [1.2]
@@ -60,7 +60,7 @@ Switch your organisation’s optional features on or off on the Services tab, ch
 **Show:** Spotlight AutoSave Academic Reports (on).
 
 #### [3.3] Class Announcements
-**Say:** **Class Announcements** lets teachers share photos and notes from class with parents and students. Let’s turn it on.
+**Say:** **Class Announcements** lets teachers share photos and notes from class with parents and guardians. Here, we turn it on.
 **Show:** Click the Class Announcements switch; it turns on and a confirmation message shows.
 
 #### [3.4] Exam Marks
@@ -69,13 +69,13 @@ Switch your organisation’s optional features on or off on the Services tab, ch
 
 ### 4. Features for masjids and madrasahs
 #### [4.1] Family sharing
-**Say:** Masjids have the next two switches too. When **Family Subscription sharing** is on, a subscription given to a parent also covers their spouse and children.
+**Say:** Masjids have the next two switches too. When **Family Subscription sharing** is on, one of your organisation’s Premium seats given to a parent also covers their linked spouse and children. Video 02.4 shows how.
 **Show:** Spotlight Family Subscription sharing.
 
 #### [4.2] Staff Attendance
-**Say:** **Staff Attendance** tracks staff time and attendance. Each staff member needs a subscription. Before it switches on, Ad-Din checks your **Time zone**; the link under it shows the current one.
+**Say:** **Staff Attendance** tracks staff time and attendance. Each staff member who uses it needs Premium, such as a seat. Before it switches on, Ad-Din checks your **Time zone**; the link under it shows the current one. Video 13.1 shows how to switch it on.
 **Show:** Spotlight the Staff Attendance switch and its quick links: "Time zone: …", "Documents for your staff", "Legacy teacher-attendance register" (madrasah only). Don’t switch it on.
-**Caption:** Staff Attendance tracks staff time. Each staff member needs a subscription. Ad-Din checks the time zone first.
+**Caption:** Staff Attendance tracks staff time. Each staff member needs Premium, such as a seat. Ad-Din checks the time zone first (video 13.1).
 
 ### 5. Choose your donation page
 #### [5.1] Donation Page
@@ -102,11 +102,12 @@ Switch your organisation’s optional features on or off on the Services tab, ch
 
 ### 7. Next
 #### [7.1] Done
-**Say:** Your features are set, and you can change any switch at any time. Next, add the people who help run your organisation.
+**Say:** Your features are set, and you can change any switch at any time. Next, video 03.3: Add admins, staff and volunteers to a masjid, or video 03.4: Add admins and teachers to a madrasah.
 **Show:** End card with two tiles: "03.3 Add admins, staff and volunteers to a masjid" and "03.4 Add admins and teachers to a madrasah".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 5 changes: [1.1] says who it's for (no "Let's go through"), [3.3] "parents and guardians" as the switch text says (page.editor.component.html), [4.1] "Premium seat" instead of "subscription", with a pointer to 02.4, [4.2] "needs Premium, such as a seat" and a pointer to 13.1, Caption kept in step, [7.1] names both end tiles by number and title
 - 2026-11-03 · manager · decisions via chat · Payment Module cut until Track 11: [3.5] removed, Payment Module flag dropped, Covers notes the exception; target 4:00 to 3:45
 - 2026-11-03 · manager · decisions via chat · Exam Marks decided (10.11 dropped): [3.4] flag reworded; [3.4] stays as it names a real switch
 - 2026-11-03 · critic · 5 changes: [2.1] Manage on any organisation, says why a madrasah is shown; [3.1] less repetition; [4.1] 'is on masjids too' (read as switched on) → 'Masjids have the next two switches too'; [5.2] points to 08.3 instead of duplicating it; [7.1] shorter close
