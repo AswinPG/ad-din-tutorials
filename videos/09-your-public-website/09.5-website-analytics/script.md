@@ -24,8 +24,8 @@ Read how your website performs in Google search, over any period, by search, pag
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
-- Masjid Admin account, admin of "Masjid Al-Noor" and "Al-Noor Madrasah", both websites active and not linked (so the sidebar shows the two separate analytics items)
-- Mocked Search Console data for `alnoor`: 28 days with about 420 clicks, 9,800 impressions, CTR around 4.3%, average position around 11; top searches such as "masjid al noor prayer times", "jummah near me", "al noor iftar"; pages Home, Monthly Prayer Times, Events; countries and devices (mostly mobile)
+- Masjid Admin account, admin of "Maple Grove Masjid" and "Maple Grove Madrasah", both websites active and not linked (so the sidebar shows the two separate analytics items)
+- Mocked Search Console data for `maplegrove`: 28 days with about 420 clicks, 9,800 impressions, CTR around 4.3%, average position around 11; top searches such as "maple grove masjid prayer times", "jummah near me", "maple grove iftar"; pages Home, Monthly Prayer Times, Events; countries and devices (mostly mobile)
 - A second state of the sidebar with the websites linked, showing the single Website Analytics item
 
 ## Script
@@ -38,7 +38,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. How people find you
 #### [1.1] Opening
-**Say:** Are people finding your masjid's website when they search on Google? Website analytics shows you.
+**Say:** Website analytics shows whether people find your masjid's website when they search on Google. In this video, you learn to read it.
 **Show:** Title card: "Website analytics".
 
 #### [1.2]
@@ -56,7 +56,7 @@ See docs/SCRIPT-FORMAT.md.
 
 #### [2.3]
 **Say:** We'll open the masjid's. You can also reach it from the **Statistics** tab on your website pages.
-**Show:** Click "Masjid Website Analytics". The page "Performance for 'alnoor…'" opens.
+**Show:** Click "Masjid Website Analytics". The page "Performance for 'maplegrove…'" opens.
 
 ### 3. The four numbers
 #### [3.1] Clicks and impressions
@@ -64,7 +64,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Spotlight the two tiles in turn.
 
 #### [3.2] CTR and position
-**Say:** **Average CTR** is the share of people who clicked after seeing you. **Average position** is how high you usually appear; lower is better.
+**Say:** **Average CTR**, the click-through rate, is the share of people who clicked after seeing you. **Average position** is how high you usually appear; lower is better.
 **Show:** Spotlight the other two tiles.
 **Caption:** Average CTR: the share who clicked. Average position: how high you appear (lower is better).
 
@@ -80,7 +80,7 @@ See docs/SCRIPT-FORMAT.md.
 ### 5. Dig into the details
 #### [5.1] What people search
 **Say:** Below the chart, **QUERIES** lists the words people searched before finding you.
-**Show:** Scroll to the table on the QUERIES tab; spotlight "masjid al noor prayer times".
+**Show:** Scroll to the table on the QUERIES tab; spotlight "maple grove masjid prayer times".
 
 #### [5.2] Pages, countries, devices
 **Say:** **PAGES** shows which pages they landed on. **COUNTRIES** and **DEVICES** show where they are, and whether they used a phone or a computer.
@@ -92,10 +92,11 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 6. Next
 #### [6.1] Close
-**Say:** A new website shows little until Google has found it, so check back every few weeks. Next, see your site the way visitors do.
+**Say:** A new website shows little until Google has found it, so look again every few weeks. Next, video 09.6: What visitors see. Or video 09.4: Link masjid and madrasah websites; enquiries.
 **Show:** End card with two tiles: "09.6 What visitors see" and "09.4 Link masjid and madrasah websites; enquiries".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 3 changes: [1.1] statement and second person instead of a question, [3.2] says what CTR stands for, [6.1] no phrasal verb and names both end tiles by number; demo address and searches match the Maple Grove demo world
 - 2026-11-03 · critic · 1 change: [6.1] sets expectations for a new site instead of promising growth
 - 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: all four metric tiles start ticked; scene [3.3] now unticks to hide lines
