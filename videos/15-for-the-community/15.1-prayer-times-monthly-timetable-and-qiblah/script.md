@@ -5,7 +5,7 @@ target: 4:00
 prereq: []
 status: scripted
 flags:
-  - The Qiblah compass is a native app page (MAUI), not Angular; its wording was read from the MAUI repo on branch fix/ios-workload-version, not master, so it is described without bold labels. Check it on the release build before recording.
+  - The Qiblah compass is a native app page (MAUI), not Angular; its wording was read from the MAUI repo on branch fix/ios-workload-version, not master, so it is described without bold labels. Check it on the release build before recording. The compass and the denied-location take are native phone screens, which the mocked web world can't show: capture them from the app build (see the review panel decision).
   - Locate Qiblah only shows inside the app (it is hidden in a web browser), so record this video on the app build.
   - "The location prompt is shown for Prayer Times only ([5.2a], the web dialog in the Prayer calculation sheet). The Qiblah compass asks for location on its own native page, which isn't in the Angular code, so [6.2] only shows it finding the location, without labels."
 ---
@@ -26,8 +26,8 @@ See today's prayer times for your masjid, check what changes tomorrow, open the 
 - Location access prompt (Allow location, Choose a place instead)
 
 ## Demo data
-- Member account (no admin role) with home masjid "Masjid Al-Noor" and one followed masjid "Masjid Ar-Rahman", both with prayer times for this month and next
-- Masjid Al-Noor has at least one Iqamah that changes tomorrow (for example Asr), so the Timing Changes chip shows
+- A community member account with no admin role (not the admin demo account Yusuf Rahman), home masjid "Maple Grove Masjid" and one followed masjid "Cedar Hill Masjid", both with prayer times for this month and next
+- Maple Grove Masjid has at least one Iqamah that changes tomorrow (for example Asr), so the Timing Changes chip shows
 - Hijri date shown on the page; a Friday in the month with a Jumu'ah time
 - Phone location set to the demo city (emulator mock location), so Auto mode and the Qiblah compass have a fix; Prayer calculation location saved as the demo city
 - A second take for [5.2a] with Ad-Din's location permission denied once on the phone, so the "Location access needed" dialog shows
@@ -37,8 +37,8 @@ See today's prayer times for your masjid, check what changes tomorrow, open the 
 
 ### 1. Your masjid's times on your phone
 #### [1.1] Opening
-**Say:** In this video you'll check today's prayer times in the Ad-Din app, see what changes tomorrow, open the monthly timetable, and find the Qiblah.
-**Show:** Title card: "Prayer times, monthly timetable and Qiblah". Phone frame on the app home.
+**Say:** In this video, you'll check today's prayer times in the Ad-Din app, see what changes tomorrow, open the monthly timetable, and find the Qiblah.
+**Show:** Title card: "Prayer times, monthly timetable and Qiblah". Phone frame on the app home. Side panel label: "Signed in as: a community member".
 
 #### [1.2]
 **Say:** Your home masjid's **Iqamah times** sit at the top of the home screen, with the next prayer and how long until it starts.
@@ -47,7 +47,7 @@ See today's prayer times for your masjid, check what changes tomorrow, open the 
 ### 2. Today's prayer times
 #### [2.1] Open Prayer Times
 **Say:** Tap the card, or the **Prayer Times** tile, to open the full page.
-**Show:** Tap the prayer card. The Prayer Times page opens with Masjid Al-Noor, the date and the Hijri date.
+**Show:** Tap the prayer card. The Prayer Times page opens with Maple Grove Masjid, the date and the Hijri date.
 
 #### [2.2]
 **Say:** At the top you'll see your masjid, today's date and the Islamic date.
@@ -58,13 +58,13 @@ See today's prayer times for your masjid, check what changes tomorrow, open the 
 **Show:** Scroll to the table. Spotlight the Salah and Iqamah columns, then the highlighted row.
 
 #### [2.4] Followed masjids
-**Say:** Follow more than one masjid? Use the arrows beside the name to switch between them.
-**Show:** Tap the right arrow: the page changes to Masjid Ar-Rahman. Tap the left arrow to come back to Masjid Al-Noor.
+**Say:** If you follow more than one masjid, use the arrows beside the name to switch between them.
+**Show:** Tap the right arrow: the page changes to Cedar Hill Masjid. Tap the left arrow to come back to Maple Grove Masjid.
 
 ### 3. What changes tomorrow
 #### [3.1] Timing Changes
-**Say:** When your masjid changes a time tomorrow, a **Timing Changes** chip appears. Tap it.
-**Show:** Spotlight the orange "Timing Changes" chip, then tap it. The sheet slides up.
+**Say:** When your masjid changes a time tomorrow, a **Timing Changes From Tomorrow** chip appears. Tap it.
+**Show:** Spotlight the orange "Timing Changes From Tomorrow" chip, then tap it. The sheet slides up.
 
 #### [3.2]
 **Say:** The sheet shows each changed prayer, with **Today** beside **Tomorrow**, so you can plan ahead.
@@ -73,7 +73,7 @@ See today's prayer times for your masjid, check what changes tomorrow, open the 
 ### 4. The monthly timetable
 #### [4.1] View Monthly Timings
 **Say:** For the whole month, tap **View Monthly Timings**.
-**Show:** Tap "View Monthly Timings". The monthly page opens for Masjid Al-Noor.
+**Show:** Tap "View Monthly Timings". The monthly page opens for Maple Grove Masjid.
 
 #### [4.2]
 **Say:** Each row is one day, with begin and Iqamah times. Today is highlighted, and Fridays show the Jumu'ah times.
@@ -85,7 +85,7 @@ See today's prayer times for your masjid, check what changes tomorrow, open the 
 
 ### 5. Times for where you are
 #### [5.1] Auto
-**Say:** Travelling, or away from your masjid? Turn on **Auto**. Ad-Din calculates the times for where you are instead.
+**Say:** When you travel or are away from your masjid, turn on **Auto**. Ad-Din then calculates the times for where you are.
 **Show:** Tap the "Auto" switch. The name changes to the demo place and the Iqamah column disappears.
 
 #### [5.2] Prayer calculation
@@ -97,13 +97,13 @@ See today's prayer times for your masjid, check what changes tomorrow, open the 
 **Show:** Second take, location permission denied: the "Location access needed" dialog. Spotlight "Allow location", then "Choose a place instead". Close it and return to the first take.
 
 #### [5.2b] Method and corrections
-**Say:** Pick your **Calculation method** and **Asr juristic rule**. **Manual corrections** move each time by a few minutes to match your local masjid. Then tap **Save**.
+**Say:** Pick your **Calculation method** and **Asr juristic rule**. If you're not sure which to pick, ask your local masjid. **Manual corrections** move each time by a few minutes. Then tap **Save**.
 **Show:** Open the Calculation method list, then the Asr juristic rule list. Pan past Daylight saving and High-latitude rule. Tap + twice beside Isha under Manual corrections. Tap "Save": toast "Prayer settings saved."
-**Caption:** Choose the Calculation method and Asr juristic rule, adjust Manual corrections if needed, then Save.
+**Caption:** Choose the Calculation method and Asr juristic rule (ask your masjid if you're not sure), adjust Manual corrections if needed, then Save.
 
 #### [5.3]
 **Say:** Turn **Auto** off again to go back to your masjid's own times.
-**Show:** Tap the "Auto" switch off; Masjid Al-Noor and its Iqamah column return.
+**Show:** Tap the "Auto" switch off; Maple Grove Masjid and its Iqamah column return.
 
 ### 6. Find the Qiblah
 #### [6.1] Locate Qiblah
@@ -116,10 +116,11 @@ See today's prayer times for your masjid, check what changes tomorrow, open the 
 
 ### 7. Next
 #### [7.1] Close
-**Say:** Now you know today's times, tomorrow's changes, the monthly timetable and the Qiblah. Next, find and follow more masjids near you.
+**Say:** Now you know today's times, tomorrow's changes, the monthly timetable and the Qiblah. Next, video 15.2: Find and follow masjids. Or video 00.4: Choose your home masjid and madrasah.
 **Show:** End card with two tiles: "15.2 Find and follow masjids" and "00.4 Choose your home masjid and madrasah".
 
 ## Review log
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 8 changes: [3.1] chip label is "Timing Changes From Tomorrow" (en.json prayerpage.timing_changes); [2.4], [5.1] no elliptical questions; [5.2b] "ask your local masjid" for the method and Asr rule, Caption kept in step; [1.1] comma after "In this video" and a "Signed in as: a community member" label; [7.1] names both end tiles by number and title; demo names match the Maple Grove demo world, on a member account (not the admin Yusuf Rahman); Qiblah flag notes the native capture
 - 2026-11-03 · critic · 5 changes: target 4:00, [1.1] opening without the "heart of" idiom, [2.2] countdown said once (it is in [1.2]), [3.2] "catches you out" idiom replaced, [5.2] split so each step has its own scene, [7.1] "sorted" idiom replaced · fold: [5.2a] location access prompt (Allow location, Choose a place instead), [5.2b] Manual corrections with Daylight saving and High-latitude rule on screen
 <!-- Newest first: date, who, what was asked, what changed. -->
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes
