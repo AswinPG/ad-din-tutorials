@@ -22,8 +22,8 @@ Run, download and pin your masjid's staff list and prayer times chart.
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
-- Signed-in demo account that is Masjid Admin of the demo masjid "Masjid Al-Noor"
-- Staff on the masjid: "Sheikh Yusuf Rahman" (Staff), "Bilal Ahmed" (Staff), "Amina Khan" (Admin), "Omar Siddiqui" (Volunteer), with demo addresses, phone numbers and emergency contacts only (no real personal or medical data)
+- Signed-in demo account Yusuf Rahman, Masjid Admin of the demo masjid "Maple Grove Masjid"
+- Staff on the masjid, from the demo world: "Yusuf Rahman" (Admin), "Bilal Hussain" (Staff), "Omar Khalid" (Staff), "Fatima Siddiqui" (Volunteer), with demo addresses, phone numbers and emergency contacts only (no real personal or medical data)
 - Prayer times calculated for at least the next two months
 - No pinned reports at the start
 
@@ -47,7 +47,7 @@ See docs/SCRIPT-FORMAT.md.
 ### 2. Open Masjid Report
 #### [2.1]
 **Say:** Go to **Reports**, then **Masjid Report**. Your home masjid is chosen under **Masjid Name:**.
-**Show:** Sidebar → Reports → Masjid Report. Spotlight the masjid picker showing "Masjid Al-Noor".
+**Show:** Sidebar → Reports → Masjid Report. Spotlight the masjid picker showing "Maple Grove Masjid".
 
 #### [2.2]
 **Say:** Under **Masjid Reports** you'll find the **Masjid Staff List** and the **Masjid Prayer Times Chart**.
@@ -77,14 +77,15 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 5. Pin and finish
 #### [5.1] Pin
-**Say:** Tap the pin beside a report to keep it under **My Favorite Reports** at the top. Pins are saved in this browser.
+**Say:** Tap the pin beside a report to keep it under **My Favorite Reports** at the top. Pins are saved in this browser, so they don't follow you to another computer.
 **Show:** Sidebar → Reports → Masjid Report. Click the pin beside "Masjid Prayer Times Chart"; it appears under "My Favorite Reports".
 
 #### [5.2] Close
-**Say:** Your masjid's reports are ready to print and share. Next, watch 12.6, Dashboards for admins and teachers, or 04.2, Set Iqamah and Jumu'ah times.
-**Show:** End card with two tiles: "12.6 Dashboards for admins and teachers" and "04.2 Set iqamah and jumu’ah times".
+**Say:** Your masjid's reports are ready to print and share. Next, video 12.6: Dashboards for admins and teachers. Or video 04.2: Set Iqamah and Jumu'ah times.
+**Show:** End card with two tiles: "12.6 Dashboards for admins and teachers" and "04.2 Set iqamah and jumu’ah times" (the tile uses the video's own title).
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 3 changes: [5.1] pins don't follow you to another computer (localStorage, report.component.ts 316-330), [5.2] end tiles by number and title; demo names from the Maple Grove demo world (Maple Grove Masjid; staff Yusuf Rahman, Bilal Hussain, Omar Khalid, Fatima Siddiqui)
 - 2026-11-03 · critic · 3 changes: [1.1] second-person opening; thin [3.3] ("Tap Download") merged into [3.2]; [5.2] result confirmed, "fine-tune" dropped, end-card videos named by number
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes
