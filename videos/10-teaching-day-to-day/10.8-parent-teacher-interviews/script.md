@@ -20,9 +20,9 @@ Create a parent–teacher interview event with bookable time slots, remind paren
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
-- Demo madrasah "Al-Noor Madrasah" (Premium); the demo account is a Madrasah Admin
-- Teacher Yusuf Patel teaching Class "Maktab Level 1", section "A", subject "Quran"; the section has demo students with linked demo parents
-- Event "Autumn Parent Evening" (year 2026) created on camera, plus its interview for Yusuf with one date (Room 4, 4:00–6:00 pm, 15-minute appointments, 5-minute gap)
+- Demo madrasah "Maple Grove Madrasah" (Premium); the demo account Yusuf Rahman is a Madrasah Admin
+- Teacher Bilal Hussain teaching Class "Maktab Level 1", section "A", subject "Quran"; the section has demo students with linked demo parents
+- Event "Autumn Parent Evening" (year 2026) created on camera, plus its interview for Bilal with one date (Room 4, 4:00–6:00 pm, 15-minute appointments, 5-minute gap)
 - For the Manage Booking chapter: an existing interview with some slots Booked by demo parents and some Free
 - Reminder sending mocked (no real email, text or push goes out)
 
@@ -59,7 +59,7 @@ See docs/SCRIPT-FORMAT.md.
 
 #### [3.2] Who it's for
 **Say:** Under **Conference**, pick the event, then the teacher. Choose the **Class**, **Class Section** and **Subject** whose parents can book.
-**Show:** Select "Autumn Parent Evening" and "Yusuf Patel". Pick "Maktab Level 1", "A", "Quran".
+**Show:** Select "Autumn Parent Evening" and "Bilal Hussain". Pick "Maktab Level 1", "A", "Quran".
 
 #### [3.3] Booking window and length
 **Say:** Set when booking opens and closes with **Booking Start** and **Booking CutOff**. Then choose the **Appointment Duration** and the **Appointment Gap** between meetings.
@@ -70,13 +70,17 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Click "Add Date". In "Event Date" type "Room 4", pick the date, 4:00 pm to 6:00 pm, click "Add". The date card shows under Event Dates.
 
 #### [3.5] Note and publish
-**Say:** Write an **Event Note**; parents see it when booking. Turn on **Enable Booking Notes ?** to keep notes on each meeting. Then tap **Save & Publish**.
-**Show:** Type a short note. Turn on Enable Booking Notes ?. Click "Save & Publish". The interview appears in Interview Details.
+**Say:** Write an **Event Note**; parents see it when booking. Turn on **Enable Booking Notes ?** to keep notes on each meeting.
+**Show:** Type a short note. Turn on Enable Booking Notes ?.
+
+#### [3.5a] Publish
+**Say:** Check the dates, then tap **Save & Publish**. Every parent in that class section is told at once, by email and app notification.
+**Show:** Spotlight the date card, then click "Save & Publish". The interview appears in Interview Details.
 
 ### 4. Remind parents
 #### [4.1] Send Reminder
 **Say:** Open **Reminders**, select the interview, and tap **Send Reminder**.
-**Show:** Click the "Reminders" tab. Select the Yusuf Patel row. Click "Send Reminder": the "Reminder Send" message shows.
+**Show:** Click the "Reminders" tab. Select the Bilal Hussain row. Click "Send Reminder": the "Reminder Send" message shows.
 
 #### [4.2]
 **Say:** Every parent in that class section gets a reminder with the interview dates, by email, text message and app notification.
@@ -98,15 +102,16 @@ See docs/SCRIPT-FORMAT.md.
 ### 6. Teachers and parents
 #### [6.1]
 **Say:** Teachers open the same page from their **Teacher Portal**, to send reminders and manage bookings for their own interviews. Parents book their slot from the Parent Portal.
-**Show:** Quick cut: Sidebar → Teacher Portal → Parent Teacher Interview, showing the Manage Booking, Reminders and Interview Details tabs.
+**Show:** Quick cut to the teacher (side panel: "Signed in as: Bilal Hussain, a teacher"): Sidebar → Teacher Portal → Parent Teacher Interview, showing the Manage Booking, Reminders and Interview Details tabs.
 
 ### 7. Next
 #### [7.1] Close
-**Say:** Your interview evening is set up and parents can book. Next, see how parents book a slot, or take a tour of the Teacher Portal.
+**Say:** Your interview evening is set up and parents can book. Next, video 14.4: Report cards and interview bookings, and video 10.1: The teacher portal and the teacher app home.
 **Show:** End card with two tiles: "14.4 Report cards and interview bookings" and "10.1 The teacher portal and the teacher app home".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 4 changes: new [3.5a] says Save & Publish tells every parent in the section at once by email and app notification (InterviewController.cs 567, MadressahNotificationService.cs 2347-2400), [6.1] "Signed in as" label, [7.1] end tiles by number and title (no "take a tour" idiom); demo names from the Maple Grove demo world
 - 2026-11-03 · manager · decisions via chat · 14.4 renamed 'Report cards and interview bookings' (fees cut): end-card tile updated
 - 2026-11-03 · critic · 2 changes: [4.2] reminders by email, text message and app notification (validator fact); [7.1] Say now names both end-card tiles
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes (tabs, Manage Interview Event, Manage Interview, Event Date, Send Reminder, Booking, Interview summary confirmed; reminder also goes by text message)
