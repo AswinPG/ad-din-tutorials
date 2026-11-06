@@ -21,10 +21,10 @@ Mark each student present, absent, late, sick or picked up early, save the regis
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
-- Demo madrasah "Al-Noor Madrasah" (Premium); teacher Yusuf Patel is class teacher of Class "Maktab Level 1", section "A", and also teaches the subject "Quran" there (so the subject wise switch shows)
-- Section "A" with eight enrolled demo students (made-up names, no real photos), no attendance taken yet for today
+- Demo madrasah "Maple Grove Madrasah" (Premium); teacher Bilal Hussain is class teacher of Class "Maktab Level 1", section "A", and also teaches the subject "Quran" there (so the subject wise switch shows)
+- Section "A" with eight enrolled demo students: the demo world's Zaid Karim, Hana Mirza, Ibrahim Nasser, Layla Haddad and Yahya Saleh, plus three more made-up names (no real photos), no attendance taken yet for today
 - One student with an Absent excuse already sent by a parent for today (starts as Absent; the text shows in the Excuse Note column, and as an Excuse chip in the app)
-- Web: signed in as Yusuf. App: the same account in a phone frame
+- Web: signed in as Bilal. App: the same account in a phone frame
 
 ## Script
 <!--
@@ -89,7 +89,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 5. Save
 #### [5.1] Notify parents
-**Say:** With **Notify parents** on, families are told when you save. Turn it off if you're only correcting a mistake.
+**Say:** With **Notify parents** on, families are told when you save. It's on each time you open the page. Turn it off if you're only correcting a mistake.
 **Show:** Spotlight the "Notify parents" switch in the toolbar; leave it on.
 
 #### [5.2]
@@ -103,7 +103,7 @@ See docs/SCRIPT-FORMAT.md.
 
 #### [6.2]
 **Say:** Mark and save the same way. If you only teach a subject in that class, Ad-Din takes you straight to subject attendance.
-**Show:** Click "Mark all present", then "Save". Confirmation message.
+**Show:** Every student starts as Present, so "Mark all present" is hidden. Click one student's button to mark them absent, then click "Save". Confirmation message.
 
 ### 7. Next
 #### [7.1] Done
@@ -111,10 +111,11 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** The saved register, all rows marked.
 
 #### [7.2] Close
-**Say:** Next, see how to record daily Hifz progress, or what parents see when they check attendance.
+**Say:** Next, video 10.4: Record daily Hifz progress, and video 14.2: Check attendance and report an absence.
 **Show:** End card with two tiles: "10.4 Record daily Hifz progress" and "14.2 Check attendance and report an absence".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 4 changes: [5.1] says Notify parents is on each time the page opens (attendance.add.component.ts 68), [6.2] Show marks one student absent instead of clicking Mark all present, which is hidden while everyone is Present (attendance.table.component.html 4), [7.2] end tiles by number and title, demo names from the Maple Grove demo world
 - 2026-11-03 · critic · 6 changes: [1.1] no "about a minute" promise, says who it is for; [2.3] split semicolon; [3.1] clearer toggle back; [3.2] explains Unmark all / Mark all present plainly and reminds to re-mark parent-reported absences (matches Show); [4.4] "key" to "guide" (translates badly); [6.1] clearer opener
 - 2026-11-03 · validator · checked against master d36d69ed8 · 3 fixes: students start as Present (not Not Marked; applyStartingStatus), Not Marked shown via Unmark all, register loads on picking the section (Generate reloads)
