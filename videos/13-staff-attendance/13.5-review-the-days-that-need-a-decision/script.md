@@ -22,10 +22,10 @@ Work through the Review list: open a day, make one decision for it, accept simpl
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
-- Demo madrasah with Staff Attendance on and staff set up (Yusuf Patel, Maryam Ali, Bilal Ahmed)
-- Open review items this month: Yusuf Patel "Checked in, never checked out" (with his explanation "I was there, forgot to check out" and a note), the next day for Yusuf Patel with two issues ("Tapped outside the zone" and "Tapped outside the grace band"), Bilal Ahmed "Nothing recorded" (Absence), two Maryam Ali "Checked in late" days
-- Maryam Ali "Time off request, 3 days" (Annual leave, Paid, note "Family wedding out of town.")
-- Yusuf Patel has an email on his account; the preview says he will be emailed because the decision changes his time (the payroll recipient plays no part here)
+- Demo madrasah with Staff Attendance on and staff set up (Bilal Hussain, Khadija Usman, Idris Malik)
+- Open review items this month: Bilal Hussain "Checked in, never checked out" (with his explanation "I was there, forgot to check out" and a note), the next day for Bilal Hussain with two issues ("Tapped outside the zone" and "Tapped outside the grace band"), Idris Malik "Nothing recorded" (Absence), two Khadija Usman "Checked in late" days
+- Khadija Usman "Time off request, 3 days" (Annual leave, Paid, note "Family wedding out of town.")
+- Bilal Hussain has an email on his account; the preview says he will be emailed because the decision changes his time (the payroll recipient plays no part here)
 
 ## Script
 <!--
@@ -37,7 +37,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. Before you start
 #### [1.1] Opening
-**Say:** Most days settle themselves. When the system can't settle one, such as a forgotten check-out, it waits for you. In this video for organisation admins, you'll decide those days.
+**Say:** Ad-Din settles most days on its own. When it can't settle one, such as a forgotten check-out, it waits for you. In this video for organisation admins, you'll decide those days.
 **Show:** Title card: "Review the days that need a decision".
 
 #### [1.2]
@@ -61,7 +61,7 @@ See docs/SCRIPT-FORMAT.md.
 ### 3. Open a day
 #### [3.1] Their day
 **Say:** Tap a day. **Their day** shows it as a timeline: the shift, every tap with its zone check, and what's missing.
-**Show:** Click Yusuf Patel's row "Checked in, never checked out". The day opens on the right; spotlight the timeline and "No check-out recorded".
+**Show:** Click Bilal Hussain's row "Checked in, never checked out". The day opens on the right; spotlight the timeline and "No check-out recorded".
 
 #### [3.2]
 **Say:** If they sent an explanation, you see what they said, and their note.
@@ -86,29 +86,30 @@ See docs/SCRIPT-FORMAT.md.
 
 #### [4.5] Accept several days
 **Say:** For simple days, tick several and tap **Accept** to keep them as recorded. Days with more than one issue, and time off requests, are left for you to open.
-**Show:** Tick Maryam Ali's two "Checked in late" days. The bar shows "2 selected"; click "Accept" and confirm.
+**Show:** Tick Khadija Usman's two "Checked in late" days. The bar shows "2 selected"; click "Accept" and confirm.
 
 ### 5. Time off requests
 #### [5.1] Open a request
 **Say:** Time off requests appear here too. Open one to check the **Dates**, the **Category**, and whether it's paid.
-**Show:** Click "Time off request, 3 days" for Maryam Ali. Spotlight Dates, Category (Annual leave · Paid) and Their note.
+**Show:** Click "Time off request, 3 days" for Khadija Usman. Spotlight Dates, Category (Annual leave · Paid) and Their note.
 
 #### [5.2] Approve or reject
-**Say:** Tap **Approve**. To refuse it, write a **Reason** first, then tap **Reject**. Either way, the staff member gets an email.
+**Say:** Tap **Approve**. To refuse it, write a **Reason** first, then tap **Reject**. Either way, the staff member gets an email, and sees your answer in the app.
 **Show:** Hover "Reject" (disabled until a reason is typed). Click "Approve".
 
 ### 6. Decided
 #### [6.1] Decided
 **Say:** Everything you decide moves to **Decided**, with who decided it and when.
-**Show:** Click "Decided". Spotlight Yusuf Patel's day with "by" and the outcome.
+**Show:** Click "Decided". Spotlight Bilal Hussain's day with "by" and the outcome.
 
 ### 7. Next
 #### [7.1] Close
 **Say:** Your review list is clear. When nothing is left to decide in a pay period, you can lock it and send the hours to payroll. See how in 13.6, Lock a pay period and send payroll.
-**Show:** Off camera, decide the days left open (keep Bilal Ahmed's absence with "Keep as absent"; accept Yusuf Patel's two-issue day as recorded). Click "To decide": "Nothing left to decide". End card: "13.6 Lock a pay period and send payroll".
+**Show:** Off camera, decide the days left open (keep Idris Malik's absence with "Keep as absent"; accept Bilal Hussain's two-issue day as recorded). Click "To decide": "Nothing left to decide". End card: "13.6 Lock a pay period and send payroll".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 3 changes: [1.1] no "days settle themselves" idiom, [5.2] the staff member also sees the answer in the app (TimeOffDecisionNotificationCopy.cs: the email is a courtesy), demo names from the Maple Grove demo world (teacher Bilal Hussain, office Khadija Usman, caretaker Idris Malik)
 - 2026-11-03 · manager · decisions via chat · Staff Attendance is live: hold flag removed. Per-day review flow confirmed (Save decision, bulk Accept, Approve/Reject for time off); Covers checked against chapters 2–5 and match, no change
 - 2026-11-03 · critic · 4 changes: plan fix: Covers rewritten to the per-day decision flow (Save decision, bulk Accept, Approve/Reject only for time off) and the mismatch flag dropped; [1.1] second-person opening; [2.1] full sidebar path; [7.1] end card named by number
 - 2026-11-03 · validator · checked against master d36d69ed8 · 2 fixes: "will be emailed" comes from changing a time, not the payroll recipient (demo data), [7.1] Bilal's absence and Yusuf's two-issue day were never decided, so they are decided off camera before "Nothing left to decide"
