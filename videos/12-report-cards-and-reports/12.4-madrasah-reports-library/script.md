@@ -20,17 +20,18 @@ Find, run and download the madrasah reports you need, from Hifz progress and att
 ## Covers
 - Hifz, attendance, progress and class reports
 - pinning reports
-- library, interview, exam and people-details reports (one line)
+- library, interview and people-details reports (one line)
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
-- Signed-in demo account that is Madrasah Admin and also a Teacher at the demo madrasah (so the Admin and Teacher buttons both show)
-- Class "Hifz Boys A", section "Section 1", teacher "Ustadh Bilal Ahmed", students "Yusuf Rahman", "Ibrahim Khan", "Zayd Hussain"
-- "Hifz Boys A" marked as a Hifz class (the Hifz Tracker lists only Hifz classes), with subjects "Quran Hifz" and "Juz Completion" and a few weeks of Hifz assignments for each student
-- The Hifz Tracker's Subject Mapping Configuration (gear button) already saved for "Hifz Boys A": Sabaq / Lesson Subject "Quran Hifz", Juz/Para Completion Approval Subject "Juz Completion" (without it the subjects stay empty and a toast asks to set them)
+- Signed-in demo account Yusuf Rahman, Madrasah Admin and also a Teacher at Maple Grove Madrasah (so the Admin and Teacher buttons both show)
+- Class "Hifz Class A", section "Morning", teacher "Bilal Hussain", students from the demo world "Maryam Rahman", "Zaid Karim", "Ibrahim Nasser"
+- "Hifz Class A" marked as a Hifz class (the Hifz Tracker lists only Hifz classes), with subjects "Quran Hifz" and "Juz Completion" and a few weeks of Hifz assignments for each student
+- The Hifz Tracker's Subject Mapping Configuration (gear button) already saved for "Hifz Class A": Sabaq / Lesson Subject "Quran Hifz", Juz/Para Completion Approval Subject "Juz Completion" (without it the subjects stay empty and a toast asks to set them)
 - Term "Term 1 2026–27" with attendance taken on most days, including a few absences and lates
-- Academic Activities with marks for Yusuf Rahman in Term 1
-- The madrasah's Exam Marks setting on, so the Exam Reports card shows in [5.5]
+- Academic Activities with marks for Maryam Rahman in Term 1
+- The madrasah's Exam Marks setting off (the default), so there is no Exam Reports card; Exam Marks is left out of the series
+- The Payment Reports card shows on this page even with the Payment Module off (`report.component.ts` 163-186 has no switch for it): keep it out of every shot
 - No pinned reports at the start
 
 ## Script
@@ -61,7 +62,7 @@ See docs/SCRIPT-FORMAT.md.
 
 #### [2.3]
 **Say:** Reports are grouped in cards, such as **Hifz Reports** and **Attendance Reports**. Tap **Run** beside a report to open it.
-**Show:** Pan across the report cards; spotlight the Run buttons.
+**Show:** Pan across the report cards; spotlight the Run buttons. Keep the Payment Reports card out of the shot.
 
 ### 3. Hifz progress
 #### [3.1] Hifz Progress Report
@@ -69,12 +70,12 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Click "Run" beside "Hifz Progress Report". The "Hifz Tracker" page opens.
 
 #### [3.2]
-**Say:** Choose the **CLASS** and **SECTION**. The Sabaq or lesson subject and the Juz completion subject fill in from the class's Hifz setup, which an admin saves once with the gear button. Then pick a student under **STUDENT**.
-**Show:** Pick "Hifz Boys A", "Section 1". "Quran Hifz" fills SABAQ / LESSON SUBJECT and "Juz Completion" fills JUZ/PARA COMPLETION APPROVAL SUBJECT by themselves (these boxes can't be changed here). Spotlight the gear at the top right. Open "Select Student" under STUDENT; pick "Yusuf Rahman". His progress loads.
+**Say:** Choose the **CLASS** and **SECTION**. The two Hifz subjects fill in by themselves, from the class's Hifz setup. An admin saves that setup once with the gear button. Then pick a student under **STUDENT**.
+**Show:** Pick "Hifz Class A", "Morning". "Quran Hifz" fills SABAQ / LESSON SUBJECT and "Juz Completion" fills JUZ/PARA COMPLETION APPROVAL SUBJECT by themselves (these boxes can't be changed here). Spotlight the gear at the top right. Open "Select Student" under STUDENT; pick "Maryam Rahman". Her progress loads.
 
 #### [3.3]
 **Say:** Use the arrows to move between students. Under **THIS REPORT**, download the student's report as a PDF or email it to the parents.
-**Show:** Click the next arrow: Ibrahim Khan. Hover the download and email icons under THIS REPORT.
+**Show:** Click the next arrow: Zaid Karim. Spotlight the download and email icons under THIS REPORT.
 
 ### 4. Attendance
 #### [4.1] Attendance by Class-Section
@@ -83,7 +84,7 @@ See docs/SCRIPT-FORMAT.md.
 
 #### [4.2]
 **Say:** Choose a class, a section and a term. The report loads straight away, with a summary and each student's attendance.
-**Show:** "Select Class" → "Hifz Boys A", "Select Section" → "Section 1", "Select Term" → "Term 1 2026–27". The summary and table load.
+**Show:** "Select Class" → "Hifz Class A", "Select Section" → "Morning", "Select Term" → "Term 1 2026–27". The summary and table load.
 
 #### [4.3]
 **Say:** Use **Export CSV** for a spreadsheet, **Print**, or **Download PDF**.
@@ -92,19 +93,19 @@ See docs/SCRIPT-FORMAT.md.
 ### 5. Progress and class reports
 #### [5.1] Progress
 **Say:** **Progress Reports** show a student's academic results. Run **Progress Report by Student**, choose the term, class, section and student, and tap **View Report**.
-**Show:** Run "Progress Report by Student". Pick "Term 1 2026–27", "Hifz Boys A", "Section 1", "Yusuf Rahman". Click "View Report"; his results load.
+**Show:** Run "Progress Report by Student". Pick "Term 1 2026–27", "Hifz Class A", "Morning", "Maryam Rahman". Click "View Report"; her results load.
 
 #### [5.2] Class lists
 **Say:** For class lists, open **Class-Section-Student-Subject Reports**. **Total Students by Class Section** lists every student with their roll number, parents' names and mobile number.
 **Show:** Sidebar → Reports → Madrasah Report. Run "Total Students by Class Section"; pick the class and section; click "View Report". The list loads.
 
 #### [5.3]
-**Say:** Older reports like this one have a **Print** or **Download** button above the results, which saves them as a PDF.
+**Say:** Some reports, like this one, have a **Print** or **Download** button above the results instead. It saves them as a PDF.
 **Show:** Spotlight the "Print" button above the list.
 
 #### [5.5] More reports
-**Say:** The library also has **Library Reports**, **Interview Reports** for parent-teacher meetings, **Exam Reports**, and **Role Based Access Reports**, which list your teachers, parents and administrators.
-**Show:** Scroll down the library; spotlight the Library Reports, Interview Reports, Exam Reports and Role Based Access Reports cards in turn. Don't run them.
+**Say:** The library also has **Library Reports**, **Interview Reports** for parent-teacher meetings, and **Role Based Access Reports**, which list your teachers, parents and administrators.
+**Show:** Scroll down the library; spotlight the Library Reports, Interview Reports and Role Based Access Reports cards in turn. Don't run them. Keep the Payment Reports card out of the shot.
 
 ### 6. Pin your favourites
 #### [6.1] Pin
@@ -112,7 +113,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Click the pin beside "Attendance by Class-Section", then beside "Hifz Progress Report". Both appear under "My Favorite Reports".
 
 #### [6.2]
-**Say:** Pins are saved in this browser for this madrasah. Tap the pin again to remove one.
+**Say:** Pins are saved in this browser for this madrasah, so they don't follow you to another computer. Tap the pin again to remove one.
 **Show:** Click the unpin icon beside "Hifz Progress Report" in My Favorite Reports; it disappears.
 
 ### 7. Next
@@ -121,11 +122,12 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** The library with "Attendance by Class-Section" pinned at the top.
 
 #### [7.2] Close
-**Say:** Next, watch 12.6, Dashboards for admins and teachers, or 12.3, Release report cards to parents.
+**Say:** Next, video 12.6: Dashboards for admins and teachers. Or video 12.3: Release report cards to parents.
 **Show:** End card with two tiles: "12.6 Dashboards for admins and teachers" and "12.3 Release report cards to parents".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 8 changes: Exam Reports removed from Covers, [5.5] and demo data (Exam Marks is out of the series; the card needs the Exam Marks setting, report.component.ts 243-244), [2.3] and [5.5] keep the Payment Reports card off camera (it has no switch, report.component.ts 163-186), [3.2] split into shorter sentences, [3.3] spotlight instead of hover, [5.3] "some reports" instead of "older reports", [6.2] pins don't follow you to another computer (localStorage, report.component.ts 316-330), [7.2] end tiles by number and title; demo names from the Maple Grove demo world (Hifz Class A Morning, Bilal Hussain, Maryam Rahman, Zaid Karim, Ibrahim Nasser)
 - 2026-11-03 · manager · decisions via chat · Payment Module cut until Track 11: [5.4] Payment Reports removed, payment dropped from Covers, flag dropped; target 4:30 to 4:15
 - 2026-11-03 · critic · 3 changes: [1.1] second-person opening; [7.2] end-card videos named by number; fold: new [5.5] names Library, Interview, Exam and Role Based Access Reports (Covers + demo data: Exam Marks setting on)
 - 2026-11-03 · validator · checked against master d36d69ed8 · 4 fixes: [3.2] Hifz Tracker subjects fill in from the class's gear-button Subject Mapping Configuration (not pickable) and a student must be picked; [2.2] Admin doesn't show every report; [6.1] a pinned report also appears under My Favorite Reports (it doesn't move); demo data adds the Hifz class flag and subject mapping
