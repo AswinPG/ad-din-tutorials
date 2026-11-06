@@ -24,7 +24,7 @@ Set your pay period, grace band, break and holiday rules, payroll email, and the
 - Payroll calendar with several upcoming monthly periods
 - Grace band 10 minutes, unpaid; Track breaks on; Unended break closes after 30 minutes; Shift-end reminder on
 - Holiday suppression for shift templates off
-- Payroll recipient empty at the start; `payroll@demo-madrasah.example` typed in the video (never a real address)
+- Payroll recipient empty at the start; `payroll@maplegrove.example.com` typed in the video (never a real address)
 - Default lists: out-of-zone reasons, correction reasons, leave categories Annual leave (Paid), Sick leave (Paid), Unpaid leave (Unpaid), Other (Unpaid)
 
 ## Script
@@ -54,11 +54,11 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Spotlight the three choices with Monthly selected. Don't change it on camera.
 
 #### [2.3] Sign-off and payment
-**Say:** **Sign-off due** sets how many days after a period ends its hours must be signed off, up to fifteen. **Payment** sets how long after that payment is scheduled.
+**Say:** **Sign-off due** is how many days you have after a period ends to sign off its hours, up to fifteen. Signing off means locking the period, as in video 13.6. **Payment** sets how long after that payment is scheduled.
 **Show:** Spotlight Sign-off due (5 days), then Payment (5 days, After the due date).
 
 #### [2.4]
-**Say:** **Weekends and holidays** moves a due date off a weekend or holiday. The **Payroll calendar** lists the periods ahead, and **Export CSV** gives you a copy.
+**Say:** **Weekends and holidays** moves a due date off a weekend or holiday. The **Payroll calendar** lists the periods ahead, and **Export CSV** gives you a copy. Ad-Din doesn't pay anyone: these dates tell your staff when to expect their pay.
 **Show:** Spotlight Weekends and holidays, then scroll to the Payroll calendar table. Hover "Export CSV".
 
 ### 3. Grace band
@@ -72,7 +72,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 4. Breaks and holidays
 #### [4.1] Breaks
-**Say:** In **Breaks and reminders**, **Track breaks** decides whether staff tap for their breaks. **Unended break closes after** sets when a forgotten break is closed for them.
+**Say:** In **Breaks and reminders**, **Track breaks** decides whether staff tap for their breaks. **Unended break closes after** sets when a forgotten break is closed for them. With **Track breaks** off, unpaid breaks are taken off automatically.
 **Show:** Click "Breaks and reminders". Spotlight "Track breaks", then "Unended break closes after" (30 min).
 
 #### [4.2]
@@ -85,11 +85,11 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 5. Payroll email
 #### [5.1] Payroll recipient
-**Say:** In **Payroll**, enter the **Payroll recipient**, such as your bookkeeper's email. When you lock a pay period, the payroll file goes to this address.
-**Show:** Click "Payroll". Type `payroll@demo-madrasah.example` in Payroll recipient; the sentence under it updates.
+**Say:** In **Payroll**, enter the **Payroll recipient**, such as your bookkeeper's email. The first time you lock each pay period, the payroll file is sent to this address.
+**Show:** Click "Payroll". Type `payroll@maplegrove.example.com` in Payroll recipient; the sentence under it updates.
 
 #### [5.2]
-**Say:** The **Payroll schedule note** is a reminder for your administrators only. It doesn't send anything.
+**Say:** The **Payroll schedule note** is a reminder for your admins only. It doesn't send anything.
 **Show:** Spotlight "Payroll schedule note".
 
 ### 6. Lists your staff see
@@ -116,6 +116,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 6 changes: [2.3] says what signing off means (locking, video 13.6) and plainer order, [2.4] Ad-Din doesn't pay anyone (en.json 5151), [4.1] Track breaks off deducts unpaid breaks automatically (en.json 3524), [5.1] only the first lock of a period emails the payroll file (IPayrollOutputSendService.cs 60-78), [5.2] "admins", demo payroll address on maplegrove.example.com
 - 2026-11-03 · manager · decisions via chat · Staff Attendance is live: 'Is Staff Attendance live?' hold flag removed; publish normally
 - 2026-11-03 · critic · 3 changes: [1.1] second-person opening; [2.1] full sidebar path; [7.1] end-card tiles named by number
 - 2026-11-03 · validator · checked against master d36d69ed8 · 3 fixes: the three lists start collapsed (open each one), list order on screen is reasons → leave categories → correction reasons, a new category starts as "New category", Unpaid
