@@ -24,8 +24,8 @@ Activate your masjid's Ad-Din website, choose its web address, and, if you alrea
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
-- Masjid Admin account, admin of "Masjid Al-Noor"; Masjid Al-Noor has no website yet at the start, and the Website add-on is active
-- After activation: website address `Masjid-Al-Noor` (Ad-Din builds it from the masjid name, keeping capitals and turning spaces into hyphens) on the demo website domain, changed on camera to `alnoor`; the demo domain stays as served by the environment
+- Masjid Admin account, admin of "Maple Grove Masjid"; Maple Grove Masjid has no website yet at the start, and the Website add-on is active
+- After activation: website address `Maple-Grove-Masjid` (Ad-Din builds it from the masjid name, keeping capitals and turning spaces into hyphens) on the demo website domain, changed on camera to `maplegrove`; the demo domain stays as served by the environment
 - A second shot of the same page for an organisation without the add-on, showing the Subscription needed chip and Subscribe to preview button, plus the visitor's "Temporarily Unavailable" page
 - Custom domain example only: `www.yourmasjid.org` as printed by the app; no real registrar account is opened
 
@@ -39,7 +39,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. Your masjid on the web
 #### [1.1] Opening
-**Say:** Ad-Din can build a public website for your masjid from what you already keep in Ad-Din: prayer times, events, news and more. Let's switch it on.
+**Say:** Ad-Din can build a public website for your masjid from what you already keep in Ad-Din: prayer times, events, news and more. In this video, you switch it on and choose its web address.
 **Show:** Title card: "Turn on your website".
 
 #### [1.2]
@@ -85,7 +85,7 @@ See docs/SCRIPT-FORMAT.md.
 
 #### [4.2]
 **Say:** Type a short, easy name. Use lowercase letters, numbers and hyphens only.
-**Show:** Clear the box and type "alnoor". Spotlight the rule "Lowercase letters, numbers and hyphens (-) only".
+**Show:** Clear the box and type "maplegrove". Spotlight the rule "Lowercase letters, numbers and hyphens (-) only".
 
 #### [4.3]
 **Say:** Tap **Save new address**. If someone else already has it, try another. Then use **Visit site** or **Copy link** to share it.
@@ -97,11 +97,11 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 5. Use a domain you already own
 #### [5.1] Custom domain
-**Say:** Already own a web address for your masjid, such as yourmasjid.org? Open **Already own a domain? Use it instead**.
+**Say:** If you already own a web address for your masjid, such as yourmasjid.org, open **Already own a domain? Use it instead**.
 **Show:** Scroll down; click "Already own a domain? Use it instead". The three steps open.
 
 #### [5.2] Step one
-**Say:** First, log in where you bought the domain. Pick your provider for the exact steps. Not sure who it is? Tap **How do I find my provider?**
+**Say:** First, log in where you bought the domain. Pick your provider for the exact steps. If you're not sure who your provider is, tap **How do I find my provider?**
 **Show:** Click the provider tabs: GoDaddy, Namecheap, Cloudflare, Squarespace, Other; the steps change. Click "How do I find my provider?", show the popup, close it.
 
 #### [5.3] Step two
@@ -109,16 +109,17 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Spotlight step 2 "Point it to this address" and the address box; click "Copy".
 
 #### [5.4] Step three
-**Say:** Last, switch on the free SSL setting at your provider, so your domain opens securely. Changes can take a day or two to work.
+**Say:** Last, switch on the free SSL setting at your provider. SSL gives your domain the padlock, so it opens securely. Changes can take a day or two to work.
 **Show:** Spotlight step 3 "Turn on free SSL for your domain", then the notice "Domain changes take 24–48 hours to take effect".
 **Caption:** Turn on SSL at your provider. Domain changes take 24 to 48 hours.
 
 ### 6. Next
 #### [6.1] Close
-**Say:** Your website is switched on and has its address. Next, give it your colours and logo, and build its menu.
+**Say:** Your website is switched on and has its address. Next, video 09.2: Brand your website. Or video 09.3: Build your website menu.
 **Show:** End card with two tiles: "09.2 Brand your website" and "09.3 Build your website menu".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 5 changes: [1.1] says what you'll do (second person), [5.1] and [5.2] no elliptical questions, [5.4] says what SSL gives you, [6.1] names both end tiles by number; demo names and address match the Maple Grove demo world
 - 2026-11-03 · critic · 5 changes: [1.2] points to 02.5 for the add-on; [2.3] dead-air scene merged into [2.2]; [4.4] padlock line made literal; [5.1] "dot org" -> yourmasjid.org (translatable); fold: website home page named in Covers, Browse website in [3.2], new [3.4a] Quick actions (labels checked in pfw main/menu templates)
 - 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: demo address shown as the app builds it (Masjid-Al-Noor, capitals kept)
