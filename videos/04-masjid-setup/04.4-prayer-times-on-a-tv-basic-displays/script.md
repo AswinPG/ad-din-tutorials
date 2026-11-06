@@ -28,8 +28,8 @@ Choose what the small, medium and large prayer-time displays show, open one on a
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
-- Demo masjid "Masjid Al-Noor" with Iqamah times for today, signed in as its masjid admin who has Ad-Din Premium (so Basic Announcements opens)
-- Demo logo and a plain background image to upload; the masjid follows the demo madrasah "Al-Noor Madrasah", so it appears in Select Madrasah
+- Demo masjid "Maple Grove Masjid" with Iqamah times for today, signed in as its masjid admin who has Ad-Din Premium (so Basic Announcements opens)
+- Demo logo and a plain background image to upload; the masjid follows the demo madrasah "Maple Grove Madrasah", so it appears in Select Madrasah
 - At least as many upcoming masjid events as madrasah events (the large display page breaks its slides when the madrasah has more events than the masjid)
 - Display settings: all prayers ticked with Begins and Adhan, Hijri and Time ticked, URL unticked
 - Previews of the three display pages and the large display full screen, recorded from the dev environment with the demo masjid's data, shown in a TV-shaped frame
@@ -84,10 +84,10 @@ See docs/SCRIPT-FORMAT.md.
 
 #### [3.6] Large Display
 **Say:** **Large Display** suits a wide TV. Set the **Scroll Speed (in seconds)**, and choose your madrasah under **Select Madrasah** to include its events.
-**Show:** Open Large Display. Spotlight Scroll Speed (in seconds), Select Madrasah ("Al-Noor Madrasah") and the event checkboxes below.
+**Show:** Open Large Display. Spotlight Scroll Speed (in seconds), Select Madrasah ("Maple Grove Madrasah") and the event checkboxes below.
 
 #### [3.7] Mobile app
-**Say:** The last section, **Ad-Din Mobile App Prayer Time Control**, sets which times show in the Ad-Din app.
+**Say:** The last section, **Ad-Din Mobile App Prayer Time Control**, sets which times your members see in the Ad-Din app.
 **Show:** Open the last section; spotlight its table.
 
 #### [3.8] Save
@@ -122,11 +122,12 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 6. Next
 #### [6.1] Close
-**Say:** Your masjid TV is ready. For full control of layouts, posters, night mode and colours, watch the premium display videos.
+**Say:** Your masjid TV is ready. For full control of layouts, posters, night mode and colours, there are premium displays. Next, video 04.5: Premium displays, part 1: layout. Or video 04.6: Premium displays, part 2: posters, events and ticker.
 **Show:** End card with two tiles: "04.5 Premium displays, part 1: layout" and "04.6 Premium displays, part 2: posters, events and ticker".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 3 changes: [3.7] says the app control changes what members see, [6.1] names both end tiles by number, demo names match the Maple Grove demo world
 - 2026-11-03 · manager · decisions via chat · TV display pages decided: previews and the TV shot are recorded from the dev environment with demo data; flag, demo data and the [4.1] TV-frame Show line updated
 - 2026-11-03 · manager · decisions via chat · 04.6 renamed 'Premium displays, part 2: posters, events and ticker' (split with 04.11): end-card tile updated
 - 2026-11-03 · critic · 4 changes: second-person opening, [2.2] says logo/background are kept only on Save, 'displays' not 'screens' in [3.1] [3.2]
