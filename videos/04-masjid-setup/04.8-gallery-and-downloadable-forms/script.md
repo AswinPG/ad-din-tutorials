@@ -24,7 +24,7 @@ Add photos and YouTube videos to your masjid's Gallery, and upload forms people 
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
-- Demo masjid "Masjid Al-Noor", signed in as its masjid admin; Gallery with six existing photos (Eid prayer, open day, food drive)
+- Demo masjid "Maple Grove Masjid", signed in as its masjid admin; Gallery with six existing photos (Eid prayer, open day, food drive)
 - A new photo to upload titled "Iftar Night", caption "Community iftar in the main hall"
 - A YouTube embed code for a demo masjid video titled "Masjid Tour"
 - Forms list with two existing forms; a new PDF under 2 MB, "Membership Application.pdf", and a 3 MB PDF or JPG for the size message
@@ -74,7 +74,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Click "Iftar Night"; it opens large with its title and caption; click the right arrow once.
 
 #### [4.2] Rename or delete
-**Say:** Tap the pencil to change the title or caption, then tap **Submit**. The bin deletes the item, after you confirm.
+**Say:** Tap the pencil to change the title or caption, then tap **Submit**. The delete icon deletes the item, after you confirm.
 **Show:** In the open viewer, click the pencil: "Rename Gallery" opens with Title and Caption; hover Submit, then click Cancel (the viewer closes with it). Open the item again and hover the bin; don't delete.
 
 ### 5. Upload a form
@@ -100,11 +100,12 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 6. Next
 #### [6.1] Close
-**Say:** Your gallery and forms are ready. Next, add pages for your masjid's services.
+**Say:** Your gallery and forms are ready. Next, video 04.9: Introduction & Services pages. Or video 15.6: Tasbeeh, live streams, gallery and forms, to see what members see.
 **Show:** End card with two tiles: "04.9 Introduction & Services pages" and "15.6 Tasbeeh, live streams, gallery and forms".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 3 changes: [4.2] "delete icon" instead of "bin" (series term), [6.1] names both end tiles by number, demo names match the Maple Grove demo world
 - 2026-11-03 · manager · decisions via chat · Planned features not in the app dropped: albums removed from Covers ('Images and videos'), albums flag removed
 - 2026-11-03 · critic · 3 changes: second-person opening, [3.2] says how to get a YouTube embed code (as 04.10 does), [5.5] 'Members' not 'Anyone'
 - 2026-11-03 · validator · checked against master d36d69ed8 · 4 fixes: forms file types say JPG not "image" (PNG is rejected), 3 MB rejection happens on Upload & Save and the list needs a refresh after upload (Show [5.4] + flags), Rename Cancel closes the viewer so the bin is shown after reopening ([4.2]), 3 MB demo file type
