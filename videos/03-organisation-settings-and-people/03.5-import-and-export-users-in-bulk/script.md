@@ -23,9 +23,9 @@ Export your madrasah’s students, parents, teachers or admins to a spreadsheet,
 
 ## Demo data
 - Demo madrasah admin account with Premium, admin of the demo madrasah
-- Demo madrasah with about ten students in two classes (for example "Hifz Boys A" and "Nazirah Girls"), their parents, and three teachers
+- Demo madrasah with about ten students in two classes (the demo world's "Hifz Class A" and "Weekend Quran"), their parents, and three teachers
 - Excel on the recording machine; the exported file is opened in Excel on camera
-- A prepared CSV `teachers-import.csv`: the editable teacher export with one phone number changed and one new row with UserID empty (for example "Ms. Aisha Karim", username `aisha_karim`, demo email and mobile)
+- A prepared CSV `teachers-import.csv`: the editable teacher export with one phone number changed and one new row with UserID empty (for example "Ms. Safiya Rahim", username `safiya_rahim`, demo email and mobile)
 - Import processing answers success in the demo world; no welcome email is sent
 - No real names, emails or phone numbers on screen
 
@@ -33,11 +33,11 @@ Export your madrasah’s students, parents, teachers or admins to a spreadsheet,
 
 ### 1. Many people at once
 #### [1.1] Opening
-**Say:** Adding people one by one takes time. Instead, export your list to a spreadsheet, edit it or add new rows, and import it back.
+**Say:** Adding people one by one takes time. In this video for madrasah admins, you’ll export your list to a spreadsheet, edit it or add new rows, and import it back.
 **Show:** Title card: "Import and export users in bulk".
 
 #### [1.2]
-**Say:** This is for madrasah admins. You can export students, parents, teachers and admins. You can import students, parents and teachers.
+**Say:** You can export students, parents, teachers and admins. You can import students, parents and teachers.
 **Show:** Opening card from You'll need.
 
 ### 2. Open your users
@@ -47,7 +47,7 @@ Export your madrasah’s students, parents, teachers or admins to a spreadsheet,
 
 #### [2.2] Filters
 **Say:** To export just one class, open **Filters** and choose a class and section first.
-**Show:** Expand Filters; pick "Hifz Boys A" in Select The Class. The list narrows. Clear it again.
+**Show:** Expand Filters; pick "Hifz Class A" in Select The Class. The list narrows. Clear it again.
 
 ### 3. Export
 #### [3.1] Export User Data
@@ -74,7 +74,7 @@ Export your madrasah’s students, parents, teachers or admins to a spreadsheet,
 
 #### [4.2] Add rows
 **Say:** To add someone new, start a new row and leave **UserID** empty. Fill in at least the salutation, first and last name, email, mobile and username.
-**Show:** Type the new row for Ms. Aisha Karim; spotlight the empty UserID cell and the required columns: Salutation, FirstName, LastName, Email, Mobile, UserName.
+**Show:** Type the new row for Ms. Safiya Rahim; spotlight the empty UserID cell and the required columns: Salutation, FirstName, LastName, Email, Mobile, UserName.
 **Caption:** New person: new row, UserID empty. Fill Salutation, FirstName, LastName, Email, Mobile and UserName.
 
 #### [4.3]
@@ -92,14 +92,15 @@ Export your madrasah’s students, parents, teachers or admins to a spreadsheet,
 
 #### [5.3]
 **Say:** When it’s done, a message confirms and the list refreshes. New people get a welcome email with their sign-in details.
-**Show:** Confirmation message; the Teacher tab now lists Aisha Karim and the updated mobile number.
+**Show:** Confirmation message; the Teacher tab now lists Safiya Rahim and the updated mobile number.
 
 ### 6. Next
 #### [6.1] Done
-**Say:** You’ve exported your users and imported your changes in one go. Next, add one student and parent by hand, or move students into the right class sections.
+**Say:** You’ve exported your users and imported your changes in one go. Next, video 06.4: Add students and parents yourself, or video 06.5: Move students between sections.
 **Show:** End card with two tiles: "06.4 Add students and parents yourself" and "06.5 Move students between sections".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 3 changes: [1.1] says who it's for and what you'll do ([1.2] no longer repeats it), [6.1] names both end tiles by number and title, demo classes and names from the Maple Grove demo world
 - 2026-11-03 · critic · 3 changes: [1.2] says who it's for; [4.3] 'Ad-Din's list' (not on screen) reworded; [6.1] Say names both end tiles
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes
