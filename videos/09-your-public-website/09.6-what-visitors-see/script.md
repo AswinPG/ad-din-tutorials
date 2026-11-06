@@ -28,11 +28,11 @@ Know what your community finds on your masjid's Ad-Din website: home page, news,
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
-- Masjid Al-Noor demo website at `alnoor`, Website add-on active, branded (green theme, logo, two banner slides, Facebook and YouTube links)
+- Maple Grove Masjid demo website at `maplegrove`, Website add-on active, branded (green theme, logo, two banner slides, Facebook and YouTube links)
 - Menu: Home, Latest News, Events (All Masjid Events), Gallery (Masjid Gallery), Facilities (Facility Details (Masjid)), Monthly Prayer Times, Contact Us
-- Donation page set to the published "Support Masjid Al-Noor" page, so the Donate button shows; campaign "Roof Repair Appeal" published with a goal, some donations and a fictional PayPal Hosted Button ID (its donate button is PayPal's)
+- Donation page set to the published "Support Maple Grove Masjid" page, so the Donate button shows; campaign "Roof Repair Appeal" published with a goal, some donations and a fictional PayPal Hosted Button ID (its donate button is PayPal's)
 - Today's prayer times and the monthly timetable for the current month
-- Three news posts ("Eid Prayer Times Announced", "Roof Repair Update", "New Quran Class"), three upcoming events with posters ("Family Picnic", "Tafsir Circle", "Youth Football")
+- Three news posts ("Eid Prayer Times Announced", "Roof Repair Update", "New Quran Class"), three upcoming events with posters ("Family Picnic", "Tafsir Circle", "Family Quran Night")
 - Six gallery photos from the Ramadan iftar, each with a title and caption (the public Gallery page is one grid, no albums); facilities: Prayer Hall (capacity 400), Wudu Area, Parking (40 spaces), Wheelchair Access
 - Contact form filled with a demo visitor; no real personal data. The form needs its reCAPTCHA ticked; use a test key or a mocked widget
 
@@ -46,7 +46,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. A tour of your masjid's website
 #### [1.1] Opening
-**Say:** Every masjid with an Ad-Din website gets a public site that updates itself from Ad-Din. Let's see it the way a visitor does.
+**Say:** Every masjid with an Ad-Din website gets a public site that updates itself from Ad-Din. In this video, you see it the way a visitor does.
 **Show:** Title card: "What visitors see".
 
 #### [1.2]
@@ -64,7 +64,7 @@ See docs/SCRIPT-FORMAT.md.
 
 #### [2.3] More on the home page
 **Say:** The home page also counts down to the next event, and shows the latest news, events, donation campaigns, photos and a short About Us.
-**Show:** Scroll back up, then down slowly in page order: "Next Event In" countdown, "Masjid Donations", "Masjid News", "Masjid Events", then the photo strip beside "About Us".
+**Show:** Scroll back up, then down slowly in page order: "Next Event In" countdown, "Masjid Donations", "Masjid News", "Masjid Events", then the photo strip beside "About Us". Keep the "Donation Progress" counter out of close-up (it miscounts; docs/APP-ISSUES.md).
 
 ### 3. News and events
 #### [3.1] News
@@ -86,7 +86,7 @@ See docs/SCRIPT-FORMAT.md.
 
 #### [4.2] Facilities
 **Say:** **Facilities** tells visitors what the masjid offers, such as the prayer hall, parking and wheelchair access.
-**Show:** Menu → Facilities. The "Masjid Facilities" page with the demo facilities and capacities.
+**Show:** Menu → Facilities. The "Masjid Facilities" page with the demo facilities and capacities. Crop the browser tab bar: this page's tab title reads "Masjid News" (app bug).
 
 ### 5. Monthly prayer times
 #### [5.1] The timetable
@@ -100,7 +100,7 @@ See docs/SCRIPT-FORMAT.md.
 ### 6. Give and get in touch
 #### [6.1] Donate
 **Say:** The **Donate** button at the top opens the masjid's donation page. Campaigns are under **Masjid Donations**, each with its own donate button.
-**Show:** Spotlight "Donate" in the header; click it; the "Support Masjid Al-Noor" page opens. Back on the home page, click "View All" under Masjid Donations; "Roof Repair Appeal" shows its progress. Don't open PayPal.
+**Show:** Spotlight "Donate" in the header; click it; the "Support Maple Grove Masjid" page opens. Back on the home page, click "View All" under Masjid Donations; "Roof Repair Appeal" shows its progress. Don't open PayPal.
 **Caption:** Donate opens the donation page. Campaigns are under Masjid Donations.
 
 #### [6.2] Contact Us
@@ -113,10 +113,11 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 7. Next
 #### [7.1] Close
-**Say:** That's what your community sees, and it updates as the masjid updates Ad-Din. To change the menu or the look, see the website setup videos.
+**Say:** That's what your community sees, and it updates as the masjid updates Ad-Din. Next, video 09.3: Build your website menu. Or video 09.2: Brand your website.
 **Show:** End card with two tiles: "09.3 Build your website menu" and "09.2 Brand your website".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 4 changes: [1.1] second person instead of "let's", [2.3] keeps the miscounting Donation Progress counter out of close-up, [4.2] crops the wrong "Masjid News" tab title, [7.1] names both end tiles by number; demo names match the Maple Grove demo world (and its Family Quran Night event)
 - 2026-11-03 · critic · 2 changes: [1.1] idioms ("a home on the web", "take the tour") made literal; [2.1] banner no longer said to carry news (it shows the admin's slides)
 - 2026-11-03 · validator · checked against master d36d69ed8 · 5 fixes: home-page scroll order; Gallery is one grid, not albums; contact form send button + reCAPTCHA + real thank-you text (Say no longer says tap Send Message); campaign PayPal button in demo data
