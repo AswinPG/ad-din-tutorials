@@ -25,7 +25,7 @@ Read the widgets on your dashboard as an admin or a teacher, pin Quick Actions, 
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
-- Signed-in demo account that is Madrasah Admin, Teacher (of "Hifz Boys A") and Masjid Admin of the shared demo organisation, so the role menu offers Admin and Teacher and both dashboard buttons show
+- Signed-in demo account Yusuf Rahman, Madrasah Admin, Teacher (of "Hifz Class A") and Masjid Admin of Maple Grove Madrasah and Maple Grove Masjid, so the role menu offers Admin and Teacher and both dashboard buttons show
 - Madrasah numbers for Total Counts (students, boys, girls, staff, admins, classes, alumni)
 - Term "Term 1 2026–27" with Hifz assignments, Academic Activities, attendance and report cards (some marked ready) so every chart has data
 - Two upcoming events and one holiday this month; two recent messages; today's prayer times
@@ -113,7 +113,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Phone frame: the app home. Tap "Admin" in the role tabs. Scroll to the "Waiting on you" card.
 
 #### [6.4]
-**Say:** Beside **Enrollment applications**, tap **Review** to answer new applications. **Classes without attendance** names the classes not marked today; **Nudge** opens their attendance.
+**Say:** Beside **Enrollment applications**, tap **Review** to answer new applications. **Classes without attendance** names the classes not marked today. **Nudge** sends no message; it opens the attendance page, so you can take or check it.
 **Show:** Spotlight the "Enrollment applications" row and its "Review", then the "Classes without attendance" row and its "Nudge". Tap "Nudge"; the attendance page opens. Go back.
 
 ### 7. Next
@@ -122,11 +122,12 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** The tidy dashboard with two Quick Actions.
 
 #### [7.2] Close
-**Say:** For the numbers behind these boxes, watch 12.4, Madrasah reports library. To finish report cards, see 12.3, Release report cards to parents.
+**Say:** For the numbers behind these boxes, video 12.4: Madrasah reports library. To finish report cards, video 12.3: Release report cards to parents.
 **Show:** End card with two tiles: "12.4 Madrasah reports library" and "12.3 Release report cards to parents".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 3 changes: [6.4] says Nudge sends no message and only opens the attendance page (mobile-home.service.ts 676-686), [7.2] end tiles by number and title; demo names from the Maple Grove demo world (Yusuf Rahman, Hifz Class A)
 - 2026-11-03 · manager · decisions via chat · Payment Module cut until Track 11: the script had no payment line; demo data now says no payment widget or line on camera
 - 2026-11-03 · critic · 5 changes: [1.1] second-person opening; [1.2] "know your way around" idiom removed; [5.3] Say now matches the Show (tap a card to open it); [7.2] "dig into" dropped, videos named by number; fold: new [6.3]/[6.4] admin app home "Waiting on you" with Review and Nudge (Covers + demo data)
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes
