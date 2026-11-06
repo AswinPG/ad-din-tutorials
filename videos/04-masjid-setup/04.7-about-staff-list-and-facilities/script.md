@@ -20,9 +20,9 @@ Write your masjid's About page, check who appears on the Staff List, and set whi
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
-- Demo masjid "Masjid Al-Noor" with address, phone, email and logo, signed in as its masjid admin; no About description yet (so the empty state shows)
-- About text to paste on camera: title "Welcome to Masjid Al-Noor", two short paragraphs and a bullet list of services
-- Three staff on the masjid with titles: "Sheikh Yusuf Rahman" (Imam, with a biography), "Bilal Ahmed" (Muezzin, with a biography), "Amina Khan" (Office Manager, no biography)
+- Demo masjid "Maple Grove Masjid" with address, phone, email and logo, signed in as its masjid admin; no About description yet (so the empty state shows)
+- About text to paste on camera: title "Welcome to Maple Grove Masjid", two short paragraphs and a bullet list of services
+- Three staff on the masjid with titles: "Sheikh Idris Malik" (Imam, with a biography; not Yusuf Rahman, who is the demo admin account), "Bilal Ahmed" (Muezzin, with a biography), "Amina Khan" (Office Manager, no biography)
 - Facilities from the catalogue, for example Parking (quantity), Prayer Hall (capacity), Wudu Area and Sisters' Prayer Area active, and one inactive facility to switch on
 
 ## Script
@@ -66,10 +66,10 @@ See docs/SCRIPT-FORMAT.md.
 
 #### [3.2] Biography
 **Say:** Tap a name to read their **Biography**. Each person writes their own biography in their Ad-Din profile.
-**Show:** Click "Sheikh Yusuf Rahman": the biography shows. Click "Amina Khan": "No Biography found".
+**Show:** Click "Sheikh Idris Malik": the biography shows. Click "Amina Khan": "No Biography found".
 
 #### [3.3] Adding staff
-**Say:** You don't add people here. Staff and their titles are added in the masjid's user settings, as shown in video 03.3.
+**Say:** You don't add people here. Staff and their titles are added under **Admin Portal**, then **User Management**, as shown in video 03.3.
 **Show:** Small tile: "03.3 Add admins, staff and volunteers to a masjid".
 
 ### 4. Facility Details
@@ -91,10 +91,11 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 5. Next
 #### [5.1] Close
-**Say:** Your About page, Staff List and facilities are ready for your community. Next, share photos and downloadable forms.
+**Say:** Your About page, Staff List and facilities are ready for your community. Next, video 04.8: Gallery and downloadable forms. Or video 03.3: Add admins, staff and volunteers to a masjid.
 **Show:** End card with two tiles: "04.8 Gallery and downloadable forms" and "03.3 Add admins, staff and volunteers to a masjid".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 4 changes: [3.3] names the real place staff are added (Admin Portal, User Management; menu.data.ts), [5.1] names both end tiles by number, demo Imam renamed so he isn't the demo admin Yusuf Rahman, demo names match the Maple Grove demo world
 - 2026-11-03 · critic · 3 changes: second-person opening, [2.2] empty-state line reads naturally, [3.3] points to video 03.3 by number
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes
