@@ -21,6 +21,7 @@ Check your recorded day in the Ad-Din app, ask for time off, and see when each p
 <!-- Shown on the opening card. Generated from prereq/plan/switch if left empty. -->
 - The Ad-Din app, signed in with your own account
 - Your organisation has set you up for Staff Attendance
+- Ad-Din Premium; your organisation usually gives you a seat
 
 ## Covers
 - Day view, Request time off, pay periods
@@ -28,7 +29,7 @@ Check your recorded day in the Ad-Din app, ask for time off, and see when each p
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
-- Staff member Aisha Rahman, already past the first-time notice, with today's taps: Checked in 8:33, Break started 12:01, Break ended 12:28, Checked out 3:03, all in zone
+- Staff member Khadija Usman, already past the first-time notice, with today's taps: Checked in 8:33, Break started 12:01, Break ended 12:28, Checked out 4:33, all in zone
 - Yesterday with one history entry (an administrator set the hours by hand, with a reason)
 - An earlier provisional day recorded by the system, so "Doesn't look right" shows
 - The organisation's correction reason list (defaults), so the What happened? sheet has choices
@@ -50,7 +51,7 @@ See docs/SCRIPT-FORMAT.md.
 
 #### [1.2]
 **Say:** You're already set up and recording your time. Open the menu, then **My Attendance**. The tabs along the bottom are **Today**, **Timesheet**, **Time off** and **Pay periods**.
-**Show:** Phone frame. Menu → My Attendance. Spotlight the four tabs at the bottom.
+**Show:** Phone frame (side panel: "Signed in as: Khadija Usman, office staff"). Menu → My Attendance. Spotlight the four tabs at the bottom.
 
 ### 2. Your day in detail
 #### [2.1] Timesheet
@@ -62,7 +63,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Tap "Checked in". Zoom on "You tapped at", "Recorded as" and "Location checked at".
 
 #### [2.3] History
-**Say:** **History** shows anything the system or your administrator changed on this day, and why.
+**Say:** **History** shows anything the system or your admin changed on this day, and why.
 **Show:** Tap the previous-day arrow to open yesterday. Spotlight the box "These hours were set by …" with its reason, above the tabs. Then tap "History" and spotlight "Your hours for this day were set by hand."
 
 #### [2.4]
@@ -70,7 +71,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Step back to the provisional day. Spotlight the sentence above the button, then tap "Doesn't look right".
 
 #### [2.4a] What happened?
-**Say:** In **What happened?**, pick the closest answer, add a note if you like, and tap **Send**. Your administrator reviews the day, and you'll see their answer here.
+**Say:** In **What happened?**, pick the closest answer, add a note if you like, and tap **Send**. Your admin reviews the day, and you'll see their answer here.
 **Show:** The "What happened?" sheet rises over the dimmed day. Tap the first answer, type a short note under "Add a note (optional)", tap "Send". The sheet closes; the day now says the administrator will review it.
 
 ### 3. Ask for time off
@@ -83,7 +84,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Set First day and Last day. Tap "Annual leave". Type the note.
 
 #### [3.3] Send
-**Say:** Tap **Send**. Under **Your requests**, it shows **Waiting for a decision** until your administrator answers. You'll get an email when they do.
+**Say:** Tap **Send**. Under **Your requests**, it shows **Waiting for a decision** until your admin answers. You'll see their answer here, and get an email too.
 **Show:** Tap "Send". Zoom on the new request with "Waiting for a decision".
 
 ### 4. Pay periods
@@ -97,11 +98,12 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 5. Next
 #### [5.1] Close
-**Say:** Now you know where to find your hours, time off and pay dates. If anything looks wrong, tell your administrator from the app. To record your day, watch 13.7, Check in, breaks and check out.
+**Say:** Now you know where to find your hours, time off and pay dates. If a day looks wrong, tap **Doesn't look right** on that day. To record your day, watch 13.7, Check in, breaks and check out.
 **Show:** End card: "13.7 Check in, breaks and check out".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 6 changes: You'll need adds Ad-Din Premium, [1.2] "Signed in as: Khadija Usman, office staff" label, [2.3]/[2.4a] "admin", [3.3] you see the answer on the Time off screen and get an email too, [5.1] names Doesn't look right instead of "tell your admin from the app", demo staff member Khadija Usman, check-out 4:33
 - 2026-11-03 · manager · decisions via chat · Staff Attendance is live: 'Is Staff Attendance live?' hold flag removed; publish normally
 - 2026-11-03 · critic · 4 changes: [1.1] second-person opening; [1.2] menu path; [5.1] "live" idiom dropped, end card named by number; fold: new [2.4a] correction sheet (Doesn't look right → What happened? → Send) on the day view (Covers + demo data)
 - 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: [2.3] "These hours were set by …" and its reason sit on the day itself, above the tabs; the History tab lists "Your hours for this day were set by hand."
