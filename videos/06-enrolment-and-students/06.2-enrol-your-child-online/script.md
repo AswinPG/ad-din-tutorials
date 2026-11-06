@@ -29,12 +29,12 @@ Use your madrasah's enrolment link to sign up, choose a program, fill in your de
 - Enrolment link → sign up → Select Program → Parent/Guardian Details → Child Details → Review and Submit
 
 ## Demo data
-- Demo madrasah "Al-Noor Madrasah" (logo, city) with the enrolment settings from 06.1: a mandatory "Birth Certificate" document for students, the default agreement and FAQs, and the custom child field "Language spoken at home"
-- Two classes open for enrolment with program descriptions and pictures: "Maktab Level 1" and "Hifz Boys"
-- A fresh parent username (for example `aisha_rahman`), demo email, and demo password typed off screen or masked; reCAPTCHA off in the demo
+- Demo madrasah "Maple Grove Madrasah" (logo, Toronto) with the enrolment settings from 06.1: a mandatory "Birth Certificate" document for students, the default agreement and FAQs, and the custom child field "Language spoken at home"
+- Two classes open for enrolment with program descriptions and pictures: "Weekend Quran" and "Hifz Class A"
+- A new parent who isn't in Ad-Din yet: "Khadija Malik", username `khadija_malik`, demo email, and demo password typed off screen or masked; reCAPTCHA off in the demo
 - No children linked to the new parent yet (so the "Add New Child" table doesn't appear), and no existing enrolments
-- Demo child "Maryam Rahman": username `maryam_rahman`, demo email, date of birth, one allergy note; a small sample PDF to upload as the birth certificate; one emergency contact (demo name and mobile), entered on the Child Details step
-- After submit, the Enrollments card shows Maryam with "Maktab Level 1" and status Pending
+- Demo child "Musa Malik": username `musa_malik`, demo email, date of birth, one allergy note; a small sample PDF to upload as the birth certificate; one emergency contact (demo name and mobile), entered on the Child Details step
+- After submit, the Enrollments card shows Musa with "Weekend Quran" and status Pending
 
 ## Script
 
@@ -50,32 +50,32 @@ Use your madrasah's enrolment link to sign up, choose a program, fill in your de
 ### 2. Open the link and sign up
 #### [2.1] The link
 **Say:** Open the link, or scan the QR code with your phone's camera. The page shows your madrasah's name under **Enrolling at**.
-**Show:** Browser opens the enrolment link. The sign-up page with the left panel "Enrolling at Al-Noor Madrasah" and "Powered by Ad-Din.ca". Zoom on the madrasah name.
+**Show:** Browser opens the enrolment link. The sign-up page with the left panel "Enrolling at Maple Grove Madrasah" and "Powered by Ad-Din.ca". Zoom on the madrasah name.
 
 #### [2.2] New to Ad-Din
-**Say:** New to Ad-Din? The **Sign Up** form is already open. Enter a username, your email and a password, tick the box to agree, and tap **Sign Up**.
+**Say:** If you're new to Ad-Din, the **Sign Up** form is already open. Enter a username, your email and a password, tick the box to agree, and tap **Sign Up**.
 **Show:** Fill Username, Email, Password and Confirm Password (masked). Tick the agree box; keep the shot wide, no zoom on the two links. Click "Sign Up".
-**Caption:** New to Ad-Din? Fill in the Sign Up form, tick the box to agree, and tap Sign Up.
+**Caption:** If you're new to Ad-Din, fill in the Sign Up form, tick the box to agree, and tap Sign Up.
 
 #### [2.3]
-**Say:** Already have an account? Tap **Login here** instead. Either way, Ad-Din takes you straight to your madrasah's enrolment form.
+**Say:** If you already have an account, tap **Login here** instead. Either way, Ad-Din takes you straight to your madrasah's enrolment form.
 **Show:** Spotlight "Already have an account? Login here" without clicking it. Then the "Setting up your enrolment…" screen, and the form opens.
 
 ### 3. Choose a program
 #### [3.1] Select Program
 **Say:** **Select Program** shows the classes your madrasah has opened for enrolment. Tap **Program details** to read more about one.
-**Show:** The Select Program page with the madrasah banner and "Program offered". Click "Program details" on "Maktab Level 1"; the details panel opens, then close it.
+**Show:** The Select Program page with the madrasah banner and "Program offered". Click "Program details" on "Weekend Quran"; the details panel opens, then close it.
 
 #### [3.2]
 **Say:** Tap **Select** on each program you want for your child, then tap **Proceed**.
-**Show:** Click "Select" on "Maktab Level 1"; it changes to "Selected" with a tick. The bar shows "1 program selected". Click "Proceed".
+**Show:** Click "Select" on "Weekend Quran"; it changes to "Selected" with a tick. The bar shows "1 program selected". Click "Proceed".
 
 #### [3.3]
 **Say:** Ad-Din checks that you're the parent or guardian. Choose **Yes, I am logged in as the parent or guardian**, then tap **Continue to Enrollment**.
 **Show:** The confirmation window with "YOU ARE LOGGED IN AS" and the parent's name. Pick the Yes option, click "Continue to Enrollment →".
 
 #### [3.4]
-**Say:** If you're signed in on your child's account by mistake, choose No. Ad-Din helps you sign out and use a parent account instead.
+**Say:** If you're signed in on your child's account by mistake, choose No. Enrolment must come from a parent or guardian account, so sign in with yours instead.
 **Show:** Quick cut, not recorded live: the No option selected, with the notice "Enrollment not available for your account type." Then back to Yes.
 
 ### 4. Your details
@@ -94,7 +94,7 @@ Use your madrasah's enrolment link to sign up, choose a program, fill in your de
 ### 5. Your child's details
 #### [5.1] Child Details
 **Say:** Step two is **Child Details**. Enter your child's name. Your child gets their own Ad-Din login, so give them a **Username** and an **Email** as well.
-**Show:** Progress bar on "Child Details". Fill Salutation, First Name "Maryam", Last Name "Rahman", Username and Email.
+**Show:** Progress bar on "Child Details". Fill Salutation, First Name "Musa", Last Name "Malik", Username and Email.
 
 #### [5.2]
 **Say:** Add the **Date of Birth**, and anything teachers should know, such as **Allergies** or a **Special Note**. For Hifz, you can say how much your child has memorised.
@@ -132,7 +132,7 @@ Use your madrasah's enrolment link to sign up, choose a program, fill in your de
 
 #### [7.2]
 **Say:** To check on it, open **Madrasah / School**, then **Signup for a Program**. **Enrollments** lists each application and its status. If one is declined, you'll see why, and can tap **Review & Resubmit**.
-**Show:** Sidebar → Madrasah / School → Signup for a Program. Spotlight the Enrollments card: Maryam Rahman, Maktab Level 1, Pending.
+**Show:** Sidebar → Madrasah / School → Signup for a Program. Spotlight the Enrollments card: Musa Malik, Weekend Quran, Pending.
 **Caption:** To check on it: Madrasah / School → Signup for a Program → Enrollments. A declined application shows why, with Review & Resubmit.
 
 #### [7.3] Next
@@ -141,6 +141,7 @@ Use your madrasah's enrolment link to sign up, choose a program, fill in your de
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 4 changes: [2.2] (Say and Caption) and [2.3] no elliptical questions, [3.4] says what No really does: enrolment must come from a parent or guardian account (select-program.component.html, "Enrollment not available for your account type."); there is no sign-out help, demo data and Show names use the Maple Grove demo world with a new family (Khadija and Musa Malik), because Maryam is already enrolled there
 - 2026-11-03 · manager · decisions via chat · 'Sign-up and register page links' decided (wide shots, bug stays logged): flag reworded; checked, [2.2] keeps the shot wide and never zooms or clicks the links
 - 2026-11-03 · critic · 6 changes: [1.1] second-person opening; [3.4] no elliptical question; [4.3] Say covers the Documents card the Show passes; [5.3] no "hover" (doesn't exist on a phone); [6.3] Say in the order the viewer acts; [7.3] end card by number and title
 - 2026-11-03 · validator · checked against master d36d69ed8 · 3 fixes: emergency contact moved from the parent step to the child step ([4.3] reworded, new [5.5]); [4.2] Show selects No instead of hover; demo data adds the child's emergency contact
