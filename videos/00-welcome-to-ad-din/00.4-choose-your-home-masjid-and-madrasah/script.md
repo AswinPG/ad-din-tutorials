@@ -6,7 +6,7 @@ prereq:
   - "00.2"
 status: scripted
 flags:
-  - "Bug: choosing a masjid and then tapping Skip for now on the madrasah step leaves without saving the masjid (Save & Continue stays disabled with no madrasah). The script avoids that path; fix before publishing or re-script"
+  - "Bug: choosing a masjid and then tapping Skip for now on the madrasah step leaves without saving the masjid (Save & Continue stays disabled with no madrasah). Decided 2026-11-06: fix the app first; [4.1] now tells masjid-only viewers to tap Skip for now, so don't record or publish until the fix is in master"
   - The All set page heading shows a doubled exclamation mark ("You are all set ! !"); keep it out of zooms
 ---
 
@@ -75,8 +75,8 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 4. Choose your madrasah
 #### [4.1]
-**Say:** Now, under **Select your Madrasah / School**, choose the madrasah or school your family uses, the same way.
-**Show:** The header changes to "Select your Madrasah / School". Click the "Maple Grove Madrasah" card: tick appears.
+**Say:** Now, under **Select your Madrasah / School**, choose the madrasah or school your family uses, the same way. No madrasah? Tap **Skip for now**, and Ad-Din keeps your masjid.
+**Show:** The header changes to "Select your Madrasah / School". Spotlight "Skip for now" while the second sentence plays, then click the "Maple Grove Madrasah" card: tick appears.
 
 #### [4.2]
 **Say:** Tap **Save & Continue**. Ad-Din links both to your account.
@@ -129,6 +129,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · manager · panel decisions approved ("approved": recommended options) · [4.1] tells masjid-only viewers to tap Skip for now (decision 1; record after the app fix)
 - 2026-11-06 · panel (user, director, writer, PM, PO) · 11 changes: [1.2] defines home masjid and madrasah, [2.2] plain wording, [3.1] "Organization ID", [3.3] Show unselects and reselects as said, [3.4] plain wording, [5.1] no fragment opening, [6.1] says who chooses Yes, [6.2] "sign a child up", [7.1] shorter sentences, [7.3] "delete icon" (not "bin"), demo data and Show names match the recorded demo world (Maple Grove, Cedar Hill, Riverbend)
 - 2026-11-03 · critic · 6 changes: [1.1] says what you'll do, [2.2] Show matches the search line, [3.2]/[3.4] no elliptical questions, [7.1] Say gives the path the Show takes, [8.1] no idiom, end tiles by number
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes
