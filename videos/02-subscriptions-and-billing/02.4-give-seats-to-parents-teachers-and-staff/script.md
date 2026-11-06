@@ -50,8 +50,8 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 2. Who needs a seat
 #### [2.1] Admins and teachers
-**Say:** Anyone who uses Premium pages needs Premium on their own account. That includes you and every admin, and every teacher who uses the **Teacher Portal**.
-**Show:** Card listing the roles; then spotlight Admin Portal and Teacher Portal in the sidebar.
+**Say:** Anyone who uses Premium pages needs Premium on their own account. That includes you and every admin, and every teacher who uses the **Teacher Portal**. At a masjid, that means the admins who run its events, donations and reports.
+**Show:** Card listing the roles; then spotlight Admin Portal and Teacher Portal in the sidebar; quick cut to the Masjid admin sidebar with Events, Donations and Reports spotlighted.
 
 #### [2.2] Parents and students
 **Say:** Parents need it for the **Parent Portal**. A student can only be placed in a class if the student, or their family, has Premium.
@@ -119,6 +119,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · manager · panel decisions approved ("approved": recommended options) · [2.1] masjid admins need seats too (decision 17)
 - 2026-11-03 · manager · decisions via chat · 'Who needs a seat?' decided (own-Premium check is intended): flag wording updated; script unchanged
 - 2026-11-03 · critic · 3 changes: [1.1] second-person opening, [2.4] thin scene merged into [2.3], [6.2] end tiles by number
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes
