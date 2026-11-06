@@ -58,8 +58,8 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 3. What Premium adds
 #### [3.1] Premium features
-**Say:** **Premium** adds more features: **Madrasah Management**, **Event Management**, **Reports**, **Priority Support** and **Future Modules**.
-**Show:** Spotlight the Premium Monthly card's feature list. Keep the prices in shot; don't zoom on them.
+**Say:** **Premium** adds more features, such as **Madrasah Management**, **Event Management** and **Reports**.
+**Show:** Spotlight the Premium Monthly card's feature list (all bullets stay on screen; only three are spoken). Keep the prices in shot; don't zoom on them.
 
 #### [3.2]
 **Say:** What you see in Premium depends on your role. A teacher sees the **Teacher Portal**. A parent sees the **Parent Portal**. An admin sees the **Admin Portal**.
@@ -92,7 +92,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Admin account: Subscription Management → View plan on "Al-Noor Madrasah" → scroll to Other Services. Spotlight Ad-Din Public Facing Webpages and Ad-Din Custom Sender Name and Email. Cut to the masjid's View plan; spotlight Ad-Din Prayer Times Premium.
 
 #### [5.2]
-**Say:** Add-ons are for the whole organisation, so they don't use any of your Premium seats.
+**Say:** Add-ons are for the whole organisation, so they don't use any of your Premium seats. Each add-on is its own paid subscription. Prayer Times Premium starts with a free trial.
 **Show:** Spotlight the Other Services heading above the cards.
 
 ### 6. The grace period
@@ -112,5 +112,6 @@ See docs/SCRIPT-FORMAT.md.
 ## Review log
 - 2026-11-06 · panel (user, director, writer, PM, PO) · 12 changes: "Signed in as" side-panel label on every account switch, [1.1] no idiom, [2.2] masjid admin features named as free for a masjid, not "what everyone gets" (Say and Caption), [3.1] "more features", [3.2] no "role based", full sentences, [3.3] no clash with family sharing in [4.4], [4.2] defines a seat, [4.3] no phrasal verb, [5.1] not "the same page" (it follows the Services tab), two cards then the masjid's page, plain sender wording, [6.1] says Days remaining already reads 0, no idiom, [6.2] says the Subscription tab opens, [7.1] no elliptical question, every video by number
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · manager · panel decisions approved ("approved": recommended options) · [3.1] speaks three features only (decision 9), [5.2] add-ons are paid, Prayer Times Premium trial (decision 10)
 - 2026-11-03 · critic · 3 changes: [1.1] second-person opening, [5.2] clearer seat wording and a Show with something to see, [7.1] Say names all three end tiles
 - 2026-11-03 · validator · checked against master d36d69ed8 · 2 fixes: [6.1] Show (Days remaining reads 0 during grace), [6.2] Show + demo data (a member has no Premium page in the sidebar; use a lapsed parent)
