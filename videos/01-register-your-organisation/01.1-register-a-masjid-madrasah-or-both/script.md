@@ -137,12 +137,17 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 8. Next
 #### [8.1] Close
-**Say:** You're now the first admin of your new masjid and madrasah, and you can start setting them up once Ad-Din approves them. Next, video 01.2 shows what happens while Ad-Din reviews them, and video 02.1 explains how Ad-Din plans work.
+**Say:** You're now the first admin of your new masjid and madrasah, and you can start setting them up once Ad-Din approves them. Registering, and running your masjid's page, is free. Running a madrasah needs Ad-Din Premium.
+**Show:** The new organisation's Pending Approval note; then a card: "Registering: free · Masjid page: free · Madrasah: Ad-Din Premium".
+
+#### [8.2] Next
+**Say:** Next, video 01.2 shows what happens while Ad-Din reviews them, and video 02.1 explains how Ad-Din plans work.
 **Show:** End card with two tiles: "01.2 After you register: approval" and "02.1 How Ad-Din plans work".
 
 ## Review log
 - 2026-11-06 · panel (user, director, writer, PM, PO) · 10 changes: [1.1] no nested opening, "admin" (one word across the series), [2.1] no "finder" (clashes with Masjid Finder) and the route back from the profile (Change opens the same page with Don't see your organization?), new [2.1a] points to 01.3 so a listed masjid isn't registered twice, [2.2] plain English, [3.2] adds the prayer-times and suspension terms (term_2, term_4), Caption matches, [4.2] says the list comes from Google Maps, [4.4] no idiom, Caption says "uses" like the Say, [4.5] no idiom, [7.3] no passive, [8.1] admin menus wait for approval
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · manager · panel decisions approved ("approved": recommended options) · [8.1] registering and a masjid page are free, a madrasah needs Premium; Next moved to new [8.2] (decision 4)
 - 2026-11-03 · manager · decisions via chat · 'Sign-up and register page links' decided (wide shots, bug stays logged): checked, [3.3] keeps the shot wide and no scene zooms or clicks the Terms of Service link ([3.2] spotlights the terms text only); no change
 - 2026-11-03 · critic · 2 changes: [1.1] second-person opening, [8.1] end tiles by number
 - 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: [3.2] the six terms sit under the heading **Terms of Service** (onboarding.terms), not "Terms and Conditions"
