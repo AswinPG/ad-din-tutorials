@@ -67,7 +67,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 4. Or draw a polygon
 #### [4.1] Polygon
-**Say:** For an odd-shaped site, choose **Polygon** instead. Tap the map at each corner. If you misplace one, tap **Undo point**.
+**Say:** For a site with an uneven shape, choose **Polygon** instead. Tap the map at each corner. If you misplace one, tap **Undo point**.
 **Show:** Rename to "Playing field". Click "Polygon". Click five corners round the field; click "Undo point" once and re-add the last corner. Spotlight "5 of 100 points".
 
 #### [4.2]
@@ -90,6 +90,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 1 changes: [4.1] "a site with an uneven shape" (no "odd-shaped" idiom)
 - 2026-11-03 · manager · decisions via chat · Staff Attendance is live: 'Is Staff Attendance live?' hold flag removed; publish normally
 - 2026-11-03 · critic · 4 changes: [1.1] second-person opening; [2.1] full sidebar path; [5.1] "annotate" and "checks itself" replaced with plain words, thin [5.2] (Show only held the map) merged into it; [6.1] both end-card tiles named by number
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes
