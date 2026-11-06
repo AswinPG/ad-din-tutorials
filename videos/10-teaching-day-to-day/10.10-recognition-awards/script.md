@@ -20,10 +20,10 @@ Give a student or staff member an award, download its certificate, and send it s
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
-- Demo madrasah "Al-Noor Madrasah" (Premium); the demo account is a Madrasah Admin
-- Teacher Yusuf Patel and teacher Aisha Rahman; demo student in Class "Maktab Level 1" with linked demo parents
-- Student award created on camera: From Teacher Yusuf Patel, To Student (demo student), Student of the Month, today's date
-- Staff award created on camera: From Guest "Masjid committee", To Teacher Aisha Rahman, Years of Service Award
+- Demo madrasah "Maple Grove Madrasah" (Premium); the demo account Yusuf Rahman is a Madrasah Admin
+- Teachers Bilal Hussain and Fatima Siddiqui; demo student Zaid Karim in Class "Maktab Level 1" with his parent Samir Karim
+- Student award created on camera: From Teacher Bilal Hussain, To Student Zaid Karim, Student of the Month, today's date
+- Staff award created on camera: From Guest "Masjid committee", To Teacher Fatima Siddiqui, Years of Service Award
 - Two older awards in each tab, so the filters have something to find
 - Certificate PDF generation and the notification mocked (a sample certificate opens; no real email or push goes out)
 
@@ -52,14 +52,14 @@ See docs/SCRIPT-FORMAT.md.
 ### 3. A student award
 #### [3.1] From
 **Say:** On **Student**, tap **Add**. Under **From**, choose **From Teacher** and pick the teacher, or **From Guest** and type a name.
-**Show:** Click "Add". The Recognition window opens. "From Teacher" is selected; pick "Yusuf Patel". Tap "From Guest" to show the text box, then back to "From Teacher".
+**Show:** Click "Add". The Recognition window opens. "From Teacher" is selected; pick "Bilal Hussain". Tap "From Guest" to show the text box, then back to "From Teacher".
 
 #### [3.2] To
 **Say:** Under **To**, choose **To Student** and pick the student.
-**Show:** "To Student" selected; pick the demo student.
+**Show:** "To Student" selected; pick "Zaid Karim".
 
 #### [3.3] Type and date
-**Say:** Choose the **Type**, such as **Student of the Month** or **Perfect Attendance Award**. Set the **Date** and tap **Save**.
+**Say:** Choose the **Type**, such as **Student of the Month** or **Perfect Attendance Award**. Set the **Date** and tap **Save**. The student, their parents and the teacher are told straight away, by email and in the app.
 **Show:** Open Type; spotlight the options, pick "Student of the Month". Pick today's date. Click "Save". The award appears in the list.
 
 ### 4. Certificates
@@ -68,16 +68,16 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Click "View Certificate" on the new row. The sample certificate PDF opens.
 
 #### [4.2] Send Certificate
-**Say:** Select the award and tap **Send Certificate**. The student, their parents and the teacher are told by email and in the app.
+**Say:** To send the award again later, select it and tap **Send Certificate**. The same people are told again.
 **Show:** Select the row, click "Send Certificate". The confirmation message shows.
 
 ### 5. A staff award
 #### [5.1] Staff Recognition
 **Say:** Staff awards work the same way. On **Staff**, tap **Add**, then choose who it's from, and **To Teacher** or **To Guest**.
-**Show:** Click the "Staff" tab, then "Add". The "Staff Recognition" window opens. Choose "From Guest", type "Masjid committee". Under To, pick "Aisha Rahman".
+**Show:** Click the "Staff" tab, then "Add". The "Staff Recognition" window opens. Choose "From Guest", type "Masjid committee". Under To, pick "Fatima Siddiqui".
 
 #### [5.2]
-**Say:** Staff types include **Teacher of the Month**, **Years of Service Award** and **Certificates of Appreciation**. Pick one, set the date, and tap **Save**.
+**Say:** Staff types include **Teacher of the Month**, **Years of Service Award** and **Certificates of Appreciation**. Pick one, set the date, and tap **Save**. The teacher is told straight away.
 **Show:** Open Type and spotlight those options. Pick "Years of Service Award", set the date, click "Save".
 
 #### [5.3]
@@ -87,13 +87,14 @@ See docs/SCRIPT-FORMAT.md.
 ### 6. Next
 #### [6.1] Who sees them
 **Say:** Use the **Type** and date filters to find past awards. Teachers see them under **Recognition** in the Teacher Portal, and families in the Parent Portal.
-**Show:** Open Filters, pick a type. Quick cut to Teacher Portal → Recognition.
+**Show:** Open Filters, pick a type. Quick cut to a teacher (side panel: "Signed in as: Bilal Hussain, a teacher"): Teacher Portal → Recognition.
 
 #### [6.2] Close
-**Say:** Your awards are given and shared. Next, see how teachers take attendance, or set up the library.
+**Say:** Your awards are given and shared. Next, video 10.2: Take class attendance, and video 10.9: Library.
 **Show:** End card with two tiles: "10.2 Take class attendance" and "10.9 Library".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 5 changes: [3.3] and [5.2] say Save already tells the student, parents and teacher by email and in the app (RecognitionController.cs 205-211, 700-706), [4.2] Send Certificate sends it again (RecognitionController.cs 1336-1345), [6.1] "Signed in as" label, [6.2] end tiles by number and title; demo names from the Maple Grove demo world
 - 2026-11-03 · critic · 1 change: [1.2] series-standard "This is for madrasah admins"
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes (Student/Staff tabs, From/To options, types, View/Send Certificate, recipients, teachers read-only confirmed)
