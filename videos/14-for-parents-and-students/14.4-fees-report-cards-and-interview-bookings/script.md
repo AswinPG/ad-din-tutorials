@@ -23,11 +23,12 @@ Download your child's report cards, run reports about them, and book a parent-te
 - Madrasah Report: the parent's own reports (Run, My Favorite Reports)
 
 ## Demo data
-- Parent "Yusuf Rahman" in the app; children "Maryam Rahman" (Maktab Level 1, Section B) and "Hamza Rahman" (Hifz Boys A)
+- Parent "Yusuf Rahman" (the demo world's account) in the app; children "Maryam Rahman" (Maktab Level 1, section A) and "Hamza Rahman" (Hifz Class A)
 - A released report card "Term 1 Report" for Maryam with its PDF generated
 - Attendance marked for Maryam this term, so "Attendance by Student" in Madrasah Report has data; no pinned reports at the start
-- Interview event "Term 1 Parent Evening" with teacher "Fatima Ali": one interview slot with 10-minute times, some Free, some booked by other parents
+- Interview event "Term 1 Parent Evening" with teacher "Fatima Siddiqui": one interview slot with 10-minute times, some Free, some booked by other parents
 - Phone frame for every shot; the downloaded PDF opens in the phone's viewer
+- The Madrasah Report page shows a Payment Reports card ("Fees Due Student") to parents even with the Payment Module off (`report.component.ts` 163-186): keep it out of the shot
 
 ## Script
 <!--
@@ -52,7 +53,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** ☰ → Reports → Report Archive. The "Reports Archive" page opens.
 
 #### [3.2] Find your child
-**Say:** Tap **By student**, then your child's name. Each report card the madrasah has released for them is listed, year by year.
+**Say:** Tap **By student**, then your child's name. Each report card the madrasah has released for them is listed, year by year. When the madrasah sends report cards, you may also get them by email and a notice on your phone.
 **Show:** Tap "By student", then "Maryam Rahman". Her page lists "Term 1 Report" under this year.
 
 #### [3.3] Download
@@ -60,21 +61,21 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Tap the download button on "Term 1 Report": the PDF downloads and opens. Close it.
 
 #### [3.4] More reports
-**Say:** Just above it, **Madrasah Report** has more reports about your child, such as **Attendance by Student**. Tap **Run** to open one.
-**Show:** ☰ → Reports → Madrasah Report. The Report page with the "Parent" tab and Al-Noor Madrasah selected; scroll past Hifz Reports, Attendance Reports and Library Reports. Tap "Run" beside "Attendance by Student": Maryam's attendance report opens. Go back.
+**Say:** In the same **Reports** menu, **Madrasah Report** has more reports about your child, such as **Attendance by Student**. Tap **Run** to open one.
+**Show:** ☰ → Reports → Madrasah Report. The Report page with the "Parent" tab and Maple Grove Madrasah selected; scroll past Hifz Reports, Attendance Reports and Library Reports, keeping the Payment Reports card out of the shot. Tap "Run" beside "Attendance by Student": Maryam's attendance report opens. Go back.
 
 #### [3.5]
-**Say:** If you use a report often, tap the pin beside it, and it stays at the top under **My Favorite Reports**.
+**Say:** If you use a report often, tap the pin beside it, and it stays at the top under **My Favorite Reports** on this phone.
 **Show:** Tap the pin icon beside "Attendance by Student": it appears under "My Favorite Reports".
 
 ### 4. Book an interview
 #### [4.1] Open interviews
-**Say:** When your madrasah opens parent-teacher interviews, open **Parent Portal** and tap **Parent Teacher Interview**.
+**Say:** When your madrasah opens parent-teacher interviews, you get an email and an app notification. Open **Parent Portal** and tap **Parent Teacher Interview**.
 **Show:** ☰ → Parent Portal → Parent Teacher Interview. The "Parent Interview" page opens.
 
 #### [4.2] Choose a teacher
 **Say:** Choose the **Event Name**, then the **Teacher Name**. Ad-Din picks the first **Interview Slot** and lists its times.
-**Show:** Pick Event Name "Term 1 Parent Evening", then Teacher Name "Fatima Ali". Interview Slot fills in and the times appear in the table.
+**Show:** Pick Event Name "Term 1 Parent Evening", then Teacher Name "Fatima Siddiqui". Interview Slot fills in and the times appear in the table.
 
 #### [4.3] Pick a time
 **Say:** Times marked **Free** are open. Select one, then tap **Book**.
@@ -94,11 +95,12 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** The Parent Interview list with "Your Booking" on the booked time.
 
 #### [5.2] Close
-**Say:** Next, see what your child sees in the student portal, or go back to the tour of your parent home.
+**Say:** Next, video 14.5: The student portal, to see what your child sees. Or video 14.1: Your parent home in the app.
 **Show:** End card with two tiles: "14.5 The student portal" and "14.1 Your parent home in the app".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 7 changes: [3.2] says report cards may also come by email and a phone notice (12.3 Email Report options), [3.4] "In the same Reports menu" instead of "Just above it", and the Show keeps the Payment Reports card off camera (report.component.ts 163-186), [3.5] pins stay on this phone (localStorage, report.component.ts 316-330), [4.1] parents are told by email and app notification when interviews open (InterviewController.cs 567, as in 10.8), [5.2] end tiles by number and title; demo names from the Maple Grove demo world (Maryam in Maktab Level 1 A, Hamza in Hifz Class A, teacher Fatima Siddiqui)
 - 2026-11-03 · manager · decisions via chat · Payment Module cut until Track 11: chapter 2 (fee invoices, Invoice History) removed, title now 'Report cards and interview bookings', Goal, Covers, demo data, [1.1], [1.2], [5.1] and flags updated, target 4:30 to 3:30; [3.5] elliptical question rewritten
 - 2026-11-03 · critic · 2 changes: target 4:30, [4.5] plain "If you can't come" instead of an idiom, [5.1] recap without "keep an eye on" · fold: [3.4] Madrasah Report with Run, [3.5] pin to My Favorite Reports
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes
