@@ -29,12 +29,12 @@ Open a section's roster, read a student's details, and call or message their par
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
-- Demo madrasah "Al-Noor Madrasah" (Premium); teacher Yusuf Patel teaches Class "Maktab Level 1", sections "A" (7 students, capacity 10, so it shows "Open"; 8 or more would already read "Nearly full") and "B" (10 students, capacity 10, so it shows "Nearly full"); a third section "C" he doesn't teach
+- Demo madrasah "Maple Grove Madrasah" (Premium); teacher Bilal Hussain teaches Class "Maktab Level 1", sections "A" (7 students, capacity 10, so it shows "Open"; 8 or more would already read "Nearly full") and "B" (10 students, capacity 10, so it shows "Nearly full"); a third section "C" he doesn't teach
 - Class "Maktab Level 1" with Bi-Directional Communication Allowed switched on
-- In section A, student "Aisha Rahman" (Student ID shown, age 9, Girl, enrolled last September), Medical "Peanut allergy. Carries an EpiPen in her bag.", Special note "Sits near the front; wears glasses."; parent "Fatima Rahman" (Mother) with a phone on file (only the last four digits show); emergency contact "Omar Rahman" with a phone
+- In section A, student "Hana Mirza" (Student ID shown, age 9, Girl, enrolled last September), Medical "Peanut allergy. Carries an EpiPen in her bag.", Special note "Sits near the front; wears glasses."; parent "Noor Mirza" (Mother) with a phone on file (only the last four digits show); emergency contact "Sara Mirza" with a phone
 - One student with no medical or special note, for the "No medical concerns reported" shot
 - Mocked AI rewrite reply for the draft in [5.2] (see [5.3]); Send returns success
-- Teacher shown in the app (phone frame); the admin chapter on the web, signed in as the demo madrasah admin
+- Teacher shown in the app (phone frame); the admin chapter on the web, signed in as the demo madrasah admin Yusuf Rahman
 
 ## Script
 <!--
@@ -56,7 +56,7 @@ See docs/SCRIPT-FORMAT.md.
 ### 2. Open your roster
 #### [2.1] Find Class Section
 **Say:** On the web, open **Teacher Portal**, then **Class Section**. In the app, tap **Madrasah** on the home screen, then **Class Section**.
-**Show:** Web: Sidebar → Teacher Portal → Class Section. Phone frame: home → "Madrasah" tile; Yusuf only teaches, so the app skips the portal picker and opens the Teacher Portal menu straight away (someone with a second role, such as a parent, first taps "Teachers Portal") → "Class Section". Continue in the phone frame.
+**Show:** Web: Sidebar → Teacher Portal → Class Section. Phone frame: home → "Madrasah" tile; Bilal only teaches, so the app skips the portal picker and opens the Teacher Portal menu straight away (someone with a second role, such as a parent, first taps "Teachers Portal") → "Class Section". Continue in the phone frame.
 **Caption:** Web: Teacher Portal › Class Section. App: Madrasah › Class Section.
 
 #### [2.2] Pick a class
@@ -70,11 +70,11 @@ See docs/SCRIPT-FORMAT.md.
 ### 3. Student details
 #### [3.1] The list
 **Say:** Each student shows their name and Student ID. A coloured mark with **Medical** or **Note** tells you there's something to read. Use **Search students** to find someone quickly.
-**Show:** Spotlight Aisha Rahman's row with "Medical · Note". Type "Ais" in "Search students", then clear it.
+**Show:** Spotlight Hana Mirza's row with "Medical · Note". Type "Han" in "Search students", then clear it.
 
 #### [3.2] Open a student
 **Say:** Tap a student to open their details: **Age**, **Gender**, **Program** and the date they **Enrolled**.
-**Show:** Tap Aisha Rahman: the panel opens. Spotlight Age "9 yrs", Gender "Girl", Program "Maktab Level 1", Enrolled.
+**Show:** Tap Hana Mirza: the panel opens. Spotlight Age "9 yrs", Gender "Girl", Program "Maktab Level 1", Enrolled.
 
 #### [3.3] Medical and notes
 **Say:** **Medical** and **Special note** come from the student's profile. Read them before a trip or a new activity. If there's nothing, it says **No medical concerns reported**.
@@ -83,24 +83,24 @@ See docs/SCRIPT-FORMAT.md.
 ### 4. Call a parent
 #### [4.1] Contacts
 **Say:** Above the details are the student's parents and their emergency contact. To protect privacy, you only see the last four digits of each number.
-**Show:** Back on Aisha. Spotlight "Fatima Rahman" with "Mother" and "Phone ending …", then "Omar Rahman" with "Emergency".
+**Show:** Back on Hana. Spotlight "Noor Mirza" with "Mother" and "Phone ending …", then "Sara Mirza" with "Emergency".
 
 #### [4.2] Call
 **Say:** Tap the phone button to call. In the app, your phone's dialer opens with the number ready. On a computer, it opens your calling app.
-**Show:** Tap the call button next to Fatima Rahman: it spins briefly, then cut to a stylised dialer screen with the number blurred.
+**Show:** Tap the call button next to Noor Mirza: it spins briefly, then cut to a stylised dialer screen with the number blurred.
 
 ### 5. Message a parent
 #### [5.1] Start a message
 **Say:** To write instead, tap the message button next to a parent. Emergency contacts can only be called.
-**Show:** Tap the chat button next to Fatima Rahman. The sheet rises: "Message Fatima Rahman", "Mother of Aisha Rahman", with "Sent through the Ad-Din app" at the bottom.
+**Show:** Tap the chat button next to Noor Mirza. The sheet rises: "Message Noor Mirza", "Mother of Hana Mirza", with "Sent through the Ad-Din app" at the bottom.
 
 #### [5.2] Write it
 **Say:** Type your message in your own words. It's **Sent through the Ad-Din app**, so your own number stays private.
-**Show:** Type: "aisha did really well in her reading today, please keep practising at home".
+**Show:** Type: "hana did really well in her reading today, please keep practising at home".
 
 #### [5.3] Rewrite
 **Say:** Tap **Rewrite** and Ad-Din's AI turns your note into a clear, warm message, keeping the same facts.
-**Show:** Tap "Rewrite": it shows "Rewriting", then the text becomes: "Assalamu alaikum Sister Fatima, Aisha did really well in her reading today. Please keep practising with her at home. JazakAllah khair." Footer shows "Rewritten. Undo".
+**Show:** Tap "Rewrite": it shows "Rewriting", then the text becomes: "Assalamu alaikum Sister Noor, Hana did really well in her reading today. Please keep practising with her at home. JazakAllah khair." Footer shows "Rewritten. Undo".
 
 #### [5.4] Undo
 **Say:** To keep your own words, tap **Undo**. You can also edit the text yourself before you send. Here, tap **Rewrite** again to keep the new version.
@@ -108,21 +108,21 @@ See docs/SCRIPT-FORMAT.md.
 
 #### [5.5] Send
 **Say:** Tap **Send**. The parent gets it in their Ad-Din messages, with a notification and an email.
-**Show:** Tap "Send". The sheet closes and the toast shows "Message sent to Fatima Rahman".
+**Show:** Tap "Send". The sheet closes and the toast shows "Message sent to Noor Mirza".
 
 ### 6. When the message button is missing
 #### [6.1] The class setting
 **Say:** If you don't see a message button, check the class. Teachers can message parents only in classes where **Bi-Directional Communication Allowed** is on. Your admin turns it on when editing the class.
-**Show:** Web, as the admin: Sidebar → Admin Portal → Class. Select "Maktab Level 1", click "Edit". Spotlight the "Bi-Directional Communication Allowed" switch (already on), then "Cancel".
+**Show:** Web, as the admin (side panel: "Signed in as: Admin"): Sidebar → Admin Portal → Class. Select "Maktab Level 1", click "Edit". Spotlight the "Bi-Directional Communication Allowed" switch (already on), then "Cancel".
 
 #### [6.2] For admins
 **Say:** Admins see the same details under **Admin Portal**, **Class Section**, and can message any parent, whatever the class setting.
-**Show:** Sidebar → Admin Portal → Class Section. Select "Maktab Level 1", open section A, tap Aisha Rahman: the same contacts and details panel. Spotlight the message and call buttons.
+**Show:** Sidebar → Admin Portal → Class Section. Select "Maktab Level 1", open section A, tap Hana Mirza: the same contacts and details panel. Spotlight the message and call buttons.
 
 ### 7. Done
 #### [7.1] Result
 **Say:** Now you know your students at a glance, and you can reach their parents from the same screen.
-**Show:** Phone frame: Aisha's open panel with contacts and details.
+**Show:** Phone frame: Hana's open panel with contacts and details.
 
 #### [7.2] Next
 **Say:** Next, video 07.3: Message parents, classes and teachers, to message whole classes, and video 10.2: Take class attendance.
@@ -130,5 +130,6 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 2 changes: [6.1] "Signed in as" label for the admin switch; demo names from the Maple Grove demo world (student Hana Mirza, parent Noor Mirza; "Aisha Rahman" is the demo admin's spouse and "Omar" clashed with teacher Omar Khalid)
 - 2026-11-03 · critic · 6 changes: prereq set to 05.4 (coordinator); [1.1] second-person opening; [5.4] no elliptical question, Say covers the second Rewrite tap; [6.1] no elliptical question; [7.1] no "one tap away" idiom; [7.2] end card by number and title
 - 2026-11-03 · validator · checked against master d36d69ed8 · 2 fixes: [2.1] app path (a teacher-only user's Madrasah tile opens the Teacher Portal menu directly, no Teachers Portal tile); section A demo 8/10 would show "Nearly full" (80% rule), now 7/10 so [2.2] shows "Open"
