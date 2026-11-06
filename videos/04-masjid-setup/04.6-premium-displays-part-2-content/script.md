@@ -24,7 +24,7 @@ Fill a premium display with posters, events and a scrolling ticker.
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
-- Demo masjid "Masjid Al-Noor" with an active Prayer Times Premium add-on, signed in as its masjid admin; Horizontal Display 1 laid out as in 04.5
+- Demo masjid "Maple Grove Masjid" with an active Prayer Times Premium add-on, signed in as its masjid admin; Horizontal Display 1 laid out as in 04.5
 - Two upcoming masjid events (so the Events switch has something to show)
 - A 1920 × 1080 poster and a 1080 × 1920 poster for new content "Weekend Quran Class", dated next week, all five prayer periods ticked
 - A ticker message "Masjid office open 10 AM to 4 PM" for the same dates
@@ -49,7 +49,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 2. Create content
 #### [2.1] Contents tab
-**Say:** Go to **Masjid**, then **Prayer Times**, and open the **Contents** tab. You create each poster once here, then choose which displays show it. Tap **Create**.
+**Say:** In the sidebar, open **Masjid**, then **Prayer Times**, and open the **Contents** tab. You create each poster once here, then choose which displays show it. Tap **Create**.
 **Show:** Sidebar → Masjid → Prayer Times → "Contents". The list of existing content; click Create.
 
 #### [2.2] When it shows
@@ -79,7 +79,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 4. Ticker message
 #### [4.1] Write it
-**Say:** A ticker is a line of text that scrolls across the screen. On the **Ticker Message** tab, tap **Create**, and type your message in **Ticker Message Title**.
+**Say:** A ticker is a line of text that scrolls across the screen. On the **Ticker Message** tab, tap **Create**, and type your message in **Ticker Message Title**, in place of the sample text.
 **Show:** Click the "Ticker Message" tab; Create; clear the pre-filled "New Ticker Message" and type "Masjid office open 10 AM to 4 PM".
 
 #### [4.2]
@@ -91,7 +91,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Display Controls → Ticker Message. Turn on the Ticker Message switch; pick a background and font colour; leave "Scroll right to left". Click Save.
 
 #### [4.4]
-**Say:** Turn on **Show Prayer Time changes with ticker message**, and upcoming time changes scroll by as well.
+**Say:** You can also turn on **Show Prayer Time changes with ticker message**, and upcoming time changes scroll by as well.
 **Show:** Spotlight that switch.
 
 <!-- Chapters 5–7 (night mode, Makrooh, Taraweeh, language, colours) moved to 04.11 on 2026-11-03; scene IDs here are unchanged. -->
@@ -102,6 +102,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 4 changes: [2.1] full sidebar wording, [4.1] says to replace the sample title (as the Show does), [4.4] Say no longer asks for a step the Show doesn't do, demo names match the Maple Grove demo world
 - 2026-11-03 · manager · decisions via chat · TV display pages decided: previews recorded from the dev environment with demo data; flag updated (demo data already says so)
 - 2026-11-03 · manager · decisions via chat · Split into two videos (critic's taste call): chapters 5–7 (night mode, Makrooh, Taraweeh, language, colours) moved to new video 04.11; scene IDs kept, chapter 8 keeps [8.1]. Title now 'Premium displays, part 2: posters, events and ticker'; Goal, Covers, demo data, [1.1], [8.1] end card (04.11, 08.2) and Makrooh flag (moved) updated; target 5:00 to 3:30
 - 2026-11-03 · critic · 4 changes: second-person opening, [2.1] gives the full sidebar path, [2.4] names the real Split / headers choices, [7.1] says what the Arabic names are
