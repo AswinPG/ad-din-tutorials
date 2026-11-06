@@ -27,8 +27,8 @@ Know what happens while Ad-Din reviews your new organisation, how to contact sup
 ## Demo data
 - The demo account from 01.1 with "Masjid Al-Huda" and "Al-Huda Madrasah" as its home masjid and madrasah, both still unapproved
 - The same account in the Ad-Din app (phone frame) showing the Pending Approval home card
-- A second demo account (a community member) for the Masjid Finder search, near the demo city
-- After approval: both organisations approved, so the full sidebar menu and the map pin show
+- A second demo account (a community member) for the Masjid Finder search, near the demo city; while it is on screen the side panel reads "Signed in as: a community member"
+- After approval: both organisations approved, so the full sidebar and the map pin show
 - The support portal page opened by "Contact Ad-Din Support" (no personal data on screen)
 
 ## Script
@@ -44,9 +44,9 @@ See docs/SCRIPT-FORMAT.md.
 **Say:** You've just registered a masjid or madrasah on Ad-Din. In this video you'll see what happens while Ad-Din reviews it, and what changes once it's approved.
 **Show:** Title card: "After you register: approval".
 
-### 2. You're the administrator
+### 2. You're the admin
 #### [2.1] Admin straight away
-**Say:** As soon as you register, you're the organisation's first administrator. Nobody needs to add you.
+**Say:** As soon as you register, you're the organisation's first admin, so nobody needs to add you. You can start setting it up once Ad-Din approves it.
 **Show:** The "Thank You !" popup from registering, with both names. Spotlight "Your submission is under review."
 
 #### [2.2]
@@ -55,11 +55,11 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 3. While Ad-Din reviews it
 #### [3.1] Pending Approval
-**Say:** Until your organisation is approved, the menu shows a **Pending Approval** note instead of the usual items. The menu opens once it's approved.
+**Say:** Until your organisation is approved, the sidebar shows a **Pending Approval** note instead of the usual items. The full sidebar appears once it's approved.
 **Show:** Web sidebar with the "Pending Approval" note. Zoom on "Your organisation is awaiting approval from Ad-Din. The menu opens once it's approved."
 
 #### [3.2] In the app
-**Say:** In the Ad-Din app, your home screen shows the same **Pending Approval** card. Pull down to check again.
+**Say:** In the Ad-Din app, your home screen shows the same **Pending Approval** card. Pull the screen down to check again.
 **Show:** Phone frame: the Pending Approval card with "Al-Huda" names, "Awaiting approval from Ad-Din." and the hint. Pull down to refresh.
 
 #### [3.3]
@@ -68,11 +68,11 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 4. Not on the map yet
 #### [4.1] Others can't find it yet
-**Say:** Until it's approved, other people can't find your organisation. It shows in the **Masjid Finder** and on the map only after approval.
-**Show:** Switch to the member account. Sidebar → Masjid → Masjid Finder. Search "Al-Huda": "No results nearby".
+**Say:** Here's what another member sees. Until it's approved, other people can't find your organisation in the **Masjid Finder** or on the map.
+**Show:** Switch to the member account; the side panel reads "Signed in as: a community member". Sidebar → Masjid → Masjid Finder. Search "Al-Huda": "No results nearby".
 
 #### [4.2]
-**Say:** So wait for approval before you invite your community to follow you.
+**Say:** So wait for approval before you ask your community to follow it.
 **Show:** Hold on the empty result, then back to the admin account.
 
 ### 5. Contact support
@@ -86,12 +86,12 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 6. Once you're approved
 #### [6.1] Approved
-**Say:** When Ad-Din approves your organisation, you get an email. Open Ad-Din again, and the full menu is there.
+**Say:** When Ad-Din approves your organisation, you get an email. Open Ad-Din again, and the full sidebar is there. If Ad-Din can't approve it, you get an email saying so.
 **Show:** Refresh the web page. The note is gone and the sidebar shows the full menu: Dashboard, Masjid, Admin Portal and more.
 
 #### [6.2]
 **Say:** Your organisation now shows in the **Masjid Finder** for everyone, and you can start setting it up.
-**Show:** Member account: Masjid Finder search "Al-Huda" now shows the masjid card and its pin on the map.
+**Show:** Member account (side panel: "Signed in as: a community member"): Masjid Finder search "Al-Huda" now shows the masjid card and its pin on the map.
 
 ### 7. Next
 #### [7.1] Close
@@ -99,6 +99,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** End card with two tiles: "02.1 How Ad-Din plans work" and "03.1 Your organisation’s details, logo and time zone".
 
 ## Review log
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 7 changes: [2.1] "admin", and says set-up waits for approval (no mixed message with [3.1]), [3.1]/[6.1] "sidebar", not "menu" (one word across the series), [3.2] says what to pull, [4.1] says aloud that this is another member's view, with a "Signed in as" side-panel label in [4.1], [4.2] and [6.2], [4.2] people follow the organisation, [6.1] adds the rejection email (SendMasjidRejectedNotification / SendMadressahRejectedNotification)
 <!-- Newest first: date, who, what was asked, what changed. -->
 - 2026-11-03 · manager · decisions via chat · 'Admins of a pending organisation' decided: the term will change; 01.2 shows the lock as it works today; flag reworded (and quoted), APP-ISSUES notes registration term 3 needs rewording
 - 2026-11-03 · critic · 3 changes: [1.1] second-person opening, [3.3] idiom removed, [7.1] end tiles by number
