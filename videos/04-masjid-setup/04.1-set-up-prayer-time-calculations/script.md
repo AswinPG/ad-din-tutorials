@@ -25,10 +25,10 @@ Choose how Ad-Din calculates your masjid's begin times, set how many minutes bef
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
-- Demo masjid "Masjid Al-Noor", signed in as its masjid admin, with its address and coordinates set
+- Demo masjid "Maple Grove Masjid", signed in as its masjid admin, with its address and coordinates set
 - Prayer settings to start: method MWL, Juristic Standard, Automatic Begin Time Calculation Yes, format 12h, daylight saving Auto, High latitude None
 - Adhan Times: Fajr 15, Dhuhr 15, Asr 15, Maghrib Adhan Offset 5, Isha 15, Jumu'ah 30, Jumu'ah 2 15, Jumu'ah 3 and 4 empty, Maghrib Iqamah Offset 5
-- Islamic Date: calendar Hijri, offset 0 day, Display 30th Hijri off, Update After Sunset Yes; a current Islamic date that renders (for example "Jumādá al-Ūlá 2, 1448")
+- Islamic Date: calendar Hijri, offset 0 day, Display 30th Hijri off, Update After Sunset Yes; a current Islamic date that renders for the demo clock (10 November 2026, near the end of Jumādá al-Ūlá 1448)
 - Changes made on camera: method to ISNA, Juristic to Hanafi, Fajr Adhan to 20
 
 ## Script
@@ -45,7 +45,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Title card: "Set up prayer time calculations".
 
 #### [1.2]
-**Say:** Your masjid is already registered, with its address on the map. Ad-Din uses that location to work out begin times for every day of the year.
+**Say:** Your masjid is already registered, with its address on the map. Ad-Din uses that location to work out when each prayer begins, for every day of the year.
 **Show:** Opening card from You'll need.
 
 ### 2. Open Prayer Times
@@ -63,7 +63,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Spotlight the Auto radio button, then the Coordinates table with Latitude and Longitude.
 
 #### [3.3]
-**Say:** If the location is wrong, tap the update icon. Move the map until the pin sits on your masjid, then tap **Confirm**.
+**Say:** If the location is wrong, tap the update icon. Move the map until the pin sits on your masjid, then tap **Confirm**. This saves the new spot as your masjid's location everywhere in Ad-Din.
 **Show:** Click the small update icon beside Coordinates. "Select Location" opens with a map; drag it so the pin is on the demo masjid; click Confirm. Toast "Successfully Updated".
 
 ### 4. Choose the method
@@ -132,11 +132,12 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 8. Next
 #### [8.1] Close
-**Say:** Your begin times, Adhan times and Islamic date are set. Next, set your Iqamah and Jumu'ah times, or import a full timetable from a spreadsheet.
+**Say:** Your begin times, Adhan times and Islamic date are set. Next, video 04.2: Set Iqamah and Jumu'ah times. Or video 04.3: Import and export a prayer timetable.
 **Show:** End card with two tiles: "04.2 Set iqamah and jumu’ah times" and "04.3 Import and export a prayer timetable".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 5 changes: [1.2] says "when each prayer begins" instead of "begin times", [3.3] says Confirm saves the masjid's own location (settings.component.ts updateCoordinates), [8.1] names both end tiles by number, demo names moved to the Maple Grove demo world, demo Islamic date matches the demo clock
 - 2026-11-03 · manager · decisions via chat · 04.6 split: Makrooh Times now lives in 04.11; Zawal flag pointer updated
 - 2026-11-03 · critic · 5 changes: second-person opening without the idiom, cut repeated line in [2.1], plainer wording in [3.2] [5.1] [5.2]
 - 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: [6.3] Show line names the real help texts (one paragraph under all the Adhan boxes, one note under Maghrib Iqamah Offset)
