@@ -25,15 +25,15 @@ Find your way around the parent home in the Ad-Din app: a panel for each child w
 - The same on the web: parent Dashboard and the Parent Portal in the sidebar
 
 ## Demo data
-- Parent "Yusuf Rahman" (username `yusuf_rahman`), Parent role only; home masjid "Masjid Al-Noor", home madrasah "Al-Noor Madrasah" (Premium, Class Announcements switched on)
-- Children linked to Yusuf: "Maryam Rahman" (Maktab Level 1, Section B, username `maryam_rahman`) and "Hamza Rahman" (Hifz Boys A), both in a class; "Zainab Rahman" linked, with an enrollment request for "Maktab Level 1" in status Pending. Only Zainab has an enrollment request on record (the My enrollments card lists every request of each linked child, approved ones included)
-- For the cards in [4.4]: Maryam is also in a class marked as a Quran Hifz class, with a Hifz record today (the Hifz progress card only shows for a child in a Hifz class); Al-Noor Madrasah has Academic Activity switched on (My Classwork only shows then)
+- Parent "Yusuf Rahman" (username `yusuf_rahman`, the demo world's account), set to the Parent role only for this video; home masjid "Maple Grove Masjid", home madrasah "Maple Grove Madrasah" (Premium, Class Announcements switched on)
+- Children linked to Yusuf: "Maryam Rahman" (Maktab Level 1, section A, username `maryam_rahman`) and "Hamza Rahman" (Hifz Class A, added to the world as in 07.4), both in a class; "Zainab Rahman" (added to the world for this video) linked, with an enrollment request for "Maktab Level 1" in status Pending. Only Zainab has an enrollment request on record (the My enrollments card lists every request of each linked child, approved ones included)
+- For the cards in [4.4]: Maryam is also in a class marked as a Quran Hifz class, with a Hifz record today (the Hifz progress card only shows for a child in a Hifz class); Maple Grove Madrasah has Academic Activity switched on (My Classwork only shows then)
 - Today's routine for Maryam: three classes, one of them happening now
 - Two class announcements for Maryam's class (one note, one photo) from her teacher
-- Iqamah times for Masjid Al-Noor, two unread messages, one masjid event today
-- Second demo parent "Aisha Rahman" who is also a Teacher, for the role tabs shot
-- Third demo parent "Bilal Ahmed" with one linked child "Sara Ahmed", not in a class and no enrollment request, for the No Active Enrollments shot
-- Yusuf has his own Premium (or a seat), so the Madrasah tile opens his Parent Portal pages instead of Go Premium; Al-Noor Madrasah has a holiday, a grade set and one teacher delegation for Maryam's class on record
+- Iqamah times for Maple Grove Masjid, two unread messages, one masjid event today
+- Teacher "Fatima Siddiqui", given a Parent role and a linked child for the role tabs shot, labelled "Signed in as: teacher and parent Fatima Siddiqui"
+- Parent "Tariq Saleh" with one linked child "Yahya Saleh" (inactive in the world), not in a class and no enrollment request, for the No Active Enrollments shot, labelled "Signed in as: parent Tariq Saleh"
+- Yusuf has his own Premium (or a seat), so the Madrasah tile opens his Parent Portal pages instead of Go Premium; Maple Grove Madrasah has a holiday, a grade set and one teacher delegation for Maryam's class on record
 - Phone frame for every shot, except a browser frame for the web shot in [6.4] (Yusuf signed in on the web, Parent role selected on the Dashboard)
 
 ## Script
@@ -46,7 +46,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. Your home in the app
 #### [1.1] Opening
-**Say:** When you open the Ad-Din app as a parent, your home screen shows each child's day. Let's take a tour.
+**Say:** When you open the Ad-Din app as a parent, your home screen shows each child's day. In this video for parents, you'll see what each part of it does.
 **Show:** Title card: "Your parent home in the app". Phone frame on Yusuf's app home.
 
 #### [1.2]
@@ -73,11 +73,11 @@ See docs/SCRIPT-FORMAT.md.
 
 #### [3.3]
 **Say:** Tap the selected child again to see their class and username. Tap the username to copy it, in case the madrasah asks for it.
-**Show:** Tap the "Maryam" button: the details open with Class "Maktab Level 1 · Section B" and Username "@maryam_rahman". Tap the username: toast "Copied to clipboard".
+**Show:** Tap the "Maryam" button: the details open with Class "Maktab Level 1 · A" and Username "@maryam_rahman". Tap the username: toast "Copied to clipboard".
 
 #### [3.4] More than one role
 **Say:** If you're also a teacher at the madrasah, tabs at the top of your card switch between **Parent** and **Teacher**.
-**Show:** Cut to demo parent Aisha Rahman: tabs "Parent" and "Teacher" at the top of her card. Tap "Teacher", then "Parent". Cut back to Yusuf.
+**Show:** Cut to Fatima Siddiqui, with the label "Signed in as: teacher and parent Fatima Siddiqui" in the side panel: tabs "Parent" and "Teacher" at the top of her card. Tap "Teacher", then "Parent". Cut back to Yusuf ("Signed in as: parent Yusuf Rahman").
 
 ### 4. Your child's day
 #### [4.1] Routine
@@ -93,7 +93,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Spotlight the Class Announcements card with the two posts. Tap "View all": the Class Announcements page opens. Go back.
 
 #### [4.4]
-**Say:** Further down are attendance, Hifz progress and classwork. Each one has its own video in this series.
+**Say:** Further down are attendance, Hifz progress and classwork. Videos 14.2 and 14.3 show them.
 **Show:** Scroll slowly past the Attendance, Hifz progress and My Classwork cards, spotlighting each heading.
 
 ### 5. Enrollments waiting for approval
@@ -107,7 +107,7 @@ See docs/SCRIPT-FORMAT.md.
 
 #### [5.3] Enroll Now
 **Say:** If none of your children is in a class yet, you'll see **No Active Enrollments** instead. Tap **Enroll Now** to apply for a program.
-**Show:** Cut to demo parent Bilal Ahmed: card "No Active Enrollments", "Sara is linked but not enrolled in a class." Spotlight "Enroll Now". Don't tap. Cut back to Yusuf.
+**Show:** Cut to parent Tariq Saleh, with the label "Signed in as: parent Tariq Saleh" in the side panel: card "No Active Enrollments", "Yahya is linked but not enrolled in a class." Spotlight "Enroll Now". Don't tap. Cut back to Yusuf ("Signed in as: parent Yusuf Rahman").
 
 ### 6. Shortcuts, messages and events
 #### [6.1] Tiles
@@ -137,10 +137,11 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Yusuf's home, top of the screen, Maryam selected.
 
 #### [7.2] Close
-**Say:** Next, check your child's attendance and report an absence, or follow their Hifz progress and classwork.
+**Say:** Next, video 14.2: Check attendance and report an absence. Or video 14.3: Follow Hifz progress and classwork.
 **Show:** End card with two tiles: "14.2 Check attendance and report an absence" and "14.3 Follow Hifz progress and classwork".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 6 changes: [1.1] series opening for parents, no "take a tour" idiom, [3.4] and [5.3] "Signed in as" labels, [4.4] points to videos 14.2 and 14.3 by number, [7.2] end tiles by number and title; demo names from the Maple Grove demo world (Maple Grove Masjid and Madrasah, Maryam in Maktab Level 1 A, Hamza in Hifz Class A, Fatima Siddiqui for the teacher-parent shot, Tariq and Yahya Saleh for No Active Enrollments)
 - 2026-11-03 · critic · 6 changes: [1.1] cut "at a glance", [2.1] split into two short sentences, [3.1] says what the count means, [3.3] simpler wording, [7.1] recap includes the new pages, target 4:30 · fold: [6.1a] Parent Portal pages from the Madrasah tile with Class, Subject, Holiday, Grade, Delegations; [6.4] web Dashboard and sidebar
 - 2026-11-03 · validator · checked against master d36d69ed8 · 2 fixes: demo data (Hifz class and Academic Activity needed for [4.4], only Zainab has an enrollment request), [4.2] record Sun–Thu so the right arrow works twice
