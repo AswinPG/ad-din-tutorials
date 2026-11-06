@@ -24,7 +24,7 @@ See every gift to a campaign, add cash, cheque and bank gifts yourself so the to
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
-- Masjid Admin account, admin of "Masjid Al-Noor" (Premium)
+- Masjid Admin account, admin of "Maple Grove Masjid" (Premium); home madrasah Maple Grove Madrasah, so Campaign List first shows the madrasah
 - Campaign "Roof Repair Appeal", goal 25000, with four PayPal gifts (Provider paypal, Status Completed, fictional donor names such as "Aisha Khan") totalling 3,150
 - Offline gift typed on camera: Name "Brother Idris", Email left blank, Address "12 Elm Street", Amount 500, Medium Cash
 - One mistaken manual gift already in the list ("Test entry", 1, Other) to delete
@@ -40,7 +40,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. Who has given
 #### [1.1] Opening
-**Say:** Once a campaign is running, you'll want to see who has given, and add the gifts that came in by cash or cheque. Here's how.
+**Say:** Once a campaign is running, you'll want to know who has given. In this video, you see every gift, and add the gifts that came in by cash or cheque.
 **Show:** Title card: "Track donations and record offline gifts".
 
 #### [1.2]
@@ -49,8 +49,8 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 2. Open the transactions
 #### [2.1] Campaign List
-**Say:** In the sidebar, tap **Donation**. Make sure your masjid is selected at the top.
-**Show:** Sidebar → Donation. Campaign List with "Masjid Al-Noor-(masjid)" in the organisation picker.
+**Say:** In the sidebar, tap **Donation**. Check the organisation at the top. If it shows your madrasah, choose your masjid.
+**Show:** Sidebar → Donation. The Campaign List opens on Maple Grove Madrasah (the demo account's home madrasah); open "Select an Organisation" and choose "Maple Grove Masjid-(masjid)".
 
 #### [2.2]
 **Say:** Tick the campaign, then tap **View Transactions**.
@@ -66,7 +66,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 3. Add a cash or cheque gift
 #### [3.1] Add Manual Transaction
-**Say:** Someone handed over cash after Jumu'ah? Tap **Add Manual Transaction**.
+**Say:** If someone hands you cash after Jumu'ah, tap **Add Manual Transaction**.
 **Show:** Click "Add Manual Transaction". The "Add Transaction" box opens.
 
 #### [3.2] Details
@@ -88,7 +88,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 4. Remove a mistake
 #### [4.1] Delete
-**Say:** Entered a gift by mistake? Tap **Delete** on its row and confirm. Only gifts you added yourself can be deleted, not PayPal gifts.
+**Say:** If you entered a gift by mistake, tap **Delete** on its row and confirm. Only gifts you added yourself can be deleted, not PayPal gifts.
 **Show:** On the "Test entry" row, click "Delete" in the Actions column. Confirm with "Delete Transaction". The row disappears. Spotlight that PayPal rows have no Delete button.
 
 ### 5. Export
@@ -98,11 +98,12 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 6. Next
 #### [6.1] Close
-**Say:** Every gift is now in one place, and your total is right. Next, see how your community gives, in the app and on your website.
+**Say:** Every gift is now in one place, and your total is right. Next, video 15.4: Donate to your masjid, to see how your community gives. Or video 08.4: Run a fundraising campaign.
 **Show:** End card with two tiles: "15.4 Donate to your masjid" and "08.4 Run a fundraising campaign".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 6 changes: [1.1] second-person opening instead of "Here's how", [2.1] Say and Show pick the masjid (Campaign List opens on the home madrasah), [3.1] and [4.1] no elliptical questions, [6.1] names both end tiles by number; demo names match the Maple Grove demo world
 - 2026-11-03 · manager · decisions via chat · 'Masjid PayPal keys' decided: record without the PayPal step; flag reworded, bug stays logged
 - 2026-11-03 · critic · 1 change: [6.1] vague "the donating video" -> says what 15.4 shows
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes
