@@ -21,7 +21,7 @@ Add your academic terms, keep the right ones enabled, and build the grade sets y
 - Terms Management (Add Term, enable it), grade sets
 
 ## Demo data
-- Demo madrasah "Al-Noor Madrasah"; the demo admin has Premium
+- Demo madrasah "Maple Grove Madrasah"; the demo admin has Premium
 - One older term already in the list (for example "Term 3"), enabled, to disable on camera
 - New term added on camera: "Term 1", with a start and end date in the coming months
 - Grade Sets: the default grade set (shown in blue) and no others; "Hifz Grades" added on camera
@@ -44,12 +44,12 @@ Add your academic terms, keep the right ones enabled, and build the grade sets y
 **Show:** Sidebar → Admin Portal → Terms Management. The Terms page with "Term 3" in the list.
 
 #### [2.2]
-**Say:** Enabled terms show in green and come first. Disabled terms show in red.
+**Say:** Enabled terms show in green and come first.
 **Show:** Zoom on the Status column: "Enabled" in green.
 
 ### 3. Add a term
 #### [3.1] Add Term
-**Say:** Tap **Add Term**. Give the term a **Name** your teachers and parents will recognise.
+**Say:** Tap **Add Term**. Give the term a **Name** your teachers and parents will recognise, such as Term 1.
 **Show:** Click "Add Term"; the "Add Term" sheet slides up. Type "Term 1" in Name.
 
 #### [3.2]
@@ -66,7 +66,7 @@ Add your academic terms, keep the right ones enabled, and build the grade sets y
 **Show:** Click the "Term 3" row; the "Edit Term" sheet opens. Spotlight the Status box.
 
 #### [4.2]
-**Say:** Only enabled terms can be chosen when you build a timetable. When a term is over, set it to **Disabled** and tap **Edit Term**.
+**Say:** Only enabled terms can be chosen for a timetable. When a term is over and its timetable is copied to the next term, set it to **Disabled**, then tap **Edit Term** to save. It moves down the list, in red.
 **Show:** Choose "Disabled", click "Edit Term". "Term 3" moves below "Term 1", shown in red.
 
 #### [4.3]
@@ -83,7 +83,7 @@ Add your academic terms, keep the right ones enabled, and build the grade sets y
 **Show:** Click "Add". The "Add Grade Set" sheet; type "Hifz Grades"; click "Save". It appears in the list.
 
 #### [5.3] Add grades
-**Say:** Tap the set's name to open it, then tap **Add**. Enter the **Grade Name**, its **Grade Point**, and the marks it covers, from **Mark From** to **Mark Upto**.
+**Say:** Tap the set's name to open it, then tap **Add**. Enter the **Grade Name**, its **Grade Point**, a number such as 4, and the marks it covers, from **Mark From** to **Mark Upto**.
 **Show:** Click "Hifz Grades"; the Grade page opens. Click "Add". In "Add Grade" type "Mumtaz", 4, 90, 100.
 
 #### [5.4]
@@ -101,6 +101,7 @@ Add your academic terms, keep the right ones enabled, and build the grade sets y
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 5 changes: [2.2] no longer names red terms that aren't on screen; [4.2] says when to disable (after copying the timetable, as Copy to Terms lists enabled terms only), that Edit Term saves, and that the term moves down in red; [3.1] example name; [5.3] Grade Point example; demo madrasah is Maple Grove
 - 2026-11-03 · manager · decisions via chat · 'Who needs a seat?' decided (own-Premium check is intended): flag wording updated; script unchanged
 - 2026-11-03 · critic · 3 changes: [1.1] second-person opening; [1.2] plain need line, no "You're a…"; [6.2] end card by number and title
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes
