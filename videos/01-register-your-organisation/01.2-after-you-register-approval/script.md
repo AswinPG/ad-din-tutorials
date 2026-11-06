@@ -63,7 +63,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Phone frame: the Pending Approval card with "Al-Huda" names, "Awaiting approval from Ad-Din." and the hint. Pull down to refresh.
 
 #### [3.3]
-**Say:** Ad-Din may contact you for more details before approving, so check your email and answer your phone.
+**Say:** Ad-Din may contact you for more details before approving, so check your email and answer your phone. If approval takes longer than a week, use **Contact Us** in the help menu.
 **Show:** Back on the web. Card quoting the second registration term: "Ad-Din Officials may contact you for more details prior to approving the Organization".
 
 ### 4. Not on the map yet
@@ -90,7 +90,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Refresh the web page. The note is gone and the sidebar shows the full menu: Dashboard, Masjid, Admin Portal and more.
 
 #### [6.2]
-**Say:** Your organisation now shows in the **Masjid Finder** for everyone, and you can start setting it up.
+**Say:** Your organisation now shows in the **Masjid Finder** for everyone, and you can start setting it up. To run a madrasah, you'll need Ad-Din Premium.
 **Show:** Member account (side panel: "Signed in as: a community member"): Masjid Finder search "Al-Huda" now shows the masjid card and its pin on the map.
 
 ### 7. Next
@@ -101,6 +101,7 @@ See docs/SCRIPT-FORMAT.md.
 ## Review log
 - 2026-11-06 · panel (user, director, writer, PM, PO) · 7 changes: [2.1] "admin", and says set-up waits for approval (no mixed message with [3.1]), [3.1]/[6.1] "sidebar", not "menu" (one word across the series), [3.2] says what to pull, [4.1] says aloud that this is another member's view, with a "Signed in as" side-panel label in [4.1], [4.2] and [6.2], [4.2] people follow the organisation, [6.1] adds the rejection email (SendMasjidRejectedNotification / SendMadressahRejectedNotification)
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · manager · panel decisions approved ("approved": recommended options) · [3.3] contact us after a week (decision 5), [6.2] a madrasah needs Premium (decision 4)
 - 2026-11-03 · manager · decisions via chat · 'Admins of a pending organisation' decided: the term will change; 01.2 shows the lock as it works today; flag reworded (and quoted), APP-ISSUES notes registration term 3 needs rewording
 - 2026-11-03 · critic · 3 changes: [1.1] second-person opening, [3.3] idiom removed, [7.1] end tiles by number
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes
