@@ -26,7 +26,9 @@ export const voiceDir = (id, lang = "en") => path.join(ROOT, "out", id, "voice",
 
 /** One line per scene that has narration: what the voice is sent, and the words it must be heard saying. */
 export function buildLines(video, lang = "en", series = loadSeries().series) {
-    return video.scenes.filter((s) => s.say.trim()).map((s) => ({ scene: s.id, say: spoken(s.say, lang, series), check: plain(s.say) }));
+    // the check text is compared with speech-to-text: initialisms the voice spells out are written as letters
+    const heardAs = (t) => (lang === "en" ? t.replace(/\bGUID\b/g, "G U I D") : t);
+    return video.scenes.filter((s) => s.say.trim()).map((s) => ({ scene: s.id, say: spoken(s.say, lang, series), check: heardAs(plain(s.say)) }));
 }
 
 export function writeLines(video, lang = "en") {
@@ -52,6 +54,7 @@ export function clone(video, lang = "en") {
     const out = voiceDir(video.id, lang);
     console.log(`cloning ${video.id} (${lang}) into ${path.relative(ROOT, out)}`);
     execFileSync(CLONE.python, [CLONE.script, CLONE.ref, file, out], { cwd: CLONE.dir, stdio: "inherit" });
+    execFileSync(CLONE.python, [path.join(HERE, "trim.py"), out], { cwd: CLONE.dir, stdio: "inherit" }); // cut repeats and sound after the last word
     execFileSync(CLONE.python, [path.join(HERE, "align.py"), out], { cwd: CLONE.dir, stdio: "inherit" });
 }
 

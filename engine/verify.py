@@ -8,7 +8,7 @@ out = sys.argv[1]
 SLACK, GOOD = 0.4, 0.8
 # how the voice says Ad-Din ("Udd Din") and video numbers; ignored on both sides
 NAME = {"udd", "ud", "ad", "add", "odd", "din", "deen", "dean", "dinn", "aldin", "uddin", "addin", "adin", "ahd", "the"}
-NUM = {"zero": "0", "oh": "0", "one": "1", "two": "2", "three": "3", "four": "4", "five": "5", "point": "", "dot": ""}
+NUM = {"zero": "0", "oh": "0", "one": "1", "two": "2", "three": "3", "four": "4", "five": "5", "six": "6", "seven": "7", "eight": "8", "nine": "9", "point": "", "dot": ""}
 
 def words(s):
     s = s.lower().replace("-", " ").replace("@", " at ").replace("#", " hash ")
@@ -20,6 +20,7 @@ def words(s):
     for w in ws:
         if not w: continue
         if w.isdigit() and len(w) > 1: out.extend(list(w))  # "00" -> 0 0
+        elif w == "guid": out.extend("guid")  # said as the letters G-U-I-D
         else: out.append(w)
     return out
 
