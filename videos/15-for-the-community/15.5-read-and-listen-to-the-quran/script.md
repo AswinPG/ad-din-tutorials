@@ -6,7 +6,7 @@ prereq:
   - "00.2"
 status: scripted
 flags:
-  - The Quran text, translations, reciters and Mushaf pages load live from AlQuran Cloud and Quran.com (mirrored by Ad-Din). The mocked demo world must serve them, or record against the agreed dev environment.
+  - "Quran data: the self-hosting change (feat/quran-self-hosted 152336b4d and ce6be1ea1; not yet on origin/master 7f0e6bf72, which still reads api.alquran.cloud directly) serves the text, translations, search text, Mushaf page layouts and fonts from Ad-Din's own storage (GET /public/Quran/Source), and falls back to AlQuran Cloud and Quran.com when that copy can't be read. Recitation audio still streams from cdn.islamic.network. The reader's labels are the same on both. The mocked demo world must serve the data and the audio for whichever build is recorded, or record against the agreed dev environment."
 ---
 
 # 15.5 Read and listen to the Quran
@@ -31,7 +31,7 @@ Open any surah in the Ad-Din app, read it verse by verse or as Mushaf pages, lis
 
 ### 1. The Quran in your pocket
 #### [1.1] Opening
-**Say:** The Ad-Din app has the whole Quran, to read and to listen to. You'll open a surah, choose a reciter, turn on Tajweed colours, keep your place, and read the dua for completing the Quran.
+**Say:** The Ad-Din app has the whole Quran, to read and to listen to. In this video, you'll open a surah, choose a reciter, turn on Tajweed colours, keep your place, and read the dua for completing the Quran.
 **Show:** Title card: "Read and listen to the Quran". Phone frame on the app home.
 
 #### [1.2]
@@ -61,7 +61,7 @@ Open any surah in the Ad-Din app, read it verse by verse or as Mushaf pages, lis
 **Show:** Tap the settings icon: "Reading settings" opens. Tap the Reciter row; the list opens. Choose a second reciter (for example Husary).
 
 #### [3.4]
-**Say:** Here you also choose your **Translation**, and how the recitation repeats and how fast it goes. The Quran video on translation and memorising shows these.
+**Say:** Here you also choose your **Translation**, and how the recitation repeats and how fast it goes. Video 15.8 shows these.
 **Show:** In Reading settings, spotlight the Translation row, then pan past "Repeat each ayah" and "Playback speed" without opening them. Close the sheet.
 
 ### 4. Tajweed colours
@@ -70,12 +70,12 @@ Open any surah in the Ad-Din app, read it verse by verse or as Mushaf pages, lis
 **Show:** Tap the "Tajweed" chip. The Arabic letters change to the Tajweed colours. Zoom on one ayah.
 
 #### [4.2]
-**Say:** Not sure what a colour means? Open the settings: the key is under **Tajweed colours**.
+**Say:** To see what each colour means, open the settings. The key is under **Tajweed colours**.
 **Show:** Open Reading settings. Spotlight the "Tajweed colours" switch and the colour key under it (Ghunnah, Qalqalah, Ikhfa…). Close.
 
 ### 5. Read the Mushaf
 #### [5.1] Mushaf
-**Say:** Prefer the printed page? Tap **Mushaf**. You'll see the Quran page by page, just like your Mushaf at home. Swipe to turn the page.
+**Say:** To read the printed page, tap **Mushaf**. You'll see the Quran page by page, just like your Mushaf at home. Swipe to turn the page.
 **Show:** Tap "Mushaf": the Madani page of Al-Mulk appears. Swipe to the next page and back.
 
 #### [5.2] Mushaf type
@@ -93,15 +93,16 @@ Open any surah in the Ad-Din app, read it verse by verse or as Mushaf pages, lis
 
 ### 7. Dua Khatam-e-Quran
 #### [7.1]
-**Say:** Finished the whole Quran, alhamdulillah? Tap the three dots at the top and choose **Dua Khatam-e-Quran** to read the dua for completing it, with its meaning.
+**Say:** When you finish the whole Quran, alhamdulillah, tap the three dots at the top and choose **Dua Khatam-e-Quran**. It shows the dua for completing the Quran, with its meaning.
 **Show:** Tap the three-dots ("More") icon at the top. Tap "Dua Khatam-e-Quran": the sheet shows the Arabic lines with the English underneath. Scroll slowly.
 
 ### 8. Next
 #### [8.1] Close
-**Say:** Now you can read and listen wherever you are. Next, use translations, search, playlists and memorising, or try the Tasbeeh counter.
+**Say:** Now you can read and listen wherever you are. Next, video 15.8: Quran: translation, search, playlists and memorising. Or video 15.6: Tasbeeh, live streams, gallery and forms.
 **Show:** End card with two tiles: "15.8 Quran: translation, search, playlists and memorising" and "15.6 Tasbeeh, live streams, gallery and forms".
 
 ## Review log
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 6 changes: [1.1] "In this video, you'll" opening; [3.4] points to video 15.8 by number; [4.2], [5.1], [7.1] no elliptical questions; [8.1] names both end tiles by number and title; Quran data flag rewritten for the self-hosted copy (feat/quran-self-hosted), audio still from cdn.islamic.network
 - 2026-11-03 · critic · 5 changes: [1.1] shorter opening, [3.3] "you love" softened, [3.4] no longer teaches Repeat each ayah and Playback speed (15.8 covers them) and points there, [7.1] "the menu" → "the three dots" to match the screen and 15.8, [8.1] end card points to 15.8
 <!-- Newest first: date, who, what was asked, what changed. -->
 - 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: demo data adds no last-read position and the default Mushaf, so the reader opens on the first surah
