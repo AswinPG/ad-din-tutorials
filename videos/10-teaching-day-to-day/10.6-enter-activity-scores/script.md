@@ -21,11 +21,11 @@ Enter scores for an academic activity, open a student's submitted work, return i
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
-- Demo madrasah "Al-Noor Madrasah" (Premium) with Academic Activity on; teacher Yusuf Patel teaches "Fiqh" in Class "Maktab Level 1", section "A"
+- Demo madrasah "Maple Grove Madrasah" (Premium) with Academic Activity on; teacher Bilal Hussain teaches "Fiqh" in Class "Maktab Level 1", section "A"
 - Activities for that subject in Autumn Term: one fully marked (green), "Wudu steps worksheet" not yet marked (red, Homework, score out of 10)
 - Six demo students in the section; two have turned in work with an uploaded file (made-up worksheet PDF), one is Missing
 - One earlier chat message from a student on the activity
-- Web: signed in as Yusuf. App: the same account in a phone frame for chapter 6
+- Web: signed in as Bilal. App: the same account in a phone frame for chapter 6
 
 ## Script
 <!--
@@ -37,7 +37,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. Marking made simple
 #### [1.1] Opening
-**Say:** This video shows how to enter each student's score for an activity, look at their work, and message them about it.
+**Say:** In this video for teachers, you'll enter each student's score for an activity, look at their work, and message them about it.
 **Show:** Title card: "Enter activity scores".
 
 #### [1.2]
@@ -62,13 +62,13 @@ See docs/SCRIPT-FORMAT.md.
 **Say:** Tap **Add Mark** next to the activity. The **Add Marks** page lists every student in the section.
 **Show:** Click "Add Mark" on "Wudu steps worksheet". The Add Marks page opens.
 
-#### [3.2] Add Grade
+#### [3.2] Notify families
+**Say:** To tell families about each grade, first turn on **Notify to Parent/Guardian** under the list. It starts off, and families aren't told about grades you saved before.
+**Show:** Spotlight the switch under the list; turn it on.
+
+#### [3.3] Add Grade
 **Say:** Tap a student's **Add Grade** box and type the score. Grades are saved automatically as you enter them.
 **Show:** Click the first Add Grade cell, type 9, press Enter. The Status changes to "Graded". Fill in the rest of the class (sped up).
-
-#### [3.3] Notify families
-**Say:** Turn on **Notify to Parent/Guardian** to tell families about each grade you save.
-**Show:** Spotlight the switch under the list; turn it on.
 
 ### 4. View a student
 #### [4.1] Their work
@@ -99,10 +99,11 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Web. Click "Back To List": "Wudu steps worksheet" is now green.
 
 #### [7.2] Close
-**Say:** Next, grade a whole class from Excel, or write report card comments.
+**Say:** Next, video 10.7: Import activities and marks from Excel, and video 12.2: Write comments and mark reports ready.
 **Show:** End card with two tiles: "10.7 Import activities and marks from Excel" and "12.2 Write comments and mark reports ready".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 4 changes: [1.1] says who it's for, [3.2]/[3.3] Notify to Parent/Guardian now comes before typing grades, because it starts off and each grade is sent as it saves (add-score.component.ts 66, 312, 343), [7.2] end tiles by number and title; demo names from the Maple Grove demo world
 - 2026-11-03 · critic · 4 changes: [1.1] opening states the three tasks; [3.3] "hear about" phrasal verb replaced; [5.1] "send arrow" matches Show; [7.1] Say order matches Show (Back To List, then green)
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes (Add Mark → Add Marks, auto-save, Notify to Parent/Guardian, submission panel, Return Submission, chat, phone tabs confirmed)
