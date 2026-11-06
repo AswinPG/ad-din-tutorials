@@ -96,7 +96,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Click "+10", then "+5": 15. Click into the number and type 20.
 
 #### [4.4] Submit
-**Say:** Tap **Submit**. Ad-Din reminds you that a valid payment is needed. Tap **I understand, change** to go ahead.
+**Say:** Tap **Submit**. Ad-Din reminds you that a valid payment is needed. Tap **I understand, change** to go ahead. Your card is charged for the new seats, plus tax where it applies, and an invoice is due the next day.
 **Show:** Click "Submit"; the "Are you sure?" box opens. Zoom on its message, then click "I understand, change".
 
 #### [4.5]
@@ -124,6 +124,7 @@ See docs/SCRIPT-FORMAT.md.
 ## Review log
 - 2026-11-06 · panel (user, director, writer, PM, PO) · 9 changes: You'll need, [1.2] and prereq 01.2: the organisation must be approved (the sidebar is locked while pending), [1.1] no nested opening, [2.3] says nothing is charged yet, Show spotlights 0 of 0 and the balance, [3.2] crop Stripe's test-mode badge, [4.1] no zoom on prices, [4.3] names the +5 and +10 buttons, [5.1] says why one seat is already used, [5.3] "A seat for an admin" (the API picks the first admin), condition first
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · manager · panel decisions approved ("approved": recommended options) · [4.4] what is charged and when (decision 15)
 - 2026-11-03 · manager · decisions via chat · 'First billing setup' decided (as scripted): flag wording updated; script unchanged
 - 2026-11-03 · critic · 3 changes: [1.1] second-person opening, [3.4] no elliptical question, video by number, Show spotlights Save before closing, [6.1] Say names both end tiles
 - 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: [5.1] and demo data now 1 of 20 used, 19 available (the automatic admin seat in [5.3] takes one as soon as the invoice is paid)

@@ -3,6 +3,7 @@
 Every instruction given to Claude for this video, newest first, with the result.
 Format: date · who · prompt (verbatim or summarised) · outcome / commit.
 
+- 2026-11-06 · Imran · "approved" (the recommended options in docs/reviews/2026-11-06-panel-00.4-02.3.md) · [4.4] what is charged and when (decision 15)
 - 2026-11-06 · Imran · "can you use sub agents like a normal user and video directors, scrip writers, program managers, product owner to critisise and validate the scripts" (apply clear fixes) · review panel, 9 changes (approved org + prereq 01.2, [1.1], [2.3], [3.2], [4.1], [4.3], [5.1], [5.3] seat for an admin); charge amount/timing, CAD, linked-org seats left for Imran / docs(02.3): apply review panel fixes
 - 2026-11-03 · manager · "Decisions via chat" · 'First billing setup' decided (as scripted): flag wording updated; script unchanged
 - 2026-11-03 · manager · "use a critic subagent to criticise and find flaws in the script, make it better" · critic pass: 3 changes: [1.1] second-person opening, [3.4] no elliptical question, video by number, Show spotlights Save before closing, [6.1] Say names both end tiles
