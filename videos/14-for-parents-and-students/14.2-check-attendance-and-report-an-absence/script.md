@@ -22,7 +22,7 @@ Check your child's attendance for today, by subject and for the term, and send t
 - Attendance excuse
 
 ## Demo data
-- Parent "Yusuf Rahman" in the app; child "Maryam Rahman" in "Maktab Level 1", "Section B"
+- Parent "Yusuf Rahman" (the demo world's account) in the app, Maple Grove Madrasah; child "Maryam Rahman" in "Maktab Level 1", section "A"
 - Today's attendance marked for Maryam: one class Present, one Late; subject-wise attendance on, with two subject periods today ("Quran" Present, "Arabic" Late)
 - Academic terms "Term 1" (current) and "Term 2"; Term 1 summary: 40 days (35 present, 2 absent, 1 sick, 2 late)
 - One past excuse for Maryam: Sick, last week, attendance already marked
@@ -39,7 +39,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. Attendance in the app
 #### [1.1] Opening
-**Say:** In this video you'll check your child's attendance in the Ad-Din app, and tell the madrasah ahead of time when they'll be away or late.
+**Say:** In this video for parents, you'll check your child's attendance in the Ad-Din app, and tell the madrasah ahead of time when they'll be away or late.
 **Show:** Title card: "Check attendance and report an absence". Phone frame on the app home.
 
 #### [1.2]
@@ -52,7 +52,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Tap "Maryam" next to Viewing. Scroll to the Attendance card.
 
 #### [2.2]
-**Say:** **Today** lists each of today's classes with its teacher and a status: **Present**, **Late**, **Absent** or **Sick**. **Not taken** means the teacher hasn't marked it yet.
+**Say:** **Today** lists each of today's classes with its teacher and a status, such as **Present**, **Late**, **Absent** or **Sick**. **Not taken** means the teacher hasn't marked it yet.
 **Show:** The Today tab is selected. Spotlight each row and its coloured status pill.
 **Caption:** Today: each class with its status. Not taken means it isn't marked yet.
 
@@ -77,7 +77,7 @@ See docs/SCRIPT-FORMAT.md.
 
 #### [5.2] Choose your child
 **Say:** Under **Class Details**, choose the **Class Name** and **Class Section**, then your **Child**.
-**Show:** Pick Class Name "Maktab Level 1", Class Section "Section B", Child "Maryam Rahman". The panel folds away and "Past excuses" loads.
+**Show:** Pick Class Name "Maktab Level 1", Class Section "A", Child "Maryam Rahman". The panel folds away and "Past excuses" loads.
 
 #### [5.3]
 **Say:** **Past excuses** lists the ones you've already sent. To add one, tap **Submit new excuse**.
@@ -93,7 +93,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Open Reason and pick "Late": a Time field appears. Set it to 10:30.
 
 #### [6.3] Save
-**Say:** Add a short **Description** if you like, then tap **Save excuse**.
+**Say:** Add a short **Description** for the teacher, then tap **Save excuse**.
 **Show:** Type "Dentist appointment, back by 10:30." in Description. Tap "Save excuse": toast "Successfully added the reason". The new excuse appears at the top of Past excuses.
 
 ### 7. Edit or delete an excuse
@@ -104,15 +104,16 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 8. Next
 #### [8.1] Recap
-**Say:** Your excuse is now saved with your child's attendance, so the madrasah knows before the day comes.
+**Say:** Your excuse is now saved with your child's attendance. The teacher sees it in the class register, so the madrasah knows before the day comes.
 **Show:** Past excuses with the new Late excuse at the top.
 
 #### [8.2] Close
-**Say:** Next, follow your child's Hifz progress and classwork, or see report cards and interview bookings.
+**Say:** Next, video 14.3: Follow Hifz progress and classwork. Or video 14.4: Report cards and interview bookings.
 **Show:** End card with two tiles: "14.3 Follow Hifz progress and classwork" and "14.4 Report cards and interview bookings".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 6 changes: [1.1] says who it's for, [2.2] "such as" (the card also shows Leave and Early pickup, en.json dash.mobile.att), [6.3] "for the teacher" instead of "if you like", [8.1] the teacher sees the excuse in the register (Excuse Note column, teacherPortal.v2 attendance.table.component.html), [8.2] end tiles by number and title; demo names from the Maple Grove demo world (Maktab Level 1, section A)
 - 2026-11-03 · manager · decisions via chat · 14.4 renamed 'Report cards and interview bookings' (fees cut): end card and [8.2] closing Say updated
 - 2026-11-03 · critic · 4 changes: [5.1] plain "If" sentence instead of a clipped question (translation), chapter 7 titled "Edit or delete an excuse" instead of an idiom, [7.1] tighter, [1.2] and [3.1] small tidy-ups
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes
