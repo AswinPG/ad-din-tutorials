@@ -24,13 +24,13 @@ Find your teaching tools in the Teacher Portal on the web, and use the app home'
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
-- Demo madrasah "Al-Noor Madrasah" (Premium) with Academic Activity and Class Announcements switched on, current term "Autumn Term"
-- Teacher account Yusuf Patel, who is also a parent of one enrolled child (so the app home shows the Teacher and Parent tabs and the Madrasah hub shows Teachers Portal)
-- Class timetable for today with four periods for Yusuf (for example Quran, Fiqh, a break, Arabic), so My Routine shows Now and Next tags
-- Today: two of Yusuf's class sections without attendance, three submitted Hifz entries waiting for review, five turned-in academic activities to grade (every "Needs your attention" row has a count)
+- Demo madrasah "Maple Grove Madrasah" (Premium) with Academic Activity and Class Announcements switched on, current term "Autumn Term"
+- Teacher account Bilal Hussain, who is also a parent of one enrolled child (so the app home shows the Teacher and Parent tabs and the Madrasah hub shows Teachers Portal)
+- Class timetable for today with four periods for Bilal (for example Quran, Fiqh, a break, Arabic), so My Routine shows Now and Next tags
+- Today: two of Bilal's class sections without attendance, three submitted Hifz entries waiting for review, five turned-in academic activities to grade (every "Needs your attention" row has a count)
 - Quick actions already pinned: Attendance, Quran Hifz Assignments, Academic Activity
 - One recent class announcement
-- Web: signed in as Yusuf in the browser. App: the same account in a phone frame
+- Web: signed in as Bilal in the browser. App: the same account in a phone frame
 
 ## Script
 <!--
@@ -46,7 +46,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Title card: "The teacher portal and the teacher app home".
 
 #### [1.2]
-**Say:** Your madrasah admin has already added you as a teacher and built the class timetable, so your classes are ready.
+**Say:** Your madrasah admin has already added you as a teacher and built the class timetable, so your classes are ready. The Teacher Portal needs Ad-Din Premium; your madrasah can give you one of its Premium seats.
 **Show:** Opening card. Web dashboard on the left, app home in a phone frame on the right.
 
 ### 2. The Teacher Portal on the web
@@ -59,8 +59,12 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Spotlight Attendance, Quran Hifz Assignments and Academic Activity in turn.
 
 #### [2.3]
-**Say:** You'll also find **Class Routine**, **Parent Teacher Interview**, **Library** and **Recognition**. Some items only appear when your madrasah switches that feature on.
-**Show:** Spotlight Class Routine, Parent Teacher Interview, Library, Recognition.
+**Say:** You'll also find **Class Section**, your class roster, which video 10.12 explains. Then **Class Routine**, **Parent Teacher Interview**, **Library** and **Recognition**.
+**Show:** Spotlight Class Section, Class Routine, Parent Teacher Interview, Library, Recognition.
+
+#### [2.3a]
+**Say:** **Class**, **Subject**, **Holiday**, **Grade** and **Delegations** are there to read. **Academic Activity** and **Class Announcements** appear only when your madrasah switches them on.
+**Show:** Spotlight Class, Subject, Holiday, Grade and Delegations as one group, then Academic Activity and Class Announcements.
 
 ### 3. Portal tiles in the app
 #### [3.1] Madrasah tile
@@ -75,7 +79,7 @@ See docs/SCRIPT-FORMAT.md.
 ### 4. Quick actions
 #### [4.1] The Teacher tab
 **Say:** At the top of the home screen you see your name and how many classes you have today. If you're also a parent, tap the **Teacher** tab.
-**Show:** Identity card with "Assalamu alaikum", Yusuf's name and "4 classes today". Tap the "Teacher" tab.
+**Show:** Identity card with "Assalamu alaikum", Bilal's name and "4 classes today". Tap the "Teacher" tab.
 
 #### [4.2] Shortcuts
 **Say:** **Quick actions** are shortcuts to the pages you use most. Tap one to jump straight in.
@@ -96,7 +100,7 @@ See docs/SCRIPT-FORMAT.md.
 
 #### [5.3]
 **Say:** A row only appears when work is waiting. Fewer rows means less to do.
-**Show:** Hold on the card.
+**Show:** Zoom on the count circle of each row in turn.
 
 ### 6. My Routine
 #### [6.1] Today's timetable
@@ -104,7 +108,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Scroll to "My Routine". Spotlight the "Now" and "Next" tags.
 
 #### [6.2]
-**Say:** Use the arrows to look at other days, and tap the day name to come back to **Today**.
+**Say:** Use the arrows to look at other days, and tap the day name to return to **Today**.
 **Show:** Tap the right arrow twice (the day name changes), then tap the day name: it returns to "Today". Record on a Sunday to Thursday: the arrows stop at Saturday.
 
 #### [6.3]
@@ -117,10 +121,11 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Split screen again: web Teacher Portal and app home.
 
 #### [7.2] Close
-**Say:** Next, take attendance for your class, or record today's Hifz progress.
+**Say:** Next, video 10.2: Take class attendance, and video 10.4: Record daily Hifz progress.
 **Show:** End card with two tiles: "10.2 Take class attendance" and "10.4 Record daily Hifz progress".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 7 changes: [1.2] says the Teacher Portal needs Premium (menu.data.ts 704 UnlockPermissions subscrbe), [2.3] names Class Section and points to 10.12, new [2.3a] names the read-only tiles and which items need a switch (isAcademic, isClassStory: menu.data.ts 803, 839), [5.3] Show zooms on the counts (no thin hold), [6.2] "return to" (no phrasal verb), [7.2] end tiles by number and title, demo names from the Maple Grove demo world
 - 2026-11-03 · critic · 2 changes: [1.1] plainer "where to find" (no idiom), [5.3] shorter, translatable line on empty rows
 - 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: [6.2] recording-day note (routine arrows run Sunday to Saturday and grey out at the ends); portal list, hub, quick actions, attention rows and routine confirmed
