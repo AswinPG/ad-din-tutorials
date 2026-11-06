@@ -22,11 +22,11 @@ Create a public or private event for your masjid, with its category, date and ti
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
-- Masjid Admin account with home masjid "Masjid Al-Noor" (Premium), the masjid's address saved; the account is also admin of "Al-Noor Madrasah"
-- Event list already showing two upcoming Masjid Al-Noor events with posters ("Tafsir Circle", "Youth Football")
-- New event typed on camera: "Family Picnic", category Religion changed to Food, description "Bring a dish to share. Games for the children.", Ticket URL `https://tickets.example.org/family-picnic`, next Saturday 11:00 AM to 3:00 PM, venue "Riverside Park" found with the location search
+- Masjid Admin account with home masjid "Maple Grove Masjid" (Premium), the masjid's address saved; the account is also admin of "Maple Grove Madrasah"
+- Event list already showing the demo world's two upcoming Maple Grove Masjid events with posters ("Family Quran Night", "Youth Open House")
+- New event typed on camera: "Family Picnic", category Religion changed to Food, description "Bring a dish to share. Games for the children.", Ticket URL `https://tickets.example.com/family-picnic`, next Saturday 11:00 AM to 3:00 PM, venue "Riverside Park" found with the location search
 - Two picture files ready: a 3:2 picnic poster for Image for Mobile/Web and a tall 960 × 1080 poster for Image for Prayer Dashboard
-- Al-Noor Madrasah has classes and sections so the Parents and Students invitee lists can be shown
+- Maple Grove Madrasah has classes and sections so the Parents and Students invitee lists can be shown
 
 ## Script
 <!--
@@ -42,7 +42,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Title card: "Create an event".
 
 #### [1.2]
-**Say:** Your masjid is already set up with its address, and events come with Ad-Din Premium.
+**Say:** Your masjid is already set up with its address. To add events, you need Ad-Din Premium on your own account.
 **Show:** Opening card from You'll need.
 
 ### 2. Start a new event
@@ -52,7 +52,7 @@ See docs/SCRIPT-FORMAT.md.
 
 #### [2.2]
 **Say:** Tap **Add New Event**. At the top, **Select an Organisation** already shows your home masjid. Change it if the event belongs to your madrasah.
-**Show:** Click "Add New Event". The form opens; spotlight the organisation picker showing "Masjid Al-Noor-(masjid)".
+**Show:** Click "Add New Event". The form opens; spotlight the organisation picker showing "Maple Grove Masjid-(masjid)".
 
 ### 3. Event details
 #### [3.1] Title and type
@@ -77,7 +77,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Spotlight the All Day switch; toggle it on, show the date-only picker, then toggle it off and re-pick the times.
 
 #### [4.3] After a salah
-**Say:** For a masjid, **After specific salah** starts the event a set number of minutes after a prayer, such as a talk after Isha.
+**Say:** For a masjid, **After specific salah** starts the event a set number of minutes after a prayer begins, such as a talk after Isha.
 **Show:** Spotlight the "After specific salah" switch and its note. Leave it off. Leave Repeat on Never.
 
 ### 5. Venue
@@ -86,7 +86,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Spotlight the Same As Organisation switch and the address box showing the masjid's address.
 
 #### [5.2] Somewhere else
-**Say:** Holding it somewhere else? Turn the switch off, search for the place, and pick it from the list.
+**Say:** If the event is somewhere else, turn the switch off, search for the place, and pick it from the list.
 **Show:** Toggle Same As Organisation off. Type "Riverside Park" in the location search; pick the suggestion. The address box fills in.
 
 ### 6. Private events and invitees
@@ -96,12 +96,12 @@ See docs/SCRIPT-FORMAT.md.
 
 #### [6.2] Who's invited
 **Say:** For a masjid, tick Volunteers, Staff or Followers. For a madrasah event, tick Staff or Followers, or the Parents or Students of one class and section.
-**Show:** Tick "Volunteers" and "Staff". Quick cut: the same card for Al-Noor Madrasah with Parents and Students and their class and section lists. Back on the masjid event, click Public again; the invitees card disappears.
+**Show:** Tick "Volunteers" and "Staff". Quick cut: the same card for Maple Grove Madrasah with Parents and Students and their class and section lists. Back on the masjid event, click Public again; the invitees card disappears.
 **Caption:** Masjid: Volunteers, Staff or Followers. Madrasah: Staff, Followers, or Parents or Students of a class and section.
 
 ### 7. Notifications and pictures
 #### [7.1] Notification Channel
-**Say:** Under **Notification Channel**, **Email** and **Push Notification** are both on, so followers hear about the event. Untick one to skip it.
+**Say:** Under **Notification Channel**, **Email** and **Push Notification** are both on, so followers get an email and a phone notification about the event. Untick one to skip it.
 **Show:** Spotlight the Notification Channel chips, both ticked. Leave the TV switch above them as it is.
 
 #### [7.2] Pictures
@@ -122,11 +122,12 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Spotlight the new "Family Picnic" card with its poster and date badge.
 
 #### [8.3] Next
-**Say:** Next, make an event repeat every week and show it on the masjid TV. Or see how members find events and mark that they're going.
+**Say:** Next, video 08.2: Repeating events and events on the masjid TV. Or video 15.3: Events: going, interested and sharing, to see how members find events.
 **Show:** End card with two tiles: "08.2 Repeating events and events on the masjid TV" and "15.3 Events: going, interested and sharing".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 5 changes: [1.2] says whose Premium adding events needs (API checks the admin's own), [4.3] "after a prayer begins" (start = begin time + delay), [5.2] no elliptical question, [7.1] says how followers are told (no idiom), [8.3] names both end tiles by number; demo names match the Maple Grove demo world (and its two events)
 - 2026-11-03 · manager · decisions via chat · 15.3 renamed 'Events: going, interested and sharing': end-card tile updated
 - 2026-11-03 · critic · 2 changes: [1.1] second person instead of "a masjid admin"; [8.3] Say now names both end-card videos
 - 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: [6.2] madrasah invitees are Staff, Followers, Parents, Students (no Volunteers)
