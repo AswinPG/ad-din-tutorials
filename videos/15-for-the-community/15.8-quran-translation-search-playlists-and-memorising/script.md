@@ -10,7 +10,7 @@ audience:
   - Student
 flags:
   - "Recite the translation exists only for the eight translations Ad-Din has a verse-by-verse recording for (English · Saheeh International, Urdu · Jalandhry, French, Turkish · Diyanet Vakfı, Persian, Russian, Chinese, Uzbek), and only in Verses view with Arabic + translation. The default English · Pickthall has none, so the demo switches to Saheeh International. No Bangla, Malay or Indonesian recording exists; translated narrations must not promise one."
-  - "The Quran text, translations, search and recitation load live from AlQuran Cloud and Quran.com (mirrored by Ad-Din). The mocked demo world must serve them (including the English translation recording for Al-Mulk 67:1–2 and search results for 'patience'), or record against the agreed dev environment. Same as 15.5."
+  - "Quran data: the self-hosting change (feat/quran-self-hosted 152336b4d and ce6be1ea1; not yet on origin/master 7f0e6bf72) serves the text, translations, search text, Mushaf layouts and fonts from Ad-Din's own storage, falling back to AlQuran Cloud and Quran.com, and runs Search on the phone. Recitation and translation audio still stream from cdn.islamic.network. The mocked demo world must serve them for the build that is recorded (including the English translation recording for Al-Mulk 67:1–2 and search results for 'patience'), or record against the agreed dev environment. Same as 15.5."
   - "The Quran page is not in the web sidebar (the menu entry is commented out); on the web it is reached only through the /quran address. Scripted for the app only."
 ---
 
@@ -33,7 +33,7 @@ Read the Quran with a translation (and hear it where a recording exists), search
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
-- Demo member account signed in on the app (phone frame); the reader opens on Surah Al-Mulk (67) at ayah 1 (last-read position)
+- A community member account (not the admin demo account Yusuf Rahman) signed in on the app (phone frame); the reader opens on Surah Al-Mulk (67) at ayah 1 (last-read position)
 - Quran reader settings at their defaults (English · Pickthall, Mishary Rashid Alafasy, Light, 100%), playlist empty, no bookmarks
 - Quran data served by the demo world: Al-Mulk text with Pickthall and Saheeh International, the Saheeh International recording (Ibrahim Walk) for 67:1–2, search results for "patience", the surah list, and the Madani Mushaf page for Al-Mulk
 - Share opens the phone's share sheet (stubbed in the demo world; show it with no real contacts)
@@ -134,5 +134,6 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 2 changes: Quran data flag rewritten for the self-hosted copy (feat/quran-self-hosted; search on the phone, audio still from cdn.islamic.network); demo data names a member account
 - 2026-11-03 · critic · 7 changes: [1.1] second-person opening, no "back to back"; [2.2] "in this colour" → "Highlighted", matches the caption; [3.1] no elliptical question; [4.2] no "back to back"; [5.2] clearer "same choices in Reading settings"; [8.1] no "line up"; [8.2] end card by number and title
 - 2026-11-03 · validator · checked against master d36d69ed8 · 1 fix: [5.1] speed button can't go from 1.25× straight back to 1× (cycles 1, 1.25, 1.5, 0.75); repeat cycle noted
