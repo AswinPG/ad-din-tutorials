@@ -40,16 +40,16 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. Before you start
 #### [1.1] Opening
-**Say:** Is your masjid already on Ad-Din, but run by someone else? In this video you'll ask Ad-Din to make you an admin. The same steps work for a madrasah.
+**Say:** Is your masjid already on Ad-Din, but run by someone else? In this video you'll ask Ad-Din to make you an admin. This request is called a claim. The same steps work for a madrasah.
 **Show:** Title card: "Claim admin of a masjid that’s already listed".
 
 #### [1.2]
-**Say:** You'll need your Ad-Din account with a home masjid chosen, and a document that shows you represent the organisation, such as a letter from the board.
+**Say:** You'll need your Ad-Din account with a home masjid chosen, and official documents that show you represent the organisation.
 **Show:** Opening card from You'll need.
 
 ### 2. Find the masjid
 #### [2.1] Masjid Finder
-**Say:** In the menu, open **Masjid**, then **Masjid Finder**. You'll see a map and a list of places near you.
+**Say:** In the sidebar, open **Masjid**, then **Masjid Finder**. You'll see a map and a list of places near you.
 **Show:** Sidebar → Masjid → Masjid Finder. The map with pins and the "Nearby Masjid / Madrasah" list.
 
 #### [2.2]
@@ -58,7 +58,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 3. Follow it first
 #### [3.1] Follow
-**Say:** You can only claim an organisation you follow or have as your home. So tap **Follow**. The button changes to **Following**.
+**Say:** You can only claim an organisation that you follow or that is your home. So tap **Follow**. The button changes to **Following**.
 **Show:** Click "Follow"; it turns to "Following". Zoom on the button.
 
 ### 4. Open the claim page
@@ -71,9 +71,9 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** The claim page with the guide open on the left. Spotlight the guide heading.
 
 #### [4.3]
-**Say:** In short: Ad-Din doesn't decide disputes about who runs the organisation. It checks your documents, then connects you with the current administrators, who can give you admin rights.
+**Say:** In short: if people disagree about who runs the organisation, Ad-Din doesn't decide between them. It checks your documents, then connects you with the current admins, who can give you admin rights.
 **Show:** Slow scroll through the guide text. Spotlight the second and third paragraphs.
-**Caption:** Ad-Din doesn't settle disputes. It checks your documents and connects you with the current administrators, who can give you admin rights.
+**Caption:** If people disagree about who runs it, Ad-Din doesn't decide. It checks your documents and connects you with the current admins, who can give you admin rights.
 
 #### [4.4]
 **Say:** Before you send a claim, make sure your own profile details are up to date.
@@ -98,19 +98,20 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 6. What happens next
 #### [6.1] Ad-Din checks your claim
-**Say:** Ad-Din's team checks your claim and documents. When they approve or reject it, you get an email and a push notification. Then they connect you with the current administrators.
+**Say:** Ad-Din's team checks your claim and documents. When Ad-Din approves or rejects it, you get an email and a push notification. If it's approved, Ad-Din connects you with the current admins.
 **Show:** Masjid Finder with Masjid Al-Falah selected. Overlay a three-step card: your claim, Ad-Din checks it, an administrator adds you.
 
 #### [6.2]
-**Say:** When they agree, a current administrator adds you as an admin. Make the masjid your home masjid, and its admin menus appear for you.
-**Show:** Quick cut: the sidebar with the Masjid admin items for this account, with Masjid Al-Falah as its home masjid.
+**Say:** When the current admins agree, one of them adds you as an admin. Then make the masjid your home masjid with **Change** on your profile, as in video 00.4, and its admin menus appear.
+**Show:** Profile → User Profile → Home & Followed Orgs: spotlight "Change" next to Home Masjid. Quick cut: the sidebar with the Masjid admin items for this account, with Masjid Al-Falah as its home masjid.
 
 ### 7. Next
 #### [7.1] Close
-**Say:** To see how administrators add each other, watch video 03.3, Add admins, staff and volunteers to a masjid. Registering a new organisation instead? Start with video 01.1.
+**Say:** To see how admins add each other, watch video 03.3, Add admins, staff and volunteers to a masjid. Registering a new organisation instead? Start with video 01.1.
 **Show:** End card with two tiles: "03.3 Add admins, staff and volunteers to a masjid" and "01.1 Register a masjid, madrasah, or both".
 
 ## Review log
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 8 changes: [1.1] explains "claim", [1.2] asks for official documents as the claim guide does (no "letter from the board"), [2.1] "sidebar", not "menu", [3.1] complete sentence, [4.3] plain words for "disputes", Say and Caption match, "admins", [6.1]/[6.2] clear who does what (no "they" for two groups), [6.2] says and shows how to make it your home masjid, [7.1] "admins"
 <!-- Newest first: date, who, what was asked, what changed. -->
 - 2026-11-03 · critic · 5 changes: [1.1] second-person opening, [4.2]/[4.3] idioms removed ("worth reading", "in charge", "puts you in touch"), [6.1] adds the approve/reject email and push (validator fact), [7.1] end tile by number
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes
