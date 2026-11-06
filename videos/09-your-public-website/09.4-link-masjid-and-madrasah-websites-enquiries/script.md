@@ -28,9 +28,9 @@ Join your masjid's and madrasah's websites into one site, approve or unlink the 
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
-- One demo account that is admin of "Masjid Al-Noor" and "Al-Noor Madrasah", following both
-- Both have active websites with the add-on: masjid at `alnoor`, madrasah at `alnoor-madrasah`; not linked at the start
-- Masjid Al-Noor email on file `office@alnoor.example`; website contact emails `office@alnoor.example` and `imam@alnoor.example`
+- One demo account that is admin of "Maple Grove Masjid" and "Maple Grove Madrasah", following both
+- Both have active websites with the add-on: masjid at `maplegrove`, madrasah at `maplegrove-madrasah`; the websites are not linked at the start (set this per video in the demo world)
+- Maple Grove Masjid email on file `office@maplegrove.example.com`; website contact emails `office@maplegrove.example.com` and `imam@maplegrove.example.com`
 - A demo visitor message on the website's Contact page: Full Name "Sara Ahmed", E-Mail `sara@example.com`, Mobile Number fictional, message "Do you offer Nikah services on Saturdays?"
 - The notification email "New enquiry from website" shown in a mock mail client (no real inbox)
 - The Contact page's reCAPTCHA must be ticked before the form sends; use the demo site's test reCAPTCHA key or a mocked widget
@@ -45,7 +45,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 1. One website for both
 #### [1.1] Opening
-**Say:** If your masjid runs a madrasah, both can share one website, with prayer times, classes, events and news together. We'll also see where visitors' messages arrive.
+**Say:** If your masjid runs a madrasah, both can share one website, with prayer times, classes, events and news together. In this video, you link the two websites, and see where visitors' messages arrive.
 **Show:** Title card: "Link masjid and madrasah websites; enquiries".
 
 #### [1.2]
@@ -59,7 +59,7 @@ See docs/SCRIPT-FORMAT.md.
 
 #### [2.2]
 **Say:** The one that accepts the request keeps its website and address. So to keep your masjid's address, send the request from the madrasah.
-**Show:** Card with two site addresses and an arrow: the madrasah sends, the masjid accepts, "alnoor" stays.
+**Show:** Card with two site addresses and an arrow: the madrasah sends, the masjid accepts, "maplegrove" stays.
 **Caption:** The organisation that accepts keeps its website address.
 
 ### 3. Send the request
@@ -69,7 +69,7 @@ See docs/SCRIPT-FORMAT.md.
 
 #### [3.2]
 **Say:** Tap your masjid. Check its details, then tap **Accept and Request**.
-**Show:** Click "Masjid Al-Noor". The confirmation shows its address and contacts. Click "Accept and Request". "Request sent" appears.
+**Show:** Click "Maple Grove Masjid". The confirmation shows its address and contacts. Click "Accept and Request". "Request sent" appears.
 
 ### 4. Approve it
 #### [4.1] Review request
@@ -78,7 +78,7 @@ See docs/SCRIPT-FORMAT.md.
 
 #### [4.2] Accept
 **Say:** Tap **Accept**, check the madrasah's details, and tap **Accept and Link**.
-**Show:** The request card "Al-Noor Madrasah wants to link with your website". Click "Accept"; then "Accept and Link".
+**Show:** The request card "Maple Grove Madrasah wants to link with your website". Click "Accept"; then "Accept and Link".
 
 #### [4.3] Linked
 **Say:** Done. The card now shows both organisations, linked, sharing one website. Content from both appears there.
@@ -108,11 +108,12 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 7. Next
 #### [7.1] Close
-**Say:** Your masjid and madrasah now share one website. Next, see how your website is doing in search.
+**Say:** Your masjid and madrasah now share one website. Next, video 09.5: Website analytics. Or video 09.2: Brand your website.
 **Show:** End card with two tiles: "09.5 Website analytics" and "09.2 Brand your website".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-06 · panel (user, director, writer, PM, PO) · 2 changes: [1.1] second person instead of "we'll", [7.1] names both end tiles by number; demo names, addresses and emails match the Maple Grove demo world
 - 2026-11-03 · manager · decisions via chat · 'Which side sends the website link request' (send from the madrasah, as written) and 'Website enquiries are email-only' (fine) decided: flags reworded; script unchanged
 - 2026-11-03 · critic · 3 changes: [2.1] [3.1] [4.1] "website home" -> "website home page", the term 09.1 uses
 - 2026-11-03 · validator · checked against master d36d69ed8 · 2 fixes: contact form sent with the paper-plane button after reCAPTCHA (Send Message is a heading), real thank-you text; reCAPTCHA added to demo data
