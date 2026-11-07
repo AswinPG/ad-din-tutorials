@@ -3,7 +3,7 @@
 Every user-facing feature of the Ad-Din web app and mobile app, and the planned tutorial video that covers it.
 
 - **Source:** origin/master at commit `d36d69ed8` (2026-11-01, "October 2026 - staff attendance release fixes, security fixes"), read-only export of `AdDin.Angular/src/app`. Mobile shell: `C:\Fantacode\Ad-DinMobileApp` working tree (branch `fix/ios-workload-version`, 2026-10-31), read only.
-- **Date:** 2026-11-03.
+- **Date:** 2026-11-03. Updated 2026-11-07 with six rows from the approved panel decisions ("All recommended"), checked on `7f0e6bf72`.
 - **Method:** every entry and child in `services/menu.data.ts`, every route in `modules/routes.ts` and the 100 `*routes.ts` / `*routing*.ts` files, the portal tile lists in `routes.ts`, tab lists and button labels in the main page templates, `assets/i18n/en.json`, the native bridge (`services/native-bridge.service.ts` and every `isNativeMobile()` / `openNative()` call), and the MAUI shell's `NativePageRouter.cs` and `PushNotificationBootstrap.cs`. The graphify graph was used only to check that no feature folder was skipped. Each video's `## Covers` list and front matter were matched against what was found. Covers labels were checked by searching the code for the exact text (see the last section).
 - **What was not done:** nothing was run, so no page was opened. A row says a feature exists because its route, menu entry or template exists and something links to it. Where nothing seems to link to a route, the note says so.
 
@@ -70,11 +70,14 @@ Admin setup plus the masjid pages members see. Events and donations are listed h
 | Forms (up to 2 MB) | Masjid → Forms | Masjid Admin | 04.8 | |
 | Prayer Times: Adhan Times, Islamic Date, calculation settings | Masjid → Prayer Times (`adhantimes`, `hijridate`, `settings`) | Masjid Admin | 04.1 | |
 | Prayer Times: Batch Update, View Prayer Times | `batchupdate`, `viewtimes` | Masjid Admin | 04.2 | |
+| Basic Display: Jumah Location (Jumu'ah held away from the masjid: tick box, address search, address fields) | Prayer Times → Basic Display → Jumah Location (`display`) | Masjid Admin | 04.2 | Added 2026-11-07 (panel decision 27). The address search uses Google Places |
 | Prayer Times: Manual Update import/export | `manualupdate` | Masjid Admin | 04.3 | |
 | TV displays: small / medium / large links | `display`; public `/smalldisplay/:id`, `/mediumdisplay/:id`, `/largedisplay/:id` | Masjid Admin | 04.4 | |
 | Basic Announcements on the TV | `announcements` | Masjid Admin | 04.4 | |
 | Premium displays: Vertical / Horizontal presets, Layout, Salah Control, Iqamaah Countdown | `newDisplays/:displayName` | Masjid Admin | 04.5 | |
 | Premium displays: Contents, Ticker Message, events | `contents`, `tickerMessage` | Masjid Admin | 04.6 | |
+| Premium displays: Poster After Adhan, Poster After fard salah (numbered displays), Masjid URL | Display Controls (`newDisplays/:displayName`, `display-menu.config.ts`) | Masjid Admin | 04.6 | Added 2026-11-07 (panel decision 26) |
+| Premium displays: Embedded Content Or Announcement (Announcements or Embed content) | Horizontal Display Content Only → Display Controls | Masjid Admin | 04.6 | Added 2026-11-07 (panel decision 26) |
 | Premium displays: Night Mode, Makrooh, Taraweeh, alternate language, colours | `newDisplays/:displayName`, `languageSettings` | Masjid Admin | 04.11 | Split from 04.6 (2026-11-03) |
 | Manage Streaming (Video, Audio, Facebook slots) | Live Streaming → manage | Masjid Admin | 04.10 | |
 | Events: create, public/private, invitees, categories, Ticket URL | Events → `eventadd` | Masjid Admin | 08.1 | |
@@ -99,6 +102,8 @@ Admin setup plus the masjid pages members see. Events and donations are listed h
 | Add Student / Parent, Manage Class, Link Parent, Link Childs, Siblings, MRC (media consent) | same | Madrasah Admin | 06.4 | |
 | Community Involvement Activity Records (upload records and community hours per student) | User list → select a student → Community Involvement Activity Records (`/settings/madressah/:id/communityrecord`) | Madrasah Admin | — | (b) Fold into 06.4 as one more user-list action (split into its own short video if 06.4 runs long) |
 | Pending Enrollments tab, approve / decline / Reconsider | User list → Pending Enrollments; `/settings/approve/:id` | Madrasah Admin | 06.3 | |
+| Download Application (filled form as a PDF, several as a zip) | Pending Enrollments toolbar; Enrollment Request window | Madrasah Admin | 06.3 | Added 2026-11-07 (panel decision 28) |
+| Add more course (in the Enrollment Request window) | Pending Enrollments → View Details | Madrasah Admin | — | (c) Left out on purpose (panel decision 28, 2026-11-07) |
 | Introduction & Services pages (madrasah) | Madrasah / School → Introduction & Services (`/pages/list/madressah`) | Madrasah Admin | — | (b) Fold into 04.9: same page type; 04.9 sits in the masjid track, so say once that madrasahs have it too |
 | Program Details and Subjects, program description edit | Madrasah / School → Program Details and Subjects; `introduction/modify` | Madrasah Admin, Parent | 05.8, 05.3 | |
 | Staff List, Program Timetables (public program pages) | Madrasah / School menu | Everyone | 05.8 | |
@@ -113,7 +118,7 @@ Admin setup plus the masjid pages members see. Events and donations are listed h
 | Holiday | Admin Portal → Holiday | Madrasah Admin | 05.7 | |
 | Delegations (substitute teachers) | Admin Portal → Delegations | Madrasah Admin | 05.7 | |
 | Parent Teacher Interview: slots, Manage Booking, Reminders, interview list | Admin Portal → Parent Teacher Interview | Madrasah Admin | 10.8 | |
-| Attendance (admin view of class attendance) | Admin Portal → Attendance (`adminportalv2/attendancev2/add`) | Madrasah Admin | 10.2 | |
+| Attendance (admin view of class attendance), Send Attendance Notifications | Admin Portal → Attendance (`adminportalv2/attendancev2/add`) | Madrasah Admin | 10.2 | Send Attendance Notifications added 2026-11-07 (panel decision 29); only this admin page has it |
 | Class Announcements (admin) | Admin Portal → Class Announcements | Madrasah Admin | 07.4 | |
 | Exams, Manage Marks | Admin Portal → Exams / Manage Marks (Exam Marks switch) | Madrasah Admin | — | (c) Left out on purpose: older feature, off by default; 10.11 dropped (decided 2026-11-03) |
 | Migration (promote students) | Admin Portal → Migration | Madrasah Admin | 16.1 | |
@@ -140,7 +145,7 @@ Admin setup plus the masjid pages members see. Events and donations are listed h
 | Class, Subject, Holiday, Grade, Delegations (read-only views) | Teacher Portal | Teacher | 10.1 | Only as tiles on the tour; nothing to teach beyond "look here" |
 | Class Routine (my timetable) | Teacher Portal → Class Routine | Teacher | 10.1 | |
 | Class Section roster: student facts (age, gender, program, enrolled, medical, special note, emergency contact), Message a parent (with AI rewrite and Undo), Call | Teacher Portal → Class Section | Teacher | — | (a) New video 10.12, see Gaps. On the app, Call opens the phone dialer through the shell |
-| Take attendance (Present, Absent, Late, Sick, Early Pickup, Not Marked; by subject) | Teacher Portal → Attendance | Teacher | 10.2 | |
+| Take attendance (Present, Absent, Late, Sick, Early Pickup, Not Marked; by subject), Notify parents, Send Attendance Notifications | Teacher Portal → Attendance | Teacher | 10.2 | 10.2 [5.3] (added 2026-11-07, panel decision 29): Send Attendance Notifications is on the Admin Portal page, not the teacher page, and can tell parents twice after a save with Notify parents on |
 | Class Announcements: post photo or note, tags, likes, views | Teacher Portal → Class Announcements | Teacher | 07.4 | |
 | Record daily Hifz progress | Teacher Portal → Quran Hifz Assignments | Teacher | 10.4 | |
 | Academic Activity scores, view or message a student | Teacher Portal → Academic Activity | Teacher | 10.6 | |
@@ -206,6 +211,7 @@ Added as its own table because it serves both kinds of organisation.
 | Zones (circle or polygon) | `/attendance/admin/zones` | Org Admin | 13.2 | |
 | Staff, Shifts (templates, class routine term), Link staff | `/attendance/admin/staff`, `shifts` | Org Admin | 13.3, 16.2 | |
 | Settings (pay period, grace band, breaks, holidays, payroll email, reasons, leave) | `/attendance/admin/settings` | Org Admin | 13.4 | |
+| Settings: Location and privacy → Location retention (6, 12 or 24 months) | `/attendance/admin/settings` → Location and privacy | Org Admin | 13.4 | Added 2026-11-07 (panel decision 30). The same group's Location accuracy limit and Rollout pause for location cards are in no video and not yet decided |
 | Documents for your staff (collection notice and the org's own policy) | Settings → documents; Services quick link | Org Admin | — | (b) Fold into 13.4 (or 13.1, where the quick link is) |
 | Review (Approve, Adjust, Reject, Dismiss) | `/attendance/admin/queue` | Org Admin | 13.5 | |
 | Periods: hours grid, Lock, CSV / PDF, versions, unlock within 15 days | `/attendance/admin/periods`, `periods/:period` | Org Admin | 13.6 | |
@@ -305,11 +311,11 @@ The app is one WebView around the same Angular pages, so almost every feature ab
 
 ### Counts
 
-- **Feature rows:** 217: 200 for the user-facing audience, plus 17 Global Admin.
-- **Covered by a planned video:** 159 of the 200 audience rows. 1 of them is in Track 11 (on hold), and 1 more (the parent Payment page) waits for Track 11 after it was cut from 14.4 on 2026-11-03. 3 more are only partly named, so their video should add one line: parent read-only lists (14.1), the admin's app home (12.6), and quick-action pinning for non-teachers (00.6).
+- **Feature rows:** 223: 206 for the user-facing audience, plus 17 Global Admin.
+- **Covered by a planned video:** 164 of the 206 audience rows. 1 of them is in Track 11 (on hold), and 1 more (the parent Payment page) waits for Track 11 after it was cut from 14.4 on 2026-11-03. 3 more are only partly named, so their video should add one line: parent read-only lists (14.1), the admin's app home (12.6), and quick-action pinning for non-teachers (00.6).
 - **(a) New video needed:** 8 rows, which make 3 new videos.
 - **(b) Fold into an existing video:** 18 rows.
-- **(c) Leave out:** 14 audience rows (disabled, hidden, legacy, unreachable or left out on purpose, including the 3 Exam Marks rows and the Custom Comments Library dropped 2026-11-03), plus all 17 Global Admin rows. The leave-out list below also names 7 unused modules and routes that have no table row.
+- **(c) Leave out:** 15 audience rows (disabled, hidden, legacy, unreachable or left out on purpose, including the 3 Exam Marks rows and the Custom Comments Library dropped 2026-11-03, and Add more course, 2026-11-07), plus all 17 Global Admin rows. The leave-out list below also names 7 unused modules and routes that have no table row.
 - The "Prayer-time alerts" row is a check that came back empty, not a feature, so it is in none of these counts.
 
 ### (a) Should get a new video
@@ -364,6 +370,7 @@ This table lists the 18 (b) rows plus the 3 partly covered rows: pin quick actio
 | Alumni page, Alumni Verdict | Hidden in the menu until the module is redone |
 | Program rules | No link reaches the route |
 | Menu Control tab | Commented out of the tab list |
+| Add more course (Enrollment Request window) | Left out on purpose (panel decision 28, 2026-11-07) |
 | Student / Teacher Payment tiles | Commented out of the menu |
 | `/subscription-legacy` | Duplicate of the v2 subscription pages |
 | Old add-masjid flow (`/masjid/finder`, `instructions`, `addboth`) | Legacy; replaced by 01.1's flow |
