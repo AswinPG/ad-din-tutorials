@@ -62,7 +62,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Scroll to the comment box. Click "Edit"; the "Edit Comment" window opens. Type two sentences; the counter shows "112/350". Click "Save". Toast "Successfully saved the academic report".
 
 #### [3.2] Write with AI
-**Say:** Or tap **Write with AI**. **Ad-Din's AI Comment Generator** opens and drafts a comment from the student's results.
+**Say:** Or tap **Write with AI**. **Ad-Din's AI Comment Generator** opens. It sends the student's results to an AI service, which drafts a comment.
 **Show:** Open the next student, Hana Mirza. Click "Write with AI"; "Ad-Din's AI Comment Generator" opens with Student, Grade and Annual Average. The generated comment appears.
 
 #### [3.3]
@@ -97,6 +97,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-07 · manager · panel decisions, "All recommended" · [3.2] says the student's results go to an AI service
 - 2026-11-06 · panel (user, director, writer, PM, PO) · 5 changes: [2.1] says what to do when Select can't be tapped, [4.2] Ready blocks the Refresh button ("Report is marked Ready. Unmark it first to refresh.", report515.functions.component.ts 703) and the Show spotlights instead of a hover, [6.1] teachers see Report Readiness too, [6.2] end tiles by number and title; demo names from the Maple Grove demo world (Bilal Hussain; Maktab Level 1 A; Zaid Karim, Hana Mirza, Ibrahim Nasser)
 - 2026-11-03 · manager · decisions via chat · Custom Comments Library cut: chapter 5 ([5.1]-[5.4]) removed, so the video covers only the current flow (Edit, Write with AI, Mark As Ready); Covers, Goal, demo data and flag updated; target 4:45 to 3:45
 - 2026-11-03 · critic · 5 changes: [1.1] second-person opening; [4.2] "locked against refreshing" made plain; [6.2] both end-card tiles named by number; fold: [3.2] names Ad-Din's AI Comment Generator, [5.4] adds the app's Use Legacy Comment Bank (Deprecated) switch (Covers + demo data)
