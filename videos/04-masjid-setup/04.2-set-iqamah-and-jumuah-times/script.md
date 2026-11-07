@@ -7,6 +7,7 @@ prereq:
 status: scripted
 flags:
   - "View Prayer Times → Change these opens Batch Update without carrying the dates over (the code comment says it should); the script has the viewer pick the dates again"
+  - "Jumah Location's search box uses Google Places suggestions, which the mocked demo world does not answer: stub the one suggestion (Maple Grove Community Hall) or record [7a.2] from dev"
 ---
 
 # 04.2 Set iqamah and jumu’ah times
@@ -19,6 +20,7 @@ Set Iqamah and Jumu'ah times for a whole range of days at once with Batch Update
 
 ## Covers
 - Batch Update by date range, Fridays only, View Prayer Times
+- Basic Display → Jumah Location: a Jumu'ah held away from the masjid
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
@@ -26,6 +28,7 @@ Set Iqamah and Jumu'ah times for a whole range of days at once with Batch Update
 - Adhan Times saved (Maghrib Iqamah Offset 5), so Maghrib shows as locked in Batch Update
 - Date range used on camera: the whole of next month for the demo clock (1 to 31 December 2026), which includes four Fridays
 - New times typed on camera: Fajr 6:00 AM, Dhuhr 1:30 PM, Isha 8:45 PM, Jumu'ah 1:15 PM, Jumu'ah 2 2:15 PM
+- Jumah Location on camera: "Maple Grove Community Hall", 250 Elm Street, Toronto, ON M0M 0B0, Canada (fictional), offered as one search suggestion; saving shows "Successfully saved Display Settings"
 
 ## Script
 <!--
@@ -110,13 +113,27 @@ See docs/SCRIPT-FORMAT.md.
 **Say:** If you need another change, tap **Change these** to go back to **Batch Update**. Pick the dates again there.
 **Show:** Click "Change these"; the Batch Update tab opens with empty dates.
 
-### 8. Next
+### 8. Jumu'ah away from the masjid
+#### [7a.1] Jumah Location
+**Say:** If your Jumu'ah is held somewhere else, such as a rented hall, you can save that place too. Open the **Basic Display** tab, then the **Jumah Location** section.
+**Show:** Click the "Basic Display" tab. Click the "Jumah Location" section title to open it.
+
+#### [7a.2]
+**Say:** Tick **The location for Jumah is different from the location of the masjid**. In **Jumah Location**, type the name or address of the place, and pick it from the list.
+**Show:** Tick the box; the note and the address fields open. Type "Maple Grove Community Hall" and pick the suggestion; Street No, Street Name, City, Postal Code, State and Country fill in.
+
+#### [7a.3]
+**Say:** Check the address, then scroll down and tap **Save**. If a detail is missing, Ad-Din asks you to fill it in.
+**Show:** Spotlight the filled address fields. Scroll to the bottom of Basic Display and click Save. Toast "Successfully saved Display Settings".
+
+### 9. Next
 #### [8.1] Close
 **Say:** Your Iqamah and Jumu'ah times are set. To change a single day or use a spreadsheet, watch video 04.3: Import and export a prayer timetable. Then video 04.4: Prayer times on a TV: basic displays.
 **Show:** End card with two tiles: "04.3 Import and export a prayer timetable" and "04.4 Prayer times on a TV: basic displays".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-07 · manager · panel decisions, "All recommended" · added chapter 8 "Jumu'ah away from the masjid" ([7a.1]-[7a.3], Basic Display → Jumah Location; decision 27); Next is now chapter 9 with [8.1] unchanged; Covers, demo data and a Google Places flag added
 - 2026-11-06 · panel (user, director, writer, PM, PO) · 6 changes: [1.2] "already set" (no phrasal verb), [4.4] Select all and Clear all are one button, [5.2] "can't be tapped" instead of "greyed out", [7.3] no elliptical question and says to pick the dates again (flag), [8.1] names both end tiles by number, demo names and date range match the Maple Grove demo world (December 2026)
 - 2026-11-03 · critic · 2 changes: second-person opening, [1.2] no longer says Ad-Din 'calls' the Adhan
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes
