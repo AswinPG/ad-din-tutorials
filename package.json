@@ -14,7 +14,8 @@
     "labels": "node tools/check-labels.mjs",
     "record": "node engine/record.mjs",
     "voice": "node engine/voice.mjs",
-    "tracks": "node engine/tracks.mjs"
+    "tracks": "node engine/tracks.mjs",
+    "review": "node tools/build-review.mjs"
   },
   "dependencies": {
     "playwright": "1.49.1",
