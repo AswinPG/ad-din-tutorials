@@ -17,6 +17,7 @@ Set your pay period, grace band, break and holiday rules, payroll email, and the
 
 ## Covers
 - Pay period, grace band, breaks, holidays, payroll email, reason lists, leave categories
+- Location and privacy → Location retention
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
@@ -24,6 +25,7 @@ Set your pay period, grace band, break and holiday rules, payroll email, and the
 - Payroll calendar with several upcoming monthly periods
 - Grace band 10 minutes, unpaid; Track breaks on; Unended break closes after 30 minutes; Shift-end reminder on
 - Holiday suppression for shift templates off
+- Location retention 12 months (selected, not changed on camera)
 - Payroll recipient empty at the start; `payroll@maplegrove.example.com` typed in the video (never a real address)
 - Default lists: out-of-zone reasons, correction reasons, leave categories Annual leave (Paid), Sick leave (Paid), Unpaid leave (Unpaid), Other (Unpaid)
 
@@ -83,7 +85,16 @@ See docs/SCRIPT-FORMAT.md.
 **Say:** For a madrasah, **Holiday suppression — shift templates** decides whether a school holiday also gives template staff, like caretakers and office staff, the day off.
 **Show:** Scroll to "Holiday suppression — shift templates". Spotlight it and the sentence under it.
 
-### 5. Payroll email
+### 5. Location and privacy
+#### [4a.1] Location retention
+**Say:** Open **Location and privacy**. **Location retention** is how long the location of each check-in is kept: **6 months**, **12 months** or **24 months**. Worked hours are kept forever.
+**Show:** Click "Location and privacy". Spotlight "Location retention" and its three choices, with 12 months selected. Don't change it on camera.
+
+#### [4a.2]
+**Say:** Older location records are deleted, but timesheets and audit records stay. A lower number applies to all your staff.
+**Show:** Spotlight the sentence under the choices ("Map fixes older than 12 months are deleted…").
+
+### 6. Payroll email
 #### [5.1] Payroll recipient
 **Say:** In **Payroll**, enter the **Payroll recipient**, such as your bookkeeper's email. The first time you lock each pay period, the payroll file is sent to this address.
 **Show:** Click "Payroll". Type `payroll@maplegrove.example.com` in Payroll recipient; the sentence under it updates.
@@ -92,7 +103,7 @@ See docs/SCRIPT-FORMAT.md.
 **Say:** The **Payroll schedule note** is a reminder for your admins only. It doesn't send anything.
 **Show:** Spotlight "Payroll schedule note".
 
-### 6. Lists your staff see
+### 7. Lists your staff see
 #### [6.1] Out-of-zone reasons
 **Say:** **Lists staff see** holds the choices your staff pick from. The **Out-of-zone reason list** appears when someone taps outside their zone. Tap **Add reason** to add your own.
 **Show:** Click "Lists staff see". Click "Out-of-zone reason list" to open it (each list starts closed). Spotlight the reasons. Click "Add reason"; replace "New reason" with "Home visit".
@@ -109,13 +120,14 @@ See docs/SCRIPT-FORMAT.md.
 **Say:** The **What your staff see** panel previews each rule as your staff will read it. Changes reach their phones the next time they open the app.
 **Show:** Zoom on the "What your staff see" panel.
 
-### 7. Next
+### 8. Next
 #### [7.1] Close
 **Say:** Your rules are set. Next, watch 13.5, Review the days that need a decision, and 13.6, Lock a pay period and send payroll.
 **Show:** End card with two tiles: "13.5 Review the days that need a decision" and "13.6 Lock a pay period and send payroll".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-07 · manager · panel decisions, "All recommended" · added chapter 5 "Location and privacy" ([4a.1]-[4a.2], Location retention; settings.component.html 772-806, en.json 3491-3496, 3533, 3639; decision 30); later chapter headings renumbered 6-8, scene IDs unchanged; Covers and demo data updated
 - 2026-11-06 · panel (user, director, writer, PM, PO) · 6 changes: [2.3] says what signing off means (locking, video 13.6) and plainer order, [2.4] Ad-Din doesn't pay anyone (en.json 5151), [4.1] Track breaks off deducts unpaid breaks automatically (en.json 3524), [5.1] only the first lock of a period emails the payroll file (IPayrollOutputSendService.cs 60-78), [5.2] "admins", demo payroll address on maplegrove.example.com
 - 2026-11-03 · manager · decisions via chat · Staff Attendance is live: 'Is Staff Attendance live?' hold flag removed; publish normally
 - 2026-11-03 · critic · 3 changes: [1.1] second-person opening; [2.1] full sidebar path; [7.1] end-card tiles named by number
