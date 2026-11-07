@@ -18,6 +18,7 @@ Mark each student present, absent, late, sick or picked up early, save the regis
 ## Covers
 - Present, Absent, Late, Sick, Early Pickup, Not Marked
 - subject attendance
+- Send Attendance Notifications (admin page), and why it can notify parents twice
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
@@ -25,6 +26,7 @@ Mark each student present, absent, late, sick or picked up early, save the regis
 - Section "A" with eight enrolled demo students: the demo world's Zaid Karim, Hana Mirza, Ibrahim Nasser, Layla Haddad and Yahya Saleh, plus three more made-up names (no real photos), no attendance taken yet for today
 - One student with an Absent excuse already sent by a parent for today (starts as Absent; the text shows in the Excuse Note column, and as an Excuse chip in the app)
 - Web: signed in as Bilal. App: the same account in a phone frame
+- For [5.3]: the demo admin Yusuf Rahman on Admin Portal → Attendance, Maktab Level 1 A with today's register already saved
 
 ## Script
 <!--
@@ -96,6 +98,10 @@ See docs/SCRIPT-FORMAT.md.
 **Say:** Tap **Save**. A message confirms the attendance is saved.
 **Show:** Click "Save". The confirmation message appears.
 
+#### [5.3] Send Attendance Notifications
+**Say:** Admins also have **Send Attendance Notifications** on this page. It sends the saved status to every parent in the class. If **Notify parents** was on when you saved, parents are told twice, so agree who sends it.
+**Show:** Side label "Signed in as: madrasah admin". Admin Portal → Attendance, Maktab Level 1 A. Spotlight "Send Attendance Notifications" in the toolbar; click it: the sheet with the "Important:" note. Click Cancel.
+
 ### 6. Subject attendance
 #### [6.1] subject wise
 **Say:** To take attendance for one subject only, turn on **subject wise**, choose the **Subject**, and tap **Generate**.
@@ -116,6 +122,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-07 · manager · panel decisions, "All recommended" · added [5.3] on Send Attendance Notifications (decision 29): only the Admin Portal attendance page has it (adminPortal.v2 attendance.add.component.html 138-145, 289; the teacher page has none), and it can tell parents twice after a save with Notify parents on; Covers and demo data updated
 - 2026-11-06 · panel (user, director, writer, PM, PO) · 4 changes: [5.1] says Notify parents is on each time the page opens (attendance.add.component.ts 68), [6.2] Show marks one student absent instead of clicking Mark all present, which is hidden while everyone is Present (attendance.table.component.html 4), [7.2] end tiles by number and title, demo names from the Maple Grove demo world
 - 2026-11-03 · critic · 6 changes: [1.1] no "about a minute" promise, says who it is for; [2.3] split semicolon; [3.1] clearer toggle back; [3.2] explains Unmark all / Mark all present plainly and reminds to re-mark parent-reported absences (matches Show); [4.4] "key" to "guide" (translates badly); [6.1] clearer opener
 - 2026-11-03 · validator · checked against master d36d69ed8 · 3 fixes: students start as Present (not Not Marked; applyStartingStatus), Not Marked shown via Unmark all, register loads on picking the section (Generate reloads)
