@@ -2,6 +2,8 @@
 
 2026-11-06. Five reviewers (first-time users, video director, script writer, programme manager, product owner) read every planned script. The clear fixes are applied and committed: about 530 changes across 97 videos (Track 11 is on hold; the pilots are approved). These are the questions only Imran can answer. Each batch report has the evidence and the full options; the recommended option is given here.
 
+**Decided 2026-11-07 by Imran: "All recommended".** Done in the scripts: 14, 15, 16, 18 (one AI line each in 12.1 and 12.2; no privacy-policy text covers it), 26-31, 38. Kept as scripted: 12, 13, 19, 37. App fixes 1-11 are for the Ad-Din app (logged in docs/APP-ISSUES.md). Demo-world and capture set-up 32-36 happen at recording time. Still need Imran's answer: 17, 20, 21, 22, 23, 24, 25.
+
 Reply with the numbers you accept as recommended ("all recommended" is fine) and anything you want differently.
 
 ## App bugs and gaps (fix in the app, or accept)
