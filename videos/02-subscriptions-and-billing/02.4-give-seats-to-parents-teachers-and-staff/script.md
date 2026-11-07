@@ -50,8 +50,8 @@ See docs/SCRIPT-FORMAT.md.
 
 ### 2. Who needs a seat
 #### [2.1] Admins and teachers
-**Say:** Anyone who uses Premium pages needs Premium on their own account. That includes you and every admin, and every teacher who uses the **Teacher Portal**. At a masjid, that means the admins who run its events, donations and reports.
-**Show:** Card listing the roles; then spotlight Admin Portal and Teacher Portal in the sidebar; quick cut to the Masjid admin sidebar with Events, Donations and Reports spotlighted.
+**Say:** Anyone who uses Premium pages needs Premium on their own account. That includes you and every admin, and every teacher who uses the **Teacher Portal**. At a masjid, that means the admins who run its donations, reports and user list.
+**Show:** Card listing the roles; then spotlight Admin Portal and Teacher Portal in the sidebar; quick cut to the Masjid admin sidebar with Donations, Reports and User Management spotlighted.
 
 #### [2.2] Parents and students
 **Say:** Parents need it for the **Parent Portal**. A student can only be placed in a class if the student, or their family, has Premium.
@@ -123,6 +123,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-07 · manager · panel decisions, "All recommended" · [2.1] masjid admins: donations, reports and user list (Events has no Premium check)
 - 2026-11-06 · panel (user, director, writer, PM, PO) · 9 changes: [2.3] plain sentences (no "nor does"), [3.1] and [4.1] say masjid or madrasah, [3.3] points to 06.4 for linking a family, [4.4] says nothing more is charged, [5.3] says Cancel Subscription has no second question (code: subscription-detail.component.ts), new [5.3a] De-Allocate for several people, [6.1] "Signed in as" label, demo names from the Maple Grove demo world
 - 2026-11-06 · manager · panel decisions approved ("approved": recommended options) · [2.1] masjid admins need seats too (decision 17)
 - 2026-11-03 · manager · decisions via chat · 'Who needs a seat?' decided (own-Premium check is intended): flag wording updated; script unchanged

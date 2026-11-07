@@ -3,6 +3,7 @@
 Every instruction given to Claude for this video, newest first, with the result.
 Format: date · who · prompt (verbatim or summarised) · outcome / commit.
 
+- 2026-11-07 · Imran · "All recommended" (docs/reviews/2026-11-06-decisions-all-tracks.md) · [2.1] masjid admins: donations, reports and user list (Events has no Premium check)
 - 2026-11-06 · Imran · "do it for all the planned ones now" (panel review, apply clear fixes) · review panel, 9 changes: [2.3] plain sentences, [3.1]/[4.1] masjid or madrasah, [3.3] pointer to 06.4, [4.4] nothing more is charged, [5.3] no second question, new [5.3a] De-Allocate, [6.1] Signed in as label, Maple Grove demo names; [2.1] (manager's decision today) kept, its "events" left for Imran / docs(02.4): apply review panel fixes
 - 2026-11-06 · Imran · "approved" (the recommended options in docs/reviews/2026-11-06-panel-00.4-02.3.md) · [2.1] masjid admins need seats too (decision 17)
 - 2026-11-03 · manager · "Decisions via chat" · 'Who needs a seat?' decided (own-Premium check is intended): flag wording updated; script unchanged
