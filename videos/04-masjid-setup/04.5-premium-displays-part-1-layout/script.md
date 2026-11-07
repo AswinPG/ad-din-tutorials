@@ -44,7 +44,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Title card: "Premium displays, part 1: layout".
 
 #### [1.2]
-**Say:** You'll need the Prayer Times Premium add-on, and your Iqamah times in place. Without the add-on, Ad-Din takes you to the subscription page instead. Video 02.5 shows how to add it.
+**Say:** You'll need the Prayer Times Premium add-on, and your Iqamah times in place. Without the add-on, Ad-Din takes you to the subscription page instead. The add-on starts with a free trial, and video 02.5 shows how to add it.
 **Show:** Opening card from You'll need.
 
 ### 2. Choose a display
@@ -128,6 +128,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-07 · manager · panel decisions, "All recommended" · [1.2] the add-on starts with a free trial
 - 2026-11-06 · panel (user, director, writer, PM, PO) · 4 changes: [1.2] points to video 02.5 for the add-on, [2.2] no phrasal verb, [7.2] says what Exclude Date & Time keeps on screen (Display During Salah tooltip), demo names match the Maple Grove demo world
 - 2026-11-03 · manager · decisions via chat · TV display pages decided: previews recorded from the dev environment with demo data; flag and demo data updated
 - 2026-11-03 · manager · decisions via chat · 04.6 split (new 04.11): [1.1] 'part one of three', closing Say names video 04.6 by number and new title, end card title and colour-preset flag (now 04.11) updated

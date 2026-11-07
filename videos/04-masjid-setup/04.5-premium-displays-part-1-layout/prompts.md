@@ -3,6 +3,7 @@
 Every instruction given to Claude for this video, newest first, with the result.
 Format: date · who · prompt (verbatim or summarised) · outcome / commit.
 
+- 2026-11-07 · Imran · "All recommended" (docs/reviews/2026-11-06-decisions-all-tracks.md) · [1.2] the add-on starts with a free trial
 - 2026-11-06 · Imran · "do it for all the planned ones now" (panel review, apply clear fixes) · 4 changes: [1.2] pointer to 02.5, [2.2] wording, [7.2] Exclude Date & Time meaning, Maple Grove demo names
 - 2026-11-03 · manager · "Decisions via chat" · TV display pages decided: previews recorded from the dev environment with demo data; flag and demo data updated
 - 2026-11-03 · manager · "Decisions via chat" · 04.6 split (new 04.11): [1.1] 'part one of three', closing Say names video 04.6 by number and new title, end card title and colour-preset flag (now 04.11) updated
