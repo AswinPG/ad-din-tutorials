@@ -22,6 +22,7 @@ Review online enrolment applications, place each child in a section and approve 
 
 ## Covers
 - Pick a section, decline with a reason, Reconsider, “Subscription required to enroll”, the dashboard and app alerts
+- Download Application (PDF, or a zip for several)
 
 ## Demo data
 - Demo madrasah "Maple Grove Madrasah"; the demo admin (Yusuf Rahman) has Premium and the madrasah has free Yearly seats (for example 5 available)
@@ -57,6 +58,10 @@ Review online enrolment applications, place each child in a section and approve 
 #### [2.3] On the web
 **Say:** On the web, open **Admin Portal**, then **User Management**. Tap **Open users** on your madrasah, then the **Pending Enrollments** tab.
 **Show:** Sidebar → Admin Portal → User Management. Click "Open users" on "Maple Grove Madrasah". Click the "Pending Enrollments" tab; the list shows First Name, Class Name, Parent Name and Status.
+
+#### [2.3a] Keep a copy
+**Say:** To keep a copy, select one or more applications and tap **Download Application**. You get a PDF file, or a zip file for several.
+**Show:** Tick the rows "Musa Malik" and "Idris Farah"; hover "Download Application" and its tooltip; don't click. Untick both.
 
 ### 3. Approve an application
 #### [3.1] Open it and pick a section
@@ -116,6 +121,7 @@ Review online enrolment applications, place each child in a section and approve 
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-07 · manager · panel decisions, "All recommended" · added [2.3a] on Download Application (approve-enrollment.component.ts 145-149; decision 28) and a Covers item; Add more course left out on purpose (FEATURE-MAP)
 - 2026-11-06 · panel (user, director, writer, PM, PO) · 3 changes: new [3.5a] says Approve Application can't be tapped when no seats are left and points to 02.3 (approve-enrollment.component.html 216-217), [2.1] Show uses the in-app push banner (a real push can't reach the mocked world, as in 00.7) with a "Signed in as" label, demo data and Show names use the Maple Grove demo world (Weekend Quran, Hifz Class A; new families Malik, Farah, Ansari)
 - 2026-11-03 · manager · decisions via chat · 'Who needs a seat?' decided (own-Premium check is intended): flag wording updated; script unchanged
 - 2026-11-03 · critic · 6 changes: [1.1] second-person opening; [1.2] seat named as one of your organisation's Premium seats; [3.2] merged into [3.1] and [3.4] into [3.3] (thin scenes); [5.1] no elliptical question; [6.2] end card by number and title
