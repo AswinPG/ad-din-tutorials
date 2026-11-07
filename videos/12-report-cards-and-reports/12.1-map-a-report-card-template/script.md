@@ -75,7 +75,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Spotlight "Release & Translation". Click "Pick a date" and choose the end-of-term date.
 
 #### [3.5]
-**Say:** To print a second language beside English, open the list that shows **No Translation** and pick a language. Ad-Din translates the card with AI. For English only, leave it on **No Translation**.
+**Say:** To print a second language beside English, open the list that shows **No Translation** and pick a language. Ad-Din sends the card's text to an AI service to translate it. For English only, leave it on **No Translation**.
 **Show:** Open the secondary language list (shows "No Translation"); hover "Arabic", then close it without changing.
 
 ### 4. Classes and subjects
@@ -137,6 +137,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-07 · manager · panel decisions, "All recommended" · [3.5] says the card's text goes to an AI service
 - 2026-11-06 · panel (user, director, writer, PM, PO) · 8 changes: [1.1] mapping explained in its own sentence, [1.2] no semicolon, [3.3] says a madrasah card doesn't need Grades Mapping, [3.5] English only stays on No Translation, [4.2] plainer subject-row wording, [5.2] says to change the release date for the new term ("(For Current Term)", reportmapping.manage.component.html 138), [8.2] end tiles by number and title; demo names from the Maple Grove demo world (Maktab Level 1 with Bilal Hussain, Hifz Class A with Fatima Siddiqui)
 - 2026-11-03 · critic · 6 changes: [1.1] second-person opening for madrasah admins; [3.3] Say now mentions switching back (matches Show); [3.5] clearer "list that shows No Translation"; [4.3] elliptical question removed, new rows' subject picks said; [5.2] "come back to" → "return to"; [8.2] end card tiles named by number
 - 2026-11-03 · validator · checked against master d36d69ed8 · 4 fixes: [3.1]/[3.2] template chosen before name and title (Title box only appears for that template); [7.3] Save in the signature pad already stores it, no Update; demo frames are Ad-Din's built-in ones
