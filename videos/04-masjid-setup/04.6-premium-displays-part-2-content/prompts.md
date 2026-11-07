@@ -3,6 +3,7 @@
 Every instruction given to Claude for this video, newest first, with the result.
 Format: date · who · prompt (verbatim or summarised) · outcome / commit.
 
+- 2026-11-07 · Imran · "All recommended" (docs/reviews/2026-11-06-decisions-all-tracks.md) · added [3.3]-[3.6]: Poster After Adhan, Poster After fard salah, Masjid URL, Embedded Content Or Announcement; Covers, demo data, target 4:00
 - 2026-11-06 · Imran · "do it for all the planned ones now" (panel review, apply clear fixes) · 4 changes: [2.1] sidebar wording, [4.1] replace sample text, [4.4] "You can also", Maple Grove demo names
 - 2026-11-03 · manager · "Decisions via chat" · TV display pages decided: previews recorded from the dev environment with demo data; flag updated (demo data already says so)
 - 2026-11-03 · manager · "Decisions via chat" · Split into two videos (critic's taste call): chapters 5–7 (night mode, Makrooh, Taraweeh, language, colours) moved to new video 04.11; scene IDs kept, chapter 8 keeps [8.1]. Title now 'Premium displays, part 2: posters, events and ticker'; Goal, Covers, demo data, [1.1], [8.1] end card (04.11, 08.2) and Makrooh flag (moved) updated; target 5:00 to 3:30

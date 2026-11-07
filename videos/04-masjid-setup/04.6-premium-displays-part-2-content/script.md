@@ -1,7 +1,7 @@
 ---
 id: "04.6"
 title: "Premium displays, part 2: posters, events and ticker"
-target: 3:30
+target: 4:00
 prereq:
   - "04.5"
 status: scripted
@@ -21,6 +21,7 @@ Fill a premium display with posters, events and a scrolling ticker.
 
 ## Covers
 - Contents, Ticker Message, events on the TV
+- Poster After Adhan, Poster After fard salah, Masjid URL, and Embedded Content Or Announcement (Horizontal Display Content Only)
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
@@ -28,6 +29,9 @@ Fill a premium display with posters, events and a scrolling ticker.
 - Two upcoming masjid events (so the Events switch has something to show)
 - A 1920 × 1080 poster and a 1080 × 1920 poster for new content "Weekend Quran Class", dated next week, all five prayer periods ticked
 - A ticker message "Masjid office open 10 AM to 4 PM" for the same dates
+- The display presets list from the server, so Poster After Adhan has a preset picture selected
+- Website address "https://maplegrove.example.com" for Masjid URL
+- Horizontal Display Content Only with Announcements on (the default)
 - Previews of Horizontal Display 1 with the poster and the ticker, recorded from the dev environment with the demo masjid's data (decided 2026-11-03)
 
 ## Script
@@ -77,6 +81,22 @@ See docs/SCRIPT-FORMAT.md.
 **Say:** **Stop before Salat** and **Start after Salat** pause the slides around each prayer, in minutes. **Scroll Speed** is how many seconds each slide stays. Tap **Save**.
 **Show:** Type 5, 10 and 10. Click Save; the preview shows the poster.
 
+#### [3.3] Posters after prayers
+**Say:** The numbered displays can also show a poster after each prayer. **Poster After Adhan** shows it after the Adhan, and **Poster After fard salah** shows it after the Iqamah. While it shows, it takes the place of your other content.
+**Show:** Display Controls → Poster After Adhan; spotlight its switch. Then hover Poster After fard salah in the menu.
+
+#### [3.4]
+**Say:** Switch it on. **Start after** is how many minutes to wait, and **Duration** is how many minutes it stays. Choose **Select from presets** or **Upload Image**, and tap **Save**.
+**Show:** In Poster After Adhan, turn on the switch; type 2 and 5. Leave "Select from presets" with the first preset and its picture. Click Save.
+
+#### [3.5] Website address
+**Say:** **Masjid URL** shows your masjid's website address at the bottom of the display. Switch on **Show URL**, type the full address, and tap **Save**.
+**Show:** Display Controls → Masjid URL. Turn on Show URL; type "https://maplegrove.example.com"; click Save.
+
+#### [3.6] Content Only display
+**Say:** On **Horizontal Display Content Only**, open **Embedded Content Or Announcement**. Switch on **Announcements** to show your content as slides, or switch on **Embed content** and paste code from another website. Only one can be on.
+**Show:** Display dropdown → Horizontal Display Content Only → Embedded Content Or Announcement. Spotlight Announcements (on); turn on Embed content: Announcements turns off and the "Paste your embed content code here" box opens. Turn Announcements back on; don't save.
+
 ### 4. Ticker message
 #### [4.1] Write it
 **Say:** A ticker is a line of text that scrolls across the screen. On the **Ticker Message** tab, tap **Create**, and type your message in **Ticker Message Title**, in place of the sample text.
@@ -102,6 +122,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-07 · manager · panel decisions, "All recommended" · added [3.3]-[3.6] on Poster After Adhan, Poster After fard salah, Masjid URL and Embedded Content Or Announcement (decision 26); Covers and demo data updated; target 3:30 to 4:00 for the extra scenes
 - 2026-11-06 · panel (user, director, writer, PM, PO) · 4 changes: [2.1] full sidebar wording, [4.1] says to replace the sample title (as the Show does), [4.4] Say no longer asks for a step the Show doesn't do, demo names match the Maple Grove demo world
 - 2026-11-03 · manager · decisions via chat · TV display pages decided: previews recorded from the dev environment with demo data; flag updated (demo data already says so)
 - 2026-11-03 · manager · decisions via chat · Split into two videos (critic's taste call): chapters 5–7 (night mode, Makrooh, Taraweeh, language, colours) moved to new video 04.11; scene IDs kept, chapter 8 keeps [8.1]. Title now 'Premium displays, part 2: posters, events and ticker'; Goal, Covers, demo data, [1.1], [8.1] end card (04.11, 08.2) and Makrooh flag (moved) updated; target 5:00 to 3:30
