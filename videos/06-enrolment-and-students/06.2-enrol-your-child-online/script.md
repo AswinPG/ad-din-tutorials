@@ -44,7 +44,7 @@ Use your madrasah's enrolment link to sign up, choose a program, fill in your de
 **Show:** Title card: "Enrol your child online".
 
 #### [1.2]
-**Say:** Have your child's details ready, and any documents the madrasah asks for. You can do this in a web browser or in the Ad-Din app.
+**Say:** Have your child's details ready, and any documents the madrasah asks for. Applying through Ad-Din is free, and you can do it in a web browser or in the Ad-Din app.
 **Show:** Opening card from You'll need.
 
 ### 2. Open the link and sign up
@@ -127,7 +127,7 @@ Use your madrasah's enrolment link to sign up, choose a program, fill in your de
 
 ### 7. After you submit
 #### [7.1] Check your application
-**Say:** Your madrasah now reviews your application, and Ad-Din lets you know when they approve or decline it.
+**Say:** Your madrasah now reviews your application, and Ad-Din lets you know when they approve or decline it. If you hear nothing, contact the madrasah.
 **Show:** Home page. A notification arrives in the inbox (demo).
 
 #### [7.2]
@@ -141,6 +141,7 @@ Use your madrasah's enrolment link to sign up, choose a program, fill in your de
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-07 · manager · panel decisions, "All recommended" · [1.2] applying through Ad-Din is free, [7.1] contact the madrasah if you hear nothing
 - 2026-11-06 · panel (user, director, writer, PM, PO) · 4 changes: [2.2] (Say and Caption) and [2.3] no elliptical questions, [3.4] says what No really does: enrolment must come from a parent or guardian account (select-program.component.html, "Enrollment not available for your account type."); there is no sign-out help, demo data and Show names use the Maple Grove demo world with a new family (Khadija and Musa Malik), because Maryam is already enrolled there
 - 2026-11-03 · manager · decisions via chat · 'Sign-up and register page links' decided (wide shots, bug stays logged): flag reworded; checked, [2.2] keeps the shot wide and never zooms or clicks the links
 - 2026-11-03 · critic · 6 changes: [1.1] second-person opening; [3.4] no elliptical question; [4.3] Say covers the Documents card the Show passes; [5.3] no "hover" (doesn't exist on a phone); [6.3] Say in the order the viewer acts; [7.3] end card by number and title
