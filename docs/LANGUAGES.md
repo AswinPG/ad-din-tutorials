@@ -51,3 +51,12 @@ Every translation starts as `status: draft`. A native speaker reads it (≈20–
 ## Delivery
 
 Per video: one English master video, one audio file per language, one `.srt` and `.vtt` per language. If a platform can't switch audio tracks, the same picture is exported once per language with that language's audio built in.
+
+## Fallback: Azure Speech in Foundry (2026-11-17)
+
+If the cloned voice (IP3-A) can't be made to sound natural, the narration switches to Azure Speech in Foundry (Imran, 2026-11-17). The default is **Brian HD** (`en-US-Brian:DragonHDLatestNeural`), the more natural "HD" version of the series voice. It is multilingual, so one narrator still covers all six languages. Set it in `series.yaml` → `azure` (voice, rate, locales).
+
+- Credentials stay in the environment, never in the repo: `AZURE_SPEECH_KEY`, plus `AZURE_SPEECH_REGION` (for example `eastus`) or `AZURE_SPEECH_ENDPOINT` (the Foundry resource's `https://<name>.cognitiveservices.azure.com`). HD voices are available only in some regions.
+- Try a line: `npm run say -- "Assalamu alaikum, and welcome to Ad-Din." --engine azure [--lang ur]`
+- List the resource's voices: `python engine/azure_tts.py --voices en-US`
+- Voice a video: `node engine/voice.mjs <id> --engine azure` (English) or `node engine/voice.mjs <id> --lang ar,ur --engine azure`. Every clip is still checked with speech-to-text, as with the other engines.

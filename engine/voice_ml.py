@@ -1,8 +1,9 @@
 # Voices translated narration and checks every clip with speech-to-text, then trims trailing junk.
-# Usage (voice-clone venv): python engine/voice_ml.py <lines.json> <out-dir> <lang> <engine: chatterbox|edge> [voice]
+# Usage (voice-clone venv): python engine/voice_ml.py <lines.json> <out-dir> <lang> <engine: chatterbox|edge|azure> [voice]
 #   lines.json: [{"scene", "say" (sent to the voice), "check" (the words it must say)}]
 #   writes <out-dir>/<n>.wav, manifest.json {n: {file, dur, score, heard, tries, trimmed}} and align.json {n: [words]}
 # Chatterbox: IP3-A (voices/ip3.wav, exaggeration 0.7, cfg 0.3, temperature 0.9). edge: an edge-tts voice (Brian).
+# azure: Azure Speech in Foundry (engine/azure_tts.py; key and region from the environment), e.g. an HD voice.
 # Checking uses the multilingual faster-whisper "small" model with the language set. A clip scoring under GOOD is redone
 # (Chatterbox up to 4 tries; edge-tts is deterministic, so retries only cover network errors) and the best is kept.
 import difflib, json, os, re, subprocess, sys, time, unicodedata
@@ -12,6 +13,8 @@ from faster_whisper import WhisperModel
 
 lines_file, out, lang, engine = sys.argv[1:5]
 voice = sys.argv[5] if len(sys.argv) > 5 else "en-US-BrianMultilingualNeural"
+AZ_RATE = os.environ.get("AZURE_TTS_RATE") or None  # from series.yaml azure.rate, passed by engine/voice.mjs
+AZ_LOCALES = json.loads(os.environ["AZURE_TTS_LOCALES"]) if os.environ.get("AZURE_TTS_LOCALES") else {"en": "en-US", "ar": "ar-SA", "ur": "ur-PK", "bn": "bn-BD", "ms": "ms-MY", "id": "id-ID"}
 GOOD, TRIES = float(os.environ.get("VOICE_GOOD", 0.60 if lang == "bn" else 0.80)), 2
 VC = "C:/Fantacode/voice-clone"
 SR = 24000
@@ -103,6 +106,13 @@ def make(say, path):
         import librosa
         y = wav.squeeze(0).numpy(); y, _ = librosa.effects.trim(y, top_db=40)
         soundfile.write(path, y, tts.sr)
+    elif engine == "azure":
+        sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+        import azure_tts
+        raw = path[:-4] + ".az.wav"
+        azure_tts.synth(say, raw, lang, voice, AZ_RATE, AZ_LOCALES)
+        subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", raw, "-af", "silenceremove=start_periods=1:start_threshold=-50dB", "-ac", "1", "-ar", str(SR), path], check=True)
+        os.remove(raw)
     else:
         mp3 = path[:-4] + ".mp3"
         for attempt in range(5):
@@ -129,7 +139,7 @@ for n, line in enumerate(lines, 1):
     if manifest.get(k, {}).get("say") == line["say"] and manifest[k].get("score", 0) >= GOOD and os.path.exists(manifest[k]["file"]):
         continue
     best = None
-    for attempt in range(1, (TRIES if engine == "chatterbox" else 1) + 1):
+    for attempt in range(1, (TRIES if engine in ("chatterbox", "azure") else 1) + 1):
         path = os.path.join(out, f"{n}.try{attempt}.wav")
         make(line["say"], path)
         heard, ws = transcribe(path, line["check"])

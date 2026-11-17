@@ -12,6 +12,13 @@ app:
   repo: C:/Fantacode/Ad-Din Web-master
   ref: origin/master
   src: AdDin.Angular/src
+# Azure Speech in Foundry: the fallback narrator if the cloned voice (IP3-A) can't be made to sound natural (Imran,
+# 2026-11-17). Used only with --engine azure (engine/voice.mjs, npm run say). Brian HD is the natural ("HD") version of
+# the series voice and is multilingual; check what the resource offers with: python engine/azure_tts.py --voices en-US
+azure:
+  voice: en-US-Brian:DragonHDLatestNeural
+  rate: ""            # e.g. "-4%"; empty = the voice's own pace
+  locales: { en: en-US, ar: ar-SA, ur: ur-PK, bn: bn-BD, ms: ms-MY, id: id-ID }
 languages:
   # One multilingual voice narrates every language: William (2026-11-03), then Brian (2026-11-04). To switch a language
   # back to its native voice, replace its voice with the one in its comment.

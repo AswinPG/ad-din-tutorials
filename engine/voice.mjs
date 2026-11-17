@@ -5,6 +5,9 @@
 //   node engine/voice.mjs <id> --lines       only writes lines.json
 //   node engine/voice.mjs <id> --lang ar,ur  voices a translation (i18n/<lang>.md) with engine/voice_ml.py: IP3-A for ar and ms,
 //                                            Brian (edge-tts) for the rest; checked with multilingual speech-to-text
+//   add --engine azure                       use Azure Speech in Foundry instead (series.yaml -> azure: voice, rate, locales;
+//                                            AZURE_SPEECH_KEY and AZURE_SPEECH_REGION or AZURE_SPEECH_ENDPOINT in the environment).
+//                                            The fallback when the cloned voice doesn't sound natural (Imran, 2026-11-17).
 //
 // The clips live in out/<id>/voice/<lang>/ (git-ignored). The recorder reads them through loadClips().
 import fs from "node:fs";
@@ -49,9 +52,21 @@ export function writeLines(video, lang = "en") {
     return { file, lines };
 }
 
-export function clone(video, lang = "en") {
+/** Environment for engine/voice_ml.py when Azure voices the lines. */
+export function azureEnv(series = loadSeries().series) {
+    const az = series.azure || {};
+    return { ...process.env, PYTHONIOENCODING: "utf-8", AZURE_TTS_RATE: az.rate || "", AZURE_TTS_LOCALES: JSON.stringify(az.locales || {}) };
+}
+
+export function clone(video, lang = "en", engine = "clone") {
     const { file } = writeLines(video, lang);
     const out = voiceDir(video.id, lang);
+    if (engine === "azure") {
+        const { series } = loadSeries();
+        console.log(`voicing ${video.id} (${lang}, azure ${series.azure.voice}) into ${path.relative(ROOT, out)}`);
+        execFileSync(CLONE.python, ["-I", path.join(HERE, "voice_ml.py"), file, out, lang, "azure", series.azure.voice], { cwd: CLONE.dir, stdio: "inherit", env: azureEnv(series) });
+        return;
+    }
     console.log(`cloning ${video.id} (${lang}) into ${path.relative(ROOT, out)}`);
     execFileSync(CLONE.python, [CLONE.script, CLONE.ref, file, out], { cwd: CLONE.dir, stdio: "inherit" });
     execFileSync(CLONE.python, [path.join(HERE, "trim.py"), out], { cwd: CLONE.dir, stdio: "inherit" }); // cut repeats and sound after the last word
@@ -124,17 +139,17 @@ export function buildLinesLang(video, lang, series = loadSeries().series) {
     });
 }
 
-export function cloneLang(video, lang) {
+export function cloneLang(video, lang, override = null) {
     const { series } = loadSeries();
     const out = voiceDir(video.id, lang);
     fs.mkdirSync(out, { recursive: true });
     const lines = buildLinesLang(video, lang, series).filter((l) => !l.english);
     const file = path.join(out, "lines.json");
     fs.writeFileSync(file, JSON.stringify(lines, null, 1));
-    const engine = ENGINES[lang] || "edge";
-    const voice = series.languages.find((l) => l.code === lang).voice;
+    const engine = override || ENGINES[lang] || "edge";
+    const voice = engine === "azure" ? series.azure.voice : series.languages.find((l) => l.code === lang).voice;
     console.log(`voicing ${video.id} (${lang}, ${engine}) into ${path.relative(ROOT, out)}`);
-    execFileSync(CLONE.python, ["-I", path.join(HERE, "voice_ml.py"), file, out, lang, engine, voice], { cwd: CLONE.dir, stdio: "inherit" });
+    execFileSync(CLONE.python, ["-I", path.join(HERE, "voice_ml.py"), file, out, lang, engine, voice], { cwd: CLONE.dir, stdio: "inherit", env: engine === "azure" ? azureEnv(series) : process.env });
 }
 
 /** The clips for a translated video, keyed by scene ID, like loadClips(); English-kept scenes use the English clip. */
@@ -163,12 +178,15 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
     const onlyLines = args.includes("--lines");
     const li = args.indexOf("--lang");
     const langs = li >= 0 ? args.splice(li, 2)[1].split(",") : null;
+    const ei = args.indexOf("--engine");
+    const engine = ei >= 0 ? args.splice(ei, 2)[1] : null;
+    if (engine && engine !== "azure") throw new Error("--engine takes: azure");
     const { byId } = loadSeries();
     for (const id of args.filter((a) => !a.startsWith("--"))) {
         const v = byId[id];
         if (!v) throw new Error("no video " + id);
-        if (langs) for (const lang of langs) cloneLang(v, lang);
+        if (langs) for (const lang of langs) cloneLang(v, lang, engine);
         else if (onlyLines) console.log(writeLines(v).file);
-        else clone(v);
+        else clone(v, "en", engine || "clone");
     }
 }

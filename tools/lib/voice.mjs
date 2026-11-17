@@ -3,7 +3,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { execFileSync } from "node:child_process";
-import { loadSeries } from "./catalog.mjs";
+import { loadSeries, ROOT } from "./catalog.mjs";
 
 const escapeRe = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
@@ -18,11 +18,19 @@ export function spoken(text, lang, series = loadSeries().series) {
     return out;
 }
 
-export function speak(text, lang, file, { voice, rate = "-4%" } = {}) {
+export function speak(text, lang, file, { voice, rate = "-4%", engine = "edge" } = {}) {
     const { series } = loadSeries();
     const L = series.languages.find((l) => l.code === lang);
     if (!L) throw new Error(`no language ${lang} in series.yaml`);
     fs.mkdirSync(path.dirname(file), { recursive: true });
+    if (engine === "azure") {
+        // Azure Speech in Foundry: key and region come from the environment (see engine/azure_tts.py)
+        const az = series.azure || {};
+        const args = [path.join(ROOT, "engine", "azure_tts.py"), "--lang", lang, "--out", file, "--voice", voice || az.voice];
+        if (az.rate) args.push("--rate", az.rate);
+        execFileSync("python", [...args, spoken(text, lang, series)], { stdio: ["ignore", "ignore", "inherit"] });
+        return file;
+    }
     execFileSync("python", ["-m", "edge_tts", "--voice", voice || L.voice, `--rate=${rate}`, "--text", spoken(text, lang, series), "--write-media", file], { stdio: "ignore" });
     return file;
 }
