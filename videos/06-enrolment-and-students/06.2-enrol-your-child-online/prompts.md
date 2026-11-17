@@ -3,6 +3,7 @@
 Every instruction given to Claude for this video, newest first, with the result.
 Format: date · who · prompt (verbatim or summarised) · outcome / commit.
 
+- 2026-11-17 · Imran · "I want every video to be a bit more detailed but lets keep it under 10 minutes" · 11 scenes added (FAQs and Enrollments cards, second child, required fields, spouse GUID, username rules, Juz number, file types, emergency contacts, Remove/Add more course, Update Parent/Child while pending, free to enrol); [3.4] and [7.1] reworded; narration 3:33 → 5:54, target 4:45 → 7:30 / docs(06.2): add more detail
 - 2026-11-07 · Imran · "All recommended" (docs/reviews/2026-11-06-decisions-all-tracks.md) · [1.2] applying through Ad-Din is free, [7.1] contact the madrasah if you hear nothing
 - 2026-11-06 · Imran · "do it for all the planned ones now" (panel review, apply clear fixes) · 4 changes: [2.2]/[2.3] no elliptical questions, [3.4] corrected to what the No option does, Maple Grove demo names with a new family
 - 2026-11-03 · manager · "Decisions via chat" · 'Sign-up and register page links' decided (wide shots, bug stays logged): flag reworded; checked, [2.2] keeps the shot wide and never zooms or clicks the links
