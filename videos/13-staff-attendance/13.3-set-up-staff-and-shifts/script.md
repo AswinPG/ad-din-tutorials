@@ -1,7 +1,7 @@
 ---
 id: "13.3"
 title: Set up staff and shifts
-target: 4:30
+target: 7:30
 prereq:
   - "13.2"
   - "05.6"
@@ -18,6 +18,12 @@ Give every staff member a shift, from a shift template or the class routine, plu
 
 ## Covers
 - Staff page (type, zone, tracking, Ready), shift templates, terms, Link staff, timetable-based shifts
+- Why shifts matter (on time, late, absent)
+- Template Description, several work blocks a day, rest days, Clear all, Floating allowance length
+- Link staff dialog: Search staff, staff already on another template, when the change applies
+- Template card: Edit, Duplicate, Delete (Unlink staff first)
+- No zone; Manual only and Not tracked in practice; changes apply from today forward; open time warning
+- Which pattern (shared templates, Edit template); readiness: Will fail, Is failing now, email warnings to admins
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
@@ -26,6 +32,7 @@ Give every staff member a shift, from a shift template or the class routine, plu
 - Staff: Bilal Hussain (Teacher; Shift source already "Class routine", so the Link staff picker greys him out), Khadija Usman (Staff, office) and Idris Malik (Staff, caretaker) with no Shift source; all three have no tracking mode, so all start on the Not set up tab
 - The demo admin Yusuf Rahman (Admin and Teacher roles) is also listed; keep him off the Not set up tab (for example Not tracked)
 - Autumn Term ends within the next 14 days and Spring Term has no class routine for Bilal yet, so the Staff page shows the readiness summary ("will fail") in [6.6]
+- A second template "Weekend caretaker" (Sat 9:00–1:00, Floating allowance 15 min, Paid; term Autumn Term), made in [4.3] with Duplicate and linked to nobody
 - No shift templates at the start; "Office hours" (Mon–Fri 8:30–4:30, unpaid Lunch break 12:00–12:30, term Autumn Term) is built in the video
 
 ## Script
@@ -45,6 +52,10 @@ See docs/SCRIPT-FORMAT.md.
 **Say:** Staff Attendance is already on and your zone is drawn. For a madrasah, your terms and class routine are in place too.
 **Show:** Opening card.
 
+#### [1.2a] Why
+**Say:** A shift tells Ad-Din when each person is expected. That's how it knows whether a tap is on time or late, and when someone is missing.
+**Show:** A quick look ahead: the Staff page with Khadija Usman's row, zoom on her schedule line "Today: …".
+
 ### 2. Where shifts come from
 #### [2.1] Two sources
 **Say:** In the **Admin Portal**, open **Staff Attendance**, then **Shifts**. Each staff member gets their shift from one of two places: a **Shift template**, or the **Class routine**.
@@ -59,13 +70,25 @@ See docs/SCRIPT-FORMAT.md.
 **Say:** On the **Shift templates** tab, tap **New template** and give it a **Name**, such as Office hours.
 **Show:** Click "New template". Type "Office hours" in Name.
 
+#### [3.1a]
+**Say:** **Description** is optional, for a note to yourself, such as who the template is for.
+**Show:** Type "Office and reception, weekdays" in Description.
+
 #### [3.2] Weekly pattern
 **Say:** In the **Weekly pattern**, set Monday's hours, then tap **Copy Monday to working days**. Days you leave off are rest days.
 **Show:** On Monday click "Add"; Work is selected. Set Starts 8:30 and Ends 4:30, click "Add hours". Click "Copy Monday to working days"; Tuesday to Friday fill in. Saturday and Sunday stay Off.
 
+#### [3.2a] More than one block
+**Say:** A day can have more than one work block, such as a morning and an evening session. Tap a time to change it, and the cross to remove it. Switch a day off to make it a rest day. **Clear all** empties the whole week.
+**Show:** On Saturday, switch the day on, click "Add", Work, 9:00 to 12:00, "Add hours". Click the cross on that block and switch Saturday off again. Spotlight "Clear all"; don't click it.
+
 #### [3.3] Breaks
 **Say:** For lunch, tap **Add** again and choose **Break**. A **Fixed window** has set times, and a **Floating allowance** is just a length. Breaks start **Paid**; tap it to make one **Unpaid**, then tap **Add break**.
 **Show:** On Monday click "Add", then "Break". Break name "Lunch", Fixed window, Starts 12:00, Ends 12:30; click "Paid" so it reads "Unpaid". Click "Add break". Click "Copy Monday to working days" again.
+
+#### [3.3a]
+**Say:** With a **Floating allowance**, you only set the **Length** in minutes, such as a fifteen-minute tea break taken at any time. A break must sit inside one work block, or Ad-Din tells you.
+**Show:** On Tuesday click "Add", then "Break", then "Floating allowance"; spotlight "Length" and "minutes". Click "Cancel".
 
 #### [3.4] Terms
 **Say:** For a madrasah, choose up to five **Terms**. Staff on this template only get shifts on dates inside those terms; with no term, they get none. Then tap **Save**.
@@ -79,6 +102,14 @@ See docs/SCRIPT-FORMAT.md.
 #### [4.2]
 **Say:** Teachers on the class routine aren't offered here. If you edit a template later, the change applies to everyone linked to it: from today if they haven't checked in yet, otherwise from tomorrow.
 **Show:** Before confirming, spotlight Bilal Hussain's greyed row: "Teacher — shift comes from the class routine, can't use a template". After linking, the card reads "Linked to 2 staff: Khadija Usman, Idris Malik".
+
+#### [4.2a] Search and move
+**Say:** With a long list, use **Search staff**. Someone already on another template shows its name. Linking them here moves them to this one, from today if they haven't tapped yet, otherwise from tomorrow.
+**Show:** Click "Link staff" again; type "Idr" in Search staff; Idris Malik shows "Already linked". Clear the search; spotlight the dialog's subtitle. Click "Cancel".
+
+#### [4.3] Edit, Duplicate, Delete
+**Say:** Each template card also has **Edit**, **Duplicate** and **Delete**. Duplicate copies a template, so you can make a similar pattern quickly. A template that staff still use can't be deleted: the button says to unlink them first.
+**Show:** Click "Duplicate" on "Office hours"; the toast "Template copied." Edit the copy: rename it "Weekend caretaker", set only Saturday 9:00–1:00 with a 15-minute Floating allowance, Save. Spotlight "Unlink 2 staff first" on the Office hours card.
 
 ### 5. Timetable-based shifts
 #### [5.1] Class routine term
@@ -102,17 +133,41 @@ See docs/SCRIPT-FORMAT.md.
 **Say:** Choose their **Shift source**. Bilal teaches, so he's on the **Class routine**. Then choose his **Zone**.
 **Show:** "Class routine" is already ticked for Bilal; spotlight it. Click "Main building" under Zone.
 
+#### [6.3a]
+**Say:** Each person has one zone. If you choose **No zone**, their taps still record, but none can be confirmed as inside or outside.
+**Show:** Spotlight "No zone" among the Zone choices; keep "Main building" selected.
+
 #### [6.4] Tracking mode
 **Say:** Last, the **Tracking mode**. **Auto** gives them the clock button on their phone. With **Manual only**, an admin enters their time on the **Periods** page. **Not tracked** leaves them out.
 **Show:** Spotlight the three options, then click "Auto". Spotlight the explanation under it.
+
+#### [6.4a] Manual only and Not tracked
+**Say:** Use **Manual only** for someone without a smartphone, for example. Use **Not tracked** for someone whose hours you don't record. They get no shifts, no reminders and no line in the payroll file, and their app tells them attendance isn't tracked for them.
+**Show:** Open Idris Malik's row; click "Manual only" and zoom on its sentence, then "Not tracked" and zoom on its sentence. Click "Auto" again.
+
+#### [6.4b]
+**Say:** A change of tracking mode applies from today, and never rewrites past days. If the person is checked in right now, Ad-Din warns you first, because no tap can close their open time until they're back on **Auto**.
+**Show:** Zoom on "Changing tracking mode applies from today forward — history is never rewritten." under the choices.
 
 #### [6.5]
 **Say:** Tap **Done**. Repeat for each person. Staff on a template show it under **Which pattern**. In a masjid, every shift comes from a template.
 **Show:** Click "Done". Click the "Set up" tab and open Khadija Usman: linking already set Shift template, Which pattern "Office hours" and Auto. Click "Main building" under Zone. Click "Done".
 
+#### [6.5a] Which pattern
+**Say:** Under **Which pattern**, you can move someone to another template. If the template is shared, Ad-Din says so, because editing it changes everyone on it. **Edit template** opens it.
+**Show:** Open Khadija Usman again; spotlight the pattern list ("Office hours", "Weekend caretaker", "No template") and "Shared with 1 other staff. Editing changes everyone." Spotlight "Edit template". Click "Done".
+
 #### [6.6] Ready
 **Say:** Back on the **Set up** tab, each row shows **Ready**. If someone's schedule is about to run out, for example when a term ends, the top of the page warns you.
 **Show:** Click the "Set up" tab; spotlight the Ready column. Spotlight the readiness summary at the top.
+
+#### [6.6a] Will fail
+**Say:** **Will fail** means the person loses their schedule soon. **Is failing now** means they can't check in today. The summary names the cause, such as no class routine for the next term, with a link to fix it.
+**Show:** Zoom on Bilal Hussain's "Will fail" and his line in the summary, "— no class routine from …", with its link "Open class routines."
+
+#### [6.6b]
+**Say:** Admins are also emailed up to three warnings: fourteen, seven and one day before a schedule runs out. Here, the fix is to add Bilal to the Spring Term class routine, as in video 05.6.
+**Show:** Zoom on the sentence "Administrators receive up to three email warnings — 14, 7 and 1 days before a schedule expires."
 
 ### 7. Next
 #### [7.1] Close
@@ -121,6 +176,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-17 · manager · "more detailed, under 10 minutes" · 3:25 → 6:10 narration, 11 scenes added: [1.2a] why shifts; [3.1a] Description; [3.2a] several work blocks, rest days, Clear all; [3.3a] Floating allowance Length, break inside a block; [4.2a] Search staff and moving someone from another template; [4.3] Edit, Duplicate, Delete (Unlink staff first); [6.3a] one zone, No zone; [6.4a] Manual only and Not tracked in practice; [6.4b] tracking change from today, open-time warning; [6.5a] Which pattern, shared template, Edit template; [6.6a]/[6.6b] Will fail, Is failing now, the three email warnings. Checked against origin/master d0604ce7f; target 4:30 → 7:30
 - 2026-11-06 · panel (user, director, writer, PM, PO) · 5 changes: [3.4] with no term a template gives no shifts (en.json 3321), [4.2] template edits apply from today if not checked in yet, otherwise tomorrow (en.json 3278), [6.1] "your staff" and if someone is missing give them a role first (videos 03.3, 03.4; en.json 3151-3152), [6.4] Manual only time is entered on the Periods page, "admin"; demo names from the Maple Grove demo world (teacher Bilal Hussain, office Khadija Usman, caretaker Idris Malik), and the demo admin's own row in Demo data
 - 2026-11-03 · manager · decisions via chat · Staff Attendance is live: 'Is Staff Attendance live?' hold flag removed; publish normally
 - 2026-11-03 · critic · 5 changes: [1.1] second-person opening; [2.1] full sidebar path; [3.2] rest-day line matches the Show (days left off, no switch tapped); [4.1] count button described as the style guide asks; [7.1] end-card tiles named by number
