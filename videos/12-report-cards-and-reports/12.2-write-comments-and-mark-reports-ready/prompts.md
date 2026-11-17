@@ -3,6 +3,7 @@
 Every instruction given to Claude for this video, newest first, with the result.
 Format: date · who · prompt (verbatim or summarised) · outcome / commit.
 
+- 2026-11-17 · Imran · "I want every video to be a bit more detailed but lets keep it under 10 minutes" · 10 scenes added (why, Report 1/2/3, student list, marks and attendance on the card, changing and syncing a mark, AutoSave and Refresh, character limit, Insert vs Replace and translation, Download and bulk actions, what happens next); narration 2:11 → 4:37, target 3:45 → 6:00 / docs(12.2): add more detail
 - 2026-11-07 · Imran · "All recommended" (docs/reviews/2026-11-06-decisions-all-tracks.md) · [3.2] says the student's results go to an AI service
 - 2026-11-06 · Imran · "do it for all the planned ones now" (panel review, apply clear fixes) · [2.1] ask your admin if Select can't be tapped; [4.2] Ready blocks Refresh; [6.1] teachers see Report Readiness; [6.2] end tiles by number; demo names
 - 2026-11-03 · manager · "Decisions via chat" · Custom Comments Library cut: chapter 5 ([5.1]-[5.4]) removed, so the video covers only the current flow (Edit, Write with AI, Mark As Ready); Covers, Goal, demo data and flag updated; target 4:45 to 3:45
