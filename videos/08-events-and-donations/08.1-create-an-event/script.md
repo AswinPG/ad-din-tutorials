@@ -47,14 +47,14 @@ Optional **Caption:** overrides the subtitle text. Translations in i18n/<lang>.m
 See docs/SCRIPT-FORMAT.md.
 -->
 
-
-#### [1.1a] Why events
-**Say:** One event reaches people in several places: the Events page in the Ad-Din app, your website if you have one, and your masjid's TV screen. People mark **Going** or **Interested**, so you can see how many to expect.
-**Show:** Card with three small pictures: the app's event card, the website's events section, a TV screen with an event poster. Then spotlight the "Going" and "Interested" buttons on the "Family Quran Night" card.
 ### 1. Share what's happening
 #### [1.1] Opening
 **Say:** Lectures, iftars, picnics and classes: events tell your community what's coming up. In this video, you create an event and publish it.
 **Show:** Title card: "Create an event".
+
+#### [1.1a] Why events
+**Say:** One event reaches people in several places: the Events page in the Ad-Din app, your website if you have one, and your masjid's TV screen. People mark **Going** or **Interested**, so you can see how many to expect.
+**Show:** Card with three small pictures: the app's event card, the website's events section, a TV screen with an event poster. Then spotlight the "Going" and "Interested" buttons on the "Family Quran Night" card.
 
 #### [1.2]
 **Say:** Your masjid is already set up with its address. To add events, you need Ad-Din Premium on your own account.
