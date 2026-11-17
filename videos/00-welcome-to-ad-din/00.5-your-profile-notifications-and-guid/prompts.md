@@ -3,6 +3,7 @@
 Every instruction given to Claude for this video, newest first, with the result.
 Format: date · who · prompt (verbatim or summarised) · outcome / commit.
 
+- 2026-11-17 · Imran · "I want every video to be a bit more detailed but lets keep it under 10 minutes" · expanded from the app source at 7f0e6bf72: 3:08 → 5:51 narration, target 4:00 → 7:30, 11 scenes added (page layout and tabs, Account information pens, required fields, photo upload, Sign here pad, Subscription and Volunteer Skills pointers, what the switches don't stop, teacher advanced switch, password rules, what deletion may keep); [5.1] corrected: Update itself sends the verification link, Verify sends another
 - 2026-11-06 · Imran · "approved" (the recommended options in docs/reviews/2026-11-06-panel-00.4-02.3.md) · [7.1] store subscribers cancel in the store first (decision 2); GUID said as letters (decision 3)
 - 2026-11-06 · Imran · "can you use sub agents like a normal user and video directors, scrip writers, program managers, product owner to critisise and validate the scripts" (apply clear fixes) · review panel, 10 changes ([2.1], [2.3], [4.1], [4.2] points to 00.7, [5.1] on Preferences, Update then Verify, [5.3], [6.1]-[6.4] GUID wording, [7.2]); GUID voicing and delete-account bug for store subscribers left for Imran; narration and picture / docs(00.5): apply review panel fixes
 - 2026-11-03 · manager · "Decisions via chat" · 'How people are added' decided (as scripted): flag wording updated; script unchanged
