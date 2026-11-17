@@ -51,14 +51,14 @@ Optional **Caption:** overrides the subtitle text. Translations in i18n/<lang>.m
 See docs/SCRIPT-FORMAT.md.
 -->
 
-
-#### [1.1a] Why link them
-**Say:** Many families pray at the masjid and send their children to the madrasah. One website gives them one address to remember, with the masjid's prayer times and the madrasah's news and events in one place.
-**Show:** Card: two website addresses merging into one, "maplegrove", with a masjid icon and a madrasah icon.
 ### 1. One website for both
 #### [1.1] Opening
 **Say:** If your masjid runs a madrasah, both can share one website, with prayer times, classes, events and news together. In this video, you link the two websites, and see where visitors' messages arrive.
 **Show:** Title card: "Link masjid and madrasah websites; enquiries".
+
+#### [1.1a] Why link them
+**Say:** Many families pray at the masjid and send their children to the madrasah. One website gives them one address to remember, with the masjid's prayer times and the madrasah's news and events in one place.
+**Show:** Card: two website addresses merging into one, "maplegrove", with a masjid icon and a madrasah icon.
 
 #### [1.2]
 **Say:** Both organisations already have a website switched on, and you follow the one you're linking to.
