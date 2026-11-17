@@ -15,12 +15,25 @@ const logo = fs.existsSync(LOGO) ? "data:image/png;base64," + fs.readFileSync(LO
 // Production asides that are for the recording team, not the client.
 const INTERNAL = /\b(app bug|known bug|a bug|miscounts?|as decided)\b/i;
 // Camera directions that only make sense to the recording team (what to keep out of shot, test badges, stubs).
-const CAMERA = /(\bkeep\b[^.;]*\bout of (the )?(shot|close-up|zooms?|focus)|don.t zoom|test-mode badge|crop the browser tab bar|\bstub state\b|reset the stub|which is the Routines tab)/i;
+const CAMERA = /(\bkeep\b[^.;]*\bout of (the )?(shot|close-up|zooms?|focus)|don.t zoom|test-mode badge|crop the browser tab bar|\bstub state\b|reset the stub|which is the Routines tab|demo world|don.t record|record it live|demo clock|\bcapture\b|dev[- ]environment|blurred if needed|blurred still|recording\b|\bstub\b|\bmocked\b|world override|cut-in)/i;
+// How a shot is made (cut-ins, captures, mocked inboxes): reworded to what the viewer sees.
+const PRODUCTION = [
+    [/\b(?:Dev(?:-environment)? (?:capture|cut-in)|Cut-in(?: from video [\d.]+'s recording)?|Quick cut(?: first)?)\s*:\s*/g, ""],
+    [/\b(?:Phone-frame|Real-device or emulator|Real-device) capture of /gi, "Phone screen: "],
+    [/\bTV frame\s*(?:\([^)]*\))?\s*:\s*/g, "TV screen: "],
+    [/\bCut-in (?:from [^:]*|\([^)]*\)|with the world override):\s*/g, ""],
+    [/\bCut-in with ([^:]*):\s*/g, "With $1: "],
+    [/\bStub state with /g, "With "], [/\bNative capture:\s*/g, ""],
+    [/\bMocked inbox\b/g, "Inbox"], [/\bmocked inbox\b/g, "inbox"], [/\b[Tt]he mocked email card\b/g, "The email"], [/\bmocked\s+/gi, ""],
+];
 const tidyShow = (t) => {
     const bad = (x) => INTERNAL.test(x) || CAMERA.test(x);
     const end = (x) => (/[.!?)"”]$/.test(x) ? x : x + ".");
-    let s = t.replace(/\s*\((?:[^()]*?)\)/g, (m) => (bad(m) ? "" : m)).replace(/,\s*out of focus/gi, "");
-    s = s.split(/(?<=[.!?])\s+(?=[A-Z"“])/)
+    let s = t;
+    for (const [re, to] of PRODUCTION) s = s.replace(re, to);
+    s = s.replace(/\s*\((?:[^()]*?)\)/g, (m) => (bad(m) ? "" : m)).replace(/,\s*out of focus/gi, "");
+    s = s.replace(/(^|[.!?]\s+)([a-z])/g, (m, a, b) => a + b.toUpperCase());
+    s = s.split(/(?<=[.!?]["”]?)\s+(?=[A-Z"“])/)
         .map((x) => { const cl = x.split(/;\s*/); const keep = cl.filter((c) => !bad(c)); return keep.length === cl.length ? x : keep.length ? end(keep.join("; ").replace(/[.;]\s*$/, "")) : ""; })
         .filter(Boolean).join(" ");
     return s.replace(/\s{2,}/g, " ").trim();
@@ -46,7 +59,7 @@ const data = live.map((v) => ({
     est: mmss(v.narrationSecs / 60),
     pre: v.prereq.filter((p) => live.some((x) => x.id === p)),
     covers: v.covers,
-    approved: v.status === "client-approved",
+    approved: false, // 2026-11-17: every script gained detail, so nothing starts approved
     ch: v.chapters.map((c) => ({
         n: c.n,
         title: c.title,
