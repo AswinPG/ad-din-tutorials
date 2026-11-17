@@ -1,7 +1,7 @@
 ---
 id: "06.3"
 title: Approve or decline enrolment applications
-target: 4:00
+target: 5:30
 prereq:
   - "06.1"
   - "02.4"
@@ -23,6 +23,9 @@ Review online enrolment applications, place each child in a section and approve 
 ## Covers
 - Pick a section, decline with a reason, Reconsider, “Subscription required to enroll”, the dashboard and app alerts
 - Download Application (PDF, or a zip for several)
+- Why review each application; a section for every course; Edit on the parent and child cards
+- The download button and Cancel in the request window; the seat and Manage Subscription
+- The decline reasons; what the parent gets (email, push, Review & Resubmit); Already Rejected
 
 ## Demo data
 - Demo madrasah "Maple Grove Madrasah"; the demo admin (Yusuf Rahman) has Premium and the madrasah has free Yearly seats (for example 5 available)
@@ -41,6 +44,10 @@ Review online enrolment applications, place each child in a section and approve 
 #### [1.1] Opening
 **Say:** In this video for madrasah admins, you'll approve an online enrolment application, decline one with a reason, and bring back a course you declined before.
 **Show:** Title card: "Approve or decline enrolment applications".
+
+#### [1.1a] Why review each one
+**Say:** Reviewing each application lets you check the family's details and documents, choose the right section for the child, and decide who gets one of your seats.
+**Show:** Card: "Check the details · Choose the section · Give a seat".
 
 #### [1.2]
 **Say:** Your enrolment form is already set up, and some of your organisation's Premium seats are still free to give to families.
@@ -68,9 +75,17 @@ Review online enrolment applications, place each child in a section and approve 
 **Say:** Select an application and tap **View Details**. Under **Selected Course**, choose a section for each course in **Select Section**.
 **Show:** Click the row "Musa Malik". Click "View Details"; the "Enrollment Request" window opens. Spotlight "Weekend Quran". Open "Select Section" and pick "Level 1".
 
+#### [3.1a]
+**Say:** Choose a section for every course in the request. If you miss one, Ad-Din names the course and asks you to pick a section before it approves.
+**Show:** Zoom on "Select Section" showing "Level 1". Small note on screen: "Please select section for: …".
+
 #### [3.3]
 **Say:** Below, check the parent's and child's details, documents and answers. If everything is right, answer **Is all information found correct?** with **Yes**.
 **Show:** Scroll through the parent and child details, including the uploaded birth certificate. At the bottom, click "Yes".
+
+#### [3.3a] Fix a detail
+**Say:** If a detail is wrong, for example a misspelt name, tap **Edit** on the parent or child card. The enrolment form opens, so you can correct it before you approve.
+**Show:** Spotlight the "Edit" link on the "Parent Details" card and on the "Child Details" card; don't click.
 
 #### [3.5] Subscription required to enroll
 **Say:** If neither parent has a subscription yet, you'll see **Subscription required to enroll**. Choose **Yearly** or **Monthly**. Each shows how many of your madrasah's seats are left.
@@ -88,6 +103,14 @@ Review online enrolment applications, place each child in a section and approve 
 **Say:** Tap **Approve Application**, then **Proceed**. The child joins the section, and the parent is told by email and notification.
 **Show:** Click "Approve Application". The "Confirm Approval" box; click "Proceed". The "Successful" message "Successfully approved the Enrolment Request"; click "Close". The window closes and Musa leaves the pending list.
 
+#### [3.7a] The other buttons
+**Say:** The download button beside **Cancel** saves this one application as a PDF. **Cancel** closes the window without changing anything, so the application stays pending.
+**Show:** From an earlier take with the window open: spotlight the download icon, then "Cancel".
+
+#### [3.7b] The seat
+**Say:** The seat you chose is now assigned to the parent, which lets their child stay in a class. To see or change it later, select the parent on the **Parent** tab and tap **Manage Subscription**, as video 02.4 shows.
+**Show:** Click the "Parent" tab; select "Khadija Malik"; spotlight "Manage Subscription"; don't click.
+
 ### 4. Decline an application
 #### [4.1] Say no
 **Say:** To decline, open the application and answer **No** to **Is all information found correct?**
@@ -97,9 +120,21 @@ Review online enrolment applications, place each child in a section and approve 
 **Say:** Choose a **Reason for Declining**, such as no available seats. Add **Additional Notes** if the parent needs to know more.
 **Show:** Open "Reason for Declining", pick "No available seats". Type a short note in "Additional Notes".
 
+#### [4.2a] Choosing a reason
+**Say:** The list includes reasons such as a schedule conflict, an incomplete application or age restrictions, and **Other**. A reason is required. Use the notes to tell the parent what to do next, for example which document to add.
+**Show:** Reopen the Reason for Declining list slowly: spotlight "Schedule conflict", "Incomplete application", "Age or grade restrictions" and "Other". Keep "No available seats".
+
 #### [4.3]
 **Say:** Tap **Reject Application**, then **Proceed**. The parent sees your reason in the app and can fix their application and send it again.
 **Show:** Click "Reject Application". The "Are you sure?" box lists the course; click "Proceed". Idris's row now shows Status "Rejected" and the reason.
+
+#### [4.3a] What the parent gets
+**Say:** The parent gets an email and a push notification with your reason. They can fix the application and send it again with **Review & Resubmit**. You'll then find it in **Pending Enrollments**, ready to review.
+**Show:** Card: "Declined → parent told, with the reason → Review & Resubmit → Pending Enrollments".
+
+#### [4.3b]
+**Say:** An application that's already declined can't be declined twice. If you answer **No** on one, Ad-Din shows **Already Rejected**.
+**Show:** Open "Idris Farah" again with View Details, click "No": spotlight "Already Rejected". Click "Cancel".
 
 ### 5. Change your mind
 #### [5.1] Reconsider
@@ -121,6 +156,7 @@ Review online enrolment applications, place each child in a section and approve 
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-17 · manager · "more detailed, under 10 minutes" · 2:35 → 4:15 narration, 8 scenes added: [1.1a] why review each application, [3.1a] a section for every course, [3.3a] Edit on the parent and child cards, [3.7a] the download button and Cancel, [3.7b] the seat and Manage Subscription, [4.2a] the decline reasons, [4.3a] what the parent gets and Review & Resubmit, [4.3b] Already Rejected
 - 2026-11-07 · manager · panel decisions, "All recommended" · added [2.3a] on Download Application (approve-enrollment.component.ts 145-149; decision 28) and a Covers item; Add more course left out on purpose (FEATURE-MAP)
 - 2026-11-06 · panel (user, director, writer, PM, PO) · 3 changes: new [3.5a] says Approve Application can't be tapped when no seats are left and points to 02.3 (approve-enrollment.component.html 216-217), [2.1] Show uses the in-app push banner (a real push can't reach the mocked world, as in 00.7) with a "Signed in as" label, demo data and Show names use the Maple Grove demo world (Weekend Quran, Hifz Class A; new families Malik, Farah, Ansari)
 - 2026-11-03 · manager · decisions via chat · 'Who needs a seat?' decided (own-Premium check is intended): flag wording updated; script unchanged
