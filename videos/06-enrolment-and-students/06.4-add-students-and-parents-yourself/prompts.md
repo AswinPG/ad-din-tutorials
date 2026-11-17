@@ -3,6 +3,7 @@
 Every instruction given to Claude for this video, newest first, with the result.
 Format: date · who · prompt (verbatim or summarised) · outcome / commit.
 
+- 2026-11-17 · Imran · "I want every video to be a bit more detailed but lets keep it under 10 minutes" · 6 scenes added (when to add yourself, tabs and Unassigned filter, login emails, more profile sections, relationship rules, Deactivate); narration 3:21 → 4:45, target 4:45 → 6:30 / docs(06.4): add more detail
 - 2026-11-06 · Imran · "do it for all the planned ones now" (panel review, apply clear fixes) · 3 changes: [3.2] points to 00.5 for the GUID, [5.1]/[6.2] no demo names in Say, Maple Grove demo names with a new family
 - 2026-11-03 · manager · "Decisions via chat" · 'Who needs a seat?' (intended) and 'How people are added' (as scripted) decided: both flags reworded; script unchanged
 - 2026-11-03 · manager · "use a critic subagent to criticise and find flaws in the script, make it better" · critic pass: 5 changes (opening, thin [4.5] merged, Premium seats wording, MRC explained, end card by number) + fold: Community Involvement Activity Records added as [7.3]–[7.4], checked against master code
