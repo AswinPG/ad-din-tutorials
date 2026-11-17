@@ -45,14 +45,14 @@ Optional **Caption:** overrides the subtitle text. Translations in i18n/<lang>.m
 See docs/SCRIPT-FORMAT.md.
 -->
 
-
-#### [1.1a] Why it matters
-**Say:** A full list helps you thank each donor, report to your committee, and show a true total on the campaign. Gifts handed over at the masjid count too, so record them here as well.
-**Show:** Card: "Thank donors · Report to your committee · A true total". Then a cash envelope and a cheque beside the campaign card.
 ### 1. Who has given
 #### [1.1] Opening
 **Say:** Once a campaign is running, you'll want to know who has given. In this video, you see every gift, and add the gifts that came in by cash or cheque.
 **Show:** Title card: "Track donations and record offline gifts".
+
+#### [1.1a] Why it matters
+**Say:** A full list helps you thank each donor, report to your committee, and show a true total on the campaign. Gifts handed over at the masjid count too, so record them here as well.
+**Show:** Card: "Thank donors · Report to your committee · A true total". Then a cash envelope and a cheque beside the campaign card.
 
 #### [1.2]
 **Say:** Your campaign is already set up. Every gift to it, online or offline, is listed in one place.
