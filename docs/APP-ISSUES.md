@@ -12,7 +12,7 @@ Found in Ad-Din `origin/master` (d36d69ed8) by the script writers and validators
 | Large horizontal display | `LargeDisplayHorizontal.cshtml` `generateEventSlides` uses `masjidEvents[i]` for madrasah slides: throws or shows wrong timings | 04.4 |
 | Push notification tap | Message pushes carry no route and the shell's `OnNotificationOpened` ignores `action: "message"`, so tapping doesn't open the inbox | 00.7 **(video)** |
 | Add students (backend) | `ClassController` EnrollStudents checks only the first selected student's family seat | 06.5 |
-| Website banner editor | The editor's Delete button deletes the banner at once, with no confirmation (`carousel.add.component.html` 462-468); `initialize()` does not delete anything (corrected 2026-11-06) | 09.2 |
+| Website banner editor | The editor's Delete button and the strip's delete icon remove the banner at once, with no confirmation (`carousel.add.component.html` 462-468); `initialize()` does not delete anything (corrected 2026-11-06) | 09.2 |
 | Claim admin page | File-size check reversed (≤10 KB refused, big files pass); Save with no organisation → unknown error; needs a home masjid | 01.3 **(video)** |
 | Expired reset link | Opens a blank 401 page | 00.3 |
 | Finder | **Skip for now** on the madrasah step drops the masjid already picked. Decided 2026-11-06: fix before 00.4 is published | 00.4 **(video)** |
@@ -25,6 +25,9 @@ Found in Ad-Din `origin/master` (d36d69ed8) by the script writers and validators
 | Masjid user list | No way to remove or deactivate a staff member or volunteer (masjidUserList buttons: Add, Edit, Manage Subscription, Manage Skills); to confirm with the team | 03.3 |
 | Approve enrolment | Request window loads details with the admin's home madrasah (getUserHomeMadressah, `approve-enrollment.component.ts` 383), not the managed one; from code only, check on dev | 06.3 |
 | Add New Event | Route guard commented out (`events.routes.ts` 11), but the API needs the admin's own Premium (EventsController AddEvent): an admin without Premium fills the whole form, then the save fails | 08.1 |
+| Delete Transaction (several ticked) | Deletes only the first ticked row (ids[0]); the toolbar button's disabled rule uses && so it never disables (`transaction-list.component.ts`) | 08.5 |
+| Enrollment Settings → Required Documents | Ticking the Hidden column saves the opposite value (onDocumentCellChanged sends !newValue); the Edit window works | 06.1 |
+| Manage Madrasah → principals | Once an Academic School Principal or Vice Principal is set, it can't be cleared back to Select Staff, and a Council Chair isn't saved on its own (SavePrincipals, MadressahRepository.cs ~7066) | 05.1 |
 
 ## Wrong or misleading on screen
 
@@ -70,10 +73,25 @@ Found in Ad-Din `origin/master` (d36d69ed8) by the script writers and validators
 | Email Report | Email All sends at once, before the release date (no release-date check in AcademicReportsService.cs) | 12.3 |
 | Staff Attendance payroll | Settings says "When a period locks, the payroll file is sent to …" (en.json 3526); only version 1 is emailed automatically (IPayrollOutputSendService.cs 76-78) | 13.4, 13.6 |
 | Event Share | Shares only the event's own Event Page link (`eventList.component.ts` 415-417); with none set, the message has only the title | 15.3 |
+| Profile → Subscription | The "Failed to create subscription." box offers no Retry button (infoModalButton is set but the modal draws only a close icon) | 02.2 |
+| Onboarding → Add organization | Subtitle says "You can change all of this later." but only Ad-Din can change the location (onboarding.loc_tooltip) | 01.1 |
+| Profile → Signature | Tells you to "use a transparent image around 70×300 px", but the pen opens a drawing pad ("Sign here") with no upload | 00.5 |
+| Password reset | Asking again clears older links only for the first account on that email; other accounts sharing the email keep valid links for 2 hours | 00.3 |
+| Saving existing people and imports | Saving an existing person's profile, and every existing row in an import, sends the "added" email again (Flag "Edit" when UserID != 0; AddTeacher/AddAdmin/AddStaff, ImportTeachers) | 03.3, 03.4, 03.5 |
+| Manage Madrasah → principals | Madrasah Principal and Vice Principal print on no report card (reports use the Academic School Principal); Madrasah Principal appears only on payment receipts | 05.1 |
+| Learning Skill | Save sends empty skill rows without checking the form (learningSkill.component.ts updateSkills) | 05.1 |
+| Approve enrolment | The Remove link on a course in the Enrollment Request window only drops it locally; what happens to the course afterwards is unclear | 06.3 |
+| Website address box | UrlSegmentValidator is `/([-A-Za-z0-9]+)$/` with no ^ anchor, so spaces and capitals pass the "Lowercase letters, numbers and hyphens (-) only" check | 09.1 |
+| Event delete box | "Notify followers via Email & Push Notification" starts ticked, but cancelling or finishing a delete unticks it for the next Delete box (eventList.component.ts 365-392) | 08.2 |
+| Donation export CSV | AddedDate formatted "yyyy-mm-dd" (mm = minutes), so minutes show where the month should be (DonationMap.cs 16) | 08.5 |
+| Masjid Prayer Times Chart | Months grouped by month number only, so a range over 12 months merges the same month of two years (MasjidPrayerTimesCardReport.cs 112) | 12.5 |
+| Monthly prayer timetable | Spells "Asar" while the rest of the app says "Asr"; its labels are hard-coded English, not in en.json | 15.1 |
 
 ## Text and typos
 
-`en.json` `dash.mobile.*` strings contain U+FFFD (e.g. "All caught up � nothing needs you"); "You are all set ! !"; "smalll display widget"; "Just this occurence"; "Volonteer Form"; "Manage Satff"; "Acqusition"; "Alumini"; "assigment"; "Imptoved Year"; "Add admin Profile" in lower case; "Parent Teacher Interview " (trailing space); description fields reuse "Event Description" / "Book Description".
+~~`en.json` `dash.mobile.*` strings contain U+FFFD~~ (fixed on master d0604ce7f); "You are all set ! !"; "smalll display widget"; "Just this occurence"; "Volonteer Form"; "Manage Satff"; "Acqusition"; "Alumini"; "assigment"; "Imptoved Year"; "Add admin Profile" in lower case; "Parent Teacher Interview " (trailing space); description fields reuse "Event Description" / "Book Description".
 | Delegations | Same From and To Teacher shows the raw key 'madressah.delegation.message.moreTeacher' (`delegationAdd.component.ts` 95) | 05.7 |
 | Copy to Terms | Teacher-clash notice says "(Overview tab)"; the tab is "Routines" (`copy-term-routine.component.html` 105) | 16.2 |
+| Language Settings | "All the field are required" (grammar) | 04.11 |
+| Date & Time info tooltip | "Remove Secondsb" (typo) | 04.1 |
 
