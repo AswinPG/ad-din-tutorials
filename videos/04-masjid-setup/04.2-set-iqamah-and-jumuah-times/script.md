@@ -1,7 +1,7 @@
 ---
 id: "04.2"
 title: Set iqamah and jumu’ah times
-target: 3:45
+target: 5:30
 prereq:
   - "04.1"
 status: scripted
@@ -21,6 +21,12 @@ Set Iqamah and Jumu'ah times for a whole range of days at once with Batch Update
 ## Covers
 - Batch Update by date range, Fridays only, View Prayer Times
 - Basic Display → Jumah Location: a Jumu'ah held away from the masjid
+- why use Batch Update (seasons, clock changes, Ramadan)
+- tapping a row to tick it; unticking clears its time
+- Jumu'ah 3 and 4; Jumu'ah times change Fridays only
+- what members see: no message, times update at once, Timing Changes From Tomorrow in the app
+- tip: batch the month, then single days on Manual Update; run it again to correct
+- unticking Jumah Location when Jumu'ah returns to the masjid
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
@@ -28,6 +34,7 @@ Set Iqamah and Jumu'ah times for a whole range of days at once with Batch Update
 - Adhan Times saved (Maghrib Iqamah Offset 5), so Maghrib shows as locked in Batch Update
 - Date range used on camera: the whole of next month for the demo clock (1 to 31 December 2026), which includes four Fridays
 - New times typed on camera: Fajr 6:00 AM, Dhuhr 1:30 PM, Isha 8:45 PM, Jumu'ah 1:15 PM, Jumu'ah 2 2:15 PM
+- Ad-Din app capture for [6.1a]: Prayer Times page of Maple Grove Masjid with the demo clock on 30 November 2026, so tomorrow's (1 December) Fajr, Dhuhr and Isha differ and the Timing Changes From Tomorrow chip shows
 - Jumah Location on camera: "Maple Grove Community Hall", 250 Elm Street, Toronto, ON M0M 0B0, Canada (fictional), offered as one search suggestion; saving shows "Successfully saved Display Settings"
 
 ## Script
@@ -46,6 +53,10 @@ See docs/SCRIPT-FORMAT.md.
 #### [1.2]
 **Say:** Your begin times and Adhan times are already set. Ad-Din works out each Adhan time from the Iqamah time you set here.
 **Show:** Opening card from You'll need.
+
+#### [1.2a] Why use it
+**Say:** Batch Update saves you typing the same time day after day. Use it when your Iqamah times change for a season, after the clocks change, or for a month such as Ramadan.
+**Show:** Batch Update tab, full page: the Date range card and the Iqamah times card.
 
 ### 2. Open Batch Update
 #### [2.1] Where it lives
@@ -74,6 +85,10 @@ See docs/SCRIPT-FORMAT.md.
 **Say:** Entering a time ticks the prayer for you. Here, Dhuhr moves to 1:30 and Isha to 8:45.
 **Show:** Without ticking first, pick 1:30 PM for Dhuhr and 8:45 PM for Isha; their boxes tick themselves.
 
+#### [4.2a] Untick
+**Say:** You can also tap anywhere on a prayer's row to tick it. Untick a prayer, and its new time is cleared, so that prayer keeps its current times.
+**Show:** Click on the Asr row (not the box): Asr ticks. Untick Asr; its time box stays empty and the row turns pale again.
+
 #### [4.3] Maghrib
 **Say:** Maghrib is locked. Its Iqamah follows sunset, using the offset you set on the **Adhan Times** tab.
 **Show:** Spotlight the locked Maghrib row and its note "Set Magrib Iqamah offset in adhan times".
@@ -87,6 +102,10 @@ See docs/SCRIPT-FORMAT.md.
 **Say:** Below, the **Jumu'ah** group **Applies to Fridays only**. Set your Jumu'ah time, and add **Jumu'ah 2** if you hold a second prayer.
 **Show:** Spotlight the hint "Applies to Fridays only". Pick 1:15 PM for Jumu'ah and 2:15 PM for Jumu'ah 2.
 
+#### [5.1a] More Jumu'ah prayers
+**Say:** If you hold three or four Jumu'ah prayers, set **Jumu'ah 3** and **Jumu'ah 4** too. These times change only the Fridays in your range. The other days keep their times.
+**Show:** Spotlight the Jumu'ah 3 and Jumu'ah 4 rows (left unticked), then the "31 days" pill.
+
 #### [5.2] Check the summary
 **Say:** The line at the bottom sums up your changes. If a ticked prayer still needs a time, it says so, and **Update times** can't be tapped.
 **Show:** Spotlight the summary: "Fajr, Dhuhr, Isha, Jumu'ah, Jumu'ah 2 · 31 days". Tick Asr: "1 time(s) still needed" appears and the button greys out. Untick Asr.
@@ -95,6 +114,14 @@ See docs/SCRIPT-FORMAT.md.
 #### [6.1] Update times
 **Say:** Tap **Update times**. Ad-Din saves the new Iqamah times for every day in the range.
 **Show:** Click Update times. Toast "Successfully updated Prayer Times". The prayer ticks clear.
+
+#### [6.1a] What members see
+**Say:** The new times show in the Ad-Din app and on your displays, and each Adhan moves with its Iqamah. Ad-Din doesn't send a message. On the day before a change, members see **Timing Changes From Tomorrow** on their prayer times.
+**Show:** Phone-frame capture of the Ad-Din app Prayer Times page for Maple Grove Masjid on 30 November 2026 (demo clock moved for this shot): tap the "Timing Changes From Tomorrow" chip; the sheet lists Fajr, Dhuhr, Isha with Today and Tomorrow columns.
+
+#### [6.1b] Tip
+**Say:** A good way to work: set the whole month here, then change single days, such as Eid, on **Manual Update Import/Export**. If you made a mistake, run Batch Update again with the right time. It replaces the old one.
+**Show:** Spotlight the "Manual Update Import/Export" tab, then return to the empty Batch Update form.
 
 #### [6.2] Start over
 **Say:** To start again at any time, tap **Clear**. It empties the dates and unticks every prayer.
@@ -126,6 +153,10 @@ See docs/SCRIPT-FORMAT.md.
 **Say:** Check the address, then scroll down and tap **Save**. If a detail is missing, Ad-Din asks you to fill it in.
 **Show:** Spotlight the filled address fields. Scroll to the bottom of Basic Display and click Save. Toast "Successfully saved Display Settings".
 
+#### [7a.4] Back at the masjid
+**Say:** When Jumu'ah returns to the masjid, untick the box and tap **Save** again. The address fields close.
+**Show:** Spotlight the ticked box; untick it and the address fields close. Tick it again so the demo keeps the hall, and don't save.
+
 ### 9. Next
 #### [8.1] Close
 **Say:** Your Iqamah and Jumu'ah times are set. To change a single day or use a spreadsheet, watch video 04.3: Import and export a prayer timetable. Then video 04.4: Prayer times on a TV: basic displays.
@@ -133,6 +164,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-17 · manager · "more detailed, under 10 minutes" · 3:05 → 4:22 narration, 6 scenes added: why use Batch Update, tapping a row and unticking, Jumu'ah 3 and 4 and Fridays only, what members see (no message, Timing Changes From Tomorrow), batch-then-single-day tip and correcting by running it again, unticking Jumah Location
 - 2026-11-07 · manager · panel decisions, "All recommended" · added chapter 8 "Jumu'ah away from the masjid" ([7a.1]-[7a.3], Basic Display → Jumah Location; decision 27); Next is now chapter 9 with [8.1] unchanged; Covers, demo data and a Google Places flag added
 - 2026-11-06 · panel (user, director, writer, PM, PO) · 6 changes: [1.2] "already set" (no phrasal verb), [4.4] Select all and Clear all are one button, [5.2] "can't be tapped" instead of "greyed out", [7.3] no elliptical question and says to pick the dates again (flag), [8.1] names both end tiles by number, demo names and date range match the Maple Grove demo world (December 2026)
 - 2026-11-03 · critic · 2 changes: second-person opening, [1.2] no longer says Ad-Din 'calls' the Adhan

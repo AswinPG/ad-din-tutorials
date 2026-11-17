@@ -3,6 +3,7 @@
 Every instruction given to Claude for this video, newest first, with the result.
 Format: date · who · prompt (verbatim or summarised) · outcome / commit.
 
+- 2026-11-17 · Imran · "I want every video to be a bit more detailed but lets keep it under 10 minutes" · 6 scenes added (why use Batch Update, row tap and untick, Jumu'ah 3 and 4 on Fridays only, what members see and Timing Changes From Tomorrow, batch-then-single-day tip, unticking Jumah Location); 3:05 → 4:22 narration, target 3:45 → 5:30; commit docs(04.2): add more detail
 - 2026-11-07 · Imran · "All recommended" (docs/reviews/2026-11-06-decisions-all-tracks.md) · added chapter 8 Jumu'ah away from the masjid ([7a.1]-[7a.3], Basic Display → Jumah Location); Next is chapter 9; Covers, demo data, Google Places flag
 - 2026-11-06 · Imran · "do it for all the planned ones now" (panel review, apply clear fixes) · 6 changes: [1.2], [4.4] one Select all/Clear all button, [5.2], [7.3] dates picked again, [8.1] end tiles by number, Maple Grove demo names and December range
 - 2026-11-03 · manager · "use a critic subagent to criticise and find flaws in the script, make it better" · critic pass: 2 fixes (opening; Adhan is not 'called' by Ad-Din).
