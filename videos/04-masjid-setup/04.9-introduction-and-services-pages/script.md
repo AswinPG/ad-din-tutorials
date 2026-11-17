@@ -1,7 +1,7 @@
 ---
 id: "04.9"
 title: Introduction & Services pages
-target: 3:30
+target: 5:00
 prereq:
   - "03.1"
 status: scripted
@@ -18,6 +18,11 @@ Create a service page for your masjid, save it as a draft, publish it, and know 
 ## Covers
 - Add New, Save as Draft, Publish, link to the website menu
 - Introduction & Services for madrasahs (same page, under Madrasah / School)
+- why use service pages (one page per service, fewer calls to the office)
+- Unsaved changes and Cancel
+- the page view (status, Shown in, Edit Page); no message to followers
+- unpublishing with Save as Draft; a service page as the donation page (08.3)
+- the delete confirmation; draft instead of delete
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
@@ -44,6 +49,10 @@ See docs/SCRIPT-FORMAT.md.
 **Say:** Your masjid is already set up. Published pages appear in Ad-Din on the web and in the app, and you can add them to your website menu.
 **Show:** Opening card from You'll need.
 
+#### [1.2a] Why use it
+**Say:** Make one page for each service. Members then find the answers themselves, such as how to book a Nikah or what to do after a death, without calling the office. You write each page once and change it when things change.
+**Show:** The Services page with "Funeral Services" and "Quran Classes for Adults"; spotlight the counts at the top.
+
 ### 2. Open Services
 #### [2.1] Where it lives
 **Say:** In the sidebar, open **Masjid**, then **Introduction & Services**. The **Services** page lists your pages.
@@ -65,6 +74,10 @@ See docs/SCRIPT-FORMAT.md.
 #### [3.2] Title
 **Say:** Type a **Title**, such as Nikah Services, and a short **Sub Title**. The title is the only thing you must fill in.
 **Show:** Type the demo title and sub title.
+
+#### [3.2a] Unsaved changes
+**Say:** While you work, **Unsaved changes** shows at the bottom. **Cancel** leaves without saving anything.
+**Show:** Spotlight "Unsaved changes" in the action bar, then Cancel. Don't click it.
 
 #### [3.3] Content
 **Say:** Under **Content**, write the details in the editor: what you offer, how to book, and who to contact.
@@ -92,6 +105,18 @@ See docs/SCRIPT-FORMAT.md.
 **Say:** The page now shows under **Published**. Tap it to see it the way your members do.
 **Show:** "Nikah Services" in the Published section; click it: the page view with picture, title and content.
 
+#### [5.3a] The page view
+**Say:** The side panel shows its status, your organisation, and where it's shown: **Masjid**, then **Services**. **Edit Page** opens it again. Followers aren't sent a message, but the page is there the next time they look.
+**Show:** Spotlight "Published & live", the Organisation line, "Shown in Masjid › Services", then the Edit Page button.
+
+#### [5.3b] Take it down for a while
+**Say:** To hide a published page without deleting it, edit it and tap **Save as Draft**. It moves back to **Drafts**, and you can publish it again later.
+**Show:** Click Edit Page; spotlight Save as Draft; click Cancel instead.
+
+#### [5.3c] Donation pages
+**Say:** A service page can also be the page members see when they donate to you. Video 08.3: Set up donations shows how to choose it.
+**Show:** Back on the Services list; spotlight the "Nikah Services" card.
+
 ### 6. Link to your website
 #### [6.1]
 **Say:** Published services appear in Ad-Din automatically, but your public website is separate. If your masjid has an Ad-Din website, tap **Manage Website Menu** and add the service there.
@@ -106,12 +131,17 @@ See docs/SCRIPT-FORMAT.md.
 **Say:** To remove a page, tap the three dots, then **Delete**, and confirm. It can't be recovered.
 **Show:** Open the three-dot menu on a page; hover Delete; don't click.
 
+#### [7.1a]
+**Say:** Ad-Din asks you to confirm before deleting. If you may need the page again, save it as a draft instead.
+**Show:** Click Delete: "Are you sure ?" with "Clicking confirm will delete the page and can no longer be recovered."; click Cancel.
+
 #### [7.2] Close
 **Say:** Your service page is live. Next, video 09.3: Build your website menu, if your masjid has an Ad-Din website. Or video 04.10: Live streaming.
 **Show:** End card with two tiles: "09.3 Build your website menu" and "04.10 Live streaming".
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-17 · manager · "more detailed, under 10 minutes" · 2:30 → 3:38 narration, 6 scenes added: why use service pages, Unsaved changes and Cancel, the page view and no message, unpublishing with Save as Draft, donation pages (08.3), delete confirmation
 - 2026-11-06 · panel (user, director, writer, PM, PO) · 6 changes: [2.1a] and [4.1] no elliptical questions, [2.2] no phrasal verb, [6.1] website add-on wording ("If your masjid has an Ad-Din website"), [7.2] names both end tiles by number, demo names match the Maple Grove demo world
 - 2026-11-03 · critic · 1 change + fold: second-person opening; fold: Introduction & Services for madrasahs as new scene [2.1a] (Covers, demo data; verified in menu.data.ts and pages/list/:type)
 - 2026-11-03 · validator · checked against master d36d69ed8 · no changes
