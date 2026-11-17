@@ -1,7 +1,7 @@
 ---
 id: "15.8"
 title: "Quran: translation, search, playlists and memorising"
-target: 4:00
+target: 6:00
 prereq:
   - "15.5"
 status: scripted
@@ -30,6 +30,9 @@ Read the Quran with a translation (and hear it where a recording exists), search
 - Repeat each ayah, Playback speed, keep reciting into the next surah
 - Recite from memory (tap a line to reveal)
 - Theme and text size, Share this ayah
+- Why use it; translations in more than twenty languages, Transliteration; what search looks in, no results
+- Add this surah and Remove this surah in Playlist; a way to memorise (Repeat each ayah with Memorize)
+- Text size limits (80 to 180 percent, Verses view only); reader choices saved on this phone only
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
@@ -37,6 +40,7 @@ Read the Quran with a translation (and hear it where a recording exists), search
 - Quran reader settings at their defaults (English · Pickthall, Mishary Rashid Alafasy, Light, 100%), playlist empty, no bookmarks
 - Quran data served by the demo world: Al-Mulk text with Pickthall and Saheeh International, the Saheeh International recording (Ibrahim Walk) for 67:1–2, search results for "patience", the surah list, and the Madani Mushaf page for Al-Mulk
 - Share opens the phone's share sheet (stubbed in the demo world; show it with no real contacts)
+- The translation list (all editions) for the [2.2a] cutaway; an empty search result for "zzz"
 
 ## Script
 <!--
@@ -55,6 +59,10 @@ See docs/SCRIPT-FORMAT.md.
 **Say:** On the home screen, tap **Quran**. The reader opens where you left off.
 **Show:** Opening card from You'll need. Tap the "Quran" tile: the reader opens on Al-Mulk in Verses view.
 
+#### [1.2a] Why use it
+**Say:** These tools help you understand what you recite, find a verse you remember, listen to your favourite surahs while you travel, and learn new ayahs by heart.
+**Show:** Hold on Al-Mulk in Verses view with the translation under each ayah.
+
 ### 2. Arabic and translation
 #### [2.1] What to show
 **Say:** Tap the settings icon at the top. Under **Show**, choose **Arabic + translation**, just **Arabic**, or just the **Translation**.
@@ -64,6 +72,11 @@ See docs/SCRIPT-FORMAT.md.
 **Say:** Tap **Translation** to pick from many languages. Highlighted translations can also be read aloud after each ayah.
 **Show:** Tap the Translation row. Spotlight the note at the top and a highlighted row with "Audio translation available". Tap "English · Saheeh International".
 **Caption:** Tap Translation to pick a language. Highlighted translations can also be read aloud after each ayah.
+
+#### [2.2a] Many languages
+**Say:** There are translations in more than twenty languages, such as Urdu, Bangla, Malay, Indonesian, Turkish and French. **English · Transliteration** shows the Arabic sounds in English letters.
+**Show:** Cutaway in the Translation list: scroll slowly; spotlight "Urdu · Jalandhry", "বাংলা · Muhiuddin Khan", "Bahasa Melayu · Basmeih", "Bahasa Indonesia" and "English · Transliteration". Return to the main take with Saheeh International chosen.
+**Caption:** There are translations in more than twenty languages. English · Transliteration shows the Arabic sounds in English letters.
 
 #### [2.3] Hear the translation
 **Say:** Now switch on **Recite the translation**. After each ayah in Arabic, you'll hear its meaning, read in the translation's language.
@@ -82,6 +95,10 @@ See docs/SCRIPT-FORMAT.md.
 **Say:** Tap a result to jump straight to that ayah.
 **Show:** Tap a result in Al-Baqarah: the reader opens Al-Baqarah at that ayah.
 
+#### [3.2a] What search looks in
+**Say:** Search looks in the translation you chose, or in the Arabic text when you type in Arabic. If nothing matches, it says so, and you can try another word.
+**Show:** Open Search again: before typing, zoom on "Searches English · Saheeh International, or the Arabic text when you type in Arabic." Type "zzz": "No ayahs found for "zzz"." Close the sheet.
+
 ### 4. Playlists
 #### [4.1] Build a playlist
 **Say:** To listen to several surahs in a row, tap the surah name at the top. Tap the plus next to each surah you want.
@@ -90,6 +107,10 @@ See docs/SCRIPT-FORMAT.md.
 #### [4.2] Play all
 **Say:** Open **Playlist** to change the order or remove a surah. Then tap **Play all** to hear them one after another.
 **Show:** Close the list. Tap the "Playlist" chip (shows 3). Move Al-Mulk up with the arrow. Tap "Play all": the first surah opens and recitation starts; the player bar shows "Playlist". Stop.
+
+#### [4.2a] Add or remove this surah
+**Say:** In **Playlist**, **Add this surah** adds the surah you're reading, and **Remove this surah** takes it out. The cross beside a surah removes it from the list.
+**Show:** Open Playlist: spotlight "Remove this surah" at the bottom (the reader is on a playlist surah), then the remove button on one row, without tapping. Close the sheet.
 
 ### 5. Repeat, speed and carrying on
 #### [5.1] In the player
@@ -110,10 +131,18 @@ See docs/SCRIPT-FORMAT.md.
 **Say:** In **Mushaf** view it works line by line: tap a line to reveal it. Tap **Memorize** again when you're done.
 **Show:** Tap "Mushaf": the page shows with every line veiled and "Recite from memory, then tap a line to reveal it." Tap two lines. Tap "Memorize" to turn it off, then "Verses".
 
+#### [6.2a] A way to memorise
+**Say:** One way to learn new ayahs: set **Repeat each ayah** to 3, and listen to a few ayahs. Then turn on **Memorize**, and recite them yourself before you tap to check.
+**Show:** Open Reading settings: tap "3×" under Repeat each ayah. Close. Tap play for ayahs 1 to 2, then stop. Tap "Memorize": the ayahs blur. Tap ayah 1 to reveal it. Tap "Memorize" again to turn it off.
+
 ### 7. Make it yours and share
 #### [7.1] Theme and text size
 **Say:** For easier reading, choose a **Light**, **Sepia** or **Dark** theme, and make the text bigger or smaller.
 **Show:** Open Reading settings. Tap "Sepia", then "Dark". Tap "A+" twice: the percentage rises and the text grows behind the sheet.
+
+#### [7.1a] Text size limits
+**Say:** The text size goes from 80 to 180 percent, and works in **Verses** view. In **Mushaf** view, the page keeps its printed layout.
+**Show:** Zoom on the "Text size" row with "A−", the percentage and "A+".
 
 #### [7.2] Share an ayah
 **Say:** To share a verse, tap it and choose **Share**. Your phone's share options open, with the Arabic, the translation and the reference.
@@ -122,6 +151,10 @@ See docs/SCRIPT-FORMAT.md.
 #### [7.3]
 **Say:** You can also tap the three dots and choose **Share this ayah** for the one you're reading.
 **Show:** Tap the three-dots icon. Spotlight "Share this ayah" with "Al-Mulk 67:1".
+
+#### [7.3a] Saved on this phone
+**Say:** Your translation, reciter, theme, playlist and the place you stopped are saved on this phone only. Nothing you do in the reader is sent to your masjid.
+**Show:** Close the sheet. Hold on the reader in Dark theme.
 
 ### 8. Done
 #### [8.1] Result
@@ -133,6 +166,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** End card with two tiles: "15.5 Read and listen to the Quran" and "15.6 Tasbeeh, live streams, gallery and forms".
 
 ## Review log
+- 2026-11-17 · manager · "more detailed, under 10 minutes" · 2:40 → 4:00 narration, 7 scenes added: [1.2a] why use it, [2.2a] translations in more than twenty languages and Transliteration (no audio promised), [3.2a] what search looks in and no results, [4.2a] Add this surah and Remove this surah, [6.2a] a way to memorise (Repeat each ayah with Memorize), [7.1a] text size limits, [7.3a] reader choices saved on this phone only. Checked against origin/master d0604ce7f (quran-reader, quran.models TRANSLATIONS and TRANSLATION_VOICES, quran.service local storage)
 <!-- Newest first: date, who, what was asked, what changed. -->
 - 2026-11-06 · panel (user, director, writer, PM, PO) · 2 changes: Quran data flag rewritten for the self-hosted copy (feat/quran-self-hosted; search on the phone, audio still from cdn.islamic.network); demo data names a member account
 - 2026-11-03 · critic · 7 changes: [1.1] second-person opening, no "back to back"; [2.2] "in this colour" → "Highlighted", matches the caption; [3.1] no elliptical question; [4.2] no "back to back"; [5.2] clearer "same choices in Reading settings"; [8.1] no "line up"; [8.2] end card by number and title
