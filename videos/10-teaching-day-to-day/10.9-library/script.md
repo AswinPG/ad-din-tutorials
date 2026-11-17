@@ -125,7 +125,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Open Filters; pick a class and a student.
 
 #### [6.3a]
-**Say:** For example, before the end of term, filter by class to see who still has a book. **Export** downloads that list as a spreadsheet, for example to print it.
+**Say:** For example, before the end of term, filter by class to see who still has a book. **Export** downloads all your loans as a spreadsheet.
 **Show:** Clear the student filter so the whole of "Maktab Level 1" A shows. Spotlight the Export button on Circulation.
 
 ### 7. Next
