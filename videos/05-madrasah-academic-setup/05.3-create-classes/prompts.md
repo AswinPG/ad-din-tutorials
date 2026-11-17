@@ -3,6 +3,7 @@
 Every instruction given to Claude for this video, newest first, with the result.
 Format: date · who · prompt (verbatim or summarised) · outcome / commit.
 
+- 2026-11-17 · Imran · "I want every video to be a bit more detailed but lets keep it under 10 minutes" · 10 scenes added (why, list buttons and permanent Delete, what the type changes, a unique number, Hifz report, messaging when off, when to close enrolment, photo buttons and formats, required boxes and no message, Remove program details); narration 2:18 → 4:21, target 3:45 → 5:30 / docs(05.3): add more detail
 - 2026-11-06 · Imran · "do it for all the planned ones now" (panel review, apply clear fixes) · review panel, 4 changes: [3.2] Show records the Academic quick cut before typing the number (switching Type clears Numeric Class Name, class-dialog.component.ts 105-107); [3.2] Say and Caption drop "JK up to grade 12" (list also has 101-120); [3.5] "can" not "may"; demo madrasah is Maple Grove / docs(05.3): apply review panel fixes
 - 2026-11-03 · manager · "Decisions via chat" · 'Who needs a seat?' decided (own-Premium check is intended): flag wording updated; script unchanged
 - 2026-11-03 · manager · "use a critic subagent to criticise and find flaws in the script, make it better" · critic pass: 6 changes (opening, add-on wording, Say/Show matches in [5.3]/[5.4], end card by number)
