@@ -1,7 +1,7 @@
 ---
 id: "14.1"
 title: Your parent home in the app
-target: 4:30
+target: 6:30
 prereq:
   - "06.2"
 status: scripted
@@ -23,6 +23,11 @@ Find your way around the parent home in the Ad-Din app: a panel for each child w
 - A panel per child, My Routine, announcements, Enroll Now, Pending Approval
 - Parent Portal pages from the Madrasah tile, including the read-only lists (Class, Subject, Holiday, Grade, Delegations)
 - The same on the web: parent Dashboard and the Parent Portal in the sidebar
+- Why use the app home; the prayer card when no home masjid is chosen (Choose a masjid)
+- Your own username and email (Tap to copy); arrows when you have many children
+- The tiles depend on what your masjid and madrasah use; the unread badge on Messages
+- Messages card: latest messages, Flagged, Open inbox, New message (07.3); Today's events: open an event, No upcoming events
+- App notifications for new messages (00.7)
 
 ## Demo data
 - Parent "Yusuf Rahman" (username `yusuf_rahman`, the demo world's account), set to the Parent role only for this video; home masjid "Maple Grove Masjid", home madrasah "Maple Grove Madrasah" (Premium, Class Announcements switched on)
@@ -34,6 +39,9 @@ Find your way around the parent home in the Ad-Din app: a panel for each child w
 - Teacher "Fatima Siddiqui", given a Parent role and a linked child for the role tabs shot, labelled "Signed in as: teacher and parent Fatima Siddiqui"
 - Parent "Tariq Saleh" with one linked child "Yahya Saleh" (inactive in the world), not in a class and no enrollment request, for the No Active Enrollments shot, labelled "Signed in as: parent Tariq Saleh"
 - Yusuf has his own Premium (or a seat), so the Madrasah tile opens his Parent Portal pages instead of Go Premium; Maple Grove Madrasah has a holiday, a grade set and one teacher delegation for Maryam's class on record
+- For [2.2a]: a second take of a parent account with a home madrasah but no home masjid (Tariq Saleh), so the "Prayer times" card shows "Choose a masjid"; labelled "Signed in as: parent Tariq Saleh"
+- Yusuf's account has the demo email yusuf.rahman@example.com, shown in the account details
+- One of the two unread messages is flagged; the masjid event today is Family Quran Night, "After Maghrib" (or the world's demo time)
 - Phone frame for every shot, except a browser frame for the web shot in [6.4] (Yusuf signed in on the web, Parent role selected on the Dashboard)
 
 ## Script
@@ -53,6 +61,10 @@ See docs/SCRIPT-FORMAT.md.
 **Say:** Your children are already enrolled at your madrasah. Everything here comes straight from the madrasah, so there's nothing to set up.
 **Show:** Opening card from You'll need.
 
+#### [1.2a] Why it helps
+**Say:** This one screen brings together what your madrasah and masjid share with you: your children's day, prayer times, messages and events. Check it each morning to see what's new.
+**Show:** Slow scroll down Yusuf's home from top to bottom, then back to the top.
+
 ### 2. The top of the screen
 #### [2.1] Header
 **Say:** At the top is your organisation's name. The menu button on the left opens every page, and the settings button on the right opens your profile.
@@ -62,10 +74,18 @@ See docs/SCRIPT-FORMAT.md.
 **Say:** Below it are today's **Iqamah times** from your masjid, with a countdown to the next prayer. Tap the card to open the full prayer times.
 **Show:** Spotlight the prayer card: "Iqamah times", the five prayers, the "in … min" countdown. Don't tap.
 
+#### [2.2a] No home masjid yet
+**Say:** If you joined through your madrasah and haven't chosen a home masjid, this card says so instead. Tap **Choose a masjid** to pick one, and its Iqamah times appear here.
+**Show:** Cutaway to Tariq Saleh, with the label "Signed in as: parent Tariq Saleh": the "Prayer times" card with "Choose your home masjid to see its Iqamah times here." Spotlight "Choose a masjid"; don't tap. Cut back to Yusuf ("Signed in as: parent Yusuf Rahman").
+
 ### 3. One panel per child
 #### [3.1] Your card
 **Say:** Your card greets you with **Assalamu alaikum** and your name. Underneath, it says how many of your linked children are in a class.
 **Show:** Spotlight the identity card: "Assalamu alaikum", "Yusuf Rahman", and the line "2 of 3 linked children in a class here".
+
+#### [3.1a] Your own details
+**Say:** Tap your own name to see your username and email. Tap either one to copy it, for example when the madrasah office asks for your username.
+**Show:** Tap "Yusuf Rahman": the details open with "@yusuf_rahman" and the demo email, and the hint "Tap to copy". Tap the username: toast "Copied to clipboard". Tap the name again to close.
 
 #### [3.2] Pick a child
 **Say:** Next to **Viewing** there's a button for each child in a class. Tap a name, and everything below switches to that child.
@@ -74,6 +94,10 @@ See docs/SCRIPT-FORMAT.md.
 #### [3.3]
 **Say:** Tap the selected child again to see their class and username. Tap the username to copy it, in case the madrasah asks for it.
 **Show:** Tap the "Maryam" button: the details open with Class "Maktab Level 1 · A" and Username "@maryam_rahman". Tap the username: toast "Copied to clipboard".
+
+#### [3.3a]
+**Say:** If you have many children, the names scroll sideways. Use the small arrows at each end to see the rest.
+**Show:** Cutaway from a parent with five linked children (demo take): spotlight the arrows beside the names; tap "More children".
 
 #### [3.4] More than one role
 **Say:** If you're also a teacher at the madrasah, tabs at the top of your card switch between **Parent** and **Teacher**.
@@ -114,6 +138,10 @@ See docs/SCRIPT-FORMAT.md.
 **Say:** Below your children are shortcut tiles, such as **Prayer Times**, **Quran**, **Events** and **Messages**.
 **Show:** Scroll to the tile grid. Spotlight Prayer Times, Quran, Events, Messages in turn.
 
+#### [6.1b]
+**Say:** The tiles you see depend on what your masjid and madrasah use, such as **Donation** or **Streaming**. The number on **Messages** shows how many are unread.
+**Show:** Spotlight "Donation" and "Streaming", then the unread badge on the "Messages" tile.
+
 #### [6.1a] All your pages
 **Say:** Tap **Madrasah** for every page of your **Parent Portal**. Besides attendance and Hifz, it lists your child's **Class**, **Subject**, **Holiday** dates, **Grade** scale, and **Delegations**, which show when another teacher covers a class.
 **Show:** Tap the "Madrasah" tile: the Parent Portal list opens straight away (Yusuf has only one portal). Scroll slowly; spotlight Class, Subject, Holiday, Grade, Delegations. Tap "Delegations": one row with From Teacher, To Teacher and the dates. Go back twice to the home.
@@ -122,6 +150,18 @@ See docs/SCRIPT-FORMAT.md.
 #### [6.2]
 **Say:** The **Messages** card counts your unread messages, and **Today's events** lists what's on at your masjid.
 **Show:** Spotlight the Messages card with "2 unread", then the Today's events card.
+
+#### [6.2a] Messages and events
+**Say:** The card lists your latest messages, with a **Flagged** tag on any you flagged. Tap **Open inbox** for all of them, or **New message** to write to your child's teacher, as video 07.3 shows.
+**Show:** Spotlight a message row and its "Flagged" tag, then "Open inbox" and "New message". Don't tap.
+
+#### [6.2b]
+**Say:** Tap an event to open its details. If nothing is planned, the card says **No upcoming events**.
+**Show:** Tap "Family Quran Night": its event page opens. Go back. Cutaway: an events card reading "No upcoming events".
+
+#### [6.2c] Notifications
+**Say:** If your madrasah sends a message as a push notification, your phone shows it too. Video 00.7 shows how to turn notifications on.
+**Show:** Phone frame: a notification banner for "Report cards are ready" slides down over the home. Then the Messages card with the new message at the top.
 
 #### [6.3] Refresh
 **Say:** Pull down from the top at any time to refresh your home.
@@ -142,6 +182,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-17 · manager · "more detailed, under 10 minutes" · 3:25 → 4:50 narration, 8 scenes added: [1.2a] why the home helps, [2.2a] the prayer card without a home masjid (Choose a masjid), [3.1a] your own username and email with Tap to copy, [3.3a] arrows when you have many children, [6.1b] tiles depend on what your masjid and madrasah use, and the unread badge, [6.2a] Messages card (Flagged, Open inbox, New message, 07.3), [6.2b] opening an event and No upcoming events, [6.2c] app notifications (00.7). Checked against origin/master d0604ce7f (mobile-home, identity-card, messages-card, events-card, quick-grid, en.json dash.mobile)
 - 2026-11-06 · panel (user, director, writer, PM, PO) · 6 changes: [1.1] series opening for parents, no "take a tour" idiom, [3.4] and [5.3] "Signed in as" labels, [4.4] points to videos 14.2 and 14.3 by number, [7.2] end tiles by number and title; demo names from the Maple Grove demo world (Maple Grove Masjid and Madrasah, Maryam in Maktab Level 1 A, Hamza in Hifz Class A, Fatima Siddiqui for the teacher-parent shot, Tariq and Yahya Saleh for No Active Enrollments)
 - 2026-11-03 · critic · 6 changes: [1.1] cut "at a glance", [2.1] split into two short sentences, [3.1] says what the count means, [3.3] simpler wording, [7.1] recap includes the new pages, target 4:30 · fold: [6.1a] Parent Portal pages from the Madrasah tile with Class, Subject, Holiday, Grade, Delegations; [6.4] web Dashboard and sidebar
 - 2026-11-03 · validator · checked against master d36d69ed8 · 2 fixes: demo data (Hifz class and Academic Activity needed for [4.4], only Zainab has an enrollment request), [4.2] record Sun–Thu so the right arrow works twice
