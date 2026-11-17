@@ -3,6 +3,7 @@
 Every instruction given to Claude for this video, newest first, with the result.
 Format: date · who · prompt (verbatim or summarised) · outcome / commit.
 
+- 2026-11-17 · Imran · "I want every video to be a bit more detailed but lets keep it under 10 minutes" · 14 scenes added (why, admin-only reports, other Hifz reports, tracker sheet, BULK and email options, Hifz subject mapping, All classes, attendance figures and rate, views and inactive options, by student and by subject, progress by class and subject, more class reports, privacy); narration 2:40 → 5:33, target 4:15 → 8:00 / docs(12.4): add more detail
 - 2026-11-06 · Imran · "do it for all the planned ones now" (panel review, apply clear fixes) · Exam Reports dropped; Payment Reports kept off camera; [3.2], [3.3], [5.3], [6.2] wording; [7.2] end tiles by number; demo names
 - 2026-11-03 · manager · "Decisions via chat" · Payment Module cut until Track 11: [5.4] Payment Reports removed, payment dropped from Covers, flag dropped; target 4:30 to 4:15
 - 2026-11-03 · manager · "use a critic subagent to criticise and find flaws in the script, make it better" · critic pass: 3 changes incl. fold (extra report families in new scene [5.5])
