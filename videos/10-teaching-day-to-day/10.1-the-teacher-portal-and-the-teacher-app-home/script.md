@@ -78,8 +78,8 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Spotlight Class, Subject, Holiday, Grade and Delegations as one group, then Academic Activity and Class Announcements.
 
 #### [2.3b]
-**Say:** Tap any item to open its page. For example, **Class Routine** shows your timetable for the whole week.
-**Show:** Click "Class Routine": Bilal's weekly timetable opens. Back to the sidebar.
+**Say:** Tap any item to open its page. For example, **Class Routine** opens on **My Routine**, your timetable for the week. **View By Class** and **View By Teacher** show the timetable of any class or teacher.
+**Show:** Click "Class Routine": the "My Routine" tab shows Bilal's week. Spotlight the "View By Class" and "View By Teacher" tabs. Back to the sidebar.
 
 ### 3. Portal tiles in the app
 #### [3.1] Madrasah tile
