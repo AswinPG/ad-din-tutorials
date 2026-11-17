@@ -1,7 +1,7 @@
 ---
 id: "10.12"
 title: "Your class roster: student details and contacting parents"
-target: 4:00
+target: 5:30
 prereq:
   - "05.4"
 status: scripted
@@ -26,13 +26,16 @@ Open a section's roster, read a student's details, and call or message their par
 - Message a parent ("Sent through the Ad-Din app", AI rewrite, Undo)
 - Call
 - The class's Bi-Directional Communication Allowed switch
+- Why use the roster (safety details at hand, contact without sharing numbers)
+- Missing details ("Not added", "No phone on file", "No contacts on file for this student.")
+- Writing a good message (2,000 characters at most, one topic, what you'd like the parent to do)
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
 - Demo madrasah "Maple Grove Madrasah" (Premium); teacher Bilal Hussain teaches Class "Maktab Level 1", sections "A" (7 students, capacity 10, so it shows "Open"; 8 or more would already read "Nearly full") and "B" (10 students, capacity 10, so it shows "Nearly full"); a third section "C" he doesn't teach
 - Class "Maktab Level 1" with Bi-Directional Communication Allowed switched on
 - In section A, student "Hana Mirza" (Student ID shown, age 9, Girl, enrolled last September), Medical "Peanut allergy. Carries an EpiPen in her bag.", Special note "Sits near the front; wears glasses."; parent "Noor Mirza" (Mother) with a phone on file (only the last four digits show); emergency contact "Sara Mirza" with a phone
-- One student with no medical or special note, for the "No medical concerns reported" shot
+- One student with no medical or special note, for the "No medical concerns reported" shot; the same student has no gender on file ("Not added") and a parent with no phone ("No phone on file")
 - Mocked AI rewrite reply for the draft in [5.2] (see [5.3]); Send returns success
 - Teacher shown in the app (phone frame); the admin chapter on the web, signed in as the demo madrasah admin Yusuf Rahman
 
@@ -48,6 +51,10 @@ See docs/SCRIPT-FORMAT.md.
 #### [1.1] Opening
 **Say:** In this video for teachers, you'll open your class roster, read what you need to know about each student, and call or message their parents.
 **Show:** Title card: "Your class roster: student details and contacting parents".
+
+#### [1.1a] Why
+**Say:** Before a lesson, a trip or a new activity, you can check who has an allergy or needs extra care. And when you need a parent, you can reach them from the same screen, without asking the office for a phone number.
+**Show:** Phone frame: Hana Mirza's panel with the red Medical box, then the call and message buttons beside Noor Mirza.
 
 #### [1.2]
 **Say:** Your classes and sections are already set up by your madrasah admin. This works the same on the web and in the Ad-Din app.
@@ -80,10 +87,18 @@ See docs/SCRIPT-FORMAT.md.
 **Say:** **Medical** and **Special note** come from the student's profile. Read them before a trip or a new activity. If there's nothing, it says **No medical concerns reported**.
 **Show:** Zoom on the red Medical box and the Special note box. Cut to another student's open panel showing "No medical concerns reported".
 
+#### [3.3a]
+**Say:** When a detail is missing, it says **Not added**. If something important is missing or out of date, tell your madrasah admin, so the student's record can be updated.
+**Show:** On the same student's panel, spotlight Gender "Not added".
+
 ### 4. Call a parent
 #### [4.1] Contacts
 **Say:** Above the details are the student's parents and their emergency contact. To protect privacy, you only see the last four digits of each number.
 **Show:** Back on Hana. Spotlight "Noor Mirza" with "Mother" and "Phone ending …", then "Sara Mirza" with "Emergency".
+
+#### [4.1a]
+**Say:** If a parent has no number, it says **No phone on file**. If a student has no contacts at all, it says **No contacts on file for this student.**
+**Show:** Cut to the other student's panel: a parent row with "No phone on file". Then back to Hana.
 
 #### [4.2] Call
 **Say:** Tap the phone button to call. In the app, your phone's dialer opens with the number ready. On a computer, it opens your calling app.
@@ -97,6 +112,10 @@ See docs/SCRIPT-FORMAT.md.
 #### [5.2] Write it
 **Say:** Type your message in your own words. It's **Sent through the Ad-Din app**, so your own number stays private.
 **Show:** Type: "hana did really well in her reading today, please keep practising at home".
+
+#### [5.2a] A good message
+**Say:** A message can be up to 2,000 characters, but short messages work best. Keep to one topic, and say what you'd like the parent to do, for example practise a passage at home or bring a signed form.
+**Show:** Zoom on the typed draft in the message box.
 
 #### [5.3] Rewrite
 **Say:** Tap **Rewrite** and Ad-Din's AI turns your note into a clear, warm message, keeping the same facts.
@@ -130,6 +149,8 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-17 · manager · "more detailed, under 10 minutes" · 2:48 → 3:46 narration, 4 scenes added: [1.1a] why, [3.3a] Not added and asking the admin to update a record, [4.1a] No phone on file and No contacts on file, [5.2a] writing a good message (maxlength 2000). Checked against origin/master d0604ce7f (no changes in this area)
+
 - 2026-11-06 · panel (user, director, writer, PM, PO) · 2 changes: [6.1] "Signed in as" label for the admin switch; demo names from the Maple Grove demo world (student Hana Mirza, parent Noor Mirza; "Aisha Rahman" is the demo admin's spouse and "Omar" clashed with teacher Omar Khalid)
 - 2026-11-03 · critic · 6 changes: prereq set to 05.4 (coordinator); [1.1] second-person opening; [5.4] no elliptical question, Say covers the second Rewrite tap; [6.1] no elliptical question; [7.1] no "one tap away" idiom; [7.2] end card by number and title
 - 2026-11-03 · validator · checked against master d36d69ed8 · 2 fixes: [2.1] app path (a teacher-only user's Madrasah tile opens the Teacher Portal menu directly, no Teachers Portal tile); section A demo 8/10 would show "Nearly full" (80% rule), now 7/10 so [2.2] shows "Open"
