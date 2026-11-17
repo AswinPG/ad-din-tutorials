@@ -45,14 +45,14 @@ Optional **Caption:** overrides the subtitle text. Translations in i18n/<lang>.m
 See docs/SCRIPT-FORMAT.md.
 -->
 
-
-#### [1.1a] Why it matters
-**Say:** When your website uses the same colour and logo as your posters and newsletters, visitors know straight away that it's really your masjid.
-**Show:** Card: a Maple Grove Masjid poster beside the demo website header, both green with the same logo.
 ### 1. Make it look like your masjid
 #### [1.1] Opening
 **Say:** Your Ad-Din website is switched on. In this video, you make it look like your masjid: colour, logo, banner and links.
 **Show:** Title card: "Brand your website".
+
+#### [1.1a] Why it matters
+**Say:** When your website uses the same colour and logo as your posters and newsletters, visitors know straight away that it's really your masjid.
+**Show:** Card: a Maple Grove Masjid poster beside the demo website header, both green with the same logo.
 
 #### [1.2]
 **Say:** In the sidebar, open **Website**, tap **Masjid Website**, then tap **Settings**. The sections are listed on the left.
