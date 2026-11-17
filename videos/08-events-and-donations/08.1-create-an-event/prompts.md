@@ -3,6 +3,7 @@
 Every instruction given to Claude for this video, newest first, with the result.
 Format: date · who · prompt (verbatim or summarised) · outcome / commit.
 
+- 2026-11-17 · Imran · "I want every video to be a bit more detailed but lets keep it under 10 minutes" · 14 scenes added (why events, list tools, Saving to, required fields, Tickets Available, Clear, no past dates, After salah fields, private needs a group, who is told, inbox and preferences, picture tips, event page counts, Edit sends an update); narration 2:41 → 5:36, target 4:15 → 8:00 / docs(08.1): add more detail
 - 2026-11-06 · Imran · "do it for all the planned ones now" (panel review, apply clear fixes) · 5 changes: [1.2] says whose Premium adding events needs (API checks the admin's own), [4.3] "after a prayer begins" (start = begin time + delay), [5.2] no elliptical question, [7.1] says how followers are told (no idiom), [8.3] names both end tiles by number; demo names match the Maple Grove demo world (and its two events)
 - 2026-11-03 · manager · "Decisions via chat" · 15.3 renamed 'Events: going, interested and sharing': end-card tile updated
 - 2026-11-03 · manager · "use a critic subagent to criticise and find flaws in the script, make it better" · critic pass: 2 changes: [1.1] second person instead of "a masjid admin"; [8.3] Say now names both end-card videos.
