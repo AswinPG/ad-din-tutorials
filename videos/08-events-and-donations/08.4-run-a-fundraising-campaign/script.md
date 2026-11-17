@@ -47,14 +47,14 @@ Optional **Caption:** overrides the subtitle text. Translations in i18n/<lang>.m
 See docs/SCRIPT-FORMAT.md.
 -->
 
-
-#### [1.1a] When to use one
-**Say:** Use a campaign for one cause with a clear goal, such as a repair or a Ramadan appeal. For everyday giving, your donation page is enough; video 08.3 shows it. One campaign per cause keeps each total clear.
-**Show:** Card: "Campaign: one cause, a goal, progress" beside "Donation page: everyday giving (08.3)".
 ### 1. Raise money for a cause
 #### [1.1] Opening
 **Say:** A new roof, an iftar fund, help for a family in need: a campaign tells your community what you're raising money for, and how close you are. In this video, you create one and publish it.
 **Show:** Title card: "Run a fundraising campaign".
+
+#### [1.1a] When to use one
+**Say:** Use a campaign for one cause with a clear goal, such as a repair or a Ramadan appeal. For everyday giving, your donation page is enough; video 08.3 shows it. One campaign per cause keeps each total clear.
+**Show:** Card: "Campaign: one cause, a goal, progress" beside "Donation page: everyday giving (08.3)".
 
 #### [1.2]
 **Say:** Campaigns come with Ad-Din Premium. Donors give through PayPal, so first make a Donate button in your PayPal business account.
