@@ -3,6 +3,7 @@
 Every instruction given to Claude for this video, newest first, with the result.
 Format: date · who · prompt (verbatim or summarised) · outcome / commit.
 
+- 2026-11-17 · Imran · "I want every video to be a bit more detailed but lets keep it under 10 minutes" · 8 scenes added (why, past the target, types, the list and delete, same-name tip, which streams show, gallery captions and other masjids, other masjids' forms); narration 2:01 → 3:46, target 3:30 → 5:30 / docs(15.6): add more detail
 - 2026-11-06 · Imran · "do it for all the planned ones now" (panel review, apply clear fixes) · 6 fixes: no vibration promise, built-in dhikr count on the phone only, no elliptical question, Signed in as label, end tiles by number, Maple Grove names on a member account
 - 2026-11-03 · manager · "use a critic subagent to criticise and find flaws in the script, make it better" · critic pass: 3 wording fixes; fold: Manage Tasbeeh in Covers, Edit/Delete added to [2.5]
 - 2026-11-03 · manager · "use a sub agent to validate the script" · validator pass: 2 fixes (demo data: Astaghfirullah added on camera, second followed masjid)
