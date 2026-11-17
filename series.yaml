@@ -19,6 +19,21 @@ azure:
   voice: en-US-Brian:DragonHDLatestNeural
   rate: ""            # e.g. "-4%"; empty = the voice's own pace
   locales: { en: en-US, ar: ar-SA, ur: ur-PK, bn: bn-BD, ms: ms-MY, id: id-ID }
+# Exact sounds (IPA) for the voices that accept them (Kokoro now; Azure via <phoneme> later). Chosen by Imran by ear
+# on 2026-11-17 from his recording "How to pronounce key words - correction": short vowels, no English "a" as in "cat".
+# Ad-Din = "ud din" with a short i and a small break; masjid = "musjid"; madrasah = "MUD-rasa". Matching is
+# case-insensitive and whole-word; plurals are listed separately. Voices without IPA input keep using pronunciations.
+ipa:
+  en:
+    Ad-Din: ʌd dˈɪn
+    masjid: mˈʌsdʒɪd
+    masjids: mˈʌsdʒɪdz
+    masajid: mˈʌsadʒɪd
+    madrasah: mˈʌdɾasa
+    madrasahs: mˈʌdɾasaz
+    madrasa: mˈʌdɾasa
+    Madressah: mˈʌdɾasa
+    madaris: mˈadaɾis
 languages:
   # One multilingual voice narrates every language: William (2026-11-03), then Brian (2026-11-04). To switch a language
   # back to its native voice, replace its voice with the one in its comment.
