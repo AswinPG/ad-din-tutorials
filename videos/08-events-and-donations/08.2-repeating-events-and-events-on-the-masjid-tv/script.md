@@ -41,14 +41,14 @@ Optional **Caption:** overrides the subtitle text. Translations in i18n/<lang>.m
 See docs/SCRIPT-FORMAT.md.
 -->
 
-
-#### [1.1a] Why repeat
-**Say:** A repeating event keeps every date together. You fill in the form once, each date shows in people's events list, and you can change every date in one go.
-**Show:** Card: one "Tafsir Circle" form on the left, arrows to four Friday event cards on the right.
 ### 1. Events that come back
 #### [1.1] Opening
 **Say:** A weekly Tafsir circle or a monthly family night shouldn't need a new event every time. In this video, you make an event repeat and show it on your masjid's TV screen.
 **Show:** Title card: "Repeating events and events on the masjid TV".
+
+#### [1.1a] Why repeat
+**Say:** A repeating event keeps every date together. You fill in the form once, each date shows in people's events list, and you can change every date in one go.
+**Show:** Card: one "Tafsir Circle" form on the left, arrows to four Friday event cards on the right.
 
 #### [1.2]
 **Say:** Start a new event as usual, with its title, type, category, date and venue. Here, they're already filled in.
