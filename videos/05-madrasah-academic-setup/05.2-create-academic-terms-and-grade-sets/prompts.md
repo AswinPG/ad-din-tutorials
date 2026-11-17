@@ -3,6 +3,7 @@
 Every instruction given to Claude for this video, newest first, with the result.
 Format: date · who · prompt (verbatim or summarised) · outcome / commit.
 
+- 2026-11-17 · Imran · "I want every video to be a bit more detailed but lets keep it under 10 minutes" · 9 scenes added (why terms and grade sets, sorting, good practice and no message, Cancel, Delete Term versus Disable Instead, the Default set, grade set buttons, ranges without gaps, grade list buttons); Jayyid Jiddan now 80 to 89.99; narration 2:14 → 4:15, target 3:30 → 5:30 / docs(05.2): add more detail
 - 2026-11-06 · Imran · "do it for all the planned ones now" (panel review, apply clear fixes) · review panel, 5 changes: [2.2] no longer names red terms that aren't on screen; [4.2] says when to disable (after copying the timetable, as Copy to Terms lists enabled terms only), that Edit Term saves, and that the term moves down in red; [3.1] example name; [5.3] Grade Point example; demo madrasah is Maple Grove / docs(05.2): apply review panel fixes
 - 2026-11-03 · manager · "Decisions via chat" · 'Who needs a seat?' decided (own-Premium check is intended): flag wording updated; script unchanged
 - 2026-11-03 · manager · "use a critic subagent to criticise and find flaws in the script, make it better" · critic pass: 3 changes (opening, need line, end card by number)
