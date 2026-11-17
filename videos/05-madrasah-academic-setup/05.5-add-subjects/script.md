@@ -1,7 +1,7 @@
 ---
 id: "05.5"
 title: Add subjects
-target: 4:00
+target: 5:30
 prereq:
   - "05.4"
   - "03.4"
@@ -23,6 +23,13 @@ Add the subjects each class studies, choose the teachers who can teach them, and
 ## Covers
 - Teacher, Discipline, Group, Strands, Course Code and Credit
 - Mark as Homeroom, Mark as Compulsory (grades 9–12)
+- why: subjects are used in timetables, subject attendance, activities and Hifz marking, and parents see them on the program pages
+- subject list: columns, Add, Edit, Delete (after a confirmation), Import, Export
+- a subject belongs to one class
+- Mark Deduction Per Mistake worked example (100 minus mistakes times the deduction)
+- syllabus: View, Replace, Remove; parents see it (pointer to 05.8)
+- teacher list: Search teachers, Select all, Clear selection, chip cross
+- saving a subject sends no message
 
 ## Demo data
 - Demo madrasah "Maple Grove Madrasah"; the demo admin has Premium
@@ -32,6 +39,7 @@ Add the subjects each class studies, choose the teachers who can teach them, and
 - New subject added on camera: "Quran Hifz" in Hifz Boys, edition "Madani Mushaf", deduction 1 per mistake, teachers Bilal Hussain and Fatima Siddiqui, a small sample PDF as the syllabus
 - The default strands in the Strands tab; Discipline "Science" and Group "Group A" already added
 - For the Grade 10 example: subject "Science", course code "SNC2D", credit 1, class counts per semester
+- Existing subjects in the list before the add, for example "Tajweed" and "Islamic Studies" in Hifz Boys
 
 ## Script
 
@@ -44,6 +52,10 @@ Add the subjects each class studies, choose the teachers who can teach them, and
 **Say:** Your classes, sections and teachers are already in Ad-Din.
 **Show:** Opening card from You'll need.
 
+#### [1.2a] Why it matters
+**Say:** Subjects are used across Ad-Din: in the timetable, in attendance for one subject, in activities and in Hifz marking. Parents also see each subject, its book and its teachers on your program pages.
+**Show:** Back on the opening card; then a quick cut of the Subjects part of the "Hifz Boys" program page (Madrasah / School → Program Details and Subjects).
+
 ### 2. Open Subject
 #### [2.1] The tabs
 **Say:** In the sidebar, open **Admin Portal**, then **Subject**. There are four tabs: **Subject**, **Strands**, **Discipline** and **Group**. On the **Subject** tab, tap **Add**.
@@ -54,22 +66,43 @@ Add the subjects each class studies, choose the teachers who can teach them, and
 **Say:** Type the name under **Enter The Subject Name**, then choose the **Class**. The form changes to fit the class.
 **Show:** Type "Quran Hifz". Pick "Hifz Boys" in Class.
 
+#### [3.1a]
+**Say:** A subject belongs to one class. If two classes study Tajweed, add it once for each class.
+**Show:** Open the Class list; spotlight "Hifz Boys" and "Maktab Level 1". Keep "Hifz Boys".
+
 #### [3.2]
 **Say:** For a religious class, add the book's **Edition** and **Author Name**, and the **Mark Deduction Per Mistake** used when teachers mark recitation.
 **Show:** Type "Madani Mushaf" in Edition. Click the plus once: Mark Deduction Per Mistake shows 1.
 
+#### [3.2a] How the deduction works
+**Say:** A Hifz lesson is marked out of 100, and each mistake takes off this many marks. With 1 per mistake, a student with five mistakes gets 95. With 2, they get 90. Your grade set then turns the mark into a grade.
+**Show:** Zoom on Mark Deduction Per Mistake. Click the plus once more (2), then the minus back to 1.
+**Caption:** Marked out of 100; each mistake takes off this many marks. Five mistakes: 95 with 1, 90 with 2.
+
 #### [3.3]
 **Say:** Under **Add Syllabus**, you can attach a PDF, an image or a document.
 **Show:** Click the upload box; choose the sample PDF. The file card appears.
+
+#### [3.3a]
+**Say:** Parents can open the syllabus from your program pages, as video 05.8 shows. On the file card, you can view the file, replace it, or remove it.
+**Show:** Spotlight the view, replace and delete icons on the file card. Don't click them.
 
 ### 4. Choose the teachers
 #### [4.1]
 **Say:** Under **Teacher**, tick everyone who can teach and grade this subject. In the timetable, only these teachers, plus the section's class teacher, can be picked for it.
 **Show:** Tick "Bilal Hussain" and "Fatima Siddiqui". The count shows "2 selected" and their chips appear.
 
+#### [4.1a]
+**Say:** With many teachers, type in **Search teachers**. **Select all** ticks everyone listed, and **Clear selection** unticks them all. The cross on a chip removes one teacher.
+**Show:** Type "Bil" in Search teachers, then clear it. Spotlight "Select all" and "Clear selection" without clicking. Spotlight the cross on Fatima's chip.
+
 #### [4.2] Save
 **Say:** Tap **Save**. Marks for the subject use the grade set you chose for its class.
 **Show:** Click "Save". A confirmation message; "Quran Hifz" shows in the subject list with its class and teachers.
+
+#### [4.2a] The subject list
+**Say:** The list shows each subject's class, **Teachers Assigned** and **Syllabus**. Select a subject to **Edit** or **Delete** it. **Import** and **Export** bring in or download your subjects as a file. Saving a subject doesn't send a message to anyone.
+**Show:** Spotlight the Class, Teachers Assigned and Syllabus columns. Select "Quran Hifz"; spotlight "Edit" and "Delete"; clear the selection. Spotlight "Import" and "Export".
 
 ### 5. Academic classes
 #### [5.1] Homeroom and strands
@@ -109,6 +142,7 @@ Add the subjects each class studies, choose the teachers who can teach them, and
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-17 · manager · "more detailed, under 10 minutes" · 2:10 → 3:27 narration, 6 scenes added: why ([1.2a]), one class per subject ([3.1a]), how the mark deduction works ([3.2a]), syllabus for parents, view, replace, remove ([3.3a]), teacher search and select all ([4.1a]), the subject list, its buttons and no message ([4.2a])
 - 2026-11-06 · panel (user, director, writer, PM, PO) · 2 changes: [5.4] says why only one teacher (grades 9-12 take a single teacher); demo names match the demo world
 - 2026-11-03 · manager · decisions via chat · 'Who needs a seat?' decided (own-Premium check is intended): flag wording updated; script unchanged
 - 2026-11-03 · critic · 5 changes: [1.1] second-person opening; [2.2] merged into [2.1] (thin scene); [5.2] Say names the Cancel the Show does; [5.4] Say covers Save, shorter; [7.2] end card by number and title
