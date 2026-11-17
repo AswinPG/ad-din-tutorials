@@ -61,10 +61,6 @@ Add sections to a class, each with its own class teacher and capacity, and read 
 **Say:** A new class has no sections yet. Tap **Add**.
 **Show:** The message "No sections in this class yet". Click "Add".
 
-#### [2.2a] Search and more
-**Say:** In a class with many sections, type in **Search sections** to find one. The three dots beside **Add** hold **Export** and **Import**, to download your sections or bring them in from a file.
-**Show:** Quick cut on "Maktab Level 1": type "B" in Search sections; only Section B shows; clear it. Click the three dots: spotlight "Export" and "Import". Close the menu.
-
 ### 3. Add a section
 #### [3.1] Add Class Section
 **Say:** In **Add Class Section**, the class is already filled in. Choose the **Class Teacher** who looks after this section.
@@ -94,6 +90,10 @@ Add sections to a class, each with its own class teacher and capacity, and read 
 #### [4.1] How full it is
 **Say:** In a class with students, each card shows how many students a section has and how many it can hold. It says **Open** while there's room, and **Nearly full** when it's eighty percent full. If it's too full, it shows by how many.
 **Show:** Switch Select Class to "Maktab Level 1". Spotlight "15 / 20 Open" on Section A, then "Nearly full" on Section B, then "Over by 2" on Section C.
+
+#### [4.1a] Search and more
+**Say:** In a class with many sections, type in **Search sections** to find one. The three dots beside **Add** hold **Export** and **Import**, to download your sections or bring them in from a file.
+**Show:** Type "B" in Search sections; only Section B shows; clear it. Click the three dots: spotlight "Export" and "Import". Close the menu.
 
 #### [4.2] Section options
 **Say:** Tap the three dots on a card for more: **View students**, **Add students**, **Edit Class Section** to rename it or change the teacher or capacity, and **Delete**.
@@ -136,7 +136,7 @@ Add sections to a class, each with its own class teacher and capacity, and read 
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
-- 2026-11-17 · manager · "more detailed, under 10 minutes" · 2:01 → 3:44 narration, 8 scenes added: why ([1.2a]), search and Export/Import ([2.2a]), what the class teacher does ([3.1a]), naming and capacity as a guide ([3.2a]), no message and Cancel ([3.3a]), when a section can be deleted ([4.2a]), Search students and Medical/Note ([5.1a]), Remove students and Move to ([5.3a]); [4.1] now shows "Over by 2"
+- 2026-11-17 · manager · "more detailed, under 10 minutes" · 2:01 → 3:44 narration, 8 scenes added: why ([1.2a]), search and Export/Import ([4.1a]), what the class teacher does ([3.1a]), naming and capacity as a guide ([3.2a]), no message and Cancel ([3.3a]), when a section can be deleted ([4.2a]), Search students and Medical/Note ([5.1a]), Remove students and Move to ([5.3a]); [4.1] now shows "Over by 2"
 - 2026-11-06 · panel (user, director, writer, PM, PO) · 5 changes: [3.2] "Every box is required"; [4.1] Say mentions the switch to a class with students, plain "eighty percent full" and "too full"; [5.1] "contact details"; demo names match the demo world (Maple Grove, Bilal Hussain, Yahya Saleh)
 - 2026-11-03 · manager · decisions via chat · 'Who needs a seat?' decided (own-Premium check is intended): flag wording updated; script unchanged
 - 2026-11-03 · manager · decisions via chat · Planned features not in the app dropped: Alumni list removed from Covers ('Active and inactive students in a section', as [5.2] shows), flag removed
