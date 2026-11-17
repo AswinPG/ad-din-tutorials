@@ -1,7 +1,7 @@
 ---
 id: "02.6"
 title: Billing, cards and invoices
-target: 4:00
+target: 4:30
 prereq:
   - "02.3"
 status: scripted
@@ -21,12 +21,17 @@ Read your organisation's balance, choose card or invoice billing with the right 
 
 ## Covers
 - Balance, card vs invoice, billing address, view invoices, “You have unpaid invoices / Pay now”
+- Why and when to choose card or invoice; the Settings button; the missing-field messages
+- Every part of an invoice (Paid or Pending, number, dates, Bill to, lines, tax); No invoices yet
+- The Subscription portal row when your organisation has an add-on
 
 ## Demo data
 - Demo world (engine/demo-world.md): the demo admin of "Maple Grove Madrasah" with yearly seats, card ending 4242 on file, Current Account Balance C$ 0.00
 - Stripe test mode, test card 4242 4242 4242 4242 (out of focus) and a demo billing address in Ontario, Canada
 - One upcoming invoice with a due date; three past invoices (two Closed, one Pending with a Stripe test hosted invoice link)
 - The Pending invoice makes the "You have unpaid invoices" banner show and "View invoices" turn red
+- The madrasah has an active add-on (website), so the "Subscription portal" row shows, and reads "Pay unpaid invoices online" while the Pending invoice is open; its Stripe page is not opened on camera
+- For [4.2a]: the linked "Maple Grove Masjid", which has no invoices yet
 
 ## Script
 <!--
@@ -41,6 +46,10 @@ See docs/SCRIPT-FORMAT.md.
 **Say:** Ad-Din bills your organisation for its Premium seats and add-ons. In this video for admins, you'll see your balance, choose to pay by card or by invoice, and find every invoice.
 **Show:** Title card: "Billing, cards and invoices".
 
+#### [1.1a] Why it matters
+**Say:** Your treasurer can find every invoice here for your records. Keeping the billing details right also means the tax is correct, and that your seats and services don't stop.
+**Show:** Card: "Every invoice in one place · Correct tax · No interruptions".
+
 #### [1.2]
 **Say:** You'll need to be an admin of the organisation. Billing is on the same page where you buy seats.
 **Show:** Opening card from You'll need.
@@ -53,6 +62,10 @@ See docs/SCRIPT-FORMAT.md.
 #### [2.2] Balance
 **Say:** The top card shows your organisation's name and address, and the **Current Account Balance**. Any credit on your account appears here and goes toward future charges.
 **Show:** Spotlight the account card; zoom on "Current Account Balance".
+
+#### [2.2a]
+**Say:** The **Settings** button on that card opens the billing settings too.
+**Show:** Spotlight "Settings" next to "Current Account Balance".
 
 ### 3. Card or invoice
 #### [3.1] Billing settings
@@ -72,6 +85,14 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** Select "Via Invoice": "Please provide your billing details." Choose Canada, then Ontario, type a demo postal code. Click "Save".
 **Caption:** Via Invoice: Ad-Din raises an invoice, due the next day, and you pay it. Choose your country (in Canada, also province and postal code), then Save.
 
+#### [3.4a] If something is missing
+**Say:** If you leave the country, province or postal code empty, the field asks for it, and **Save** won't go ahead until it's filled in.
+**Show:** From a take with Canada chosen and no province: spotlight "Please select your state." under Select your State.
+
+#### [3.4b] Which one to choose
+**Say:** Choose a card if you want payments to happen by themselves. Choose an invoice if your committee approves each payment, or your treasurer pays them in one batch.
+**Show:** Card: "Card → automatic · Invoice → you pay each one".
+
 #### [3.5]
 **Say:** Switching to invoice removes the saved card. You can switch back and add a card at any time.
 **Show:** The Billing column now shows no card line. Reopen the sheet, choose "Via Credit Card", and show "Add card".
@@ -85,9 +106,17 @@ See docs/SCRIPT-FORMAT.md.
 **Say:** Tap **View invoices** for your history. Each invoice shows its number, date, amount, and whether it's **Closed** or **Pending**. **Pending** means it still needs to be paid.
 **Show:** Click "View invoices". The "Past Invoice" list: spotlight the badges.
 
+#### [4.2a] No invoices yet
+**Say:** A new organisation has no invoices at first. The list then says **No invoices yet**.
+**Show:** Quick cut: View invoices on "Maple Grove Masjid": "No invoices yet" and "Invoices will appear here once they are generated."
+
 #### [4.3] Open one
 **Say:** Tap an invoice to open it. You'll see each line, the tax, and the **Amount due**. Tap **Print** for a paper or PDF copy.
 **Show:** Click a Closed invoice. Spotlight the lines, Subtotal, Tax and Amount due. Click "Print"; the print dialog opens; cancel it. Click "Cancel".
+
+#### [4.3a] What's on an invoice
+**Say:** At the top, each invoice says **Paid** or **Pending**, with its number, the **Date of issue** and the **Date due**. **Bill to** uses your organisation's name and address, so keep them right, as video 03.1 shows.
+**Show:** Reopen the Closed invoice: spotlight "Paid", "Invoice Number", "Date of issue", "Date due", then the "Bill to" block. Don't zoom on "Payable to".
 
 ### 5. Unpaid invoices
 #### [5.1] The warning
@@ -102,12 +131,17 @@ See docs/SCRIPT-FORMAT.md.
 **Say:** Pay promptly. While an invoice is unpaid, you can't change your seats, and your subscriptions can become inactive.
 **Show:** Card: "Unpaid invoice → seats locked → subscriptions may stop".
 
+#### [5.3a] The subscription portal
+**Say:** If your organisation has an add-on, the Billing column also shows **Subscription portal**. It opens Stripe's own page, where you can manage your billing in one place. While an invoice is unpaid, it reads **Pay unpaid invoices online**.
+**Show:** Spotlight the "Pay unpaid invoices online" row and its "Manage everything in one place" line. Don't click.
+
 ### 6. Next
 #### [6.1] Close
 **Say:** That's billing: your balance, how you pay, and every invoice in one place. Next, give your seats to the people who need them in video 02.4, or add extra services in video 02.5.
 **Show:** End card with two tiles: "02.4 Give seats to parents, teachers and staff" and "02.5 Add-on services".
 
 ## Review log
+- 2026-11-17 · manager · "more detailed, under 10 minutes" · 2:39 → 3:55 narration, 7 scenes added: [1.1a] why billing details matter, [2.2a] the Settings button, [3.4a] missing country, province or postal code, [3.4b] when to choose card or invoice, [4.2a] No invoices yet, [4.3a] what's on an invoice (Paid or Pending, dates, Bill to from your organisation's details), [5.3a] the Subscription portal row
 <!-- Newest first: date, who, what was asked, what changed. -->
 - 2026-11-06 · panel (user, director, writer, PM, PO) · 6 changes: [3.3] says what Stripe is, [3.3] and [5.2] crop Stripe's test-mode badge, [3.4] says an invoice is due the next day (code: DaysUntilDue = 1, decision 15) and "province" under Select your State, Caption kept in step, [4.2] says what Pending means, demo names from the Maple Grove demo world
 - 2026-11-03 · critic · 2 changes: [1.1] second-person opening, Premium seats, [6.1] Say names both end tiles
