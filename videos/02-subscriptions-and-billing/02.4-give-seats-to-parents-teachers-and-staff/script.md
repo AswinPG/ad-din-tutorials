@@ -1,7 +1,7 @@
 ---
 id: "02.4"
 title: Give seats to parents, teachers and staff
-target: 4:00
+target: 5:00
 prereq:
   - "02.3"
 status: scripted
@@ -22,6 +22,9 @@ Know who needs a seat, turn on Family Subscription sharing if you want it, give 
 
 ## Covers
 - Allocate Subscription on a person’s profile, Family Subscription sharing, who needs a seat
+- Why give seats; the same steps on a masjid's user list; people who already have Premium; choosing a plan
+- What happens next (Premium at once, expiry follows your plan) and what can stop it (not enough seats, an unpaid invoice)
+- When someone leaves
 
 ## Demo data
 - Demo world (engine/demo-world.md): the demo admin Yusuf Rahman (with a seat) of "Maple Grove Madrasah", which has Yearly 3 of 20 used and Monthly 0 of 10 used
@@ -29,6 +32,8 @@ Know who needs a seat, turn on Family Subscription sharing if you want it, give 
 - Parent tab: three parents with "No Subscription" (Samir Karim, Noor Mirza, Adam Nasser), each linked to a spouse and their child (Zaid Karim, Hana Mirza, Ibrahim Nasser); one parent already "Yearly" (Rania Haddad)
 - After allocation: the three parents show "Yearly", their linked family members show "Family"
 - Teacher tab: teacher Omar Khalid with a Yearly organisation seat (no linked family), and teacher Fatima Siddiqui on "No Subscription"
+- For [4.3a]: one take with Rania Haddad (already Yearly) ticked too, so the confirm box shows the "no changes will be made" line
+- "Maple Grove Masjid" user list for the quick cut in [4.1a]
 - Samir Karim's own account for the closing shot ("Provided by your organization")
 
 ## Script
@@ -43,6 +48,10 @@ See docs/SCRIPT-FORMAT.md.
 #### [1.1] Opening
 **Say:** In this video for admins, you'll give your organisation's Premium seats to the people who need them, and see how one seat can cover a whole family.
 **Show:** Title card: "Give seats to parents, teachers and staff".
+
+#### [1.1a] Why give seats
+**Say:** For example, Maple Grove Madrasah buys seats once and gives them to its teachers and to parents. Then every family can use the **Parent Portal**, and nobody has to buy Premium alone.
+**Show:** Card: "Maple Grove Madrasah: 20 yearly seats → teachers and parents".
 
 #### [1.2]
 **Say:** You'll need to be an admin, with seats already bought on the **Subscription Management** page.
@@ -79,6 +88,10 @@ See docs/SCRIPT-FORMAT.md.
 **Say:** Now open **User Management** and tap **Open users** on your masjid or madrasah. The **Subscription Plan** column shows who has Premium, and **No Subscription** shows in red.
 **Show:** Sidebar → Admin Portal → User Management → Open users on "Maple Grove Madrasah". Spotlight the Subscription Plan column.
 
+#### [4.1a] At a masjid
+**Say:** A masjid's user list has the same **Manage Subscription** button, so the steps are the same.
+**Show:** Quick cut: User Management → Open users on "Maple Grove Masjid"; spotlight "Manage Subscription".
+
 #### [4.2] Select people
 **Say:** Pick a tab, such as **Parent** or **Teacher**, and tick the people who need a seat. Then tap **Manage Subscription**.
 **Show:** Click the Parent tab. Tick Samir Karim, Noor Mirza and Adam Nasser. Click "Manage Subscription"; the "Subscription" box opens.
@@ -87,13 +100,29 @@ See docs/SCRIPT-FORMAT.md.
 **Say:** Tap **Allocate**. Ad-Din shows how many yearly and monthly seats are available, and who's already subscribed.
 **Show:** Click "Allocate". Spotlight "Yearly Subscriptions Available : 17" and the list with "Not Subscribed" next to each name.
 
+#### [4.3a] Already subscribed
+**Say:** If you tick someone who already has Premium, Ad-Din makes no change to their account and uses no seat for them.
+**Show:** Spotlight the line "You have selected 1 subscribed accounts, no changes will be made to these accounts." in the confirm box (a take with Rania Haddad also ticked).
+
 #### [4.4]
 **Say:** Under **Select a Plan**, choose **Monthly** or **Yearly**. Tap **Apply**, check the summary, and tap **Confirm**. This uses seats you have already bought, so nothing more is charged.
 **Show:** Select "Yearly"; click "Apply". The "Allocate Subscriptions !" box shows the count; click "Confirm". Each row turns to "Subscribed"; click "Done".
 
+#### [4.4a]
+**Say:** If you tap **Apply** without choosing a plan, Ad-Din asks you to choose one.
+**Show:** Spotlight "Please specify the Plan" under Select a Plan (from the take before a plan is chosen).
+
+#### [4.4b] What happens next
+**Say:** The seats work at once. Each person's Premium lasts as long as your organisation's plan. Let them know, so they can open their portal.
+**Show:** Spotlight the three "Subscribed" rows, then click "Done".
+
 #### [4.5] Not enough seats
 **Say:** If there aren't enough seats, Ad-Din tells you, and **Get More** takes you to buy more.
 **Show:** Quick cut: the "Get Subscription !" box with "Get More". Close it.
+
+#### [4.5a] An unpaid invoice
+**Say:** While your organisation has an unpaid invoice, Ad-Din can't give out seats. It says that your subscriptions are inactive because of a pending invoice. Video 02.6 shows how to pay it.
+**Show:** Card with the message "Your subscriptions are inactive due to a pending invoice. Please resolve the issues to continue."
 
 ### 5. Check or remove a seat
 #### [5.1] In the list
@@ -112,6 +141,10 @@ See docs/SCRIPT-FORMAT.md.
 **Say:** To take seats back from several people, tick them in the list, tap **Manage Subscription**, then **De-Allocate**, and tap **Remove Subscription**.
 **Show:** Back in the list: tick two rows, click "Manage Subscription", then "De-Allocate"; spotlight "Remove Subscription". Close the box without clicking it.
 
+#### [5.3b] When someone leaves
+**Say:** When a teacher or parent leaves a madrasah, take their seat back here, or deactivate them as video 03.4 shows. If that was their only role, the seat goes back to your organisation.
+**Show:** Card: "Leaves → take the seat back (here) or deactivate (03.4) → seat returns".
+
 ### 6. Done
 #### [6.1] What they see
 **Say:** The people you chose now have Premium. On their own profile, the **Subscription** tab says **Provided by your organization**.
@@ -122,6 +155,7 @@ See docs/SCRIPT-FORMAT.md.
 **Show:** End card with two tiles: "02.5 Add-on services" and "02.6 Billing, cards and invoices".
 
 ## Review log
+- 2026-11-17 · manager · "more detailed, under 10 minutes" · 3:07 → 4:18 narration, 7 scenes added: [1.1a] why give seats (Maple Grove example), [4.1a] the same button on a masjid's user list, [4.3a] people who already have Premium are left as they are, [4.4a] choose a plan before Apply, [4.4b] what happens next (at once, expiry follows your plan), [4.5a] an unpaid invoice stops allocation, [5.3b] when someone leaves
 <!-- Newest first: date, who, what was asked, what changed. -->
 - 2026-11-07 · manager · panel decisions, "All recommended" · [2.1] masjid admins: donations, reports and user list (Events has no Premium check)
 - 2026-11-06 · panel (user, director, writer, PM, PO) · 9 changes: [2.3] plain sentences (no "nor does"), [3.1] and [4.1] say masjid or madrasah, [3.3] points to 06.4 for linking a family, [4.4] says nothing more is charged, [5.3] says Cancel Subscription has no second question (code: subscription-detail.component.ts), new [5.3a] De-Allocate for several people, [6.1] "Signed in as" label, demo names from the Maple Grove demo world
