@@ -3,6 +3,7 @@
 Every instruction given to Claude for this video, newest first, with the result.
 Format: date · who · prompt (verbatim or summarised) · outcome / commit.
 
+- 2026-11-17 · Imran · "I want every video to be a bit more detailed but lets keep it under 10 minutes" · 10 scenes added (why, Juz list, surah heading and Sajdah, player buttons, reciters, Tajweed guide, Mushaf page and Juz, Mushaf Tajweed, removing bookmarks and Copy, saved on this phone); narration 2:01 → 4:01, target 3:45 → 6:00 / docs(15.5): add more detail
 - 2026-11-06 · Imran · "do it for all the planned ones now" (panel review, apply clear fixes) · 6 fixes: "In this video" opening, points to 15.8 by number, no elliptical questions, end tiles by number, Quran self-hosted data flag
 - 2026-11-03 · manager · "use a critic subagent to criticise and find flaws in the script, make it better" · critic pass: 5 fixes; [3.4] no longer overlaps 15.8, end card points to 15.8
 - 2026-11-03 · manager · "use a sub agent to validate the script" · validator pass: 1 fix (demo data: no last-read position)
