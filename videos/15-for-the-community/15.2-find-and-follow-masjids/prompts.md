@@ -3,6 +3,7 @@
 Every instruction given to Claude for this video, newest first, with the result.
 Format: date · who · prompt (verbatim or summarised) · outcome / commit.
 
+- 2026-11-17 · Imran · "I want every video to be a bit more detailed but lets keep it under 10 minutes" · 8 scenes added (why, location unavailable, count, distance and direction arrow, no results, call, email and copy, madrasah details and Claim Admin Role, what following does, home masjid unchanged, staff search and facility capacity); narration 2:06 → 4:04, target 3:30 → 5:30 / docs(15.2): add more detail
 - 2026-11-06 · Imran · "do it for all the planned ones now" (panel review, apply clear fixes) · 5 fixes: opening and two scenes without elliptical questions, end tiles by number, Signed in as label, Maple Grove names (Cedar Hill Masjid, Riverbend Quran Academy) on a member account
 - 2026-11-03 · manager · "Decisions via chat" · 15.3 renamed 'Events: going, interested and sharing': end-card tile updated
 - 2026-11-03 · manager · "use a critic subagent to criticise and find flaws in the script, make it better" · critic pass: 3 fixes; fold: About Masjid, Staff List, Facility Details from the Masjid tile; target 3:30
