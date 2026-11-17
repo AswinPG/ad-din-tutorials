@@ -1,7 +1,7 @@
 ---
 id: "15.7"
 title: Become a volunteer
-target: 2:30
+target: 3:30
 prereq:
   - "00.5"
 status: scripted
@@ -19,6 +19,8 @@ Sign up as a volunteer at your home masjid in the Ad-Din app and tick the skills
 
 ## Covers
 - Become a volunteer, add skills
+- Why sign up (admins see volunteers, message them and invite them to events); the confirmation email
+- Paging the skills table, No skills found; after you stop (Successfully removed as volunteer, no volunteer-only messages)
 
 ## Demo data
 - A community member account with no admin role (not the admin demo account Yusuf Rahman), home masjid "Maple Grove Masjid", personal info complete (salutation, first and last name, mobile, email), not yet a volunteer
@@ -35,6 +37,10 @@ Sign up as a volunteer at your home masjid in the Ad-Din app and tick the skills
 #### [1.2]
 **Say:** You'll volunteer at your home masjid. Make sure your salutation, name, mobile and email are filled in on your profile first.
 **Show:** Opening card from You'll need.
+
+#### [1.2a] Why sign up
+**Say:** When you sign up, your masjid's admins can see who is ready to help and what each person can do. They can send messages just to volunteers, and invite them to events.
+**Show:** Card: "You → Volunteers list at Maple Grove Masjid → messages and event invitations for volunteers".
 
 ### 2. Open Volunteering
 #### [2.1]
@@ -54,10 +60,14 @@ Sign up as a volunteer at your home masjid in the Ad-Din app and tick the skills
 **Say:** Ad-Din asks you to confirm. Tap **Yes, Bismillah!**
 **Show:** Zoom on the message, then tap "Yes, Bismillah!". Toast "Successfully registered as volunteer". The heading changes to "Your volunteer status".
 
+#### [3.2a] A confirmation email
+**Say:** Ad-Din also sends you an email to say you've been added as a volunteer at Maple Grove Masjid.
+**Show:** Card: an envelope icon with "Volunteer at Maple Grove Masjid". No real inbox.
+
 #### [3.3]
 **Say:** If your profile is missing something, Ad-Din takes you to your personal info to finish it. Then come back and turn the switch on again.
 **Show:** Card: "Please complete your personal profile section" with an arrow to the "Personal info" tab. No live demo.
-**Caption:** Profile incomplete? Finish your personal info, then turn the switch on again.
+**Caption:** If your profile is incomplete, finish your personal info, then turn the switch on again.
 
 ### 4. Add your skills
 #### [4.1]
@@ -68,10 +78,18 @@ Sign up as a volunteer at your home masjid in the Ad-Din app and tick the skills
 **Say:** Each tick is saved straight away. Untick a skill when you can no longer help with it.
 **Show:** Untick "First aid": toast "Successfully updated skill". Tick it again.
 
+#### [4.2a] A long list
+**Say:** The table shows five skills at a time. Use the page buttons at the bottom to see the rest, or show ten at a time. If your masjid hasn't added any skills yet, Ad-Din says **No skills found**. Ask the masjid office which help it needs.
+**Show:** Spotlight the paging controls and the page-size list under the table, without changing them.
+
 ### 5. Taking a break
 #### [5.1]
 **Say:** To stop volunteering for a while, turn the switch off and tap **Yes, remove me**. Your skills stay saved, so you can turn it on again later.
 **Show:** Tap the switch: "Stop volunteering?" box. Spotlight "Yes, remove me", then tap "Cancel" so the demo stays a volunteer.
+
+#### [5.1a] After you stop
+**Say:** When you tap **Yes, remove me**, Ad-Din shows **Successfully removed as volunteer**, and you no longer get messages sent only to volunteers.
+**Show:** Card: "Yes, remove me → Successfully removed as volunteer → skills kept". The demo stays a volunteer.
 
 ### 6. Next
 #### [6.1] Close
@@ -79,6 +97,7 @@ Sign up as a volunteer at your home masjid in the Ad-Din app and tick the skills
 **Show:** End card with two tiles: "15.3 Events: going, interested and sharing" and "00.5 Your profile, notifications and GUID".
 
 ## Review log
+- 2026-11-17 · manager · "more detailed, under 10 minutes" · 1:26 → 2:15 narration, 4 scenes added: [1.2a] why sign up (admins see volunteers, message them, invite them to events), [3.2a] the confirmation email, [4.2a] paging the skills table and No skills found, [5.1a] after you stop (Successfully removed as volunteer). [3.3] Caption no longer an elliptical question. Checked against origin/master d0604ce7f (manage-skills; MasjidController UpdateMyVolunteerStatus and SendExistingVolunteerAddedNotification, email only; MessageUserTypes and InvitedUserTypes Volunteers)
 - 2026-11-06 · panel (user, director, writer, PM, PO) · 4 changes: You'll need and [1.2] add the salutation, which the volunteer check also needs (manage-skills.component.ts 143-148); [1.1] comma and a "Signed in as: a community member" label; [6.1] names both end tiles by number and title; demo names match the Maple Grove demo world, on a member account
 - 2026-11-03 · manager · decisions via chat · 15.3 renamed 'Events: going, interested and sharing': end-card tile updated
 - 2026-11-03 · critic · 2 changes: [5.1] "step back" idiom replaced with a plain sentence, [4.2] simpler wording
