@@ -3,7 +3,7 @@
 Every user-facing feature of the Ad-Din web app and mobile app, and the planned tutorial video that covers it.
 
 - **Source:** origin/master at commit `d36d69ed8` (2026-11-01, "October 2026 - staff attendance release fixes, security fixes"), read-only export of `AdDin.Angular/src/app`. Mobile shell: `C:\Fantacode\Ad-DinMobileApp` working tree (branch `fix/ios-workload-version`, 2026-10-31), read only.
-- **Date:** 2026-11-03. Updated 2026-11-07 with six rows from the approved panel decisions ("All recommended"), checked on `7f0e6bf72`.
+- **Date:** 2026-11-03. Updated 2026-11-07 with six rows from the approved panel decisions ("All recommended"), checked on `7f0e6bf72`. Updated 2026-11-17 when every script gained more detail (Staff Attendance rows; tracks 10, 12, 14, 15 checked on `d0604ce7f`).
 - **Method:** every entry and child in `services/menu.data.ts`, every route in `modules/routes.ts` and the 100 `*routes.ts` / `*routing*.ts` files, the portal tile lists in `routes.ts`, tab lists and button labels in the main page templates, `assets/i18n/en.json`, the native bridge (`services/native-bridge.service.ts` and every `isNativeMobile()` / `openNative()` call), and the MAUI shell's `NativePageRouter.cs` and `PushNotificationBootstrap.cs`. The graphify graph was used only to check that no feature folder was skipped. Each video's `## Covers` list and front matter were matched against what was found. Covers labels were checked by searching the code for the exact text (see the last section).
 - **What was not done:** nothing was run, so no page was opened. A row says a feature exists because its route, menu entry or template exists and something links to it. Where nothing seems to link to a route, the note says so.
 
@@ -211,14 +211,14 @@ Added as its own table because it serves both kinds of organisation.
 | Zones (circle or polygon) | `/attendance/admin/zones` | Org Admin | 13.2 | |
 | Staff, Shifts (templates, class routine term), Link staff | `/attendance/admin/staff`, `shifts` | Org Admin | 13.3, 16.2 | |
 | Settings (pay period, grace band, breaks, holidays, payroll email, reasons, leave) | `/attendance/admin/settings` | Org Admin | 13.4 | |
-| Settings: Location and privacy → Location retention (6, 12 or 24 months) | `/attendance/admin/settings` → Location and privacy | Org Admin | 13.4 | Added 2026-11-07 (panel decision 30). The same group's Location accuracy limit and Rollout pause for location cards are in no video and not yet decided |
-| Documents for your staff (collection notice and the org's own policy) | Settings → documents; Services quick link | Org Admin | — | (b) Fold into 13.4 (or 13.1, where the quick link is) |
+| Settings: Location and privacy → Location retention (6, 12 or 24 months) | `/attendance/admin/settings` → Location and privacy | Org Admin | 13.4 | Location retention, Location accuracy limit and Rollout pause for location cards, all in 13.4 since 2026-11-17 |
+| Documents for your staff (collection notice and the org's own policy) | Settings → documents; Services quick link | Org Admin | 13.1, 13.4 | Shown since 2026-11-17 |
 | Review (Approve, Adjust, Reject, Dismiss) | `/attendance/admin/queue` | Org Admin | 13.5 | |
 | Periods: hours grid, Lock, CSV / PDF, versions, unlock within 15 days | `/attendance/admin/periods`, `periods/:period` | Org Admin | 13.6 | |
-| Audit Trail | `/attendance/admin/audit` | Org Admin | — | (b) Fold into 13.6 (one scene: who changed what, after a lock) |
+| Audit Trail | `/attendance/admin/audit` | Org Admin | 13.6 | Shown since 2026-11-17 |
 | Staff home: welcome notice, check in, breaks, check out, reason sheet, location | `/attendance`, `/attendance/welcome`; app home attendance card | Staff, Teacher | 13.7 | |
 | Timesheet day view, Time off, Pay periods | `/attendance/timesheet`, `day/:date`, `time-off`, `pay-periods` | Staff, Teacher | 13.8 | |
-| Correction (fix a day) sheet | Day view → correction sheet | Staff, Teacher | — | (b) Fold into 13.8. The `/attendance/day/:date/fix` route itself still shows "This screen is not available yet"; the sheet on the day view is the real flow |
+| Correction (fix a day) sheet | Day view → correction sheet | Staff, Teacher | 13.8 | Shown since 2026-11-17 |
 | Legacy teacher-attendance register | Settings → legacy | — | — | (c) Left out on purpose |
 | Clock-in card on the app home | `mobile/clockin-card` | — | — | (c) Unused placeholder, left out on purpose |
 
