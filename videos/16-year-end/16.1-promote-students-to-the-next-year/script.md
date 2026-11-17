@@ -1,7 +1,7 @@
 ---
 id: "16.1"
 title: Promote students to the next year
-target: 3:30
+target: 4:30
 prereq:
   - "06.4"
 status: scripted
@@ -18,6 +18,11 @@ Move a whole class section up to its next class at the end of the year.
 ## Covers
 - Migration
 - Teacher's read-only Migration list (Teacher Portal → Migration)
+- why: a whole section at once instead of one by one (06.5 for one student)
+- Select Year filter and Export (needs a year)
+- rules: the next section must be empty and different; the order to work in
+- Back, Cancel and the messages for empty boxes, an empty reason and no eligible students
+- what happens next: the old class stays on record, no message is sent (pointer to 07.3)
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
@@ -25,6 +30,7 @@ Move a whole class section up to its next class at the end of the year.
 - Class "Maktab Level 1", section "A" with eight active demo students (made-up names and usernames)
 - Class "Maktab Level 2" with an empty section "A" (the destination)
 - One earlier migration in the list from last year, so the list and the Select Year filter have data
+- For the cut-in in [3.2a] only: a world override in which "Maktab Level 2" section "A" still has students, so the preview is refused with the server's message
 - Teacher account Omar Khalid for scene [6.2a] (Teacher Portal → Migration shows the same list, read-only)
 
 ## Script
@@ -44,10 +50,18 @@ See docs/SCRIPT-FORMAT.md.
 **Say:** This is for madrasah admins. Your students are enrolled, and next year's class and section already exist.
 **Show:** Opening card.
 
+#### [1.2a] Why use it
+**Say:** One migration moves a whole section in a few steps, so you don’t have to change each student’s class. To move just one student, use video 06.5 instead.
+**Show:** Opening card stays; then a quick cut of the Migrations list.
+
 ### 2. Open Migration
 #### [2.1] Migrations
 **Say:** In the **Admin Portal**, open **Migration**. The **Migrations** list shows every move made so far.
 **Show:** Sidebar → Admin Portal → Migration. Spotlight last year's row.
+
+#### [2.1a] Year and Export
+**Say:** Under **Filters**, **Select Year** shows the moves of one year. To keep a copy, choose a year and tap **Export**. Without a year, Ad-Din says **Select a year and try again.**
+**Show:** Expand Filters, pick last year in Select Year; the list narrows. Spotlight "Export". Clear the filter.
 
 #### [2.2]
 **Say:** To start a new one, tap **Add Migration**.
@@ -62,10 +76,23 @@ See docs/SCRIPT-FORMAT.md.
 **Say:** Under **Promote to**, choose the **Next Class** and **Next Class Section**. Then tap **Next**.
 **Show:** Pick "Maktab Level 2" and section "A". Click "Next".
 
+#### [3.2a] The next section must be empty
+**Say:** The next section must be empty, and it can’t be the section you move from. If it still has students, Ad-Din stops at the preview and says so. That’s why you start with your highest class and work down.
+**Show:** Cut-in with the world override: the preview is refused and the server's message shows. Back to the normal take.
+**Caption:** The next section must be empty, so start with your highest class and work down.
+
+#### [3.2b] Empty boxes
+**Say:** If a box is empty, it says **Select a valid Class** or **Select a valid Class Section** in red. **Back** returns to the step before, and **Cancel** on the first step leaves without changing anything.
+**Show:** Earlier take: click "Next" with Next Class Section empty; the red message shows. Spotlight "Cancel".
+
 ### 4. Step 2: Eligibility
 #### [4.1] Transfer
 **Say:** **Migration Type** starts on **Exam Based**. Choose **Transfer**. It moves every active student in the section. Add a **Reason for migration**, such as end of year, and tap **Preview Migration**.
 **Show:** Select "Transfer". Type "End of year promotion" in Reason for migration. Click "Preview Migration".
+
+#### [4.1a] Checks
+**Say:** The reason is required: without it, Ad-Din says **Please specify the reason for the migration**. It’s shown in the Migrations list later, so write something your team will understand. If no student can move, you see **No eligible students found**.
+**Show:** Earlier take: clear the reason, click "Preview Migration"; the red message shows. Type the reason again.
 
 ### 5. Step 3: Preview and migrate
 #### [5.1] Check the list
@@ -85,6 +112,10 @@ See docs/SCRIPT-FORMAT.md.
 **Say:** Expand a row to see exactly which students moved. Repeat for each class, starting with the highest class, so students who just moved up aren't moved again.
 **Show:** Expand the new row: Roll Number, Student and Username.
 
+#### [6.2b] What changes
+**Say:** Their old class stays on record, so nothing from their past year is deleted. Ad-Din doesn’t send a message about the move, so tell parents yourself, for example with video 07.3: Message parents, classes and teachers.
+**Show:** Spotlight the Previous Section and New Class Section columns of the new row.
+
 #### [6.2a] Teachers
 **Say:** Teachers see the same list under **Migration** in their **Teacher Portal**. They can look, but only admins can migrate students.
 **Show:** Quick cut, signed in as Omar Khalid (side panel: "Signed in as: Omar Khalid, a teacher"): Sidebar → Teacher Portal → Migration. The Migrations list with the Select Year filter; no Add Migration button. Expand a row.
@@ -96,6 +127,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-17 · manager · "more detailed, under 10 minutes" · 1:44 → 3:16 narration, 6 scenes added: why (06.5 for one student), Select Year and Export, the next section must be empty and the order to work in, empty-box messages with Back and Cancel, reason required and no eligible students, what changes and no message to parents (07.3)
 - 2026-11-06 · panel (user, director, writer, PM, PO) · 7 changes: [1.1] "at once" not "in one go"; [4.1] says Migration Type starts on Exam Based; [5.1] a migration can't be undone (no undo in MigrationController); [6.1] "who made it"; [6.2a] "Signed in as" label; [7.1] end tiles by number and title; teacher is Omar Khalid (demo world)
 - 2026-11-03 · manager · decisions via chat · Exam Marks dropped from the series: cut [4.2] Exam Based and its flag; [4.3] Preview Migration merged into [4.1] (thin scene); Goal and demo data updated
 - 2026-11-03 · critic · 3 changes + fold: [6.2] "oldest" made unambiguous (highest class first, so students are not moved twice); [7.1] Say names both end-card tiles; fold: Teacher's Migration list as new [6.2a], Covers and demo data updated
