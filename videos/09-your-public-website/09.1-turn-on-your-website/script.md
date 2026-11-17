@@ -42,14 +42,14 @@ Optional **Caption:** overrides the subtitle text. Translations in i18n/<lang>.m
 See docs/SCRIPT-FORMAT.md.
 -->
 
-
-#### [1.1a] Why a website
-**Say:** You don't need a web designer. When you add an event, post news or change a prayer time in Ad-Din, the website shows it. Visitors don't need an account or the app.
-**Show:** Split card: an event added in Ad-Din on the left, the same event appearing on the demo website on the right.
 ### 1. Your masjid on the web
 #### [1.1] Opening
 **Say:** Ad-Din can build a public website for your masjid from what you already keep in Ad-Din: prayer times, events, news and more. In this video, you switch it on and choose its web address.
 **Show:** Title card: "Turn on your website".
+
+#### [1.1a] Why a website
+**Say:** You don't need a web designer. When you add an event, post news or change a prayer time in Ad-Din, the website shows it. Visitors don't need an account or the app.
+**Show:** Split card: an event added in Ad-Din on the left, the same event appearing on the demo website on the right.
 
 #### [1.2]
 **Say:** The website is an add-on; video 02.5 shows how to add it. You can switch the website on and set it up first. Visitors see it once the add-on is active.
