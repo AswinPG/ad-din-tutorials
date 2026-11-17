@@ -80,12 +80,12 @@ td.pname{font-weight:500;white-space:nowrap}td.num{white-space:nowrap;color:var(
 <div class="cover">
 <div class="eyebrow">Customer tutorials · ${esc(date)}</div>
 <h1>Ad-Din Tutorial Series</h1>
-<p class="lede">A complete video series for Ad-Din, from creating an account to using every feature. Every video is self-contained and under five minutes. The order follows a new customer: create an account, register the organisation, subscribe, set it up, then use it day to day.</p>
+<p class="lede">A complete video series for Ad-Din, from creating an account to using every feature. Every video is self-contained and under ten minutes. The order follows a new customer: create an account, register the organisation, subscribe, set it up, then use it day to day.</p>
 <div class="stats"><div><b>${PARTS.length}</b><span>parts</span></div><div><b>${TRACKS.length}</b><span>tracks</span></div><div><b>${videos.length}</b><span>videos</span></div><div><b>${fmtH(total)}</b><span>total running time</span></div><div><b>${fmt(total / videos.length)}</b><span>average length</span></div></div>
 <h2 class="sec">Rules every video follows</h2>
 <ul class="rules">
 <li><b>Self-contained.</b> Each opens with a “You’ll need” card: role, plan, and what must already be set up. Prerequisites are listed so viewers can jump back, but the video works on its own.</li>
-<li><b>Five minutes or less.</b> Target 3–5 minutes. Longer topics split into Part 1 / Part 2, each standing alone.</li>
+<li><b>Ten minutes or less.</b> Each video only as long as its feature needs. Longer topics split into Part 1 / Part 2, each standing alone.</li>
 <li><b>One job per video.</b> The title is the task (“Create class sections”), not the screen name.</li>
 <li><b>One demo world.</b> One seeded masjid and madrasah with fixed demo users, so screens match across all videos and can be re-recorded.</li>
 <li><b>Real labels.</b> Every on-screen word in a script is taken from the app’s own text.</li>
