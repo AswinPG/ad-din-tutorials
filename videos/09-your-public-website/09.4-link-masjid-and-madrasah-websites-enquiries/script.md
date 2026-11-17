@@ -1,7 +1,7 @@
 ---
 id: "09.4"
 title: Link masjid and madrasah websites; enquiries
-target: 3:45
+target: 5:00
 prereq:
   - "09.1"
 status: scripted
@@ -25,12 +25,20 @@ Join your masjid's and madrasah's websites into one site, approve or unlink the 
 ## Covers
 - Link your Madrasah, approval, unlink
 - answering enquiries
+- Why one website: one address for families of both
+- Nothing to show until you follow the organisation (15.2)
+- Awaiting approval; Ad-Din sends the other admin no message
+- Decline a request you don't expect; check the details
+- After linking: Masjid + Madrasah switcher, pages from both in the menu list, one Website Analytics (09.5)
+- After unlinking: the madrasah's own website is active again
+- Contact form check box; who to put in Contact emails (09.2)
 
 ## Demo data
 <!-- Records the demo organisation must have for this video (classes, students, events...). -->
 - One demo account that is admin of "Maple Grove Masjid" and "Maple Grove Madrasah", following both
 - Both have active websites with the add-on: masjid at `maplegrove`, madrasah at `maplegrove-madrasah`; the websites are not linked at the start (set this per video in the demo world)
 - Maple Grove Masjid email on file `office@maplegrove.example.com`; website contact emails `office@maplegrove.example.com` and `imam@maplegrove.example.com`
+- A second demo account that follows no masjid, for the "Nothing to show" shot
 - A demo visitor message on the website's Contact page: Full Name "Sara Ahmed", E-Mail `sara@example.com`, Mobile Number fictional, message "Do you offer Nikah services on Saturdays?"
 - The notification email "New enquiry from website" shown in a mock mail client (no real inbox)
 - The Contact page's reCAPTCHA must be ticked before the form sends; use the demo site's test reCAPTCHA key or a mocked widget
@@ -43,6 +51,10 @@ Optional **Caption:** overrides the subtitle text. Translations in i18n/<lang>.m
 See docs/SCRIPT-FORMAT.md.
 -->
 
+
+#### [1.1a] Why link them
+**Say:** Many families pray at the masjid and send their children to the madrasah. One website gives them one address to remember, with the masjid's prayer times and the madrasah's news and events in one place.
+**Show:** Card: two website addresses merging into one, "maplegrove", with a masjid icon and a madrasah icon.
 ### 1. One website for both
 #### [1.1] Opening
 **Say:** If your masjid runs a madrasah, both can share one website, with prayer times, classes, events and news together. In this video, you link the two websites, and see where visitors' messages arrive.
@@ -67,10 +79,18 @@ See docs/SCRIPT-FORMAT.md.
 **Say:** On the madrasah's website home page, tap **Link your Masjid**. You'll see the three steps, and the masjids you follow.
 **Show:** Click "Link your Masjid". The "Organization linking" window shows the steps and the list of followed masjids.
 
+
+#### [3.1a]
+**Say:** Only organisations you follow are listed. If the list says **Nothing to show**, follow the masjid first, as video 15.2 shows, then return here.
+**Show:** Quick cut from another demo account: the empty list with "Nothing to show — linking requests can only be sent to organizations you follow." Back to the Maple Grove Madrasah list.
 #### [3.2]
 **Say:** Tap your masjid. Check its details, then tap **Accept and Request**.
 **Show:** Click "Maple Grove Masjid". The confirmation shows its address and contacts. Click "Accept and Request". "Request sent" appears.
 
+
+#### [3.2a]
+**Say:** The request now waits for approval. Ad-Din doesn't send the masjid's admin a message about it, so tell them yourself.
+**Show:** Close and reopen "Organization linking": the "Awaiting approval" card "Request sent to Maple Grove Masjid".
 ### 4. Approve it
 #### [4.1] Review request
 **Say:** Now the masjid's admin approves. On the masjid's website home page, a note says there's a pending request. Tap **Review request**.
@@ -80,10 +100,18 @@ See docs/SCRIPT-FORMAT.md.
 **Say:** Tap **Accept**, check the madrasah's details, and tap **Accept and Link**.
 **Show:** The request card "Maple Grove Madrasah wants to link with your website". Click "Accept"; then "Accept and Link".
 
+
+#### [4.2a]
+**Say:** Check the name, address and contacts carefully before you accept. If you don't expect the request, tap **Decline** instead.
+**Show:** In the confirmation, spotlight the address and Email lines, then the note "Please make sure you are linking the correct organization". Back on the request card, spotlight "Decline" (from the same take, before accepting).
 #### [4.3] Linked
 **Say:** Done. The card now shows both organisations, linked, sharing one website. Content from both appears there.
 **Show:** The linked card with the masjid and madrasah joined by a link icon. The top switcher reads "Masjid + Madrasah".
 
+
+#### [4.3a] What changes
+**Say:** On the website home page, the switcher at the top now reads **Masjid + Madrasah**. When you build the menu, the madrasah's pages appear in the list too, as video 09.3 shows. And the sidebar shows one **Website Analytics** for both, as in video 09.5.
+**Show:** Spotlight the "Masjid + Madrasah" switcher. Quick cut: Menu tab → an item's Internal page list with "All Madrasah Events". Quick cut: Sidebar → Website, one "Website Analytics" item.
 ### 5. Unlink
 #### [5.1] Manage linking
 **Say:** To separate them again, tap **Manage linking**, then **Unlink**.
@@ -93,15 +121,27 @@ See docs/SCRIPT-FORMAT.md.
 **Say:** The madrasah's content leaves this website, and its own site comes back. Tap **Confirm unlink** if you're sure. For now, we'll cancel.
 **Show:** The "Unlink this organization?" box. Spotlight "Confirm unlink", then click "Cancel".
 
+
+#### [5.2a]
+**Say:** After an unlink, the madrasah's own website is active again at its own address, and each organisation manages its website on its own.
+**Show:** In the "Unlink organizations" box, spotlight "Reactivate their own website at" and the madrasah's address.
 ### 6. Answer visitors' messages
 #### [6.1] Contact form
 **Say:** Visitors can write to you from your website's **Contact Us** page.
 **Show:** Demo website → Contact Us. The "Send Message" form (Full Name, E-Mail, Mobile Number, Your Message) with the demo message filled in; tick the reCAPTCHA box, then click the paper-plane send button under it ("Send Message" is the form's heading, not a button). The note "Thank you for contacting us. Your message will be forwarded to the organization." appears.
 
+
+#### [6.1a]
+**Say:** Before sending, visitors tick a check box to show they're a person, which keeps out most automatic spam.
+**Show:** Zoom on the ticked reCAPTCHA box on the Contact Us page.
 #### [6.2] Where they arrive
 **Say:** Each message is emailed to your organisation's email address and to your website's **Contact emails**. There's no separate inbox in Ad-Din.
 **Show:** Back in Ad-Din: Settings tab → Contact emails, with the two email chips.
 
+
+#### [6.2a]
+**Say:** Add up to three contact emails, as video 09.2 shows, such as your office and your imam, so a message is never missed when someone is away.
+**Show:** Spotlight the two chips "office@maplegrove.example.com" and "imam@maplegrove.example.com".
 #### [6.3] Reply
 **Say:** The email has the visitor's name, phone, email and message. Just reply from your email as usual.
 **Show:** Mock mail client: "New enquiry from website" with the four details. Click Reply; stop there.
@@ -113,6 +153,7 @@ See docs/SCRIPT-FORMAT.md.
 
 ## Review log
 <!-- Newest first: date, who, what was asked, what changed. -->
+- 2026-11-17 · manager · "more detailed, under 10 minutes" · 1:52 → 3:20 narration, 8 scenes added: [1.1a] why one website, [3.1a] only followed organisations (15.2), [3.2a] awaiting approval, no message to the other admin, [4.2a] check the details, Decline, [4.3a] switcher, menu list and one analytics item after linking, [5.2a] the madrasah's own site returns, [6.1a] the contact form check box, [6.2a] who to put in Contact emails
 - 2026-11-06 · panel (user, director, writer, PM, PO) · 2 changes: [1.1] second person instead of "we'll", [7.1] names both end tiles by number; demo names, addresses and emails match the Maple Grove demo world
 - 2026-11-03 · manager · decisions via chat · 'Which side sends the website link request' (send from the madrasah, as written) and 'Website enquiries are email-only' (fine) decided: flags reworded; script unchanged
 - 2026-11-03 · critic · 3 changes: [2.1] [3.1] [4.1] "website home" -> "website home page", the term 09.1 uses
