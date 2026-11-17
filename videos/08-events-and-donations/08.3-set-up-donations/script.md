@@ -47,14 +47,14 @@ Optional **Caption:** overrides the subtitle text. Translations in i18n/<lang>.m
 See docs/SCRIPT-FORMAT.md.
 -->
 
-
-#### [1.1a] Why one page
-**Say:** Ad-Din uses this one page in two places: the **Donation** tile in the app, and the **Donate** button on your website. When your bank details or giving page change, you update it once.
-**Show:** Card: the app's Donation tile and the website's Donate button, both with arrows to one "Support Maple Grove Masjid" page.
 ### 1. Where people give
 #### [1.1] Opening
 **Say:** When someone wants to support your masjid, they need one clear place to go. In this video, you set up that place: your masjid's donation page.
 **Show:** Title card: "Set up donations".
+
+#### [1.1a] Why one page
+**Say:** Ad-Din uses this one page in two places: the **Donation** tile in the app, and the **Donate** button on your website. When your bank details or giving page change, you update it once.
+**Show:** Card: the app's Donation tile and the website's Donate button, both with arrows to one "Support Maple Grove Masjid" page.
 
 #### [1.2]
 **Say:** You'll need a published page that explains how to give. Video 04.9, Introduction & Services pages, shows how to make one. Or use the address of a giving page you already have.
