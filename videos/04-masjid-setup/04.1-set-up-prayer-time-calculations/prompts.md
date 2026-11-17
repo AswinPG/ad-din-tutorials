@@ -3,6 +3,7 @@
 Every instruction given to Claude for this video, newest first, with the result.
 Format: date · who · prompt (verbatim or summarised) · outcome / commit.
 
+- 2026-11-17 · Imran · "I want every video to be a bit more detailed but lets keep it under 10 minutes" · 13 scenes added (where members see the times, the tabs, daylight saving 1/0, map pin and Cancel, every method, Automatic No, Custom values, High latitude choices, what Save recalculates, Adhan validation and example, Umm Al-Qura, offset example); 3:12 → 6:14 narration, target 4:45 → 7:30; commit docs(04.1): add more detail
 - 2026-11-06 · Imran · "do it for all the planned ones now" (panel review, apply clear fixes) · 5 changes: [1.2] plain "when each prayer begins", [3.3] Confirm saves the masjid's location, [8.1] end tiles by number, Maple Grove demo names, demo Islamic date
 - 2026-11-03 · manager · "Decisions via chat" · 04.6 split: Makrooh Times now lives in 04.11; Zawal flag pointer updated
 - 2026-11-03 · manager · "use a critic subagent to criticise and find flaws in the script, make it better" · critic pass: 5 wording fixes (opening, [2.1], [3.2], [5.1], [5.2]).
