@@ -22,7 +22,7 @@ Two layers, run after a video is scripted and again after any edit:
 
 | Check | How | Catches |
 |---|---|---|
-| `npm run validate` | automatic | format, IDs, prereqs, length (narration over 4:15), missing translations |
+| `npm run validate` | automatic | format, IDs, prereqs, length (narration over 8:30), missing translations |
 | `npm run labels` | automatic | **bold** labels that don't exist in the app code, or differ in capitals |
 | Validator agent | a subagent reads each script beside the app code | wrong flow or order, a step that doesn't exist, a missing step, a Covers item not shown, a Show line the recorder can't do, demo data that's missing |
 

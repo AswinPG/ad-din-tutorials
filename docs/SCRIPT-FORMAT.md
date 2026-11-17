@@ -8,7 +8,7 @@ Each video is one `script.md`: front matter, then fixed sections. Tools read it,
 ---
 id: "05.3"                 # track.number; quoted so YAML keeps it as text
 title: Create classes      # the task, as the viewer would say it
-target: 4:30               # planned length (max 5:00; English narration aims for 4:15 or less)
+target: 4:30               # planned length (max 10:00; English narration aims for 8:30 or less)
 prereq: ["05.2"]           # videos that set up what this one needs
 status: scripted           # see docs/WORKFLOW.md
 # Optional. Leave out to inherit the track defaults from series.yaml:

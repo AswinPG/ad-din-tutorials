@@ -62,7 +62,7 @@ Each change is a commit, so the history of every video is in `git log -- videos/
 
 The full list is in [docs/SCRIPT-STYLE.md](docs/SCRIPT-STYLE.md); 00.1 and 00.2 are the reference scripts.
 
-- Self-contained, five minutes or less (English scripted to about 4:15 so translations fit the same picture).
+- Self-contained, ten minutes or less (English scripted to about 8:30 so translations fit the same picture); each video only as long as its feature needs.
 - For every audience: admins, teachers, parents, students and community members, in plain words.
 - One video per topic: screens and on-screen text in English, with an audio track and subtitles for each language.
 - Real labels only: every on-screen word in a script is copied from the Ad-Din app's own text.

@@ -5,7 +5,7 @@ The rules every script follows. `docs/SCRIPT-FORMAT.md` covers the file layout; 
 ## Requirements for every video (agreed 2026-11-02/03)
 
 1. **Self-contained.** A viewer who lands on this one video can follow it. Say in one line what was set up earlier ("Your classes are already in place") instead of assuming they watched it; the opening card lists what they need.
-2. **Five minutes or less.** English narration aims for 4:15 or less (about 600 words at most; most videos 300–500) so the five other languages fit the same picture. `target` is the planned length including on-screen pauses.
+2. **Ten minutes or less, only as long as needed.** English narration aims for 8:30 or less (about 1,200 words at most; simple features stay short) and covers every option on the screen, a worked example, what happens next and why you'd use it so the five other languages fit the same picture. `target` is the planned length including on-screen pauses.
 3. **One task per video**, named as the viewer would say it.
 4. **All audiences.** Speak to the role in the track (admin, teacher, parent, member) in plain words. No jargon, no internal names (no "GUID" without explaining it, no "org", "module", "API").
 5. **English screens.** The app stays in English for every language; only the narration and subtitles change.
@@ -47,7 +47,7 @@ Only when the subtitle should differ from what's said: usually to shorten a long
 ## Front matter and sections when scripting
 
 - Set `status: scripted`. Keep `id`, `title`, `prereq` unless the code shows the plan is wrong (then say so in the prompt log and in the reply).
-- Adjust `target` to fit the script (never over 5:00).
+- Adjust `target` to fit the script (never over 10:00).
 - Fill `## Goal` (one sentence), `## You'll need` (only if the generated card would miss something), `## Demo data`, `## Script`.
 - Every item in `## Covers` must appear in the script. If an item can't be shown (feature missing or broken), keep it in Covers, leave it out of the script, and add a `flags:` entry saying why.
 - Add a prompt-log entry at the top of `prompts.md` (replace `_No prompts yet._`): `- 2026-11-03 · manager · "Write all the scripts now and double check nothing is missed." · Scripted from origin/master (d36d69ed8); <notes>.`

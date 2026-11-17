@@ -4,7 +4,7 @@ Guidance for Claude Code sessions in this repo: the Ad-Din customer tutorial vid
 
 ## What this is
 
-100 in-scope tutorial videos (104 planned; Track 11 Payment Module on hold), all scripted 2026-11-03 for the Ad-Din masjid and madrasah platform. Self-contained, five minutes or less, English screens with six narration languages (en, ar, ur, bn, ms, id) as audio and subtitle tracks on one video. Read `README.md` for the layout and commands, and `docs/` for the details.
+100 in-scope tutorial videos (104 planned; Track 11 Payment Module on hold), all scripted 2026-11-03 for the Ad-Din masjid and madrasah platform. Self-contained, ten minutes or less (decided 2026-11-17; was five), English screens with six narration languages (en, ar, ur, bn, ms, id) as audio and subtitle tracks on one video. Read `README.md` for the layout and commands, and `docs/` for the details.
 
 ## Rules
 
@@ -12,7 +12,7 @@ Guidance for Claude Code sessions in this repo: the Ad-Din customer tutorial vid
 2. **Log every prompt.** Whenever you work on a video, add an entry at the top of its `prompts.md`: date · who asked · the instruction (verbatim if short, else summarised) · what you did / the commit. Add a line to `## Review log` in `script.md` when the change came from a review.
 3. **Real labels only.** Copy every on-screen word from the Ad-Din app code on `origin/master` of `C:\Fantacode\Ad-Din Web-master` (Angular templates, `services/menu.data.ts`, `AdDin.Angular/src/assets/i18n/en.json`); read it with `git show`/`git grep` or the `npm run labels` export, not the working tree, which may be on another branch. Bold them in Say lines. Never invent UI text. Run `npm run labels` after scripting.
 4. **Scene IDs are permanent** once a translation or `record.mjs` refers to them. Insert with suffixes (`[1.2a]`); don't renumber.
-5. **Length:** max 5:00; English narration about 4:15 or less so translations fit the same picture. `validate` estimates narration length.
+5. **Length:** max 10:00 (Imran, 2026-11-17: "a bit more detailed but under 10 minutes"; only as long as each feature needs); English narration about 8:30 or less so translations fit the same picture. `validate` estimates narration length.
 5a. **Style:** follow `docs/SCRIPT-STYLE.md` (self-contained, all audiences, opening and closing shape, Say/Show rules). 00.1 and 00.2 are the reference scripts.
 5b. **Quality checks** before a script goes to the manager: `validate`, `labels`, a validator subagent and a critic subagent, as in `docs/QUALITY.md`. Keep `docs/FEATURE-MAP.md` current when the plan or the app changes.
 6. **Translate only after `client-approved`.** Use `node tools/i18n.mjs <id> <lang>`. Button names stay English and bold; Islamic and Ad-Din terms stay as they are (see `docs/LANGUAGES.md`). New translations are `status: draft` until a native speaker reviews them.

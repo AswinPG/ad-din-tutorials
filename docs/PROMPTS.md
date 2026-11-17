@@ -18,7 +18,7 @@ Start every session in `C:\Fantacode\ad-din-tutorials` so Claude picks up `CLAUD
 ## Scripting
 
 **Script a video**
-> Script `<id>`. Check the flow on the current Ad-Din code (`C:\Fantacode\Ad-Din Web-master`) and copy every label from the app. Keep the English under 4:15. Set status to scripted.
+> Script `<id>`. Check the flow on the current Ad-Din code (`C:\Fantacode\Ad-Din Web-master`) and copy every label from the app. Keep the English under 8:30. Set status to scripted.
 
 **Script a whole track**
 > Script every planned video in track `<track>`, one commit per video. Stop and ask if a flow doesn't match the plan.

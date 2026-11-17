@@ -4,8 +4,8 @@
 
 title: Ad-Din Tutorial Series
 rules:
-  max_length: 5:00
-  english_target: 4:15
+  max_length: "10:00"  # 2026-11-17 Imran: more detail, under 10 minutes (was 5:00)
+  english_target: "8:30"
   note: English is timed to leave room for longer translations; every language must fit the same picture.
 app:
   # Where scripts' labels are checked (npm run labels). Read-only; exported into out/app-src/<sha>.
