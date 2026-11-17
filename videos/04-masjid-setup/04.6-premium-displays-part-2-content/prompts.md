@@ -3,6 +3,7 @@
 Every instruction given to Claude for this video, newest first, with the result.
 Format: date · who · prompt (verbatim or summarised) · outcome / commit.
 
+- 2026-11-17 · Imran · "I want every video to be a bit more detailed but lets keep it under 10 minutes" · 10 scenes added (why use content, picture sizes and video limits, layout-change warning, required fields and missing image, change or delete content, events source with Manage and Transition Options, pause example, poster-after-prayer examples, more ticker settings, change or delete a ticker); 3:16 → 5:35 narration, target 4:00 → 7:00; commit docs(04.6): add more detail
 - 2026-11-07 · Imran · "All recommended" (docs/reviews/2026-11-06-decisions-all-tracks.md) · added [3.3]-[3.6]: Poster After Adhan, Poster After fard salah, Masjid URL, Embedded Content Or Announcement; Covers, demo data, target 4:00
 - 2026-11-06 · Imran · "do it for all the planned ones now" (panel review, apply clear fixes) · 4 changes: [2.1] sidebar wording, [4.1] replace sample text, [4.4] "You can also", Maple Grove demo names
 - 2026-11-03 · manager · "Decisions via chat" · TV display pages decided: previews recorded from the dev environment with demo data; flag updated (demo data already says so)
