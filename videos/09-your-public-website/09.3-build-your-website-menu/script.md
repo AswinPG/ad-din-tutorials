@@ -45,14 +45,14 @@ Optional **Caption:** overrides the subtitle text. Translations in i18n/<lang>.m
 See docs/SCRIPT-FORMAT.md.
 -->
 
-
-#### [1.1a] Why it matters
-**Say:** Most visitors look for prayer times, events and how to contact you. A short menu with clear names gets them there in one tap. Keep the top bar to a handful of items, and group the rest.
-**Show:** Card: a crowded menu bar with ten items crossed out, beside a short bar: Home, Prayer Times, Events, Services, Contact Us.
 ### 1. Help visitors find their way
 #### [1.1] Opening
 **Say:** The menu is the bar across the top of your website. It's how visitors find your events, services and prayer times. In this video, you add, link and order its items.
 **Show:** Title card: "Build your website menu".
+
+#### [1.1a] Why it matters
+**Say:** Most visitors look for prayer times, events and how to contact you. A short menu with clear names gets them there in one tap. Keep the top bar to a handful of items, and group the rest.
+**Show:** Card: a crowded menu bar with ten items crossed out, beside a short bar: Home, Prayer Times, Events, Services, Contact Us.
 
 #### [1.2]
 **Say:** Your website is already switched on, and your service pages are published under Introduction & Services, as in video 04.9.
